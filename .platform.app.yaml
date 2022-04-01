@@ -1,4 +1,4 @@
-name: unity
+name: unity_1
 type: 'php:7.4'
 dependencies:
     php: { composer/composer: ^2 }
@@ -21,4 +21,8 @@ web:
     locations: { /: { root: web, expires: 5m, passthru: /index.php, allow: false, rules: { '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$': { allow: true }, ^/robots\.txt$: { allow: true }, ^/sitemap\.xml$: { allow: true }, ^\/sites\/.+\/themes\/.+\/images\/favicons\/.+\.webmanifest$: { allow: true, expires: 2w }, ^/sites/sites\.php$: { scripts: false }, '^/sites/[^/]+/settings.*?\.php$': { scripts: false } } }, /files: { allow: true, expires: 1d, passthru: /index.php, root: web/files, scripts: false, rules: { ^/sites/default/files/(css|js): { expires: 2w } } } }
 relationships:
     uregni: 'db:uregni'
+    uregni_solr: 'solr:uregni'
     odscni: 'db:odscni'
+cron:
+    uregni: { spec: '10 * * * *', cmd: 'cd web/sites/nifiscalcouncil ; drush core-cron' }
+    odscni: { spec: '10 * * * *', cmd: 'cd web/sites/odscni ; drush core-cron' }
