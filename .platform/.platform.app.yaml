@@ -64,7 +64,7 @@ hooks:
     export FASTLY_API_SERVICE=dummyservice
 
     # For each multi site - run db-updates and import config.
-    for site in uregni odscni fiscalcommissionni urologyservicesinquiry mahinquiry niauditoffice nifiscalcouncil octf employmenttribunalsni independentreviewofeducation nipolicingboard investnireview pbni cscsreviewni pcsps attorneygeneralni
+    for site in <deployed_sites_placeholder>
     do
       echo "****** $site deployment ******"
       cd /app/web/sites/$site
