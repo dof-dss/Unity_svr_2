@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the Origins standard install profile.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function origins_install() {
+  // We install some menu links, so we have to rebuild the router, to ensure the
+  // menu links are valid.
+  \Drupal::service('router.builder')->rebuildIfNeeded();
+
+  // Set adminimal as admin theme.
+  $config = \Drupal::service('config.factory')->getEditable('system.theme');
+  $config->set('admin', 'adminimal_theme')->save();
+}

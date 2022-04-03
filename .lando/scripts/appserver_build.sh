@@ -16,7 +16,7 @@ if [ ! -d "/app/.lando/exports" ]; then
   mkdir -p /app/.lando/exports/config && mkdir /app/.lando/exports/data
 fi
 
-# If we don't have a Drupal install, download it.
+# If we don't have a Drupal 8 install, download it.
 if [ ! -d "/app/web/core" ]; then
   echo "Installing Drupal"
   composer -d/app install

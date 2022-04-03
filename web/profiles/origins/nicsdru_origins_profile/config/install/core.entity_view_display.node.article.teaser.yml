@@ -1,0 +1,47 @@
+uuid: 6ac38ddd-cd57-44dd-9663-5087d02dbec1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.body
+    - field.field.node.article.field_next_audit_due
+    - field.field.node.article.field_summary
+    - field.field.node.article.field_toc_enable
+    - node.type.article
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: zXK51U8-5ytLW2Mw9_19_LuBcDoz01uu9JcQN0sHCTs
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    weight: 0
+    region: content
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    label: hidden
+  field_toc_enable:
+    type: boolean
+    weight: 2
+    region: content
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_next_audit_due: true
+  field_summary: true

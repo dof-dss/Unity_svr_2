@@ -1,0 +1,23 @@
+uuid: 9be18c79-65bf-4037-b742-73f9233ad0ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.publication
+  module:
+    - text
+_core:
+  default_config_hash: tgT8-TTpvYkMSGoOe2G3QpBRkLAxp97n1RVM0EtOvzc
+id: node.publication.field_summary
+field_name: field_summary
+entity_type: node
+bundle: publication
+label: Summary
+description: 'Enter a summary of this publication.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,38 @@
+uuid: fa16f309-5149-44e0-8613-932e989a1f13
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.application.body
+    - field.field.node.application.field_additional_info
+    - field.field.node.application.field_link
+    - field.field.node.application.field_summary
+    - node.type.application
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: Ib74xnJxSjm-pPRfmHXP4KNlM0LaznTeGdCZNCcDm70
+id: node.application.teaser
+targetEntityType: node
+bundle: application
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_additional_info: true
+  field_link: true
+  field_summary: true

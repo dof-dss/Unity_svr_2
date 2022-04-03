@@ -1,0 +1,40 @@
+uuid: 21f75f48-0e25-4764-99e9-b416f42a08f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.publication.body
+    - field.field.node.publication.field_attachment
+    - field.field.node.publication.field_publication_type
+    - field.field.node.publication.field_published_date
+    - field.field.node.publication.field_summary
+    - node.type.publication
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: vz9m-5Qsc6I0oU9HCxTHc3IoJhAVCdS8dNAQ97pfE4Q
+id: node.publication.teaser
+targetEntityType: node
+bundle: publication
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_attachment: true
+  field_publication_type: true
+  field_published_date: true
+  field_summary: true

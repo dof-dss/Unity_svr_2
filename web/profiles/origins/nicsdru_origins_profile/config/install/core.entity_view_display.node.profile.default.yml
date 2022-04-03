@@ -1,0 +1,49 @@
+uuid: 307b2632-09df-4ca3-9025-f7c8a08bc2c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.profile.body
+    - field.field.node.profile.field_photo
+    - field.field.node.profile.field_summary
+    - node.type.profile
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: YtcLw0rNn2TTw1fL6I2t1A6fO4U1zqJPn0R-KK4aNEI
+id: node.profile.default
+targetEntityType: node
+bundle: profile
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_photo:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_summary:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

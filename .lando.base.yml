@@ -1,62 +1,62 @@
 recipe: drupal9
 config:
-    webroot: web
-    database: mariadb
-    php: '7.4'
-    composer_version: '2'
-    config:
-        php: .lando/config/php.ini
-        database: .lando/config/my.cnf
+  webroot: web
+  database: mariadb
+  php: '7.4'
+  composer_version: '2.0.7'
+  config:
+    php: .lando/config/php.ini
+    database: .lando/config/my.cnf
 compose:
-    - docker-compose.yml
+  - docker-compose.yml
 env_file:
-    - project/config/.env
+  - .lando/config/.env
 services:
-    appserver:
-        xdebug: debug
-        build_as_root:
-            - /app/.lando/scripts/appserver_build.sh
-    database:
-        build_as_root:
-            - "sh /app/.lando/scripts/create_databases.sh"
-    redis:
-        type: redis:5.0
-        persist: true
-        config:
-            server: .lando/config/redis.conf
-    uregni_solr:
-        type: solr:7
-        portforward: true
-        core: default
-        config:
-            dir: .lando/config/solr/7.x/default
-    mailhog:
-        type: mailhog
-        portforward: true
-        hogfrom:
-            - appserver
+  appserver:
+    xdebug: debug
+    build_as_root:
+      - /app/.lando/scripts/appserver_build.sh
+  database:
+    build_as_root:
+      - "sh /app/.lando/scripts/create_databases.sh"
+  redis:
+    type: redis:5.0
+    persist: true
+    config:
+      server: .lando/config/redis.conf
+  uregni_solr:
+    type: solr:7
+    portforward: true
+    core: default
+    config:
+      dir: .lando/config/solr/7.x/default
+  mailhog:
+    type: mailhog
+    portforward: true
+    hogfrom:
+      - appserver
 tooling:
-    drupal:
-        cmd: "/app/vendor/bin/drupal --root=/app/web"
-    xdebug-on:
-        service: appserver
-        description: Enable xdebug
-        cmd: "docker-php-ext-enable xdebug && /etc/init.d/apache2 reload"
-        user: root
-    xdebug-off:
-        service: appserver
-        description: Disable xdebug
-        cmd: "rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && /etc/init.d/apache2 reload"
-        user: root
-    npm:
-        service: appserver
-        cmd: /usr/bin/npm
-    yarn:
-        service: appserver
-        cmd: yarn
-    'nightwatch [site] [test]':
-        service: appserver
-        description: "Run Nightwatch.js functional tests.\n\n
+  drupal:
+    cmd: "/app/vendor/bin/drupal --root=/app/web"
+  xdebug-on:
+    service: appserver
+    description: Enable xdebug
+    cmd: "docker-php-ext-enable xdebug && /etc/init.d/apache2 reload"
+    user: root
+  xdebug-off:
+    service: appserver
+    description: Disable xdebug
+    cmd: "rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && /etc/init.d/apache2 reload"
+    user: root
+  npm:
+    service: appserver
+    cmd: /usr/bin/npm
+  yarn:
+    service: appserver
+    cmd: yarn
+  'nightwatch [site] [test]':
+    service: appserver
+    description: "Run Nightwatch.js functional tests.\n\n
                       Usage:\n
                       > Run a specific test with tag\n
                       lando nightwatch <site> --tag your-tag\n
@@ -64,102 +64,102 @@ tooling:
                       lando nightwatch <site> ../modules/custom/modulename/tests/src/Nightwatch/Tests/yourTestSuite.js\n
                       > Run all tests except Core\n
                       lando nightwatch <site> --skiptags core\n"
-        cmd: "sh /app/.lando/scripts/run_nightwatch.sh"
-        options:
-            site:
-                passthrough: true
-                description: Multisite to run tests on
-                alias:
-                    - s
-                interactive:
-                    type: input
-                    message: Which Unity site (e.g. uregni) ?
-                    weight: 1
-            test:
-                passthrough: true
-    phpunit:
-        description: "Run PHPUnit tests. You can pass options, e.g. --group=unity, as you require"
-        service: appserver
-        cmd: cd /app/web/core && /app/vendor/bin/phpunit -c /app/web/core/phpunit.xml
-    phpcs:
-        description: Run PHPCS checks against all custom Drupal 8 code
-        service: appserver
-        cmd: /app/phpcs.sh "/app" "/app/web/sites /app/web/modules/origins /app/web/modules/custom /app/web/themes/custom /app/web/profiles/unity"
-    drck:
-        description: Run drupal-check for Drupal 9 compatibility e.g. 'lando drck ./'
-        service: appserver
-        cmd: /app/vendor/bin/drupal-check
-    drush:
-        server: appserver
-        cmd: drush -r /app/web
-    'db-export [file]': disabled
-    'db-import <file>': disabled
-    'db-export [name]':
-        service: database
-        description: Exports database to a file. To export all databases, don't provide the name'
-        cmd: "sh /app/.lando/scripts/export_database.sh"
-        user: root
-        options:
-            name:
-                description: Database to export
-                alias:
-                    - n
-    'db-import [database] [file]':
-        service: database
-        description: Import file to database
-        cmd: "sh /app/.lando/scripts/import_database.sh"
-        user: root
-        options:
-            database:
-                passthrough: true
-                description: Database to import to
-                alias:
-                    - d
-                interactive:
-                    type: input
-                    message: Which database to import to?
-                    weight: 1
-            file:
-                passthrough: true
-                description: File to import
-                alias:
-                    - f
-                interactive:
-                    type: input
-                    message: Which file to import?
-                    weight: 2
-    'db-create [name]':
-        service: database
-        description: Create a new database
-        cmd: "sh /app/.lando/scripts/create_database.sh"
-        user: root
-        options:
-            name:
-                passthrough: true
-                description: Name of the database to create
-                alias:
-                    - n
-                interactive:
-                    type: input
-                    message: What do you want to call this database?
-                    weight: 1
-    'db-delete [name]':
-        service: database
-        description: Delete a database
-        cmd: "sh /app/.lando/scripts/delete_database.sh"
-        user: root
-        options:
-            name:
-                passthrough: true
-                description: Name of the database to delete
-                alias:
-                    - n
-                interactive:
-                    type: input
-                    message: Which database do you want to delete?
-                    weight: 1
-    db-list:
-        service: database
-        description: List all databases
-        cmd: mysql -uroot -e "SHOW DATABASES;"
-        user: root
+    cmd: "sh /app/.lando/scripts/run_nightwatch.sh"
+    options:
+      site:
+        passthrough: true
+        description: Multisite to run tests on
+        alias:
+          - s
+        interactive:
+          type: input
+          message: Which Unity site (e.g. uregni) ?
+          weight: 1
+      test:
+        passthrough: true
+  phpunit:
+    description: "Run PHPUnit tests. You can pass options, e.g. --group=unity, as you require"
+    service: appserver
+    cmd: cd /app/web/core && /app/vendor/bin/phpunit -c /app/web/core/phpunit.xml
+  phpcs:
+    description: Run PHPCS checks against all custom Drupal 8 code
+    service: appserver
+    cmd: /app/phpcs.sh "/app" "/app/web/sites /app/web/modules/origins /app/web/modules/custom /app/web/themes/custom /app/web/profiles/unity"
+  drck:
+    description: Run drupal-check for Drupal 9 compatibility e.g. 'lando drck ./'
+    service: appserver
+    cmd: /app/vendor/bin/drupal-check
+  drush:
+    server: appserver
+    cmd: drush -r /app/web
+  'db-export [file]': disabled
+  'db-import <file>': disabled
+  'db-export [name]':
+    service: database
+    description: Exports database to a file. To export all databases, don't provide the name'
+    cmd: "sh /app/.lando/scripts/export_database.sh"
+    user: root
+    options:
+      name:
+        description: Database to export
+        alias:
+          - n
+  'db-import [database] [file]':
+    service: database
+    description: Import file to database
+    cmd: "sh /app/.lando/scripts/import_database.sh"
+    user: root
+    options:
+      database:
+        passthrough: true
+        description: Database to import to
+        alias:
+          - d
+        interactive:
+          type: input
+          message: Which database to import to?
+          weight: 1
+      file:
+        passthrough: true
+        description: File to import
+        alias:
+          - f
+        interactive:
+          type: input
+          message: Which file to import?
+          weight: 2
+  'db-create [name]':
+    service: database
+    description: Create a new database
+    cmd: "sh /app/.lando/scripts/create_database.sh"
+    user: root
+    options:
+      name:
+        passthrough: true
+        description: Name of the database to create
+        alias:
+          - n
+        interactive:
+          type: input
+          message: What do you want to call this database?
+          weight: 1
+  'db-delete [name]':
+    service: database
+    description: Delete a database
+    cmd: "sh /app/.lando/scripts/delete_database.sh"
+    user: root
+    options:
+      name:
+        passthrough: true
+        description: Name of the database to delete
+        alias:
+          - n
+        interactive:
+          type: input
+          message: Which database do you want to delete?
+          weight: 1
+  db-list:
+    service: database
+    description: List all databases
+    cmd: mysql -uroot -e "SHOW DATABASES;"
+    user: root

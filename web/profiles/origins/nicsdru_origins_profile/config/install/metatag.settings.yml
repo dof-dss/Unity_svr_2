@@ -1,0 +1,25 @@
+entity_type_groups:
+  node:
+    application:
+      basic: basic
+    article:
+      basic: basic
+    basic_page:
+      basic: basic
+    consultation:
+      basic: basic
+    contact:
+      basic: basic
+    layout_page:
+      basic: basic
+    link:
+      basic: basic
+    news:
+      basic: basic
+    profile:
+      basic: basic
+    publication:
+      basic: basic
+  taxonomy_term:
+    tags:
+      basic: basic

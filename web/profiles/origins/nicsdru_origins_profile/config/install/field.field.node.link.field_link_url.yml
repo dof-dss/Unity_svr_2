@@ -1,0 +1,25 @@
+uuid: 956d26cb-17ec-4639-938c-25cfe8d2693d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_url
+    - node.type.link
+  module:
+    - link
+_core:
+  default_config_hash: 4f3PrFAyYc875dIeRYbz_qh1HOh7oDZQmmSnWl4nnro
+id: node.link.field_link_url
+field_name: field_link_url
+entity_type: node
+bundle: link
+label: 'Link URL'
+description: 'Enter the URL for this link. Start the link with a / to link to content on this site, or use http:// or https:// to link to other sites.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

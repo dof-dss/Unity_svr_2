@@ -1,0 +1,20 @@
+uuid: f53d6ac6-f9f8-44f2-aace-cb5b0f6c734d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: g0hiOyM6vMgdn7vw7gh11mt7K2AyvJkje6zy28fqm00
+name: Publication
+type: publication
+description: 'Use this content type for generic non-HTML content such as PDF documents.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

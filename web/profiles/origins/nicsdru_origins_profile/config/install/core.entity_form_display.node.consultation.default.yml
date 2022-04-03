@@ -1,0 +1,138 @@
+uuid: dab17884-050d-40b4-b268-5bde052f60c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.consultation.body
+    - field.field.node.consultation.field_attachment
+    - field.field.node.consultation.field_consultation_dates
+    - field.field.node.consultation.field_email_address
+    - field.field.node.consultation.field_postal
+    - field.field.node.consultation.field_published_date
+    - field.field.node.consultation.field_respond_online
+    - field.field.node.consultation.field_summary
+    - node.type.consultation
+  module:
+    - address
+    - datetime
+    - datetime_range
+    - file
+    - link
+    - path
+    - text
+_core:
+  default_config_hash: 7llgpBrsnQ778iDDM5bqbWH5ysXjd3CQ26Qh0XJS-5M
+id: node.consultation.default
+targetEntityType: node
+bundle: consultation
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_attachment:
+    weight: 125
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_consultation_dates:
+    weight: 127
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_email_address:
+    weight: 128
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_postal:
+    weight: 129
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_published_date:
+    weight: 123
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_respond_online:
+    weight: 126
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_summary:
+    weight: 122
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,25 @@
+uuid: fd220632-8d62-4a46-9eec-853e395c4e05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_respond_online
+    - node.type.consultation
+  module:
+    - link
+_core:
+  default_config_hash: 8NEnzbhfOZTI6o3D6pWucGLG5CIPu0Y_Gn5P7GoZ1M4
+id: node.consultation.field_respond_online
+field_name: field_respond_online
+entity_type: node
+bundle: consultation
+label: 'Respond online'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

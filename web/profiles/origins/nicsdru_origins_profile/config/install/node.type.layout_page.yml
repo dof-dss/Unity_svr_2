@@ -1,0 +1,20 @@
+uuid: de5e80f3-880e-4dea-8dad-bd52265b508f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: DGMKp3ma_4-AQt-O0HIq29nZX9XwDdFha0WkRAg_AKI
+name: 'Layout page'
+type: layout_page
+description: 'Use this content type for pages on your site that use layout builder e.g. landing pages.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

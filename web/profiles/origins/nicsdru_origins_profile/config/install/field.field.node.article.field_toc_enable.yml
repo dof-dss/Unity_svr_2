@@ -1,0 +1,23 @@
+uuid: afb471d8-6e1e-4618-8d45-d08b4f0e28e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_toc_enable
+    - node.type.article
+id: node.article.field_toc_enable
+field_name: field_toc_enable
+entity_type: node
+bundle: article
+label: 'Enable Table of Contents'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

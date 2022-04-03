@@ -1,0 +1,20 @@
+uuid: 1a56101c-b261-4649-a9b6-3d44a86a46d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.application
+_core:
+  default_config_hash: GE-JjM84lAZdCIzG3LbWHYvK7C7JwdpMq0zzcikzaPE
+id: node.application.title
+field_name: title
+entity_type: node
+bundle: application
+label: 'Main heading'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

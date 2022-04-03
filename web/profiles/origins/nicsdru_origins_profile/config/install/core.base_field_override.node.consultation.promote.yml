@@ -1,0 +1,24 @@
+uuid: 54124461-459b-43f6-b550-4823af6921f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.consultation
+_core:
+  default_config_hash: qo0g3cfr3qA-S79FAkHEF4ATOBNF6MZ9K2HgNUrMjCc
+id: node.consultation.promote
+field_name: promote
+entity_type: node
+bundle: consultation
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

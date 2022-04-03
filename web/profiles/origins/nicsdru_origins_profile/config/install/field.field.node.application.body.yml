@@ -1,0 +1,24 @@
+uuid: 9f954a61-49eb-4729-853c-14d5fc2c36b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.application
+  module:
+    - text
+_core:
+  default_config_hash: t5O-Lz2njXkxsQLHG5vx3FREO7rkc6fVSBhTAiCo8ns
+id: node.application.body
+field_name: body
+entity_type: node
+bundle: application
+label: 'Before you start'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

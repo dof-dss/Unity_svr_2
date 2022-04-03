@@ -1,0 +1,20 @@
+uuid: cf3e45b2-ec1d-4ff5-8d08-1d485a08be3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.publication
+_core:
+  default_config_hash: x3tINTrEzhQZzD6ZJ8nGMWhvRMCSQe7wvvCHa1h36EQ
+id: node.publication.title
+field_name: title
+entity_type: node
+bundle: publication
+label: 'Main heading'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

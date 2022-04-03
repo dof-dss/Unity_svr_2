@@ -1,0 +1,26 @@
+uuid: b8eff655-bb19-450b-b5cd-3d3bb32ae61e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.link.field_link_type
+    - field.field.node.link.field_link_url
+    - node.type.link
+  module:
+    - user
+_core:
+  default_config_hash: qIS2QT_F1nHAvRMwOEPUDrOy0cCRM2EkxVMkVQ6dQQI
+id: node.link.teaser
+targetEntityType: node
+bundle: link
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_link_type: true
+  field_link_url: true

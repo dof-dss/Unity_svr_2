@@ -1,0 +1,23 @@
+uuid: ed63b76c-4e31-4290-8a48-8af41b5d8414
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.profile
+  module:
+    - text
+_core:
+  default_config_hash: 6gPSr9MOlB2lxjIbcN6otKjXXqVwC4J400JRuhgFkms
+id: node.profile.field_summary
+field_name: field_summary
+entity_type: node
+bundle: profile
+label: Summary
+description: 'Enter a summary of this profile.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

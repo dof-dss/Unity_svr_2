@@ -8,6 +8,7 @@ sites:
     solr: 'uregni'
     cron_spec: '10 * * * *'
     cron_cmd: 'cd web/sites/nifiscalcouncil ; drush core-cron'
+    deploy: true
   'odscni':
     name: 'The Office of the Discretionary Support Commissioner'
     url: 'odscni.org.uk'
@@ -15,3 +16,4 @@ sites:
     solr: ''
     cron_spec: '10 * * * *'
     cron_cmd: 'cd web/sites/odscni ; drush core-cron'
+    deploy: true
