@@ -4,7 +4,7 @@
 
 # If the first command option is missing then dump every database.
 if [ -z "$1" ]; then
-  for dir in $(find /app/web/sites/ -mindepth 1 -maxdepth 1 -type d) ; do
+  for dir in $(find /app/web/sites/ -mindepth 1 -maxdepth 1 -type l) ; do
     database=${dir##*/} ;
 
     # Ignore the standard 'default' folder under web/sites.
