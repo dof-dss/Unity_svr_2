@@ -92,7 +92,7 @@ if (!empty(getenv('PLATFORM_BRANCH'))) {
 // Running in Lando locally, include appropriate sites file.
 if (getenv('LANDO')) {
 
-    $project = Yaml::parseFile(getcwd() . '../../project/project.yml');
+    $project = Yaml::parseFile('/app/project/project.yml');
 
     foreach ($project['sites'] as $site_id => $site) {
         $sites[$site['url'] . '.lndo.site'] = $site_id;
