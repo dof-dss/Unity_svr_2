@@ -1,0 +1,290 @@
+{
+    "name": "drupal/recommended-project",
+    "description": "Project template for Drupal 8 projects with a relocated document root",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/drupal",
+    "support": {
+        "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+        "chat": "https://www.drupal.org/node/314178"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "harvesthq/chosen",
+                "version": "1.8.7",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "^1.2.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "kenwheeler/slick",
+                "version": "1.8.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/kenwheeler/slick/archive/1.8.0.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "^1.2.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "dinbror/blazy",
+                "version": "1.8.2",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/dinbror/blazy/archive/1.8.2.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "^1.2.0"
+                }
+            }
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
+        "dinbror/blazy": "^1.8",
+        "dof-dss/nicsdru_origins_modules": "^1.1",
+        "dof-dss/nicsdru_origins_profile": "0.1.11",
+        "dof-dss/nicsdru_unity_modules": "^1.0",
+        "dof-dss/nicsdru_unity_profile": "^1.0",
+        "dof-dss/nicsdru_unity_theme": "^0.1.49",
+        "drupal/address": "^1.7",
+        "drupal/admin_toolbar": "^2.0",
+        "drupal/adminimal_theme": "^1.5",
+        "drupal/allowed_formats": "^1.3",
+        "drupal/auto_entityqueue": "^2.0",
+        "drupal/block_blacklist": "^1.0",
+        "drupal/block_list_override": "^1.0",
+        "drupal/block_visibility_groups": "^1.3",
+        "drupal/chosen": "^3.0",
+        "drupal/clientside_validation": "^3.0",
+        "drupal/config_filter": "^1.4",
+        "drupal/config_ignore": "^2.1",
+        "drupal/config_readonly": "^1.0@beta",
+        "drupal/config_split": "^1.4",
+        "drupal/config_update": "^1.6",
+        "drupal/console": "^1.9",
+        "drupal/content_lock": "^2.2",
+        "drupal/cookie_content_blocker": "^1.7",
+        "drupal/core-composer-scaffold": "9.2.*",
+        "drupal/core-recommended": "9.2.*",
+        "drupal/csp": "^1.15",
+        "drupal/date_facet_drilldown": "2.x-dev",
+        "drupal/diff": "^1.0",
+        "drupal/entity_embed": "^1.0",
+        "drupal/entityqueue": "^1.2",
+        "drupal/eu_cookie_compliance": "^1.8",
+        "drupal/facets": "^1.5",
+        "drupal/facets_pretty_paths": "^1.0@beta",
+        "drupal/faqfield": "^7.0",
+        "drupal/fastly": "^3.9",
+        "drupal/field_group": "^3.0",
+        "drupal/flag": "^4.0@beta",
+        "drupal/geocoder": "^3.20",
+        "drupal/geolocation": "3.x",
+        "drupal/google_analytics": "^3.1",
+        "drupal/handy_cache_tags": "^1.0",
+        "drupal/honeypot": "^2.0",
+        "drupal/http_cache_control": "^2.0",
+        "drupal/inline_entity_form": "^1.0@RC",
+        "drupal/layout_builder_restrictions": "^2.12",
+        "drupal/linkit": "^6.0.0",
+        "drupal/media_entity_browser": "^2.0",
+        "drupal/media_library_edit": "^2.0",
+        "drupal/menu_admin_per_menu": "^1.3",
+        "drupal/menu_breadcrumb": "^1.13",
+        "drupal/metatag": "^1.8",
+        "drupal/migrate_absolute_links": "^2.0",
+        "drupal/migrate_upgrade": "^3.2",
+        "drupal/moderation_sidebar": "^1.4",
+        "drupal/node_edit_protection": "^1.0",
+        "drupal/noreferrer": "^1.7",
+        "drupal/paragraphs": "^1.12",
+        "drupal/pathauto": "^1.4",
+        "drupal/readonlymode": "^1.1",
+        "drupal/redirect": "^1.3",
+        "drupal/redis": "^1.5",
+        "drupal/scheduled_transitions": "^2.0",
+        "drupal/scheduler": "^1.3",
+        "drupal/scheduler_content_moderation_integration": "^1.1",
+        "drupal/schema_metatag": "^1.4",
+        "drupal/search_api": "^1.14",
+        "drupal/search_api_autocomplete": "^1.4",
+        "drupal/search_api_location": "^1.0@alpha",
+        "drupal/search_api_solr": "^4.1",
+        "drupal/search_api_spellcheck": "^3.0@beta",
+        "drupal/simplei": "^1.1",
+        "drupal/slick": "^2.2",
+        "drupal/slick_views": "^2.3",
+        "drupal/structure_sync": "^2.0",
+        "drupal/taxonomy_access_fix": "^3.1",
+        "drupal/taxonomy_manager": "^2.0",
+        "drupal/telephone_plus": "1.x-dev",
+        "drupal/token": "^1.5",
+        "drupal/token_filter": "^1.1",
+        "drupal/twig_field_value": "^2.0",
+        "drupal/twig_tweak": "^2.4",
+        "drupal/ultimate_cron": "^2.0@alpha",
+        "drupal/upgrade_status": "^3.4",
+        "drupal/views_contextual_filters_or": "^1.1",
+        "drupal/views_custom_cache_tag": "^1.1",
+        "drupal/webform": "^6.0",
+        "drupal/whatlinkshere": "^2.0",
+        "drush/drush": "^10.3",
+        "geocoder-php/google-maps-provider": "^4.6",
+        "harvesthq/chosen": "^1.8",
+        "kenwheeler/slick": "^1.8",
+        "oomphinc/composer-installers-extender": "^2.0",
+        "platformsh/config-reader": "^2.3",
+        "vlucas/phpdotenv": "^2.4"
+    },
+    "require-dev": {
+        "drupal/coder": "^8.3",
+        "drupal/core-dev": "^9.0.0",
+        "drupal/devel": "^4.1",
+        "drupal/easy_install": "^10.1",
+        "drupal/migrate_plus": "^5.1",
+        "drupal/migrate_tools": "^5.0",
+        "drupal/permissions_filter": "^1.1",
+        "drupal/stage_file_proxy": "^1.1",
+        "kint-php/kint": "^3.3",
+        "mglaman/drupal-check": "^1.1",
+        "previousnext/phpunit-finder": "^1.0@alpha",
+        "slevomat/coding-standard": "^7.0"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "patches": {
+            "drupal/core": {
+                "Prevent leftover fields from causing errors like 'Call to a member function getLabel() after enabling layout_builder'": "https://www.drupal.org/files/issues/2020-01-20/2985882-53.patch",
+                "Render blocks in preview page": "https://www.drupal.org/files/issues/2019-10-03/3085364_2.patch",
+                "Provide options to sanitize filenames (transliterate, lowercase, replace whitespace, etc)": "https://www.drupal.org/files/issues/2021-07-26/2492171-311.patch"
+            },
+            "drupal/media_browser_responsive_images": {
+                "Form alter applies for any media browser, not just image related ones": "https://www.drupal.org/files/issues/2019-12-17/media-browser-hook-checks-for-image-types.patch"
+            },
+            "drupal/easy_install": {
+                "Handle missing core version": "https://www.drupal.org/files/issues/2019-12-19/easy_install_core_version-3101883-0.patch",
+                "non-existent service entity.manager": "https://www.drupal.org/files/issues/2020-12-08/3162621-4.patch"
+            },
+            "drupal/redirect": {
+                "Add URL Redirects tab to taxonomy term edit form": "https://www.drupal.org/files/issues/2021-03-26/redirect_provide_redirect_tab_on_taxonomy_terms_3205896.patch",
+                "URL redirects listing only displays operations": "https://www.drupal.org/files/issues/2019-04-05/redirects_list_builder-3031125-9-d8.patch",
+                "Fix ajax error when creating redirects": "https://www.drupal.org/files/issues/2020-12-14/validation-issue-3057250-29.patch"
+            },
+            "drupal/cookie_content_blocker": {
+                "Disable XSS for tag settings to allow HTML output": "https://gist.githubusercontent.com/omahm/eb99bc8278b57798a7d82bf06c27b8d1/raw/d9d75e06300a102b072dd8166f82ec381f211b9d/cookie_content_blocker_disable_xss"
+            },
+            "drupal/hms_field": {
+                "Drupal 9 compatability": "https://www.drupal.org/files/issues/2020-06-06/hms_field.1.x-dev.rector.patch"
+            },
+            "drupal/scheduled_transitions": {
+                "No scheduled revisions appear for migrated nodes": "https://www.drupal.org/files/issues/2021-11-01/scheduled_transitions_base_language_3091006_2x.patch"
+            },
+            "drupal/ultimate_cron": {
+                "Fix test function issue": "https://www.drupal.org/files/issues/2021-04-13/kernel_test-3208608-1.patch"
+            },
+            "drupal/eu_cookie_compliance": {
+                "Banner at top is not hiding correctly": "https://git.drupalcode.org/project/eu-cookie-compliance/-/merge_requests/43.diff"
+            },
+            "drupal/readonlymode": {
+                "Fatal typerror fix": "https://www.drupal.org/files/issues/2020-12-23/readonlymode-string_not_array-3115119-9.patch"
+            },
+            "drupal/fastly": {
+                "Allow disabling of logging": "https://git.drupalcode.org/project/fastly/-/merge_requests/6.patch"
+            }
+        },
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library",
+                "harvesthq/chosen"
+            ],
+            "web/modules/origins": [
+                "dof-dss/nicsdru_origins_modules"
+            ],
+            "web/modules/custom": [
+                "dof-dss/nicsdru_unity_modules"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "web/profiles/unity/nicsdru_unity_profile": [
+                "dof-dss/nicsdru_unity_profile"
+            ],
+            "web/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "web/profiles/origins/{$name}": [
+                "dof-dss/nicsdru_origins_profile"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
+        },
+        "drupal-core-project-message": {
+            "include-keys": [
+                "homepage",
+                "support"
+            ],
+            "post-create-project-cmd-message": [
+                "<bg=blue;fg=white>                                                         </>",
+                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
+                "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
+                "<bg=blue;fg=white>                                                         </>",
+                "",
+                "<bg=yellow;fg=black>Next steps</>:",
+                "  * Install the site: https://www.drupal.org/docs/8/install",
+                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
+                "  * Get support: https://www.drupal.org/support",
+                "  * Get involved with the Drupal community:",
+                "      https://www.drupal.org/getting-involved",
+                "  * Remove the plugin that prints this message:",
+                "      composer remove drupal/core-project-message"
+            ]
+        }
+    }
+}
