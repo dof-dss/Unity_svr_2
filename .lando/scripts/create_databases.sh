@@ -2,9 +2,9 @@
 
 . /helpers/log.sh
 
-# Iterate every folder under web/sites and create a database with the default
+# Iterate every symlink (which web create for each site) under web/sites and create a database with the default
 # Lando database credentials if it doesn't already exist.
-for dir in $(find /app/web/sites/ -mindepth 1 -maxdepth 1 -type d) ; do
+for dir in $(find /app/web/sites/ -mindepth 1 -maxdepth 1 -type l) ; do
   database=${dir##*/} ;
 
   # Ignore the standard 'default' folder under web/sites.
