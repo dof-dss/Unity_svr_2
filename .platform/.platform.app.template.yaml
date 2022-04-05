@@ -2,6 +2,10 @@
 # in the same project.
 #
 # See https://docs.platform.sh/user_guide/reference/platform-app-yaml.html
+#
+# NOTE: DO NOT add site specific configuration to this file. The Unity shell
+# will populate this file with site config as part of the hosting:build
+# command.
 
 # The name of this app. Must be unique within a project.
 name: 'unity'
