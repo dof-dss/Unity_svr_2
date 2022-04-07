@@ -1,0 +1,293 @@
+version: 2.1
+
+# Re-usable commands.
+commands:
+  checkout_code:
+    description: "Handle composer access tokens, SSH key fingerprints and code checkout"
+    steps:
+      # Add SSH user key so we can access related repositories as part of our initial clone + composer install command.
+      - add_ssh_keys:
+          fingerprints:
+            - "63:d5:d9:74:c7:9c:80:83:9a:67:da:28:d2:a5:d3:e5"
+      - checkout
+  composer_tasks:
+    description: "Validate and install dependencies using composer"
+    steps:
+      - run:
+          name: Validate composer.json and composer.lock file for consistency
+          command: composer validate --no-check-all --strict
+      - restore_cache:
+          keys:
+            - composer-{{ checksum "composer.lock" }}
+      - run:
+          name: Fetch dependencies with composer
+          command: |
+            composer install --no-interaction --optimize-autoloader
+      - save_cache:
+          key: composer-{{ checksum "composer.lock" }}
+          paths:
+            - $HOME/.composer/cache
+  composer_tasks__no_cache:
+    description: "Validate and install dependencies using composer"
+    steps:
+      - run:
+          name: Validate composer.json and composer.lock file for consistency
+          command: composer validate --no-check-all --strict
+      - run:
+          name: Fetch dependencies with composer
+          command: |
+            composer install --no-interaction --optimize-autoloader
+  composer_tasks__edge_packages:
+    description: "Switch dof-dss packages to HEAD on development branch"
+    steps:
+      - run:
+          name: Switch dof-dss packages to HEAD on develelopment branch
+          command: |
+            composer require dof-dss/nicsdru_unity_theme:dev-development dof-dss/nicsdru_origins_modules:dev-development
+  install_psh_cli:
+    description: "Install the Platform.sh CLI tool"
+    steps:
+      - run:
+          name: Install the Platform.sh CLI tool
+          command: curl -sS https://platform.sh/cli/installer | php
+      - run:
+          name: Add platform cli tool to $PATH
+          command: echo 'export PATH="$HOME/"'.platformsh/bin':"$PATH"' >> $BASH_ENV
+
+  install_php_os_extensions:
+    description: "Install a standard group of extensions and packages"
+    steps:
+      - run:
+          name: Add OS and PHP extensions
+          command: |
+            sudo cp /home/circleci/project/.circleci/docker-php-circleci.ini /usr/local/etc/php/conf.d/
+            sudo apt-get update --allow-releaseinfo-change
+            sudo apt-get install -y libpng-dev
+            sudo docker-php-ext-install gd pcntl posix
+  hosts_keyscan:
+    description: "Adds github.com to known hosts in container; for working locally."
+    steps:
+      - run:
+          name: Keyscan for hosts that require SSH access
+          command: |
+            mkdir -p ~/.ssh
+            ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+            ssh-keyscan -H ssh.$PLATFORM_REGION >> ~/.ssh/known_hosts
+jobs:
+  # Tests the integrity of the build, stores the results in a workspace for re-use in later jobs.
+  build:
+    docker:
+      - image: circleci/php:7.4.15-apache-browsers
+    steps:
+      - checkout_code
+      - install_php_os_extensions
+      - composer_tasks
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - ./
+
+  # Test for coding standards - will inherit the workspace/filesystem changes from build step, above.
+  coding_standards:
+    docker:
+      - image: circleci/php:7.4.15-apache-browsers
+    environment:
+      PROJECT_ROOT: "/home/circleci/project"
+    steps:
+      - attach_workspace:
+          at: ./
+      - run: sudo cp /home/circleci/project/.circleci/docker-php-circleci.ini /usr/local/etc/php/conf.d/
+      - run:
+          name: PHPCS analysis
+          command: |
+            CHECK_DIRS="${PROJECT_ROOT}/web/sites"
+            CHECK_DIRS="${CHECK_DIRS} ${PROJECT_ROOT}/web/modules/custom"
+            CHECK_DIRS="${CHECK_DIRS} ${PROJECT_ROOT}/web/modules/origins"
+            CHECK_DIRS="${CHECK_DIRS} ${PROJECT_ROOT}/web/themes/custom"
+            CHECK_DIRS="${CHECK_DIRS} ${PROJECT_ROOT}/web/profiles/unity"
+            CHECK_DIRS="${CHECK_DIRS} ${PROJECT_ROOT}/web/profiles/origins"
+            ~/project/phpcs.sh ${PROJECT_ROOT} $CHECK_DIRS
+
+  # Test for deprecated code - will inherit the workspace/filesystem changes from build step, above.
+  deprecated_code:
+    docker:
+      - image: circleci/php:7.4.15-apache-browsers
+    environment:
+      PROJECT_ROOT: "/home/circleci/project"
+    steps:
+      - attach_workspace:
+          at: ./
+      - run: sudo cp /home/circleci/project/.circleci/docker-php-circleci.ini /usr/local/etc/php/conf.d/
+      - run:
+          name: Deprecated code check
+          command: |
+            cd /home/circleci/project
+            CHECK_DIRS="${PROJECT_ROOT}/web/modules/custom"
+            CHECK_DIRS="$CHECK_DIRS ${PROJECT_ROOT}/web/modules/origins"
+            vendor/bin/drupal-check $CHECK_DIRS
+
+  # Nightly edge build
+  edge_build:
+    docker:
+      - image: circleci/php:7.4.15-apache-node-browsers
+    environment:
+      # git variables to avoid empty committer identity errors
+      EMAIL: "circleci@localhost"
+      GIT_COMMITTER_NAME: "Circle CI"
+      GIT_AUTHOR_NAME: "Circle CI"
+      EDGE_BUILD_BRANCH: "D8UN-edge"
+      PLATFORM_REGION: "uk-1.platform.sh"
+    steps:
+      - hosts_keyscan
+      - checkout_code
+      - install_php_os_extensions
+      - install_psh_cli
+      - run:
+          name: Switch to edge branch
+          command: git checkout -b $EDGE_BUILD_BRANCH
+      - composer_tasks__edge_packages
+      - run:
+          name: Push composer package updates back to GitHub
+          command: |
+            git add composer.*
+            git commit -m "Set dof-dss packages to HEAD development for build"
+      - run:
+          name: Re-build site theme npm dependencies
+          command: |
+            # Need to re-build site theme with any Unity changes.
+            # Download and configure node and npm.
+            sudo apt install libjpeg-dev automake
+            for site in `ls -l ~/project/web/sites | grep ^d | awk '{print $9}'`
+            do
+              if [[ -d ~/project/web/sites/${site}/themes/${site}_theme ]]; then
+                cd ~/project/web/sites/${site}/themes/${site}_theme
+                sed -i -e "s/\"nicsdru_unity_theme.*/\"nicsdru_unity_theme\": \"github:dof-dss\/nicsdru_unity_theme#development\",/" package.json
+                npm install
+                npm rebuild node-sass
+                npm run build
+
+                git add *.css
+                git commit -m "Theme rebuild"
+              else
+                echo "No theme folder detected under ~/project/web/sites/${site}/themes/${site}_theme, skipping."
+              fi
+            done
+
+            # Push to fixed, non-integrating build branch. GitHub webhook integration will propagate this
+            # to platform.sh for later steps to use.
+            git push -f origin $EDGE_BUILD_BRANCH
+
+  # Separate task to allow us to sync data on PSH environments, without pauses in other jobs.
+  sync_data:
+    docker:
+      - image: circleci/php:7.4.15-apache-browsers
+    steps:
+      - hosts_keyscan
+      - checkout_code
+      - install_php_os_extensions
+      - install_psh_cli
+      - run:
+          name: Trigger a data sync from master environment to nightly edge build.
+          command: |
+            platform sync data -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH -y
+      - run:
+          name: Backup data sync if the previous attempt failed.
+          command: |
+            # Pause for the blocking activity to finish.
+            sleep 90s
+            platform sync data -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH -y
+          when: on_fail
+      - run:
+          name: Turn off fastly module to allow for cleaner config import
+          command: |
+            for site in `ls -l ~/project/web/sites | grep ^d | awk '!/default/{print $9}'`
+            do
+              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
+              if [[ -n $result ]]; then
+                result2=$(platform drush "pml -l ${site}" -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH | (grep "Fastly (fastly)" || true) )
+                if [[ -n $result2 ]]; then
+                  echo "***** Uninstall Fastly - ${site} *****"
+                  platform drush "pmu fastly -l ${site}" -y -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH
+                fi
+            fi
+            done
+      - run:
+          name: Clear cache before config import
+          command: |
+            for site in `ls -l ~/project/web/sites | grep ^d | awk '!/default/{print $9}'`
+            do
+              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
+              if [[ -n $result ]]; then
+                echo "***** Clear Cache - ${site} *****"
+                platform drush "cr -l ${site}" -y -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH
+              fi
+            done
+      - run:
+          name: Refresh configuration as our db will contain active prod config after sync operation
+          command: |
+            for site in `ls -l ~/project/web/sites | grep ^d | awk '!/default/{print $9}'`
+            do
+              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
+              if [[ -n $result ]]; then
+                echo "***** Config Import - ${site} *****"
+                platform drush "cim -l ${site}" -y -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH
+              fi
+            done
+      - run:
+          name: Purge and rebuild Solr indexes
+          command: |
+            for site in `ls -l ~/project/web/sites | grep ^d | awk '!/default/{print $9}'`
+            do
+              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
+              if [[ -n $result ]]; then
+                result2=$(platform drush "pml --status=enabled -l ${site}" -y -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH | (grep "solr" || true) )
+                if [[ -n $result2 ]]; then
+                  echo "***** Purge Solr index for - ${site} *****"
+                  platform ssh -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH \
+                    "curl http://${site}_solr.internal:8080/solr/${site}_index/update --data '<delete><query>*:*</query></delete>' -H 'Content-type:text/xml; charset=utf-8' \
+                      && curl http://${site}_solr.internal:8080/solr/${site}_index/update --data '<commit/>' -H 'Content-type:text/xml; charset=utf-8'"
+                  echo "***** Rebuild the Solr index for - ${site} *****"
+                  platform drush "sapi-c -l ${site}" -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH
+                  platform drush "sapi-r -l ${site}" -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH
+                  platform drush "sapi-i -l ${site}" -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH
+                fi
+              fi
+            done
+
+workflows:
+  version: 2
+  build-test-deploy:
+    jobs:
+      - build
+      - coding_standards:
+          requires:
+            - build
+      - deprecated_code:
+          requires:
+            - build
+
+  # A nightly build of the project, using all dof-dss packages at HEAD from development branch.
+  nightly-edge-build:
+    triggers:
+      - schedule:
+          # At 00:30 Monday to Friday
+          cron: "30 0 * * 1-5"
+          filters:
+            branches:
+              only:
+                - development
+    jobs:
+      - edge_build
+
+  # A nightly deploy or re-deploy of the edge site after the git branch has been created in nightly-edge-build.
+  nightly-edge-build-post-build-tasks:
+    triggers:
+      - schedule:
+          # At 01:23 Monday to Friday
+          cron: "23 1 * * 1-5"
+          filters:
+            branches:
+              only:
+                - D8UN-edge
+    jobs:
+      - sync_data
