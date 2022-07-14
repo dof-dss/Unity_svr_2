@@ -22,7 +22,7 @@ fi
 for site in `ls -l web/sites | grep ^d | awk '!/default/{print $9}'`
 do
   echo "** $site **"
-  ${PREFIX} drush -l $site $1 $2 $3
+  ${PREFIX} drush -l $site $1 $2 $3 $4 $5
 done
 
 

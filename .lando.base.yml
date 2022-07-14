@@ -24,12 +24,6 @@ services:
     persist: true
     config:
       server: .lando/config/redis.conf
-  uregni_solr:
-    type: solr:7
-    portforward: true
-    core: default
-    config:
-      dir: .lando/config/solr/7.x/default
   mailhog:
     type: mailhog
     portforward: true
