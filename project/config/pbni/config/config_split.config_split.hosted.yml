@@ -1,0 +1,15 @@
+uuid: 2f229b21-2e73-40b4-ac30-5e12919d9f49
+langcode: en
+status: true
+dependencies: {  }
+id: hosted
+label: hosted
+description: 'Use for any that are ''hosted'' and not running locally, apart from production (which has its own split).'
+weight: 0
+folder: ../config/pbni/hosted
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

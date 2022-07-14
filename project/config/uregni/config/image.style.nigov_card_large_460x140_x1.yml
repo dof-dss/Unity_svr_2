@@ -1,0 +1,15 @@
+uuid: 4bf208e5-1b44-47d6-ae6b-0ebbc9ceb9e8
+langcode: en
+status: true
+dependencies: {  }
+name: nigov_card_large_460x140_x1
+label: 'nigov card large 460x140 (x1)'
+effects:
+  913f9ec5-4f88-47a7-ae09-56bdc7f9453b:
+    uuid: 913f9ec5-4f88-47a7-ae09-56bdc7f9453b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 460
+      height: 140
+      anchor: center-center

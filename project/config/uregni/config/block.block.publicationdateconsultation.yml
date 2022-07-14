@@ -1,0 +1,29 @@
+uuid: 66f68daa-a3a8-472d-aafd-9cc4e1cd0eb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.publication_date_consultation
+  module:
+    - facets
+    - system
+  theme:
+    - uregni_theme
+id: publicationdateconsultation
+theme: uregni_theme
+region: search_facets
+weight: -7
+provider: null
+plugin: 'facet_block:publication_date_consultation'
+settings:
+  id: 'facet_block:publication_date_consultation'
+  label: 'Publication date'
+  provider: facets
+  label_display: visible
+  block_id: publicationdateconsultation
+visibility:
+  request_path:
+    id: request_path
+    pages: "/consultations\r\n/consultations/topic/*\r\n/consultations/date/*"
+    negate: false
+    context_mapping: {  }

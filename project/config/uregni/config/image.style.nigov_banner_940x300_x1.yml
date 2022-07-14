@@ -1,0 +1,15 @@
+uuid: 88202abb-8b96-4c0f-a1bc-0a2ae483db3c
+langcode: en
+status: true
+dependencies: {  }
+name: nigov_banner_940x300_x1
+label: 'nigov banner 940x300 (x1)'
+effects:
+  bcbdf9db-d43d-4359-8295-30ce6b5e0ed3:
+    uuid: bcbdf9db-d43d-4359-8295-30ce6b5e0ed3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 940
+      height: 300
+      anchor: center-center

@@ -1,0 +1,15 @@
+uuid: ec1da22d-144d-4d50-aecd-73f64e762d2a
+langcode: en
+status: true
+dependencies: {  }
+name: nigov_card_small_300x150_x1
+label: 'nigov card small 300x150 (x1)'
+effects:
+  10bd3429-8ea4-4c85-9dd9-1c699d95aed1:
+    uuid: 10bd3429-8ea4-4c85-9dd9-1c699d95aed1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 150
+      anchor: center-center

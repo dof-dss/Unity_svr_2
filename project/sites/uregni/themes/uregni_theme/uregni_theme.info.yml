@@ -1,0 +1,45 @@
+name: Uregni Theme
+type: theme
+description: 'Base theme for Uregni D8'
+package: NICS
+core_version_requirement: 8.x || ^9
+
+libraries:
+  - uregni_theme/site-styling
+  - nicsdru_unity_theme/unity-slider
+  - nicsdru_unity_theme/autocomplete
+
+libraries-override:
+  nicsdru_unity_theme/unity-global-styling:
+    css:
+      theme:
+        css/styles.css: false
+
+base theme: nicsdru_unity_theme
+
+regions:
+  header: 'Site branding'
+  search: 'Search'
+  primary_menu: 'Main menu'
+  slideshow: 'Slideshow'
+  front_welcome: 'Front welcome'
+  top_first: 'First top'
+  top_second: 'Second top'
+  top_third: 'Third top'
+  breadcrumb: 'Breadcrumb'
+  search_facets: 'Search facets'
+  sidebar_first: 'First sidebar'
+  sidebar_second: 'Sidebar second'
+  content: 'Content'
+  bottom_widget_1: 'Bottom widget 1'
+  bottom_widget_2: 'Bottom widget 2'
+  bottom_widget_3: 'Bottom widget 3'
+  bottom_widget_4: 'Bottom widget 4'
+  bottom_widget_5: 'Bottom widget 5'
+  footer_first: 'First Bottom'
+  footer_second: 'Second Bottom'
+  footer_third: 'Third Bottom'
+  footer_fourth: 'Fourth Bottom'
+  footer_fifth: 'Fifth Bottom'
+  footer_sixth: 'Sixth Bottom'
+  footer: 'Footer Bottom'

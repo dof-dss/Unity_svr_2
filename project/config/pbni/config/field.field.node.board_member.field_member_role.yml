@@ -1,0 +1,19 @@
+uuid: dc5e74e8-e9fc-48e3-9392-8ac9614f54c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_member_role
+    - node.type.board_member
+id: node.board_member.field_member_role
+field_name: field_member_role
+entity_type: node
+bundle: board_member
+label: 'Member role'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,31 @@
+uuid: 864cd965-14ed-4d81-bde8-f6cf72518621
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:8d49e3ec-7a63-4639-948f-17c50b30b0ea'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - uregni_theme
+id: disabilityconfident
+theme: uregni_theme
+region: footer_fifth
+weight: -18
+provider: null
+plugin: 'block_content:8d49e3ec-7a63-4639-948f-17c50b30b0ea'
+settings:
+  id: 'block_content:8d49e3ec-7a63-4639-948f-17c50b30b0ea'
+  label: 'Disability Confident'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

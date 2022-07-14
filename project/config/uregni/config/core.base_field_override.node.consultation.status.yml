@@ -1,0 +1,22 @@
+uuid: 28e58daf-7a62-4eb9-9e80-3cd61a660731
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.consultation
+id: node.consultation.status
+field_name: status
+entity_type: node
+bundle: consultation
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

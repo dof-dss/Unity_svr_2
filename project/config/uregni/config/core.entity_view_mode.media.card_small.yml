@@ -1,0 +1,10 @@
+uuid: 2e80d6c8-1183-4895-b20f-0debc6148428
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.card_small
+label: 'Card small'
+targetEntityType: media
+cache: true

@@ -1,0 +1,10 @@
+uuid: 332b59de-21f9-412d-ac5e-702352362b76
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.uregni_logo
+label: Uregni_logo
+targetEntityType: media
+cache: true

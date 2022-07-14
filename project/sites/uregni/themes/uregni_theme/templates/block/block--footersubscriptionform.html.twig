@@ -1,0 +1,59 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - content_attributes: Same as attributes, except applied to the main content
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+  'block',
+  'block-' ~ configuration.provider|clean_class,
+  'block-' ~ plugin_id|clean_class,
+]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {% block content %}
+    <div{{ content_attributes.addClass('content') }}>
+      {{ content }}
+
+      <div class="feedblitz-custom-form">
+        <form name="FeedBlitz_f437a43daac811e3915b002590771163" method="POST" action="https://app.feedblitz.com/f/f.fbz?AddNewUserDirect" class="subscribe_form2">
+          <div class="form-item">
+            <label for="email" class="visually-hidden">Enter your email address to subscribe to our news alert service.</label>
+            <input name="EMAIL" id="email" class="form-text" maxlength="64" type="email" size="25" value="" placeholder="Please enter your email">
+          </div>
+          <input name="EMAIL_" type="hidden" value="">
+          <input name="EMAIL_ADDRESS" type="hidden" value=""> <input name="FEEDID" type="hidden" value="829104">
+          <input name="cids" type="hidden" value="1">
+          <input name="PUBLISHER" type="hidden" value="28302245">
+          <input type="submit" value="Sign up" class="btn" onclick="FeedBlitz_f437a43daac811e3915b002590771163s(this.form);">
+        </form>
+      </div>
+    </div>
+  {% endblock %}
+</div>

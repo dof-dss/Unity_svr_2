@@ -1,0 +1,25 @@
+uuid: 6fe28443-09bc-469c-9b23-b854714f51f9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:7efbaa9e-22a2-4819-9822-9d157ce79a78'
+  module:
+    - block_content
+  theme:
+    - uregni_theme
+id: footercontactinformation
+theme: uregni_theme
+region: footer_second
+weight: 0
+provider: null
+plugin: 'block_content:7efbaa9e-22a2-4819-9822-9d157ce79a78'
+settings:
+  id: 'block_content:7efbaa9e-22a2-4819-9822-9d157ce79a78'
+  label: 'Footer contact information'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

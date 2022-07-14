@@ -1,0 +1,20 @@
+uuid: dd1cb2c5-85de-43f7-9422-b874cc265cdd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pbni_theme
+id: breadcrumbs
+theme: pbni_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

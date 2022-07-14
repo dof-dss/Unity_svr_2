@@ -1,0 +1,31 @@
+uuid: c736c641-78ea-48e6-ab55-c8d4fc8f370f
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.nigov_full_1240_x2
+    - image.style.nigov_full_1880_x2
+    - image.style.nigov_full_450_x1
+    - image.style.nigov_full_620_x1
+    - image.style.nigov_full_900_x2
+    - image.style.nigov_full_940_x1
+_core:
+  default_config_hash: 1ect2-zv0sQj6bnfHbTIAlounTDDbifE6n7DZjaBgw8
+id: inline_xl_expandable
+label: 'Inline full width expandable'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - nigov_full_1240_x2
+        - nigov_full_1880_x2
+        - nigov_full_450_x1
+        - nigov_full_620_x1
+        - nigov_full_900_x2
+        - nigov_full_940_x1
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: nigov_full_940_x1

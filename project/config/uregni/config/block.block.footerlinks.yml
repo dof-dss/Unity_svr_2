@@ -1,0 +1,25 @@
+uuid: 16d22690-1088-4b54-bc3f-7fce9ebc226c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-footer-links
+  module:
+    - system
+  theme:
+    - uregni_theme
+id: footerlinks
+theme: uregni_theme
+region: footer
+weight: -17
+provider: null
+plugin: 'system_menu_block:menu-footer-links'
+settings:
+  id: 'system_menu_block:menu-footer-links'
+  label: 'Footer links'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

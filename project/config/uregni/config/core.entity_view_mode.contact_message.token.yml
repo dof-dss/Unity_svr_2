@@ -1,0 +1,12 @@
+uuid: 4f06a135-8304-4828-a717-95e6d5583be9
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+_core:
+  default_config_hash: ani4t_fIhX6XlnRmn5qohz4N4Az9idbiwDS5GfHrm50
+id: contact_message.token
+label: Token
+targetEntityType: contact_message
+cache: true

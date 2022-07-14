@@ -1,0 +1,15 @@
+uuid: 694d25d6-dcbf-44d3-b020-7c83bfb54824
+langcode: en
+status: true
+dependencies: {  }
+name: nigov_full_620_x1
+label: 'nigov full 620 (x1)'
+effects:
+  565c7641-5183-4c6b-b343-abe68d92653a:
+    uuid: 565c7641-5183-4c6b-b343-abe68d92653a
+    id: image_scale
+    weight: 1
+    data:
+      width: 620
+      height: null
+      upscale: false

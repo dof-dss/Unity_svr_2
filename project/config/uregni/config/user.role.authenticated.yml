@@ -1,0 +1,25 @@
+uuid: 4c72c9ed-51eb-45da-aa70-3ba99eac6d3f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: VoGMwue3ygKarnYt6zeRWNo6OkRUJNmOUehXtCf0jvY
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'opt-in or out of google analytics tracking'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use search_api_autocomplete for search'
+  - 'use text format basic_html'
+  - 'use text format basic_html_publications'
+  - 'view all revisions'
+  - 'view media'
+  - 'view own unpublished content'

@@ -1,0 +1,22 @@
+uuid: 58e31a7d-f23a-4207-a5aa-5009c6d37d71
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vacancy
+id: node.vacancy.status
+field_name: status
+entity_type: node
+bundle: vacancy
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

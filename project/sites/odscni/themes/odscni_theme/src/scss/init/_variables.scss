@@ -1,0 +1,49 @@
+// Variables
+//
+// Set variables for this site. These can be overridden in the scss code later.
+//
+// Weight: -9
+//
+// Style guide: init.variables
+
+/* Vertical rhythm presets =========================================== */
+// The font size set on the root html element.
+$base-font-size: 10px;
+
+// The base line height determines the basic unit of vertical rhythm.
+$base-line-height: 6px;
+
+// The length unit in which to output vertical rhythm values.
+// Supported values: px, em, rem.
+$rhythm-unit: 'rem';
+
+// Whether to output fallback values in px when using rem as the rhythm-unit.
+$rem-with-px-fallback: false;
+
+// Round the line height to the nearest half line height instead of the nearest integral line height.
+$round-to-nearest-half-line: true;
+
+
+/* Breakpoints ======================================================== */
+$mob: 440px;
+$phab: 641px;
+$tab: 766px;
+$lap: 961px;
+$desk: 1153px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: $mob,
+  md: $phab,
+  lg: $tab,
+  xl: $lap,
+  xxl: $desk,
+) !default;
+
+// The amount lists, blockquotes and comments are indented.
+$indent-amount: 1.8rem;
+
+// Set the grid sizes with a default value that can be overwritten on a per theme basis.
+$max-grid-width: 1024px !default;
+
+$two-col-layout-sidebar-second: (65%, 30%);

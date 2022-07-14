@@ -1,0 +1,26 @@
+uuid: f2efdb86-6b18-4521-b8c1-752bc63d4421
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - origins_toc
+third_party_settings:
+  menu_ui:
+    parent: ''
+    available_menus: {  }
+  origins_toc:
+    toc_enable: 0
+    toc_title: 'Table of contents'
+    toc_location: ''
+    toc_insert: after
+    toc_source_container: ''
+    toc_element: h2
+    toc_exclusions: ''
+name: Vacancy
+type: vacancy
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

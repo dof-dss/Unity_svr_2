@@ -1,0 +1,21 @@
+uuid: 1fa9e5ca-23dc-454f-920c-f903cd4d2961
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_member_role
+field_name: field_member_role
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

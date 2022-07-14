@@ -1,0 +1,35 @@
+uuid: e91f0560-f312-4672-9294-d44b18249378
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.date
+  module:
+    - block_visibility_groups
+    - facets
+    - system
+  theme:
+    - uregni_theme
+id: date
+theme: uregni_theme
+region: search_facets
+weight: -11
+provider: null
+plugin: 'facet_block:date'
+settings:
+  id: 'facet_block:date'
+  label: Date
+  provider: facets
+  label_display: visible
+  block_id: date
+visibility:
+  request_path:
+    id: request_path
+    pages: "/publications\r\n/publications/date/*\r\n/publications/type/*\r\n/publications/topic/*"
+    negate: false
+    context_mapping: {  }
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

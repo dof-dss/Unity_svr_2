@@ -1,0 +1,20 @@
+uuid: cac55d78-4211-4699-94b3-a1613c24263f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_vacancy_attachments
+field_name: field_vacancy_attachments
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

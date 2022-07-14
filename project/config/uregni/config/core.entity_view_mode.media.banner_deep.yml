@@ -1,0 +1,10 @@
+uuid: a8931073-5223-4b40-a1a9-540a3872ea3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.banner_deep
+label: 'Banner deep'
+targetEntityType: media
+cache: true

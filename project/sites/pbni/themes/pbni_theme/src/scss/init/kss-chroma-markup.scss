@@ -1,0 +1,8 @@
+// @file
+// This is a helper file to generate markup to the kss chroma.twig template.
+// The code is generated to a corresponding css file in the css directory and via a npm script is then cloned to the
+// the `chroma.twig` file in this directory. The css is specifically excluded from the the repo via `.gitignore`.
+@import 'index';
+/*
+#{chroma-kss-markup()}
+*/

@@ -1,0 +1,26 @@
+uuid: 2edfd65b-2fb2-4a59-98df-ff64b4fbe4bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_topic
+    - node.type.consultation
+    - taxonomy.vocabulary.publications_topics
+id: node.consultation.field_publication_topic
+field_name: field_publication_topic
+entity_type: node
+bundle: consultation
+label: Topic
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      publications_topics: publications_topics
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

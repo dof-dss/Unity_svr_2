@@ -1,0 +1,80 @@
+name: unity_svr_2
+type: 'php:7.4'
+dependencies:
+    php:
+        composer/composer: ^2
+runtime:
+    extensions:
+        - apcu
+        - redis
+disk: 30720
+mounts:
+    /web/files:
+        source: local
+        source_path: files
+    /tmp:
+        source: local
+        source_path: tmp
+    /private:
+        source: local
+        source_path: private
+    /.drush:
+        source: local
+        source_path: drush
+    /drush-backups:
+        source: local
+        source_path: drush-backups
+    /.console:
+        source: local
+        source_path: console
+build:
+    flavor: composer
+hooks:
+    build: "set -e\n"
+    post_deploy: "set -e\n\n# Save the Fastly service value and overwrite with a dummy one in order to break\n# the connection to Fastly, otherwise any cache clear of any site will purge the\n# entire Fastly cache - we don't want this to happen as we'd like Fastly to continue\n# serving the sites to anonymous users during a release.\necho \"***** Breaking connection to Fastly ******\"\ntemp=$FASTLY_API_SERVICE\nexport FASTLY_API_SERVICE=dummyservice\n\n# For each multi site - run db-updates and import config.\nfor site in uregni odscni pbni\ndo\n  echo \"****** $site deployment ******\"\n  cd /app/web/sites/$site\n  # Disable Fastly logging\n  drush disable-fastly-logging\n  # Readonlymode module should be installed on all sites,\n  # but we'll just make sure.\n  drush en readonlymode -l $site -y\n  # Set site to readonly just in case editors are logged on.\n  drush -l $site cset readonlymode.settings enabled 1 -y\n  drush -l $site -y cache-rebuild\n  drush -l $site -y config-import\n  drush -l $site -y updatedb\n  drush -l $site import-all-if-installed safe\n  # Turn off readonly mode.\n  drush -l $site cset readonlymode.settings enabled 0 -y\ndone\n\n# Reconnect to Fastly\necho \"***** Reinstate connection to Fastly ******\"\nexport FASTLY_API_SERVICE=$temp\n\n# For each multi site - clear cache (including Fastly cache)\nfor site in uregni odscni pbni\ndo\n  echo \"****** $site cache clear ******\"\n  cd /app/web/sites/$site\n  drush -l $site -y cache-rebuild\n  # Enable Fastly logging\n  drush enable-fastly-logging\ndone\n"
+web:
+    locations:
+        /:
+            root: web
+            expires: 5m
+            passthru: /index.php
+            allow: false
+            rules:
+                '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$':
+                    allow: true
+                ^/robots\.txt$:
+                    allow: true
+                ^/sitemap\.xml$:
+                    allow: true
+                ^\/sites\/.+\/themes\/.+\/images\/favicons\/.+\.webmanifest$:
+                    allow: true
+                    expires: 2w
+                ^/sites/sites\.php$:
+                    scripts: false
+                '^/sites/[^/]+/settings.*?\.php$':
+                    scripts: false
+        /files:
+            allow: true
+            expires: 1d
+            passthru: /index.php
+            root: web/files
+            scripts: false
+            rules:
+                ^/sites/default/files/(css|js):
+                    expires: 2w
+relationships:
+    uregni: 'db:uregni'
+    uregni_solr: 'solr:uregni'
+    odscni: 'db:odscni'
+    pbni: 'db:pbni'
+    pbni_solr: 'solr:pbni'
+cron:
+    uregni:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/nifiscalcouncil ; drush core-cron'
+    odscni:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/odscni ; drush core-cron'
+    pbni:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/pbni ; drush core-cron'

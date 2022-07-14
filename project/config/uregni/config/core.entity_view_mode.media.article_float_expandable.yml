@@ -1,0 +1,10 @@
+uuid: eadd4b65-fbce-4cc0-8e80-815af6e6bc9c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.article_float_expandable
+label: 'Article float expandable'
+targetEntityType: media
+cache: true

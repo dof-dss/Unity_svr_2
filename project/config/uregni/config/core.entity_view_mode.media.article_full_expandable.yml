@@ -1,0 +1,10 @@
+uuid: fd2f9c80-55e8-4da1-b4ee-e9e6bba207c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.article_full_expandable
+label: 'Article full expandable'
+targetEntityType: media
+cache: true

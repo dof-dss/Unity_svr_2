@@ -1,0 +1,28 @@
+uuid: f1a70f3a-5265-4413-be40-f2efe7ac6333
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_member_image
+    - media.type.image
+    - node.type.staff_member
+id: node.staff_member.field_member_image
+field_name: field_member_image
+entity_type: node
+bundle: staff_member
+label: 'Member image'
+description: 'Please choose an image  to be displayed with this board member. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

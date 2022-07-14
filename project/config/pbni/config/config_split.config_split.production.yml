@@ -1,0 +1,18 @@
+uuid: 08d87d16-6a9e-44da-9a5e-a55075cf8835
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: production
+description: 'Used for the production site only.'
+weight: 0
+folder: ../config/pbni/production
+module:
+  fastly: 0
+theme: {  }
+blacklist:
+  - fastly.settings
+graylist:
+  - pbni_theme.settings
+graylist_dependents: true
+graylist_skip_equal: true

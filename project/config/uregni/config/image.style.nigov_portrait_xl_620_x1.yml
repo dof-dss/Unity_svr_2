@@ -1,0 +1,15 @@
+uuid: 6dac7e87-7518-4311-8775-96f2774f8943
+langcode: en
+status: true
+dependencies: {  }
+name: nigov_portrait_xl_620_x1
+label: 'nigov portrait xl 620 (x1)'
+effects:
+  19e5c382-90e2-45fd-a569-bdc94908c0b9:
+    uuid: 19e5c382-90e2-45fd-a569-bdc94908c0b9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 620
+      height: 930
+      anchor: center-center

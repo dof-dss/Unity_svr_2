@@ -1,0 +1,30 @@
+uuid: bda6fb3d-45ee-45e0-9516-e40377477bbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.vacancy
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    basic_html_publications: '0'
+    full_html: '0'
+    plain_text: '0'
+id: node.vacancy.body
+field_name: body
+entity_type: node
+bundle: vacancy
+label: 'Job description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,29 @@
+uuid: e45deb5b-3fdc-430a-8584-6984e68c6b9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - origins_toc
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  origins_toc:
+    toc_enable: 0
+    toc_title: 'Table of contents'
+    toc_location: ''
+    toc_insert: after
+    toc_source_container: ''
+    toc_element: h2
+    toc_exclusions: ''
+_core:
+  default_config_hash: xzHFwCCVjLDmkJUuW8riSxMaf7WfnCZDNFNqgb35HdU
+name: 'Consultation page'
+type: consultation
+description: 'Use <em>consultation pages</em> for publishing non-HTML content such as PDF documents which have a closing date.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

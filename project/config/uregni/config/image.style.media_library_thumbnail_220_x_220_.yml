@@ -1,0 +1,15 @@
+uuid: 695dedfd-b83f-4cb3-9807-9c773188217b
+langcode: en
+status: true
+dependencies: {  }
+name: media_library_thumbnail_220_x_220_
+label: 'Media Library thumbnail (220 x 220)'
+effects:
+  9804a004-795f-4c33-9816-aeebfd45f754:
+    uuid: 9804a004-795f-4c33-9816-aeebfd45f754
+    id: image_scale
+    weight: 1
+    data:
+      width: 220
+      height: 220
+      upscale: false

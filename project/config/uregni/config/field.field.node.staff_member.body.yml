@@ -1,0 +1,30 @@
+uuid: c9cecc56-06f7-4667-9ae8-b31fc92ebc9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.staff_member
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    basic_html_publications: '0'
+    full_html: '0'
+    plain_text: '0'
+id: node.staff_member.body
+field_name: body
+entity_type: node
+bundle: staff_member
+label: Body
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

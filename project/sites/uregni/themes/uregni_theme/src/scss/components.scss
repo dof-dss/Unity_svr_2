@@ -1,0 +1,532 @@
+/*
+ * @file
+ * Defines the components for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+// Components / modules
+//
+// Components / modules are the reusable, modular parts of any design. They are the callouts, the sidebar sections,
+// the product lists and so on.
+//
+// Weight: -6
+//
+// Style guide: components
+
+#logo {
+  a {
+    display: block;
+
+    &:focus {
+      background: none;
+      border-bottom: none;
+      outline: 0.3rem dashed #949494;
+      outline-offset: 1.2rem;
+    }
+  }
+}
+
+.breadcrumb {
+  padding: 0;
+
+  .breadcrumb--list {
+    margin-left: .4rem;
+
+    @media screen and (min-width: $lap) {
+      margin-left: 2rem;
+    }
+  }
+
+  .breadcrumb--item a {
+    padding: 0 1px;
+  }
+}
+
+#block-consumerinformationhome {
+  background: #78cbbf;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  clear: right;
+
+  @include breakpoint($tab) {
+    background: #78cbbf resolve('customer-info.png') right center no-repeat;
+    background-size: auto 100%;
+    min-height: 270px;
+  }
+
+  h2 {
+    color: $brand-tertiary;
+
+    @include breakpoint($tab) {
+      font-size: 4.8rem;
+      line-height: 5.4rem;
+      margin: 0;
+    }
+  }
+
+  a.btn {
+    background: $brand-secondary;
+  }
+
+  .content {
+    @include breakpoint($tab) {
+      width: 30%;
+      padding: 3rem 0 0 2rem;
+    }
+  }
+}
+
+a.btn,
+input[type="submit"].btn {
+  background: $brand-primary;
+  padding: .6rem 1.6rem;
+  color: $white;
+}
+
+.front {
+  .block {
+    h2 {
+      @include responsive-typo-map($h2-text);
+      margin: 0;
+      padding: 1rem 1rem 1rem 0;
+    }
+  }
+
+  .block-system-main-block {
+    h2 {
+      @include adjust-font-size-to(24px, 5);
+
+      @include breakpoint($phab) {
+        @include adjust-font-size-to(30px, 6);
+      }
+      color: $brand-primary;
+      margin: 0.9rem 0 2.1rem;
+    }
+
+    p {
+      @include responsive-typo-map($h3-text);
+
+      @include breakpoint($phab) {
+        @include adjust-font-size-to(21px);
+      }
+    }
+
+    p,
+    h2 {
+      font-weight: 200;
+      letter-spacing: -.3px;
+    }
+  }
+}
+
+#block-sidemenu {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  ul {
+    border: 1px solid #ccc;
+    margin: .5rem 0;
+    list-style: none;
+
+    li {
+      border-bottom: 1px solid #ccc;
+      margin: 0;
+      padding: 0;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      span.link__self {
+        background: $link-hover-background;
+        border-bottom: 4px solid #333;
+        color: #333;
+        display: block;
+        padding: 1rem 1.5rem .6rem;
+      }
+
+      a {
+        border-bottom: 4px solid transparent;
+        color: #555;
+        display: block;
+        padding: 1rem 1.5rem .6rem;
+
+        &:hover,
+        &:focus {
+          background: #ccc;
+          color: #333;
+          outline: 1px solid;
+        }
+      }
+
+      ul {
+        border: none;
+
+        li {
+          padding-left: 1rem;
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.feedblitz-custom-form,
+.webform-submission-form {
+  input[type="submit"] {
+    @include responsive-typo-map($normal-text);
+    border: 3px solid transparent;
+    background-image: none;
+    color: #fff;
+    font-weight: normal;
+    text-shadow: none;
+    text-underline-offset: .25em;
+    box-shadow: none;
+    margin: 1rem 0 0;
+    text-align: center;
+    padding: .6rem 1.6rem;
+    cursor: pointer;
+    border-radius: 0;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+
+.feedblitz-custom-form {
+  input[type="submit"] {
+    background: $brand-secondary;
+  }
+
+  input[type="email"]:focus {
+    outline-color: #ffe66a;
+  }
+}
+
+.webform-submission-form {
+  input[type="submit"] {
+    background: $brand-primary;
+    min-width: 13rem;
+
+    //&:hover {
+    //  background: #4d004d;
+    //  border-color: #4d004d;
+    //}
+  }
+}
+
+.subscribe_form2 input[type="email"],
+.webform-submission-form textarea#edit-message {
+  &::placeholder {
+    opacity: 1;
+    color: #333;
+  }
+}
+
+select.form-select {
+  font-size: 100%;
+}
+
+h2 i {
+  font-size: 2.2rem;
+  width: 4.3rem;
+  height: 4.3rem;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  line-height: 4.4rem;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+
+  &.fas,
+  &.far {
+    line-height: 4.4rem;
+  }
+}
+
+.ico-elink {
+  background: resolve("new-window.gif") no-repeat;
+}
+
+.node-type-page {
+  .content {
+    ul {
+      li {
+        list-style: none;
+        position: relative;
+
+        &::before {
+          content: "-";
+          position: absolute;
+          left: -20px;
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+.front {
+  .container-wrap {
+    margin-bottom: 0;
+  }
+}
+
+.container-wrap {
+  @media screen and (max-width: $lap) {
+    margin: 0 1rem;
+  }
+}
+
+#footer {
+  @media screen and (max-width: $tab) {
+    padding-left: 1rem;
+  }
+
+  .footer-menu {
+    margin: 4% auto;
+
+    li {
+      padding-left: 0;
+
+      @include breakpoint($mob) {
+        display: inline-block;
+        padding: 0 .8rem 0 0;
+        line-height: 1.8rem;
+        margin-right: .5rem;
+      }
+    }
+  }
+}
+
+#footer-content {
+  @include breakpoint($phab) {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .column,
+  .column:first-child {
+    padding: 1%;
+
+    @include breakpoint($phab) {
+      flex-basis: 49%;
+    }
+
+    @include breakpoint(870px) {
+      flex-basis: 33%;
+    }
+
+    li {
+      border: none;
+    }
+  }
+
+  .column.logo {
+    align-self: center;
+  }
+
+  .column:first-child {
+    margin-left: 0;
+
+    #block-footerlogo {
+      padding-right: 10px;
+    }
+  }
+
+  address {
+    //color: $white;
+    line-height: 2.4rem;
+  }
+
+  #block-footercontactinformation {
+    .social-icons {
+      a {
+        border-bottom: 0;
+        color: $text;
+
+        &:hover,
+        &:focus {
+          outline: 0;
+          background: none;
+
+          i {
+            background: $text;
+            color: $footer-background;
+          }
+        }
+      }
+
+      i {
+        font-size: 2.4rem;
+        border: 1px solid;
+        padding: .5rem .7rem;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 100%;
+        line-height: 3rem;
+      }
+    }
+  }
+}
+
+#footer-menu {
+  a {
+    @include breakpoint($mob) {
+      display: block;
+    }
+  }
+}
+
+#bottom_wrapper {
+  h2 {
+    font-size: 2.1rem;
+    line-height: 3rem;
+  }
+
+  .energy {
+    .column {
+      &:first-child {
+        h2 i,
+        .btn {
+          background: #cc4630;
+        }
+      }
+
+      &:nth-child(2) {
+        h2 i,
+        .btn {
+          background: #8561af;
+        }
+      }
+
+      &:last-child {
+        h2 i,
+        .btn {
+          background: #345ddb;
+        }
+      }
+    }
+  }
+
+  .footer-area .column {
+    @media screen and (max-width: $tab) {
+      width: 100%;
+      float: none;
+      margin: 0;
+    }
+  }
+
+  .bottom-row {
+    border-top: 4px solid #686868;
+
+    .column {
+      @include breakpoint($tab) {
+        width: 49%;
+      }
+
+      &:first-child {
+        padding: 2rem 0;
+      }
+
+      &:last-child {
+        background: #f3f3f3;
+
+        @include breakpoint($tab) {
+          padding: 2rem;
+        }
+      }
+    }
+  }
+}
+
+#sidebar-first {
+  @media screen and (max-width: $tab) {
+    padding: 0;
+  }
+}
+
+#block-contactuscontactinfo {
+  h2 {
+    @include adjust-font-size-to(21px, 5);
+    margin-top: 1.2rem;
+  }
+
+  p {
+    word-wrap: break-word;
+  }
+}
+
+//#main-menu .menu-link:focus {
+//  border-bottom: none;
+//}
+
+select,
+[type="text"],
+[type="search"],
+[type="tel"],
+[type="url"],
+[type="email"],
+[type="password"],
+[type="date"],
+[type="time"],
+[type="number"],
+[type="file"],
+textarea {
+  &:focus {
+    outline: 3px solid #333;
+    outline-offset: -2px;
+  }
+}
+
+.node-type-publication-page #content #post-content a.file-link[href] {
+  padding-left: 6.5rem;
+  margin-bottom: 1.6rem;
+
+  &:hover {
+    margin-bottom: 1.5rem;
+  }
+
+  &:last-child {
+    margin-bottom: 2.4rem;
+  }
+}
+
+.file {
+  &-link {
+
+    &.publication {
+      span {
+        color: $grey;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        display: block;
+      }
+    }
+  }
+}
+
+#bottom_wrapper .energy .column a.btn,
+#block-consumerinformationhome a.btn,
+.webform-submission-form input[type="submit"],
+a.btn,
+input[type="submit"].btn {
+  &:hover,
+  &:focus {
+    background: $ash-grey;
+    outline: none;
+    opacity: 1;
+  }
+
+  &:focus {
+    border-color: $black;
+  }
+}

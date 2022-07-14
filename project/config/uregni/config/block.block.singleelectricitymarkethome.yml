@@ -1,0 +1,25 @@
+uuid: fa81961e-9c6e-4904-b7a8-57160b445ff3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:3323e044-bd58-4ee6-9c0a-44befed73bfe'
+  module:
+    - block_content
+  theme:
+    - uregni_theme
+id: singleelectricitymarkethome
+theme: uregni_theme
+region: bottom_widget_4
+weight: -8
+provider: null
+plugin: 'block_content:3323e044-bd58-4ee6-9c0a-44befed73bfe'
+settings:
+  id: 'block_content:3323e044-bd58-4ee6-9c0a-44befed73bfe'
+  label: 'Single Electricity Market : home'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

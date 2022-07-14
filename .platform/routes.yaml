@@ -1,0 +1,24 @@
+'https://www.uregni.gov.uk/':
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
+'https://uregni.gov.uk/':
+    type: redirect
+    to: 'https://www.uregni.gov.uk/'
+'https://www.odscni.org.uk/':
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
+'https://odscni.org.uk/':
+    type: redirect
+    to: 'https://www.odscni.org.uk/'
+'https://www.www.pbni.org.uk/':
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
+'https://www.pbni.org.uk/':
+    type: redirect
+    to: 'https://www.www.pbni.org.uk/'

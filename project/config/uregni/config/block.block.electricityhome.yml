@@ -1,0 +1,25 @@
+uuid: 7e0cfbea-d011-41d9-86fa-e152f7328d58
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:018e2ba1-0d09-4452-b2ee-b2eb97638d93'
+  module:
+    - block_content
+  theme:
+    - uregni_theme
+id: electricityhome
+theme: uregni_theme
+region: bottom_widget_1
+weight: 0
+provider: null
+plugin: 'block_content:018e2ba1-0d09-4452-b2ee-b2eb97638d93'
+settings:
+  id: 'block_content:018e2ba1-0d09-4452-b2ee-b2eb97638d93'
+  label: Electricity
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

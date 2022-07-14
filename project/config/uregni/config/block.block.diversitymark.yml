@@ -1,0 +1,31 @@
+uuid: f7711207-525c-47c7-b2bf-322a1eee432d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:a2e573eb-b012-4880-9cc7-9ac974195e20'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - uregni_theme
+id: diversitymark
+theme: uregni_theme
+region: footer_sixth
+weight: -17
+provider: null
+plugin: 'block_content:a2e573eb-b012-4880-9cc7-9ac974195e20'
+settings:
+  id: 'block_content:a2e573eb-b012-4880-9cc7-9ac974195e20'
+  label: 'Diversity Mark'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

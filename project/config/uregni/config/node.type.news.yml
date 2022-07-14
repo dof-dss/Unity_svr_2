@@ -1,0 +1,29 @@
+uuid: 3af2ad75-a0c3-42a0-8ac5-e1b696eb3cd5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - origins_toc
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  origins_toc:
+    toc_enable: 0
+    toc_title: 'Table of contents'
+    toc_location: ''
+    toc_insert: after
+    toc_source_container: ''
+    toc_element: h2
+    toc_exclusions: ''
+_core:
+  default_config_hash: lepjnMhreFGZZ5tISJQUK8BTd8mcfP_tCyFAJ-RidQM
+name: 'News page'
+type: news
+description: 'Use <em>news pages</em> for your news items, press releases and announcements.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

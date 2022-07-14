@@ -1,0 +1,48 @@
+/*
+ * @file
+ * Defines the layout code for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/2_layout/index';
+
+.container-wrap {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: $lap) {
+    margin: 0 1rem;
+    display: block;
+  }
+}
+
+.content-sidebar-wrap {
+  @media screen and (max-width: $lap) {
+    width: 100%;
+  }
+}
+
+.sidebar-second-layout {
+  position: relative;
+  overflow: hidden;
+  background: #f3f3f3;
+  padding-top: 1rem;
+  margin-top: 0;
+
+  @media screen and (max-width: $lap) {
+    background: none;
+    width: 0;
+  }
+}
+
+#header {
+  margin: 5px auto;
+
+  @media screen and (max-width: $tab) {
+    margin-bottom: 0;
+  }
+
+  .top_left {
+    min-height: 135px;
+  }
+}

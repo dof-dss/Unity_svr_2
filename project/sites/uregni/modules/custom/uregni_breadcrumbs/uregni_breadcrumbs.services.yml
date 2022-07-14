@@ -1,0 +1,41 @@
+services:
+  uregni_breadcrumbs.breadcrumb.view_page:
+    class: Drupal\uregni_breadcrumbs\ViewPageBreadcrumb
+    arguments: ['@request_stack', '@title_resolver']
+    tags:
+      - { name: breadcrumb_builder, priority: 100 }
+  uregni_breadcrumbs.breadcrumb.news:
+    class: Drupal\uregni_breadcrumbs\NewsBreadcrumb
+    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
+    tags:
+      - { name: breadcrumb_builder, priority: 100 }
+  uregni_breadcrumbs.breadcrumb.publication:
+    class: Drupal\uregni_breadcrumbs\PublicationBreadcrumb
+    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
+    tags:
+      - { name: breadcrumb_builder, priority: 100 }
+  uregni_breadcrumbs.breadcrumb.consultation:
+    class: Drupal\uregni_breadcrumbs\ConsultationBreadcrumb
+    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
+    tags:
+      - { name: breadcrumb_builder, priority: 100 }
+  uregni_breadcrumbs.breadcrumb.board:
+    class: Drupal\uregni_breadcrumbs\BoardBreadcrumb
+    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
+    tags:
+      - { name: breadcrumb_builder, priority: 100 }
+  uregni_breadcrumbs.breadcrumb.webform:
+    class: Drupal\uregni_breadcrumbs\WebformBreadcrumb
+    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
+    tags:
+      - { name: breadcrumb_builder, priority: 100 }
+  uregni_breadcrumbs.breadcrumb.vacancy:
+    class: Drupal\uregni_breadcrumbs\VacancyBreadcrumb
+    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
+    tags:
+      - { name: breadcrumb_builder, priority: 100 }
+  uregni_breadcrumbs.breadcrumb.page:
+    class: Drupal\uregni_breadcrumbs\PageBreadcrumb
+    arguments: [ '@entity_type.manager', '@title_resolver', '@request_stack' ]
+    tags:
+      - { name: breadcrumb_builder, priority: 100 }

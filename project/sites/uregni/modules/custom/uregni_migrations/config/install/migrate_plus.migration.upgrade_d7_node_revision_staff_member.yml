@@ -1,0 +1,138 @@
+uuid: bc370aa2-1035-4ad1-b185-f4b21bdebe69
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_revision_staff_member
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node revisions (Board member)'
+source:
+  plugin: d7_node_revision
+  node_type: staff_member
+process:
+  nid:
+    -
+      plugin: get
+      source: nid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_staff_member/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+    -
+      plugin: media_wysiwyg_filter
+    -
+      plugin: filter_absolute_links
+      replace_urls:
+        http://www.uregni.gov.uk
+        https://www.uregni.gov.uk
+        http://test-uregni.nigov.net
+    -
+      plugin: site_files_filter
+      from_ref: sites/uregni/files
+      to_ref: files/uregni
+    -
+      plugin: site_files_filter
+      from_ref: sites/uregni.gov.uk/files
+      to_ref: files/uregni
+  body/0/format:
+    -
+      plugin: static_map
+      bypass: true
+      source: body/0/format
+      map:
+        filtered_html: basic_html
+        filtered_html_with_no_images: basic_html
+        filtered_html_with_tokens: basic_html
+        restricted_html: basic_html
+        plain_text: plain_text
+  field_member_image:
+    -
+      plugin: sub_process
+      source: field_member_image
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_member_role:
+    -
+      plugin: get
+      source: field_member_role
+  field_metatag:
+    -
+      plugin: d7_metatag_entities
+      source: pseudo_metatag_entities
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: staff_member
+migration_dependencies:
+  required:
+    - upgrade_d7_node_consultation
+    - upgrade_d7_node_news
+    - upgrade_d7_node_page
+    - upgrade_d7_node_publication_page
+    - upgrade_d7_node_staff_member
+    - upgrade_d7_node_vacancy
+    - upgrade_d7_node_webform
+  optional:
+    - upgrade_d7_metatag_field
+    - upgrade_d7_metatag_field_instance

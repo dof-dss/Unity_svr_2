@@ -1,0 +1,32 @@
+uuid: 0e2f8954-358a-4d0e-802c-4cdecbbd593a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_news
+  module:
+    - node
+    - views
+  theme:
+    - pbni_theme
+id: views_block__latest_news_latest_news_list
+theme: pbni_theme
+region: sidebar_second
+weight: -1
+provider: null
+plugin: 'views_block:latest_news-latest_news_list'
+settings:
+  id: 'views_block:latest_news-latest_news_list'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      news: news

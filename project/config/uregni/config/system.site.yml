@@ -1,0 +1,16 @@
+name: 'Utility Regulator'
+mail: uregni@gov.uk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
+uuid: 69ec746f-0c27-4037-980c-b03885b42eaf
+frontpage_title: 'Utility Regulator'
+frontpage_show_title: 0

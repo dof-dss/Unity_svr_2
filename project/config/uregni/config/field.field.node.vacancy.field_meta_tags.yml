@@ -1,0 +1,21 @@
+uuid: d181fe62-2bae-4d27-ae81-862cbed85b44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.vacancy
+  module:
+    - metatag
+id: node.vacancy.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: vacancy
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

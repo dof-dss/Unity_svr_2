@@ -1,0 +1,19 @@
+uuid: 3faeffe1-cff1-43ab-bed0-7c1c862132e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_postal
+    - node.type.consultation
+id: node.consultation.field_postal
+field_name: field_postal
+entity_type: node
+bundle: consultation
+label: 'Postal address'
+description: 'Enter the postal address to be used for responses to this consultation. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

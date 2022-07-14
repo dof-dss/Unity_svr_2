@@ -1,0 +1,10 @@
+uuid: d7737d2b-0569-4b04-af94-f36d8272e803
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.landing_full
+label: 'Landing full'
+targetEntityType: media
+cache: true

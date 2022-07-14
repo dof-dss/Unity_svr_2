@@ -1,0 +1,31 @@
+uuid: ea9d4d49-9b12-41a2-b246-7bb4eca6ee57
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:052be7c3-1273-444b-8bac-3b1e3f2ed47a'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - uregni_theme
+id: investorsinpeople
+theme: uregni_theme
+region: footer_fourth
+weight: -18
+provider: null
+plugin: 'block_content:052be7c3-1273-444b-8bac-3b1e3f2ed47a'
+settings:
+  id: 'block_content:052be7c3-1273-444b-8bac-3b1e3f2ed47a'
+  label: 'Investors in people'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
