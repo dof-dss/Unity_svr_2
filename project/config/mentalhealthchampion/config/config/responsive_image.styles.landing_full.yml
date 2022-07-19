@@ -1,0 +1,31 @@
+uuid: 7957a2a5-b562-4e3d-b6bc-ae9d6ff9775b
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.nigov_full_1240_x2
+    - image.style.nigov_full_1880_x2
+    - image.style.nigov_full_450_x1
+    - image.style.nigov_full_620_x1
+    - image.style.nigov_full_900_x2
+    - image.style.nigov_full_940_x1
+_core:
+  default_config_hash: 3eC3FhacrRGUOtD44FnWR59KfaDoPFcWLcuTbQZec4c
+id: landing_full
+label: 'Landing full'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - nigov_full_1240_x2
+        - nigov_full_1880_x2
+        - nigov_full_450_x1
+        - nigov_full_620_x1
+        - nigov_full_900_x2
+        - nigov_full_940_x1
+breakpoint_group: responsive_image
+fallback_image_style: nigov_full_940_x1

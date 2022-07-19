@@ -1,8 +1,0 @@
-uuid: f2be9a0e-2c07-40f3-ba52-10c0bf4e22b6
-langcode: en
-status: true
-dependencies: {  }
-id: menu-useful-links
-label: 'Useful links'
-description: ''
-locked: false

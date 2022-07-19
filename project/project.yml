@@ -1,27 +1,10 @@
 project_name: 'Unity Svr 2'
 project_id: 6tlkpwbr6tndk
 sites:
-    uregni:
-        name: 'Utility Regulator for Northern Ireland'
-        url: uregni.gov.uk
-        database: uregni
-        solr: uregni
+    mentalhealthchampion:
+        name: 'Mental Health Champion'
+        url: mentalhealthchampion-ni.org.uk
         cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/nifiscalcouncil ; drush core-cron'
-        deploy: true
-    odscni:
-        name: 'The Office of the Discretionary Support Commissioner'
-        url: odscni.org.uk
-        database: odscni
-        solr: ''
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/odscni ; drush core-cron'
-        deploy: true
-    pbni:
-        name: 'Probation Board NI'
-        url: www.pbni.org.uk
-        solr: pbni
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/pbni ; drush core-cron'
-        database: pbni
-        deploy: true
+        cron_cmd: 'cd web/sites/mentalhealthchampion ; drush core-cron'
+        database: mentalhealthchampion
+        deploy: false

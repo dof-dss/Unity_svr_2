@@ -3,35 +3,17 @@ db:
     disk: 40960
     configuration:
         schemas:
-            - uregni
-            - odscni
-            - pbni
+            - mentalhealthchampion
         endpoints:
-            uregni:
-                default_schema: uregnidb
+            mentalhealthchampion:
+                default_schema: mentalhealthchampiondb
                 privileges:
-                    uregnidb: admin
-            odscni:
-                default_schema: odscnidb
-                privileges:
-                    odscnidb: admin
-            pbni:
-                default_schema: pbnidb
-                privileges:
-                    pbnidb: admin
+                    mentalhealthchampiondb: admin
 solr:
     type: 'solr:7.7'
     disk: 1024
     configuration:
-        cores:
-            uregni_index:
-                conf_dir: !archive solr_config/
-            pbni_index:
-                conf_dir: !archive solr_config/
-        endpoints:
-            uregni:
-                core: uregni_index
-            pbni:
-                core: pbni_index
+        cores: null
+        endpoints: null
 redis:
     type: 'redis:6.0'

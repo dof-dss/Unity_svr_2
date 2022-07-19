@@ -1,8 +1,0 @@
-uuid: f1b27c31-e8d8-4939-9215-a21f0570e7b5
-langcode: en
-status: true
-dependencies: {  }
-id: uregni_long
-label: 'Uregni long, date and time'
-locked: false
-pattern: 'd F Y - g.i a'
