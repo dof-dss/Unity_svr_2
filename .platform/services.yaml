@@ -1,0 +1,82 @@
+db:
+  type: 'mariadb:10.4'
+  disk: 4000
+  configuration:
+    schemas:
+      - mentalhealthchampionnidb
+      - publicappointmentsnidb
+      - ircommissiondb
+      - imtacdb
+      - nicertofficedb
+      - victimspaymentsboarddb
+      - defaultdb
+      - hiaredressnidb
+    endpoints:
+      mentalhealthchampionni:
+        default_schema: mentalhealthchampionnidb
+        privileges:
+          mentalhealthchampionnidb: admin
+      publicappointmentsni:
+        default_schema: publicappointmentsnidb
+        privileges:
+          publicappointmentsnidb: admin
+      ircommission:
+        default_schema: ircommissiondb
+        privileges:
+          ircommissiondb: admin
+      imtac:
+        default_schema: imtacdb
+        privileges:
+          imtacdb: admin
+      nicertoffice:
+        default_schema: nicertofficedb
+        privileges:
+          nicertofficedb: admin
+      victimspaymentsboard:
+        default_schema: victimspaymentsboarddb
+        privileges:
+          victimspaymentsboarddb: admin
+      default:
+        default_schema: defaultdb
+        privileges:
+          defaultdb: admin
+      hiaredressni:
+        default_schema: hiaredressnidb
+        privileges:
+          hiaredressnidb: admin
+solr:
+  type: 'solr:7.7'
+  disk: 1024
+  configuration:
+    cores:
+      mentalhealthchampionni_index:
+        conf_dir: !archive solr_config/
+      publicappointmentsni_index:
+        conf_dir: !archive solr_config/
+      ircommission_index:
+        conf_dir: !archive solr_config/
+      imtac_index:
+        conf_dir: !archive solr_config/
+      nicertoffice_index:
+        conf_dir: !archive solr_config/
+      victimspaymentsboard_index:
+        conf_dir: !archive solr_config/
+      hiaredressni_index:
+        conf_dir: !archive solr_config/
+    endpoints:
+      mentalhealthchampionni:
+        core: mentalhealthchampionni_index
+      publicappointmentsni:
+        core: publicappointmentsni_index
+      ircommission:
+        core: ircommission_index
+      imtac:
+        core: imtac_index
+      nicertoffice:
+        core: nicertoffice_index
+      victimspaymentsboard:
+        core: victimspaymentsboard_index
+      hiaredressni:
+        core: hiaredressni_index
+redis:
+  type: 'redis:6.0'
