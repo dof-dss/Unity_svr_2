@@ -1,9 +1,0 @@
-_core:
-  default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
-ignored_config_entities:
-  - 'pbni_theme.settings:twitter_profile_url'
-  - 'pbni_theme.settings:facebook_profile_url'
-  - 'pbni_theme.settings:linkedin_profile_url'
-  - 'pbni_theme.settings:pinterest_profile_url'
-  - 'pbni_theme.settings:youtube_profile_url'
-  - 'pbni_theme.settings:instagram_profile_url'

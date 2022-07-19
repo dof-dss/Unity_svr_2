@@ -1,8 +1,0 @@
-uuid: e4592b0d-44b5-49bf-9f49-9435bef98bf2
-langcode: en
-status: true
-dependencies: {  }
-id: uregni_medium
-label: 'Uregni medium'
-locked: false
-pattern: 'd F Y'

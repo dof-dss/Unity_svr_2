@@ -1,0 +1,11 @@
+_core:
+  default_config_hash: 9igS-9qqxUg14iAlnst2AcWBhvahm0EE5E9EzflfTpM
+country:
+  default: GB
+first_day: 0
+timezone:
+  default: Europe/London
+  user:
+    configurable: true
+    warn: false
+    default: 0

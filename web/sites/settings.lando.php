@@ -52,8 +52,6 @@ $settings['simple_environment_indicator'] = sprintf('%s %s', getenv('SIMPLEI_ENV
 
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/../local.services.yml';
 
-var_dump($app_root . '/' . $site_path . '/');
-
 // Redis Cache.
 // Due to issues with enabling Redis during install/config import. We cannot enable the cache backend by default.
 // Once you have a site/db installed. Enable the Redis module and change the $redis_enabled to true.
