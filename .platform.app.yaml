@@ -64,7 +64,7 @@ web:
                     expires: 2w
 relationships:
     mentalhealthchampion: 'db:mentalhealthchampion'
-cron:
+crons:
     mentalhealthchampion:
         spec: '10 * * * *'
         cmd: 'cd web/sites/mentalhealthchampion ; drush core-cron'

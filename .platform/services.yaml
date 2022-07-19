@@ -9,11 +9,5 @@ db:
                 default_schema: mentalhealthchampiondb
                 privileges:
                     mentalhealthchampiondb: admin
-solr:
-    type: 'solr:7.7'
-    disk: 1024
-    configuration:
-        cores: null
-        endpoints: null
 redis:
     type: 'redis:6.0'
