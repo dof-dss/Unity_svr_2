@@ -1,0 +1,22 @@
+uuid: 0b694a46-318d-4d47-a6a1-0dd3c3bec492
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: documents_pattern
+label: 'Documents pattern'
+type: 'canonical_entities:node'
+pattern: 'documents/[node:title]'
+selection_criteria:
+  6132dec2-9b90-401d-8937-b808af51201c:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 6132dec2-9b90-401d-8937-b808af51201c
+    context_mapping:
+      node: node
+    bundles:
+      document: document
+selection_logic: and
+weight: -5
+relationships: {  }

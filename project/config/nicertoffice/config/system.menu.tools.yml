@@ -1,0 +1,10 @@
+uuid: 3654de11-1eb6-423e-bed8-e7b20c994761
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: cjeH9sgXLhlxQQlst16UL_1VvmAAPGdpjN3C5mdGjqQ
+id: tools
+label: Navigation
+description: 'The <em>Navigation</em> menu contains links intended for site visitors. Links are added to the <em>Navigation</em> menu automatically by some modules.'
+locked: true

@@ -1,0 +1,19 @@
+uuid: 96f5f7ba-11f0-4768-8adb-d6ff2e4cc9a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_decision_applicant
+    - node.type.decision
+id: node.decision.field_decision_applicant
+field_name: field_decision_applicant
+entity_type: node
+bundle: decision
+label: Applicant
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

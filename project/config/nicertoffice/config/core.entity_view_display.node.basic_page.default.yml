@@ -1,0 +1,32 @@
+uuid: 5e02b814-3af5-4cc8-826c-5f7250bf0629
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.basic_page.body
+    - field.field.node.basic_page.field_meta_tags
+    - field.field.node.basic_page.field_next_audit_due
+    - node.type.basic_page
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: la60ebQM7BAy0G_pimE_s5LAn8J7P64Aznad7Dhvrh0
+id: node.basic_page.default
+targetEntityType: node
+bundle: basic_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  content_moderation_control: true
+  field_meta_tags: true
+  field_next_audit_due: true
+  langcode: true
+  links: true

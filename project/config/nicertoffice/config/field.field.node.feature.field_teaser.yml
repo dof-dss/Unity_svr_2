@@ -1,0 +1,21 @@
+uuid: ca87a260-161e-4263-b9e3-d677ac28c31e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.feature
+_core:
+  default_config_hash: U6M2YL9v3-Ig6qqyE9KpIL_O9XbokeBG0UlspX7Z5Dc
+id: node.feature.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: feature
+label: Teaser
+description: 'Enter some short teaser text for this feature item. This can be displayed on the site home page.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

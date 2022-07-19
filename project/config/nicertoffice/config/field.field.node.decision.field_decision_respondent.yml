@@ -1,0 +1,29 @@
+uuid: e0457db6-48c5-4c21-bf0b-254f4c1c8f4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_decision_respondent
+    - node.type.decision
+    - taxonomy.vocabulary.respondents
+id: node.decision.field_decision_respondent
+field_name: field_decision_respondent
+entity_type: node
+bundle: decision
+label: Respondent
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      respondents: respondents
+    sort:
+      field: _none
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
