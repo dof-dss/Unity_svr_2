@@ -1,0 +1,25 @@
+uuid: 5be082cb-803e-4acd-ba6b-682c7c5c5fb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.news
+    - views.view.news_search
+  module:
+    - views
+    - search_api_autocomplete
+id: news_search
+label: 'News search'
+index_id: news
+suggester_settings:
+  live_results:
+    fields: {  }
+    view_modes: {  }
+suggester_weights: {  }
+suggester_limits: {  }
+search_settings:
+  'views:news_search':
+    displays:
+      default: true
+      selected: {  }
+options: {  }

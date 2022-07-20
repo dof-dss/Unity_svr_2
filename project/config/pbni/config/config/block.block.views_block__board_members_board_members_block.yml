@@ -1,0 +1,29 @@
+uuid: 88738034-98dd-48c2-b909-1beaa782f4e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.board_members
+  module:
+    - system
+    - views
+  theme:
+    - pbni_theme
+id: views_block__board_members_board_members_block
+theme: pbni_theme
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:board_members-board_members_block'
+settings:
+  id: 'views_block:board_members-board_members_block'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /board

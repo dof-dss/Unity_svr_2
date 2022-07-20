@@ -1,0 +1,25 @@
+uuid: 7a8179d6-ae84-491b-a52e-96d1aead8ee1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:85227472-67d0-4a39-927c-0a70be16f609'
+  module:
+    - block_content
+  theme:
+    - pbni_theme
+id: homepage5links
+theme: pbni_theme
+region: middle_area
+weight: -5
+provider: null
+plugin: 'block_content:85227472-67d0-4a39-927c-0a70be16f609'
+settings:
+  id: 'block_content:85227472-67d0-4a39-927c-0a70be16f609'
+  label: 'Home page 5 links'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

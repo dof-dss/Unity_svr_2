@@ -7,7 +7,7 @@ runtime:
     extensions:
         - apcu
         - redis
-disk: 8000
+disk: 30720
 mounts:
     /web/files:
         source: local
@@ -64,7 +64,11 @@ web:
                     expires: 2w
 relationships:
     mentalhealthchampion: 'db:mentalhealthchampion'
+    pbni: 'db:pbni'
 crons:
     mentalhealthchampion:
         spec: '10 * * * *'
         cmd: 'cd web/sites/mentalhealthchampion ; drush core-cron'
+    pbni:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/pbni ; drush core-cron'

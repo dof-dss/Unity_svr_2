@@ -1,0 +1,25 @@
+uuid: 7473b1f6-8686-4284-aca9-3818e4178635
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.publications_index
+    - views.view.publications_search
+  module:
+    - views
+    - search_api_autocomplete
+id: publications_search
+label: 'Publications search'
+index_id: publications_index
+suggester_settings:
+  live_results:
+    fields: {  }
+    view_modes: {  }
+suggester_weights: {  }
+suggester_limits: {  }
+search_settings:
+  'views:publications_search':
+    displays:
+      default: true
+      selected: {  }
+options: {  }

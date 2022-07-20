@@ -1,0 +1,25 @@
+uuid: 73f2f10d-29d8-4254-9df8-4f360853d8bf
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:1284beeb-e3e7-41d2-a8f4-2bcfd6943974'
+  module:
+    - block_content
+  theme:
+    - pbni_theme
+id: footercontactinformation
+theme: pbni_theme
+region: footer_first
+weight: -5
+provider: null
+plugin: 'block_content:1284beeb-e3e7-41d2-a8f4-2bcfd6943974'
+settings:
+  id: 'block_content:1284beeb-e3e7-41d2-a8f4-2bcfd6943974'
+  label: 'Footer Contact information'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

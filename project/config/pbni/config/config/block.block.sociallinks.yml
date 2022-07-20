@@ -1,0 +1,25 @@
+uuid: 741f7cba-3469-449f-8178-1f59aadbcd42
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:f85057d4-a198-4ecc-9c48-5a9611f7e647'
+  module:
+    - block_content
+  theme:
+    - pbni_theme
+id: sociallinks
+theme: pbni_theme
+region: footer_first
+weight: -4
+provider: null
+plugin: 'block_content:f85057d4-a198-4ecc-9c48-5a9611f7e647'
+settings:
+  id: 'block_content:f85057d4-a198-4ecc-9c48-5a9611f7e647'
+  label: 'Social links'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
