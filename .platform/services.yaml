@@ -3,8 +3,8 @@ db:
     disk: 5000
     configuration:
         schemas:
-            - mentalhealthchampion
-            - pbni
+            - mentalhealthchampiondb
+            - pbnidb
         endpoints:
             mentalhealthchampion:
                 default_schema: mentalhealthchampiondb
