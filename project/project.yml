@@ -7,4 +7,4 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/mentalhealthchampion ; drush core-cron'
         database: mentalhealthchampion
-        deploy: true
+        deploy: false
