@@ -1,6 +1,6 @@
 db:
     type: 'mariadb:10.4'
-    disk: 5000
+    disk: 4000
     configuration:
         schemas:
             - mentalhealthchampiondb
