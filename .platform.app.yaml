@@ -7,7 +7,7 @@ runtime:
     extensions:
         - apcu
         - redis
-disk: 8000
+disk: 30720
 mounts:
     /web/files:
         source: local
@@ -63,6 +63,7 @@ web:
                 ^/sites/default/files/(css|js):
                     expires: 2w
 relationships:
+<<<<<<< HEAD
     mentalhealthchampionni: 'db:mentalhealthchampionni'
     mentalhealthchampionni_solr: 'solr:mentalhealthchampionni'
     publicappointmentsni: 'db:publicappointmentsni'
@@ -78,9 +79,14 @@ relationships:
     default: 'db:default'
     hiaredressni: 'db:hiaredressni'
     hiaredressni_solr: 'solr:hiaredressni'
+=======
+    mentalhealthchampion: 'db:mentalhealthchampion'
+    pbni: 'db:pbni'
+>>>>>>> 7c72928 (Adding pbni site)
 crons:
     mentalhealthchampionni:
         spec: '10 * * * *'
+<<<<<<< HEAD
         cmd: 'cd web/sites/mentalhealthchampionni ; drush core-cron'
     publicappointmentsni:
         spec: '10 * * * *'
@@ -103,3 +109,9 @@ crons:
     hiaredressni:
         spec: '10 * * * *'
         cmd: 'cd web/sites/hiaredressni ; drush core-cron'
+=======
+        cmd: 'cd web/sites/mentalhealthchampion ; drush core-cron'
+    pbni:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/pbni ; drush core-cron'
+>>>>>>> 7c72928 (Adding pbni site)
