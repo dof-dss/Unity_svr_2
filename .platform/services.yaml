@@ -4,15 +4,10 @@ db:
     configuration:
         schemas:
             - mentalhealthchampiondb
-            - pbnidb
         endpoints:
             mentalhealthchampion:
                 default_schema: mentalhealthchampiondb
                 privileges:
                     mentalhealthchampiondb: admin
-            pbni:
-                default_schema: pbnidb
-                privileges:
-                    pbnidb: admin
 redis:
     type: 'redis:6.0'
