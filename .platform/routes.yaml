@@ -1,0 +1,8 @@
+'https://www.mentalhealthchampion-ni.org.uk/':
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
+'https://mentalhealthchampion-ni.org.uk/':
+    type: redirect
+    to: 'https://www.mentalhealthchampion-ni.org.uk/'

@@ -1,0 +1,19 @@
+db:
+    type: 'mariadb:10.4'
+    disk: 40960
+    configuration:
+        schemas:
+            - mentalhealthchampion
+        endpoints:
+            mentalhealthchampion:
+                default_schema: mentalhealthchampiondb
+                privileges:
+                    mentalhealthchampiondb: admin
+solr:
+    type: 'solr:7.7'
+    disk: 1024
+    configuration:
+        cores: null
+        endpoints: null
+redis:
+    type: 'redis:6.0'

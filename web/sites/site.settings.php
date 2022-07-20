@@ -107,9 +107,8 @@ if (!isset($settings['file_public_path'])) {
 }
 
 // Set up a config sync directory.
-//
 // This is defined inside the read-only "config" directory, deployed via Git.
-$settings['config_sync_directory'] = '../config/' . $subsite_id . '/config';
+$settings['config_sync_directory'] = '/app/project/config/' . $subsite_id . '/config';
 
 // Local settings. These come last so that they can override anything.
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
