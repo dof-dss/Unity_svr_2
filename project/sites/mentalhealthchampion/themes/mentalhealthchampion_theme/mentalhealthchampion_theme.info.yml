@@ -25,6 +25,7 @@ regions:
   top_first: 'First top'
   top_second: 'Second top'
   top_third: 'Third top'
+  seeking_support: 'Seeking support'
   breadcrumb: 'Breadcrumb'
   search_facets: 'Search facets'
   sidebar_first: 'First sidebar'
