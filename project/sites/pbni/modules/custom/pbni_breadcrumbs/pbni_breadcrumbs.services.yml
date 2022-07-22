@@ -1,6 +1,0 @@
-services:
-  pbni_breadcrumbs.breadcrumb.board:
-    class: Drupal\pbni_breadcrumbs\BoardBreadcrumb
-    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
-    tags:
-      - { name: breadcrumb_builder, priority: 105 }
