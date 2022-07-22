@@ -9,6 +9,8 @@
  * See https://api.drupal.org/api/drupal/sites!default!default.settings.php/8
  */
 
+echo $app_root;
+
 $databases = [];
 $settings['update_free_access'] = FALSE;
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
@@ -63,8 +65,8 @@ $env_name = !empty(getenv('SIMPLEI_ENV_NAME')) ? getenv('SIMPLEI_ENV_NAME') : ge
 // If we're running on platform.sh, check for and load relevant settings.
 if (!empty(getenv('PLATFORM_BRANCH'))) {
 
-  if (file_exists($app_root . '/' . $site_path . '/../settings.platformsh.php')) {
-    include $app_root . '/' . $site_path . '/../settings.platformsh.php';
+  if (file_exists($app_root . '/sites/settings.platformsh.php')) {
+    include $app_root . '/sites/settings.platformsh.php';
   }
 
   // Use 'hosted' config split for all Platform.sh sites apart from production.
