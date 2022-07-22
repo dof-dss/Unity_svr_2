@@ -8,12 +8,13 @@
  */
 
 use Drupal\Core\Installer\InstallerKernel;
+use Platformsh\ConfigReader\Config as PlatformConfig;
 
 if (!isset($subsite_id)) {
   $subsite_id = 'database';
 }
 
-$platformsh = new \Platformsh\ConfigReader\Config();
+$platformsh = new PlatformConfig();
 
 if (!$platformsh->inRuntime()) {
   return;

@@ -9,6 +9,8 @@
  * See https://api.drupal.org/api/drupal/sites!default!default.settings.php/8
  */
 
+echo $site_path;
+
 $databases = [];
 $settings['update_free_access'] = FALSE;
 $settings['container_yamls'][] = $app_root . '/sites/services.yml';
