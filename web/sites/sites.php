@@ -84,6 +84,11 @@ if (!empty(getenv('PLATFORM_BRANCH'))) {
             //  - hatecrimereviewni.org.uk.master-7rqtwti-6tlkpwbr6tndk.uk-1.platformsh.site
             $newhost = str_replace('www.','',$host);
             $subdomain = substr($newhost, 0, strpos($newhost, '.'));
+            // Check for domain names that contain dashes and strip them out.
+            // (This ensures that sites like mentalhealthchampion-ni.org.uk may be
+            // served from sites/mentalhealthchampionni rather than
+            // sites/mentalhealthchampion-ni)
+            $subdomain = str_replace('-','',$subdomain);
             $sites[$host] = $subdomain;
         }
     }
@@ -95,7 +100,12 @@ if (getenv('LANDO')) {
     $project = Yaml::parseFile('/app/project/project.yml');
 
     foreach ($project['sites'] as $site_id => $site) {
-        $sites[$site['url'] . '.lndo.site'] = $site_id;
+        if ($site_id == 'mentalhealthchampionni') {
+          // Special case for URL that contains a '-'
+          $sites['mentalhealthchampion-ni.lndo.site'] = $site_id;
+        } else {
+          $sites[$site['url'] . '.lndo.site'] = $site_id;
+        }
     }
 
     return $sites;
