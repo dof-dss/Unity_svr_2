@@ -3,17 +3,21 @@ db:
     disk: 40960
     configuration:
         schemas:
-            - mentalhealthchampion
+            - mentalhealthchampionni
         endpoints:
-            mentalhealthchampion:
-                default_schema: mentalhealthchampiondb
+            mentalhealthchampionni:
+                default_schema: mentalhealthchampionnidb
                 privileges:
-                    mentalhealthchampiondb: admin
+                    mentalhealthchampionnidb: admin
 solr:
     type: 'solr:7.7'
     disk: 1024
     configuration:
-        cores: null
-        endpoints: null
+        cores:
+            mentalhealthchampionni_index:
+                conf_dir: !archive solr_config/
+        endpoints:
+            mentalhealthchampionni:
+                core: mentalhealthchampionni_index
 redis:
     type: 'redis:6.0'
