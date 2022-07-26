@@ -1,10 +1,3 @@
 project_name: 'Unity Svr 2'
 project_id: kamkoebtv74zm
-sites:
-    mentalhealthchampion:
-        name: 'Mental Health Champion'
-        url: mentalhealthchampion-ni.org.uk
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/mentalhealthchampion ; drush core-cron'
-        database: mentalhealthchampion
-        deploy: true
+sites: {  }
