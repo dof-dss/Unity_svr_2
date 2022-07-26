@@ -4,11 +4,16 @@ db:
     configuration:
         schemas:
             - mentalhealthchampionni
+            - imtac
         endpoints:
             mentalhealthchampionni:
                 default_schema: mentalhealthchampionnidb
                 privileges:
                     mentalhealthchampionnidb: admin
+            imtac:
+                default_schema: imtacdb
+                privileges:
+                    imtacdb: admin
 solr:
     type: 'solr:7.7'
     disk: 1024
@@ -16,8 +21,12 @@ solr:
         cores:
             mentalhealthchampionni_index:
                 conf_dir: !archive solr_config/
+            imtac_index:
+                conf_dir: !archive solr_config/
         endpoints:
             mentalhealthchampionni:
                 core: mentalhealthchampionni_index
+            imtac:
+                core: imtac_index
 redis:
     type: 'redis:6.0'

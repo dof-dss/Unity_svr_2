@@ -9,3 +9,11 @@ sites:
         cron_cmd: 'cd web/sites/mentalhealthchampionni ; drush core-cron'
         database: mentalhealthchampionni
         deploy: true
+    imtac:
+        name: imtac
+        url: imtac.org.uk
+        solr: imtac
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/imtac ; drush core-cron'
+        database: imtac
+        deploy: true
