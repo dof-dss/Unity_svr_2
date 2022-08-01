@@ -66,6 +66,7 @@ web:
         ^/sites/default/files/(css|js):
           expires: 2w
 relationships:
+<<<<<<< HEAD
   mentalhealthchampionni: 'db:mentalhealthchampionni'
   mentalhealthchampionni_solr: 'solr:mentalhealthchampionni'
   publicappointmentsni: 'db:publicappointmentsni'
