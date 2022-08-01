@@ -23,7 +23,7 @@ if (!$platformsh->inRuntime()) {
 // Configure the database.
 $creds = $platformsh->credentials($subsite_id);
 
-echo $creds;
+var_dump($creds);
 
 if ($creds) {
   $databases['default']['default'] = [
