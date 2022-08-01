@@ -23,8 +23,6 @@ if (!$platformsh->inRuntime()) {
 // Configure the database.
 $creds = $platformsh->credentials($subsite_id);
 
-var_dump($creds);
-
 if ($creds) {
   $databases['default']['default'] = [
     'driver' => $creds['scheme'],
