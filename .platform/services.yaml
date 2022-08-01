@@ -2,6 +2,8 @@ db:
     type: 'mariadb:10.4'
     disk: 4000
     configuration:
+        properties:
+          max_allowed_packet: 64
         schemas:
             - mentalhealthchampionnidb
             - unity2testdb
