@@ -3,11 +3,16 @@ db:
     disk: 4000
     configuration:
         schemas:
-            - mentalhealthchampiondb
+            - mentalhealthchampionnidb
+            - unity2testdb
         endpoints:
-            mentalhealthchampion:
-                default_schema: mentalhealthchampiondb
+            mentalhealthchampionni:
+                default_schema: mentalhealthchampionnidb
                 privileges:
-                    mentalhealthchampiondb: admin
+                    mentalhealthchampionnidb: admin
+            unity2test:
+                default_schema: unity2testdb
+                privileges:
+                    unity2testdb: admin
 redis:
     type: 'redis:6.0'

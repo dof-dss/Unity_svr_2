@@ -63,8 +63,12 @@ web:
                 ^/sites/default/files/(css|js):
                     expires: 2w
 relationships:
-    mentalhealthchampion: 'db:mentalhealthchampion'
+    mentalhealthchampionni: 'db:mentalhealthchampion'
+    unity2test: 'db:unity2test'
 crons:
-    mentalhealthchampion:
+    mentalhealthchampionni:
         spec: '10 * * * *'
-        cmd: 'cd web/sites/mentalhealthchampion ; drush core-cron'
+        cmd: 'cd web/sites/mentalhealthchampionni ; drush core-cron'
+    unity2test:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/unity2test ; drush core-cron'
