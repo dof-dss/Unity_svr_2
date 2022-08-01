@@ -60,43 +60,54 @@
 // Platform.sh or local Lando
 use Symfony\Component\Yaml\Yaml;
 
+$sites = [];
+
 if (!empty(getenv('PLATFORM_BRANCH'))) {
-    // Multi site configuration for Platform.sh.
+  // Multi site configuration for Platform.sh.
 
-    $platformsh = new \Platformsh\ConfigReader\Config();
+  $platformsh = new \Platformsh\ConfigReader\Config();
 
-    if (!$platformsh->inRuntime()) {
-        return;
+  if (!$platformsh->inRuntime()) {
+    return;
+  }
+
+  // The following block adds a $sites[] entry for each subdomain that is defined
+  // in routes.yaml.
+  // Note that the route retrieved will be fully expanded at this point (so the region,
+  // project id, branch name will be already filled in for dev sites).
+  // Note also that the corresponding directory in sites will be just up to the first dot
+  // in the domain name, so the route "https://uregni.gov.uk.{default}/" will correspond
+  // to the sites/uregni directory.
+  foreach ($platformsh->getUpstreamRoutes($platformsh->applicationName) as $route) {
+    $host = parse_url($route['url'], PHP_URL_HOST);
+    if ($host !== FALSE) {
+      // At this point, host may be in either of these two forms:
+      //  - www.fiscalcommissionni.org
+      //  - hatecrimereviewni.org.uk.master-7rqtwti-6tlkpwbr6tndk.uk-1.platformsh.site
+      $newhost = str_replace('www.','',$host);
+      $subdomain = substr($newhost, 0, strpos($newhost, '.'));
+      // Check for domain names that contain dashes and strip them out.
+      // (This ensures that sites like mentalhealthchampion-ni.org.uk may be
+      // served from sites/mentalhealthchampionni rather than
+      // sites/mentalhealthchampion-ni)
+      $subdomain = str_replace('-','',$subdomain);
+      $sites[$host] = $subdomain;
     }
-
-    // The following block adds a $sites[] entry for each subdomain that is defined
-    // in routes.yaml.
-    // Note that the route retrieved will be fully expanded at this point (so the region,
-    // project id, branch name will be already filled in for dev sites).
-    // Note also that the corresponding directory in sites will be just up to the first dot
-    // in the domain name, so the route "https://uregni.gov.uk.{default}/" will correspond
-    // to the sites/uregni directory.
-    foreach ($platformsh->getUpstreamRoutes($platformsh->applicationName) as $route) {
-        $host = parse_url($route['url'], PHP_URL_HOST);
-        if ($host !== FALSE) {
-            // At this point, host may be in either of these two forms:
-            //  - www.fiscalcommissionni.org
-            //  - hatecrimereviewni.org.uk.master-7rqtwti-6tlkpwbr6tndk.uk-1.platformsh.site
-            $newhost = str_replace('www.','',$host);
-            $subdomain = substr($newhost, 0, strpos($newhost, '.'));
-            $sites[$host] = $subdomain;
-        }
-    }
+  }
 }
 
 // Running in Lando locally, include appropriate sites file.
 if (getenv('LANDO')) {
+  $project = Yaml::parseFile('/app/project/project.yml');
 
-    $project = Yaml::parseFile('/app/project/project.yml');
-
-    foreach ($project['sites'] as $site_id => $site) {
-        $sites[$site['url'] . '.lndo.site'] = $site_id;
+  foreach ($project['sites'] as $site_id => $site) {
+    if ($site_id == 'mentalhealthchampionni') {
+      // Special case for URL that contains a '-'
+      $sites['mentalhealthchampion-ni.lndo.site'] = $site_id;
+    } else {
+      $sites[$site['url'] . '.lndo.site'] = $site_id;
     }
-
-    return $sites;
+  }
 }
+
+return $sites;
