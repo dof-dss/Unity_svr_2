@@ -2,8 +2,6 @@ db:
     type: 'mariadb:10.4'
     disk: 4000
     configuration:
-        properties:
-          max_allowed_packet: 64
         schemas:
             - mentalhealthchampionnidb
             - unity2testdb
@@ -16,5 +14,15 @@ db:
                 default_schema: unity2testdb
                 privileges:
                     unity2testdb: admin
+solr:
+    type: 'solr:7.7'
+    disk: 1024
+    configuration:
+        cores:
+            mentalhealthchampionni_index:
+                conf_dir: !archive solr_config/
+        endpoints:
+            mentalhealthchampionni:
+                core: mentalhealthchampionni_index
 redis:
     type: 'redis:6.0'

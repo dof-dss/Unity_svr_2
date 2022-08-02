@@ -4,6 +4,7 @@ sites:
     mentalhealthchampionni:
         name: 'Mental Health Champion for Northern Ireland'
         url: mentalhealthchampion-ni.org.uk
+        solr: mentalhealthchampionni
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/mentalhealthchampionni ; drush core-cron'
         database: mentalhealthchampion
