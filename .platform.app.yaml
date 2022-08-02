@@ -63,7 +63,7 @@ web:
                 ^/sites/default/files/(css|js):
                     expires: 2w
 relationships:
-    mentalhealthchampionni: 'db:mentalhealthchampion'
+    mentalhealthchampionni: 'db:mentalhealthchampionni'
     mentalhealthchampionni_solr: 'solr:mentalhealthchampionni'
     unity2test: 'db:unity2test'
 crons:
