@@ -1,0 +1,17 @@
+uuid: 248d19d4-b2a3-438d-a670-de17b78f2502
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ftbIrLDhe5foGHX2nbtDgjFfb_bUoyeiaYuQA6IZ_DA
+name: unity_3_col_desktop
+label: 'unity 3 col (desktop) 342x228'
+effects:
+  8ae5907c-5286-46f3-a610-53692536a584:
+    uuid: 8ae5907c-5286-46f3-a610-53692536a584
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 342
+      height: 228
+      anchor: center-center

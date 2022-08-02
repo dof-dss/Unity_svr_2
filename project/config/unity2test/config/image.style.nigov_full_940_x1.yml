@@ -1,0 +1,17 @@
+uuid: 160bed03-0c70-4d3c-861a-a3b756efd79c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: HbHIj-eHSOqHrZaa4z2YLzC1XWM9uJXXUBGIcsXvbBg
+name: nigov_full_940_x1
+label: 'nigov full 940 (x1)'
+effects:
+  bc7d505f-fe29-4ac9-a2d3-a601a60b1a17:
+    uuid: bc7d505f-fe29-4ac9-a2d3-a601a60b1a17
+    id: image_scale
+    weight: 1
+    data:
+      width: 940
+      height: null
+      upscale: false

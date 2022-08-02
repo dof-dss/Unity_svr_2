@@ -1,0 +1,104 @@
+uuid: babd8865-d8fd-41fa-b8fb-bc70cf86c882
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.consultation.body
+    - field.field.node.consultation.field_attachment
+    - field.field.node.consultation.field_consultation_dates
+    - field.field.node.consultation.field_email_address
+    - field.field.node.consultation.field_meta_tags
+    - field.field.node.consultation.field_postal
+    - field.field.node.consultation.field_published_date
+    - field.field.node.consultation.field_respond_online
+    - field.field.node.consultation.field_summary
+    - node.type.consultation
+  module:
+    - address
+    - datetime
+    - datetime_range
+    - link
+    - origins_common
+    - text
+    - user
+_core:
+  default_config_hash: FmGKERJUeoffCjH1qdHkVggcUaHMkl7UxaIe_lvZbzw
+id: node.consultation.default
+targetEntityType: node
+bundle: consultation
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_attachment:
+    weight: 4
+    label: hidden
+    settings:
+      list_type: ul
+      list_classes: ''
+      display_item_link: false
+    third_party_settings: {  }
+    type: html_list_formatter
+    region: content
+  field_consultation_dates:
+    weight: 1
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: unity_date
+      separator: '-'
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_email_address:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_postal:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_published_date:
+    weight: 0
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: unity_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_respond_online:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_summary:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  content_moderation_control: true
+  field_meta_tags: true
+  langcode: true
+  links: true

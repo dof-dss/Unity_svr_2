@@ -1,0 +1,17 @@
+uuid: 09a9ff65-3c33-43f2-bcc9-64d0c68fde7a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Rd4kv4wYenx133xSPHHJw0xVmJ4MP49i3AJFVwpMuU4
+name: nigov_landscape_thumbnail_300x200_x2
+label: 'nigov landscape thumbnail 300x200 (x2)'
+effects:
+  3c3b88a0-ce39-4785-8ccf-4438c59befdb:
+    uuid: 3c3b88a0-ce39-4785-8ccf-4438c59befdb
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 200
+      anchor: center-center

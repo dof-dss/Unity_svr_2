@@ -1,0 +1,23 @@
+uuid: ee8a416a-858b-4222-8eaf-b6f4f0baf3a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.nigov_banner_1880x600_x2
+    - image.style.nigov_banner_940x300_x1
+_core:
+  default_config_hash: 0dxRpC2LIW4p4M23GhOH-pmmoxbeHtxJT-c3iBhzJlk
+id: deep_banner
+label: 'Banner deep'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - nigov_banner_1880x600_x2
+        - nigov_banner_940x300_x1
+breakpoint_group: responsive_image
+fallback_image_style: nigov_banner_940x300_x1

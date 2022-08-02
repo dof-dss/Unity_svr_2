@@ -1,0 +1,33 @@
+uuid: bfd6aa2d-1b85-4736-b4f2-1fedb0036315
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_content
+    - node.type.feature
+    - node.type.featured_content_list
+    - node.type.news
+_core:
+  default_config_hash: 0VfC90DInkGsnV7A5SjfCgr9gOrNOuQT9__xqUVLVUI
+id: node.featured_content_list.field_featured_content
+field_name: field_featured_content
+entity_type: node
+bundle: featured_content_list
+label: 'Featured content'
+description: "<p>Defines the order of feature content to appear as part of this featured content list.</p>\r\n<p>Please note: the homepage will only show the first three items defined.</p>"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      feature: feature
+      news: news
+    sort:
+      field: type
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: feature
+field_type: entity_reference
