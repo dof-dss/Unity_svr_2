@@ -103,7 +103,7 @@ if (getenv('LANDO')) {
   foreach ($project['sites'] as $site_id => $site) {
     if ($site_id == 'mentalhealthchampionni') {
       // Special case for URL that contains a '-'
-      $sites['mentalhealthchampion-ni.lndo.site'] = $site_id;
+      $sites['mentalhealthchampion-ni.org.uk.lndo.site'] = $site_id;
     } else {
       $sites[$site['url'] . '.lndo.site'] = $site_id;
     }
