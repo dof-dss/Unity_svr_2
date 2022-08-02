@@ -1,4 +1,4 @@
-uuid: 18ee884b-9628-4959-83a3-f5ad95512362
+uuid: 2bb1768f-5088-4a77-9f3b-b9b66b941fd7
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
 id: pagetitle
 theme: mentalhealthchampion_theme
 region: content
-weight: -2
+weight: -6
 provider: null
 plugin: page_title_block
 settings:
@@ -21,4 +21,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: '<front>'
+    pages: "/search\r\n/news\r\n/news/date/*\r\n/node/*/revisions/view/*\r\n/publications\r\n/publications/date/*\r\n/publications/type/*\r\n<front>"

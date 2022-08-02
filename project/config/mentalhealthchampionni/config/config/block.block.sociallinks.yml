@@ -11,7 +11,7 @@ dependencies:
 id: sociallinks
 theme: mentalhealthchampion_theme
 region: footer_first
-weight: 0
+weight: -8
 provider: null
 plugin: 'block_content:08ac2b4a-a992-4ecc-bfd2-c0388e1ec37d'
 settings:
