@@ -253,6 +253,18 @@ jobs:
                 fi
               fi
             done
+  # Checks to ensure that Unity Base has not been polluted with project files.
+  unity_base_checks:
+    docker:
+      - image: circleci/php:7.4.15-apache-browsers
+    environment:
+      PROJECT_ROOT: "/home/circleci/project"
+    steps:
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Check Project direct and files do not exist
+          command: .circleci/unity_base_guardian.sh
 
 workflows:
   version: 2
@@ -291,3 +303,11 @@ workflows:
                 - D8UN-edge
     jobs:
       - sync_data
+
+  # Checks against Unity Base repo but not the forks.
+  unity-base-tasks:
+    when:
+      - equal: [ https://github.com/dof-dss/unity_base.git, << pipeline.project.git_url >> ]
+    jobs:
+      - unity_base_checks
+
