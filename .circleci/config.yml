@@ -255,6 +255,9 @@ jobs:
             done
   # Checks to ensure that Unity Base has not been polluted with project files.
   unity_base_checks:
+    when:
+      and:
+        - equal: [ "https://github.com/dof-dss/unity_base.git", << pipeline.project.git_url >> ]
     docker:
       - image: circleci/php:7.4.15-apache-browsers
     environment:
@@ -270,6 +273,7 @@ workflows:
   version: 2
   build-test-deploy:
     jobs:
+      - unity_base_checks
       - build
       - coding_standards:
           requires:
@@ -303,12 +307,3 @@ workflows:
                 - D8UN-edge
     jobs:
       - sync_data
-
-  # Checks against Unity Base repo but not the forks.
-  unity-base-tasks:
-    when:
-     and:
-      - equal: [ "https://github.com/dof-dss/unity_base.git", << pipeline.project.git_url >> ]
-    jobs:
-      - unity_base_checks
-
