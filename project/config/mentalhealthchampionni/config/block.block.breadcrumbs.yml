@@ -1,0 +1,24 @@
+uuid: 5f99d612-063e-4c73-8f2e-c08c02d4242c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mentalhealthchampion_theme
+id: breadcrumbs
+theme: mentalhealthchampion_theme
+region: breadcrumb
+weight: -1
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'
