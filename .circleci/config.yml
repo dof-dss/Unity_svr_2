@@ -307,7 +307,8 @@ workflows:
   # Checks against Unity Base repo but not the forks.
   unity-base-tasks:
     when:
-      - equal: [ https://github.com/dof-dss/unity_base.git, << pipeline.project.git_url >> ]
+     and:
+      - equal: [ "https://github.com/dof-dss/unity_base.git", << pipeline.project.git_url >> ]
     jobs:
       - unity_base_checks
 
