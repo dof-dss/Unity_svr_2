@@ -269,8 +269,8 @@ jobs:
             - run:
                 name: Check Project directory and files do not exist
                 command: |
-                  cd /home/circleci/project/.circleci/
-                  ./unity_base_guardian.sh
+                  cd /home/circleci/project/
+                  ./.circleci/unity_base_guardian.sh
 
 workflows:
   version: 2
