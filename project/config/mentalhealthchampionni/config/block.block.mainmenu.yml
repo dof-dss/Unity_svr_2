@@ -1,0 +1,25 @@
+uuid: cd87ee44-4dd3-437a-8d47-09f21c708517
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - mentalhealthchampion_theme
+id: mainmenu
+theme: mentalhealthchampion_theme
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

@@ -7,7 +7,7 @@ sites:
         solr: mentalhealthchampionni
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/mentalhealthchampionni ; drush core-cron'
-        database: mentalhealthchampion
+        database: mentalhealthchampionni
         deploy: false
     unity2test:
         name: 'Unity 2 test site'
