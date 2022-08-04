@@ -7,9 +7,9 @@ dependencies:
   module:
     - system
   theme:
-    - mentalhealthchampion_theme
+    - mentalhealthchampionni_theme
 id: mainmenu
-theme: mentalhealthchampion_theme
+theme: mentalhealthchampionni_theme
 region: primary_menu
 weight: 0
 provider: null

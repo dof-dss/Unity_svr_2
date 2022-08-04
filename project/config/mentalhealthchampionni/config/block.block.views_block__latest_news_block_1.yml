@@ -7,9 +7,9 @@ dependencies:
   module:
     - views
   theme:
-    - mentalhealthchampion_theme
+    - mentalhealthchampionni_theme
 id: views_block__latest_news_block_1
-theme: mentalhealthchampion_theme
+theme: mentalhealthchampionni_theme
 region: top_first
 weight: 0
 provider: null

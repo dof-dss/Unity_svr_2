@@ -8,9 +8,9 @@ dependencies:
     - node
     - views
   theme:
-    - mentalhealthchampion_theme
+    - mentalhealthchampionni_theme
 id: views_block__latest_news_latest_news
-theme: mentalhealthchampion_theme
+theme: mentalhealthchampionni_theme
 region: sidebar_second
 weight: 0
 provider: null

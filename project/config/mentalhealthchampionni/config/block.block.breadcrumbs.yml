@@ -5,9 +5,9 @@ dependencies:
   module:
     - system
   theme:
-    - mentalhealthchampion_theme
+    - mentalhealthchampionni_theme
 id: breadcrumbs
-theme: mentalhealthchampion_theme
+theme: mentalhealthchampionni_theme
 region: breadcrumb
 weight: -1
 provider: null

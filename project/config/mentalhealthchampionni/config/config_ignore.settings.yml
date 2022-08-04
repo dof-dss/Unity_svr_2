@@ -1,11 +1,11 @@
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
 ignored_config_entities:
-  - 'mentalhealthchampion_theme.settings:twitter_profile_url'
-  - 'mentalhealthchampion_theme.settings:facebook_profile_url'
-  - 'mentalhealthchampion_theme.settings:linkedin_profile_url'
-  - 'mentalhealthchampion_theme.settings:pinterest_profile_url'
-  - 'mentalhealthchampion_theme.settings:youtube_profile_url'
-  - 'mentalhealthchampion_theme.settings:instagram_profile_url'
-  - 'mentalhealthchampion_theme.settings:basic_page_structure'
+  - 'mentalhealthchampionni_theme.settings:twitter_profile_url'
+  - 'mentalhealthchampionni_theme.settings:facebook_profile_url'
+  - 'mentalhealthchampionni_theme.settings:linkedin_profile_url'
+  - 'mentalhealthchampionni_theme.settings:pinterest_profile_url'
+  - 'mentalhealthchampionni_theme.settings:youtube_profile_url'
+  - 'mentalhealthchampionni_theme.settings:instagram_profile_url'
+  - 'mentalhealthchampionni_theme.settings:basic_page_structure'
   - block.block.sociallinks

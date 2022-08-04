@@ -8,9 +8,9 @@ dependencies:
     - system
     - views
   theme:
-    - mentalhealthchampion_theme
+    - mentalhealthchampionni_theme
 id: exposedformpublications_searchpublication_search_page
-theme: mentalhealthchampion_theme
+theme: mentalhealthchampionni_theme
 region: search_facets
 weight: -6
 provider: null
