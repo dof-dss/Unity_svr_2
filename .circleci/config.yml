@@ -309,6 +309,6 @@ workflows:
           filters:
             branches:
               only:
-                - D8UN-edge
+                - edge
     jobs:
       - sync_data
