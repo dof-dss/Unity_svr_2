@@ -7,9 +7,9 @@ dependencies:
   module:
     - block_content
   theme:
-    - mentalhealthchampion_theme
+    - mentalhealthchampionni_theme
 id: sociallinks
-theme: mentalhealthchampion_theme
+theme: mentalhealthchampionni_theme
 region: footer_first
 weight: -8
 provider: null

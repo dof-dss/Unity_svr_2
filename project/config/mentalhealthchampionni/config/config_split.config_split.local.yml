@@ -6,7 +6,7 @@ id: local
 label: local
 description: "Local development split. \r\nEnables debugging and development modules"
 weight: 0
-folder: ../project/config/mentalhealthchampionni/local
+folder: ../project/config/mentalhealthchampionnini/local
 module:
   dblog: 0
   easy_install: 0

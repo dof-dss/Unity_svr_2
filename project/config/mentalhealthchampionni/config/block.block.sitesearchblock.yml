@@ -6,9 +6,9 @@ dependencies:
     - system
     - unity_search_pages
   theme:
-    - mentalhealthchampion_theme
+    - mentalhealthchampionni_theme
 id: sitesearchblock
-theme: mentalhealthchampion_theme
+theme: mentalhealthchampionni_theme
 region: search
 weight: 0
 provider: null

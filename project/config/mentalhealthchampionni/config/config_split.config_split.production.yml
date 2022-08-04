@@ -6,7 +6,7 @@ id: production
 label: production
 description: 'Used for production site.'
 weight: 0
-folder: ../project/config/mentalhealthchampionni/production
+folder: ../project/config/mentalhealthchampionnini/production
 module: {  }
 theme: {  }
 blacklist: {  }

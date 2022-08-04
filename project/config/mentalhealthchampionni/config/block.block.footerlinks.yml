@@ -7,9 +7,9 @@ dependencies:
   module:
     - system
   theme:
-    - mentalhealthchampion_theme
+    - mentalhealthchampionni_theme
 id: footerlinks
-theme: mentalhealthchampion_theme
+theme: mentalhealthchampionni_theme
 region: footer_first
 weight: -7
 provider: null
