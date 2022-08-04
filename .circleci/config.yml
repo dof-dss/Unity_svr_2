@@ -267,8 +267,10 @@ jobs:
             equal: [ "https://github.com/dof-dss/unity_base", << pipeline.project.git_url >> ]
           steps:
             - run:
-                name: Check Project direct and files do not exist
-                command: .circleci/unity_base_guardian.sh
+                name: Check Project directory and files do not exist
+                command: |
+                cd /home/circleci/project/.circleci/
+                ./unity_base_guardian.sh
 
 workflows:
   version: 2
