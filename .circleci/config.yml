@@ -276,8 +276,10 @@ workflows:
   version: 2
   build-test-deploy:
     jobs:
-      - unity_base_checks
       - build
+      - unity_base_checks:
+          requires:
+            - build
       - coding_standards:
           requires:
             - build
