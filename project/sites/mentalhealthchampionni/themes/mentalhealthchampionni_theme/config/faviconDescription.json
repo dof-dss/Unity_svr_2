@@ -1,6 +1,6 @@
 {
   "masterPicture": "images/favicon.svg",
-  "iconsPath": "/sites/mentalhealthchampion/themes/mentalhealthchampion_theme/images/favicons/",
+  "iconsPath": "/sites/mentalhealthchampionni/themes/mentalhealthchampionni_theme/images/favicons/",
   "design": {
     "ios": {
       "pictureAspect": "backgroundAndMargin",
@@ -12,7 +12,7 @@
         "precomposedIcons": false,
         "declareOnlyDefaultIcon": true
       },
-      "appName": "mentalhealthchampion"
+      "appName": "mentalhealthchampionni"
     },
     "desktopBrowser": {},
     "windows": {
@@ -28,13 +28,13 @@
           "rectangle": false
         }
       },
-      "appName": "mentalhealthchampion"
+      "appName": "mentalhealthchampionni"
     },
     "androidChrome": {
       "pictureAspect": "noChange",
       "themeColor": "#ffffff",
       "manifest": {
-        "name": "mentalhealthchampion",
+        "name": "mentalhealthchampionni",
         "display": "standalone",
         "orientation": "notSet",
         "onConflict": "override",

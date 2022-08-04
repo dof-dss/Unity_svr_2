@@ -15,7 +15,7 @@ module.exports = (ctx) => ({
       cachebuster: true,
       relative: true,
       loadPaths: ['images'],
-      baseUrl: '/themes/mentalhealthchampion_theme/'
+      baseUrl: '/themes/mentalhealthchampionni_theme/'
     }
   }
 })
