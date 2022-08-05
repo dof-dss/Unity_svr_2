@@ -66,6 +66,8 @@ relationships:
     mentalhealthchampionni: 'db:mentalhealthchampionni'
     mentalhealthchampionni_solr: 'solr:mentalhealthchampionni'
     unity2test: 'db:unity2test'
+    publicappointmentsni: 'db:publicappointmentsni'
+    publicappointmentsni_solr: 'solr:publicappointmentsni'
 crons:
     mentalhealthchampionni:
         spec: '10 * * * *'
@@ -73,3 +75,6 @@ crons:
     unity2test:
         spec: '10 * * * *'
         cmd: 'cd web/sites/unity2test ; drush core-cron'
+    publicappointmentsni:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/publicappointmentsni ; drush core-cron'

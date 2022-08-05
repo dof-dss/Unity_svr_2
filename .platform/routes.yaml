@@ -14,6 +14,14 @@
 'https://unity2test.com/':
     type: redirect
     to: 'https://www.unity2test.com/'
+'https://www.publicappointmentsni.org/':
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
+'https://publicappointmentsni.org/':
+    type: redirect
+    to: 'https://www.publicappointmentsni.org/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_2:http'
