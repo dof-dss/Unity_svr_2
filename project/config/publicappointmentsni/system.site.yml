@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
+name: 'The Commissioner for Public Appointments for Northern Ireland'
+mail: test@test.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+uuid: 569c8fd6-907b-4b87-85a5-15f03e398b03
+frontpage_title: 'Welcome to Drupal site'
