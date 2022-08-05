@@ -1,0 +1,17 @@
+uuid: 68ad1273-afa2-4e86-b0f0-547f82140b06
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kF-wUErR2md_ZFi5PyquWkaf9O656brKLgq3G-R3frA
+name: nigov_landscape_thumbnail_150x100_x1
+label: 'nigov landscape thumbnail 150x100 (x1)'
+effects:
+  fcc5a7ca-1afe-4c73-939a-1b1199fc1c07:
+    uuid: fcc5a7ca-1afe-4c73-939a-1b1199fc1c07
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 100
+      anchor: center-center
