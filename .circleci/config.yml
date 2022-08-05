@@ -1,5 +1,10 @@
 version: 2.1
 
+# Default docker image.
+default_docker_image: &docker_image
+  docker:
+    - image: circleci/php:7.4.15-apache-browsers
+
 # Re-usable commands.
 commands:
   checkout_code:
@@ -76,8 +81,7 @@ commands:
 jobs:
   # Tests the integrity of the build, stores the results in a workspace for re-use in later jobs.
   build:
-    docker:
-      - image: circleci/php:7.4.15-apache-browsers
+    <<: *docker_image
     steps:
       - checkout_code
       - install_php_os_extensions
@@ -89,8 +93,7 @@ jobs:
 
   # Test for coding standards - will inherit the workspace/filesystem changes from build step, above.
   coding_standards:
-    docker:
-      - image: circleci/php:7.4.15-apache-browsers
+    <<: *docker_image
     environment:
       PROJECT_ROOT: "/home/circleci/project"
     steps:
@@ -110,8 +113,7 @@ jobs:
 
   # Test for deprecated code - will inherit the workspace/filesystem changes from build step, above.
   deprecated_code:
-    docker:
-      - image: circleci/php:7.4.15-apache-browsers
+    <<: *docker_image
     environment:
       PROJECT_ROOT: "/home/circleci/project"
     steps:
@@ -128,8 +130,7 @@ jobs:
 
   # Nightly edge build
   edge_build:
-    docker:
-      - image: circleci/php:7.4.15-apache-node-browsers
+    <<: *docker_image
     environment:
       # git variables to avoid empty committer identity errors
       EMAIL: "circleci@localhost"
@@ -179,8 +180,7 @@ jobs:
 
   # Separate task to allow us to sync data on PSH environments, without pauses in other jobs.
   sync_data:
-    docker:
-      - image: circleci/php:7.4.15-apache-browsers
+    <<: *docker_image
     steps:
       - hosts_keyscan
       - checkout_code
@@ -255,8 +255,7 @@ jobs:
             done
   # Checks to ensure that Unity Base has not been polluted with project files.
   unity_base_checks:
-    docker:
-      - image: circleci/php:7.4.15-apache-browsers
+    <<: *docker_image
     environment:
       PROJECT_ROOT: "/home/circleci/project"
     steps:
@@ -289,6 +288,10 @@ workflows:
 
   # A nightly build of the project, using all dof-dss packages at HEAD from development branch.
   nightly-edge-build:
+    when:
+      and:
+        - not:
+          equal: [ "https://github.com/dof-dss/unity_base", << pipeline.project.git_url >> ]
     triggers:
       - schedule:
           # At 00:30 Monday to Friday
@@ -302,6 +305,10 @@ workflows:
 
   # A nightly deploy or re-deploy of the edge site after the git branch has been created in nightly-edge-build.
   nightly-edge-build-post-build-tasks:
+    when:
+      and:
+        - not:
+          equal: [ "https://github.com/dof-dss/unity_base", << pipeline.project.git_url >> ]
     triggers:
       - schedule:
           # At 01:23 Monday to Friday
