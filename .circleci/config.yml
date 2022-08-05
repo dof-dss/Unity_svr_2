@@ -289,6 +289,10 @@ workflows:
 
   # A nightly build of the project, using all dof-dss packages at HEAD from development branch.
   nightly-edge-build:
+    when:
+      and:
+        - not:
+          equal: [ "https://github.com/dof-dss/unity_base", << pipeline.project.git_url >> ]
     triggers:
       - schedule:
           # At 00:30 Monday to Friday
@@ -302,6 +306,10 @@ workflows:
 
   # A nightly deploy or re-deploy of the edge site after the git branch has been created in nightly-edge-build.
   nightly-edge-build-post-build-tasks:
+    when:
+      and:
+        - not:
+          equal: [ "https://github.com/dof-dss/unity_base", << pipeline.project.git_url >> ]
     triggers:
       - schedule:
           # At 01:23 Monday to Friday
