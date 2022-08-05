@@ -16,3 +16,11 @@ sites:
         cron_cmd: 'cd web/sites/unity2test ; drush core-cron'
         database: unity2test
         deploy: false
+    publicappointmentsni:
+        name: 'The Commissioner for Public Appointments for Northern Ireland'
+        url: publicappointmentsni.org
+        solr: publicappointmentsni
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/publicappointmentsni ; drush core-cron'
+        database: publicappointmentsni
+        deploy: false
