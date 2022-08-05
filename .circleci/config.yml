@@ -76,7 +76,7 @@ commands:
 jobs:
   # Tests the integrity of the build, stores the results in a workspace for re-use in later jobs.
   build:
-    docker:
+    docker: &docker_image
       - image: circleci/php:7.4.15-apache-browsers
     steps:
       - checkout_code
@@ -89,8 +89,7 @@ jobs:
 
   # Test for coding standards - will inherit the workspace/filesystem changes from build step, above.
   coding_standards:
-    docker:
-      - image: circleci/php:7.4.15-apache-browsers
+    <<: *docker_image
     environment:
       PROJECT_ROOT: "/home/circleci/project"
     steps:
@@ -110,8 +109,7 @@ jobs:
 
   # Test for deprecated code - will inherit the workspace/filesystem changes from build step, above.
   deprecated_code:
-    docker:
-      - image: circleci/php:7.4.15-apache-browsers
+    <<: *docker_image
     environment:
       PROJECT_ROOT: "/home/circleci/project"
     steps:
@@ -128,8 +126,7 @@ jobs:
 
   # Nightly edge build
   edge_build:
-    docker:
-      - image: circleci/php:7.4.15-apache-node-browsers
+    <<: *docker_image
     environment:
       # git variables to avoid empty committer identity errors
       EMAIL: "circleci@localhost"
@@ -179,8 +176,7 @@ jobs:
 
   # Separate task to allow us to sync data on PSH environments, without pauses in other jobs.
   sync_data:
-    docker:
-      - image: circleci/php:7.4.15-apache-browsers
+    <<: *docker_image
     steps:
       - hosts_keyscan
       - checkout_code
@@ -255,8 +251,7 @@ jobs:
             done
   # Checks to ensure that Unity Base has not been polluted with project files.
   unity_base_checks:
-    docker:
-      - image: circleci/php:7.4.15-apache-browsers
+    <<: *docker_image
     environment:
       PROJECT_ROOT: "/home/circleci/project"
     steps:
