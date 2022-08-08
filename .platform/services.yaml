@@ -4,11 +4,16 @@ db:
     configuration:
         schemas:
             - mentalhealthchampionnidb
+            - ircommissiondb
         endpoints:
             mentalhealthchampionni:
                 default_schema: mentalhealthchampionnidb
                 privileges:
                     mentalhealthchampionnidb: admin
+            ircommission:
+                default_schema: ircommissiondb
+                privileges:
+                    ircommissiondb: admin
 solr:
     type: 'solr:7.7'
     disk: 1024
@@ -16,8 +21,12 @@ solr:
         cores:
             mentalhealthchampionni_index:
                 conf_dir: !archive solr_config/
+            ircommission_index:
+                conf_dir: !archive solr_config/
         endpoints:
             mentalhealthchampionni:
                 core: mentalhealthchampionni_index
+            ircommission:
+                core: ircommission_index
 redis:
     type: 'redis:6.0'

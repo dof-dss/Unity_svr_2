@@ -9,3 +9,11 @@ sites:
         cron_cmd: 'cd web/sites/mentalhealthchampionni ; drush core-cron'
         database: mentalhealthchampionni
         deploy: false
+    ircommission:
+        name: 'Independent Reporting Commission'
+        url: ircommission.org
+        solr: ircommission
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/ircommission ; drush core-cron'
+        database: ircommission
+        deploy: true
