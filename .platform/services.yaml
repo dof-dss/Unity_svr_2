@@ -5,6 +5,7 @@ db:
         schemas:
             - mentalhealthchampionnidb
             - unity2testdb
+            - publicappointmentsnidb
         endpoints:
             mentalhealthchampionni:
                 default_schema: mentalhealthchampionnidb
@@ -14,6 +15,10 @@ db:
                 default_schema: unity2testdb
                 privileges:
                     unity2testdb: admin
+            publicappointmentsni:
+                default_schema: publicappointmentsnidb
+                privileges:
+                    publicappointmentsnidb: admin
 solr:
     type: 'solr:7.7'
     disk: 1024
@@ -21,8 +26,12 @@ solr:
         cores:
             mentalhealthchampionni_index:
                 conf_dir: !archive solr_config/
+            publicappointmentsni_index:
+                conf_dir: !archive solr_config/
         endpoints:
             mentalhealthchampionni:
                 core: mentalhealthchampionni_index
+            publicappointmentsni:
+                core: publicappointmentsni_index
 redis:
     type: 'redis:6.0'

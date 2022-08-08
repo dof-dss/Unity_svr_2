@@ -1,0 +1,25 @@
+uuid: 76456bf9-90c8-4500-afe9-01d97755f30b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 26uTEWUfjqqEC1EBkF8VE-wt4BW1Xhg1TucUdIXZWZA
+name: nigov_landscape_xl_620x413_x1
+label: 'nigov landscape xl 620x413 (x1)'
+effects:
+  d16e6116-7833-4447-95f9-c194fe91c3d4:
+    uuid: d16e6116-7833-4447-95f9-c194fe91c3d4
+    id: image_scale
+    weight: 1
+    data:
+      width: 620
+      height: null
+      upscale: true
+  a5271e61-2668-4eaf-a25a-a4abac16e5ff:
+    uuid: a5271e61-2668-4eaf-a25a-a4abac16e5ff
+    id: image_crop
+    weight: 2
+    data:
+      width: 620
+      height: 413
+      anchor: center-center

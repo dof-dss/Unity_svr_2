@@ -1,0 +1,77 @@
+uuid: 93dfe460-10eb-4647-a1ba-49fe9e51b3b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.faq
+  module:
+    - node
+    - redirect
+    - system
+_core:
+  default_config_hash: cI6O43jts_j67JaySnvjojNUQYYJXQmbWghOsb7iQNY
+id: supervisor_user
+label: 'supervisor user'
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration menu'
+  - 'access administration pages'
+  - 'access ckeditor link'
+  - 'add content to books'
+  - 'add media from remote sources'
+  - 'administer book outlines'
+  - 'administer main-menu menu items'
+  - 'administer redirects'
+  - 'create files'
+  - 'create new books'
+  - 'delete any audio files'
+  - 'delete any document files'
+  - 'delete any faq content'
+  - 'delete any image files'
+  - 'delete any page content'
+  - 'delete any staff_member content'
+  - 'delete any video files'
+  - 'delete own audio files'
+  - 'delete own document files'
+  - 'delete own image files'
+  - 'delete own video files'
+  - 'delete revisions'
+  - 'download any audio files'
+  - 'download any document files'
+  - 'download any image files'
+  - 'download any video files'
+  - 'download own audio files'
+  - 'download own document files'
+  - 'download own image files'
+  - 'download own video files'
+  - 'edit any audio files'
+  - 'edit any document files'
+  - 'edit any image files'
+  - 'edit any video files'
+  - 'edit own audio files'
+  - 'edit own document files'
+  - 'edit own image files'
+  - 'edit own video files'
+  - 'flag content_audit'
+  - 'flag independent_assessor_biographies'
+  - 'moderate content from draft to needs_review'
+  - 'moderate content from needs_review to draft'
+  - 'moderate content from needs_review to published'
+  - 'moderate content from published to needs_review'
+  - 'schedule revisions'
+  - 'show book reorder tab'
+  - 'show core Outline form element'
+  - 'show core Outline tab'
+  - 'unflag content_audit'
+  - 'unflag independent_assessor_biographies'
+  - 'use text format filtered_html'
+  - 'use text format filtered_html_with_no_images'
+  - 'use workbench_media add form'
+  - 'use workbench_moderation my drafts tab'
+  - 'use workbench_moderation needs review tab'
+  - 'view all unpublished content'
+  - 'view moderation history'
+  - 'view moderation messages'
+  - 'view own files'
+  - 'view the administration theme'
