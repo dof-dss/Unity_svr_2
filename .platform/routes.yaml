@@ -6,14 +6,6 @@
 'https://mentalhealthchampion-ni.org.uk/':
     type: redirect
     to: 'https://www.mentalhealthchampion-ni.org.uk/'
-'https://www.unity2test.com/':
-    type: upstream
-    upstream: 'unity_svr_2:http'
-    cache:
-        enabled: 'false'
-'https://unity2test.com/':
-    type: redirect
-    to: 'https://www.unity2test.com/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_2:http'
