@@ -4,17 +4,12 @@ db:
     configuration:
         schemas:
             - mentalhealthchampionnidb
-            - unity2testdb
             - publicappointmentsnidb
         endpoints:
             mentalhealthchampionni:
                 default_schema: mentalhealthchampionnidb
                 privileges:
                     mentalhealthchampionnidb: admin
-            unity2test:
-                default_schema: unity2testdb
-                privileges:
-                    unity2testdb: admin
             publicappointmentsni:
                 default_schema: publicappointmentsnidb
                 privileges:
