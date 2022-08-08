@@ -1,0 +1,14 @@
+uuid: 121abfaa-e512-4ebc-be26-e82f4b546a54
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.supervisor_user
+  module:
+    - user
+id: user_add_role_action.supervisor_user
+label: 'Add the supervisor user role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: supervisor_user
