@@ -105,11 +105,13 @@ module:
   toolbar: 0
   twig_tweak: 0
   ultimate_cron: 0
+  unity_breadcrumbs: 0
   unity_common: 0
   unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0
   unity_map_embed: 0
+  unity_search_pages: 0
   user: 0
   views_custom_cache_tag: 0
   webform: 0
@@ -132,4 +134,5 @@ theme:
   stable: 0
   adminimal_theme: 0
   nicsdru_unity_theme: 0
+  publicappointmentsni_theme: 0
 profile: nicsdru_unity_profile
