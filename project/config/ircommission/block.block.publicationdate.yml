@@ -1,0 +1,34 @@
+uuid: 46d2f0b7-8309-41bd-b517-ac4249cb8018
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.publication_date_news
+  module:
+    - block_visibility_groups
+    - facets
+    - system
+  theme:
+    - ircommission_theme
+id: publicationdate
+theme: ircommission_theme
+region: search_facets
+weight: -7
+provider: null
+plugin: 'facet_block:publication_date_news'
+settings:
+  id: 'facet_block:publication_date_news'
+  label: 'Published date'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: publicationdate
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/news\r\n/news/date/*"

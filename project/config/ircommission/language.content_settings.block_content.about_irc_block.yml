@@ -1,0 +1,11 @@
+uuid: 3b7311d8-ba4f-46e7-a64f-468f6d5073d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about_irc_block
+id: block_content.about_irc_block
+target_entity_type_id: block_content
+target_bundle: about_irc_block
+default_langcode: site_default
+language_alterable: false

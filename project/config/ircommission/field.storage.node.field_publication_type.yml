@@ -1,0 +1,30 @@
+uuid: 4d1f3a9e-41b5-4905-8bc5-4a1ad263f184
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_publication_type
+field_name: field_publication_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: correspondence
+      label: Correspondence
+    -
+      value: key_document
+      label: 'Key documents'
+    -
+      value: reports
+      label: Reports
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

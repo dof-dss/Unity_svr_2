@@ -1,0 +1,34 @@
+uuid: d6311656-c0d3-448c-8966-c3843bd84233
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - block_visibility_groups
+    - system
+  theme:
+    - ircommission_theme
+id: sidemenu
+theme: ircommission_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'In this section'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/about-irc\r\n/commissioners"

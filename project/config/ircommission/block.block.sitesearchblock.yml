@@ -1,0 +1,30 @@
+uuid: 5ade8c46-2fbd-43f0-84e9-7f42d8ae5990
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - system
+    - unity_search_pages
+  theme:
+    - ircommission_theme
+id: sitesearchblock
+theme: ircommission_theme
+region: search
+weight: 0
+provider: null
+plugin: site_search_block
+settings:
+  id: site_search_block
+  label: 'Site search block'
+  label_display: '0'
+  provider: unity_search_pages
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+  request_path:
+    id: request_path
+    negate: true
+    pages: /search

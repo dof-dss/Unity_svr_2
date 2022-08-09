@@ -1,0 +1,33 @@
+uuid: 63184782-cfe6-4826-a1b8-95aac8eb93c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_search
+  module:
+    - block_visibility_groups
+    - system
+    - views
+  theme:
+    - ircommission_theme
+id: exposedformnews_searchnews_search_page
+theme: ircommission_theme
+region: search_facets
+weight: -9
+provider: null
+plugin: 'views_exposed_filter_block:news_search-news_search_page'
+settings:
+  id: 'views_exposed_filter_block:news_search-news_search_page'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/news\r\n/news/date/*"

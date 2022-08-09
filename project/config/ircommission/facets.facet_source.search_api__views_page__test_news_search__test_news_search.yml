@@ -1,0 +1,9 @@
+uuid: 80c2b2c9-f875-4241-99e9-2a7184cd75ea
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__test_news_search__test_news_search
+name: 'search_api:views_page__test_news_search__test_news_search'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

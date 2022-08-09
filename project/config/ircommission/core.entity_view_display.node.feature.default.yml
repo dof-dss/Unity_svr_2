@@ -1,0 +1,50 @@
+uuid: 9280416c-5dcb-481f-aac3-b2fdb07b7a56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.feature.field_link_url
+    - field.field.node.feature.field_photo
+    - field.field.node.feature.field_teaser
+    - node.type.feature
+  module:
+    - link
+    - user
+id: node.feature.default
+targetEntityType: node
+bundle: feature
+mode: default
+content:
+  field_link_url:
+    type: link_separate
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: slide
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_teaser:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  links: true
+  search_api_excerpt: true

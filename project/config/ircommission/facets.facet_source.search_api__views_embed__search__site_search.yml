@@ -1,0 +1,12 @@
+uuid: cccd366e-0b6a-4332-9058-1c6af8a21b9e
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_embed__search__site_search
+name: 'search_api:views_embed__search__site_search'
+filter_key: ''
+url_processor: query_string
+breadcrumb:
+  active: false
+  before: true
+  group: false

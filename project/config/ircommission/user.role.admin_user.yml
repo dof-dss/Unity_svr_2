@@ -1,0 +1,46 @@
+uuid: 6575e6d0-c39e-415e-b707-40fdab345565
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news
+    - node.type.page
+    - node.type.publication_page
+  module:
+    - block
+    - node
+    - path
+    - pathauto
+    - redirect
+    - system
+id: admin_user
+label: 'admin user'
+weight: 6
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access user profiles'
+  - 'administer blocks'
+  - 'administer content types'
+  - 'administer modules'
+  - 'administer nodes'
+  - 'administer pathauto'
+  - 'administer permissions'
+  - 'administer redirects'
+  - 'administer site configuration'
+  - 'administer software updates'
+  - 'administer themes'
+  - 'administer url aliases'
+  - 'administer users'
+  - 'bypass node access'
+  - 'create publication_page content'
+  - 'delete any news content'
+  - 'delete any page content'
+  - 'delete any publication_page content'
+  - 'delete own publication_page content'
+  - 'edit any publication_page content'
+  - 'edit own publication_page content'
+  - 'view the administration theme'
