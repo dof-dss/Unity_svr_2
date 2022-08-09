@@ -1,0 +1,37 @@
+uuid: b0e4859e-361f-4809-bbbf-caaba8cced90
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_image_styles
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Image styles'
+source:
+  plugin: d7_image_styles
+process:
+  name:
+    -
+      plugin: get
+      source: name
+  label:
+    -
+      plugin: get
+      source: label
+  effects:
+    -
+      plugin: sub_process
+      source: effects
+      process:
+        id: name
+        weight: weight
+        data: data
+destination:
+  plugin: 'entity:image_style'
+migration_dependencies:
+  required: {  }
+  optional: {  }
