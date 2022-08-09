@@ -94,7 +94,6 @@ module:
   redis: 0
   responsive_image: 0
   scheduled_transitions: 0
-  search: 0
   simplei: 0
   structure_sync: 0
   system: 0

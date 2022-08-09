@@ -8,7 +8,6 @@ dependencies:
     - node
     - path
     - pathauto
-    - search
     - system
 _core:
   default_config_hash: ttiBMK8DYIdLARGEG2nyY1Pv--Zz53eCjlO7fmrnAT4
@@ -39,7 +38,6 @@ permissions:
   - 'flag independent_assessor_biographies'
   - 'notify of path changes'
   - 'revert revisions'
-  - 'search content'
   - 'unflag independent_assessor_biographies'
   - 'use media wysiwyg'
   - 'use text format filtered_html'
