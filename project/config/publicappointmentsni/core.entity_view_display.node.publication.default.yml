@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.publication.body
     - field.field.node.publication.field_attachment
     - field.field.node.publication.field_meta_tags
-    - field.field.node.publication.field_photo
     - field.field.node.publication.field_publication_type
     - field.field.node.publication.field_published_date
     - node.type.publication
@@ -36,15 +35,6 @@ content:
       link: false
     third_party_settings: {  }
     weight: 2
-    region: content
-  field_photo:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: portrait_float
-      link: false
-    third_party_settings: {  }
-    weight: 3
     region: content
   field_published_date:
     type: datetime_default
