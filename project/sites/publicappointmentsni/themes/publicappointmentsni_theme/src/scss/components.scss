@@ -1,0 +1,44 @@
+/*
+ * @file
+ * Defines the components for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+#main-menu {
+  .menu-link,
+  .menu .active,
+  .menu-item.open .menu-toggle-btn {
+    color: $brand-primary;
+    @include adjust-font-size-to(16px);
+  }
+
+  .menu-link {
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  }
+
+  .menu .menu-item .active {
+    border-color: $brand-secondary;
+  }
+
+  .menu-main_sub {
+    background: $brand-secondary;
+
+    .menu-item {
+      .active {
+        color: $white;
+        border-color: $white;
+      }
+
+      a {
+        &:hover,
+        &:focus {
+          background: $charcoal;
+        }
+      }
+    }
+  }
+}
