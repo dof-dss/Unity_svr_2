@@ -1,0 +1,110 @@
+uuid: 21103756-6dc0-4359-9389-61aa644d778e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.map.field_location
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.map
+  module:
+    - geolocation
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.map.preview
+targetEntityType: paragraph
+bundle: map
+mode: preview
+content:
+  field_location:
+    type: geolocation_map
+    label: hidden
+    settings:
+      set_marker: true
+      show_label: false
+      common_map: true
+      show_delta_label: false
+      use_overridden_map_settings: false
+      title: ''
+      info_text:
+        value: ''
+        format: basic_html
+      centre:
+        fit_bounds:
+          enable: true
+          weight: -101
+          settings:
+            reset_zoom: true
+            min_zoom: null
+          map_center_id: fit_bounds
+        client_location:
+          enable: false
+          weight: 0
+          map_center_id: client_location
+        fixed_boundaries:
+          enable: false
+          weight: 0
+          settings:
+            south: ''
+            west: ''
+            north: ''
+            east: ''
+          map_center_id: fixed_boundaries
+        fixed_value:
+          enable: false
+          weight: 0
+          settings:
+            location_option_id: fixed_value
+            latitude: null
+            longitude: null
+          map_center_id: location_plugins
+        freeogeoip:
+          enable: false
+          weight: 0
+          settings:
+            location_option_id: freeogeoip
+          map_center_id: location_plugins
+        ipstack:
+          enable: false
+          weight: 0
+          settings:
+            location_option_id: ipstack
+            access_key: ''
+          map_center_id: location_plugins
+      map_provider_id: google_static_maps
+      map_provider_settings:
+        map_features:
+          geolocation_shapes:
+            weight: 0
+            settings:
+              remove_markers: false
+              polyline: true
+              polyline_title: ''
+              strokeColor: '#FF0000'
+              strokeOpacity: 0.8
+              strokeWidth: '2'
+              polygon: false
+              polygon_title: ''
+              fillColor: '#FF0000'
+              fillOpacity: 0.35
+            enabled: false
+          geolocation_marker_scroll_to_id:
+            weight: 0
+            settings:
+              scroll_target_id: ''
+            enabled: false
+        type: ROADMAP
+        zoom: 10
+        height: 400
+        width: 400
+        format: png
+        scale: 1
+      data_provider_settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

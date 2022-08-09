@@ -1,0 +1,44 @@
+uuid: cb7a62ab-10f7-491a-8914-fbe0c2c7bb39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.link.field_link_type
+    - field.field.node.link.field_link_url
+    - field.field.node.link.field_meta_tags
+    - node.type.link
+  module:
+    - link
+    - user
+_core:
+  default_config_hash: 1JRBurDvPd-oZ3jiYRJuNjmfVurzykTVuGOqkKkFdec
+id: node.link.default
+targetEntityType: node
+bundle: link
+mode: default
+content:
+  field_link_type:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  content_moderation_control: true
+  field_meta_tags: true
+  langcode: true
+  links: true

@@ -1,0 +1,34 @@
+uuid: 3063007c-5944-4656-aec2-a052b13811d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.front_latest_news
+  module:
+    - block_visibility_groups
+    - system
+    - views
+  theme:
+    - ircommission_theme
+id: views_block__front_latest_news_home_latest_news
+theme: ircommission_theme
+region: bottom_widget_2
+weight: -10
+provider: null
+plugin: 'views_block:front_latest_news-home_latest_news'
+settings:
+  id: 'views_block:front_latest_news-home_latest_news'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

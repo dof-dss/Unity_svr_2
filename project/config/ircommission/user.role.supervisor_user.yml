@@ -1,0 +1,29 @@
+uuid: 9a379354-4529-43a8-9b8b-0842a597ffea
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news
+    - node.type.page
+    - node.type.publication_page
+  module:
+    - node
+    - redirect
+    - system
+_core:
+  default_config_hash: cI6O43jts_j67JaySnvjojNUQYYJXQmbWghOsb7iQNY
+id: supervisor_user
+label: 'supervisor user'
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'administer redirects'
+  - 'create publication_page content'
+  - 'delete any news content'
+  - 'delete any page content'
+  - 'delete any publication_page content'
+  - 'delete own publication_page content'
+  - 'edit any publication_page content'
+  - 'edit own publication_page content'
+  - 'view the administration theme'

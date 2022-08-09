@@ -1,0 +1,38 @@
+uuid: af6f8d97-dbdd-466c-84ad-f4e72d2734e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.embed
+    - field.field.media.remote_video.field_media_oembed_video
+    - media.type.remote_video
+  module:
+    - layout_builder
+    - media
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: Of8WLiNbeyFRyfnhvONBRETmFUwO9MMsg2zkVInvu_Y
+id: media.remote_video.embed
+targetEntityType: media
+bundle: remote_video
+mode: embed
+content:
+  field_media_oembed_video:
+    type: oembed
+    label: hidden
+    settings:
+      max_width: 0
+      max_height: 0
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true
