@@ -13,7 +13,7 @@ commands:
       # Add SSH user key so we can access related repositories as part of our initial clone + composer install command.
       - add_ssh_keys:
           fingerprints:
-            - "63:d5:d9:74:c7:9c:80:83:9a:67:da:28:d2:a5:d3:e5"
+            - "e8:86:75:e8:35:15:07:a6:2d:a0:00:17:69:a1:42:84"
       - checkout
   composer_tasks:
     description: "Validate and install dependencies using composer"
