@@ -1,0 +1,77 @@
+/*
+ * @file
+ * Defines the layout code for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/2_layout/index';
+
+
+.front {
+  .front-banner{
+    max-width: 1023px;
+    margin: 0 auto;
+
+    @include breakpoint($tab) {
+      margin: 0 auto 4rem;
+    }
+  }
+}
+
+.content span{
+    color: #0a7ad0;
+  }
+
+.content .page-content{
+  color: #333;
+}
+
+#block-views-block-irc-key-documents-views-block-1-2 a {
+  color: #0a7ad0;
+}
+
+#block-views-block-irc-key-documents-views-block-1-2 a.btn{
+  color: #fff;
+  background: #0a7ad0;
+}
+
+#block-mainpagecontent a {
+  color: #0a7ad0;
+}
+
+.page-title span{
+  color: #141f71;
+}
+
+.menu.menu-main {
+  background-color: #333;
+}
+
+#edit-submit-search {
+  color: #333;
+}
+
+.content-sidebar-wrap .main-content {
+  margin-bottom: 0 ;
+}
+
+.front .front-banner{
+  margin: 0 auto;
+}
+
+.footer-area .column {
+  padding:0;
+}
+
+.block-views-exposed-filter-blockpublications-search-publication-search-page {
+  background-color: #f6f6f6;
+  padding: 1rem;
+}
+
+.views-row.search-result {
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+
+

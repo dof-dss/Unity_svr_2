@@ -1,0 +1,20 @@
+uuid: 88eb494a-93cc-48f4-be1e-bada62e57383
+langcode: en
+status: true
+dependencies: {  }
+id: migrate_drupal_
+label: 'Import from Drupal '
+description: 'Migrations originally generated from drush migrate-upgrade --configure-only'
+source_type: 'Drupal '
+module: null
+shared_configuration:
+  source:
+    key: drupal_
+    database:
+      driver: mysql
+      username: drupal9
+      password: drupal9
+      host: database
+      port: ''
+      database: ircommission_legacy
+      prefix: null
