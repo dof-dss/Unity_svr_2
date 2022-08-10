@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.publication.body
     - field.field.node.publication.field_attachment
     - field.field.node.publication.field_meta_tags
-    - field.field.node.publication.field_photo
     - field.field.node.publication.field_publication_type
     - field.field.node.publication.field_published_date
     - node.type.publication
@@ -58,15 +57,6 @@ content:
     settings:
       sidebar: true
     third_party_settings: {  }
-  field_photo:
-    type: media_library_widget
-    weight: 14
-    region: content
-    settings:
-      media_types: {  }
-    third_party_settings:
-      media_library_edit:
-        show_edit: '1'
   field_publication_type:
     type: options_select
     weight: 10

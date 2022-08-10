@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - search
     - system
 _core:
   default_config_hash: 9LODQAOK6MOVWRCgrgZRvkIYBG5aX0Ksd4ygTzmuFVo
@@ -14,5 +13,4 @@ is_admin: false
 permissions:
   - 'access content'
   - 'diff view changes'
-  - 'search content'
   - 'view files'

@@ -1,9 +1,9 @@
-uuid: 7c9b6bb1-19fd-461f-8d1c-1e50361c1584
+uuid: c2b0596d-770a-4b80-a235-421306a10bf5
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.search_index
     - field.field.node.publication.body
     - field.field.node.publication.field_attachment
     - field.field.node.publication.field_meta_tags
@@ -12,13 +12,18 @@ dependencies:
     - node.type.publication
   module:
     - datetime
+    - layout_builder
     - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
 _core:
-  default_config_hash: pADwKkEDzI5AJltJfqCe5pvrW5GX7inMqfLS27hYgxM
-id: node.publication.teaser
+  default_config_hash: dGe_U65t-a-PtVI1RO755kulh2XfPgvblOXVKquzmyU
+id: node.publication.search_index
 targetEntityType: node
 bundle: publication
-mode: teaser
+mode: search_index
 content:
   field_published_date:
     type: datetime_default
@@ -37,3 +42,4 @@ hidden:
   field_publication_type: true
   langcode: true
   links: true
+  search_api_excerpt: true
