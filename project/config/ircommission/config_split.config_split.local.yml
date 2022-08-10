@@ -6,7 +6,7 @@ id: local
 label: local
 description: ''
 weight: 0
-folder: ../config/ircommission/local
+folder: ../project/config/ircommission/local
 module:
   dblog: 0
   devel: 0

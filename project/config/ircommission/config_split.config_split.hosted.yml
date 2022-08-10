@@ -6,7 +6,7 @@ id: hosted
 label: hosted
 description: ''
 weight: 0
-folder: ../config/ircommission/hosted
+folder: ../project/config/ircommission/hosted
 module: {  }
 theme: {  }
 blacklist: {  }
