@@ -3,7 +3,7 @@ version: 2.1
 # Default docker image.
 default_docker_image: &docker_image
   docker:
-    - image: circleci/php:7.4.15-apache-browsers
+    - image: circleci/php:8.0-apache-browsers
 
 # Re-usable commands.
 commands:
@@ -48,7 +48,7 @@ commands:
       - run:
           name: Switch dof-dss packages to HEAD on develelopment branch
           command: |
-            composer require dof-dss/nicsdru_unity_theme:dev-development dof-dss/nicsdru_origins_modules:dev-development
+            composer require dof-dss/nicsdru_unity_theme:dev-development dof-dss/nicsdru_origins_modules:dev-development dof-dss/nicsdru_unity_modules:dev-development
   install_psh_cli:
     description: "Install the Platform.sh CLI tool"
     steps:
