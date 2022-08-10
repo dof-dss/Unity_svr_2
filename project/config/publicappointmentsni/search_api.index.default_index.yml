@@ -1,11 +1,8 @@
-uuid: b436a571-61e7-4c13-b3b5-bdc4775abcef
+uuid: 3d5b5c09-5ea5-4758-b833-c8a163b77589
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.body
-    - field.storage.node.field_publication_type
-    - field.storage.node.field_published_date
     - search_api.server.solr_default
   module:
     - search_api_solr
@@ -52,35 +49,19 @@ third_party_settings:
     multilingual:
       limit_to_content_language: false
       include_language_independent: true
-id: publications
-name: Publications
+id: default_index
+name: 'Default index'
 description: ''
 read_only: false
 field_settings:
-  body:
-    label: Body
+  created:
+    label: 'Authored on'
     datasource_id: 'entity:node'
-    property_path: body
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.body
-  field_publication_type:
-    label: 'Publication type'
-    datasource_id: 'entity:node'
-    property_path: field_publication_type
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_publication_type
-  field_published_date:
-    label: 'Published date'
-    datasource_id: 'entity:node'
-    property_path: field_published_date
+    property_path: created
     type: date
     dependencies:
-      config:
-        - field.storage.node.field_published_date
+      module:
+        - node
   langcode:
     label: Language
     datasource_id: 'entity:node'
@@ -89,39 +70,36 @@ field_settings:
     dependencies:
       module:
         - node
-  spelling:
-    label: Spelling
-    property_path: aggregated_field
-    type: solr_text_spellcheck
-    configuration:
-      type: union
-      fields:
-        - 'entity:node/title'
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
   title:
     label: Title
     datasource_id: 'entity:node'
     property_path: title
     type: text
-    boost: !!float 3
+    boost: !!float 5
     dependencies:
       module:
         - node
-  title_fulltext:
-    label: 'Title fulltext'
-    property_path: aggregated_field
-    type: text
-    boost: !!float 13
-    configuration:
-      type: union
-      fields:
-        - 'entity:node/body'
-        - 'entity:node/title'
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
 datasource_settings:
   'entity:node':
     bundles:
-      default: false
-      selected:
-        - publication
+      default: true
+      selected: {  }
     languages:
       default: true
       selected: {  }
@@ -140,18 +118,14 @@ processor_settings:
     excerpt_length: 256
     exclude_fields: {  }
     highlight: always
-    highlight_partial: false
+    highlight_partial: true
   html_filter:
     weights:
       preprocess_index: -15
       preprocess_query: -15
-    all_fields: true
+    all_fields: false
     fields:
-      - body
-      - langcode
-      - spelling
       - title
-      - title_fulltext
     title: false
     alt: true
     tags:
@@ -160,16 +134,87 @@ processor_settings:
       h2: 3
       h3: 2
       strong: 2
+  ignorecase:
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+    all_fields: false
+    fields:
+      - langcode
+      - title
+      - type
   language_with_fallback: {  }
   rendered_item: {  }
-  solr_date_range:
+  solr_date_range: {  }
+  stemmer:
     weights:
       preprocess_index: 0
+      preprocess_query: 0
+    all_fields: false
+    fields:
+      - title
+    exceptions:
+      mexican: mexic
+      texan: texa
+  stopwords:
+    weights:
+      preprocess_index: -5
+      preprocess_query: -2
+    all_fields: false
+    fields:
+      - title
+    stopwords:
+      - a
+      - an
+      - and
+      - are
+      - as
+      - at
+      - be
+      - but
+      - by
+      - for
+      - if
+      - in
+      - into
+      - is
+      - it
+      - 'no'
+      - not
+      - of
+      - 'on'
+      - or
+      - s
+      - such
+      - t
+      - that
+      - the
+      - their
+      - then
+      - there
+      - these
+      - they
+      - this
+      - to
+      - was
+      - will
+      - with
+  tokenizer:
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+    all_fields: false
+    fields:
+      - title
+    spaces: ''
+    ignored: ._-
+    overlap_cjk: 1
+    minimum_word_size: '3'
 tracker_settings:
   default:
     indexing_order: fifo
 options:
   cron_limit: 50
   index_directly: true
-  track_changes_in_references: true
+  track_changes_in_references: false
 server: solr_default
