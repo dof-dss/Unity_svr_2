@@ -6,6 +6,7 @@ module:
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
   allowed_formats: 0
+  auto_entityqueue: 0
   automated_cron: 0
   blazy: 0
   block: 0
@@ -38,6 +39,8 @@ module:
   entity_browser_entity_form: 0
   entity_embed: 0
   entity_reference_revisions: 0
+  entityqueue: 0
+  entityqueue_smartqueue: 0
   facets: 0
   facets_pretty_paths: 0
   facets_summary: 0
