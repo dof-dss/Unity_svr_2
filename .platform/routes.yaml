@@ -16,8 +16,8 @@
     to: 'https://www.publicappointmentsni.org/'
 'https://www.ircommission.org/':
     type: upstream
-      upstream: 'unity_svr_2:http'
-      cache:
+    upstream: 'unity_svr_2:http'
+    cache:
         enabled: 'false'
 'https://ircommission.org/':
     type: redirect
