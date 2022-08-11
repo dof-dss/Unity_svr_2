@@ -6,7 +6,7 @@ core_version_requirement: ^8.8 || ^9
 
 libraries:
   - publicappointmentsni_theme/site-styling
-  - nicsdru_unity_theme/sidebar_menu
+  - nicsdru_unity_theme/board_member
 
 libraries-override:
   nicsdru_unity_theme/unity-global-styling:

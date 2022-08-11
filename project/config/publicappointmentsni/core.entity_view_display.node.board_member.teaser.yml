@@ -19,24 +19,26 @@ bundle: board_member
 mode: teaser
 content:
   field_member_image:
-    type: entity_reference_label
-    weight: 0
-    region: content
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
+      view_mode: member_small_image
+      link: false
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_member_role:
     type: string
-    weight: 1
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   body: true
   content_moderation_control: true
   field_meta_tags: true
   langcode: true
   links: true
+  search_api_excerpt: true
