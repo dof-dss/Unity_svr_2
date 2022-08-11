@@ -40,7 +40,6 @@ module:
   entity_embed: 0
   entity_reference_revisions: 0
   entityqueue: 0
-  entityqueue_smartqueue: 0
   facets: 0
   facets_pretty_paths: 0
   facets_summary: 0
