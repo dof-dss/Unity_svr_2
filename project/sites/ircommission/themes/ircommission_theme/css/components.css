@@ -1913,19 +1913,19 @@ a.btn:focus {
 /* line 95, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
 .info-notice {
   border-color: #002e62;
-  background: #fff url('../images/i.svg?182107f2bfe') no-repeat 0.9rem 0.9rem/24px 24px;
+  background: #fff url('../images/i.svg?1828d2b6604') no-repeat 0.9rem 0.9rem/24px 24px;
 }
 
 @media (min-width: 641px) {
   /* line 95, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
   .info-notice {
-    background: #fff url('../images/i.svg?182107f2bfe') no-repeat 1.4rem 1.4rem/30px 30px;
+    background: #fff url('../images/i.svg?1828d2b6604') no-repeat 1.4rem 1.4rem/30px 30px;
   }
 }
 
 /* line 104, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
 .no-svg .info-notice {
-  background-image: url('../images/i.png?182107f2bfe');
+  background-image: url('../images/i.png?1828d2b6604');
 }
 
 /* line 109, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
@@ -1955,55 +1955,55 @@ ul.info-notice {
 /* line 135, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
 .messages--error {
   border-color: #e34f4f;
-  background: #fff url('../images/wrong.svg?182107f2c02') no-repeat 0.9rem 0.9rem/24px 24px;
+  background: #fff url('../images/wrong.svg?1828d2b6608') no-repeat 0.9rem 0.9rem/24px 24px;
 }
 
 @media (min-width: 641px) {
   /* line 135, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
   .messages--error {
-    background: #fff url('../images/wrong.svg?182107f2c02') no-repeat 1.4rem 1.4rem/30px 30px;
+    background: #fff url('../images/wrong.svg?1828d2b6608') no-repeat 1.4rem 1.4rem/30px 30px;
   }
 }
 
 /* line 143, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
 .no-svg .messages--error {
-  background-image: url('../images/wrong.png?182107f2c02');
+  background-image: url('../images/wrong.png?1828d2b6607');
 }
 
 /* line 148, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
 .messages--status {
   border-color: #3fa940;
-  background: #fff url('../images/status.svg?182107f2c01') no-repeat 0.9rem 0.9rem/24px 24px;
+  background: #fff url('../images/status.svg?1828d2b6607') no-repeat 0.9rem 0.9rem/24px 24px;
 }
 
 @media (min-width: 641px) {
   /* line 148, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
   .messages--status {
-    background: #fff url('../images/status.svg?182107f2c01') no-repeat 1.4rem 1.4rem/30px 30px;
+    background: #fff url('../images/status.svg?1828d2b6607') no-repeat 1.4rem 1.4rem/30px 30px;
   }
 }
 
 /* line 156, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
 .no-svg .messages--status {
-  background-image: url('../images/status.png?182107f2c01');
+  background-image: url('../images/status.png?1828d2b6607');
 }
 
 /* line 161, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
 .messages--warning {
   border-color: #db6304;
-  background: #fff url('../images/warning.svg?182107f2c02') no-repeat 0.9rem 0.9rem/24px 24px;
+  background: #fff url('../images/warning.svg?1828d2b6607') no-repeat 0.9rem 0.9rem/24px 24px;
 }
 
 @media (min-width: 641px) {
   /* line 161, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
   .messages--warning {
-    background: #fff url('../images/warning.svg?182107f2c02') no-repeat 1.4rem 1.4rem/30px 30px;
+    background: #fff url('../images/warning.svg?1828d2b6607') no-repeat 1.4rem 1.4rem/30px 30px;
   }
 }
 
 /* line 169, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
 .no-svg .messages--warning {
-  background-image: url('../images/warning.png?182107f2c02');
+  background-image: url('../images/warning.png?1828d2b6607');
 }
 
 /* line 174, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
@@ -2548,6 +2548,299 @@ footer {
 /* line 462, src/scss/components.scss */
 .block-views-blockirc-key-documents-views-block-1 .content, .block-views-blockfront-latest-news-home-latest-news .content, .about-IRC-flex .content {
   margin-bottom: 8rem;
+}
+
+@media screen and (max-width: 766px) {
+  /* line 466, src/scss/components.scss */
+  .footer-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    margin-left: 12rem;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  /* line 474, src/scss/components.scss */
+  .footer-area .column {
+    float: none !important;
+    width: auto !important;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  /* line 481, src/scss/components.scss */
+  .irc-text {
+    margin-bottom: 6rem;
+    margin-right: 8rem;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  /* line 488, src/scss/components.scss */
+  .about-IRC-flex .btn {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    margin-left: 10rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /* line 498, src/scss/components.scss */
+  .front-banner p {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /* line 504, src/scss/components.scss */
+  #block-ircommission-theme-aboutircblock h2 {
+    margin: 0;
+    padding: 0;
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /* line 513, src/scss/components.scss */
+  .fa.fa-users {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /* line 519, src/scss/components.scss */
+  .about-IRC-flex .btnwrap .btn {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /* line 525, src/scss/components.scss */
+  .irc-text p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /* line 532, src/scss/components.scss */
+  #block-views-block-front-latest-news-home-latest-news h2 {
+    margin-left: 7.5rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /* line 538, src/scss/components.scss */
+  .fas.fa-file-alt {
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /* line 544, src/scss/components.scss */
+  .region-bottom-widget-2 .views-row {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /* line 550, src/scss/components.scss */
+  .footer-area {
+    margin-left: 8rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /* line 556, src/scss/components.scss */
+  .fas.fa-file-alt {
+    margin-top: 0;
+    margin-left: 8rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /* line 563, src/scss/components.scss */
+  .footer-area .column {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /* line 569, src/scss/components.scss */
+  .region-bottom-widget-2 footer .btn {
+    margin-left: 5.8rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /* line 575, src/scss/components.scss */
+  .region-bottom-widget-1 .btnwrap {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /* line 581, src/scss/components.scss */
+  .region-bottom-widget-3 .btnwrap {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /* line 587, src/scss/components.scss */
+  #block-views-block-irc-key-documents-views-block-1-2 h2 {
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /* line 593, src/scss/components.scss */
+  .fas.fa-folder {
+    margin-left: 8rem;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  /* line 599, src/scss/components.scss */
+  .footer-area {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  /* line 605, src/scss/components.scss */
+  .footer-area .column {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  /* line 611, src/scss/components.scss */
+  #block-views-block-irc-key-documents-views-block-1-2 a.btn {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  /* line 618, src/scss/components.scss */
+  .region-bottom-widget-2 footer .btn {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  /* line 625, src/scss/components.scss */
+  .about-IRC-flex .btnwrap .btn {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  /* line 632, src/scss/components.scss */
+  .footer-area .column:first-child {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  /* line 638, src/scss/components.scss */
+  .region-bottom-widget-1 .btnwrap {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  /* line 644, src/scss/components.scss */
+  #block-ircommission-theme-aboutircblock h2 {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  /* line 650, src/scss/components.scss */
+  .fa.fa-users {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  /* line 656, src/scss/components.scss */
+  .irc-text {
+    margin: 0;
+    margin-bottom: 6rem;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  /* line 663, src/scss/components.scss */
+  #block-ircommission-theme-aboutircblock h2 {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  /* line 669, src/scss/components.scss */
+  .fa.fa-users {
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  /* line 677, src/scss/components.scss */
+  .irc-text p {
+    font-size: 1.2rem;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  /* line 684, src/scss/components.scss */
+  #block-views-block-front-latest-news-home-latest-news h2 {
+    margin-left: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  /* line 690, src/scss/components.scss */
+  .fas.fa-file-alt {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  /* line 696, src/scss/components.scss */
+  .region-bottom-widget-2 .views-row {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  /* line 702, src/scss/components.scss */
+  #block-views-block-irc-key-documents-views-block-1-2 h2 {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  /* line 709, src/scss/components.scss */
+  .content .fas {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  /* line 715, src/scss/components.scss */
+  .block-views-blockirc-key-documents-views-block-1 .content .item-list {
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=components.css.map */
