@@ -76,7 +76,7 @@ $chroma: add-colors('functional', (
   table-cell-text:        'text',
 
   footer-background:      #e7e7e7,
-  footer-border:          'brand-primary',
+  footer-border:          'brand-secondary',
   footer-text:            'text',
   footer-headings:        'text',
 
@@ -141,7 +141,7 @@ $table-cell-border: color(table-cell-border);
 $table-cell-text: color(table-cell-text);
 
 $footer-background: color(footer-background);
-$footer-border: color(brand-primary);
+$footer-border: color(footer-border);
 $footer-text: color(footer-text);
 $footer-headings: color(footer-headings);
 
