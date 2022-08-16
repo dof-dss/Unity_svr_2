@@ -24,4 +24,4 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/ircommission ; drush core-cron'
         database: ircommission
-        deploy: true
+        deploy: false
