@@ -1935,19 +1935,19 @@ a.btn:focus {
 /* line 95, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
 .info-notice {
   border-color: #0d5297;
-  background: #fff url('../images/i.svg?1811a9760c9') no-repeat 0.9rem 0.9rem/24px 24px;
+  background: #fff url('../images/i.svg?182abd75c08') no-repeat 0.9rem 0.9rem/24px 24px;
 }
 
 @media (min-width: 641px) {
   /* line 95, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
   .info-notice {
-    background: #fff url('../images/i.svg?1811a9760c9') no-repeat 1.4rem 1.4rem/30px 30px;
+    background: #fff url('../images/i.svg?182abd75c08') no-repeat 1.4rem 1.4rem/30px 30px;
   }
 }
 
 /* line 104, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
 .no-svg .info-notice {
-  background-image: url('../images/i.png?1811a9760c9');
+  background-image: url('../images/i.png?182abd75c08');
 }
 
 /* line 109, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
@@ -1977,55 +1977,55 @@ ul.info-notice {
 /* line 135, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
 .messages--error {
   border-color: #e34f4f;
-  background: #fff url('../images/wrong.svg?1811a9760cd') no-repeat 0.9rem 0.9rem/24px 24px;
+  background: #fff url('../images/wrong.svg?182abd75c0e') no-repeat 0.9rem 0.9rem/24px 24px;
 }
 
 @media (min-width: 641px) {
   /* line 135, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
   .messages--error {
-    background: #fff url('../images/wrong.svg?1811a9760cd') no-repeat 1.4rem 1.4rem/30px 30px;
+    background: #fff url('../images/wrong.svg?182abd75c0e') no-repeat 1.4rem 1.4rem/30px 30px;
   }
 }
 
 /* line 143, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
 .no-svg .messages--error {
-  background-image: url('../images/wrong.png?1811a9760cd');
+  background-image: url('../images/wrong.png?182abd75c0e');
 }
 
 /* line 148, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
 .messages--status {
   border-color: #f2b855;
-  background: #fff url('../images/status.svg?1811a9760cc') no-repeat 0.9rem 0.9rem/24px 24px;
+  background: #fff url('../images/status.svg?182abd75c0d') no-repeat 0.9rem 0.9rem/24px 24px;
 }
 
 @media (min-width: 641px) {
   /* line 148, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
   .messages--status {
-    background: #fff url('../images/status.svg?1811a9760cc') no-repeat 1.4rem 1.4rem/30px 30px;
+    background: #fff url('../images/status.svg?182abd75c0d') no-repeat 1.4rem 1.4rem/30px 30px;
   }
 }
 
 /* line 156, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
 .no-svg .messages--status {
-  background-image: url('../images/status.png?1811a9760cc');
+  background-image: url('../images/status.png?182abd75c0c');
 }
 
 /* line 161, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
 .messages--warning {
   border-color: #db6304;
-  background: #fff url('../images/warning.svg?1811a9760cd') no-repeat 0.9rem 0.9rem/24px 24px;
+  background: #fff url('../images/warning.svg?182abd75c0d') no-repeat 0.9rem 0.9rem/24px 24px;
 }
 
 @media (min-width: 641px) {
   /* line 161, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
   .messages--warning {
-    background: #fff url('../images/warning.svg?1811a9760cd') no-repeat 1.4rem 1.4rem/30px 30px;
+    background: #fff url('../images/warning.svg?182abd75c0d') no-repeat 1.4rem 1.4rem/30px 30px;
   }
 }
 
 /* line 169, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */
 .no-svg .messages--warning {
-  background-image: url('../images/warning.png?1811a9760cc');
+  background-image: url('../images/warning.png?182abd75c0d');
 }
 
 /* line 174, node_modules/nicsdru_unity_theme/src/scss/3_components/content/_icons-messages.scss */

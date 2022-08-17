@@ -763,45 +763,50 @@ img {
   height: 80px;
 }
 
-/* line 21, src/scss/layout.scss */
+/* line 19, src/scss/layout.scss */
+.sidebar-second .content-sidebar-wrap {
+  width: 100%;
+}
+
+/* line 24, src/scss/layout.scss */
 .path-news .content-sidebar-wrap,
 .path-publications .content-sidebar-wrap {
   width: 100%;
 }
 
-/* line 26, src/scss/layout.scss */
+/* line 29, src/scss/layout.scss */
 .path-news .search-page .sidebar-first-layout,
 .path-publications .search-page .sidebar-first-layout {
   padding-left: 0;
 }
 
 @media (min-width: 961px) {
-  /* line 31, src/scss/layout.scss */
+  /* line 34, src/scss/layout.scss */
   .path-news .search-page .sidebar-first-layout,
   .path-publications .search-page .sidebar-first-layout {
     width: 30%;
   }
-  /* line 35, src/scss/layout.scss */
+  /* line 38, src/scss/layout.scss */
   .path-news .search-page .main-content,
   .path-publications .search-page .main-content {
     width: 65%;
   }
 }
 
-/* line 41, src/scss/layout.scss */
+/* line 44, src/scss/layout.scss */
 .path-news .search-page .views-exposed-form p,
 .path-publications .search-page .views-exposed-form p {
   margin-bottom: 2px;
 }
 
-/* line 47, src/scss/layout.scss */
+/* line 50, src/scss/layout.scss */
 #bottom-area {
   text-align: left;
   margin: 2rem auto;
 }
 
 @media (min-width: 766px) {
-  /* line 47, src/scss/layout.scss */
+  /* line 50, src/scss/layout.scss */
   #bottom-area {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -809,27 +814,27 @@ img {
   }
 }
 
-/* line 55, src/scss/layout.scss */
+/* line 58, src/scss/layout.scss */
 #bottom-area .column {
   background: #f6f6f6;
   padding: 2rem;
 }
 
 @media (min-width: 961px) {
-  /* line 55, src/scss/layout.scss */
+  /* line 58, src/scss/layout.scss */
   #bottom-area .column {
     width: 32.6%;
   }
 }
 
-/* line 63, src/scss/layout.scss */
+/* line 66, src/scss/layout.scss */
 #bottom-area .column .item {
   list-style: none;
   padding: 1rem 0 .5rem 0;
   border-bottom: 1px solid #555;
 }
 
-/* line 68, src/scss/layout.scss */
+/* line 71, src/scss/layout.scss */
 #bottom-area .column .item:last-child {
   border-bottom: none;
 }
