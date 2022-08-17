@@ -1,0 +1,73 @@
+/*
+ * @file
+ * Defines the layout code for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/2_layout/index';
+
+.container-wrap {
+  @media screen and (max-width: $lap) {
+    margin: 0 1rem;
+  }
+}
+
+
+  img {
+    height: 80px;
+  }
+
+.path-news,
+.path-publications, {
+  .content-sidebar-wrap {
+    width: 100%;
+  }
+
+  .search-page {
+    .sidebar-first-layout {
+      padding-left: 0;
+    }
+
+    @include breakpoint($lap) {
+      .sidebar-first-layout {
+        width: 30%;
+      }
+
+      .main-content {
+        width: 65%;
+      }
+    }
+
+    .views-exposed-form {
+      p {
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+#bottom-area {
+  text-align: left;
+  margin: 2rem auto;
+
+  @include breakpoint($tab) {
+    display: flex;
+  }
+
+  .column {
+    background: $grey-light;
+    padding: 2rem;
+
+    @include breakpoint($lap) {
+      width: 32.6%;
+    }
+
+    .item {
+      list-style: none;
+      padding: 1rem 0 .5rem 0;
+      border-bottom: 1px solid $grey-dark;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}

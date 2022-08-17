@@ -14,6 +14,14 @@
 'https://publicappointmentsni.org/':
     type: redirect
     to: 'https://www.publicappointmentsni.org/'
+'https://www.imtac.org.uk/':
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
+'https://imtac.org.uk/':
+    type: redirect
+    to: 'https://www.imtac.org.uk/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_2:http'

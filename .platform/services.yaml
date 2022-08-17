@@ -6,6 +6,7 @@ db:
             - mentalhealthchampionnidb
             - publicappointmentsnidb
             - ircommissiondb
+            - imtacdb
         endpoints:
             mentalhealthchampionni:
                 default_schema: mentalhealthchampionnidb
@@ -19,6 +20,10 @@ db:
                 default_schema: ircommissiondb
                 privileges:
                     ircommissiondb: admin
+            imtac:
+                default_schema: imtacdb
+                privileges:
+                    imtacdb: admin
 solr:
     type: 'solr:7.7'
     disk: 1024
@@ -30,6 +35,8 @@ solr:
                 conf_dir: !archive solr_config/
             ircommission_index:
                 conf_dir: !archive solr_config/
+            imtac_index:
+                conf_dir: !archive solr_config/
         endpoints:
             mentalhealthchampionni:
                 core: mentalhealthchampionni_index
@@ -37,5 +44,7 @@ solr:
                 core: publicappointmentsni_index
             ircommission:
                 core: ircommission_index
+            imtac:
+                core: imtac_index
 redis:
     type: 'redis:6.0'
