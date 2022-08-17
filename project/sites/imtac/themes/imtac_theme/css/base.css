@@ -172,7 +172,7 @@ a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not
   display: inline-block;
   width: 1.5em;
   height: .75em;
-  background: transparent url('../images/arrow-down.png?1811a9760c0') no-repeat 50% 50%;
+  background: transparent url('../images/arrow-down.png?182abd75bf7') no-repeat 50% 50%;
   background-size: 1.6rem auto;
 }
 
@@ -434,7 +434,7 @@ q::after {
   text-shadow: 1px 1px #fff;
   margin: 5px 0;
   border-radius: 7px;
-  background: transparent url('../images/quote.png?1811a9760cb') no-repeat scroll 0 0;
+  background: transparent url('../images/quote.png?182abd75c0b') no-repeat scroll 0 0;
 }
 
 /* line 145, node_modules/nicsdru_unity_theme/src/scss/1_base/_grouping.scss */
