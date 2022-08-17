@@ -1,4 +1,4 @@
-uuid: f5a798c1-b551-417a-84a7-9e3965693e75
+uuid: ea36d529-4628-4c3c-b872-32cac3d4a518
 langcode: en
 status: true
 dependencies:
@@ -10,14 +10,14 @@ dependencies:
     - views
   theme:
     - ircommission_theme
-id: views_block__irc_key_documents_views_block_1_2
+id: views_block__irc_key_documents_views_block_key_docs_homepage
 theme: ircommission_theme
 region: bottom_widget_3
-weight: -10
+weight: 0
 provider: null
-plugin: 'views_block:irc_key_documents_views-block_1'
+plugin: 'views_block:irc_key_documents_views-block_key_docs_homepage'
 settings:
-  id: 'views_block:irc_key_documents_views-block_1'
+  id: 'views_block:irc_key_documents_views-block_key_docs_homepage'
   label: ''
   label_display: visible
   provider: views

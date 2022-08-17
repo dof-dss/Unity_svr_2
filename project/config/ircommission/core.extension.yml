@@ -35,7 +35,6 @@ module:
   draggableviews: 0
   dynamic_entity_reference: 0
   dynamic_page_cache: 0
-  easy_install: 0
   editor: 0
   embed: 0
   entity_browser: 0
@@ -67,7 +66,6 @@ module:
   image: 0
   inline_entity_form: 0
   inline_form_errors: 0
-  ircommission: 0
   language: 0
   layout_builder: 0
   layout_discovery: 0
@@ -86,10 +84,8 @@ module:
   metatag_twitter_cards: 0
   metatag_views: 0
   migrate: 0
-  migrate_absolute_links: 0
   migrate_drupal: 0
   migrate_plus: 0
-  migrate_tools: 0
   migrate_upgrade: 0
   moderation_sidebar: 0
   node: 0
@@ -131,7 +127,6 @@ module:
   twig_tweak: 0
   ultimate_cron: 0
   unity_common: 0
-  unity_file_migrations: 0
   unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0

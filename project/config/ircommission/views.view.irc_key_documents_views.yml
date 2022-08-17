@@ -5,7 +5,6 @@ dependencies:
   config:
     - node.type.publication_page
   module:
-    - draggableviews
     - node
     - options
 id: irc_key_documents_views
@@ -248,8 +247,8 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
       tags: {  }
-  block_1:
-    id: block_1
+  block_key_docs_homepage:
+    id: block_key_docs_homepage
     display_title: 'Key docs home block'
     display_plugin: block
     position: 1
@@ -279,6 +278,7 @@ display:
           tokenize: false
       display_extenders:
         metatag_display_extender: {  }
+      block_description: 'key docs home page block'
     cache_metadata:
       max-age: -1
       contexts:
@@ -286,8 +286,8 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
       tags: {  }
-  block_2:
-    id: block_2
+  block_key_docs_page:
+    id: block_key_docs_page
     display_title: 'Key docs page block'
     display_plugin: block
     position: 2
@@ -418,7 +418,7 @@ display:
         parent: ''
         context: '0'
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
