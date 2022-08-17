@@ -1,0 +1,75 @@
+/*
+ * @file
+ * Defines the components for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+a.btn {
+  background: $brand-primary;
+}
+#main-menu .menu .menu-item .active, #main-menu .menu .menu-item .active+.menu-main_sub .title a {
+  background: rgba(191,191,191,0.25);
+  border-bottom-color: #f2b855;
+}
+.front {
+  .block {
+    h2 {
+      @include responsive-typo-map($h2-text);
+      margin: 3.6rem 0rem 1.2rem;
+      padding: 0;
+    }
+  }
+  #slick-views-slideshow-slideshow-1 {
+    .slide__caption {
+      @include breakpoint($tab) {
+      background: rgba(0, 0, 0, 0.6);
+      height: 20%;
+      font-size: 1.6rem;
+    }
+    .slide__caption {
+      height: 20%;
+      font-size: 1.6rem
+    }
+  }
+}
+
+  .block-system-main-block {
+    h2 {
+      @include adjust-font-size-to(20px, 5);
+
+      @include breakpoint($phab) {
+        @include adjust-font-size-to(30px, 6);
+      }
+      color: $brand-primary;
+      margin: 0.9rem 0 2.1rem;
+    }
+
+    p {
+      @include responsive-typo-map($h3-text);
+
+      @include breakpoint($phab) {
+        @include adjust-font-size-to(21px);
+      }
+     }
+    }
+  }
+
+#bottom-area {
+  text-align: left;
+  margin: 2rem auto;
+  display: grid;
+  width: 100%;
+}
+.bottom_widget .footer-area .column {
+  width: 100%;
+}
+@media (min-width: 766px) {
+  #bottom-area {
+    display: flex;
+
+  }
+}
+h2.location-title {
+  display: none;
+}

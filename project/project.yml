@@ -24,4 +24,12 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/ircommission ; drush core-cron'
         database: ircommission
-        status: production
+        status: development
+    imtac:
+        name: 'The Inclusive Mobility and Transport Advisory Committee'
+        url: imtac.org.uk
+        solr: imtac
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/imtac ; drush core-cron'
+        database: imtac
+        status: development
