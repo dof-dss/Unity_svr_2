@@ -2843,4 +2843,9 @@ footer {
   }
 }
 
+/* line 721, src/scss/components.scss */
+.content footer {
+  margin-top: 4rem;
+}
+
 /*# sourceMappingURL=components.css.map */
