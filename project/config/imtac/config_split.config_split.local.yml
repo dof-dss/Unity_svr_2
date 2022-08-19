@@ -1,0 +1,18 @@
+uuid: 1179b2c1-59e1-4fa5-94ab-a6cc82ecccba
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: local
+description: "Local development split. \r\nEnables debugging and development modules."
+weight: 0
+folder: ../project/config/imtac/local
+module:
+  dblog: 0
+  easy_install: 0
+  migrate_upgrade: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
