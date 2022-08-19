@@ -13,4 +13,4 @@ features:
 logo:
   path: 'public://ircommissionlogo_0.png'
   url: ''
-  use_default: false
+  use_default: true
