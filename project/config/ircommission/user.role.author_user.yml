@@ -1,0 +1,19 @@
+uuid: dcc2e46b-06d4-4727-a5f6-8cebaafb078f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.publication_page
+  module:
+    - node
+    - system
+_core:
+  default_config_hash: AyMCT1boGFkm3MNXLyv6ZV7yMdWLY-U3WQLhzDDkWGE
+id: author_user
+label: 'author user'
+weight: 2
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'create publication_page content'
+  - 'view the administration theme'

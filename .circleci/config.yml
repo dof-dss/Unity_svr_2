@@ -3,7 +3,7 @@ version: 2.1
 # Default docker image.
 default_docker_image: &docker_image
   docker:
-    - image: circleci/php:7.4.15-apache-browsers
+    - image: circleci/php:8.0-apache-browsers
 
 # Re-usable commands.
 commands:
@@ -13,7 +13,7 @@ commands:
       # Add SSH user key so we can access related repositories as part of our initial clone + composer install command.
       - add_ssh_keys:
           fingerprints:
-            - "63:d5:d9:74:c7:9c:80:83:9a:67:da:28:d2:a5:d3:e5"
+            - "e8:86:75:e8:35:15:07:a6:2d:a0:00:17:69:a1:42:84"
       - checkout
   composer_tasks:
     description: "Validate and install dependencies using composer"
@@ -48,7 +48,7 @@ commands:
       - run:
           name: Switch dof-dss packages to HEAD on develelopment branch
           command: |
-            composer require dof-dss/nicsdru_unity_theme:dev-development dof-dss/nicsdru_origins_modules:dev-development
+            composer require dof-dss/nicsdru_unity_theme:dev-development dof-dss/nicsdru_origins_modules:dev-development dof-dss/nicsdru_unity_modules:dev-development
   install_psh_cli:
     description: "Install the Platform.sh CLI tool"
     steps:
@@ -66,6 +66,7 @@ commands:
           name: Add OS and PHP extensions
           command: |
             sudo cp /home/circleci/project/.circleci/docker-php-circleci.ini /usr/local/etc/php/conf.d/
+            wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
             sudo apt-get update --allow-releaseinfo-change
             sudo apt-get install -y libpng-dev
             sudo docker-php-ext-install gd pcntl posix
@@ -153,14 +154,25 @@ jobs:
             git add composer.*
             git commit -m "Set dof-dss packages to HEAD development for build"
       - run:
-          name: Re-build site theme npm dependencies
+          name: Download nvm in order to select legacy node version (using nvm)
           command: |
             # Need to re-build site theme with any Unity changes.
             # Download and configure node and npm.
-            sudo apt install libjpeg-dev automake
+            sudo apt install libjpeg-dev automake python
+            git clone git@github.com:nvm-sh/nvm.git
+            cd nvm
+            chmod +x install.sh
+            ./install.sh
+      - run:
+          name: Rebuild site themes
+          command: |
+            export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+            nvm install v15.14.0
             for site in `ls -l ~/project/web/sites | grep ^d | awk '{print $9}'`
             do
               if [[ -d ~/project/web/sites/${site}/themes/${site}_theme ]]; then
+                echo "*** Building theme for ${site} ***"
                 cd ~/project/web/sites/${site}/themes/${site}_theme
                 sed -i -e "s/\"nicsdru_unity_theme.*/\"nicsdru_unity_theme\": \"github:dof-dss\/nicsdru_unity_theme#development\",/" package.json
                 npm install

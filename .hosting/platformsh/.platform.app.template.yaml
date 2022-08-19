@@ -60,7 +60,7 @@ hooks:
     set -e
 
     # Create a symlink for each site from project/sites to web/sites
-    for site in <deployed_sites_placeholder>
+    for site in <sites_placeholder>
     do
       echo "****** Creating sites directory link for $site ******"
       ln -s /app/web/sites/$site /app/project/sites/$site
@@ -75,7 +75,7 @@ hooks:
     export FASTLY_API_SERVICE=dummyservice
 
     # For each multi site - run db-updates and import config.
-    for site in <deployed_sites_placeholder>
+    for site in <sites_placeholder>
     do
       echo "****** $site deployment ******"
       cd /app/web/sites/$site
@@ -99,7 +99,7 @@ hooks:
     export FASTLY_API_SERVICE=$temp
 
     # For each multi site - clear cache (including Fastly cache)
-    for site in <deployed_sites_placeholder>
+    for site in <sites_placeholder>
     do
       echo "****** $site cache clear ******"
       cd /app/web/sites/$site

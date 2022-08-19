@@ -1,0 +1,723 @@
+/*
+ * @file
+ * Defines the components for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+.content p {
+  color: #333;
+}
+
+a.btn {
+  background: #0a7ad0;
+}
+
+#main-menu .menu .menu-item .active,
+#main-menu .menu .menu-item .active + .menu-main_sub .title a {
+  background: #0a7ad0;
+  color: #fff;
+  border-bottom-color: #0a7ad0;
+}
+
+#footer {
+  background: inherit;
+  border-top: 0;
+  max-width: 100%;
+  padding: 0;
+  overflow: auto;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin: 0 auto;
+}
+
+
+#footer_wrapper {
+  background-color: #e4e4e4;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 3rem 1.8rem 1.8rem;
+}
+
+
+.footer_credit {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+
+.region.region-footer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+#block-menu-menu-footer-links {
+  outline: none;
+  position: relative;
+}
+
+
+#footer-menu li {
+  display: inline;
+  margin: 0 16px 0 0;
+  padding: 0;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+
+a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper) {
+  color: #0a7ad0;
+  text-decoration: none;
+}
+
+
+.content .fa {
+  color: #141f71;
+  font-size: 10rem;
+  line-height: 1;
+  margin: 2rem 0;
+  margin-left: 1rem;
+}
+
+
+.content p {
+  text-align: center;
+}
+
+
+#block-ircommission-theme-aboutircblock h2 {
+  margin-left: 7rem;
+  margin-bottom: 0;
+}
+
+
+.btnwrap {
+  display: inline-block;
+  width: 100%;
+  bottom: 0;
+  left:0;
+  position: absolute;
+  text-align: center;
+}
+
+
+.content .fas {
+  color: #141f71;
+  font-size: 10rem;
+  line-height: 0.8;
+  margin: 2rem 0;
+  margin-left: 115px;
+}
+
+
+a[href="/news"] {
+  margin-left: 10rem;
+}
+
+
+#block-views-block-front-latest-news-home-latest-news h2 {
+  margin-left: 110px;
+}
+
+
+.region.region-bottom-widget-3 a[href="/node/8"] {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+
+#content a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper), .content a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper), #footer a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper) {
+  border-bottom: none;
+}
+
+
+.content.page-content.content p {
+  text-align: left;
+}
+
+
+.views-row {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+
+.fas.fa-file-alt {
+  margin-left: 119px;
+}
+
+
+.fas.fa-folder {
+  margin-left: 11rem;
+  margin-top: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+
+#block-views-block-irc-key-documents-views-block-1-2 h2 {
+  margin-left: 27px;
+}
+
+
+.field-content span {
+  margin-bottom:4px;
+}
+
+
+.search-form input[type="submit"] {
+  background: #666 url("data:image/svg+xml;charset=utf-8,%3Csvg%20id%3D%22Layer_1%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%20width%3D%22100px%22%20height%3D%22100px%22%20preserveAspectRatio%3D%22xMinYMid%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23fff%3Bfill-rule%3Aevenodd%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3Esearch-icon%3C%2Ftitle%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M97.5%2C77.89a6%2C6%2C0%2C0%2C1-8.25%2C1.49L64.89%2C62.65a5.85%2C5.85%2C0%2C0%2C1-2.55-5A21.59%2C21.59%2C0%2C0%2C1%2C25.4%2C46.81a21.16%2C21.16%2C0%2C0%2C1%2C3.47-16%2C21.69%2C21.69%2C0%2C0%2C1%2C30-5.42%2C21.36%2C21.36%2C0%2C0%2C1%2C7.1%2C27%2C6%2C6%2C0%2C0%2C1%2C5.67.58L96%2C69.71A5.86%2C5.86%2C0%2C0%2C1%2C97.5%2C77.89ZM61.38%2C40.3a14.8%2C14.8%2C0%2C0%2C0-6.23-9.6%2C15.12%2C15.12%2C0%2C0%2C0-20.92%2C3.77A14.88%2C14.88%2C0%2C0%2C0%2C38%2C55.24%2C15.12%2C15.12%2C0%2C0%2C0%2C59%2C51.46%2C14.74%2C14.74%2C0%2C0%2C0%2C61.38%2C40.3Z%22%2F%3E%3C%2Fsvg%3E") 0 center no-repeat;
+  background-size: auto;
+  background-size: 4.2rem auto;
+  text-indent: -9999px;
+  width: 5.4rem;
+  -webkit-filter: none;
+  filter: none;
+}
+
+
+.front-banner p{
+  position: center;
+  color:white;
+  background-color: #333;
+  text-align: center;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-weight: normal;
+  padding: 2.3rem 1.5rem;
+}
+
+
+#footer ul {
+  margin: auto;
+  text-align: left;
+}
+
+
+#content a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper), .content a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper), #footer a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper) {
+  border-bottom: none;
+  margin: auto;
+}
+
+.front-banner img {
+  vertical-align: top;
+}
+
+
+
+#bottom_wrapper{
+  display:flex;
+}
+
+.region.region-content {
+  margin-left: 50px;
+  margin-top: 4rem;
+}
+
+#content a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper):not(.value):not(.card__title-link):not(.card):not(.layout-builder__link), .content a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper):not(.value):not(.card__title-link):not(.card):not(.layout-builder__link), #footer a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper):not(.value):not(.card__title-link):not(.card):not(.layout-builder__link)
+
+{
+  border-bottom: 0px solid #16a085;
+  margin: 0 -1px;
+  padding: 0 1px;
+  color: #0a7ad0;
+}
+
+.region-bottom-widget-2 .views-row {
+  text-align: center;
+  margin-left: 4rem;
+}
+
+.search-result{
+  border-bottom: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.block-views-exposed-filter-blocknews-search-news-search-page p{
+  margin-top: 4.5rem;
+  padding: 1rem;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+
+#head, .main-content, .sidebar-second-layout, .sidebar-first-layout {
+  margin-top: 0;
+}
+
+.block-page-title-block {
+  margin: 1rem 0 0.6rem;
+}
+
+#block-sidemenu{
+  margin-top: 8rem;
+}
+
+.page-title {
+  margin-top: 1rem;
+  margin-left: 0;
+  margin-bottom: 2rem;
+}
+
+.block-views-exposed-filter-blockpublications-search-publications-search-page {
+  background: #f6f6f6;
+  padding: 1rem;
+}
+
+.columnItem {
+  border-bottom: 1px solid #ccc;
+}
+
+
+#edit-actions--3 {
+  padding-bottom: 1rem;
+}
+
+.block-views-exposed-filter-blocknews-search-news-search-page {
+  background: #f6f6f6;
+}
+
+.block-views-exposed-filter-blockpublications-search-publications-search-page p {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  font-size: 1.3rem;
+}
+
+.search-form--page{
+  padding: 1rem;
+}
+
+.page-title .subtitle {
+  display: none;
+}
+
+#views-exposed-form-publications-search-publication-search-page {
+  padding: 0;
+}
+
+#views-exposed-form-publications-search-publication-search-page .block {
+  font-size: 1.3rem;
+}
+
+.block-views-exposed-filter-blockpublications-search-publication-search-page {
+  margin-top: 4.5rem;
+  font-size: 1.4rem;
+}
+
+.published-date span:first-child {
+  display: none;
+}
+
+.published-date span{
+  color: #333;
+}
+
+.content.page-content.content p{
+  margin-top: 2rem;
+}
+
+li {
+  padding-bottom: 0;
+}
+
+.content.page-content div:last-child {
+  margin-top: 2rem;
+}
+
+.content.page-content div:first-child {
+  font-weight: bold;
+}
+
+.content.page-content div:first-child p{
+  font-weight: normal;
+}
+
+.content.page-content div:first-child address{
+  font-weight: normal;
+}
+
+.footer-area {
+  display: flex;
+  padding-bottom: 3rem;
+}
+
+.footer-area .column {
+  display: flex;
+}
+
+.region-bottom-widget-1,
+.region-bottom-widget-2,
+.region-bottom-widget-3{
+  display: flex;
+}
+
+.btn a.btn {
+  margin: 0;
+}
+
+#footer_wrapper {
+  padding-top: 0;
+}
+
+a.btn {
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+}
+
+#main-menu .menu-link:hover, #main-menu .menu-link:focus {
+  background: #0a7ad0;
+
+}
+
+.about-IRC-flex{
+  position: relative;
+}
+
+.region-bottom-widget-2,
+.region-bottom-widget-3,
+.btn-wrap {
+  footer {
+    justify-content: center;
+  }
+}
+
+.btn-wrap  {
+  width: 100%;
+}
+
+.region-bottom-widget-2 footer .btn {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  margin-left: 10rem;
+}
+
+.region-bottom-widget-2 .field-content {
+  display: inline-flex;
+}
+
+.container.breadcrumb {
+  margin: 0;
+}
+
+.views-row.search-result {
+  text-align: left;
+}
+
+.content.page-content div:first-child {
+  display: block;
+}
+
+#main-menu .menu-item.open .menu-toggle-btn {
+  font-weight: 500;
+}
+
+#main-menu .menu-main_sub {
+  background: #333;
+}
+
+.menu-item.leaf.title * {
+  box-sizing: content-box;
+}
+
+.fa.fa-users  {
+  color: #141f71;
+  font-size: 10rem;
+  line-height: 0.8;
+  margin: 2rem 0;
+  margin-left: 10rem;
+}
+
+.irc-text {
+  margin-top: 2rem;
+}
+
+.irc-text p {
+  text-align: center;
+}
+
+#block-views-block-front-latest-news-home-latest-news, #block-views-block-irc-key-documents-views-block-1-2, #block-ircommission-theme-aboutircblock {
+  position: relative;
+}
+
+.contextual-region {
+position:static;
+}
+
+#block-views-block-irc-key-documents-views-block-1-2 a.btn {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  margin-left: 8rem;
+}
+
+.block-views-blockirc-key-documents-views-block-1 .content, .block-views-blockfront-latest-news-home-latest-news .content, .about-IRC-flex .content {
+  margin-bottom: 8rem;
+}
+
+.footer-area {
+  @media screen and (max-width: $tab) {
+    flex-flow: column;
+    margin-left: 12rem;
+  }
+}
+
+
+.footer-area .column{
+  @media screen and (max-width: $tab) {
+    float: none !important;
+    width: auto !important;
+  }
+}
+
+.irc-text {
+  @media screen and (max-width: $tab) {
+    margin-bottom: 6rem;
+    margin-right: 8rem;
+  }
+}
+
+.about-IRC-flex .btn {
+  @media screen and (max-width: $tab) {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    margin-left: 10rem;
+  }
+}
+
+
+.front-banner p {
+  @media screen and (max-width: $mob) {
+    margin-bottom: 0;
+  }
+}
+
+#block-ircommission-theme-aboutircblock h2 {
+  @media screen and (max-width: $mob) {
+    margin: 0;
+    padding: 0;
+    margin-left: 3rem;
+  }
+}
+
+
+.fa.fa-users {
+  @media screen and (max-width: $mob) {
+    margin-left: 3rem;
+  }
+}
+
+.about-IRC-flex .btnwrap .btn {
+  @media screen and (max-width: $mob) {
+    margin-left: 0;
+  }
+}
+
+.irc-text p {
+  @media screen and (max-width: $mob) {
+    font-size: 1.4rem;
+  }
+}
+
+
+#block-views-block-front-latest-news-home-latest-news h2 {
+  @media screen and (max-width: $mob) {
+    margin-left: 7.5rem;
+  }
+}
+
+.fas.fa-file-alt {
+  @media screen and (max-width: $mob) {
+    margin-left: 4rem;
+  }
+}
+
+.region-bottom-widget-2 .views-row {
+  @media screen and (max-width: $mob) {
+    margin-left: 0;
+  }
+}
+
+.footer-area {
+  @media screen and (max-width: $mob) {
+    margin-left: 8rem;
+  }
+}
+
+.fas.fa-file-alt {
+  @media screen and (max-width: $mob) {
+    margin-top: 0;
+    margin-left: 8rem;
+  }
+}
+
+.footer-area .column {
+  @media screen and (max-width: $mob) {
+    margin: 0;
+  }
+}
+
+.region-bottom-widget-2 footer .btn {
+  @media screen and (max-width: $mob) {
+    margin-left: 5.8rem;
+  }
+}
+
+.region-bottom-widget-1 .btnwrap {
+  @media screen and (max-width: $mob) {
+    margin-left: 3rem;
+  }
+}
+
+.region-bottom-widget-3 .btnwrap {
+  @media screen and (max-width: $mob) {
+    margin-left: 5rem;
+  }
+}
+
+#block-views-block-irc-key-documents-views-block-1-2 h2 {
+  @media screen and (max-width: $mob) {
+    margin-left: 4rem;
+  }
+}
+
+.fas.fa-folder {
+  @media screen and (max-width: $mob) {
+    margin-left: 8rem;
+  }
+}
+
+.footer-area {
+  @media screen and (max-width: $xsml) {
+    margin-left: 0;
+  }
+}
+
+.footer-area .column {
+  @media screen and (max-width: $xsml) {
+    margin: 0;
+  }
+}
+
+#block-views-block-irc-key-documents-views-block-1-2 a.btn {
+  @media screen and (max-width: $xsml) {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.region-bottom-widget-2 footer .btn {
+  @media screen and (max-width: $xsml) {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.about-IRC-flex .btnwrap .btn {
+  @media screen and (max-width: $xsml) {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.footer-area .column:first-child {
+  @media screen and (max-width: $xsml) {
+    margin: 0
+  }
+}
+
+.region-bottom-widget-1 .btnwrap {
+  @media screen and (max-width: $xsml) {
+    margin-left: 0
+  }
+}
+
+#block-ircommission-theme-aboutircblock h2 {
+  @media screen and (max-width: $xsml) {
+    margin-left: 5rem
+  }
+}
+
+.fa.fa-users {
+  @media screen and (max-width: $xsml) {
+    margin-left: 5rem
+  }
+}
+
+.irc-text {
+  @media screen and (max-width: $xsml) {
+    margin: 0;
+    margin-bottom: 6rem;
+  }
+}
+
+#block-ircommission-theme-aboutircblock h2 {
+  @media screen and (max-width: $xxsml) {
+    margin: 0;
+  }
+}
+
+.fa.fa-users {
+  @media screen and (max-width: $xxsml) {
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.irc-text p {
+  @media screen and (max-width: $xxsml) {
+    font-size: 1.2rem;
+    width: 60%;
+  }
+}
+
+#block-views-block-front-latest-news-home-latest-news h2 {
+  @media screen and (max-width: $xxsml) {
+    margin-left: 2.5rem;
+  }
+}
+
+.fas.fa-file-alt {
+  @media screen and (max-width: $xxsml) {
+    margin-left: 0;
+  }
+}
+
+.region-bottom-widget-2 .views-row {
+  @media screen and (max-width: $xxsml) {
+    font-size: 1.2rem;
+  }
+}
+
+#block-views-block-irc-key-documents-views-block-1-2 h2 {
+  @media screen and (max-width: $xxsml) {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.content .fas {
+  @media screen and (max-width: $xxsml) {
+    margin-left: 3rem;
+  }
+}
+
+.block-views-blockirc-key-documents-views-block-1 .content .item-list {
+  @media screen and (max-width: $xxsml) {
+    font-size: 1.2rem;
+  }
+}
+
+.content footer {
+  margin-top: 4rem;
+}

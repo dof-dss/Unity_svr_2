@@ -1,0 +1,25 @@
+uuid: 5dba4773-0601-4748-8c55-6a153f5283fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - publicappointmentsni_theme
+id: mainmenu
+theme: publicappointmentsni_theme
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

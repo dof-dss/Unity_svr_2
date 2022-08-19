@@ -6,6 +6,7 @@ module:
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
   allowed_formats: 0
+  auto_entityqueue: 0
   automated_cron: 0
   blazy: 0
   block: 0
@@ -26,6 +27,7 @@ module:
   cookie_content_blocker: 0
   csp: 0
   ctools: 0
+  date_facet_drilldown: 0
   datetime: 0
   datetime_range: 0
   diff: 0
@@ -37,8 +39,10 @@ module:
   entity_browser_entity_form: 0
   entity_embed: 0
   entity_reference_revisions: 0
+  entityqueue: 0
   facets: 0
   facets_pretty_paths: 0
+  facets_summary: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -51,6 +55,7 @@ module:
   geolocation: 0
   geolocation_google_maps: 0
   geolocation_google_static_maps: 0
+  geolocation_search_api: 0
   google_analytics: 0
   handy_cache_tags: 0
   help: 0
@@ -94,7 +99,12 @@ module:
   redis: 0
   responsive_image: 0
   scheduled_transitions: 0
-  search: 0
+  search_api: 0
+  search_api_autocomplete: 0
+  search_api_location: 0
+  search_api_location_views: 0
+  search_api_solr: 0
+  search_api_spellcheck: 0
   simplei: 0
   structure_sync: 0
   system: 0
@@ -105,11 +115,13 @@ module:
   toolbar: 0
   twig_tweak: 0
   ultimate_cron: 0
+  unity_breadcrumbs: 0
   unity_common: 0
   unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0
   unity_map_embed: 0
+  unity_search_pages: 0
   user: 0
   views_custom_cache_tag: 0
   webform: 0
@@ -132,4 +144,5 @@ theme:
   stable: 0
   adminimal_theme: 0
   nicsdru_unity_theme: 0
+  publicappointmentsni_theme: 0
 profile: nicsdru_unity_profile

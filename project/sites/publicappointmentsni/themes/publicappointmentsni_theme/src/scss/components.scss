@@ -1,0 +1,109 @@
+/*
+ * @file
+ * Defines the components for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+#logo {
+  a {
+    display: block;
+
+    &:focus {
+      background: none;
+      border-bottom: none;
+      outline: 0.3rem dashed #949494;
+      outline-offset: 1.2rem;
+    }
+  }
+
+  img {
+    height: 90px;
+  }
+}
+
+#headerHero {
+  @media screen and (max-width: $tab) {
+    background-color: $brand-secondary;
+  }
+}
+
+.front {
+  .front-banner {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+#main-menu {
+  .menu-link,
+  .menu .active,
+  .menu-item.open .menu-toggle-btn {
+    color: $brand-primary;
+    @include adjust-font-size-to(16px);
+  }
+
+  .menu-link {
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  }
+
+  .menu .menu-item .active {
+    border-color: $brand-secondary;
+  }
+
+  .menu-main_sub {
+    background: $brand-secondary;
+
+    .menu-item {
+      .active {
+        color: $white;
+        border-color: $white;
+      }
+
+      a {
+        &:hover,
+        &:focus {
+          background: $charcoal;
+        }
+      }
+    }
+  }
+}
+
+.sidebar-second-layout {
+  @media screen and (max-width: $lap) {
+    padding: 0;
+  }
+
+  .rel-menu--latest-content {
+    margin-bottom: 2rem;
+
+    h2 {
+      margin-top: 1.1rem;
+      padding: .5rem 1.8rem;
+      background: $brand-secondary;
+      color: $white;
+    }
+
+    ul {
+      margin: 0 0 2rem 2rem;
+
+      li {
+        padding: 0 0 .6rem 1rem;
+        list-style: none;
+        margin: 0 0 .2rem;
+        position: relative;
+
+        &::before {
+          content: "-";
+          left: 0;
+          position: absolute;
+          top: 0;
+        }
+      }
+    }
+  }
+}
