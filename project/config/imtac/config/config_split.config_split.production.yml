@@ -1,0 +1,15 @@
+uuid: 5d6658bd-682a-4efa-8904-94caa6212dd5
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: production
+description: 'Used for production site.'
+weight: 0
+folder: ../project/config/imtac/production
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

@@ -1,0 +1,15 @@
+uuid: b7085373-d1a8-4d6e-a237-0104288c4983
+langcode: en
+status: true
+dependencies: {  }
+id: hosted
+label: hosted
+description: 'Use for any sites that are ''hosted'' and not running locally, whether development, QA or production.'
+weight: 0
+folder: ../project/config/imtac/hosted
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

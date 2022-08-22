@@ -1,0 +1,26 @@
+uuid: 566da5ec-e6f6-4a70-9d1c-ef76cfe4e913
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: local
+description: "Local development split. \r\nEnables debugging and development modules"
+weight: 0
+folder: ../project/config/imtac/local
+module:
+  dblog: 0
+  easy_install: 0
+  imtac_migrations: 0
+  migrate: 0
+  migrate_absolute_links: 0
+  migrate_drupal: 0
+  migrate_drupal_ui: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  migrate_upgrade: 0
+  unity_file_migrations: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
