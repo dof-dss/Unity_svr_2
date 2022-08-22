@@ -5,7 +5,7 @@ features:
   favicon: 1
 logo:
   use_default: 1
-  path: 'public://ircommissionlogo.png'
+  path: ''
 favicon:
   use_default: 1
 twitter_profile_url: ''
