@@ -1,6 +1,6 @@
 _core:
   default_config_hash: wNpilbhustdj8tLBsYJ6GPdxS5lUKU5rRei_XxSyd3A
-google_map_api_key: AIzaSyAm4y3GukgVkhEHl5gqyqRYG9odFLdTBvs
+google_map_api_key: <placeholder>
 google_map_api_server_key: ''
 use_current_language: false
 china_mode: false
