@@ -1,0 +1,12 @@
+uuid: 94c2546b-30e1-4a22-8e4c-998b38a918c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: '-v9hNy-UWfCgOmqvA1U7IkAc_57QyFOkEjRroM1LwvI'
+id: media.landscape_full
+label: 'Landscape full'
+targetEntityType: media
+cache: true

@@ -1,0 +1,31 @@
+uuid: 81dcd6bf-d908-430b-bb85-eed82cb54603
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+    - filter.format.filtered_html_with_no_images
+    - filter.format.filtered_html_with_tokens
+    - node.type.news
+    - node.type.page
+    - node.type.publication_page
+  module:
+    - filter
+    - node
+    - redirect
+    - system
+id: editor_user
+label: 'editor user'
+weight: 5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'administer nodes'
+  - 'administer redirects'
+  - 'delete any news content'
+  - 'delete any page content'
+  - 'delete any publication_page content'
+  - 'use text format filtered_html'
+  - 'use text format filtered_html_with_no_images'
+  - 'use text format filtered_html_with_tokens'
+  - 'view the administration theme'

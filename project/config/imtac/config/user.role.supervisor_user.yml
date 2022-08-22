@@ -1,0 +1,30 @@
+uuid: 2bdb00de-bfd1-4d3b-9e4b-2fadca7a41a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+    - filter.format.filtered_html_with_no_images
+    - node.type.news
+    - node.type.page
+    - node.type.publication_page
+  module:
+    - filter
+    - node
+    - redirect
+    - system
+_core:
+  default_config_hash: cI6O43jts_j67JaySnvjojNUQYYJXQmbWghOsb7iQNY
+id: supervisor_user
+label: 'supervisor user'
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'administer redirects'
+  - 'delete any news content'
+  - 'delete any page content'
+  - 'delete any publication_page content'
+  - 'use text format filtered_html'
+  - 'use text format filtered_html_with_no_images'
+  - 'view the administration theme'
