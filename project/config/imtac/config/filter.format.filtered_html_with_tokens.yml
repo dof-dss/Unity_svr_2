@@ -1,0 +1,22 @@
+uuid: 320f991c-c02d-4b79-bc63-eac1cff60d91
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 0RaChZk0lbVg4KBsZkZTYjN-ZgNCqYkW-QUR9bmL24w
+name: 'Filtered HTML with tokens'
+format: filtered_html_with_tokens
+weight: 0
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: -49
+    settings: {  }
+  filter_null:
+    id: filter_null
+    provider: filter
+    status: true
+    weight: -45
+    settings: {  }

@@ -1,0 +1,29 @@
+uuid: b15d7b70-91b4-4fae-b184-e8d95fb95cc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slideshow
+  module:
+    - system
+    - views
+  theme:
+    - imtac_theme
+id: views_block__slideshow_slideshow
+theme: imtac_theme
+region: slideshow
+weight: 0
+provider: null
+plugin: 'views_block:slideshow-slideshow'
+settings:
+  id: 'views_block:slideshow-slideshow'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

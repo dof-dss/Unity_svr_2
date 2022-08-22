@@ -1,0 +1,21 @@
+uuid: 64ce8c00-076d-42fb-a11b-f1da9687f03e
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+    - filter.format.filtered_html_with_no_images
+  module:
+    - filter
+    - system
+_core:
+  default_config_hash: AyMCT1boGFkm3MNXLyv6ZV7yMdWLY-U3WQLhzDDkWGE
+id: author_user
+label: 'author user'
+weight: 2
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'use text format filtered_html'
+  - 'use text format filtered_html_with_no_images'
+  - 'view the administration theme'

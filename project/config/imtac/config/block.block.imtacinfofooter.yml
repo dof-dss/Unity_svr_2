@@ -1,0 +1,25 @@
+uuid: 49899690-86d5-4b01-9761-775e8a565f51
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:d452e45a-10ce-4384-93cb-e0cd1c7be88a'
+  module:
+    - block_content
+  theme:
+    - imtac_theme
+id: imtacinfofooter
+theme: imtac_theme
+region: footer
+weight: -8
+provider: null
+plugin: 'block_content:d452e45a-10ce-4384-93cb-e0cd1c7be88a'
+settings:
+  id: 'block_content:d452e45a-10ce-4384-93cb-e0cd1c7be88a'
+  label: 'IMTAC Info footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
