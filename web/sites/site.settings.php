@@ -11,6 +11,7 @@
 
 $databases = [];
 $settings['update_free_access'] = FALSE;
+$settings['container_yamls'][] = $app_root . '/sites/services.yml';
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
 $settings['file_scan_ignore_directories'] = [
   'node_modules',
