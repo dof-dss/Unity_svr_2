@@ -5,6 +5,14 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/2_layout/index';
 
+.node-type-faq,
+.node-type-board-member {
+  .content-sidebar-wrap {
+    @include breakpoint($tab) {
+      width: 65%;
+    }
+  }
+}
 .path-news,
 .path-publications {
   .content-sidebar-wrap {
