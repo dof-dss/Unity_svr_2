@@ -1,0 +1,17 @@
+uuid: fb0023be-76ab-4e35-a486-2a992be674e0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Nibj1MVw1RE7914B7ZS8x0zDZXCq_GGsFSiwhpFzC2g
+name: unity_3_col_desktop_retina
+label: 'unity 3 col (desktop retina) 684x456'
+effects:
+  c6601358-8c90-465d-9928-263d6850a663:
+    uuid: c6601358-8c90-465d-9928-263d6850a663
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 684
+      height: 456
+      anchor: center-center
