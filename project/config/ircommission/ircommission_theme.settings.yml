@@ -4,8 +4,8 @@ features:
   comment_user_verification: true
   favicon: 1
 logo:
-  use_default: 0
-  path: 'public://ircommissionlogo.png'
+  use_default: 1
+  path: ''
 favicon:
   use_default: 1
 twitter_profile_url: ''

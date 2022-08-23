@@ -1,0 +1,27 @@
+uuid: cc623c35-5033-418d-9070-7a486d08df43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.file.image.field_file_image_alt_text
+    - field.field.file.image.field_file_image_caption_text
+    - field.field.file.image.field_file_image_title_text
+  module:
+    - file
+id: file.image.default
+targetEntityType: file
+bundle: image
+mode: default
+content:
+  field_file_image_caption_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_file_image_alt_text: true
+  field_file_image_title_text: true
+  langcode: true

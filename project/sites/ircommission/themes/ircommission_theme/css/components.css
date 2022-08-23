@@ -2843,4 +2843,23 @@ footer {
   }
 }
 
+/* line 721, src/scss/components.scss */
+.content footer {
+  margin-top: 4rem;
+}
+
+/* line 726, src/scss/components.scss */
+#logo img {
+  height: 80px;
+}
+
+/* line 730, src/scss/components.scss */
+#logo a:focus {
+  background: none;
+  border-bottom: none;
+  outline: .3rem dashed #949494;
+  outline-offset: 1.2rem;
+  display: block;
+}
+
 /*# sourceMappingURL=components.css.map */

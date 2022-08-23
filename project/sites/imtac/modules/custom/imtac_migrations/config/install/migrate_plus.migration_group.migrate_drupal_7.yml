@@ -1,0 +1,20 @@
+uuid: 53ebc769-8b6e-4b91-80a2-97450bbb477f
+langcode: en
+status: true
+dependencies: {  }
+id: migrate_drupal_7
+label: 'Import from Drupal 7'
+description: 'Migrations originally generated from drush migrate-upgrade --configure-only'
+source_type: 'Drupal 7'
+module: null
+shared_configuration:
+  source:
+    key: drupal_7
+    database:
+      driver: mysql
+      username: drupal8
+      password: drupal8
+      host: database
+      port: ''
+      database: imtac_legacy
+      prefix: null
