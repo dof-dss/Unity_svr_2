@@ -1,0 +1,17 @@
+uuid: 0c4d833e-83aa-417c-b599-a9ad4e23228a
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: production
+description: 'Used for production site.'
+weight: 0
+folder: ../project/config/mentalhealthchampionni/production
+module:
+  fastly: 0
+theme: {  }
+blacklist:
+  - fastly.settings
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
