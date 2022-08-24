@@ -49,13 +49,11 @@ a.btn {
 
     p {
       @include responsive-typo-map($h3-text);
-        Display: flex;
+        display: flex;
         justify-content: center;
 
       @include breakpoint($phab) {
         @include adjust-font-size-to(21px);
-        Display: flex;
-        justify-content: center;
       }
      }
     }
