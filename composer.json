@@ -157,7 +157,7 @@
         "harvesthq/chosen": "^1.8",
         "kenwheeler/slick": "^1.8",
         "oomphinc/composer-installers-extender": "^2.0",
-        "platformsh/config-reader": "^2.3",
+        "platformsh/config-reader": "^2.4",
         "vlucas/phpdotenv": "^2.4"
     },
     "require-dev": {
