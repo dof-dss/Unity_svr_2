@@ -1,0 +1,25 @@
+uuid: 9f6ce9d7-4b98-487d-89c6-17708dc40f95
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-footer-menu
+  module:
+    - system
+  theme:
+    - publicappointmentsni_theme
+id: footermenu
+theme: publicappointmentsni_theme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-footer-menu'
+settings:
+  id: 'system_menu_block:menu-footer-menu'
+  label: 'Footer menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
