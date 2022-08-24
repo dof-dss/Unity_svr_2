@@ -16,16 +16,22 @@ targetEntityType: node
 bundle: faq
 mode: default
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_faq:
     type: entity_reference_revisions_entity_view
-    weight: 0
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_meta_tags: true
   langcode: true
   links: true
+  search_api_excerpt: true
