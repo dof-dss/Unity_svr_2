@@ -24,7 +24,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Latest
+      title: Featured
       fields:
         body:
           id: body
@@ -222,7 +222,7 @@ display:
         - 'config:field.storage.node.body'
   latest_home_content:
     id: latest_home_content
-    display_title: 'Homepage Latest'
+    display_title: 'Homepage Featured'
     display_plugin: block
     position: 1
     display_options:
