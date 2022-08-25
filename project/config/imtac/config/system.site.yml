@@ -2,7 +2,7 @@ _core:
   default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
 langcode: en
 uuid: e8cb19ae-9232-4f33-94a9-f60b0880ab56
-name: imtac
+name: 'The Inclusive Mobility and Transport Advisory Committee (IMTAC)'
 mail: imtac@test.com
 slogan: ''
 page:
@@ -12,5 +12,5 @@ page:
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
-frontpage_title: 'Welcome to Drupal site'
+frontpage_title: 'The Inclusive Mobility and Transport Advisory Committee (IMTAC)'
 frontpage_show_title: 0

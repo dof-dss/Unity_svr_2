@@ -9,7 +9,7 @@ blocks:
     fields:
       body:
         -
-          value: "<address>Imtac</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>Titanic Suites</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>55-59 Adelaide Street</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>Belfast BT2 8FE</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>\r\n<address>Tel/Textphone: 028 9072 6020</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>Email: <a href=\"mailto:info@imtac.org.uk\">info@imtac.org.uk</a></address>\r\n</address>\r\n"
+          value: "<address>Imtac<br />\r\nTitanic Suites<br />\r\n55-59 Adelaide Street<br />\r\nBelfast BT2 8FE</address>\r\n\r\n<address>Tel/Textphone: 028 9072 6020<br />\r\nEmail: <a href=\"mailto:info@imtac.org.uk\">info@imtac.org.uk</a></address>\r\n"
           summary: null
           format: full_html
   -
