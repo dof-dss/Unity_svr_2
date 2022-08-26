@@ -15,15 +15,16 @@
     height: 80px;
   }
 
-.sidebar-second .content-sidebar-wrap {
+.front .content-sidebar-wrap {
   width: 100%;
 }
+
 .path-news,
 .path-publications, {
   .content-sidebar-wrap {
     width: 100%;
   }
-  
+
   .search-page {
     .sidebar-first-layout {
       padding-left: 0;
@@ -46,6 +47,10 @@
     }
   }
 }
+.footer-area .column:last-child {
+  float:left;
+}
+
 #bottom-area {
   text-align: left;
   margin: 2rem auto;

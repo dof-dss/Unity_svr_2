@@ -11,7 +11,7 @@ dependencies:
 id: creditsblock
 theme: imtac_theme
 region: footer
-weight: -7
+weight: -9
 provider: null
 plugin: 'block_content:4ab92eee-abf8-4f2a-a9cd-de61a3235ada'
 settings:

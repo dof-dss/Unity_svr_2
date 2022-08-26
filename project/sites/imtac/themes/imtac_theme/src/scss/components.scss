@@ -5,12 +5,13 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
-a.btn {
-  background: $brand-primary;
-}
 #main-menu .menu .menu-item .active, #main-menu .menu .menu-item .active+.menu-main_sub .title a {
-  background: rgba(191,191,191,0.25);
+  background: rgba(191, 191, 191, 0.25);
   border-bottom-color: #f2b855;
+
+  a.btn {
+    background: $brand-primary;
+  }
 }
 .front {
   .block {
@@ -24,13 +25,11 @@ a.btn {
     .slide__caption {
       @include breakpoint($tab) {
       background: rgba(0, 0, 0, 0.6);
-      height: 20%;
-      font-size: 1.6rem;
+      font-size: 2rem;
       padding: 1rem 1rem 1rem 1rem;
     }
     .slide__caption {
-      height: 20%;
-      font-size: 1.6rem;
+      font-size: 2rem;
       padding: 1rem 1rem 1rem 1rem;
     }
   }
@@ -51,6 +50,7 @@ a.btn {
       @include responsive-typo-map($h3-text);
         display: flex;
         justify-content: center;
+        width: 100%;
 
       @include breakpoint($phab) {
         @include adjust-font-size-to(21px);
@@ -75,4 +75,9 @@ a.btn {
 }
 h2.location-title {
   display: none;
+}
+
+address {
+  margin-bottom: 2.4rem;
+  line-height: 3rem;
 }

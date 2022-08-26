@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the imtac_theme theme.
+ */
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function imtac_theme_preprocess_html(&$variables) {
+  if (!empty($variables['node_type'])) {
+    if (($variables['node_type'] == 'page') || ($variables['node_type'] == 'news') || ($variables['node_type'] == 'publication_page')) {
+      $variables['attributes']['class'][] = 'one-sidebar';
+      $variables['attributes']['class'][] = 'sidebar-second';
+    }
+  }
+}

@@ -8,9 +8,10 @@ logo:
   path: sites/imtac/themes/imtac_theme/logo.svg
 favicon:
   use_default: 1
-twitter_profile_url: ''
+twitter_profile_url: 'https://twitter.com/imtacni'
 facebook_profile_url: ''
 linkedin_profile_url: ''
 pinterest_profile_url: ''
 youtube_profile_url: ''
 instagram_profile_url: ''
+basic_page_structure: 1

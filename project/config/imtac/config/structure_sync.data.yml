@@ -9,7 +9,7 @@ blocks:
     fields:
       body:
         -
-          value: "<address>Imtac</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>Titanic Suites</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>55-59 Adelaide Street</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>Belfast BT2 8FE</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>\r\n<address>Tel/Textphone: 028 9072 6020</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>Email: <a href=\"mailto:info@imtac.org.uk\">info@imtac.org.uk</a></address>\r\n</address>\r\n"
+          value: "<address>Imtac<br />\r\nTitanic Suites<br />\r\n55-59 Adelaide Street<br />\r\nBelfast BT2 8FE</address>\r\n\r\n<address>Tel/Textphone: 028 9072 6020<br />\r\nEmail: <a href=\"mailto:info@imtac.org.uk\">info@imtac.org.uk</a></address>\r\n"
           summary: null
           format: full_html
   -
@@ -51,3 +51,12 @@ blocks:
           value: '<a href="https://twitter.com/imtacni" rel="noopener noreferrer"><i class="fab fa-twitter"><span class="visually-hidden">Follow us on Twitter</span></i></a>'
           summary: null
           format: full_html
+  -
+    info: 'Social links'
+    langcode: en
+    uuid: 8437723e-42f4-4e23-b8f1-b05ff30da5dc
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body: {  }
