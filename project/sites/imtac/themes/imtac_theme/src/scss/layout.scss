@@ -23,7 +23,7 @@
   .content-sidebar-wrap {
     width: 100%;
   }
-  
+
   .search-page {
     .sidebar-first-layout {
       padding-left: 0;
@@ -46,6 +46,10 @@
     }
   }
 }
+.footer-area .column:last-child {
+  float:left;
+}
+
 #bottom-area {
   text-align: left;
   margin: 2rem auto;

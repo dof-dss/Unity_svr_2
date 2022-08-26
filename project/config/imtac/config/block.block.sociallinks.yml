@@ -1,0 +1,25 @@
+uuid: 2e30bfc6-321b-44da-a456-8c0a0a9f5f6f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:8437723e-42f4-4e23-b8f1-b05ff30da5dc'
+  module:
+    - block_content
+  theme:
+    - imtac_theme
+id: sociallinks
+theme: imtac_theme
+region: footer_first
+weight: -8
+provider: null
+plugin: 'block_content:8437723e-42f4-4e23-b8f1-b05ff30da5dc'
+settings:
+  id: 'block_content:8437723e-42f4-4e23-b8f1-b05ff30da5dc'
+  label: 'Social links'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -11,7 +11,7 @@ dependencies:
 id: footerlinks
 theme: imtac_theme
 region: footer
-weight: -5
+weight: -8
 provider: null
 plugin: 'system_menu_block:menu-footer-links'
 settings:

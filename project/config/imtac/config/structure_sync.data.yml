@@ -51,3 +51,12 @@ blocks:
           value: '<a href="https://twitter.com/imtacni" rel="noopener noreferrer"><i class="fab fa-twitter"><span class="visually-hidden">Follow us on Twitter</span></i></a>'
           summary: null
           format: full_html
+  -
+    info: 'Social links'
+    langcode: en
+    uuid: 8437723e-42f4-4e23-b8f1-b05ff30da5dc
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body: {  }

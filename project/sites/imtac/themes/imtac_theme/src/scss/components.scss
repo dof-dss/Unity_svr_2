@@ -5,19 +5,18 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
-
 .region-content {
   p {
     width: 65%;
   }
 }
-
-a.btn {
-  background: $brand-primary;
-}
 #main-menu .menu .menu-item .active, #main-menu .menu .menu-item .active+.menu-main_sub .title a {
-  background: rgba(191,191,191,0.25);
+  background: rgba(191, 191, 191, 0.25);
   border-bottom-color: #f2b855;
+
+  a.btn {
+    background: $brand-primary;
+  }
 }
 .front {
   .block {
