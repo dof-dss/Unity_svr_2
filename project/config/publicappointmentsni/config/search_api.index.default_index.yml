@@ -3,10 +3,19 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.body
+    - field.storage.node.field_faq
+    - field.storage.paragraph.field_answer
+    - field.storage.node.field_member_role
+    - field.storage.node.field_published_date
+    - field.storage.node.field_publication_type
     - search_api.server.solr_default
   module:
     - search_api_solr
     - node
+    - paragraphs
+    - user
+    - taxonomy
     - search_api
 third_party_settings:
   search_api_solr:
@@ -54,6 +63,15 @@ name: 'Default index'
 description: ''
 read_only: false
 field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.body
   created:
     label: 'Authored on'
     datasource_id: 'entity:node'
@@ -62,6 +80,35 @@ field_settings:
     dependencies:
       module:
         - node
+  field_answer:
+    label: 'FAQ » Paragraph » Answer'
+    datasource_id: 'entity:node'
+    property_path: 'field_faq:entity:field_answer'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_faq
+        - field.storage.paragraph.field_answer
+      module:
+        - paragraphs
+  field_member_role:
+    label: 'Member role'
+    datasource_id: 'entity:node'
+    property_path: field_member_role
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_member_role
+  field_published_date:
+    label: 'Published date'
+    datasource_id: 'entity:node'
+    property_path: field_published_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_published_date
   langcode:
     label: Language
     datasource_id: 'entity:node'
@@ -70,6 +117,33 @@ field_settings:
     dependencies:
       module:
         - node
+  name:
+    label: 'Authored by » User » Name'
+    datasource_id: 'entity:node'
+    property_path: 'uid:entity:name'
+    type: string
+    dependencies:
+      module:
+        - node
+        - user
+  name_1:
+    label: 'Publication type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_publication_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_publication_type
+      module:
+        - taxonomy
+  spelling:
+    label: Spelling
+    property_path: aggregated_field
+    type: text
+    configuration:
+      type: union
+      fields:
+        - 'entity:node/title'
   status:
     label: Published
     datasource_id: 'entity:node'
@@ -83,10 +157,20 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: title
     type: text
-    boost: !!float 5
+    boost: !!float 21
     dependencies:
       module:
         - node
+  title_fulltext:
+    label: 'Title fulltext'
+    property_path: aggregated_field
+    type: text
+    boost: !!float 13
+    configuration:
+      type: union
+      fields:
+        - 'entity:node/body'
+        - 'entity:node/title'
   type:
     label: 'Content type'
     datasource_id: 'entity:node'
@@ -118,14 +202,23 @@ processor_settings:
     excerpt_length: 256
     exclude_fields: {  }
     highlight: always
-    highlight_partial: true
+    highlight_partial: false
   html_filter:
     weights:
       preprocess_index: -15
       preprocess_query: -15
-    all_fields: false
+    all_fields: true
     fields:
+      - body
+      - field_answer
+      - field_member_role
+      - langcode
+      - name
+      - name_1
+      - spelling
       - title
+      - title_fulltext
+      - type
     title: false
     alt: true
     tags:
@@ -134,82 +227,11 @@ processor_settings:
       h2: 3
       h3: 2
       strong: 2
-  ignorecase:
-    weights:
-      preprocess_index: -20
-      preprocess_query: -20
-    all_fields: false
-    fields:
-      - langcode
-      - title
-      - type
   language_with_fallback: {  }
   rendered_item: {  }
-  solr_date_range: {  }
-  stemmer:
+  solr_date_range:
     weights:
       preprocess_index: 0
-      preprocess_query: 0
-    all_fields: false
-    fields:
-      - title
-    exceptions:
-      mexican: mexic
-      texan: texa
-  stopwords:
-    weights:
-      preprocess_index: -5
-      preprocess_query: -2
-    all_fields: false
-    fields:
-      - title
-    stopwords:
-      - a
-      - an
-      - and
-      - are
-      - as
-      - at
-      - be
-      - but
-      - by
-      - for
-      - if
-      - in
-      - into
-      - is
-      - it
-      - 'no'
-      - not
-      - of
-      - 'on'
-      - or
-      - s
-      - such
-      - t
-      - that
-      - the
-      - their
-      - then
-      - there
-      - these
-      - they
-      - this
-      - to
-      - was
-      - will
-      - with
-  tokenizer:
-    weights:
-      preprocess_index: -6
-      preprocess_query: -6
-    all_fields: false
-    fields:
-      - title
-    spaces: ''
-    ignored: ._-
-    overlap_cjk: 1
-    minimum_word_size: '3'
 tracker_settings:
   default:
     indexing_order: fifo
