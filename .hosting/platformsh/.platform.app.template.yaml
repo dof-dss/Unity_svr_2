@@ -73,7 +73,7 @@ hooks:
       echo "****** $site deployment ******"
       cd /app/web/sites/$site
       # Disable Fastly logging
-      drush disable-fastly-logging
+      drush -l $site disable-fastly-logging
       # Readonlymode module should be installed on all sites,
       # but we'll just make sure.
       drush en readonlymode -l $site -y
