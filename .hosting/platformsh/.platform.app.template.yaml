@@ -98,7 +98,7 @@ hooks:
       cd /app/web/sites/$site
       drush -l $site -y cache-rebuild
       # Enable Fastly logging
-      drush enable-fastly-logging
+      drush -l $site enable-fastly-logging
     done
 
 # The configuration of app when it is exposed to the web.
