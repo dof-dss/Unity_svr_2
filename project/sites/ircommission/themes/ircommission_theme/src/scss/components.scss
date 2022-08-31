@@ -473,7 +473,7 @@ position:static;
 .footer-area {
   @media screen and (max-width: $tab) {
     flex-flow: column;
-    margin-left: 12rem;
+    margin-left: 10rem;
   }
 }
 
@@ -488,7 +488,8 @@ position:static;
 .irc-text {
   @media screen and (max-width: $tab) {
     margin-bottom: 6rem;
-    margin-right: 8rem;
+    margin-right: 4rem;
+    text-align: left;
   }
 }
 
@@ -530,8 +531,15 @@ position:static;
 }
 
 .irc-text p {
+  @media screen and (max-width: $tab) {
+    margin-right: 6rem;
+  }
+}
+
+.irc-text p {
   @media screen and (max-width: $mob) {
     font-size: 1.4rem;
+    margin-right: 0;
   }
 }
 
@@ -684,7 +692,7 @@ position:static;
 .irc-text p {
   @media screen and (max-width: $xxsml) {
     font-size: 1.2rem;
-    width: 60%;
+    width: 90%;
   }
 }
 
@@ -750,4 +758,10 @@ position:static;
   }
 }
 
+
+.block-views-blockirc-key-documents-views-block-key-docs-homepage h2 {
+  @media screen and (max-width: $tab) {
+    margin-left: 6rem;
+  }
+}
 
