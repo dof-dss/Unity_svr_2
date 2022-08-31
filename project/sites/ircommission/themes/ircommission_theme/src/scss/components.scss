@@ -130,13 +130,6 @@ a[href="/news"] {
   vertical-align: baseline;
 }
 
-.region.region-bottom-widget-3 a[href="/node/8"] {
-  @media screen and (max-width: $xsml) {
-    width: 100%;
-  }
-}
-
-
 
 #content a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper), .content a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper), #footer a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper) {
   border-bottom: none;
@@ -445,10 +438,25 @@ footer {
 
 .irc-text {
   margin-top: 2rem;
+
+  @media screen and (max-width: $tab) {
+    margin-bottom: 6rem;
+    margin-right: 4rem;
+    text-align: left;
+  }
 }
 
 .irc-text p {
   text-align: center;
+
+  @media screen and (max-width: $tab) {
+    margin-right: 6rem;
+  }
+
+  @media screen and (max-width: $mob) {
+    font-size: 1.4rem;
+    margin-right: 0;
+  }
 }
 
 #block-views-block-front-latest-news-home-latest-news, #block-views-block-irc-key-documents-views-block-1-2, #block-ircommission-theme-aboutircblock {
@@ -473,7 +481,7 @@ position:static;
 .footer-area {
   @media screen and (max-width: $tab) {
     flex-flow: column;
-    margin-left: 12rem;
+    margin-left: 10rem;
   }
 }
 
@@ -485,12 +493,7 @@ position:static;
   }
 }
 
-.irc-text {
-  @media screen and (max-width: $tab) {
-    margin-bottom: 6rem;
-    margin-right: 8rem;
-  }
-}
+
 
 .about-IRC-flex .btn {
   @media screen and (max-width: $tab) {
@@ -526,12 +529,6 @@ position:static;
 .about-IRC-flex .btnwrap .btn {
   @media screen and (max-width: $mob) {
     margin-left: 0;
-  }
-}
-
-.irc-text p {
-  @media screen and (max-width: $mob) {
-    font-size: 1.4rem;
   }
 }
 
@@ -603,127 +600,6 @@ position:static;
   }
 }
 
-.footer-area {
-  @media screen and (max-width: $xsml) {
-    margin-left: 0;
-  }
-}
-
-.footer-area .column {
-  @media screen and (max-width: $xsml) {
-    margin: 0;
-  }
-}
-
-#block-views-block-irc-key-documents-views-block-1-2 a.btn {
-  @media screen and (max-width: $xsml) {
-    margin-left: 0;
-    width: 100%;
-  }
-}
-
-.region-bottom-widget-2 footer .btn {
-  @media screen and (max-width: $xsml) {
-    margin-left: 0;
-    width: 100%;
-  }
-}
-
-.about-IRC-flex .btnwrap .btn {
-  @media screen and (max-width: $xsml) {
-    margin-left: 0;
-    width: 100%;
-  }
-}
-
-.footer-area .column:first-child {
-  @media screen and (max-width: $xsml) {
-    margin: 0
-  }
-}
-
-.region-bottom-widget-1 .btnwrap {
-  @media screen and (max-width: $xsml) {
-    margin-left: 0
-  }
-}
-
-#block-ircommission-theme-aboutircblock h2 {
-  @media screen and (max-width: $xsml) {
-    margin-left: 5rem
-  }
-}
-
-.fa.fa-users {
-  @media screen and (max-width: $xsml) {
-    margin-left: 5rem
-  }
-}
-
-.irc-text {
-  @media screen and (max-width: $xsml) {
-    margin: 0;
-    margin-bottom: 6rem;
-  }
-}
-
-#block-ircommission-theme-aboutircblock h2 {
-  @media screen and (max-width: $xxsml) {
-    margin: 0;
-  }
-}
-
-.fa.fa-users {
-  @media screen and (max-width: $xxsml) {
-    margin: 0;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-}
-
-.irc-text p {
-  @media screen and (max-width: $xxsml) {
-    font-size: 1.2rem;
-    width: 60%;
-  }
-}
-
-#block-views-block-front-latest-news-home-latest-news h2 {
-  @media screen and (max-width: $xxsml) {
-    margin-left: 2.5rem;
-  }
-}
-
-.fas.fa-file-alt {
-  @media screen and (max-width: $xxsml) {
-    margin-left: 0;
-  }
-}
-
-.region-bottom-widget-2 .views-row {
-  @media screen and (max-width: $xxsml) {
-    font-size: 1.2rem;
-  }
-}
-
-#block-views-block-irc-key-documents-views-block-1-2 h2 {
-  @media screen and (max-width: $xxsml) {
-    margin-left: 0;
-    margin-bottom: 0;
-  }
-}
-
-.content .fas {
-  @media screen and (max-width: $xxsml) {
-    margin-left: 3rem;
-  }
-}
-
-.block-views-blockirc-key-documents-views-block-1 .content .item-list {
-  @media screen and (max-width: $xxsml) {
-    font-size: 1.2rem;
-  }
-}
 
 .content footer {
   margin-top: 4rem;
@@ -750,4 +626,10 @@ position:static;
   }
 }
 
+
+.block-views-blockirc-key-documents-views-block-key-docs-homepage h2 {
+  @media screen and (max-width: $tab) {
+    margin-left: 6rem;
+  }
+}
 
