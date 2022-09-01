@@ -82,6 +82,9 @@
 {% if is_front %}
   {{ page.slideshow }}
   {{ page.front_welcome }}
+  <div class="front-banner">
+    <img src="sites/ircommission/themes/ircommission_theme/images/irc-commissioners-banner.jpg" alt="IRC Commissioners(from left) John McBurney, Tim O’Connor, Monica McWilliams, Mitchell Reiss">
+    <p>IRC Commissioners(from left) John McBurney, Tim O’Connor, Monica McWilliams, Mitchell Reiss</p></div>
 
   {% if page.top_first or page.top_second or page.top_third %}
     <div id="top-area" class="clearfix">
@@ -105,12 +108,6 @@
 {% endif %}
 
 <div id="container">
-  {% if is_front %}
-    <div class="front-banner">
-      <img src="sites/ircommission/themes/ircommission_theme/images/irc-commissioners-banner.jpg" alt="">
-    <p>IRC Commissioners(from left) John McBurney, Tim O’Connor, Monica McWilliams, Mitchell Reiss</p></div>
-  {% endif %}
-
   <div class="container-wrap">
     <div class="content-sidebar-wrap {% if search_page %}search-page{% endif %}">
       {% if is_front %}
