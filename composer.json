@@ -222,9 +222,6 @@
             "drupal/readonlymode": {
                 "Fatal typerror fix": "https://www.drupal.org/files/issues/2020-12-23/readonlymode-string_not_array-3115119-9.patch"
             },
-            "drupal/eu_cookie_compliance": {
-                "Banner at top is not hiding correctly": "https://www.drupal.org/files/issues/2022-04-26/eu_cookie_compliance_banner_not_hiding_3277175-1.patch"
-            },
             "drupal/fastly": {
                 "Allow disabling of logging": "https://git.drupalcode.org/project/fastly/-/merge_requests/6.patch"
             },
