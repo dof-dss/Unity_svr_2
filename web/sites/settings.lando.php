@@ -50,7 +50,7 @@ $config['config_split.config_split.hosted']['status'] = FALSE;
 // Environment indicator config.
 $settings['simple_environment_indicator'] = sprintf('%s %s', getenv('SIMPLEI_ENV_COLOUR'), getenv('SIMPLEI_ENV_NAME'));
 
-$settings['container_yamls'][] = $app_root . '/' . $site_path . '/../local.services.yml';
+$settings['container_yamls'][] = $app_root . '/sites/local.services.yml';
 
 // Redis Cache.
 // Due to issues with enabling Redis during install/config import. We cannot enable the cache backend by default.
