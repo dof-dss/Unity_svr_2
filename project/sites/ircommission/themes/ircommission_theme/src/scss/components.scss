@@ -171,9 +171,7 @@ a[href="/news"] {
   }
 
   @media screen and (max-width: $mob) {
-    margin-left: 4rem;
-    margin-top: 0;
-    margin-left: 8rem;
+    margin: 2rem;
   }
 }
 
@@ -187,10 +185,6 @@ a[href="/news"] {
     margin: 2rem;
     display: inherit;
     text-align: center;
-  }
-
-  @media screen and (max-width: $mob) {
-    margin-left: 8rem;
   }
 }
 
@@ -472,7 +466,7 @@ footer {
   }
 
   @media screen and (max-width: $mob) {
-    margin-left: 5.8rem;
+    margin: 0;
   }
 }
 
@@ -518,7 +512,7 @@ footer {
   }
 
   @media screen and (max-width: $mob) {
-    margin : 0;
+    margin : 4rem;
   }
 }
 
@@ -542,7 +536,7 @@ footer {
 
   @media screen and (max-width: $mob) {
     font-size: 1.4rem;
-    margin-right: 0;
+    margin: 0;
   }
 }
 
@@ -562,7 +556,7 @@ position:static;
 }
 
 .block-views-blockirc-key-documents-views-block-1 .content, .block-views-blockfront-latest-news-home-latest-news .content, .about-IRC-flex .content {
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 
 .about-IRC-flex .btn {
@@ -589,12 +583,6 @@ position:static;
   }
 }
 
-
-.region-bottom-widget-1 .btnwrap {
-  @media screen and (max-width: $mob) {
-    margin-left: 3rem;
-  }
-}
 
 .region-bottom-widget-3 .btnwrap {
   @media screen and (max-width: $mob) {
@@ -655,6 +643,11 @@ position:static;
 
   @media screen and (max-width: $tab) {
     text-align: center;
+  }
+
+  @media screen and (max-width: $mob) {
+    text-align: center;
+    margin-bottom: 2rem;
   }
 }
 
