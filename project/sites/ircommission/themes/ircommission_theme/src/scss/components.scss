@@ -93,6 +93,16 @@ a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not
 #block-ircommission-theme-aboutircblock h2 {
   margin-left: 7rem;
   margin-bottom: 0;
+
+  @media screen and (max-width: $tab) {
+    margin: 0;
+    text-align: center;
+  }
+
+  @media screen and (max-width: $mob) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 
@@ -122,6 +132,10 @@ a[href="/news"] {
 
 #block-views-block-front-latest-news-home-latest-news h2 {
   margin-left: 110px;
+
+  @media screen and (max-width: $tab) {
+    margin: 0;
+  }
 }
 
 
@@ -149,6 +163,18 @@ a[href="/news"] {
 
 .fas.fa-file-alt {
   margin-left: 119px;
+
+  @media screen and (max-width: $tab) {
+    display: inherit;
+    text-align: center;
+    margin: 3rem;
+  }
+
+  @media screen and (max-width: $mob) {
+    margin-left: 4rem;
+    margin-top: 0;
+    margin-left: 8rem;
+  }
 }
 
 
@@ -156,6 +182,16 @@ a[href="/news"] {
   margin-left: 11rem;
   margin-top: 1rem;
   margin-bottom: 3.5rem;
+
+  @media screen and (max-width: $tab) {
+    margin: 2rem;
+    display: inherit;
+    text-align: center;
+  }
+
+  @media screen and (max-width: $mob) {
+    margin-left: 8rem;
+  }
 }
 
 
@@ -229,6 +265,14 @@ a[href="/news"] {
 .region-bottom-widget-2 .views-row {
   text-align: center;
   margin-left: 4rem;
+
+  @media screen and (max-width: $tab) {
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: $mob) {
+    margin-left: 0;
+  }
 }
 
 .search-result{
@@ -344,16 +388,38 @@ li {
 .footer-area {
   display: flex;
   padding-bottom: 3rem;
+
+  @media screen and (max-width: $tab) {
+    flex-flow: column;
+    margin: 0;
+  }
+
+  @media screen and (max-width: $mob) {
+    margin: 0;
+  }
 }
 
 .footer-area .column {
   display: flex;
+
+  @media screen and (max-width: $tab) {
+    float: none !important;
+    width: auto !important;
+  }
+
+  @media screen and (max-width: $mob) {
+    margin: 0;
+  }
 }
 
 .region-bottom-widget-1,
 .region-bottom-widget-2,
 .region-bottom-widget-3{
   display: flex;
+
+  @media screen and (max-width: $tab) {
+    width: 100%;
+  }
 }
 
 .btn a.btn {
@@ -374,7 +440,6 @@ footer {
 
 #main-menu .menu-link:hover, #main-menu .menu-link:focus {
   background: #0a7ad0;
-
 }
 
 .about-IRC-flex{
@@ -398,6 +463,17 @@ footer {
   bottom: 0;
   display: block;
   margin-left: 10rem;
+
+  @media screen and (max-width: $tab) {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    text-align: center;
+  }
+
+  @media screen and (max-width: $mob) {
+    margin-left: 5.8rem;
+  }
 }
 
 .region-bottom-widget-2 .field-content {
@@ -434,14 +510,24 @@ footer {
   line-height: 0.8;
   margin: 2rem 0;
   margin-left: 10rem;
+
+  @media screen and (max-width: $tab) {
+    text-align: center;
+    margin : 2rem 0;
+    display: inherit;
+  }
+
+  @media screen and (max-width: $mob) {
+    margin : 0;
+  }
 }
+
 
 .irc-text {
   margin-top: 2rem;
 
   @media screen and (max-width: $tab) {
     margin-bottom: 6rem;
-    margin-right: 4rem;
     text-align: left;
   }
 }
@@ -450,7 +536,8 @@ footer {
   text-align: center;
 
   @media screen and (max-width: $tab) {
-    margin-right: 6rem;
+    margin: 2rem;
+    margin-top: 3rem;
   }
 
   @media screen and (max-width: $mob) {
@@ -478,29 +565,13 @@ position:static;
   margin-bottom: 8rem;
 }
 
-.footer-area {
-  @media screen and (max-width: $tab) {
-    flex-flow: column;
-    margin-left: 10rem;
-  }
-}
-
-
-.footer-area .column{
-  @media screen and (max-width: $tab) {
-    float: none !important;
-    width: auto !important;
-  }
-}
-
-
-
 .about-IRC-flex .btn {
+
   @media screen and (max-width: $tab) {
-    position: absolute;
+    position: relative;
     bottom: 0;
-    display: block;
-    margin-left: 10rem;
+    display: inline-block;
+    margin: 0;
   }
 }
 
@@ -511,20 +582,6 @@ position:static;
   }
 }
 
-#block-ircommission-theme-aboutircblock h2 {
-  @media screen and (max-width: $mob) {
-    margin: 0;
-    padding: 0;
-    margin-left: 3rem;
-  }
-}
-
-
-.fa.fa-users {
-  @media screen and (max-width: $mob) {
-    margin-left: 3rem;
-  }
-}
 
 .about-IRC-flex .btnwrap .btn {
   @media screen and (max-width: $mob) {
@@ -532,49 +589,6 @@ position:static;
   }
 }
 
-
-#block-views-block-front-latest-news-home-latest-news h2 {
-  @media screen and (max-width: $mob) {
-    margin-left: 7.5rem;
-  }
-}
-
-.fas.fa-file-alt {
-  @media screen and (max-width: $mob) {
-    margin-left: 4rem;
-  }
-}
-
-.region-bottom-widget-2 .views-row {
-  @media screen and (max-width: $mob) {
-    margin-left: 0;
-  }
-}
-
-.footer-area {
-  @media screen and (max-width: $mob) {
-    margin-left: 8rem;
-  }
-}
-
-.fas.fa-file-alt {
-  @media screen and (max-width: $mob) {
-    margin-top: 0;
-    margin-left: 8rem;
-  }
-}
-
-.footer-area .column {
-  @media screen and (max-width: $mob) {
-    margin: 0;
-  }
-}
-
-.region-bottom-widget-2 footer .btn {
-  @media screen and (max-width: $mob) {
-    margin-left: 5.8rem;
-  }
-}
 
 .region-bottom-widget-1 .btnwrap {
   @media screen and (max-width: $mob) {
@@ -591,12 +605,6 @@ position:static;
 #block-views-block-irc-key-documents-views-block-1-2 h2 {
   @media screen and (max-width: $mob) {
     margin-left: 4rem;
-  }
-}
-
-.fas.fa-folder {
-  @media screen and (max-width: $mob) {
-    margin-left: 8rem;
   }
 }
 
@@ -629,7 +637,29 @@ position:static;
 
 .block-views-blockirc-key-documents-views-block-key-docs-homepage h2 {
   @media screen and (max-width: $tab) {
-    margin-left: 6rem;
+    margin: 0;
+    text-align: center;
   }
 }
 
+.block-views-blockfront-latest-news-home-latest-news {
+
+  @media screen and (max-width: $tab) {
+    display:flex;
+    flex-flow: column;
+    width: 100%;
+  }
+}
+
+.block-views-blockfront-latest-news-home-latest-news h2 {
+
+  @media screen and (max-width: $tab) {
+    text-align: center;
+  }
+}
+
+.block-views-blockirc-key-documents-views-block-key-docs-homepage .item-list {
+  @media screen and (max-width: $tab) {
+    margin-left: 5rem;
+  }
+}
