@@ -5,14 +5,52 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
-#main-menu .menu .menu-item .active, #main-menu .menu .menu-item .active+.menu-main_sub .title a {
-  background: rgba(191, 191, 191, 0.25);
-  border-bottom-color: #f2b855;
+#main-menu {
+  background: $white;
+  .menu-link,
+  .menu .active,
+  .menu-item.open .menu-toggle-btn {
+    color: $brand-primary;
+    @include adjust-font-size-to(16px);
+  }
+
+  .menu-link {
+    &:hover,
+    &:focus {
+      background: $brand-primary;
+      color: $white;
+    }
+  }
+
+  .menu .menu-item .active {
+    border-color: $brand-primary;
+  }
+
+  .menu-main_sub {
+    background: $brand-primary;
+
+    .menu-item {
+      .active {
+        color: $brand-primary;
+        border-color: $white;
+      }
+
+      a {
+        &:hover,
+        &:focus {
+          color: $black;
+          background: $charcoal;
+        }
+      }
+    }
+  }
+}
+
 
   a.btn {
     background: $brand-primary;
   }
-}
+
 .front {
   .block {
     h2 {
