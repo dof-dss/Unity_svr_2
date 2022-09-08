@@ -14,7 +14,7 @@
 #main-menu .menu .menu-item .active + .menu-main_sub .title a {
  background: $brand-primary;
  color: #fff;
-border-bottom-color: #0e6bb3;
+border-bottom-color: $brand-primary;
 }
 
 
@@ -241,7 +241,7 @@ a[href="/news"] {
   border-bottom: 0px solid #16a085;
   margin: 0 -1px;
   padding: 0 1px;
-  color: #0e6bb3;
+  color: $brand-primary;
 }
 
 .region-bottom-widget-2 .views-row {
