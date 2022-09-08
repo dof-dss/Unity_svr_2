@@ -9,16 +9,14 @@
   color: #333;
 }
 
-a.btn {
-  background: #0e6bb3;
-}
 
 #main-menu .menu .menu-item .active,
 #main-menu .menu .menu-item .active + .menu-main_sub .title a {
-  background: #0e6bb3;
-  color: #fff;
-  border-bottom-color: #0e6bb3;
+ background: $brand-primary;
+ color: #fff;
+border-bottom-color: #0e6bb3;
 }
+
 
 #footer {
   background: inherit;
@@ -68,13 +66,6 @@ a.btn {
   font-size: 1.4rem;
   line-height: 1.8rem;
 }
-
-
-a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper) {
-  color: #0e6bb3;
-  text-decoration: none;
-}
-
 
 .content .fa {
   color: #141f71;
@@ -430,8 +421,9 @@ footer {
 }
 
 #main-menu .menu-link:hover, #main-menu .menu-link:focus {
-  background: #0e6bb3;
+  background: $brand-primary;
 }
+
 
 .about-IRC-flex{
   position: relative;
