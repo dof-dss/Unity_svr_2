@@ -1,29 +1,25 @@
-uuid: 47e057f4-1c25-4012-9674-d94941372407
+uuid: 1d834758-25c6-4ed8-a558-bef94bdf6c5a
 langcode: en
 status: true
 dependencies:
   config:
     - views.view.latest_news
   module:
-    - system
     - views
   theme:
     - imtac_theme
 id: views_block__latest_news_home_latest_news
 theme: imtac_theme
 region: bottom_widget_1
-weight: -10
+weight: -9
 provider: null
 plugin: 'views_block:latest_news-home_latest_news'
 settings:
   id: 'views_block:latest_news-home_latest_news'
-  label: 'Latest News'
+  label: ''
   label_display: visible
   provider: views
-  views_label: 'Latest News'
+  context_mapping: {  }
+  views_label: ''
   items_per_page: none
-visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: '<front>'
+visibility: {  }
