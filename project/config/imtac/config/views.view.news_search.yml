@@ -100,7 +100,7 @@ display:
         type: full
         options:
           offset: 0
-          items_per_page: 15
+          items_per_page: 20
           total_pages: null
           id: 0
           tags:
