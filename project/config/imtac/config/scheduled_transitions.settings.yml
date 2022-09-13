@@ -9,40 +9,16 @@ automation:
 bundles:
   -
     entity_type: node
-    bundle: basic_page
-  -
-    entity_type: node
-    bundle: board_member
-  -
-    entity_type: node
-    bundle: consultation
-  -
-    entity_type: node
-    bundle: contact
-  -
-    entity_type: node
-    bundle: faq
-  -
-    entity_type: node
     bundle: feature
-  -
-    entity_type: node
-    bundle: featured_content_list
-  -
-    entity_type: node
-    bundle: layout_page
-  -
-    entity_type: node
-    bundle: link
   -
     entity_type: node
     bundle: news
   -
     entity_type: node
-    bundle: profile
+    bundle: page
   -
     entity_type: node
-    bundle: publication
+    bundle: publication_page
   -
     entity_type: node
     bundle: webform
