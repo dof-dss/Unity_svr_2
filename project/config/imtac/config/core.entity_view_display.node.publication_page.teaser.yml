@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.publication_page.body
+    - field.field.node.publication_page.field_attachment
     - field.field.node.publication_page.field_meta_tags
     - field.field.node.publication_page.field_publication_type
     - field.field.node.publication_page.field_published_date
@@ -22,12 +23,14 @@ content:
     label: hidden
     settings:
       timezone_override: ''
-      format_type: imtac_time
+      format_type: unity_date
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   body: true
+  content_moderation_control: true
+  field_attachment: true
   field_meta_tags: true
   field_publication_type: true
   langcode: true
