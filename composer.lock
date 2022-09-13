@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f2b99ce44264b00be9fb09b8e16103d",
+    "content-hash": "ccac6b595637e96664434860c25b844d",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1837,16 +1837,16 @@
         },
         {
             "name": "dof-dss/nicsdru_origins_modules",
-            "version": "1.4.0",
+            "version": "1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_origins_modules.git",
-                "reference": "0848de1bae3383a6fdae9e71723ef55555ce3d72"
+                "reference": "7b1010b32e92f4c5af4f4885a64f04b8276394d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/0848de1bae3383a6fdae9e71723ef55555ce3d72",
-                "reference": "0848de1bae3383a6fdae9e71723ef55555ce3d72",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/7b1010b32e92f4c5af4f4885a64f04b8276394d6",
+                "reference": "7b1010b32e92f4c5af4f4885a64f04b8276394d6",
                 "shasum": ""
             },
             "require": {
@@ -1860,9 +1860,9 @@
             "description": "Generic modules for DOF-DSS Drupal sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_origins_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/1.4.0"
+                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/1.4.3"
             },
-            "time": "2022-08-08T10:13:49+00:00"
+            "time": "2022-09-07T10:28:03+00:00"
         },
         {
             "name": "dof-dss/nicsdru_origins_profile",
@@ -1906,20 +1906,20 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
-            "version": "1.1.1",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_modules.git",
-                "reference": "e5201cbb228b5bf149227c9e62da48fae71794a4"
+                "reference": "07d8263f82866e13aa3e4d8651ef18be4f57a51b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/e5201cbb228b5bf149227c9e62da48fae71794a4",
-                "reference": "e5201cbb228b5bf149227c9e62da48fae71794a4",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/07d8263f82866e13aa3e4d8651ef18be4f57a51b",
+                "reference": "07d8263f82866e13aa3e4d8651ef18be4f57a51b",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "^1.6"
+                "composer/installers": "^1.9"
             },
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
@@ -1929,26 +1929,26 @@
             "description": "Custom modules available to all Unity sites.",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/1.1.1"
+                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/1.1.3"
             },
-            "time": "2022-08-10T09:54:28+00:00"
+            "time": "2022-09-07T10:24:14+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_profile",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_profile.git",
-                "reference": "91328b959d4d6aee85ba8364ae1fd4b0a6a95702"
+                "reference": "8aa38b6431a562ecbf164f98a7ae29842b873dd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/91328b959d4d6aee85ba8364ae1fd4b0a6a95702",
-                "reference": "91328b959d4d6aee85ba8364ae1fd4b0a6a95702",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/8aa38b6431a562ecbf164f98a7ae29842b873dd6",
+                "reference": "8aa38b6431a562ecbf164f98a7ae29842b873dd6",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "^1.6"
+                "composer/installers": "^1.9"
             },
             "type": "drupal-profile",
             "notification-url": "https://packagist.org/downloads/",
@@ -1958,22 +1958,22 @@
             "description": "Custom install profile used by all Unity sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_profile/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/1.0.3"
+                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/1.0.4"
             },
-            "time": "2022-08-01T07:26:10+00:00"
+            "time": "2022-09-07T10:31:18+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_theme",
-            "version": "v0.1.60",
+            "version": "v0.1.61",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_theme.git",
-                "reference": "52c133a12372713122b364049c37f04bf1301497"
+                "reference": "50d56e00bc88e00ea8a15cce7c684a15686e2cab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/52c133a12372713122b364049c37f04bf1301497",
-                "reference": "52c133a12372713122b364049c37f04bf1301497",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/50d56e00bc88e00ea8a15cce7c684a15686e2cab",
+                "reference": "50d56e00bc88e00ea8a15cce7c684a15686e2cab",
                 "shasum": ""
             },
             "require": {
@@ -1997,9 +1997,9 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v0.1.60"
+                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v0.1.61"
             },
-            "time": "2022-08-10T09:49:47+00:00"
+            "time": "2022-09-07T10:14:47+00:00"
         },
         {
             "name": "drupal/address",
@@ -3519,6 +3519,71 @@
             }
         },
         {
+            "name": "drupal/cookie_content_blocker",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/cookie_content_blocker.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/cookie_content_blocker-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "570bf56ac3c53d117ca721e0da5a97de2f9cc9df"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "ext-json": "*",
+                "php": "^7.1 || ^8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1659703027",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Buteneers",
+                    "homepage": "https://www.drupal.org/u/steven-buteneers",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Daniël Smidt",
+                    "homepage": "https://www.drupal.org/u/dmsmidt",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Marc Janson",
+                    "homepage": "https://www.drupal.org/u/scorpid",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Prevent loading of content with a privacy impact until consent is given. This module needs a separate cookie consent manager.",
+            "homepage": "https://www.drupal.org/project/cookie_content_blocker",
+            "keywords": [
+                "Content",
+                "Content Access Control",
+                "Content Display",
+                "Drupal",
+                "Spam Prevention"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/cookie_content_blocker",
+                "issues": "https://www.drupal.org/project/issues/cookie_content_blocker?version=8.x"
+            }
+        },
+        {
             "name": "drupal/core",
             "version": "9.3.21",
             "source": {
@@ -4669,26 +4734,26 @@
         },
         {
             "name": "drupal/eu_cookie_compliance",
-            "version": "1.19.0",
+            "version": "1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/eu-cookie-compliance.git",
-                "reference": "8.x-1.19"
+                "reference": "8.x-1.20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/eu_cookie_compliance-8.x-1.19.zip",
-                "reference": "8.x-1.19",
-                "shasum": "5a13cd53f87a58501cebd6e560c280ad7274035c"
+                "url": "https://ftp.drupal.org/files/projects/eu_cookie_compliance-8.x-1.20.zip",
+                "reference": "8.x-1.20",
+                "shasum": "2168d812b2b197021451141b27ed865c51c07be7"
             },
             "require": {
-                "drupal/core": "^8.9 || ^9"
+                "drupal/core": "^8.9 || ^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.19",
-                    "datestamp": "1633775773",
+                    "version": "8.x-1.20",
+                    "datestamp": "1661701837",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -20109,5 +20174,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.2.0"
 }
