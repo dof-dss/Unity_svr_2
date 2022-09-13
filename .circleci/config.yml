@@ -131,7 +131,14 @@ jobs:
 
   # Nightly edge build
   edge_build:
-    <<: *custom_npm_docker_image
+    <<: *docker_image
+    environment:
+      # git variables to avoid empty committer identity errors
+      EMAIL: "circleci@localhost"
+      GIT_COMMITTER_NAME: "Circle CI"
+      GIT_AUTHOR_NAME: "Circle CI"
+      EDGE_BUILD_BRANCH: "edge"
+      PLATFORM_REGION: "uk-1.platform.sh"
     steps:
       - hosts_keyscan
       - checkout_code
