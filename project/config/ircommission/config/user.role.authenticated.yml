@@ -2,14 +2,11 @@ uuid: 2b010ae6-749c-4476-94a4-4ec47b70e786
 langcode: en
 status: true
 dependencies:
-  config:
-    - node.type.news
-    - node.type.page
-    - node.type.publication_page
   module:
+    - google_analytics
+    - media
     - node
-    - path
-    - pathauto
+    - search_api_autocomplete
     - system
 _core:
   default_config_hash: ttiBMK8DYIdLARGEG2nyY1Pv--Zz53eCjlO7fmrnAT4
@@ -18,21 +15,9 @@ label: 'authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'access administration pages'
   - 'access content'
-  - 'create news content'
-  - 'create page content'
-  - 'create publication_page content'
-  - 'create url aliases'
-  - 'delete own news content'
-  - 'delete own page content'
-  - 'delete own publication_page content'
-  - 'edit any news content'
-  - 'edit any page content'
-  - 'edit any publication_page content'
-  - 'edit own news content'
-  - 'edit own page content'
-  - 'edit own publication_page content'
-  - 'notify of path changes'
+  - 'opt-in or out of google analytics tracking'
+  - 'use search_api_autocomplete for search'
+  - 'view all revisions'
+  - 'view media'
   - 'view own unpublished content'
-  - 'view the administration theme'
