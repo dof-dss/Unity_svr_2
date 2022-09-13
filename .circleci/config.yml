@@ -137,7 +137,7 @@ jobs:
       EMAIL: "circleci@localhost"
       GIT_COMMITTER_NAME: "Circle CI"
       GIT_AUTHOR_NAME: "Circle CI"
-      EDGE_BUILD_BRANCH: "D8UN-edge"
+      EDGE_BUILD_BRANCH: "edge"
       PLATFORM_REGION: "uk-1.platform.sh"
     steps:
       - hosts_keyscan
