@@ -9,7 +9,7 @@ blocks:
     fields:
       body:
         -
-          value: "<address>Imtac<br />\r\nTitanic Suites<br />\r\n55-59 Adelaide Street<br />\r\nBelfast BT2 8FE</address>\r\n\r\n<address>Tel/Textphone: 028 9072 6020<br />\r\nEmail: <a href=\"mailto:info@imtac.org.uk\">info@imtac.org.uk</a></address>\r\n"
+          value: "<address>IMTAC<br />\r\nTitanic Suites<br />\r\n55-59 Adelaide Street<br />\r\nBelfast<br />\r\nBT2 8FE<br />\r\nTel: 028 9072 6020<br />\r\nEmail: <a href=\"mailto:info@imtac.org.uk\">info@imtac.org.uk</a>&nbsp;</address>\r\n"
           summary: null
           format: full_html
   -
@@ -35,8 +35,8 @@ blocks:
     fields:
       body:
         -
-          value: "<p><iframe allowfullscreen=\"true\" allowtransparency=\"true\" frameborder=\"0\" id=\"twitter-widget-0\" scrolling=\"no\" src=\"https://syndication.twitter.com/srv/timeline-profile/screen-name/ImtacNI?dnt=false&amp;embedId=twitter-widget-0&amp;frame=false&amp;lang=en&amp;limit=3&amp;origin=https%3A%2F%2Fwww.imtac.org.uk.staging-5em2ouy-erekdd7fnk5be.uk-1.platformsh.site%2F&amp;sessionId=933b1379176de7b2a6a6cbf46ce2f1e4628d1646&amp;showHeader=false&amp;showReplies=false&amp;widgetsVersion=31f0cdc1eaa0f%3A1660602114609\" style=\"position: static; visibility: visible; width: 300px; height: 772px; display: block; flex-grow: 1;\" title=\"Twitter Timeline\"></iframe></p>\r\n"
-          summary: ''
+          value: "<p><a class=\"twitter-timeline\" data-height=\"900\" href=\"https://twitter.com/ImtacNI?ref_src=twsrc%5Etfw\">Tweets by ImtacNI</a> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></p>\r\n"
+          summary: null
           format: full_html
   -
     info: 'Twitter Link'
@@ -48,7 +48,7 @@ blocks:
     fields:
       body:
         -
-          value: '<a href="https://twitter.com/imtacni" rel="noopener noreferrer"><i class="fab fa-twitter"><span class="visually-hidden">Follow us on Twitter</span></i></a>'
+          value: '<a href="https://twitter.com/imtacni?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @imtacni</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
           summary: null
           format: full_html
   -
