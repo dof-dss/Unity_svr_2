@@ -147,7 +147,6 @@ jobs:
       - run:
           name: Add OS and PHP extensions
           command: |
-            sudo cp $PROJECT_ROOT/.circleci/docker-php-circleci.ini /usr/local/etc/php/conf.d/
             wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
             sudo apt update --allow-releaseinfo-change
             sudo apt install -y libpng-dev
