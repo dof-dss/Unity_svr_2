@@ -13,19 +13,6 @@ blocks:
           summary: null
           format: full_html
   -
-    info: 'Credits block'
-    langcode: en
-    uuid: 4ab92eee-abf8-4f2a-a9cd-de61a3235ada
-    bundle: basic_block
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>© Crown Copyright | <a href=\"/node/12\">Cookies</a> | <a href=\"/node/11\">Accessibility</a></p>\r\n"
-          summary: null
-          format: basic_html
-  -
     info: 'IMTAC Twitter Feed'
     langcode: en
     uuid: a0cbee02-5890-4625-9769-775a1d200ec0
@@ -55,6 +42,15 @@ blocks:
     info: 'Social links'
     langcode: en
     uuid: 8437723e-42f4-4e23-b8f1-b05ff30da5dc
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body: {  }
+  -
+    info: 'Twitter block'
+    langcode: en
+    uuid: 5b9fdc63-a592-4648-ad87-1d358331625c
     bundle: basic_block
     revision_id: null
     rev_id_current: null
