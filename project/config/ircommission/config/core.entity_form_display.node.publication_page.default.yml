@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.publication_page.body
+    - field.field.node.publication_page.field_attachment
     - field.field.node.publication_page.field_metatag
     - field.field.node.publication_page.field_publication_date
     - field.field.node.publication_page.field_publication_type
@@ -12,6 +13,7 @@ dependencies:
   module:
     - content_moderation
     - datetime
+    - media_library
     - metatag
     - path
     - text
@@ -29,6 +31,13 @@ content:
       summary_rows: 3
       placeholder: ''
       show_summary: false
+    third_party_settings: {  }
+  field_attachment:
+    type: media_library_widget
+    weight: 26
+    region: content
+    settings:
+      media_types: {  }
     third_party_settings: {  }
   field_metatag:
     type: metatag_firehose
