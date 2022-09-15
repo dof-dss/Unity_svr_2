@@ -229,7 +229,7 @@ display:
         type: normal
         title: Publications
         description: ''
-        weight: -46
+        weight: -47
         expanded: false
         menu_name: main
         parent: ''
