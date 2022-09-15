@@ -1,0 +1,24 @@
+uuid: 2bb1768f-5088-4a77-9f3b-b9b66b941fd7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mentalhealthchampionni_theme
+id: pagetitle
+theme: mentalhealthchampionni_theme
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/search\r\n/news\r\n/news/date/*\r\n/node/*/revisions/view/*\r\n/publications\r\n/publications/date/*\r\n/publications/type/*\r\n<front>"
