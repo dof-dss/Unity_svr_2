@@ -60,3 +60,12 @@ blocks:
     rev_id_current: null
     fields:
       body: {  }
+  -
+    info: 'Twitter block'
+    langcode: en
+    uuid: 5b9fdc63-a592-4648-ad87-1d358331625c
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body: {  }
