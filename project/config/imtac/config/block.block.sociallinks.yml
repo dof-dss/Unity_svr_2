@@ -10,8 +10,8 @@ dependencies:
     - imtac_theme
 id: sociallinks
 theme: imtac_theme
-region: footer_first
-weight: -8
+region: footer_second
+weight: -9
 provider: null
 plugin: 'block_content:8437723e-42f4-4e23-b8f1-b05ff30da5dc'
 settings:

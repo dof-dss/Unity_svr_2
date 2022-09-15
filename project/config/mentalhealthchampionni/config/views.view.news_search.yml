@@ -419,8 +419,12 @@ display:
       menu:
         type: normal
         title: News
-        weight: -47
+        description: ''
+        weight: -48
+        expanded: false
         menu_name: main
+        parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:

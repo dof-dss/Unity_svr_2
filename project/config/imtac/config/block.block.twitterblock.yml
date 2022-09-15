@@ -2,10 +2,6 @@ uuid: ecd24506-238d-4031-bf8d-af2e85224bbf
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic_block:0b1b1693-c454-4ac7-9ba9-de27a7604de7'
-  module:
-    - block_content
   theme:
     - imtac_theme
 id: twitterblock
