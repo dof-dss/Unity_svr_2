@@ -110,10 +110,13 @@ border-bottom-color: $brand-primary;
   color: #141f71;
   font-size: 10rem;
   line-height: 0.8;
-  margin: 2rem 0;
-  margin-left: 115px;
+  margin: 1.1rem 0;
+  margin-left: 1rem;
 }
 
+.contextual-region header{
+  text-align: center;
+}
 
 a[href="/news"] {
   margin-left: 10rem;
@@ -236,8 +239,10 @@ a[href="/news"] {
 }
 
 .region-bottom-widget-2 .views-row {
+  font-size: 1.8rem;
   text-align: center;
-  margin-left: 4rem;
+  margin-left: 3rem;
+  line-height: 1.5;
 
   @media screen and (max-width: $tab) {
     margin-left: 0;
@@ -361,6 +366,7 @@ li {
 .footer-area {
   display: flex;
   padding-bottom: 3rem;
+  justify-content: space-between;
 
   @media screen and (max-width: $tab) {
     flex-flow: column;
@@ -483,7 +489,8 @@ footer {
   font-size: 10rem;
   line-height: 0.8;
   margin: 2rem 0;
-  margin-left: 10rem;
+  display: flex;
+  justify-content: center;
 
   @media screen and (max-width: $tab) {
     text-align: center;
@@ -507,7 +514,10 @@ footer {
 }
 
 .irc-text p {
+  font-size: 1.8rem;
   text-align: center;
+  line-height: 1.5;
+  margin-bottom: 7rem;
 
   @media screen and (max-width: $tab) {
     margin: 2rem;
@@ -515,7 +525,7 @@ footer {
   }
 
   @media screen and (max-width: $mob) {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     margin: 0;
   }
 }
@@ -622,7 +632,6 @@ position:static;
 }
 
 .block-views-blockfront-latest-news-home-latest-news h2 {
-    margin-left: 1rem;
 
   @media screen and (max-width: $tab) {
     text-align: center;
@@ -641,9 +650,15 @@ position:static;
 }
 
 .block > h2 {
+  font-size: 2.7rem;
   text-align: center;
+  color: #141f71;
 }
 
 #footer_wrapper {
   border-top: 9px solid $brand-secondary;
+}
+
+.item-list ul li {
+  margin-bottom: 0.9rem;
 }
