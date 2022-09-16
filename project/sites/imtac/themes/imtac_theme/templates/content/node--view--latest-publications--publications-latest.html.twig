@@ -80,28 +80,24 @@
 
 {% if not page %}
 <article{{ attributes.addClass(classes).setAttribute('id', 'node-' ~ node.id) }}>
-  <header>
-{% endif %}
-    {{ title_prefix }}
-      {% if label and not page %}
-      <h3{{ title_attributes.addClass('title') }}>
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      </h3>
-    {% endif %}
-    {{ title_suffix }}
-    {% if display_submitted %}
-      <div class="node__meta">
+  {% endif %}
+  {{ title_prefix }}
+  {% if label and not page %}
+    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+  {% endif %}
+  {{ title_suffix }}
+  {% if display_submitted %}
+    <div class="node__meta">
         <span{{ author_attributes.addClass('submitted') }}>
           {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
         </span>
-      </div>
-    {% endif %}
-  {% if not page %}
-  </header>
+    </div>
   {% endif %}
-  <div{{ content_attributes.addClass('content page-content') }}>
+  {% if not page %}
+  {% endif %}
+  <div{{ content_attributes.addClass('content') }}>
     {{ content }}
   </div>
-{% if not page %}
+  {% if not page %}
 </article>
 {% endif %}

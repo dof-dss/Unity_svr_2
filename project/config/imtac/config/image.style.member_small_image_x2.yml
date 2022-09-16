@@ -1,0 +1,17 @@
+uuid: 0f6ae93b-b15c-4b8b-96e6-ad9fcbd8d8b3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: drGuzR2l9wb-8xU_5IxefrwAY4SJGu7ANkMMbtyJBMk
+name: member_small_image_x2
+label: 'Member small image (200 x 266)'
+effects:
+  56af6e07-ab21-4841-a7ba-fb00f8efdc57:
+    uuid: 56af6e07-ab21-4841-a7ba-fb00f8efdc57
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 266
+      anchor: center-center

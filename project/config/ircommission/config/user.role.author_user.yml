@@ -1,0 +1,85 @@
+uuid: dcc2e46b-06d4-4727-a5f6-8cebaafb078f
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.audio
+    - media.type.document
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - node.type.link
+    - node.type.news
+    - node.type.page
+    - node.type.publication_page
+    - workflows.workflow.nics_editorial_workflow
+  module:
+    - content_moderation
+    - entity_browser
+    - media
+    - menu_admin_per_menu
+    - moderation_sidebar
+    - node
+    - path
+    - system
+    - toolbar
+_core:
+  default_config_hash: AyMCT1boGFkm3MNXLyv6ZV7yMdWLY-U3WQLhzDDkWGE
+id: author_user
+label: 'author user'
+weight: 2
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access location_browser entity browser pages'
+  - 'access toolbar'
+  - 'administer main menu items'
+  - 'create audio media'
+  - 'create document media'
+  - 'create file media'
+  - 'create image media'
+  - 'create link content'
+  - 'create news content'
+  - 'create page content'
+  - 'create publication_page content'
+  - 'create remote_video media'
+  - 'create url aliases'
+  - 'delete own audio media'
+  - 'delete own document media'
+  - 'delete own file media'
+  - 'delete own image media'
+  - 'delete own link content'
+  - 'delete own news content'
+  - 'delete own page content'
+  - 'delete own publication_page content'
+  - 'delete own remote_video media'
+  - 'edit any news content'
+  - 'edit any page content'
+  - 'edit any publication_page content'
+  - 'edit own audio media'
+  - 'edit own document media'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'edit own link content'
+  - 'edit own news content'
+  - 'edit own page content'
+  - 'edit own publication_page content'
+  - 'edit own remote_video media'
+  - 'revert link revisions'
+  - 'revert news revisions'
+  - 'revert page revisions'
+  - 'revert publication_page revisions'
+  - 'use moderation sidebar'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition submit_for_review'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view link revisions'
+  - 'view news revisions'
+  - 'view own unpublished media'
+  - 'view page revisions'
+  - 'view publication_page revisions'
+  - 'view the administration theme'

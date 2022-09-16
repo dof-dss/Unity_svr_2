@@ -59,13 +59,6 @@ hooks:
   post_deploy: |
     set -e
 
-    # Create a symlink for each site from project/sites to web/sites
-    for site in <sites_placeholder>
-    do
-      echo "****** Creating sites directory link for $site ******"
-      ln -s /app/web/sites/$site /app/project/sites/$site
-    done
-
     # Save the Fastly service value and overwrite with a dummy one in order to break
     # the connection to Fastly, otherwise any cache clear of any site will purge the
     # entire Fastly cache - we don't want this to happen as we'd like Fastly to continue
@@ -80,7 +73,7 @@ hooks:
       echo "****** $site deployment ******"
       cd /app/web/sites/$site
       # Disable Fastly logging
-      drush disable-fastly-logging
+      drush -l $site disable-fastly-logging
       # Readonlymode module should be installed on all sites,
       # but we'll just make sure.
       drush en readonlymode -l $site -y
@@ -105,7 +98,7 @@ hooks:
       cd /app/web/sites/$site
       drush -l $site -y cache-rebuild
       # Enable Fastly logging
-      drush enable-fastly-logging
+      drush -l $site enable-fastly-logging
     done
 
 # The configuration of app when it is exposed to the web.

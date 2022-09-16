@@ -73,37 +73,19 @@
   }
 }
 
-.sidebar-second-layout {
-  @media screen and (max-width: $lap) {
-    padding: 0;
+.rel-menu--latest-content {
+  background: $grey-lightest;
+  padding-bottom: 2rem;
+  margin-top: 1.4rem;
+
+  h2 {
+    background: $brand-secondary;
+    color: $white;
+    padding: .7rem 2rem;
+    margin: 0;
   }
 
-  .rel-menu--latest-content {
-    margin-bottom: 2rem;
-
-    h2 {
-      margin-top: 1.1rem;
-      padding: .5rem 1.8rem;
-      background: $brand-secondary;
-      color: $white;
-    }
-
-    ul {
-      margin: 0 0 2rem 2rem;
-
-      li {
-        padding: 0 0 .6rem 1rem;
-        list-style: none;
-        margin: 0 0 .2rem;
-        position: relative;
-
-        &::before {
-          content: "-";
-          left: 0;
-          position: absolute;
-          top: 0;
-        }
-      }
-    }
+  ul {
+    margin: 1.2rem 1rem 1.8rem 3.6rem;
   }
 }

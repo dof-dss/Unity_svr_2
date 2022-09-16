@@ -67,7 +67,7 @@
         "dof-dss/nicsdru_origins_profile": "0.1.11",
         "dof-dss/nicsdru_unity_modules": "^1.1",
         "dof-dss/nicsdru_unity_profile": "^1.0",
-        "dof-dss/nicsdru_unity_theme": "^0.1.60",
+        "dof-dss/nicsdru_unity_theme": "^0.1.61",
         "drupal/address": "^1.7",
         "drupal/admin_toolbar": "^2.0",
         "drupal/adminimal_theme": "^1.5",
@@ -87,11 +87,13 @@
         "drupal/config_update": "^1.6",
         "drupal/console": "^1.9",
         "drupal/content_lock": "^2.2",
+        "drupal/cookie_content_blocker": "^2.0",
         "drupal/core-composer-scaffold": "9.3.*",
         "drupal/core-recommended": "9.3.*",
         "drupal/csp": "^1.15",
         "drupal/date_facet_drilldown": "2.x-dev",
         "drupal/diff": "^1.0",
+        "drupal/draggableviews": "^2.0",
         "drupal/entity_embed": "^1.0",
         "drupal/entityqueue": "^1.2",
         "drupal/eu_cookie_compliance": "^1.8",
@@ -157,7 +159,7 @@
         "harvesthq/chosen": "^1.8",
         "kenwheeler/slick": "^1.8",
         "oomphinc/composer-installers-extender": "^2.0",
-        "platformsh/config-reader": "^2.3",
+        "platformsh/config-reader": "^2.4",
         "vlucas/phpdotenv": "^2.4"
     },
     "require-dev": {
@@ -221,9 +223,6 @@
             },
             "drupal/readonlymode": {
                 "Fatal typerror fix": "https://www.drupal.org/files/issues/2020-12-23/readonlymode-string_not_array-3115119-9.patch"
-            },
-            "drupal/eu_cookie_compliance": {
-                "Banner at top is not hiding correctly": "https://www.drupal.org/files/issues/2022-04-26/eu_cookie_compliance_banner_not_hiding_3277175-1.patch"
             },
             "drupal/fastly": {
                 "Allow disabling of logging": "https://git.drupalcode.org/project/fastly/-/merge_requests/6.patch"
