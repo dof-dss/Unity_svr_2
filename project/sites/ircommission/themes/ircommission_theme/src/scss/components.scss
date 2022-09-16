@@ -187,16 +187,6 @@ a[href="/news"] {
 }
 
 
-.search-form input[type="submit"] {
-  background-size: auto;
-  background-size: 4.2rem auto;
-  text-indent: -9999px;
-  width: 5.4rem;
-  -webkit-filter: none;
-  filter: none;
-}
-
-
 .front-banner p{
   position: center;
   color:white;
@@ -223,7 +213,9 @@ a[href="/news"] {
   vertical-align: top;
 }
 
-
+.js input.form-autocomplete {
+  background-image: none;
+}
 
 #bottom_wrapper{
   display:flex;
