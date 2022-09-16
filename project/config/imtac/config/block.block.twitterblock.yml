@@ -1,7 +1,11 @@
-uuid: ecd24506-238d-4031-bf8d-af2e85224bbf
+uuid: af74e001-20bb-4994-94b0-822a4e00c816
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:basic_block:5b9fdc63-a592-4648-ad87-1d358331625c'
+  module:
+    - block_content
   theme:
     - imtac_theme
 id: twitterblock
@@ -9,9 +13,9 @@ theme: imtac_theme
 region: bottom_widget_3
 weight: 0
 provider: null
-plugin: 'block_content:0b1b1693-c454-4ac7-9ba9-de27a7604de7'
+plugin: 'block_content:5b9fdc63-a592-4648-ad87-1d358331625c'
 settings:
-  id: 'block_content:0b1b1693-c454-4ac7-9ba9-de27a7604de7'
+  id: 'block_content:5b9fdc63-a592-4648-ad87-1d358331625c'
   label: 'Twitter block'
   label_display: '0'
   provider: block_content

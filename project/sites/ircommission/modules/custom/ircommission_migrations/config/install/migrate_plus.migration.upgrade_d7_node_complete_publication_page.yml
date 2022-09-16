@@ -95,6 +95,11 @@ process:
       plugin: site_files_filter
       from_ref: sites/ircommission.org/files
       to_ref: files/ircommission
+    -
+      plugin: str_replace
+      regex: true
+      search: /(<ul>)?(<li>)?(<div[^>]*>)?<a href="(\S+?files\/\S+)".*?>\s*[^<]*(\([^<]*\))?<\/a>(<\/div>)?(<\/li>)?(<\/ul>)?/
+      replace: ''
   body/0/format:
     -
       plugin: static_map
@@ -120,6 +125,15 @@ process:
     -
       plugin: get
       source: field_publication_type
+  field_attachment:
+    -
+      plugin: callback
+      callable:
+        - '\Drupal\unity_file_migrations\PublicationLinkProcessor'
+        - publicationLinks
+      source:
+        - nid
+        - body
   field_metatag:
     -
       plugin: d7_metatag_entities
