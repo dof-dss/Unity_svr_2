@@ -690,3 +690,7 @@ position:static;
   text-align: left;
 }
 
+#content #block-mainpagecontent .list--no-bullet:not(.facet-summary__list) a[href] {
+  padding: 0;
+}
+
