@@ -115,12 +115,46 @@ h2.location-title {
   display: none;
 }
 p.published-date {
-  margin-bottom: 0rem; 
+  margin-bottom: 0rem;
 }
 address {
   margin-bottom: 2.4rem;
   line-height: 3rem;
 }
+
+.sidebar-second-layout {
+    margin-bottom: 2rem;
+
+    h2 {
+      @include responsive-typo-map($h2-text);
+      padding: 0;
+    }
+
+    ul {
+      margin-bottom: 1rem;
+
+      li {
+        padding: 0 0 .6rem 1rem;
+        list-style: none;
+        margin: 0 0 .2rem;
+        position: relative;
+
+        &::before {
+          content: "-";
+          left: 0;
+          position: absolute;
+          top: 0;
+        }
+
+        .date-published {
+          display: block;
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+        }
+      }
+    }
+  }
+
 
 #footer {
   //max-width: 1160px;
