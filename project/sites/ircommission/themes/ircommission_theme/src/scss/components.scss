@@ -365,7 +365,7 @@ li {
   display: flex;
   padding-bottom: 3rem;
   justify-content: space-between;
-  column-gap: 1rem;
+  column-gap: 2rem;
 
   @media screen and (max-width: $tab) {
     flex-flow: column;
@@ -668,4 +668,18 @@ position:static;
 
 .js-view-dom-id-7a2a9624f6e06b43bbf2f303efd34a5f00762ad454fff1eccdd94f78648ffb9b header {
   text-align: center;
+}
+
+.item-list ul {
+  li {
+    position: relative;
+    list-style: none;
+
+    &::before {
+      content: '-';
+      position: absolute;
+      left: -20px;
+      top: 0;
+    }
+  }
 }
