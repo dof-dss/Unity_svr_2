@@ -233,7 +233,6 @@ a[href="/news"] {
   border-bottom: 0px solid #16a085;
   margin: 0 -1px;
   padding: 0 1px;
-  color: $brand-primary;
 }
 
 .region-bottom-widget-2 .views-row {
@@ -688,6 +687,3 @@ position:static;
   text-align: left;
 }
 
-#content #block-mainpagecontent .list--no-bullet:not(.facet-summary__list) a[href] {
-  padding: 0;
-}
