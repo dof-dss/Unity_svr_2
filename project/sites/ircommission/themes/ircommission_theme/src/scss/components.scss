@@ -683,3 +683,14 @@ position:static;
     }
   }
 }
+
+
+.current-search-item-results-count {
+  color: #141f71;
+  text-align: left;
+}
+
+#content #block-mainpagecontent .list--no-bullet:not(.facet-summary__list) a[href] {
+  padding: 0;
+}
+
