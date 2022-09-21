@@ -441,7 +441,7 @@ footer {
   position: absolute;
   bottom: 0;
   display: block;
-  margin-left: 10rem;
+  margin-left: 8rem;
 
   @media screen and (max-width: $tab) {
     display: inline-block;
@@ -662,12 +662,11 @@ position:static;
   list-style: none;
 }
 
-.js-view-dom-id-437fbea96a99d3c9824ab36a7f532f40dec1fb5d0160fd93a71334916a142201 header {
-  text-align: center;
-}
-
-.js-view-dom-id-7a2a9624f6e06b43bbf2f303efd34a5f00762ad454fff1eccdd94f78648ffb9b header {
-  text-align: center;
+.block-views-blockfront-latest-news-home-latest-newsheader,
+.block-views-blockirc-key-documents-views-block-key-docs-homepage {
+  .content header {
+    text-align: center;
+  }
 }
 
 .item-list ul {
