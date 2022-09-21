@@ -124,10 +124,13 @@ address {
 
 .sidebar-second-layout {
     margin-bottom: 2rem;
+    font-size: 1.5rem;
 
     h2 {
       @include responsive-typo-map($h2-text);
       padding: 0;
+      font-size: 1.7rem;
+      margin: 1.2rem 0rem 0.2rem 0rem;
     }
 
     ul {
@@ -155,7 +158,18 @@ address {
     }
   }
 
-
+.footer-area .column {
+  @include breakpoint($tab) {
+    float: left;
+    width: auto;
+  }
+}
+@media screen and (max-width: 766px) {
+  .footer-area .column {
+    float: left;
+    width: auto;
+  }
+}
 #footer {
   //max-width: 1160px;
   padding: 2rem;
