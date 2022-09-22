@@ -2,11 +2,8 @@ uuid: 58467617-a305-4fda-81e6-c81c44d152ce
 langcode: en
 status: true
 dependencies:
-  config:
-    - views.view.irc_key_documents_views
   module:
     - system
-    - views
   theme:
     - ircommission_theme
 id: views_block__irc_key_documents_views_block_2
