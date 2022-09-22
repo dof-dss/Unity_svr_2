@@ -134,18 +134,14 @@ address {
       margin-bottom: 0rem;
     }
 
-    a {
-      font-size: 1.8rem;
-    }
-
     ul {
       margin-bottom: 1rem;
 
-    li {
-      padding: 0 0 .6rem 1rem;
-      list-style: none;
-      margin: 0 0 .2rem;
-      position: relative;
+      li {
+        padding: 0 0 .6rem 1rem;
+        list-style: none;
+        margin: 0 0 .2rem;
+        position: relative;
 
         &::before {
           content: "-";
