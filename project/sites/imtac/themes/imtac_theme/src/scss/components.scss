@@ -114,9 +114,6 @@
 h2.location-title {
   display: none;
 }
-p.published-date {
-  margin-bottom: 0rem;
-}
 address {
   margin-bottom: 2.4rem;
   line-height: 3rem;
@@ -124,13 +121,17 @@ address {
 
 .sidebar-second-layout {
     margin-bottom: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 
     h2 {
       @include responsive-typo-map($h2-text);
       padding: 0;
-      font-size: 1.7rem;
-      margin: 1.2rem 0rem 0.2rem 0rem;
+      font-size: 2.1rem;
+      margin: 3.0rem 0rem 1.2rem 0rem;
+    }
+    p.published-date {
+      font-size: 1.6rem;
+      margin-bottom: 0rem;
     }
 
     ul {
