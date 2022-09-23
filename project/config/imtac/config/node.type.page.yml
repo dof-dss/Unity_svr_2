@@ -15,7 +15,7 @@ third_party_settings:
     toc_title: Contents
     toc_location: .page-title
     toc_insert: after
-    toc_source_container: '#block-mainpagecontent .content.page-content'
+    toc_source_container: '#block-mainpagecontent .content'
     toc_element: h2
     toc_exclusions: ''
     toc_screen_depth: '2'
