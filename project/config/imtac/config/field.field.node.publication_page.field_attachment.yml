@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_attachment
     - media.type.document
+    - media.type.remote_video
     - node.type.publication_page
 id: node.publication_page.field_attachment
 field_name: field_attachment
@@ -21,9 +22,10 @@ settings:
   handler_settings:
     target_bundles:
       document: document
+      remote_video: remote_video
     sort:
       field: _none
       direction: ASC
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: document
 field_type: entity_reference
