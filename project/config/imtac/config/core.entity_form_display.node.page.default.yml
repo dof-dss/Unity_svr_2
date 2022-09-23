@@ -4,9 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_meta_tags
     - node.type.page
+    - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
+    - metatag
     - path
     - text
 id: node.page.default
@@ -29,6 +32,13 @@ content:
     weight: 4
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 26
+    region: content
+    settings:
+      sidebar: true
     third_party_settings: {  }
   flag:
     weight: 5
