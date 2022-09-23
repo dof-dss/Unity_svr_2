@@ -39,6 +39,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_teaser
+  langcode:
+    label: Language
+    datasource_id: 'entity:node'
+    property_path: langcode
+    type: string
+    dependencies:
+      module:
+        - node
   title:
     label: Title
     datasource_id: 'entity:node'
@@ -61,33 +69,6 @@ processor_settings:
   add_url: {  }
   aggregated_field: {  }
   entity_type: {  }
-  highlight:
-    weights:
-      postprocess_query: 0
-    prefix: '<strong>'
-    suffix: '</strong>'
-    excerpt: true
-    excerpt_always: false
-    excerpt_length: 256
-    exclude_fields: {  }
-    highlight: always
-    highlight_partial: false
-  html_filter:
-    weights:
-      preprocess_index: -15
-      preprocess_query: -15
-    all_fields: false
-    fields:
-      - body
-      - title
-    title: true
-    alt: true
-    tags:
-      b: 2
-      h1: 5
-      h2: 3
-      h3: 2
-      strong: 2
   ignorecase:
     weights:
       preprocess_index: -20
@@ -167,6 +148,6 @@ tracker_settings:
     indexing_order: lifo
 options:
   cron_limit: 50
-  index_directly: false
+  index_directly: true
   track_changes_in_references: true
 server: default
