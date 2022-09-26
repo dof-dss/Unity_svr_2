@@ -105,7 +105,7 @@ display:
           admin_label: ''
           entity_type: node
           plugin_id: search_api_field
-          label: ''
+          label: Published
           exclude: false
           alter:
             alter_text: false
