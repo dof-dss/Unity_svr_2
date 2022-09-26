@@ -233,7 +233,7 @@ display:
         options:
           view_modes:
             'entity:node':
-              news: teaser
+              news: search_result
       query:
         type: views_query
         options:
