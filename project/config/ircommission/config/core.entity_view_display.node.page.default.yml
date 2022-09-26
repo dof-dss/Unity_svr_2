@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.page.field_metatag
     - node.type.page
   module:
+    - metatag
     - text
     - user
 id: node.page.default
@@ -20,14 +21,18 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 0
     region: content
-  links:
+  field_metatag:
+    type: metatag_empty_formatter
+    label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
+  content_moderation_control: true
   field_enable_toc: true
-  field_metatag: true
   langcode: true
+  links: true
+  search_api_excerpt: true
