@@ -22,20 +22,20 @@
   }
 
 .content .page-content{
-  color: #333;
+  color: $charcoal;
 }
 
 
 .page-title span{
-  color: #141f71;
+  color: $brand-tertiary;
 }
 
 .menu.menu-main {
-  background-color: #333;
+  background-color: $charcoal;
 }
 
 #edit-submit-search {
-  color: #333;
+  color: $charcoal;
 }
 
 .content-sidebar-wrap .main-content {
@@ -51,7 +51,7 @@
 }
 
 .views-row.search-result {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid $grey-medium;
 }
 
 

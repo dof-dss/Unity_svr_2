@@ -5,10 +5,10 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
-.content p {
-  color: #111;
-  text-align: center;
-}
+//.content p {
+//  color: #111;
+//  text-align: center;
+//}
 
 
 #main-menu .menu .menu-item .active,
@@ -32,7 +32,7 @@ border-bottom-color: $brand-primary;
 
 
 #footer_wrapper {
-  background-color: #e4e4e4;
+  background-color: $footer-background;
   max-width: 1024px;
   margin: 0 auto;
   padding: 3rem 1.8rem 1.8rem;
@@ -69,7 +69,7 @@ border-bottom-color: $brand-primary;
 }
 
 .content .fa {
-  color: #141f71;
+  color: $brand-tertiary;
   font-size: 10rem;
   line-height: 1;
   margin: 2rem 0;
@@ -104,7 +104,7 @@ border-bottom-color: $brand-primary;
 
 
 .content .fas {
-  color: #141f71;
+  color: $brand-tertiary;
   font-size: 10rem;
   line-height: 0.8;
   margin: 1.1rem 0;
@@ -187,8 +187,8 @@ a[href="/news"] {
 
 .front-banner p{
   position: center;
-  color:white;
-  background-color: #333;
+  color: #fff;
+  background-color: $charcoal;
   text-align: center;
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
@@ -227,7 +227,7 @@ a[href="/news"] {
 #content a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper):not(.value):not(.card__title-link):not(.card):not(.layout-builder__link), .content a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper):not(.value):not(.card__title-link):not(.card):not(.layout-builder__link), #footer a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper):not(.value):not(.card__title-link):not(.card):not(.layout-builder__link)
 
 {
-  border-bottom: 0px solid #16a085;
+  border-bottom: 0px solid;
   margin: 0 -1px;
   padding: 0 1px;
 }
@@ -280,12 +280,11 @@ input[type="checkbox"] {
 }
 
 .block-views-exposed-filter-blockpublications-search-publications-search-page {
-  background: #f6f6f6;
   padding: 1rem;
 }
 
 .columnItem {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid $grey-medium;
 }
 
 
@@ -321,7 +320,7 @@ input[type="checkbox"] {
 }
 
 .published-date span{
-  color: #333;
+  color: $charcoal;
 }
 
 .content.page-content.content p{
@@ -463,7 +462,7 @@ footer {
 }
 
 #main-menu .menu-main_sub {
-  background: #333;
+  background: $charcoal;
 }
 
 .menu-item.leaf.title * {
@@ -471,7 +470,7 @@ footer {
 }
 
 .fa.fa-users  {
-  color: #141f71;
+  color: $brand-tertiary;
   font-size: 10rem;
   line-height: 0.8;
   margin: 2rem 0;
@@ -585,7 +584,7 @@ position:static;
     &:focus {
       background: none;
       border-bottom: none;
-      outline: .3rem dashed #949494;
+      outline: .3rem dashed grey;
       outline-offset: 1.2rem;
       display: block;
     }
@@ -637,7 +636,7 @@ position:static;
 .block > h2 {
   font-size: 2.7rem;
   text-align: center;
-  color: #141f71;
+  color: $brand-tertiary;
 }
 
 #footer_wrapper {
@@ -672,7 +671,7 @@ position:static;
 
 
 .current-search-item-results-count {
-  color: #141f71;
+  color: $brand-tertiary;
   text-align: left;
 }
 
