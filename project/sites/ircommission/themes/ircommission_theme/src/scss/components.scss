@@ -6,7 +6,8 @@
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
 .content p {
-  color: #333;
+  color: #111;
+  text-align: center;
 }
 
 
@@ -75,10 +76,6 @@ border-bottom-color: $brand-primary;
   margin-left: 1rem;
 }
 
-
-.content p {
-  text-align: center;
-}
 
 
 #block-ircommission-theme-aboutircblock h2 {
