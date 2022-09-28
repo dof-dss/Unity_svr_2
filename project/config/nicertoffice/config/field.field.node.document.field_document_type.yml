@@ -1,0 +1,23 @@
+uuid: 5dadc9a0-9dae-4a45-81cc-8eae2ee348d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document_type
+    - node.type.document
+id: node.document.field_document_type
+field_name: field_document_type
+entity_type: node
+bundle: document
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    sort:
+      field: _none
+field_type: entity_reference

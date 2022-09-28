@@ -1,0 +1,20 @@
+uuid: 3b40a59c-c436-4f15-8ad7-28042c220401
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_decision_respondent
+field_name: field_decision_respondent
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
