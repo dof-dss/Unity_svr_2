@@ -13,6 +13,12 @@
     color: $brand-primary;
     @include adjust-font-size-to(16px);
   }
+  
+  .menu
+  .menu-item
+  .active {
+    border-bottom-color: $brand-primary;
+      }
 
   .menu-link {
     &:hover,
@@ -21,31 +27,32 @@
       color: $white;
     }
   }
-
-  .menu .menu-item .active {
-    border-color: $brand-primary;
-  }
+   .menu-main_sub
+   .menu-item
+    span.active {
+          @include adjust-font-size-to(14px);
+          border-bottom-color: $brand-secondary;
+        }
 
   .menu-main_sub {
     background: $brand-primary;
 
     .menu-item {
       .active {
-        color: $brand-primary;
-        border-color: $white;
+        background: $brand-secondary;
+        color: $black;
       }
 
       a {
         &:hover,
         &:focus {
           color: $black;
-          background: $charcoal;
+          background: $brand-secondary;
         }
       }
     }
   }
 }
-
 
   a.btn {
     background: $brand-primary;
