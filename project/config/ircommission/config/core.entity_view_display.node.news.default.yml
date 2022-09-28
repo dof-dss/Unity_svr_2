@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.news.body
     - field.field.node.news.field_meta_tags
-    - field.field.node.news.field_metatag
     - field.field.node.news.field_news_type
     - field.field.node.news.field_photo
     - field.field.node.news.field_published_date
@@ -51,9 +50,9 @@ content:
 hidden:
   content_moderation_control: true
   field_meta_tags: true
-  field_metatag: true
   field_news_type: true
   field_summary: true
   field_teaser: true
   langcode: true
   links: true
+  search_api_excerpt: true
