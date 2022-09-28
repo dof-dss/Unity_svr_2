@@ -33,3 +33,11 @@ sites:
         cron_cmd: 'cd web/sites/imtac ; drush core-cron'
         database: imtac
         status: development
+    nicertoffice:
+        name: 'Northern Ireland Certification Officer for Trade Unions and Employers'' Associations'
+        url: nicertoffice.org.uk
+        solr: nicertoffice
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/nicertoffice ; drush core-cron'
+        database: nicertoffice
+        status: development
