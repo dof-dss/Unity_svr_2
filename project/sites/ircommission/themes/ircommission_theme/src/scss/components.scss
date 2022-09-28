@@ -185,14 +185,24 @@ a[href="/news"] {
 }
 
 
-.front-banner p{
-  position: center;
-  color: #fff;
-  background-color: $charcoal;
-  text-align: center;
-  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-  font-weight: normal;
-  padding: 2.3rem 1.5rem;
+.front-banner {
+  p {
+    position: center;
+    color: #fff;
+    background-color: $charcoal;
+    text-align: center;
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+    font-weight: normal;
+    padding: 2.3rem 1.5rem;
+
+    @media screen and (max-width: $mob) {
+      margin-bottom: 0;
+      }
+  }
+
+  img {
+    vertical-align: top;
+  }
 }
 
 
@@ -207,9 +217,7 @@ a[href="/news"] {
   margin: auto;
 }
 
-.front-banner img {
-  vertical-align: top;
-}
+
 
 .js input.form-autocomplete {
   background-image: none;
@@ -541,13 +549,6 @@ position:static;
     bottom: 0;
     display: inline-block;
     margin: 0;
-  }
-}
-
-
-.front-banner p {
-  @media screen and (max-width: $mob) {
-    margin-bottom: 0;
   }
 }
 
