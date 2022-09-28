@@ -1,0 +1,19 @@
+uuid: a82e493e-d2da-4447-8bd3-35373c1519a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_decision_summary
+    - node.type.decision
+id: node.decision.field_decision_summary
+field_name: field_decision_summary
+entity_type: node
+bundle: decision
+label: Summary
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

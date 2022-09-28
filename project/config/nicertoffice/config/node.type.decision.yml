@@ -1,0 +1,18 @@
+uuid: ce189fac-ccdd-41ac-b8e5-373f00eedbd8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+name: Decision
+type: decision
+description: 'Content type for decisions made by the Certification Officer.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

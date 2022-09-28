@@ -1,0 +1,15 @@
+uuid: 78425f7b-9997-48ed-8f03-a4dfaa54472b
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: production
+description: 'Used for production site.'
+weight: 0
+folder: ../project/config/nicertoffice/production
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
