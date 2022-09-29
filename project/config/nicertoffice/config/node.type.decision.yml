@@ -4,11 +4,21 @@ status: true
 dependencies:
   module:
     - menu_ui
+    - origins_toc
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main-menu
-    parent: 'main-menu:0:'
+    available_menus: {  }
+    parent: ''
+  origins_toc:
+    toc_enable: 0
+    toc_title: 'Table of contents'
+    toc_location: ''
+    toc_insert: after
+    toc_source_container: ''
+    toc_element: h2
+    toc_exclusions: ''
+    toc_screen_depth: '1'
+    toc_debug: 0
 name: Decision
 type: decision
 description: 'Content type for decisions made by the Certification Officer.'
