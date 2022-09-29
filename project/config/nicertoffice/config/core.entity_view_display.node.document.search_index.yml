@@ -1,9 +1,9 @@
-uuid: e999622b-0ea8-46f0-b8d4-e0c0b5b08e74
+uuid: 7ccf543b-27ac-4160-b55e-ef53b4bbc9ac
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.search_index
     - field.field.node.document.body
     - field.field.node.document.field_attachment
     - field.field.node.document.field_document_type
@@ -11,34 +11,32 @@ dependencies:
     - field.field.node.document.field_published_date
     - node.type.document
   module:
-    - text
+    - datetime
+    - layout_builder
     - user
-id: node.document.teaser
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.document.search_index
 targetEntityType: node
 bundle: document
-mode: teaser
+mode: search_index
 content:
-  body:
-    type: text_summary_or_trimmed
+  field_published_date:
+    type: datetime_default
     label: hidden
     settings:
-      trim_length: 600
+      timezone_override: ''
+      format_type: unity_date
     third_party_settings: {  }
-    weight: 101
-    region: content
-  content_moderation_control:
-    settings: {  }
-    third_party_settings: {  }
-    weight: -20
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  body: true
+  content_moderation_control: true
   field_attachment: true
   field_document_type: true
   field_meta_tags: true
-  field_published_date: true
   langcode: true
+  links: true
