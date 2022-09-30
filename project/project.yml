@@ -41,3 +41,11 @@ sites:
         cron_cmd: 'cd web/sites/nicertoffice ; drush core-cron'
         database: nicertoffice
         status: development
+    victimspaymentsboard:
+        name: 'Victims Payments Board'
+        url: victimspaymentsboard.org.uk
+        solr: victimspaymentsboard
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/victimspaymentsboard ; drush core-cron'
+        database: victimspaymentsboard
+        status: development

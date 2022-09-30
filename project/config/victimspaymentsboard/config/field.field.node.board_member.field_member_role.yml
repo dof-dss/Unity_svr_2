@@ -1,0 +1,21 @@
+uuid: 70bb017a-3b3c-4351-9260-42c8d2703bd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_member_role
+    - node.type.board_member
+_core:
+  default_config_hash: hjDOtOCPu18Zm6Klg5bFc90dKETqKzN01iPKz78GFGw
+id: node.board_member.field_member_role
+field_name: field_member_role
+entity_type: node
+bundle: board_member
+label: 'Member role'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: 473753d7-96f0-41c8-9b44-5b68b2e5d276
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.faq
+  module:
+    - metatag
+_core:
+  default_config_hash: x1EZ-77Tgvd04MHFbiAr5DpI1RaCEjas6x45dIHpgeA
+id: node.faq.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: faq
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag
