@@ -1,0 +1,22 @@
+uuid: d2976e18-1110-4cfd-8663-b88c53dc0e60
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.document
+id: node.document.status
+field_name: status
+entity_type: node
+bundle: document
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

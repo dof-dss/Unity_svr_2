@@ -1,19 +1,19 @@
-uuid: c368b744-b574-4b1c-a367-63da9b6a73ff
+uuid: 15306fbb-1702-4e82-8f98-8582c603e069
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_attachment
     - media.type.document
-    - node.type.decision
-id: node.decision.field_attachment
+    - node.type.document
+id: node.document.field_attachment
 field_name: field_attachment
 entity_type: node
-bundle: decision
+bundle: document
 label: Attachment
 description: ''
-required: false
-translatable: false
+required: true
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

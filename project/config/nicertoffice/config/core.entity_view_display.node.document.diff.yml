@@ -1,8 +1,9 @@
-uuid: 50537c05-69a9-48b4-9a7d-be8f9b17c8d5
+uuid: 3216d9d5-7a88-4345-bdec-0ba2a0fe51d2
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.diff
     - field.field.node.document.body
     - field.field.node.document.field_attachment
     - field.field.node.document.field_document_type
@@ -11,12 +12,39 @@ dependencies:
     - node.type.document
   module:
     - datetime
+    - field_group
+    - layout_builder
+    - metatag
     - text
     - user
-id: node.document.default
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  field_group:
+    group_additional_content_details:
+      children:
+        - field_meta_tags
+      label: 'Additional content details'
+      parent_name: ''
+      region: content
+      weight: 4
+      format_type: html_element
+      format_settings:
+        classes: field-collection
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.document.diff
 targetEntityType: node
 bundle: document
-mode: default
+mode: diff
 content:
   body:
     type: text_default
@@ -42,6 +70,13 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
   field_published_date:
     type: datetime_default
     label: inline
@@ -53,6 +88,5 @@ content:
     region: content
 hidden:
   content_moderation_control: true
-  field_meta_tags: true
   langcode: true
   links: true
