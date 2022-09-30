@@ -1,0 +1,8 @@
+uuid: 75093b8f-30ef-4699-b04d-4d859bf2298f
+langcode: en
+status: true
+dependencies: {  }
+name: Respondents
+vid: respondents
+description: 'A list of trade unions and employers'' associations whose activities are covered by the Certification Officer.'
+weight: 0
