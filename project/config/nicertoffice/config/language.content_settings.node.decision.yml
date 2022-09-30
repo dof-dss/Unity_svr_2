@@ -1,0 +1,11 @@
+uuid: c17cbb50-8580-4a4a-98db-87915b507185
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.decision
+id: node.decision
+target_entity_type_id: node
+target_bundle: decision
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,18 @@
+uuid: 64b11279-17a9-456a-a1a0-90b0f5ad3659
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.decision
+id: node.decision.title
+field_name: title
+entity_type: node
+bundle: decision
+label: 'Reference number'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
