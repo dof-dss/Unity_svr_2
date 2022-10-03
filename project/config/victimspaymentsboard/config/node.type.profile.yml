@@ -1,0 +1,20 @@
+uuid: f0d27177-be92-4d23-85bc-6af43d1f23ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: WZNB9ctrBtz3s3ruBQgjYZyaZcU2DbNU_iOgyaN8yJM
+name: Profile
+type: profile
+description: 'Use this content type for profiles.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

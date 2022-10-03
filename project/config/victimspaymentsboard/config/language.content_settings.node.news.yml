@@ -1,0 +1,13 @@
+uuid: 22a88a7e-0895-4839-9450-9179004a9f1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news
+_core:
+  default_config_hash: vRYTorr8PCdVYMjD3cn7THGFEDvGkkk_rfpxlSYjslg
+id: node.news
+target_entity_type_id: node
+target_bundle: news
+default_langcode: site_default
+language_alterable: false

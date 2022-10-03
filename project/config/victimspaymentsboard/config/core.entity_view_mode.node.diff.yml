@@ -1,0 +1,16 @@
+uuid: c696be09-4862-4acc-94bc-de21bca127c7
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - node
+      - diff
+_core:
+  default_config_hash: rwHa5SzsLYKZu_czJuibd03MSNwIOLCnX1NTiuehytI
+id: node.diff
+label: 'Revision comparison'
+targetEntityType: node
+cache: true
