@@ -373,7 +373,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<i class="fas fa-file-alt"></i>'
+            value: ''
             format: full_html
           tokenize: false
       footer:
