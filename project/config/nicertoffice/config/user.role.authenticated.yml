@@ -1,0 +1,33 @@
+uuid: 88bd3791-8156-4b19-ac75-e030b6d0b916
+langcode: en
+status: true
+dependencies:
+  module:
+    - google_analytics
+    - media
+    - node
+    - pathauto
+    - system
+_core:
+  default_config_hash: zLyQwFO06-pj9Gj5UZMWuk_aAuAOSC8YqFEHItUk-Tc
+id: authenticated
+label: 'authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access administration menu'
+  - 'access content'
+  - 'access media browser'
+  - 'access workbench'
+  - 'diff view changes'
+  - 'notify of path changes'
+  - 'opt-in or out of google analytics tracking'
+  - 'revert revisions'
+  - 'use media wysiwyg'
+  - 'use text format filtered_html'
+  - 'use text format filtered_html_with_no_images'
+  - 'view all revisions'
+  - 'view files'
+  - 'view media'
+  - 'view own unpublished content'
+  - 'view revisions'

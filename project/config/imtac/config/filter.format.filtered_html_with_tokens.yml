@@ -1,7 +1,9 @@
 uuid: 320f991c-c02d-4b79-bc63-eac1cff60d91
 langcode: en
-status: true
-dependencies: {  }
+status: false
+dependencies:
+  module:
+    - slick
 _core:
   default_config_hash: 0RaChZk0lbVg4KBsZkZTYjN-ZgNCqYkW-QUR9bmL24w
 name: 'Filtered HTML with tokens'
@@ -20,3 +22,11 @@ filters:
     status: true
     weight: -45
     settings: {  }
+  slick_filter:
+    id: slick_filter
+    provider: slick
+    status: false
+    weight: 4
+    settings:
+      optionset: default
+      media_switch: ''

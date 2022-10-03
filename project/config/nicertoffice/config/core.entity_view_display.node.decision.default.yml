@@ -1,0 +1,66 @@
+uuid: 835e645b-11be-4d98-a656-a5c36fe4fc80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.decision.field_attachment
+    - field.field.node.decision.field_decision_applicant
+    - field.field.node.decision.field_decision_respondent
+    - field.field.node.decision.field_decision_summary
+    - field.field.node.decision.field_meta_tags
+    - field.field.node.decision.field_published_date
+    - node.type.decision
+  module:
+    - datetime
+    - user
+id: node.decision.default
+targetEntityType: node
+bundle: decision
+mode: default
+content:
+  field_attachment:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: embed
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_decision_applicant:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_decision_respondent:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_decision_summary:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_published_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: unity_date
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  content_moderation_control: true
+  field_meta_tags: true
+  langcode: true
+  links: true

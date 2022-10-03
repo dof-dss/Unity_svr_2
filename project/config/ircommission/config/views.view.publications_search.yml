@@ -105,7 +105,7 @@ display:
           admin_label: ''
           entity_type: node
           plugin_id: search_api_field
-          label: 'Year Published'
+          label: Published
           exclude: false
           alter:
             alter_text: false
@@ -244,7 +244,7 @@ display:
           order: DESC
           expose:
             label: ''
-            field_identifier: search_api_relevance
+            field_identifier: ''
           exposed: false
       arguments: {  }
       filters:
@@ -268,7 +268,7 @@ display:
             operator: search_api_fulltext_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: search
+            identifier: search_api_fulltext
             required: false
             remember: false
             multiple: false
@@ -278,8 +278,7 @@ display:
               administrator: '0'
               author_user: '0'
               supervisor_user: '0'
-              editor_user: '0'
-              admin_user: '0'
+              qa: '0'
             expose_fields: false
             placeholder: Keywords
             searched_fields_id: search_api_fulltext_searched_fields
@@ -296,7 +295,7 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           parse_mode: terms
-          min_length: 2
+          min_length: null
           fields: {  }
       style:
         type: default

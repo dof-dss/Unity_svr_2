@@ -20,30 +20,27 @@ targetEntityType: node
 bundle: news
 mode: news_teaser_imtac
 content:
-  content_moderation_control:
-    settings: {  }
-    third_party_settings: {  }
-    weight: -20
-    region: content
   field_published_date:
     type: datetime_default
     label: hidden
     settings:
       timezone_override: ''
-      format_type: long
+      format_type: unity_date
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
   body: true
+  content_moderation_control: true
   field_meta_tags: true
   field_metatag: true
   field_photo: true
   field_summary: true
   field_teaser: true
   langcode: true
+  search_api_excerpt: true

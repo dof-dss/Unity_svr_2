@@ -262,7 +262,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<div class="btnwrap"><a class="btn" href="/news">More News</a></div>'
+            value: ''
             format: basic_html
           tokenize: false
       display_extenders: {  }
@@ -281,6 +281,46 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      defaults:
+        footer: false
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<div class="btnwrap"><a class="btn" href="/news">More News</a></div>'
+            format: basic_html
+          tokenize: false
+      display_extenders:
+        metatag_display_extender: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_published_date'
+  latest_news:
+    id: latest_news
+    display_title: Block
+    display_plugin: block
+    position: 2
+    display_options:
+      defaults:
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+      use_more: true
+      use_more_always: true
+      use_more_text: 'More News'
       display_extenders:
         metatag_display_extender: {  }
     cache_metadata:

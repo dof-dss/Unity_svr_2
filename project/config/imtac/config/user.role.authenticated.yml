@@ -2,12 +2,8 @@ uuid: 6341fc63-4a21-4be2-accc-b85d9b153de8
 langcode: en
 status: true
 dependencies:
-  config:
-    - filter.format.filtered_html
-    - filter.format.filtered_html_with_no_images
   module:
     - contact
-    - filter
     - google_analytics
     - media
     - node
@@ -24,8 +20,6 @@ permissions:
   - 'access site-wide contact form'
   - 'notify of path changes'
   - 'opt-in or out of google analytics tracking'
-  - 'use text format filtered_html'
-  - 'use text format filtered_html_with_no_images'
   - 'view all revisions'
   - 'view media'
   - 'view own unpublished content'

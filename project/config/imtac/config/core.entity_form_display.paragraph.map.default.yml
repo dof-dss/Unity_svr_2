@@ -22,7 +22,7 @@ content:
       auto_client_location: ''
       auto_client_location_marker: '0'
       allow_override_map_settings: 0
-      hide_textfield_form: false
+      hide_textfield_form: true
       centre:
         client_location:
           enable: false
@@ -312,12 +312,12 @@ content:
             weight: 10
             settings:
               position: TOP_LEFT
-            enabled: true
+            enabled: false
           google_maps_layer_transit:
             weight: 10
             enabled: false
         type: ROADMAP
-        zoom: 10
+        zoom: 4
         minZoom: 0
         maxZoom: 18
         height: 400px
