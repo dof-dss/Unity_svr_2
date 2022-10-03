@@ -6,7 +6,11 @@ dependencies:
     - search_api.index.news_search
     - views.view.news_search
   module:
+    - facets_pretty_paths
     - search_api
+third_party_settings:
+  facets_pretty_paths:
+    coder: default_coder
 id: publication_date_news
 name: 'Publication date'
 weight: 0
@@ -57,7 +61,6 @@ processor_configs:
       date_display: actual_date
       granularity: 6
       date_format: ''
-      hierarchy: false
   hierarchy_processor:
     processor_id: hierarchy_processor
     weights:

@@ -1,0 +1,30 @@
+uuid: e79fc731-28f2-4421-802e-761323fcd155
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_answer
+    - paragraphs.paragraphs_type.faq_accordian
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: VB7yJFHOQZX3awlsxkEMll1DblbMsJ0RE42a43LAdH8
+id: paragraph.faq_accordian.field_answer
+field_name: field_answer
+entity_type: paragraph
+bundle: faq_accordian
+label: Answer
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

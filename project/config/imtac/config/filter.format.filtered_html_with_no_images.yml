@@ -1,7 +1,9 @@
 uuid: c76da1e2-be76-45d5-a609-1b0fc34d7451
 langcode: en
-status: true
-dependencies: {  }
+status: false
+dependencies:
+  module:
+    - slick
 _core:
   default_config_hash: iLWPgqDSNI0e3ScembnTpGyTVzSLofjJ8bo79zrIUk4
 name: 'Filtered HTML with no images'
@@ -14,3 +16,11 @@ filters:
     status: true
     weight: 0
     settings: {  }
+  slick_filter:
+    id: slick_filter
+    provider: slick
+    status: false
+    weight: 4
+    settings:
+      optionset: default
+      media_switch: ''

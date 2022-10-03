@@ -1,11 +1,11 @@
 uuid: 9ad1819d-88c5-4105-86b8-b358f7b40211
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - cookie_content_blocker
-    - media
     - origins_common
+    - slick
     - token_filter
 _core:
   default_config_hash: PuLQMXJYuu17XdekhReKYGUIiOrbW7RrhMXFACqQTTc
@@ -26,15 +26,6 @@ filters:
     weight: 0
     settings:
       disable_xss: '0'
-  media_embed:
-    id: media_embed
-    provider: media
-    status: false
-    weight: 100
-    settings:
-      default_view_mode: default
-      allowed_view_modes: {  }
-      allowed_media_types: {  }
   origins_media_cookie_content_blocker_embed_filter:
     id: origins_media_cookie_content_blocker_embed_filter
     provider: origins_common
@@ -49,3 +40,11 @@ filters:
     weight: 0
     settings:
       replace_empty: '0'
+  slick_filter:
+    id: slick_filter
+    provider: slick
+    status: false
+    weight: 4
+    settings:
+      optionset: default
+      media_switch: ''

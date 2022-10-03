@@ -14,6 +14,12 @@
     @include adjust-font-size-to(16px);
   }
 
+  .menu
+  .menu-item
+  .active {
+    border-bottom-color: $brand-primary;
+      }
+
   .menu-link {
     &:hover,
     &:focus {
@@ -21,31 +27,33 @@
       color: $white;
     }
   }
-
-  .menu .menu-item .active {
-    border-color: $brand-primary;
-  }
+   .menu-main_sub
+   .menu-item
+    span.active {
+          @include adjust-font-size-to(14px);
+          border-bottom-color: $brand-secondary;
+          padding: 1rem;
+        }
 
   .menu-main_sub {
     background: $brand-primary;
 
     .menu-item {
       .active {
-        color: $brand-primary;
-        border-color: $white;
+        background: $brand-secondary;
+        color: $black;
       }
 
       a {
         &:hover,
         &:focus {
           color: $black;
-          background: $charcoal;
+          background: $brand-secondary;
         }
       }
     }
   }
 }
-
 
   a.btn {
     background: $brand-primary;
@@ -55,7 +63,6 @@
   .block {
     h2 {
       @include responsive-typo-map($h2-text);
-      margin: 3.6rem 0rem 1.2rem;
       padding: 0;
     }
   }
@@ -114,14 +121,64 @@
 h2.location-title {
   display: none;
 }
-p.published-date {
-  margin-bottom: 0rem; 
-}
-address {
-  margin-bottom: 2.4rem;
-  line-height: 3rem;
-}
 
+.sidebar-second .sidebar-second-layout {
+      margin-bottom: 2rem;
+
+    h2 {
+      @include responsive-typo-map($h2-text);
+      padding: 0;
+      font-size: 2.1rem;
+      margin: 1rem 0rem 0.2rem 0rem;
+    }
+
+    h2.title {
+      font-size:1.8rem;
+    }
+
+    p.published-date {
+      font-size: 1.6rem;
+      margin-bottom: 0rem;
+    }
+
+    ul {
+      margin-bottom: 1rem;
+
+      li {
+        padding: 0 0 .6rem 1rem;
+        list-style: none;
+        margin: 0 0 .2rem;
+        position: relative;
+
+        &::before {
+          content: "-";
+          left: 0;
+          position: absolute;
+          top: 0;
+        }
+
+        .date-published {
+          display: block;
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+        }
+      }
+    }
+  }
+
+
+.footer-area .column {
+  @include breakpoint($tab) {
+    float: left;
+    width: auto;
+  }
+}
+@media screen and (max-width: 766px) {
+  .footer-area .column {
+    float: left;
+    width: auto;
+  }
+}
 #footer {
   //max-width: 1160px;
   padding: 2rem;

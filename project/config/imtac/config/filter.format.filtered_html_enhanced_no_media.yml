@@ -1,7 +1,9 @@
 uuid: bcffa446-7067-45fd-9e70-11ca9f430d90
 langcode: en
-status: true
-dependencies: {  }
+status: false
+dependencies:
+  module:
+    - slick
 name: 'Filtered HTML enhanced no media'
 format: filtered_html_enhanced_no_media
 weight: 0
@@ -12,3 +14,11 @@ filters:
     status: true
     weight: 0
     settings: {  }
+  slick_filter:
+    id: slick_filter
+    provider: slick
+    status: false
+    weight: 4
+    settings:
+      optionset: default
+      media_switch: ''

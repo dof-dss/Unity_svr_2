@@ -5,7 +5,6 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/2_layout/index';
 
-
 .front {
   .front-banner{
     max-width: 1023px;
@@ -17,25 +16,25 @@
   }
 }
 
-.content span{
+.content {
+  span {
     color: $brand-primary;
   }
-
-.content .page-content{
-  color: #333;
+  .page-content{
+    color: $charcoal;
+  }
 }
 
-
 .page-title span{
-  color: #141f71;
+  color: $brand-tertiary;
 }
 
 .menu.menu-main {
-  background-color: #333;
+  background-color: $charcoal;
 }
 
 #edit-submit-search {
-  color: #333;
+  color: $charcoal;
 }
 
 .content-sidebar-wrap .main-content {
@@ -50,13 +49,8 @@
   padding:0;
 }
 
-.block-views-exposed-filter-blockpublications-search-publication-search-page {
-  background-color: #f6f6f6;
-  padding: 1rem;
-}
-
 .views-row.search-result {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid $grey-medium;
 }
 
 

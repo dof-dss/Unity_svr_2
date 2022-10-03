@@ -6,7 +6,11 @@ dependencies:
     - field.storage.node.body
     - node.type.publication_page
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats: {  }
 id: node.publication_page.body
 field_name: body
 entity_type: node
