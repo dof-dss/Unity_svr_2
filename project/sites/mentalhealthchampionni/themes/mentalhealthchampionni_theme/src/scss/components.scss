@@ -202,7 +202,12 @@
         padding-bottom: 1.5rem;
 
         h3 {
+          @include adjust-font-size-to(18px);
           margin: 0;
+        }
+
+        p.published-date {
+          margin-bottom: 0;
         }
 
         .content {
@@ -226,6 +231,7 @@
   }
 
   .block > h2 {
+    @include adjust-font-size-to(36px);
     color: $white;
     padding-left: 0;
   }
