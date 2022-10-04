@@ -8,7 +8,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/mentalhealthchampionni ; drush core-cron'
         database: mentalhealthchampionni
-        status: development
+        status: production
     publicappointmentsni:
         name: 'The Commissioner for Public Appointments for Northern Ireland'
         url: publicappointmentsni.org
