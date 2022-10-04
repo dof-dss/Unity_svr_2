@@ -1,10 +1,10 @@
-uuid: e185a75d-b0a3-4296-8a43-6a5c7eef1b0f
+uuid: b973873e-dae8-47a9-b506-634d93510783
 langcode: en
 status: true
 dependencies: {  }
 id: production
 label: production
-description: 'Used for production site.'
+description: ''
 weight: 0
 folder: ../project/config/victimspaymentsboard/production
 module: {  }

@@ -2,6 +2,8 @@ uuid: 33f561ab-05cb-41c5-a740-773b2972560c
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: 7BGMb0u6xjSJrVD_pGs6p66YSxf4jPpjuw8o8KSQhRE
 id: upgrade_d7_image_settings
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null

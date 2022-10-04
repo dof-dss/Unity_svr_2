@@ -2,6 +2,8 @@ uuid: be5957c5-753f-4b61-ac6c-779317c82aca
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: 5zjrkKSFJRCvpgrtli-Ao82khDDSJKmdFHiC8fIoKAU
 id: upgrade_noreferrer_settings
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null

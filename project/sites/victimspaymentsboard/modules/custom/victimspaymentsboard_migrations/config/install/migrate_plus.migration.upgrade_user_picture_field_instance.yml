@@ -2,6 +2,8 @@ uuid: f35d5245-ba06-4e94-9cd5-51f00ff30873
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: sRkCOZkDO4hfXRLl90V82Dh4jqsilm8U3Ychi9Z_QyI
 id: upgrade_user_picture_field_instance
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null

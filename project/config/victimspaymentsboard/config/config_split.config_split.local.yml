@@ -1,10 +1,10 @@
-uuid: b8d531eb-61eb-4f5c-8364-c78e02e1adc8
+uuid: f2f7e1c7-52dc-48a4-92a1-40bef6439ef4
 langcode: en
 status: true
 dependencies: {  }
 id: local
 label: local
-description: 'Local development split. Enables debugging and development modules'
+description: ''
 weight: 0
 folder: ../project/config/victimspaymentsboard/local
 module:

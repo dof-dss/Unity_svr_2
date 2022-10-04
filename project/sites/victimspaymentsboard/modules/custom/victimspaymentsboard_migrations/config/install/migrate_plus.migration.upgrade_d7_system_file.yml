@@ -2,6 +2,8 @@ uuid: 35beb148-e6f2-470a-aa07-413c96a836a4
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: ZjKZOT0K8cbnTXKPzgPalvQX0ckrFyUyoCCNyrHJ5_I
 id: upgrade_d7_system_file
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null

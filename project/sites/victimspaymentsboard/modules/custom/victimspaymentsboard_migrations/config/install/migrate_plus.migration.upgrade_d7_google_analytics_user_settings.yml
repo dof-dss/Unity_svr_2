@@ -2,6 +2,8 @@ uuid: 3016b8ae-58e1-4150-9ed0-1aa3f0fd9a97
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: YBxK-oENX2CFdnlGJBc8Q0zi7karYryOfvrA9ZZ024w
 id: upgrade_d7_google_analytics_user_settings
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
