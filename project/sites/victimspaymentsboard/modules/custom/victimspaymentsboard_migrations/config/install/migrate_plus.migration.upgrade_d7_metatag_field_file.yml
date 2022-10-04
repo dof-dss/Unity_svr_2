@@ -1,0 +1,56 @@
+uuid: 15921b1a-314f-4ff3-a4fb-49619935523b
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_metatag_field_file
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Metatag field of files'
+source:
+  plugin: d7_metatag_field
+  source_module: metatag
+  ignore_map: true
+  constants:
+    field_name: field_metatag
+    langcode: und
+    type: metatag
+    status: true
+  entity_type: file
+  entity_type_id: file
+process:
+  entity_type:
+    -
+      plugin: get
+      source: entity_type
+    -
+      plugin: static_map
+      map:
+        field_collection_item: paragraph
+        paragraphs_item: paragraph
+      bypass: true
+  field_name:
+    -
+      plugin: get
+      source: constants/field_name
+  langcode:
+    -
+      plugin: get
+      source: constants/langcode
+  status:
+    -
+      plugin: get
+      source: constants/status
+  type:
+    -
+      plugin: get
+      source: constants/type
+destination:
+  plugin: 'entity:field_storage_config'
+migration_dependencies:
+  required: {  }
+  optional: {  }
