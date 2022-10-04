@@ -2,6 +2,8 @@ uuid: 24617e64-5016-467b-8a62-de45cb6c8578
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: YKUkqNA8ubLP37gVn5wX1g3aaZzQpTKCTfodukq4UEs
 id: upgrade_menu_settings
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null

@@ -2,6 +2,8 @@ uuid: 97056074-20b2-468e-a09e-ce43600446ae
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: UviBeQMjxcRSKmurtwpcqWeMtXsSuxsqT0_s342wQ0g
 id: upgrade_d7_system_mail
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null

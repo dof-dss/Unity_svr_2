@@ -2,6 +2,8 @@ uuid: 437ad741-faed-40bb-9bd0-3549bb48ff8d
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: 5QDoosDizQt_j4o0yyZYfD8afrzycY1mL9I_XCWhjGw
 id: upgrade_text_settings
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
