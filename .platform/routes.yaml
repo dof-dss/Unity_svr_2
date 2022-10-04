@@ -38,14 +38,14 @@
 'https://victimspaymentsboard.org.uk/':
     type: redirect
     to: 'https://www.victimspaymentsboard.org.uk/'
-'https://www.www.mentalhealthchampion-ni.org.uk/':
+'https://www.mentalhealthchampion-ni.org.uk/':
     type: upstream
     upstream: 'unity_svr_2:http'
     cache:
         enabled: 'false'
-'https://www.mentalhealthchampion-ni.org.uk/':
+'https://mentalhealthchampion-ni.org.uk/':
     type: redirect
-    to: 'https://www.www.mentalhealthchampion-ni.org.uk/'
+    to: 'https://www.mentalhealthchampion-ni.org.uk/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_2:http'
