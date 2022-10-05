@@ -1,3 +1,11 @@
+'https://www.mentalhealthchampion-ni.org.uk.{default}/':
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
+'https://mentalhealthchampion-ni.org.uk.{default}/':
+    type: redirect
+    to: 'https://www.mentalhealthchampion-ni.org.uk.{default}/'
 'https://www.publicappointmentsni.org/':
     type: upstream
     upstream: 'unity_svr_2:http'
@@ -38,14 +46,6 @@
 'https://victimspaymentsboard.org.uk/':
     type: redirect
     to: 'https://www.victimspaymentsboard.org.uk/'
-'https://www.mentalhealthchampion-ni.org.uk.{default}/':
-    type: upstream
-    upstream: 'unity_svr_2:http'
-    cache:
-        enabled: 'false'
-'https://mentalhealthchampion-ni.org.uk.{default}/':
-    type: redirect
-    to: 'https://www.mentalhealthchampion-ni.org.uk.{default}/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_2:http'
