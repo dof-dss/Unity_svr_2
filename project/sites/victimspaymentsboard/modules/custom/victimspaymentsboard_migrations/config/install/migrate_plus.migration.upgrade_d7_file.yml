@@ -27,7 +27,7 @@ process:
     -
       plugin: get
       source: filename
-  ammended_filepath:
+  amended_filepath:
     -
       plugin: str_replace
       source: filepath
@@ -39,7 +39,7 @@ process:
       delimiter: /
       source:
         - constants/source_base_path
-        - ammended_filepath
+        - amended_filepath
     -
       plugin: urlencode
   uri:
