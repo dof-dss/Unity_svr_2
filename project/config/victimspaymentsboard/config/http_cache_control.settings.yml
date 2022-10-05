@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: Gte2C0a61n4X074GDAMPexe0uVAopKhjfsUmED2nu5s
+cache:
+  http:
+    s_maxage: 0
+    404_max_age: 0
+    302_max_age: 0
+    301_max_age: 0
+    5xx_max_age: 0
+    stale_while_revalidate: 900
+    stale_if_error: 900
+    vary: ''
+  surrogate:
+    maxage: 86400
+    nostore: null

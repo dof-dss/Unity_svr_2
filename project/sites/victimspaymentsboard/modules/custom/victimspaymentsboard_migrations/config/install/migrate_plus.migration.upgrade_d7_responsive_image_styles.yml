@@ -1,0 +1,42 @@
+uuid: 682bf8e4-9d4b-469d-b5b8-05922250d16d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RpLIEHiTKhluy-nIHcaLbuOcChA83Nqfjk_udA0S2G4
+id: upgrade_d7_responsive_image_styles
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Responsive Image Styles'
+source:
+  plugin: d7_responsive_image_styles
+process:
+  id:
+    -
+      plugin: get
+      source: machine_name
+  label:
+    -
+      plugin: get
+      source: label
+  image_style_mappings:
+    -
+      plugin: image_style_mappings
+      source:
+        - mapping
+        - breakpoint_group
+  breakpoint_group:
+    -
+      plugin: get
+      source: breakpoint_group
+destination:
+  plugin: 'entity:responsive_image_style'
+migration_dependencies:
+  required:
+    - upgrade_d7_image_styles
+  optional: {  }

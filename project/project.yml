@@ -8,7 +8,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/mentalhealthchampionni ; drush core-cron'
         database: mentalhealthchampionni
-        status: development
+        status: production
     publicappointmentsni:
         name: 'The Commissioner for Public Appointments for Northern Ireland'
         url: publicappointmentsni.org
@@ -40,4 +40,19 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/nicertoffice ; drush core-cron'
         database: nicertoffice
+        status: development
+    victimspaymentsboard:
+        name: 'Victims Payments Board'
+        url: victimspaymentsboard.org.uk
+        solr: victimspaymentsboard
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/victimspaymentsboard ; drush core-cron'
+        database: victimspaymentsboard
+        status: development
+    default:
+        name: 'Default site - do not delete'
+        url: 'mentalhealthchampion-ni.org.uk.{default}'
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/default ; drush core-cron'
+        database: default
         status: development

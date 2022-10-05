@@ -1,0 +1,69 @@
+uuid: 8ad33abd-5e76-4332-8237-f5856c7a3c5f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: HOfhCX2t1ZKlvq8RdFvRx3KUL-BkHs4b6IWdXwkE8SI
+id: upgrade_user_picture_entity_form_display
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'User picture form display configuration'
+source:
+  plugin: user_picture_instance
+  constants:
+    entity_type: user
+    bundle: user
+    form_mode: default
+    name: user_picture
+    type: image_image
+    options:
+      settings:
+        progress_indicator: throbber
+        preview_image_style: thumbnail
+process:
+  entity_type:
+    -
+      plugin: get
+      source: constants/entity_type
+    -
+      plugin: static_map
+      map:
+        field_collection_item: paragraph
+        paragraphs_item: paragraph
+      bypass: true
+  bundle:
+    -
+      plugin: get
+      source: constants/bundle
+  field_name:
+    -
+      plugin: get
+      source: constants/name
+  form_mode:
+    -
+      plugin: get
+      source: constants/form_mode
+  type:
+    -
+      plugin: get
+      source: constants/type
+  options:
+    -
+      plugin: get
+      source: constants/options
+  options/type:
+    -
+      plugin: get
+      source: '@type'
+destination:
+  plugin: component_entity_form_display
+migration_dependencies:
+  required:
+    - upgrade_user_picture_field_instance
+  optional: {  }

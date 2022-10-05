@@ -1,0 +1,52 @@
+uuid: 7b36b80c-6abd-4dad-a6b6-0c05f6cbbcc5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ys2YmK3WLLAWCSmbhD6bUSW8OVxRpPlHmJz7JHE5EQg
+id: upgrade_d7_metatag_field_instance_user
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Metatag field instance of users'
+source:
+  plugin: d7_metatag_field_instance
+  source_module: metatag
+  ignore_map: true
+  constants:
+    field_name: field_metatag
+    label: 'Meta tags'
+  entity_type_id: user
+process:
+  bundle:
+    -
+      plugin: get
+      source: bundle
+  entity_type:
+    -
+      plugin: get
+      source: entity_type
+    -
+      plugin: static_map
+      map:
+        field_collection_item: paragraph
+        paragraphs_item: paragraph
+      bypass: true
+  field_name:
+    -
+      plugin: get
+      source: constants/field_name
+  label:
+    -
+      plugin: get
+      source: constants/label
+destination:
+  plugin: 'entity:field_config'
+migration_dependencies:
+  required:
+    - upgrade_d7_metatag_field_user
+  optional: {  }

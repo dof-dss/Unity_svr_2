@@ -1,0 +1,58 @@
+uuid: c19c90d1-501c-48cd-821d-23f2744379ad
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9o9luRhQbU8JmF7lSiTuR2nWj3mseRn8CGO91WTv0XA
+id: upgrade_d7_metatag_field_node
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Metatag field of content items'
+source:
+  plugin: d7_metatag_field
+  source_module: metatag
+  ignore_map: true
+  constants:
+    field_name: field_metatag
+    langcode: und
+    type: metatag
+    status: true
+  entity_type: node
+  entity_type_id: node
+process:
+  entity_type:
+    -
+      plugin: get
+      source: entity_type
+    -
+      plugin: static_map
+      map:
+        field_collection_item: paragraph
+        paragraphs_item: paragraph
+      bypass: true
+  field_name:
+    -
+      plugin: get
+      source: constants/field_name
+  langcode:
+    -
+      plugin: get
+      source: constants/langcode
+  status:
+    -
+      plugin: get
+      source: constants/status
+  type:
+    -
+      plugin: get
+      source: constants/type
+destination:
+  plugin: 'entity:field_storage_config'
+migration_dependencies:
+  required: {  }
+  optional: {  }

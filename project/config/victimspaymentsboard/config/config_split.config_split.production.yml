@@ -1,0 +1,15 @@
+uuid: b973873e-dae8-47a9-b506-634d93510783
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: production
+description: ''
+weight: 0
+folder: ../project/config/victimspaymentsboard/production
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
