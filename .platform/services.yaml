@@ -9,7 +9,6 @@ db:
             - imtacdb
             - nicertofficedb
             - victimspaymentsboarddb
-            - defaultdb
         endpoints:
             mentalhealthchampionni:
                 default_schema: mentalhealthchampionnidb
@@ -35,10 +34,6 @@ db:
                 default_schema: victimspaymentsboarddb
                 privileges:
                     victimspaymentsboarddb: admin
-            default:
-                default_schema: defaultdb
-                privileges:
-                    defaultdb: admin
 solr:
     type: 'solr:7.7'
     disk: 1024
