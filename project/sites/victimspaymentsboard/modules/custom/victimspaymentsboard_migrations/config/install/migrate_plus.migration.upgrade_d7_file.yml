@@ -27,13 +27,18 @@ process:
     -
       plugin: get
       source: filename
+  ammended_filepath:
+    - plugin: str_replace
+      source: filepath
+      search: sites/default/files
+      replace: sites/victimspayments/files
   source_full_path:
     -
       plugin: concat
       delimiter: /
       source:
         - constants/source_base_path
-        - filepath
+        - ammended_filepath
     -
       plugin: urlencode
   uri:
