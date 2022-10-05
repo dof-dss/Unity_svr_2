@@ -1,0 +1,20 @@
+uuid: 34c4590f-2e9d-43cf-a1c6-9667eb0a2396
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nicertoffice_theme
+id: breadcrumbs
+theme: nicertoffice_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }
