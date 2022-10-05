@@ -28,7 +28,8 @@ process:
       plugin: get
       source: filename
   ammended_filepath:
-    - plugin: str_replace
+    - 
+      plugin: str_replace
       source: filepath
       search: sites/default/files
       replace: sites/victimspayments/files
