@@ -1,0 +1,25 @@
+uuid: 461b76c3-dd43-4d38-b7e7-fe7f069acd6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-footer-links
+  module:
+    - system
+  theme:
+    - victimspaymentsboard_theme
+id: footerlinks
+theme: victimspaymentsboard_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-footer-links'
+settings:
+  id: 'system_menu_block:menu-footer-links'
+  label: 'Footer links'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

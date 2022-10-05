@@ -109,6 +109,7 @@ module:
   unity_image_styles: 0
   unity_internal_link_checker: 0
   unity_map_embed: 0
+  unity_search_pages: 0
   update: 0
   user: 0
   views_custom_cache_tag: 0
@@ -132,4 +133,6 @@ theme:
   stable: 0
   adminimal_theme: 0
   nicsdru_unity_theme: 0
+  victimspaymentsboard: 0
+  victimspaymentsboard_theme: 0
 profile: nicsdru_unity_profile

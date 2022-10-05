@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.faq.field_faq
     - field.field.node.faq.field_meta_tags
+    - field.field.node.faq.field_metatag
     - node.type.faq
   module:
     - entity_reference_revisions
@@ -18,14 +19,24 @@ mode: default
 content:
   field_faq:
     type: entity_reference_revisions_entity_view
-    weight: 0
-    label: hidden
+    label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 1
+    region: content
+  langcode:
+    type: language
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
+  content_moderation_control: true
   field_meta_tags: true
-  langcode: true
+  field_metatag: true
   links: true
