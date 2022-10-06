@@ -1,0 +1,10 @@
+uuid: cc7c45a9-e8b1-453c-91ab-55efba4465fd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: v01C7A2drlwW57KuHoPd8N2KzeQs2q5xFU_ow7RylyY
+id: menu-useful-links
+label: 'Useful links'
+description: ''
+locked: false

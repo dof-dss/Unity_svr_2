@@ -1,0 +1,30 @@
+uuid: c01cc41a-6018-4d29-9435-e0c69ab26a24
+langcode: en
+status: true
+dependencies:
+  module:
+    - token_filter
+_core:
+  default_config_hash: 0RaChZk0lbVg4KBsZkZTYjN-ZgNCqYkW-QUR9bmL24w
+name: 'Filtered HTML with tokens'
+format: filtered_html_with_tokens
+weight: 0
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: -49
+    settings: {  }
+  token_filter:
+    id: token_filter
+    provider: token_filter
+    status: true
+    weight: -44
+    settings: {  }
+  filter_null:
+    id: filter_null
+    provider: filter
+    status: true
+    weight: -45
+    settings: {  }

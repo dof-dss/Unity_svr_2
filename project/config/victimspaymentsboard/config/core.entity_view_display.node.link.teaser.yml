@@ -1,0 +1,33 @@
+uuid: a50c79c9-ad00-49aa-bdff-1c122e8ac2a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.link.field_link_type
+    - field.field.node.link.field_link_url
+    - field.field.node.link.field_meta_tags
+    - node.type.link
+  module:
+    - user
+_core:
+  default_config_hash: h1bzeg_nSrZwggSbk9-MHMBpdar-A-ERieVACGduZfQ
+id: node.link.teaser
+targetEntityType: node
+bundle: link
+mode: teaser
+content:
+  field_link_type:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  field_link_url: true
+  field_meta_tags: true
+  langcode: true
+  links: true
