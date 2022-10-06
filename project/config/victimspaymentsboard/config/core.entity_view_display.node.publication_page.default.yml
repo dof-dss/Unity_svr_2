@@ -1,0 +1,46 @@
+uuid: 5f66752b-f209-4e14-a3ee-97ab59291b9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.publication_page.body
+    - field.field.node.publication_page.field_publication_attachment
+    - field.field.node.publication_page.field_publication_date
+    - node.type.publication_page
+  module:
+    - datetime
+    - file
+    - text
+    - user
+id: node.publication_page.default
+targetEntityType: node
+bundle: publication_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_publication_attachment:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_publication_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  links: true

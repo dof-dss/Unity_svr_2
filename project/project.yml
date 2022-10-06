@@ -8,7 +8,8 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/mentalhealthchampionni ; drush core-cron'
         database: mentalhealthchampionni
-        status: development
+        status: production
+        default: true
     publicappointmentsni:
         name: 'The Commissioner for Public Appointments for Northern Ireland'
         url: publicappointmentsni.org
@@ -17,6 +18,7 @@ sites:
         cron_cmd: 'cd web/sites/publicappointmentsni ; drush core-cron'
         database: publicappointmentsni
         status: development
+        default: false
     ircommission:
         name: 'Independent Reporting Commission'
         url: ircommission.org
@@ -25,6 +27,7 @@ sites:
         cron_cmd: 'cd web/sites/ircommission ; drush core-cron'
         database: ircommission
         status: development
+        default: false
     imtac:
         name: 'The Inclusive Mobility and Transport Advisory Committee'
         url: imtac.org.uk
@@ -33,6 +36,7 @@ sites:
         cron_cmd: 'cd web/sites/imtac ; drush core-cron'
         database: imtac
         status: development
+        default: false
     nicertoffice:
         name: 'Northern Ireland Certification Officer for Trade Unions and Employers'' Associations'
         url: nicertoffice.org.uk
@@ -41,3 +45,13 @@ sites:
         cron_cmd: 'cd web/sites/nicertoffice ; drush core-cron'
         database: nicertoffice
         status: development
+        default: false
+    victimspaymentsboard:
+        name: 'Victims Payments Board'
+        url: victimspaymentsboard.org.uk
+        solr: victimspaymentsboard
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/victimspaymentsboard ; drush core-cron'
+        database: victimspaymentsboard
+        status: development
+        default: false

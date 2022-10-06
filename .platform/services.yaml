@@ -8,6 +8,7 @@ db:
             - ircommissiondb
             - imtacdb
             - nicertofficedb
+            - victimspaymentsboarddb
         endpoints:
             mentalhealthchampionni:
                 default_schema: mentalhealthchampionnidb
@@ -29,6 +30,10 @@ db:
                 default_schema: nicertofficedb
                 privileges:
                     nicertofficedb: admin
+            victimspaymentsboard:
+                default_schema: victimspaymentsboarddb
+                privileges:
+                    victimspaymentsboarddb: admin
 solr:
     type: 'solr:7.7'
     disk: 1024
@@ -44,6 +49,8 @@ solr:
                 conf_dir: !archive solr_config/
             nicertoffice_index:
                 conf_dir: !archive solr_config/
+            victimspaymentsboard_index:
+                conf_dir: !archive solr_config/
         endpoints:
             mentalhealthchampionni:
                 core: mentalhealthchampionni_index
@@ -55,5 +62,7 @@ solr:
                 core: imtac_index
             nicertoffice:
                 core: nicertoffice_index
+            victimspaymentsboard:
+                core: victimspaymentsboard_index
 redis:
     type: 'redis:6.0'

@@ -1,0 +1,12 @@
+uuid: fd5ae9d7-1503-4732-8a3c-ea86bb3485bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: XED0_QBcajoiwqjrbC9gpwP4BzffllaJ2Gg_u59Ewd4
+id: media.slide
+label: Slideshow
+targetEntityType: media
+cache: true

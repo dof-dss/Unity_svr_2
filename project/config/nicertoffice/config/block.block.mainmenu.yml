@@ -1,0 +1,25 @@
+uuid: 2c0d1730-22b8-44ad-8b07-2bb05d6f5387
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - nicertoffice_theme
+id: mainmenu
+theme: nicertoffice_theme
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

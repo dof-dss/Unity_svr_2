@@ -1,0 +1,25 @@
+uuid: 89a9bf18-9b64-42b8-a952-ddefa3c77428
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - victimspaymentsboard_theme
+id: mainmenu
+theme: victimspaymentsboard_theme
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

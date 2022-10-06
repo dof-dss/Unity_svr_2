@@ -1,0 +1,22 @@
+uuid: 6305ec1d-fa6e-4525-bb31-d177fded2602
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: PuLQMXJYuu17XdekhReKYGUIiOrbW7RrhMXFACqQTTc
+name: 'Filtered HTML with images'
+format: filtered_html
+weight: 0
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: -49
+    settings: {  }
+  filter_null:
+    id: filter_null
+    provider: filter
+    status: true
+    weight: -33
+    settings: {  }

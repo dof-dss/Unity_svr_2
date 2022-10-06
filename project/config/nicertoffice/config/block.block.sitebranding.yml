@@ -1,0 +1,23 @@
+uuid: d8570d9c-594e-45d1-99b0-8be04ecfc051
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nicertoffice_theme
+id: sitebranding
+theme: nicertoffice_theme
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }
