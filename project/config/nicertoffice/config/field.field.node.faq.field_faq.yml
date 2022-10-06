@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_faq
     - node.type.faq
+    - paragraphs.paragraphs_type.faq_accordian
   module:
     - entity_reference_revisions
 _core:
@@ -20,6 +21,16 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
-  handler_settings: {  }
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      faq_accordian: faq_accordian
+    negate: 0
+    target_bundles_drag_drop:
+      faq_accordian:
+        weight: 3
+        enabled: true
+      map:
+        weight: 4
+        enabled: false
 field_type: entity_reference_revisions
