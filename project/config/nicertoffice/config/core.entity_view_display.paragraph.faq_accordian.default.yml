@@ -16,18 +16,18 @@ bundle: faq_accordian
 mode: default
 content:
   field_answer:
-    weight: 1
-    label: above
+    type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_question:
-    weight: 0
-    label: above
+    type: string
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
 hidden: {  }

@@ -38,15 +38,10 @@
  * @ingroup themeable
  */
 #}
-{% set classes = ['card'] %}
-{% set card_content = content.field_teaser.0|render %}
+
 {% block paragraph %}
-<a{{ attributes.addClass(classes) }} href="{{ content.field_link.0['#url']|render }}">
-  <h2 class="card__title">
-    {{ content.field_title }}
-  </h2>
-  {% autoescape false %}
-  <p class="card__content">{{ card_content|trim(".") }}&nbsp;&hellip;&nbsp;<span class="more">read more</span></p>
-  {% endautoescape %}
-</a>
+  <h3 class="accordion-section-title">{{ content.field_question }}</h3>
+  <div class="accordion-section">
+    {{ content.field_answer }}
+  </div>
 {% endblock paragraph %}
