@@ -3,10 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_metatag
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
     - image
+    - metatag
     - path
     - user
 _core:
@@ -22,11 +24,18 @@ content:
   contact:
     weight: 5
     region: content
+  field_metatag:
+    type: metatag_firehose
+    weight: 31
+    region: content
+    settings:
+      sidebar: true
+    third_party_settings: {  }
   google_analytics:
     weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   language:
     weight: 0
     region: content
@@ -41,11 +50,11 @@ content:
     region: content
   user_picture:
     type: image_image
+    weight: -1
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: -1
-    region: content
 hidden:
   langcode: true

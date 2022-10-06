@@ -1,6 +1,6 @@
 uuid: b95fcb34-ca29-4706-a77d-34d0c5d07e0b
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - filter.format.filtered_html_with_tokens
