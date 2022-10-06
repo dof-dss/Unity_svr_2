@@ -24,19 +24,11 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 1
-    region: content
-  langcode:
-    type: language
-    label: above
-    settings:
-      link_to_entity: false
-      native_language: false
-    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   content_moderation_control: true
   field_meta_tags: true
   field_metatag: true
+  langcode: true
   links: true
