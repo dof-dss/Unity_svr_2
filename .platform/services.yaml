@@ -10,6 +10,7 @@ db:
             - nicertofficedb
             - victimspaymentsboarddb
             - defaultdb
+            - hiaredressnidb
         endpoints:
             mentalhealthchampionni:
                 default_schema: mentalhealthchampionnidb
@@ -39,6 +40,10 @@ db:
                 default_schema: defaultdb
                 privileges:
                     defaultdb: admin
+            hiaredressni:
+                default_schema: hiaredressnidb
+                privileges:
+                    hiaredressnidb: admin
 solr:
     type: 'solr:7.7'
     disk: 1024
@@ -56,6 +61,8 @@ solr:
                 conf_dir: !archive solr_config/
             victimspaymentsboard_index:
                 conf_dir: !archive solr_config/
+            hiaredressni_index:
+                conf_dir: !archive solr_config/
         endpoints:
             mentalhealthchampionni:
                 core: mentalhealthchampionni_index
@@ -69,5 +76,7 @@ solr:
                 core: nicertoffice_index
             victimspaymentsboard:
                 core: victimspaymentsboard_index
+            hiaredressni:
+                core: hiaredressni_index
 redis:
     type: 'redis:6.0'

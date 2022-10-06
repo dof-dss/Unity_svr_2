@@ -1,0 +1,32 @@
+uuid: debc7686-8465-4cc9-b110-9cdc301fd3c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.faq.field_faq
+    - field.field.node.faq.field_meta_tags
+    - node.type.faq
+  module:
+    - entity_reference_revisions
+    - user
+_core:
+  default_config_hash: fyNVz0U6OrM17Z1wzLHUKWnh3sPO9Azwt-Yt5e4wzyE
+id: node.faq.default
+targetEntityType: node
+bundle: faq
+mode: default
+content:
+  field_faq:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  content_moderation_control: true
+  field_meta_tags: true
+  langcode: true
+  links: true
