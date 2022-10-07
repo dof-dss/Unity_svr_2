@@ -1,6 +1,6 @@
 uuid: 442ba597-814e-4c72-98b6-27096dce8779
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.diff
