@@ -1,0 +1,31 @@
+uuid: 3f990f69-ba5a-4921-9c1f-57b49952495e
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.decision
+    - views.view.decision_search
+  module:
+    - search_api
+id: decisions_summary
+name: 'Decisions summary'
+facet_source_id: 'search_api:views_page__decision_search__decision_search_page'
+processor_configs:
+  hide_when_not_rendered:
+    processor_id: hide_when_not_rendered
+    weights:
+      build: '45'
+    settings: {  }
+facets:
+  decision_date:
+    checked: true
+    label: Date
+    separator: ', '
+    show_count: false
+    weight: 0
+  respondent:
+    checked: true
+    label: Respondent
+    separator: ', '
+    show_count: false
+    weight: 0
