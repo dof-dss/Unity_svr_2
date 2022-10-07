@@ -1,9 +1,9 @@
-uuid: 68f6467f-9fab-4a2b-8dad-c0fcb073f525
+uuid: 442ba597-814e-4c72-98b6-27096dce8779
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.diff
     - field.field.node.publication_page.body
     - field.field.node.publication_page.field_attachment
     - field.field.node.publication_page.field_metatag
@@ -11,18 +11,41 @@ dependencies:
     - field.field.node.publication_page.field_publication_type
     - node.type.publication_page
   module:
+    - datetime
+    - layout_builder
     - text
     - user
-id: node.publication_page.teaser
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.publication_page.diff
 targetEntityType: node
 bundle: publication_page
-mode: teaser
+mode: diff
 content:
   body:
-    type: text_summary_or_trimmed
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_attachment:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: embed
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_publication_date:
+    type: datetime_custom
     label: hidden
     settings:
-      trim_length: 600
+      timezone_override: ''
+      date_format: 'd F Y'
     third_party_settings: {  }
     weight: 1
     region: content
@@ -33,9 +56,7 @@ content:
     region: content
 hidden:
   content_moderation_control: true
-  field_attachment: true
   field_metatag: true
-  field_publication_date: true
   field_publication_type: true
   langcode: true
   search_api_excerpt: true
