@@ -21,4 +21,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: /search
+    pages: "/search\r\n/decision\r\n/decision/date/*\r\n/decision/respondent/*"

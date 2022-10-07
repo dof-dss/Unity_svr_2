@@ -1,0 +1,28 @@
+uuid: 50acd76c-1259-44f8-87c4-9d6ea09ad3f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.respondent
+  module:
+    - facets
+    - system
+  theme:
+    - nicertoffice_theme
+id: respondent
+theme: nicertoffice_theme
+region: search_facets
+weight: -2
+provider: null
+plugin: 'facet_block:respondent'
+settings:
+  id: 'facet_block:respondent'
+  label: Respondent
+  label_display: visible
+  provider: facets
+  block_id: respondent
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/decision\r\n/decision/date/*\r\n/decision/respondent/*"
