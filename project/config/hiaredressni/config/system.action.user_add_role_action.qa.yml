@@ -1,0 +1,16 @@
+uuid: e8e868ea-a940-444b-bee5-f25998e1bd2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.qa
+  module:
+    - user
+_core:
+  default_config_hash: 4HotbbuY1SGliljQB1gY8ZH72t_EKfKlw-_0IsmqkUU
+id: user_add_role_action.qa
+label: 'Add the Quality Assurance role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: qa
