@@ -1,0 +1,18 @@
+uuid: 55bb0cc4-e42b-4290-a035-bc1956c9e2a4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nicertoffice_theme
+id: pagetitle
+theme: nicertoffice_theme
+region: content
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }
