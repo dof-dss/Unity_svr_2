@@ -1,0 +1,31 @@
+uuid: 966aafd2-f266-4f6d-85c8-999848fb84ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photo
+    - media.type.image
+    - node.type.news
+_core:
+  default_config_hash: m4kjXvKfbT-A03_u381ryfa8xALUtf9a78RDaFtzptY
+id: node.news.field_photo
+field_name: field_photo
+entity_type: node
+bundle: news
+label: Photo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

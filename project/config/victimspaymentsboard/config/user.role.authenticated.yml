@@ -2,25 +2,47 @@ uuid: 9f228af1-41f7-43df-8198-f01587aa3fe7
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.faq
   module:
-    - media
     - node
-    - search
+    - path
+    - pathauto
     - system
 _core:
   default_config_hash: zLyQwFO06-pj9Gj5UZMWuk_aAuAOSC8YqFEHItUk-Tc
 id: authenticated
-label: 'Authenticated user'
+label: 'authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'access comments'
+  - 'access administration menu'
+  - 'access administration pages'
   - 'access content'
-  - 'access shortcuts'
-  - 'post comments'
-  - 'search content'
-  - 'skip comment approval'
-  - 'use text format basic_html'
-  - 'view all revisions'
-  - 'view media'
+  - 'access media browser'
+  - 'access workbench'
+  - 'create faq content'
+  - 'create page content'
+  - 'create publication_page content'
+  - 'create url aliases'
+  - 'delete own faq content'
+  - 'delete own page content'
+  - 'delete own publication_page content'
+  - 'diff view changes'
+  - 'edit any faq content'
+  - 'edit any page content'
+  - 'edit any publication_page content'
+  - 'edit own faq content'
+  - 'edit own page content'
+  - 'edit own publication_page content'
+  - 'notify of path changes'
+  - 'revert revisions'
+  - 'use media wysiwyg'
+  - 'use text format filtered_html'
+  - 'use text format filtered_html_with_no_images'
+  - 'view files'
+  - 'view moderation history'
+  - 'view moderation messages'
   - 'view own unpublished content'
+  - 'view revisions'
+  - 'view the administration theme'

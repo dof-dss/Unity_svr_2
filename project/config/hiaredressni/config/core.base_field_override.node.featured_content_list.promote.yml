@@ -1,0 +1,24 @@
+uuid: 6d43ec42-b72c-42ed-b3e8-0ad9cea99549
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.featured_content_list
+_core:
+  default_config_hash: 0_2Kdt22bmkwEaaTqR3sIcL0iE9yUGxNH_9ySSNHkWg
+id: node.featured_content_list.promote
+field_name: promote
+entity_type: node
+bundle: featured_content_list
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

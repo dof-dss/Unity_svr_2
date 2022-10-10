@@ -1,0 +1,28 @@
+uuid: 8862de52-b54e-46a3-974e-5d458e945e12
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.decision_date
+  module:
+    - facets
+    - system
+  theme:
+    - nicertoffice_theme
+id: decisiondate
+theme: nicertoffice_theme
+region: search_facets
+weight: -3
+provider: null
+plugin: 'facet_block:decision_date'
+settings:
+  id: 'facet_block:decision_date'
+  label: Date
+  label_display: visible
+  provider: facets
+  block_id: decisiondate
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/decision\r\n/decision/date/*\r\n/decision/respondent/*"

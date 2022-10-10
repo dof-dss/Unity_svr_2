@@ -1,0 +1,21 @@
+uuid: 271da28f-3931-4cd3-ad96-b4c5fc6cb902
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_publication_page
+label: 'Content - Publication page'
+type: 'canonical_entities:node'
+pattern: 'publications/[node:title]'
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      publication_page: publication_page
+selection_logic: and
+weight: 0
+relationships: {  }

@@ -1,0 +1,12 @@
+uuid: abf33770-bbca-45ef-9ced-46bdd5ae578a
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__documents_search__documents_search_page
+name: 'search_api:views_page__documents_search__documents_search_page'
+filter_key: ''
+url_processor: facets_pretty_paths
+breadcrumb:
+  active: true
+  before: false
+  group: false

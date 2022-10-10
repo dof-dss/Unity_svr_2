@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4cdda4f743af1d4c256432dd9412dbb2",
+    "content-hash": "c0a02cab7e66898c1b52a064a67a994c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2008,16 +2008,16 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_theme",
-            "version": "v0.1.61",
+            "version": "v0.1.62",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_theme.git",
-                "reference": "50d56e00bc88e00ea8a15cce7c684a15686e2cab"
+                "reference": "111ba794c0ea002b993631b7d768e0e4f581f779"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/50d56e00bc88e00ea8a15cce7c684a15686e2cab",
-                "reference": "50d56e00bc88e00ea8a15cce7c684a15686e2cab",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/111ba794c0ea002b993631b7d768e0e4f581f779",
+                "reference": "111ba794c0ea002b993631b7d768e0e4f581f779",
                 "shasum": ""
             },
             "require": {
@@ -2041,9 +2041,9 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v0.1.61"
+                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v0.1.62"
             },
-            "time": "2022-09-07T10:14:47+00:00"
+            "time": "2022-10-04T11:22:40+00:00"
         },
         {
             "name": "drupal/address",
@@ -4696,6 +4696,10 @@
             ],
             "authors": [
                 {
+                    "name": "cs_shadow",
+                    "homepage": "https://www.drupal.org/user/2828287"
+                },
+                {
                     "name": "Dave Reid",
                     "homepage": "https://www.drupal.org/user/53892"
                 },
@@ -4708,14 +4712,6 @@
                     "homepage": "https://www.drupal.org/user/3260690"
                 },
                 {
-                    "name": "Wim Leers",
-                    "homepage": "https://www.drupal.org/user/99777"
-                },
-                {
-                    "name": "cs_shadow",
-                    "homepage": "https://www.drupal.org/user/2828287"
-                },
-                {
                     "name": "oknate",
                     "homepage": "https://www.drupal.org/user/471638"
                 },
@@ -4726,6 +4722,10 @@
                 {
                     "name": "slashrsm",
                     "homepage": "https://www.drupal.org/user/744628"
+                },
+                {
+                    "name": "Wim Leers",
+                    "homepage": "https://www.drupal.org/user/99777"
                 }
             ],
             "description": "Allows any entity to be embedded within a text area using a WYSIWYG editor.",
@@ -4902,6 +4902,10 @@
                 {
                     "name": "See other contributors",
                     "homepage": "https://www.drupal.org/node/1538032/committers"
+                },
+                {
+                    "name": "svenryen",
+                    "homepage": "https://www.drupal.org/user/667244"
                 }
             ],
             "description": "This module aims at making the website compliant with the new EU cookie regulation.",
@@ -5315,16 +5319,16 @@
                     "homepage": "https://www.drupal.org/user/647364"
                 },
                 {
-                    "name": "Stalski",
-                    "homepage": "https://www.drupal.org/user/322618"
-                },
-                {
                     "name": "jyve",
                     "homepage": "https://www.drupal.org/user/591438"
                 },
                 {
                     "name": "nils.destoop",
                     "homepage": "https://www.drupal.org/user/361625"
+                },
+                {
+                    "name": "Stalski",
+                    "homepage": "https://www.drupal.org/user/322618"
                 },
                 {
                     "name": "swentel",

@@ -1,0 +1,10 @@
+uuid: adf2f68d-09f3-4408-85a9-f8d3b51b6f63
+langcode: en
+status: true
+dependencies: {  }
+id: faq_accordion
+label: 'FAQ accordion'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

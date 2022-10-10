@@ -1,0 +1,25 @@
+uuid: cd865d23-d8e8-4ca3-a21b-c97eb12171a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - unity_search_pages
+  theme:
+    - nicertoffice_theme
+id: sitesearchblock
+theme: nicertoffice_theme
+region: search
+weight: 0
+provider: null
+plugin: site_search_block
+settings:
+  id: site_search_block
+  label: 'Site search block'
+  label_display: '0'
+  provider: unity_search_pages
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /search

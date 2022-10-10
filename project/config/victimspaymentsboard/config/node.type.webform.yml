@@ -9,7 +9,7 @@ _core:
   default_config_hash: BuY_3PjmYtRTSuvyFORJZUe0-TQiNXEE6yYQ_dkjxW8
 name: Webform
 type: webform
-description: 'A basic page with a webform attached.'
+description: 'Create a new form or questionnaire accessible to users. Submission results and statistics are recorded and accessible to privileged users.'
 help: ''
 new_revision: false
 preview_mode: 1
