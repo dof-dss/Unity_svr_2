@@ -1,0 +1,28 @@
+uuid: d55d0a04-2e28-4fd3-8140-cecb4ba1015d
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.document_type
+  module:
+    - facets
+    - system
+  theme:
+    - nicertoffice_theme
+id: documenttype
+theme: nicertoffice_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'facet_block:document_type'
+settings:
+  id: 'facet_block:document_type'
+  label: 'Type '
+  label_display: visible
+  provider: facets
+  block_id: documenttype
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/documents\r\n/documents/date/*\r\n/documents/type/*"
