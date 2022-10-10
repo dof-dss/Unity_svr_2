@@ -5,7 +5,8 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
-.node-type-document {
+.node-type-document,
+.node-type-faq {
   @include breakpoint($tab) {
     .content-sidebar-wrap {
       width: 65%;
