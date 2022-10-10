@@ -1,22 +1,22 @@
-uuid: 9c58d610-45b1-4c42-8cab-69efdeff9a26
+uuid: d3cb8c7b-21a9-4165-95e5-68eb00e96bea
 langcode: en
 status: true
 dependencies:
   config:
-    - search_api.index.decision
-    - views.view.decision_search
+    - search_api.index.documents
+    - views.view.documents_search
   module:
     - facets_pretty_paths
     - search_api
 third_party_settings:
   facets_pretty_paths:
     coder: default_coder
-id: decision_date
+id: documents_date
 name: Date
 weight: 0
 min_count: 1
 url_alias: date
-facet_source_id: 'search_api:views_page__decision_search__decision_search_page'
+facet_source_id: 'search_api:views_page__documents_search__documents_search_page'
 field_identifier: field_published_date
 query_operator: and
 hard_limit: 0
