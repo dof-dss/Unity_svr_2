@@ -254,7 +254,8 @@ display:
     position: 1
     display_options:
       cache:
-        type: none
+        type: search_api_tag
+        options: {  }
       defaults:
         cache: false
       exposed_block: true
@@ -265,10 +266,10 @@ display:
         type: normal
         title: Decisions
         description: ''
-        weight: -20
+        weight: -47
         expanded: false
         menu_name: main
-        parent: 'menu_link_content:b4596e97-6b9b-4fd0-bb34-331895bcf299'
+        parent: ''
         context: '0'
     cache_metadata:
       max-age: -1
