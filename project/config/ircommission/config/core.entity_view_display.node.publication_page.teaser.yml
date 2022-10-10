@@ -1,6 +1,6 @@
 uuid: 68f6467f-9fab-4a2b-8dad-c0fcb073f525
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
@@ -24,11 +24,6 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 1
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
@@ -38,4 +33,5 @@ hidden:
   field_publication_date: true
   field_publication_type: true
   langcode: true
+  links: true
   search_api_excerpt: true
