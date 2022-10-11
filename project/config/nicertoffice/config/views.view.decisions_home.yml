@@ -11,6 +11,7 @@ dependencies:
     - datetime
     - node
     - user
+    - views_custom_cache_tag
 id: decisions_home
 label: 'Decisions home'
 module: views
@@ -366,8 +367,9 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
-        options: {  }
+        type: custom_tag
+        options:
+          custom_tag: 'handy_cache_tags:node:decision'
       empty: {  }
       sorts:
         field_published_date_value:

@@ -12,6 +12,7 @@ dependencies:
     - node
     - taxonomy
     - user
+    - views_custom_cache_tag
 id: annual_reports
 label: 'Annual reports'
 module: views
@@ -111,8 +112,9 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
-        options: {  }
+        type: custom_tag
+        options:
+          custom_tag: 'handy_cache_tags:node:document'
       empty: {  }
       sorts:
         field_published_date_value:
