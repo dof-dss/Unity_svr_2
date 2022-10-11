@@ -1,0 +1,25 @@
+uuid: d4c441aa-d04b-47ab-bba1-6e267c195497
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - unity_search_pages
+  theme:
+    - victimspaymentsboard_theme
+id: sitesearchblock
+theme: victimspaymentsboard_theme
+region: search
+weight: 0
+provider: null
+plugin: site_search_block
+settings:
+  id: site_search_block
+  label: 'Site search block'
+  label_display: '0'
+  provider: unity_search_pages
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/search*'

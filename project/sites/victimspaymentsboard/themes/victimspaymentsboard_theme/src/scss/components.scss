@@ -22,3 +22,81 @@
   }
 }
 
+#main-menu {
+  background: $white;
+  .menu-link,
+  .menu .active,
+  .menu-item.open .menu-toggle-btn {
+    color: $brand-primary;
+    @include adjust-font-size-to(16px);
+  }
+
+  .menu
+  .menu-item
+  .active {
+    border-bottom-color: $brand-primary;
+  }
+
+  .menu-link {
+    &:hover,
+    &:focus {
+      background: $brand-primary;
+      color: $white;
+    }
+  }
+  .menu-main_sub
+  .menu-item
+  span.active {
+    @include adjust-font-size-to(14px);
+    border-bottom-color: $brand-secondary;
+    padding: 1rem;
+  }
+
+  .menu-main_sub {
+    background: $brand-primary;
+
+    .menu-item {
+      .active {
+        background: $brand-secondary;
+        color: $black;
+      }
+
+      a {
+        &:hover,
+        &:focus {
+          color: $black;
+          background: $brand-secondary;
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  //max-width: 1160px;
+  padding: 2rem;
+
+  @include breakpoint($tab) {
+    padding: 2%;
+  }
+
+  .footer-menu li {
+    padding-left: 0;
+    font-size: 1.6rem;
+    list-style-type: none;
+
+    @include breakpoint($mob) {
+      display: inline-block;
+      padding: 0 .8rem 0 0;
+      line-height: 1.8rem;
+      margin-right: .5rem;
+    }
+
+    a {
+      @media screen and (min-width: $mob) {
+        display: block;
+      }
+    }
+  }
+}
+
