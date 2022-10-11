@@ -29,9 +29,9 @@ $chroma: add-colors((
   hc-red:                 #d1431f, // 4.63:1 with white
   light-pink:             #ffdae0, // 4.53:1 with dark-red
 
-  brand-primary:          #141f6f,
+  brand-primary:          #550060,
 
-  brand-secondary:        #134647,
+  brand-secondary:        #cbb67c,
 
   brand-tertiary:         #002e62,
 ));
@@ -61,7 +61,7 @@ $chroma: add-colors('functional', (
   error-bg:               'light-pink',
 
   menu-background:        'brand-primary',
-  menu-item-hover:        'brand-secondary',
+  menu-item-hover:        #07601f,
   menu-separator:         #fff,
   menu-sub-item-background: 'brand-primary',
   menu-sub-item-hover:    'brand-primary',
@@ -125,7 +125,7 @@ $mark-bg: color(mark-bg);
 $error: color(error);
 $error-bg: color(error-bg);
 
-$menu-background: transparent;
+$menu-background: color(brand-primary);
 $menu-item-hover: color(menu-item-hover);
 $menu-separator: color(menu-separator);
 $menu-sub-item-background: color(menu-sub-item-background);
@@ -141,7 +141,7 @@ $table-cell-border: color(table-cell-border);
 $table-cell-text: color(table-cell-text);
 
 $footer-background: color(footer-background);
-$footer-border: color(footer-border);
+$footer-border: color(brand-primary);
 $footer-text: color(footer-text);
 $footer-headings: color(footer-headings);
 

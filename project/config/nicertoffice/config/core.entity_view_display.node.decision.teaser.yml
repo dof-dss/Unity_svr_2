@@ -1,8 +1,9 @@
-uuid: 835e645b-11be-4d98-a656-a5c36fe4fc80
+uuid: 216e3862-d2b4-4628-8910-f4e567d7989f
 langcode: en
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.node.teaser
     - field.field.node.decision.field_attachment
     - field.field.node.decision.field_decision_applicant
     - field.field.node.decision.field_decision_respondent
@@ -12,11 +13,16 @@ dependencies:
     - node.type.decision
   module:
     - datetime
+    - layout_builder
     - user
-id: node.decision.default
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.decision.teaser
 targetEntityType: node
 bundle: decision
-mode: default
+mode: teaser
 content:
   field_attachment:
     type: entity_reference_entity_view
