@@ -1,6 +1,6 @@
 uuid: c01cc41a-6018-4d29-9435-e0c69ab26a24
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - token_filter
@@ -21,7 +21,8 @@ filters:
     provider: token_filter
     status: true
     weight: -44
-    settings: {  }
+    settings:
+      replace_empty: ''
   filter_null:
     id: filter_null
     provider: filter

@@ -6,12 +6,13 @@ dependencies:
     - 'block_content:basic:a55e0911-498e-4208-8454-84b12715baa8'
   module:
     - block_content
+    - system
   theme:
     - victimspaymentsboard_theme
 id: homepageapplication
 theme: victimspaymentsboard_theme
 region: top_second
-weight: 0
+weight: -5
 provider: null
 plugin: 'block_content:a55e0911-498e-4208-8454-84b12715baa8'
 settings:
@@ -22,4 +23,8 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home
