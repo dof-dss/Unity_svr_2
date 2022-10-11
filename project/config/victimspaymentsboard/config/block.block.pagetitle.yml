@@ -2,8 +2,6 @@ uuid: 11b653a0-22fd-43dc-9b31-ea83789f3146
 langcode: en
 status: true
 dependencies:
-  module:
-    - system
   theme:
     - victimspaymentsboard_theme
 id: pagetitle
@@ -17,8 +15,4 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-visibility:
-  request_path:
-    id: request_path
-    negate: true
-    pages: /home
+visibility: {  }

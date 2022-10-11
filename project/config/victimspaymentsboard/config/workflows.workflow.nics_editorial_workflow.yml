@@ -3,16 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.board_member
-    - node.type.consultation
-    - node.type.contact
     - node.type.faq
-    - node.type.feature
-    - node.type.featured_content_list
-    - node.type.layout_page
-    - node.type.link
-    - node.type.news
-    - node.type.profile
     - node.type.webform
   module:
     - content_moderation
@@ -103,15 +94,6 @@ type_settings:
       weight: -2
   entity_types:
     node:
-      - board_member
-      - consultation
-      - contact
       - faq
-      - feature
-      - featured_content_list
-      - layout_page
-      - link
-      - news
-      - profile
       - webform
   default_moderation_state: draft
