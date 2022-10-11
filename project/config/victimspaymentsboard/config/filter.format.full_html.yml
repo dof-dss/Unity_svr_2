@@ -12,10 +12,12 @@ dependencies:
     - core.entity_view_mode.media.portrait_float_xp
     - core.entity_view_mode.media.portrait_full
   module:
+    - cookie_content_blocker
     - editor
     - entity_embed
     - media
     - noreferrer
+    - origins_common
     - token_filter
 _core:
   default_config_hash: Qz_ghgT5Z32QINhy2dM-vKWUVIO5psmUQ_w5oDQssW0
@@ -107,7 +109,6 @@ filters:
         audio: audio
         image: image
         remote_video: remote_video
-        video: video
   noreferrer:
     id: noreferrer
     provider: noreferrer
@@ -121,3 +122,17 @@ filters:
     weight: -48
     settings:
       replace_empty: '1'
+  cookie_content_blocker_filter:
+    id: cookie_content_blocker_filter
+    provider: cookie_content_blocker
+    status: false
+    weight: 0
+    settings:
+      disable_xss: '0'
+  origins_media_cookie_content_blocker_embed_filter:
+    id: origins_media_cookie_content_blocker_embed_filter
+    provider: origins_common
+    status: false
+    weight: 0
+    settings:
+      replacement_text: 'Click here to view the video content'

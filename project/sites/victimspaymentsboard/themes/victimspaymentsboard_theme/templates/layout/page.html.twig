@@ -118,10 +118,6 @@
           {% endif %}
         {% endif %}
 
-        {% if search_page %}
-          {{ drupal_block('page_title_block', wrapper=false) }}
-        {% endif %}
-
         <div id="content" {{ page.search_facets ? '' : 'class="main-content"' }}>
           {% if page.search_facets %}
             <header id="search-facets" class="sidebar-first-layout">
@@ -153,12 +149,8 @@
     {% endif %}
   </div>
   {% if is_front %}
-    {% if page.top_first or page.top_second or page.top_third %}
-      {% if basic_page_structure is empty %}
-        <div id="content">
-      {% endif %}
+    {% if page.top_first or page.top_second or page.top_third or page.top_fourth %}
       <div id="top-area" class="clearfix">
-        <div class="container-wrap">
         {% if page.top_first %}
           <div class="column">
             {{ page.top_first }}
@@ -174,12 +166,13 @@
             {{ page.top_third }}
           </div>
         {% endif %}
-      </div>
-      </div>
-      {% if basic_page_structure is empty %}
-        </div>
+        {% if page.top_fourth %}
+          <div class="column">
+            {{ page.top_fourth }}
+          </div>
+        {% endif %}
       {% endif %}
-    {% endif %}
+      </div>
 
     <div class="seeking-support">
       <div class="row">

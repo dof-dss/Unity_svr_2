@@ -2,7 +2,10 @@ uuid: fcf6212d-1eac-432c-a661-eefad4301f21
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.publication_page
   module:
+    - node
     - system
 _core:
   default_config_hash: AyMCT1boGFkm3MNXLyv6ZV7yMdWLY-U3WQLhzDDkWGE
@@ -32,8 +35,6 @@ permissions:
   - 'edit own video files'
   - 'moderate content from draft to needs_review'
   - 'moderate content from needs_review to draft'
-  - 'use text format filtered_html'
-  - 'use text format filtered_html_with_no_images'
   - 'use workbench_moderation my drafts tab'
   - 'use workbench_moderation needs review tab'
   - 'view all unpublished content'

@@ -12,7 +12,7 @@ dependencies:
 id: homepagetroublesinfoblock
 theme: victimspaymentsboard_theme
 region: front_welcome
-weight: 0
+weight: -6
 provider: null
 plugin: 'block_content:131f6977-0feb-41d5-8ab2-2b864c3d176c'
 settings:
@@ -27,4 +27,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '<front>'
+    pages: /home

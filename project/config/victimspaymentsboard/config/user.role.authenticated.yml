@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.faq
+    - node.type.page
+    - node.type.publication_page
   module:
     - node
     - path
@@ -38,8 +40,6 @@ permissions:
   - 'notify of path changes'
   - 'revert revisions'
   - 'use media wysiwyg'
-  - 'use text format filtered_html'
-  - 'use text format filtered_html_with_no_images'
   - 'view files'
   - 'view moderation history'
   - 'view moderation messages'
