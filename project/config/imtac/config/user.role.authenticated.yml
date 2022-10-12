@@ -1,26 +1,25 @@
-uuid: a3f0c195-4462-4a02-a4fe-9f5e820508ea
+uuid: 6341fc63-4a21-4be2-accc-b85d9b153de8
 langcode: en
 status: true
 dependencies:
   module:
+    - contact
+    - google_analytics
     - media
     - node
-    - search
+    - pathauto
     - system
 _core:
-  default_config_hash: zLyQwFO06-pj9Gj5UZMWuk_aAuAOSC8YqFEHItUk-Tc
+  default_config_hash: ttiBMK8DYIdLARGEG2nyY1Pv--Zz53eCjlO7fmrnAT4
 id: authenticated
-label: 'Authenticated user'
+label: 'authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
-  - 'access shortcuts'
-  - 'post comments'
-  - 'search content'
-  - 'skip comment approval'
-  - 'use text format basic_html'
+  - 'access site-wide contact form'
+  - 'notify of path changes'
+  - 'opt-in or out of google analytics tracking'
   - 'view all revisions'
   - 'view media'
   - 'view own unpublished content'
