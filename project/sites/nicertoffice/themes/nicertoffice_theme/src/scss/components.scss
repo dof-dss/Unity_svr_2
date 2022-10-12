@@ -24,9 +24,11 @@
   }
 }
 
+.front .region-slideshow {
+  margin-top: 6rem;
+}
+
 #main-menu {
-  margin-bottom: 6rem;
-  
   .menu {
     .menu-item {
       .active {
@@ -63,34 +65,39 @@
 
   .content {
     padding: 1rem;
+  }
 
-    ul {
-      margin-left: 1.5rem;
-      padding-bottom: 1.2rem;
+  ul {
+    margin-left: 2.4rem;
+    padding: 1rem 1rem 1.2rem 0;
 
-      li {
-        list-style: none;
+    li {
+      list-style: none;
 
-        &:before {
-          content: '-';
-          position: absolute;
-          left: -1px;
-        }
+      &:before {
+        content: '-';
+        position: absolute;
+        left: 9px;
       }
-    }
-
-    .btn {
-      text-align: center;
-      max-width: 190px;
-      display: flex;
-      justify-content: center;
-      margin-left: auto;
-      margin-right: auto;
     }
   }
 
+  .btn {
+    text-align: center;
+    max-width: 190px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   h2 {
-    @include responsive-typo-map($h3-text);
+    @include responsive-typo-map($h4-text);
+    padding: 1rem;
+  }
+
+  .block > h2,
+  h2 {
     margin: 0;
   }
 }
