@@ -1,0 +1,21 @@
+uuid: 50d323f2-96ee-4c01-9432-063c4c4d5445
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hia_date_published
+    - node.type.publication
+  module:
+    - datetime
+id: node.publication.field_hia_date_published
+field_name: field_hia_date_published
+entity_type: node
+bundle: publication
+label: 'Date published'
+description: 'Please select the published date from the pop-up calender.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

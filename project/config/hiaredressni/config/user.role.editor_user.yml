@@ -1,0 +1,79 @@
+uuid: 0a5f190b-d11a-4f48-bfc7-6433f389d8f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.faq
+    - node.type.publication
+  module:
+    - node
+    - redirect
+    - system
+id: editor_user
+label: 'editor user'
+weight: 5
+is_admin: null
+permissions:
+  - 'access administration menu'
+  - 'access administration pages'
+  - 'access ckeditor link'
+  - 'add content to books'
+  - 'add media from remote sources'
+  - 'administer book outlines'
+  - 'administer main-menu menu items'
+  - 'administer nodes'
+  - 'administer redirects'
+  - 'create files'
+  - 'create new books'
+  - 'create publication_page content'
+  - 'delete any audio files'
+  - 'delete any document files'
+  - 'delete any faq content'
+  - 'delete any image files'
+  - 'delete any page content'
+  - 'delete any publication content'
+  - 'delete any publication_page content'
+  - 'delete any staff_member content'
+  - 'delete any video files'
+  - 'delete own audio files'
+  - 'delete own document files'
+  - 'delete own image files'
+  - 'delete own publication_page content'
+  - 'delete own video files'
+  - 'delete revisions'
+  - 'download any audio files'
+  - 'download any document files'
+  - 'download any image files'
+  - 'download any video files'
+  - 'download own audio files'
+  - 'download own document files'
+  - 'download own image files'
+  - 'download own video files'
+  - 'edit any audio files'
+  - 'edit any document files'
+  - 'edit any image files'
+  - 'edit any publication_page content'
+  - 'edit any video files'
+  - 'edit own audio files'
+  - 'edit own document files'
+  - 'edit own image files'
+  - 'edit own publication_page content'
+  - 'edit own video files'
+  - 'flag content_audit'
+  - 'moderate content from draft to needs_review'
+  - 'moderate content from needs_review to draft'
+  - 'moderate content from needs_review to published'
+  - 'moderate content from published to needs_review'
+  - 'schedule revisions'
+  - 'show book reorder tab'
+  - 'show core Outline form element'
+  - 'show core Outline tab'
+  - 'unflag content_audit'
+  - 'use text format filtered_html'
+  - 'use text format filtered_html_with_no_images'
+  - 'use text format filtered_html_with_tokens'
+  - 'use workbench_moderation my drafts tab'
+  - 'use workbench_moderation needs review tab'
+  - 'view all unpublished content'
+  - 'view own files'
+  - 'view the administration theme'

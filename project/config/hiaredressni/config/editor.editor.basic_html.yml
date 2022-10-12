@@ -58,12 +58,13 @@ settings:
             - SpecialChar
             - Maximize
   plugins:
-    stylescombo:
-      styles: "p.info-notice|Information notice\r\na.btn|Button"
+    drupallink:
+      linkit_enabled: false
+      linkit_profile: ''
     language:
       language_list: un
-    linkit:
-      linkit_profile: default
+    stylescombo:
+      styles: "p.info-notice|Information notice\r\na.btn|Button"
     tokenbrowser:
       token_types: {  }
 image_upload:
