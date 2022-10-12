@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.field.node.publication.body
     - field.field.node.publication.field_attachment
-    - field.field.node.publication.field_hia_attachment
-    - field.field.node.publication.field_hia_date_published
     - field.field.node.publication.field_meta_tags
     - field.field.node.publication.field_photo
     - field.field.node.publication.field_publication_type
@@ -17,7 +15,6 @@ dependencies:
   module:
     - content_moderation
     - datetime
-    - file
     - media_library
     - media_library_edit
     - metatag
@@ -55,19 +52,6 @@ content:
     third_party_settings:
       media_library_edit:
         show_edit: '1'
-  field_hia_attachment:
-    type: file_generic
-    weight: 3
-    region: content
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-  field_hia_date_published:
-    type: datetime_default
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_meta_tags:
     type: metatag_firehose
     weight: 16

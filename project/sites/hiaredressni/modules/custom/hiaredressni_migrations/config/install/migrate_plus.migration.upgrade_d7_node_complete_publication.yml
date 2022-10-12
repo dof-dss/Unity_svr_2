@@ -81,11 +81,32 @@ process:
       plugin: get
       source: body
     -
-      plugin: str_replace
-      regex: true
-      search: /(<ul>)?(<li>)?(<div[^>]*>)?<a href="(\S+?files\/\S+)".*?>\s*[^<]*(\([^<]*\))?<\/a>(<\/div>)?(<\/li>)?(<\/ul>)?/
-      replace: ''
-  field_hia_date_published:
+      plugin: media_wysiwyg_filter
+    -
+      plugin: filter_absolute_links
+      replace_urls:
+        http://www.hiaredressni.uk
+        https://www.hiaredressni.uk
+    -
+      plugin: site_files_filter
+      from_ref: sites/hiaredressni/files
+      to_ref: files/hiaredressni
+    -
+      plugin: site_files_filter
+      from_ref: sites/hiaredressni.uk/files
+      to_ref: files/hiaredressni
+  body/0/format:
+    -
+      plugin: static_map
+      bypass: true
+      source: body/0/format
+      map:
+        filtered_html: basic_html
+        filtered_html_with_no_images: basic_html
+        filtered_html_with_tokens: basic_html
+        restricted_html: basic_html
+        plain_text: plain_text
+  field_published_date:
     -
       plugin: sub_process
       source: field_hia_date_published
@@ -95,7 +116,7 @@ process:
           from_format: 'Y-m-d H:i:s'
           to_format: Y-m-d
           source: value
-  field_hia_attachment:
+  field_attachment:
     -
       plugin: sub_process
       source: field_hia_attachment
