@@ -415,8 +415,17 @@ display:
             operator_list: {  }
       style:
         type: default
+        options:
+          grouping: {  }
+          row_class: content
+          default_row_class: false
       row:
         type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       query:
         type: views_query
         options:
