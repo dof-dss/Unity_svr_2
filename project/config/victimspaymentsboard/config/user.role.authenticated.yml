@@ -2,13 +2,10 @@ uuid: 9f228af1-41f7-43df-8198-f01587aa3fe7
 langcode: en
 status: true
 dependencies:
-  config:
-    - node.type.faq
-    - node.type.page
-    - node.type.publication_page
   module:
+    - google_analytics
+    - media
     - node
-    - path
     - pathauto
     - system
 _core:
@@ -19,30 +16,18 @@ weight: 1
 is_admin: false
 permissions:
   - 'access administration menu'
-  - 'access administration pages'
   - 'access content'
   - 'access media browser'
   - 'access workbench'
-  - 'create faq content'
-  - 'create page content'
-  - 'create publication_page content'
-  - 'create url aliases'
-  - 'delete own faq content'
-  - 'delete own page content'
-  - 'delete own publication_page content'
   - 'diff view changes'
-  - 'edit any faq content'
-  - 'edit any page content'
-  - 'edit any publication_page content'
-  - 'edit own faq content'
-  - 'edit own page content'
-  - 'edit own publication_page content'
   - 'notify of path changes'
+  - 'opt-in or out of google analytics tracking'
   - 'revert revisions'
   - 'use media wysiwyg'
+  - 'view all revisions'
   - 'view files'
+  - 'view media'
   - 'view moderation history'
   - 'view moderation messages'
   - 'view own unpublished content'
   - 'view revisions'
-  - 'view the administration theme'

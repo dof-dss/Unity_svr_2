@@ -16,9 +16,13 @@
       outline-offset: 1.2rem;
     }
   }
-
-  img {
-    height: 90px;
+    img {
+      height: 80px;
+    }
+    @include breakpoint($tab) {
+    img {
+      height: 90px;
+    }
   }
 }
 
@@ -73,7 +77,7 @@
 }
 
 #top-area {
-  display:flex;
+  display: flex;
 }
 
 #footer {

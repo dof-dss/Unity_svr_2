@@ -1,24 +1,25 @@
-uuid: e3035587-d510-49f6-9c88-35f650fcb7d6
+uuid: 7e0f9afe-6909-4e4b-8576-e9b1dcbdada4
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.restricted_html
   module:
-    - contact
     - eu_cookie_compliance
     - filter
     - media
+    - search
     - system
 _core:
-  default_config_hash: 9LODQAOK6MOVWRCgrgZRvkIYBG5aX0Ksd4ygTzmuFVo
+  default_config_hash: aj6ZXi0r2a2rs9TYsol23lyiTqdAokujUQnBl33OdFA
 id: anonymous
-label: 'anonymous user'
+label: 'Anonymous user'
 weight: 0
 is_admin: false
 permissions:
+  - 'access comments'
   - 'access content'
-  - 'access site-wide contact form'
   - 'display eu cookie compliance popup'
+  - 'search content'
   - 'use text format restricted_html'
   - 'view media'
