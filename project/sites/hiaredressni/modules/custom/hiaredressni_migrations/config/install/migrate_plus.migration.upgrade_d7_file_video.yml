@@ -1,20 +1,21 @@
-uuid: a38a90e1-fe53-4196-938e-54dc863bb262
+uuid: a38a90e1-fe56-4196-938e-54dc863bb262
 langcode: en
 status: true
 dependencies: {  }
-id: upgrade_d7_file_audio
+id: upgrade_d7_file_video
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: alterFieldInstanceMigration
 cck_plugin_method: null
 migration_tags:
   - Custom
-migration_group: migrate_drupal_7
+migration_group: migrate_drupal_7_file
 label: 'Public files'
 source:
   plugin: file_entity
-  type: audio
+  type: video
+  batch_size: 1000
   constants:
-    bundle: audio
+    bundle: remote_video
 process:
   mid: fid
   bundle: constants/bundle
@@ -34,11 +35,15 @@ process:
   status: status
   created: timestamp
   changed: timestamp
-  field_media_audio/target_id: fid
+  field_media_oembed_video:
+    -
+      source: uri
+      plugin: video_url
   field_title: field_title
   field_transcript: field_transcript
 destination:
   plugin: 'entity:media'
 migration_dependencies:
-  required: {  }
+  required:
+    - upgrade_d7_file
   optional: {  }

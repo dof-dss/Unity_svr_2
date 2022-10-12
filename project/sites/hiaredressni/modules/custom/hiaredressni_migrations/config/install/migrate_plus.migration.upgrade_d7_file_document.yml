@@ -14,14 +14,14 @@ source:
   plugin: file_entity
   type: document
   constants:
-    bundle: 'document'
+    bundle: document
 process:
   mid: fid
-  bundle: 'constants/bundle'
+  bundle: constants/bundle
   langcode:
     plugin: default_value
     source: language
-    default_value: "und"
+    default_value: und
   name: field_file_title
   uid:
     -
@@ -38,7 +38,7 @@ process:
   field_media_doc_file_language: field_file_language
   field_media_doc_file_title: field_file_title
 destination:
-  plugin: entity:media
+  plugin: 'entity:media'
 migration_dependencies:
   required:
     - upgrade_d7_file
