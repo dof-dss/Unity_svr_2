@@ -1,0 +1,19 @@
+uuid: 67ac6c30-fd25-4107-be4d-f15ce1f79f67
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+      - menu-side-menu
+    parent: 'main-menu:0:'
+name: 'Basic page'
+type: page
+description: 'Use <em>basic pages</em> for your static content, such as an ''About us'' page.'
+help: 'Use this content type to create pages on your site'
+new_revision: true
+preview_mode: 1
+display_submitted: false

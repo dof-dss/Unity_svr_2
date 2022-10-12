@@ -1,0 +1,15 @@
+uuid: bca70564-dd3c-481f-8d95-76af913c6a80
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: Production
+description: 'Used for the production site only.'
+weight: 0
+folder: ../project/config/hiaredressni/production
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
