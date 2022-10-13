@@ -5,7 +5,6 @@ dependencies:
   config:
     - filter.format.basic_html
   module:
-    - contact
     - filter
     - media
     - node
@@ -20,7 +19,6 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access shortcuts'
-  - 'access site-wide contact form'
   - 'post comments'
   - 'skip comment approval'
   - 'use text format basic_html'

@@ -1,0 +1,24 @@
+uuid: 1f6f9a63-d735-4b6b-b554-e32460fae390
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slideshow
+  module:
+    - views
+  theme:
+    - nicertoffice_theme
+id: views_block__slideshow_slideshow
+theme: nicertoffice_theme
+region: slideshow
+weight: 0
+provider: null
+plugin: 'views_block:slideshow-slideshow'
+settings:
+  id: 'views_block:slideshow-slideshow'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

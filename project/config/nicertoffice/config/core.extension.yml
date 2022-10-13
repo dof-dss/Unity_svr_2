@@ -90,7 +90,6 @@ module:
   origins_media: 0
   origins_metatag: 0
   origins_toc: 0
-  origins_translations: 0
   origins_unique_title: 0
   page_cache: 0
   path: 0

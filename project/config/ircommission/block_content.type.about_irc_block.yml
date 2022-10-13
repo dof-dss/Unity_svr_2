@@ -1,8 +1,0 @@
-uuid: 275f619f-bf67-45d9-a867-b71b9798b20e
-langcode: en
-status: true
-dependencies: {  }
-id: about_irc_block
-label: 'About IRC block'
-revision: 0
-description: 'About IRC block'

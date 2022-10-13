@@ -1,0 +1,15 @@
+uuid: bca07aa2-120f-48cc-9921-eb4bcd8e889a
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: production
+description: 'Used for production site.'
+weight: 0
+folder: ../config/ircommission/production
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

@@ -1,0 +1,30 @@
+uuid: 2e5165ae-fc77-4d09-812d-81519512538e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - origins_toc
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  origins_toc:
+    toc_enable: 0
+    toc_title: 'Table of contents'
+    toc_location: ''
+    toc_insert: after
+    toc_source_container: ''
+    toc_element: h2
+    toc_exclusions: ''
+    toc_screen_depth: '1'
+    toc_debug: 0
+_core:
+  default_config_hash: XFxZcSdtUkLqnpTQpfoIAQcBvrMJn0ZRKCCGPrTY6kc
+name: 'Featured content list'
+type: featured_content_list
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

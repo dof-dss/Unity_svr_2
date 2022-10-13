@@ -80,4 +80,3 @@ solr:
         core: hiaredressni_index
 redis:
   type: 'redis:6.0'
-

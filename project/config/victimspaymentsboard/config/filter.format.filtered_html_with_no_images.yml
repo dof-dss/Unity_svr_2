@@ -1,0 +1,16 @@
+uuid: c10f20e9-a0b1-4e8a-ada9-0b157fe95902
+langcode: en
+status: false
+dependencies: {  }
+_core:
+  default_config_hash: iLWPgqDSNI0e3ScembnTpGyTVzSLofjJ8bo79zrIUk4
+name: 'Filtered HTML with no images'
+format: filtered_html_with_no_images
+weight: 0
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }

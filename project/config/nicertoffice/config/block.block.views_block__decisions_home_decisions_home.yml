@@ -1,0 +1,24 @@
+uuid: af2c73f9-9ca1-4b5d-ae6f-25c2176f2d79
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.decisions_home
+  module:
+    - views
+  theme:
+    - nicertoffice_theme
+id: views_block__decisions_home_decisions_home
+theme: nicertoffice_theme
+region: bottom_widget_3
+weight: 0
+provider: null
+plugin: 'views_block:decisions_home-decisions_home'
+settings:
+  id: 'views_block:decisions_home-decisions_home'
+  label: Decisions
+  label_display: visible
+  provider: views
+  views_label: Decisions
+  items_per_page: none
+visibility: {  }

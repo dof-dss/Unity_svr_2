@@ -1,0 +1,23 @@
+uuid: 9431b4cc-d1cf-4323-8279-73a6232e378c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.staff_member
+  module:
+    - options
+id: node.staff_member.field_type
+field_name: field_type
+entity_type: node
+bundle: staff_member
+label: Type
+description: 'Please choose a borad member type.'
+required: true
+translatable: false
+default_value:
+  -
+    value: judge
+default_value_callback: ''
+settings: {  }
+field_type: list_string

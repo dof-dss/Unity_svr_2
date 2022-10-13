@@ -9,22 +9,9 @@ blocks:
     fields:
       body:
         -
-          value: "<address>Imtac</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>Titanic Suites</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>55-59 Adelaide Street</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>Belfast BT2 8FE</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>\r\n<address>Tel/Textphone: 028 9072 6020</address>\r\n\r\n<address>&nbsp;</address>\r\n\r\n<address>Email: <a href=\"mailto:info@imtac.org.uk\">info@imtac.org.uk</a></address>\r\n</address>\r\n"
+          value: "<address>Imtac<br />\r\nTitanic Suites<br />\r\n55-59 Adelaide Street<br />\r\nBelfast<br />\r\nBT2 8FE<br />\r\nTel: 028 9072 6020<br />\r\nEmail: <a href=\"mailto:info@imtac.org.uk\">info@imtac.org.uk</a>&nbsp;</address>\r\n"
           summary: null
           format: full_html
-  -
-    info: 'Credits block'
-    langcode: en
-    uuid: 4ab92eee-abf8-4f2a-a9cd-de61a3235ada
-    bundle: basic_block
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p>© Crown Copyright | <a href=\"/node/12\">Cookies</a> | <a href=\"/node/11\">Accessibility</a></p>\r\n"
-          summary: null
-          format: basic_html
   -
     info: 'IMTAC Twitter Feed'
     langcode: en
@@ -35,8 +22,8 @@ blocks:
     fields:
       body:
         -
-          value: "<p><iframe allowfullscreen=\"true\" allowtransparency=\"true\" frameborder=\"0\" id=\"twitter-widget-0\" scrolling=\"no\" src=\"https://syndication.twitter.com/srv/timeline-profile/screen-name/ImtacNI?dnt=false&amp;embedId=twitter-widget-0&amp;frame=false&amp;lang=en&amp;limit=3&amp;origin=https%3A%2F%2Fwww.imtac.org.uk.staging-5em2ouy-erekdd7fnk5be.uk-1.platformsh.site%2F&amp;sessionId=933b1379176de7b2a6a6cbf46ce2f1e4628d1646&amp;showHeader=false&amp;showReplies=false&amp;widgetsVersion=31f0cdc1eaa0f%3A1660602114609\" style=\"position: static; visibility: visible; width: 300px; height: 772px; display: block; flex-grow: 1;\" title=\"Twitter Timeline\"></iframe></p>\r\n"
-          summary: ''
+          value: "<p><a class=\"twitter-timeline\" data-height=\"900\" href=\"https://twitter.com/ImtacNI?ref_src=twsrc%5Etfw\">Tweets by ImtacNI</a> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></p>\r\n"
+          summary: null
           format: full_html
   -
     info: 'Twitter Link'
@@ -48,6 +35,24 @@ blocks:
     fields:
       body:
         -
-          value: '<a href="https://twitter.com/imtacni" rel="noopener noreferrer"><i class="fab fa-twitter"><span class="visually-hidden">Follow us on Twitter</span></i></a>'
+          value: '<a href="https://twitter.com/imtacni?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @imtacni</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
           summary: null
           format: full_html
+  -
+    info: 'Social links'
+    langcode: en
+    uuid: 8437723e-42f4-4e23-b8f1-b05ff30da5dc
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body: {  }
+  -
+    info: 'Twitter block'
+    langcode: en
+    uuid: 5b9fdc63-a592-4648-ad87-1d358331625c
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body: {  }

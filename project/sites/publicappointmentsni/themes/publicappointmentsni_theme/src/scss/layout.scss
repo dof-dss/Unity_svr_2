@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> development
 /*
  * @file
  * Defines the layout code for the theme.
@@ -7,6 +10,17 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/2_layout/index';
 
+<<<<<<< HEAD
+=======
+.node-type-faq,
+.node-type-board-member {
+  .content-sidebar-wrap {
+    @include breakpoint($tab) {
+      width: 65%;
+    }
+  }
+}
+>>>>>>> development
 .path-news,
 .path-publications {
   .content-sidebar-wrap {
@@ -43,4 +57,54 @@
     }
   }
 }
+<<<<<<< HEAD
 >>>>>>> 3ff72c1 (Publications styling)
+=======
+
+#footer {
+  max-width: 100%;
+  padding: 2rem;
+
+  #footer-area .footer-menu .menu .menu-item a {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-menu {
+    li {
+      padding-left: 0;
+      font-size: 1.4rem;
+      display: block;
+
+      @include breakpoint($tab) {
+        display: inline-block;
+        padding: 0 .8rem 0 0;
+        line-height: 1.8rem;
+        margin-right: .5rem;
+      }
+    }
+  }
+
+  .footer-area {
+    display: flex;
+    flex-flow: wrap;
+    margin-bottom: 1rem;
+
+    .column {
+      float: none;
+      width: unset;
+      flex-basis: 33%;
+      flex-grow: 1;
+
+      &:first-child {
+        padding-left: 0;
+        margin-left: 0;
+      }
+
+      li {
+        border: none;
+      }
+    }
+  }
+}
+>>>>>>> development

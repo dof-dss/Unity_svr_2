@@ -1,0 +1,28 @@
+uuid: be204d31-5d42-4a14-bd56-fd44b59532ea
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: local
+description: "Local development split. \r\nEnables debugging and development modules"
+weight: 0
+folder: ../project/config/ircommission/local
+module:
+  easy_install: 0
+  migrate: 0
+  migrate_absolute_links: 0
+  migrate_drupal: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  unity_file_migrations: 0
+  dblog: 0
+  devel: 0
+  ircommission: 0
+  migrate_upgrade: 0
+  update: 0
+  views_ui: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

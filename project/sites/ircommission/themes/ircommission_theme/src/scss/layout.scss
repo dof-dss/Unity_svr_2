@@ -1,0 +1,59 @@
+/*
+ * @file
+ * Defines the layout code for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/2_layout/index';
+
+.front {
+  .front-banner{
+    max-width: 1023px;
+    margin: 0 auto;
+
+    @include breakpoint($tab) {
+      margin: 0 auto 4rem;
+    }
+  }
+}
+
+.content {
+  span {
+    color: $brand-primary;
+  }
+  .page-content{
+    color: $charcoal;
+  }
+}
+
+.page-title span{
+  color: $brand-tertiary;
+}
+
+.menu.menu-main {
+  background-color: $charcoal;
+}
+
+#edit-submit-search {
+  color: $charcoal;
+}
+
+.content-sidebar-wrap .main-content {
+  margin-bottom: 0 ;
+}
+
+.front .front-banner{
+  margin: 0 auto;
+}
+
+.footer-area .column {
+  padding:0;
+}
+
+.views-row.search-result {
+  border-bottom: 1px solid $grey-medium;
+}
+
+
+
+
+

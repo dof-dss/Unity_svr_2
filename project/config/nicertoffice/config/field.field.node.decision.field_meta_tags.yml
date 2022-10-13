@@ -1,0 +1,21 @@
+uuid: ad3f8cb0-1a0b-44b5-8c98-b52f8d77b197
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.decision
+  module:
+    - metatag
+id: node.decision.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: decision
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

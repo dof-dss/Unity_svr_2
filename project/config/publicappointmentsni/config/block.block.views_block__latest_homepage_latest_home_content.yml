@@ -1,0 +1,29 @@
+uuid: 85253b74-f424-4ec1-b7e2-77536ab97140
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_homepage
+  module:
+    - system
+    - views
+  theme:
+    - publicappointmentsni_theme
+id: views_block__latest_homepage_latest_home_content
+theme: publicappointmentsni_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:latest_homepage-latest_home_content'
+settings:
+  id: 'views_block:latest_homepage-latest_home_content'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

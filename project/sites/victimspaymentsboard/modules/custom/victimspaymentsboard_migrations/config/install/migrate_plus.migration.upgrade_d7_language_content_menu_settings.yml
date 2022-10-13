@@ -1,0 +1,53 @@
+uuid: 47e311ec-bd00-4db5-8c7c-9818e86e521d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: cus-nhG3f6vgw-phKgk7NVsCO7NPZTjVm0xa0aMX6Ms
+id: upgrade_d7_language_content_menu_settings
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Drupal 7 language content menu settings'
+source:
+  plugin: extension
+  name: i18n_menu
+  constants:
+    target_type: menu_link_content
+    langcode: site_default
+    enabled: true
+    hide: 0
+process:
+  target_entity_type_id:
+    -
+      plugin: get
+      source: constants/target_type
+  target_bundle:
+    -
+      plugin: get
+      source: constants/target_type
+  default_langcode:
+    -
+      plugin: get
+      source: constants/langcode
+  language_alterable:
+    -
+      plugin: get
+      source: status
+  third_party_settings/content_translation/enabled:
+    -
+      plugin: get
+      source: constants/enabled
+  third_party_settings/content_translation/bundle_settings/untranslatable_fields_hide:
+    -
+      plugin: get
+      source: constants/hide
+destination:
+  plugin: 'entity:language_content_settings'
+migration_dependencies:
+  required: {  }
+  optional: {  }

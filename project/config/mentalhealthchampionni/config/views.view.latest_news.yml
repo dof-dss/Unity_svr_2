@@ -183,8 +183,8 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  block_1:
-    id: block_1
+  home_latest_news:
+    id: home_latest_news
     display_title: 'Latest News (Home)'
     display_plugin: block
     position: 2

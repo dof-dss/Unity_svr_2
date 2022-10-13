@@ -1,0 +1,188 @@
+uuid: 9a379354-4529-43a8-9b8b-0842a597ffea
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.node.layout_page.default
+    - media.type.audio
+    - media.type.document
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - node.type.feature
+    - node.type.featured_content_list
+    - node.type.layout_page
+    - node.type.link
+    - node.type.news
+    - node.type.page
+    - node.type.profile
+    - node.type.publication_page
+    - workflows.workflow.nics_editorial_workflow
+  module:
+    - content_moderation
+    - contextual
+    - entity_browser
+    - entityqueue
+    - file
+    - layout_builder
+    - media
+    - menu_admin_per_menu
+    - moderation_sidebar
+    - node
+    - origins_metatag
+    - origins_workflow
+    - path
+    - redirect
+    - scheduled_transitions
+    - system
+    - toolbar
+    - whatlinkshere
+_core:
+  default_config_hash: cI6O43jts_j67JaySnvjojNUQYYJXQmbWghOsb7iQNY
+id: supervisor_user
+label: 'supervisor user'
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access location_browser entity browser pages'
+  - 'access toolbar'
+  - 'add scheduled transitions node featured_content_list'
+  - 'add scheduled transitions node layout_page'
+  - 'add scheduled transitions node link'
+  - 'add scheduled transitions node news'
+  - 'add scheduled transitions node page'
+  - 'add scheduled transitions node profile'
+  - 'add scheduled transitions node publication_page'
+  - 'administer main menu items'
+  - 'administer redirects'
+  - 'audit content'
+  - 'configure editable layout_page node layout overrides'
+  - 'create and edit custom blocks'
+  - 'create audio media'
+  - 'create document media'
+  - 'create feature content'
+  - 'create featured_content_list content'
+  - 'create file media'
+  - 'create image media'
+  - 'create layout_page content'
+  - 'create link content'
+  - 'create news content'
+  - 'create page content'
+  - 'create profile content'
+  - 'create publication_page content'
+  - 'create remote_video media'
+  - 'create url aliases'
+  - 'delete all revisions'
+  - 'delete any audio media'
+  - 'delete any document media'
+  - 'delete any feature content'
+  - 'delete any featured_content_list content'
+  - 'delete any file media'
+  - 'delete any image media'
+  - 'delete any layout_page content'
+  - 'delete any link content'
+  - 'delete any news content'
+  - 'delete any page content'
+  - 'delete any profile content'
+  - 'delete any publication_page content'
+  - 'delete any remote_video media'
+  - 'delete feature revisions'
+  - 'delete featured_content_list revisions'
+  - 'delete layout_page revisions'
+  - 'delete link revisions'
+  - 'delete news revisions'
+  - 'delete own audio media'
+  - 'delete own document media'
+  - 'delete own feature content'
+  - 'delete own featured_content_list content'
+  - 'delete own file media'
+  - 'delete own image media'
+  - 'delete own layout_page content'
+  - 'delete own link content'
+  - 'delete own news content'
+  - 'delete own page content'
+  - 'delete own profile content'
+  - 'delete own publication_page content'
+  - 'delete own remote_video media'
+  - 'delete page revisions'
+  - 'delete profile revisions'
+  - 'delete publication_page revisions'
+  - 'edit any audio media'
+  - 'edit any document media'
+  - 'edit any feature content'
+  - 'edit any featured_content_list content'
+  - 'edit any file media'
+  - 'edit any image media'
+  - 'edit any layout_page content'
+  - 'edit any link content'
+  - 'edit any news content'
+  - 'edit any page content'
+  - 'edit any profile content'
+  - 'edit any publication_page content'
+  - 'edit any remote_video media'
+  - 'edit basic meta tags'
+  - 'edit own audio media'
+  - 'edit own document media'
+  - 'edit own feature content'
+  - 'edit own featured_content_list content'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'edit own layout_page content'
+  - 'edit own link content'
+  - 'edit own news content'
+  - 'edit own page content'
+  - 'edit own profile content'
+  - 'edit own publication_page content'
+  - 'edit own remote_video media'
+  - 'manipulate entityqueues'
+  - 'reschedule scheduled transitions node featured_content_list'
+  - 'reschedule scheduled transitions node layout_page'
+  - 'reschedule scheduled transitions node link'
+  - 'reschedule scheduled transitions node news'
+  - 'reschedule scheduled transitions node page'
+  - 'reschedule scheduled transitions node profile'
+  - 'reschedule scheduled transitions node publication_page'
+  - 'revert all revisions'
+  - 'revert feature revisions'
+  - 'revert featured_content_list revisions'
+  - 'revert layout_page revisions'
+  - 'revert link revisions'
+  - 'revert news revisions'
+  - 'revert page revisions'
+  - 'revert profile revisions'
+  - 'revert publication_page revisions'
+  - 'update slideshow entityqueue'
+  - 'use moderation sidebar'
+  - 'use nics_editorial_workflow transition archive'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition publish'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition restore'
+  - 'use nics_editorial_workflow transition restore_to_draft'
+  - 'use nics_editorial_workflow transition submit_for_review'
+  - 'view all scheduled transitions'
+  - 'view any unpublished content'
+  - 'view content references'
+  - 'view feature revisions'
+  - 'view featured_content_list revisions'
+  - 'view latest version'
+  - 'view layout_page revisions'
+  - 'view link revisions'
+  - 'view news revisions'
+  - 'view own unpublished media'
+  - 'view page revisions'
+  - 'view profile revisions'
+  - 'view publication_page revisions'
+  - 'view scheduled transitions node featured_content_list'
+  - 'view scheduled transitions node layout_page'
+  - 'view scheduled transitions node link'
+  - 'view scheduled transitions node news'
+  - 'view scheduled transitions node page'
+  - 'view scheduled transitions node profile'
+  - 'view scheduled transitions node publication_page'
+  - 'view the administration theme'

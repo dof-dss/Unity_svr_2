@@ -1,0 +1,55 @@
+uuid: 0a326c75-73e1-4329-9b07-5a3c3f5b7626
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ANrYYnwIgTrCwxb9SC84Amx5X_KpLTZ6aLQuodMHWgo
+id: upgrade_user_picture_field
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'User picture field configuration'
+source:
+  plugin: md_empty
+  constants:
+    entity_type: user
+    type: image
+    name: user_picture
+    cardinality: 1
+  source_module: user
+process:
+  entity_type:
+    -
+      plugin: get
+      source: constants/entity_type
+    -
+      plugin: static_map
+      map:
+        field_collection_item: paragraph
+        paragraphs_item: paragraph
+      bypass: true
+  field_name:
+    -
+      plugin: get
+      source: constants/name
+  type:
+    -
+      plugin: get
+      source: constants/type
+  cardinality:
+    -
+      plugin: get
+      source: constants/cardinality
+destination:
+  plugin: 'entity:field_storage_config'
+  dependencies:
+    module:
+      - image
+migration_dependencies:
+  required: {  }
+  optional: {  }

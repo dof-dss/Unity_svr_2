@@ -3,7 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.feature
     - node.type.news
+    - node.type.page
+    - node.type.publication_page
     - node.type.webform
   module:
     - content_moderation
@@ -94,6 +97,9 @@ type_settings:
       weight: -2
   entity_types:
     node:
+      - feature
       - news
+      - page
+      - publication_page
       - webform
   default_moderation_state: draft
