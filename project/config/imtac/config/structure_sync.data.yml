@@ -1,0 +1,58 @@
+blocks:
+  -
+    info: 'IMTAC Info footer'
+    langcode: en
+    uuid: d452e45a-10ce-4384-93cb-e0cd1c7be88a
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<address>Imtac<br />\r\nTitanic Suites<br />\r\n55-59 Adelaide Street<br />\r\nBelfast<br />\r\nBT2 8FE<br />\r\nTel: 028 9072 6020<br />\r\nEmail: <a href=\"mailto:info@imtac.org.uk\">info@imtac.org.uk</a>&nbsp;</address>\r\n"
+          summary: null
+          format: full_html
+  -
+    info: 'IMTAC Twitter Feed'
+    langcode: en
+    uuid: a0cbee02-5890-4625-9769-775a1d200ec0
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p><a class=\"twitter-timeline\" data-height=\"900\" href=\"https://twitter.com/ImtacNI?ref_src=twsrc%5Etfw\">Tweets by ImtacNI</a> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script></p>\r\n"
+          summary: null
+          format: full_html
+  -
+    info: 'Twitter Link'
+    langcode: en
+    uuid: f5242088-8322-42a7-b5ba-b85e189dde01
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: '<a href="https://twitter.com/imtacni?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @imtacni</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
+          summary: null
+          format: full_html
+  -
+    info: 'Social links'
+    langcode: en
+    uuid: 8437723e-42f4-4e23-b8f1-b05ff30da5dc
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body: {  }
+  -
+    info: 'Twitter block'
+    langcode: en
+    uuid: 5b9fdc63-a592-4648-ad87-1d358331625c
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body: {  }

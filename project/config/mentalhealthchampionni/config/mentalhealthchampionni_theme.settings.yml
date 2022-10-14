@@ -1,0 +1,16 @@
+features:
+  node_user_picture: 1
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: 1
+logo:
+  use_default: 1
+favicon:
+  use_default: 1
+basic_page_structure: 1
+twitter_profile_url: 'https://twitter.com/MHC_NI'
+facebook_profile_url: 'https://www.facebook.com/MentalHealthChampionNI'
+linkedin_profile_url: ''
+pinterest_profile_url: ''
+youtube_profile_url: ''
+instagram_profile_url: 'https://www.instagram.com/mentalhealthchampion_ni'

@@ -1,0 +1,29 @@
+uuid: 7df1dd36-c9ef-4ed5-90af-dffd44654c21
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_search
+  module:
+    - system
+    - views
+  theme:
+    - mentalhealthchampionni_theme
+id: exposedformnews_searchnews_search_page
+theme: mentalhealthchampionni_theme
+region: search_facets
+weight: -5
+provider: null
+plugin: 'views_exposed_filter_block:news_search-news_search_page'
+settings:
+  id: 'views_exposed_filter_block:news_search-news_search_page'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/news\r\n/news/date/*"
