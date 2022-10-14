@@ -1,8 +1,0 @@
-uuid: 58384328-05ff-4466-8248-23dd15daf7dd
-langcode: en
-status: true
-dependencies: {  }
-name: 'Publication types'
-vid: publication_types
-description: 'Publications types for use with the Publication content type'
-weight: 0

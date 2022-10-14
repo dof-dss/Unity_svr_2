@@ -1,8 +1,0 @@
-uuid: fb694884-8503-4606-9836-45fbf18f6429
-langcode: en
-status: true
-dependencies: {  }
-id: imtac_time
-label: 'IMTAC Time'
-locked: false
-pattern: 'l, d F Y'

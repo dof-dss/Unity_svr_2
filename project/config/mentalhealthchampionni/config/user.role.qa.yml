@@ -1,9 +1,0 @@
-uuid: 81d71bbb-9fc1-4410-a1bd-9396de453b86
-langcode: en
-status: true
-dependencies: {  }
-id: qa
-label: 'Quality Assurance'
-weight: 6
-is_admin: null
-permissions: {  }
