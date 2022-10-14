@@ -1,64 +1,64 @@
 'https://www.mentalhealthchampion-ni.org.uk.{default}/':
-  type: upstream
-  upstream: 'unity_svr_2:http'
-  cache:
-    enabled: 'false'
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
 'https://mentalhealthchampion-ni.org.uk.{default}/':
-  type: redirect
-  to: 'https://www.mentalhealthchampion-ni.org.uk.{default}/'
+    type: redirect
+    to: 'https://www.mentalhealthchampion-ni.org.uk.{default}/'
 'https://www.publicappointmentsni.org/':
-  type: upstream
-  upstream: 'unity_svr_2:http'
-  cache:
-    enabled: 'false'
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
 'https://publicappointmentsni.org/':
-  type: redirect
-  to: 'https://www.publicappointmentsni.org/'
+    type: redirect
+    to: 'https://www.publicappointmentsni.org/'
 'https://www.ircommission.org/':
-  type: upstream
-  upstream: 'unity_svr_2:http'
-  cache:
-    enabled: 'false'
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
 'https://ircommission.org/':
-  type: redirect
-  to: 'https://www.ircommission.org/'
+    type: redirect
+    to: 'https://www.ircommission.org/'
 'https://www.imtac.org.uk/':
-  type: upstream
-  upstream: 'unity_svr_2:http'
-  cache:
-    enabled: 'false'
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
 'https://imtac.org.uk/':
-  type: redirect
-  to: 'https://www.imtac.org.uk/'
+    type: redirect
+    to: 'https://www.imtac.org.uk/'
 'https://www.nicertoffice.org.uk/':
-  type: upstream
-  upstream: 'unity_svr_2:http'
-  cache:
-    enabled: 'false'
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
 'https://nicertoffice.org.uk/':
-  type: redirect
-  to: 'https://www.nicertoffice.org.uk/'
+    type: redirect
+    to: 'https://www.nicertoffice.org.uk/'
 'https://www.victimspaymentsboard.org.uk/':
-  type: upstream
-  upstream: 'unity_svr_2:http'
-  cache:
-    enabled: 'false'
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
 'https://victimspaymentsboard.org.uk/':
-  type: redirect
-  to: 'https://www.victimspaymentsboard.org.uk/'
+    type: redirect
+    to: 'https://www.victimspaymentsboard.org.uk/'
 'https://www.hiaredressni.uk/':
-  type: upstream
-  upstream: 'unity_svr_2:http'
-  cache:
-    enabled: 'false'
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
 'https://hiaredressni.uk/':
-  type: redirect
-  to: 'https://www.hiaredressni.uk/'
+    type: redirect
+    to: 'https://www.hiaredressni.uk/'
 'https://www.{all}/':
-  type: upstream
-  upstream: 'unity_svr_2:http'
-  cache:
-    enabled: 'false'
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
 'https://{all}/':
-  type: redirect
-  to: 'https://www.{all}/'
+    type: redirect
+    to: 'https://www.{all}/'

@@ -1,64 +1,74 @@
-'https://www.mentalhealthchampion-ni.org.uk.{default}/':
-  type: upstream
-  upstream: 'unity_svr_2:http'
-  cache:
-    enabled: 'false'
-'https://mentalhealthchampion-ni.org.uk.{default}/':
-  type: redirect
-  to: 'https://www.mentalhealthchampion-ni.org.uk.{default}/'
-'https://www.publicappointmentsni.org/':
-  type: upstream
-  upstream: 'unity_svr_2:http'
-  cache:
-    enabled: 'false'
-'https://publicappointmentsni.org/':
-  type: redirect
-  to: 'https://www.publicappointmentsni.org/'
-'https://www.ircommission.org/':
-  type: upstream
-  upstream: 'unity_svr_2:http'
-  cache:
-    enabled: 'false'
-'https://ircommission.org/':
-  type: redirect
-  to: 'https://www.ircommission.org/'
-'https://www.imtac.org.uk/':
-  type: upstream
-  upstream: 'unity_svr_2:http'
-  cache:
-    enabled: 'false'
-'https://imtac.org.uk/':
-  type: redirect
-  to: 'https://www.imtac.org.uk/'
-'https://www.nicertoffice.org.uk/':
-  type: upstream
-  upstream: 'unity_svr_2:http'
-  cache:
-    enabled: 'false'
-'https://nicertoffice.org.uk/':
-  type: redirect
-  to: 'https://www.nicertoffice.org.uk/'
-'https://www.victimspaymentsboard.org.uk/':
-  type: upstream
-  upstream: 'unity_svr_2:http'
-  cache:
-    enabled: 'false'
-'https://victimspaymentsboard.org.uk/':
-  type: redirect
-  to: 'https://www.victimspaymentsboard.org.uk/'
-'https://www.hiaredressni.uk/':
-  type: upstream
-  upstream: 'unity_svr_2:http'
-  cache:
-    enabled: 'false'
-'https://hiaredressni.uk/':
-  type: redirect
-  to: 'https://www.hiaredressni.uk/'
-'https://www.{all}/':
-  type: upstream
-  upstream: 'unity_svr_2:http'
-  cache:
-    enabled: 'false'
-'https://{all}/':
-  type: redirect
-  to: 'https://www.{all}/'
+project_name: 'Unity Svr 2'
+project_id: kamkoebtv74zm
+sites:
+    mentalhealthchampionni:
+        name: 'Mental Health Champion for Northern Ireland'
+        url: mentalhealthchampion-ni.org.uk
+        solr: mentalhealthchampionni
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/mentalhealthchampionni ; drush core-cron'
+        database: mentalhealthchampionni
+        status: production
+        default: true
+    publicappointmentsni:
+        name: 'The Commissioner for Public Appointments for Northern Ireland'
+        url: publicappointmentsni.org
+        solr: publicappointmentsni
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/publicappointmentsni ; drush core-cron'
+        database: publicappointmentsni
+        status: development
+        default: false
+    ircommission:
+        name: 'Independent Reporting Commission'
+        url: ircommission.org
+        solr: ircommission
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/ircommission ; drush core-cron'
+        database: ircommission
+        status: development
+        default: false
+    imtac:
+        name: 'The Inclusive Mobility and Transport Advisory Committee'
+        url: imtac.org.uk
+        solr: imtac
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/imtac ; drush core-cron'
+        database: imtac
+        status: development
+        default: false
+    nicertoffice:
+        name: 'Northern Ireland Certification Officer for Trade Unions and Employers'' Associations'
+        url: nicertoffice.org.uk
+        solr: nicertoffice
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/nicertoffice ; drush core-cron'
+        database: nicertoffice
+        status: development
+        default: false
+    victimspaymentsboard:
+        name: 'Victims Payments Board'
+        url: victimspaymentsboard.org.uk
+        solr: victimspaymentsboard
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/victimspaymentsboard ; drush core-cron'
+        database: victimspaymentsboard
+        status: development
+        default: false
+    default:
+        name: 'Default site - do not delete'
+        url: 'mentalhealthchampion-ni.org.uk.{default}'
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/default ; drush core-cron'
+        database: default
+        status: development
+        default: false
+    hiaredressni:
+        name: 'HIA Redress Board'
+        url: hiaredressni.uk
+        solr: hiaredressni
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/hiaredressni ; drush core-cron'
+        database: hiaredressni
+        status: development
+        default: false
