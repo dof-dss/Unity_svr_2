@@ -18,6 +18,7 @@ dependencies:
     - content_moderation
     - contextual
     - entity_browser
+    - entityqueue
     - file
     - filter
     - media
@@ -155,6 +156,7 @@ permissions:
   - 'edit own video files'
   - 'edit terms in 2'
   - 'flag content_audit'
+  - 'manipulate entityqueues'
   - 'moderate content from draft to needs_review'
   - 'moderate content from needs_review to draft'
   - 'moderate content from needs_review to published'
@@ -177,6 +179,7 @@ permissions:
   - 'show core Outline form element'
   - 'show core Outline tab'
   - 'unflag content_audit'
+  - 'update slideshow entityqueue'
   - 'use moderation sidebar'
   - 'use nics_editorial_workflow transition archive'
   - 'use nics_editorial_workflow transition create_new_draft'
