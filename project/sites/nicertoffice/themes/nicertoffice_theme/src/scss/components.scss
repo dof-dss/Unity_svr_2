@@ -6,13 +6,20 @@
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
 .node-type-document,
-.node-type-faq {
+.node-type-faq,
+.node-type-webform {
   @include breakpoint($tab) {
     .content-sidebar-wrap {
       width: 65%;
     }
   }
+}
 
+.paragraph--type--map {
+  margin-bottom: 2.4rem;
+}
+
+.node-type-document {
   p span:first-child {
     font-weight: bold;
   }
@@ -150,3 +157,31 @@
   }
 }
 
+.webform-submission-form input[type="submit"] {
+  background: $brand-primary none;
+  min-width: 13rem;
+  @include adjust-font-size-to(18px);
+  line-height: 1.5;
+  border: 3px solid transparent;
+  color: $white;
+  font-weight: normal;
+  text-shadow: none;
+  text-underline-offset: .25em;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin: 1rem 0 0;
+  text-align: center;
+  padding: .6rem 1.6rem;
+  cursor: pointer;
+  border-radius: 0;
+
+  &:hover {
+    background: $ash-grey;
+    outline: none;
+    opacity: 1;
+  }
+
+  &:focus {
+    background: $black;
+  }
+}
