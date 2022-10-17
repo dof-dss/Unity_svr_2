@@ -5,7 +5,7 @@ package: NICS
 core_version_requirement: ^8.8 || ^9
 
 libraries:
-  - hiaredressni/site-styling
+  - hiaredressni_theme/site-styling
   - nicsdru_unity_theme/sidebar_menu
   - nicsdru_unity_theme/accordions
 
@@ -26,7 +26,6 @@ regions:
   top_first: 'First top'
   top_second: 'Second top'
   top_third: 'Third top'
-  top_forth: 'Fourth top'
   breadcrumb: 'Breadcrumb'
   search_facets: 'Search facets'
   sidebar_first: 'First sidebar'
