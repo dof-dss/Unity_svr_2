@@ -80,7 +80,6 @@ module:
   metatag_verification: 0
   metatag_views: 0
   moderation_sidebar: 0
-  nicertoffice_migrations: 0
   node: 0
   node_edit_protection: 0
   noreferrer: 0
@@ -89,6 +88,7 @@ module:
   origins_common: 0
   origins_media: 0
   origins_metatag: 0
+  origins_qa: 0
   origins_toc: 0
   origins_unique_title: 0
   page_cache: 0
