@@ -1,0 +1,28 @@
+uuid: d919f94b-9161-45c0-93e7-885359b62024
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.date
+  module:
+    - facets
+    - system
+  theme:
+    - victimspaymentsboard_theme
+id: date
+theme: victimspaymentsboard_theme
+region: search_facets
+weight: -5
+provider: null
+plugin: 'facet_block:date'
+settings:
+  id: 'facet_block:date'
+  label: Date
+  label_display: visible
+  provider: facets
+  block_id: date
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/publications\r\n/publications/date/*\r\n\r\n"

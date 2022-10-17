@@ -62,13 +62,13 @@
     .menu-item {
       .active {
         background: $brand-secondary;
-        color: $black;
+        color: $white;
       }
 
       a {
         &:hover,
         &:focus {
-          color: $black;
+          color: $white;
           background: $brand-secondary;
         }
       }
