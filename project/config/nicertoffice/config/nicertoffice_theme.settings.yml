@@ -4,7 +4,8 @@ features:
   comment_user_verification: true
   favicon: 1
 logo:
-  use_default: 1
+  use_default: 0
+  path: sites/nicertoffice/themes/nicertoffice_theme/images/logo.png
 favicon:
   use_default: 1
 basic_page_structure: 1
