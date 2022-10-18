@@ -7,9 +7,12 @@ label: production
 description: 'Used for production site.'
 weight: 0
 folder: ../project/config/nicertoffice/production
-module: {  }
+module:
+  fastly: 0
 theme: {  }
-blacklist: {  }
-graylist: {  }
+blacklist:
+  - fastly.settings
+graylist:
+  - nicertoffice_theme.settings
 graylist_dependents: true
 graylist_skip_equal: true
