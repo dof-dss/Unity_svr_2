@@ -26,6 +26,18 @@
   }
 }
 
+.front .main-content{
+  background: #e7d7e1 resolve('victims-payments-bkrd.png') center center no-repeat;
+
+  p {
+    width: 60%;
+
+    @media screen and (max-width: 961px) {
+      width: 100%;
+    }
+  }
+}
+
 #main-menu {
   background: $white;
   .menu-link,
@@ -76,8 +88,26 @@
   }
 }
 
+#top-area .column .content {
+  border: 1px solid #e7d7e1;
+
+  p a {
+    display: block;
+    border-bottom: none;
+
+      &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 #top-area {
   display: flex;
+  margin: 5% auto 10%;
+
+  @media screen and (max-width: 766px) {
+    flex-direction: column;
+  }
 }
 
 #footer {
