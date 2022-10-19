@@ -66,6 +66,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.body
+  field_document_type:
+    label: Type
+    datasource_id: 'entity:node'
+    property_path: field_document_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_document_type
   field_published_date:
     label: Date
     datasource_id: 'entity:node'

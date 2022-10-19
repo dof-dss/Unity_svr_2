@@ -64,6 +64,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_decision_applicant
+  field_decision_respondent:
+    label: Respondent
+    datasource_id: 'entity:node'
+    property_path: field_decision_respondent
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_decision_respondent
   field_decision_summary:
     label: field_decision_summary
     datasource_id: 'entity:node'

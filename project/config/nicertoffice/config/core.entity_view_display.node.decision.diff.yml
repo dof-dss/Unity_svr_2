@@ -48,7 +48,7 @@ mode: diff
 content:
   field_attachment:
     type: entity_reference_entity_view
-    label: hidden
+    label: inline
     settings:
       view_mode: embed
       link: false
