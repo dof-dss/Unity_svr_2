@@ -23,7 +23,7 @@ facets:
     separator: ', '
     show_count: false
     weight: 0
-  respondent:
+  respondent_id:
     checked: true
     label: Respondent
     separator: ', '

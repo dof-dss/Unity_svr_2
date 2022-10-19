@@ -17,15 +17,15 @@ processor_configs:
       build: '45'
     settings: {  }
 facets:
-  document_type:
-    checked: true
-    label: 'Type '
-    separator: ', '
-    show_count: false
-    weight: 0
   documents_date:
     checked: true
     label: Date
+    separator: ', '
+    show_count: false
+    weight: 0
+  type_id:
+    checked: true
+    label: Type
     separator: ', '
     show_count: false
     weight: 0
