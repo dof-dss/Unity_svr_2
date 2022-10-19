@@ -195,12 +195,10 @@ processor_settings:
     alt: true
     tags:
       b: 2
-      em: 1
       h1: 5
       h2: 3
       h3: 2
       strong: 2
-      u: 1
   language_with_fallback: {  }
   rendered_item: {  }
   solr_date_range:
