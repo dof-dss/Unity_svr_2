@@ -12,7 +12,7 @@ third_party_settings:
   facets_pretty_paths:
     coder: taxonomy_term_coder
 id: respondent_id
-name: 'Respondent id'
+name: Respondent
 weight: 0
 min_count: 1
 url_alias: respondent
