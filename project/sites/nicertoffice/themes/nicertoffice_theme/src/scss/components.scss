@@ -29,6 +29,10 @@
   .published-date {
     font-weight: bold;
   }
+
+  .content-field--label-inline .content-field__label {
+    @include responsive-typo-map($h3-text);
+  }
 }
 
 .front .region-slideshow {
