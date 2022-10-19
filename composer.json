@@ -218,6 +218,9 @@
             "drupal/hms_field": {
                 "Drupal 9 compatability": "https://www.drupal.org/files/issues/2020-06-06/hms_field.1.x-dev.rector.patch"
             },
+            "drupal/link_fix_absolute_urls": {
+                "Allow use of module on PHP 8": "https://git.drupalcode.org/project/link_fix_absolute_urls/-/merge_requests/1.diff"
+            },
             "drupal/scheduled_transitions": {
                 "No scheduled revisions appear for migrated nodes": "https://www.drupal.org/files/issues/2021-11-01/scheduled_transitions_base_language_3091006_2x.patch"
             },
