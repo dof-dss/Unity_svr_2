@@ -1,4 +1,4 @@
-uuid: 9db9cb53-fb77-41a3-8147-6a9c5ada0e0c
+uuid: 1d5e1e01-a812-49b1-b3e2-fb028b376315
 langcode: en
 status: true
 dependencies:
@@ -11,13 +11,13 @@ dependencies:
 third_party_settings:
   facets_pretty_paths:
     coder: taxonomy_term_coder
-id: respondent
-name: Respondent
+id: respondent_id
+name: 'Respondent id'
 weight: 0
 min_count: 1
 url_alias: respondent
 facet_source_id: 'search_api:views_page__decision_search__decision_search_page'
-field_identifier: name
+field_identifier: field_decision_respondent
 query_operator: and
 hard_limit: 0
 exclude: false
@@ -47,15 +47,15 @@ processor_configs:
     weights:
       sort: 20
     settings:
-      sort: DESC
+      sort: ASC
   display_value_widget_order:
     processor_id: display_value_widget_order
     weights:
       sort: 40
     settings:
       sort: ASC
-  list_item:
-    processor_id: list_item
+  translate_entity:
+    processor_id: translate_entity
     weights:
       build: 5
     settings: {  }

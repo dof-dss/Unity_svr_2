@@ -228,7 +228,7 @@ display:
             'entity:node':
               decision: search_index
       query:
-        type: views_query
+        type: search_api_query
         options:
           bypass_access: false
           skip_access: false
@@ -254,8 +254,7 @@ display:
     position: 1
     display_options:
       cache:
-        type: search_api_tag
-        options: {  }
+        type: none
       defaults:
         cache: false
       exposed_block: true

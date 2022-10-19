@@ -1,4 +1,4 @@
-uuid: 32913899-5452-4b30-8aeb-23a876c6f312
+uuid: 5ddcb4eb-e53f-4c94-b12f-4a19980ca5e1
 langcode: en
 status: true
 dependencies:
@@ -11,13 +11,13 @@ dependencies:
 third_party_settings:
   facets_pretty_paths:
     coder: taxonomy_term_coder
-id: document_type
-name: 'Type '
+id: type_id
+name: 'Type id'
 weight: 0
 min_count: 1
 url_alias: type
 facet_source_id: 'search_api:views_page__documents_search__documents_search_page'
-field_identifier: name
+field_identifier: field_document_type
 query_operator: and
 hard_limit: 0
 exclude: false
@@ -47,15 +47,15 @@ processor_configs:
     weights:
       sort: 20
     settings:
-      sort: DESC
+      sort: ASC
   display_value_widget_order:
     processor_id: display_value_widget_order
     weights:
       sort: 40
     settings:
       sort: ASC
-  list_item:
-    processor_id: list_item
+  translate_entity:
+    processor_id: translate_entity
     weights:
       build: 5
     settings: {  }
