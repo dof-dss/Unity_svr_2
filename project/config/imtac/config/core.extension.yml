@@ -68,6 +68,7 @@ module:
   layout_builder: 0
   layout_discovery: 0
   link: 0
+  link_fix_absolute_urls: 0
   linkit: 0
   media: 0
   media_library: 0
