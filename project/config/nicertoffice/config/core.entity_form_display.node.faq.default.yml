@@ -6,7 +6,9 @@ dependencies:
     - field.field.node.faq.field_faq
     - field.field.node.faq.field_meta_tags
     - node.type.faq
+    - workflows.workflow.nics_editorial_workflow
   module:
+    - content_moderation
     - metatag
     - paragraphs
     - path
@@ -26,22 +28,22 @@ content:
   field_faq:
     type: entity_reference_paragraphs
     weight: 122
+    region: content
     settings:
       title: Paragraph
       title_plural: Paragraphs
       edit_mode: open
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: faq_accordian
+      default_paragraph_type: ''
     third_party_settings: {  }
-    region: content
   field_meta_tags:
+    type: metatag_firehose
     weight: 123
+    region: content
     settings:
       sidebar: true
     third_party_settings: {  }
-    type: metatag_firehose
-    region: content
   langcode:
     type: language_select
     weight: 2
@@ -52,8 +54,8 @@ content:
   moderation_state:
     type: moderation_state_default
     weight: 100
-    settings: {  }
     region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path
@@ -63,24 +65,24 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 15
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 120
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 16
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -93,12 +95,12 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 5
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
   url_redirects:
     weight: 50

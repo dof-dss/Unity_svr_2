@@ -12,7 +12,7 @@ dependencies:
 id: homepageguidance
 theme: victimspaymentsboard_theme
 region: top_first
-weight: 0
+weight: -7
 provider: null
 plugin: 'block_content:26952bbb-e801-4018-b783-d0d86c28d92c'
 settings:

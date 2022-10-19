@@ -1,0 +1,41 @@
+uuid: 70425b67-ebea-4499-a59b-334176484f46
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.portrait_float
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_media_image
+    - media.type.image
+    - responsive_image.styles.portrait_float
+  module:
+    - layout_builder
+    - responsive_image
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+_core:
+  default_config_hash: wq-slZgfc1cZGKHX3R1Dj3fvY3Mcy8qDNGViyJlED-4
+id: media.image.portrait_float
+targetEntityType: media
+bundle: image
+mode: portrait_float
+content:
+  field_media_image:
+    label: visually_hidden
+    settings:
+      responsive_image_style: portrait_float
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_caption: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

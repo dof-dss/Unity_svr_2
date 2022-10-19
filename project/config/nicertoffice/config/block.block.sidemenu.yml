@@ -5,6 +5,7 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - node
     - system
   theme:
     - nicertoffice_theme
@@ -21,5 +22,12 @@ settings:
   provider: system
   level: 1
   depth: 0
-  expand_all_items: true
-visibility: {  }
+  expand_all_items: false
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      basic_page: basic_page

@@ -53,3 +53,6 @@ node_modules/
 
 # Any local tooling/Lando things we want to ignore.
 web/sites/default/redis.services.yml
+
+# Ignore local logs
+log

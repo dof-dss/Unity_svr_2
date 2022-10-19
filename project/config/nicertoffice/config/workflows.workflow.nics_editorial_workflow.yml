@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - node.type.basic_page
-    - node.type.contact_page
     - node.type.decision
     - node.type.document
     - node.type.faq
@@ -100,7 +99,6 @@ type_settings:
   entity_types:
     node:
       - basic_page
-      - contact_page
       - decision
       - document
       - faq

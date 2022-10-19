@@ -55,3 +55,20 @@ sites:
         database: victimspaymentsboard
         status: development
         default: false
+    default:
+        name: 'Default site - do not delete'
+        url: 'mentalhealthchampion-ni.org.uk.{default}'
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/default ; drush core-cron'
+        database: default
+        status: development
+        default: false
+    hiaredressni:
+        name: 'HIA Redress Board'
+        url: hiaredressni.uk
+        solr: hiaredressni
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/hiaredressni ; drush core-cron'
+        database: hiaredressni
+        status: development
+        default: false
