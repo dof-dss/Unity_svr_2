@@ -1,0 +1,21 @@
+uuid: cb5657ab-668e-4381-8a12-852c9c621e28
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.file.teaser
+    - field.field.file.image.field_file_image_alt_text
+    - field.field.file.image.field_file_image_caption_text
+    - field.field.file.image.field_file_image_title_text
+  module:
+    - file
+id: file.image.teaser
+targetEntityType: file
+bundle: image
+mode: teaser
+content: {  }
+hidden:
+  field_file_image_alt_text: true
+  field_file_image_caption_text: true
+  field_file_image_title_text: true
+  langcode: true

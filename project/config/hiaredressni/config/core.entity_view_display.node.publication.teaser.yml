@@ -14,6 +14,7 @@ dependencies:
     - node.type.publication
   module:
     - datetime
+    - text
     - user
 _core:
   default_config_hash: pADwKkEDzI5AJltJfqCe5pvrW5GX7inMqfLS27hYgxM
@@ -22,6 +23,14 @@ targetEntityType: node
 bundle: publication
 mode: teaser
 content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
   field_published_date:
     type: datetime_default
     label: hidden
@@ -32,9 +41,9 @@ content:
     weight: 0
     region: content
 hidden:
-  body: true
   content_moderation_control: true
   field_attachment: true
+  field_hia_attachment: true
   field_meta_tags: true
   field_photo: true
   field_publication_type: true

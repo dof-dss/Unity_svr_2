@@ -1,0 +1,18 @@
+uuid: d25cedd5-2a0e-4ec3-8328-d04b0ba72d44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.file.document.field_file_language
+    - field.field.file.document.field_file_title
+  module:
+    - file
+id: file.document.default
+targetEntityType: file
+bundle: document
+mode: default
+content: {  }
+hidden:
+  field_file_language: true
+  field_file_title: true
+  langcode: true
