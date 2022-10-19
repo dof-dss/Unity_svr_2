@@ -55,7 +55,7 @@ content:
     region: content
   field_attachment:
     type: entity_reference_entity_view
-    label: hidden
+    label: inline
     settings:
       view_mode: embed
       link: false
@@ -90,3 +90,4 @@ hidden:
   content_moderation_control: true
   langcode: true
   links: true
+  search_api_excerpt: true

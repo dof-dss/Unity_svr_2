@@ -10,7 +10,7 @@ entity_type: node
 bundle: publication_page
 label: 'Publication title'
 description: ''
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''

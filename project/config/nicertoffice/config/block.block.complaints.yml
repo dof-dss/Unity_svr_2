@@ -1,0 +1,25 @@
+uuid: 392620a1-9bfe-4633-b349-601e88dd7202
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:af50199d-5477-443b-b2ed-4eeffb5019d2'
+  module:
+    - block_content
+  theme:
+    - nicertoffice_theme
+id: complaints
+theme: nicertoffice_theme
+region: bottom_widget_2
+weight: 0
+provider: null
+plugin: 'block_content:af50199d-5477-443b-b2ed-4eeffb5019d2'
+settings:
+  id: 'block_content:af50199d-5477-443b-b2ed-4eeffb5019d2'
+  label: Complaints
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

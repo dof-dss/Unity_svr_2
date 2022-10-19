@@ -23,7 +23,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_attachment:
     type: entity_reference_entity_view
@@ -32,7 +32,7 @@ content:
       view_mode: embed
       link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_publication_date:
     type: datetime_custom
@@ -41,11 +41,6 @@ content:
       timezone_override: ''
       date_format: 'd F Y'
     third_party_settings: {  }
-    weight: 1
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
@@ -53,4 +48,5 @@ hidden:
   field_metatag: true
   field_publication_type: true
   langcode: true
+  links: true
   search_api_excerpt: true

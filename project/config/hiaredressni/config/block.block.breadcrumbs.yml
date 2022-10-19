@@ -1,0 +1,24 @@
+uuid: fc04442c-6e70-44ce-93b0-aa30374791fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hiaredressni_theme
+id: breadcrumbs
+theme: hiaredressni_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

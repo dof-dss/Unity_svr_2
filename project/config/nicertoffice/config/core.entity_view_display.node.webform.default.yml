@@ -18,23 +18,22 @@ bundle: webform
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 101
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
+    weight: 0
     region: content
   webform:
-    weight: 102
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
     type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
+  content_moderation_control: true
   langcode: true
+  links: true
+  search_api_excerpt: true

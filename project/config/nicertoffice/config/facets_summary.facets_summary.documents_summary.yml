@@ -1,0 +1,31 @@
+uuid: dd197444-d8dc-4707-9e23-8cd1331b7ade
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.documents
+    - views.view.documents_search
+  module:
+    - search_api
+id: documents_summary
+name: 'Documents summary'
+facet_source_id: 'search_api:views_page__documents_search__documents_search_page'
+processor_configs:
+  hide_when_not_rendered:
+    processor_id: hide_when_not_rendered
+    weights:
+      build: '45'
+    settings: {  }
+facets:
+  documents_date:
+    checked: true
+    label: Date
+    separator: ', '
+    show_count: false
+    weight: 0
+  type_id:
+    checked: true
+    label: Type
+    separator: ', '
+    show_count: false
+    weight: 0

@@ -9,7 +9,7 @@ dependencies:
 id: pagetitle
 theme: victimspaymentsboard_theme
 region: content
-weight: -2
+weight: -6
 provider: null
 plugin: page_title_block
 settings:
@@ -21,4 +21,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: /home
+    pages: "/home\r\n"

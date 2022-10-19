@@ -46,6 +46,14 @@
 'https://victimspaymentsboard.org.uk/':
     type: redirect
     to: 'https://www.victimspaymentsboard.org.uk/'
+'https://www.hiaredressni.uk/':
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
+'https://hiaredressni.uk/':
+    type: redirect
+    to: 'https://www.hiaredressni.uk/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_2:http'

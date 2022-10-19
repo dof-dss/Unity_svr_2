@@ -1,0 +1,25 @@
+uuid: 3ec9196a-b5a0-4a2d-a05d-45c6f237e3b3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:f3be33ab-3826-4dee-8c5f-d3502cb45b49'
+  module:
+    - block_content
+  theme:
+    - nicertoffice_theme
+id: footercontactinfo
+theme: nicertoffice_theme
+region: footer_first
+weight: -8
+provider: null
+plugin: 'block_content:f3be33ab-3826-4dee-8c5f-d3502cb45b49'
+settings:
+  id: 'block_content:f3be33ab-3826-4dee-8c5f-d3502cb45b49'
+  label: 'Footer contact info'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 4b67daed-a05e-400d-b5e2-85cfe6f51a5a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hiaredressni_theme
+id: sitebranding
+theme: hiaredressni_theme
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

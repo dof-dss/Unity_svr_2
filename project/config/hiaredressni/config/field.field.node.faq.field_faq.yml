@@ -1,0 +1,25 @@
+uuid: 87517fac-55e6-46be-8a34-57b39b38006e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faq
+    - node.type.faq
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: NGKG12-hkY7Y2-hX2UGuZqMHNHdvG5652ZtyTryBWxQ
+id: node.faq.field_faq
+field_name: field_faq
+entity_type: node
+bundle: faq
+label: FAQ
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference_revisions

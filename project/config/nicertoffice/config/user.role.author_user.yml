@@ -9,7 +9,6 @@ dependencies:
     - media.type.image
     - media.type.remote_video
     - node.type.basic_page
-    - node.type.contact_page
     - node.type.decision
     - node.type.document
     - node.type.faq
@@ -44,7 +43,6 @@ permissions:
   - 'administer main-menu menu items'
   - 'create audio media'
   - 'create basic_page content'
-  - 'create contact_page content'
   - 'create decision content'
   - 'create document content'
   - 'create document media'
@@ -57,7 +55,6 @@ permissions:
   - 'create url aliases'
   - 'delete own audio media'
   - 'delete own basic_page content'
-  - 'delete own contact_page content'
   - 'delete own decision content'
   - 'delete own document content'
   - 'delete own document media'
@@ -74,7 +71,6 @@ permissions:
   - 'download own image files'
   - 'download own video files'
   - 'edit any basic_page content'
-  - 'edit any contact_page content'
   - 'edit any decision content'
   - 'edit any document content'
   - 'edit any faq content'
@@ -82,7 +78,6 @@ permissions:
   - 'edit own audio files'
   - 'edit own audio media'
   - 'edit own basic_page content'
-  - 'edit own contact_page content'
   - 'edit own decision content'
   - 'edit own document content'
   - 'edit own document files'
@@ -97,7 +92,6 @@ permissions:
   - 'moderate content from draft to needs_review'
   - 'moderate content from needs_review to draft'
   - 'revert basic_page revisions'
-  - 'revert contact_page revisions'
   - 'revert decision revisions'
   - 'revert document revisions'
   - 'revert faq revisions'
@@ -116,7 +110,6 @@ permissions:
   - 'view all unpublished content'
   - 'view any unpublished content'
   - 'view basic_page revisions'
-  - 'view contact_page revisions'
   - 'view decision revisions'
   - 'view document revisions'
   - 'view faq revisions'

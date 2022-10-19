@@ -8,6 +8,7 @@ id: disable_toc
 label: 'Disable Table of Contents'
 bundles:
   - basic_page
+  - page
 entity_type: node
 global: true
 flag_short: 'Disable ToC'

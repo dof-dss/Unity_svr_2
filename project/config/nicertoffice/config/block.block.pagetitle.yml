@@ -2,6 +2,8 @@ uuid: 55bb0cc4-e42b-4290-a035-bc1956c9e2a4
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - nicertoffice_theme
 id: pagetitle
@@ -15,4 +17,8 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "<front>\r\n/search\r\n/decision\r\n/decision/date/*\r\n/decision/respondent/*\r\n/documents\r\n/documents/date/*\r\n/documents/type/*"

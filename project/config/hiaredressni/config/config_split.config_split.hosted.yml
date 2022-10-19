@@ -1,0 +1,15 @@
+uuid: a55532d5-1afc-4cbb-bd0c-0a5d2b64beb6
+langcode: en
+status: false
+dependencies: {  }
+id: hosted
+label: hosted
+description: 'Use for any that are ''hosted'' and not running locally, apart from production (which has its own split).'
+weight: 0
+folder: ../project/config/hiaredressni/hosted
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
