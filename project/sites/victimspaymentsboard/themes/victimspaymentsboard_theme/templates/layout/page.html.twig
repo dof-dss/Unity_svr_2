@@ -83,13 +83,6 @@
 </div>
 
 {% if is_front %}
-  {{ page.slideshow }}
-
-  <div class="front-banner">
-    <img
-      src=""
-      alt="">
-  </div>
   {% if basic_page_structure is empty %}
     {% if drupal_config('system.site', 'frontpage_title') %}
       <h1 class="{{ drupal_config('system.site', 'frontpage_show_title') ? 'container-wrap' : 'visually-hidden' }}">
@@ -97,7 +90,6 @@
       </h1>
     {% endif %}
   {% endif %}
-
   {{ page.front_welcome }}
 {% endif %}
 
