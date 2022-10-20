@@ -29,11 +29,21 @@
 .front .main-content{
   background: #e7d7e1 resolve('victims-payments-bkrd.png') center center no-repeat;
 
+  h2 {
+    margin-left: 2rem;
+
+    @media screen and (max-width: 961px) {
+      margin-left: 0;
+    }
+  }
+
   p {
     width: 60%;
+    margin-left: 2rem;
 
     @media screen and (max-width: 961px) {
       width: 100%;
+      margin-left: 0;
     }
   }
 }

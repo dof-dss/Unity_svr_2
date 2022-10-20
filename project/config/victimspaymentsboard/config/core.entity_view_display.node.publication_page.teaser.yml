@@ -27,7 +27,7 @@ content:
     region: content
   field_publication_attachment:
     type: file_default
-    label: above
+    label: inline
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
@@ -38,10 +38,11 @@ content:
     label: hidden
     settings:
       timezone_override: ''
-      format_type: long
+      format_type: unity_date
     third_party_settings: {  }
     weight: 1
     region: content
 hidden:
   langcode: true
   links: true
+  search_api_excerpt: true
