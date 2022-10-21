@@ -1,0 +1,30 @@
+uuid: ed439647-5f8a-4b47-9aaa-8f40a74180bf
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:fe1f8e39-f247-40dc-9d01-f8aa36509f7c'
+  module:
+    - block_content
+    - system
+  theme:
+    - hiaredressni_theme
+id: guidanceforapplicants
+theme: hiaredressni_theme
+region: top_first
+weight: 0
+provider: null
+plugin: 'block_content:fe1f8e39-f247-40dc-9d01-f8aa36509f7c'
+settings:
+  id: 'block_content:fe1f8e39-f247-40dc-9d01-f8aa36509f7c'
+  label: 'Guidance for applicants'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

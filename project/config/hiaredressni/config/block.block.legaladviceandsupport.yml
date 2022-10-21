@@ -1,0 +1,30 @@
+uuid: 080b2398-e499-44e7-8d37-ae8547cd399e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:651a014d-6d65-4560-9b66-f6ba5205ffba'
+  module:
+    - block_content
+    - system
+  theme:
+    - hiaredressni_theme
+id: legaladviceandsupport
+theme: hiaredressni_theme
+region: top_fourth
+weight: 0
+provider: null
+plugin: 'block_content:651a014d-6d65-4560-9b66-f6ba5205ffba'
+settings:
+  id: 'block_content:651a014d-6d65-4560-9b66-f6ba5205ffba'
+  label: 'Legal advice and support'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

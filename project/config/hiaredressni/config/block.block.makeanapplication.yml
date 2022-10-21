@@ -1,0 +1,30 @@
+uuid: 44e72e03-057d-48b6-863e-363b008c0555
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:96b8fe22-7eea-431e-af40-88924a632b62'
+  module:
+    - block_content
+    - system
+  theme:
+    - hiaredressni_theme
+id: makeanapplication
+theme: hiaredressni_theme
+region: top_second
+weight: 0
+provider: null
+plugin: 'block_content:96b8fe22-7eea-431e-af40-88924a632b62'
+settings:
+  id: 'block_content:96b8fe22-7eea-431e-af40-88924a632b62'
+  label: 'Make an application'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
