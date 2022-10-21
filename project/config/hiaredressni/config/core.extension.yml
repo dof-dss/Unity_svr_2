@@ -50,6 +50,7 @@ module:
   geolocation: 0
   geolocation_google_maps: 0
   geolocation_google_static_maps: 0
+  geolocation_search_api: 0
   google_analytics: 0
   handy_cache_tags: 0
   help: 0
@@ -64,7 +65,6 @@ module:
   layout_builder: 0
   layout_discovery: 0
   link: 0
-  link_fix_absolute_urls: 0
   linkit: 0
   media: 0
   media_library: 0
@@ -99,6 +99,12 @@ module:
   responsive_image: 0
   scheduled_transitions: 0
   search: 0
+  search_api: 0
+  search_api_autocomplete: 0
+  search_api_location: 0
+  search_api_location_views: 0
+  search_api_solr: 0
+  search_api_spellcheck: 0
   simplei: 0
   structure_sync: 0
   system: 0
