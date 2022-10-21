@@ -1,0 +1,30 @@
+uuid: 423b47d0-a0cb-46d1-b60b-ed4d6460b71d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:87716003-cca2-4c0a-b276-527f370c4e02'
+  module:
+    - block_content
+    - system
+  theme:
+    - hiaredressni_theme
+id: keydocuments
+theme: hiaredressni_theme
+region: top_third
+weight: 0
+provider: null
+plugin: 'block_content:87716003-cca2-4c0a-b276-527f370c4e02'
+settings:
+  id: 'block_content:87716003-cca2-4c0a-b276-527f370c4e02'
+  label: 'Key documents'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
