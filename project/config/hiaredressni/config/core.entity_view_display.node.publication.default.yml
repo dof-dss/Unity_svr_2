@@ -38,6 +38,26 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
+  field_hia_attachment:
+    type: large_file_with_size
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_hia_date_published:
+    type: datetime_default
+    label: inline
+    settings:
+      format_type: long
+      fromto: both
+      multiple_number: ''
+      multiple_from: ''
+      multiple_to: ''
+      show_remaining_days: 0
+    third_party_settings: {  }
+    weight: 0
+    region: content
   field_photo:
     type: entity_reference_entity_view
     label: hidden

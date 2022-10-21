@@ -1,0 +1,30 @@
+uuid: 81060073-0df2-449c-9ced-7981aca8d9b4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:404a1d6a-7c8f-4b6a-9aaa-ae9b9de00e18'
+  module:
+    - block_content
+    - system
+  theme:
+    - hiaredressni_theme
+id: homepageabouttheredressboard
+theme: hiaredressni_theme
+region: front_welcome
+weight: 0
+provider: null
+plugin: 'block_content:404a1d6a-7c8f-4b6a-9aaa-ae9b9de00e18'
+settings:
+  id: 'block_content:404a1d6a-7c8f-4b6a-9aaa-ae9b9de00e18'
+  label: 'About the Redress Board'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
