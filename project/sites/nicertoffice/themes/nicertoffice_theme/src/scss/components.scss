@@ -81,6 +81,7 @@
   ul {
     margin-left: 2.4rem;
     padding: 1rem 1rem 1.2rem 0;
+    position: relative;
 
     li {
       list-style: none;
@@ -88,7 +89,7 @@
       &:before {
         content: '-';
         position: absolute;
-        left: 9px;
+        left: -12px;
       }
     }
   }
