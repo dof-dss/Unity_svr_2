@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - search_api.index.publications
-    - system.menu.main
   module:
     - search_api
 id: publications_search
@@ -125,7 +124,20 @@ display:
             value: 'There were no results found.'
             format: basic_html
           tokenize: false
-      sorts: {  }
+      sorts:
+        field_published_date:
+          id: field_published_date
+          table: search_api_index_publications
+          field: field_published_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
       arguments: {  }
       filters:
         search_api_fulltext:
@@ -189,7 +201,7 @@ display:
         options:
           view_modes:
             'entity:node':
-              publication: default
+              publication: search_index
       query:
         type: views_query
         options:
@@ -216,12 +228,16 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      cache:
+        type: none
+      defaults:
+        cache: false
       exposed_block: true
       display_extenders:
         metatag_display_extender: {  }
       path: publications
       menu:
-        type: normal
+        type: none
         title: Publications
         description: ''
         weight: -47

@@ -1,9 +1,9 @@
-uuid: 6683caff-67c5-491d-9287-743acb634385
+uuid: e22ec2b4-7842-4fb2-84ec-4c4e71a66e9f
 langcode: en
-status: true
+status: false
 dependencies:
   config:
-    - core.entity_view_mode.node.diff
+    - core.entity_view_mode.node.search_result
     - field.field.node.publication.body
     - field.field.node.publication.field_attachment
     - field.field.node.publication.field_meta_tags
@@ -14,41 +14,19 @@ dependencies:
     - node.type.publication
   module:
     - datetime
-    - field_group
     - layout_builder
-    - metatag
     - text
     - user
 third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
-  field_group:
-    group_additional_content_details:
-      children:
-        - field_publication_type
-        - field_meta_tags
-      label: 'Additional content details'
-      parent_name: ''
-      region: content
-      weight: 3
-      format_type: html_element
-      format_settings:
-        classes: field-collection
-        id: ''
-        element: div
-        show_label: false
-        label_element: h3
-        label_element_classes: ''
-        attributes: ''
-        effect: none
-        speed: fast
 _core:
-  default_config_hash: ALg0vkl0GxZI7rSi5bu_S1YfTFR4tz_BZoE3rau5z88
-id: node.publication.diff
+  default_config_hash: dGe_U65t-a-PtVI1RO755kulh2XfPgvblOXVKquzmyU
+id: node.publication.search_result
 targetEntityType: node
 bundle: publication
-mode: diff
+mode: search_result
 content:
   body:
     type: text_default
@@ -66,20 +44,34 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-  field_meta_tags:
-    type: metatag_empty_formatter
-    label: inline
+  field_hia_attachment:
+    type: large_file_with_size
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 7
+    weight: 2
     region: content
-  field_publication_type:
-    type: entity_reference_label
+  field_hia_date_published:
+    type: datetime_default
     label: inline
     settings:
-      link: true
+      format_type: long
+      fromto: both
+      multiple_number: ''
+      multiple_from: ''
+      multiple_to: ''
+      show_remaining_days: 0
     third_party_settings: {  }
-    weight: 6
+    weight: 0
+    region: content
+  field_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: portrait_float
+      link: false
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_published_date:
     type: datetime_default
@@ -92,7 +84,8 @@ content:
     region: content
 hidden:
   content_moderation_control: true
-  field_photo: true
+  field_meta_tags: true
+  field_publication_type: true
   field_summary: true
   langcode: true
   links: true
