@@ -25,7 +25,7 @@ content:
     region: content
   field_publication_attachment:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: embed
       link: false
