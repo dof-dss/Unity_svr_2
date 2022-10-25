@@ -1,9 +1,9 @@
-uuid: ddbb7449-5f5c-44f3-b0ef-78323a9e7fe0
+uuid: 9e184ef4-4dc7-4a65-9053-eb98a6711586
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.search_index
     - field.field.node.publication.body
     - field.field.node.publication.field_attachment
     - field.field.node.publication.field_meta_tags
@@ -14,14 +14,39 @@ dependencies:
     - node.type.publication
   module:
     - datetime
+    - layout_builder
     - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
 _core:
-  default_config_hash: pADwKkEDzI5AJltJfqCe5pvrW5GX7inMqfLS27hYgxM
-id: node.publication.teaser
+  default_config_hash: dGe_U65t-a-PtVI1RO755kulh2XfPgvblOXVKquzmyU
+id: node.publication.search_index
 targetEntityType: node
 bundle: publication
-mode: teaser
+mode: search_index
 content:
+  field_hia_attachment:
+    type: large_file_with_size
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_hia_date_published:
+    type: datetime_default
+    label: inline
+    settings:
+      format_type: long
+      fromto: both
+      multiple_number: ''
+      multiple_from: ''
+      multiple_to: ''
+      show_remaining_days: 0
+    third_party_settings: {  }
+    weight: 0
+    region: content
   field_published_date:
     type: datetime_default
     label: hidden
@@ -35,7 +60,6 @@ hidden:
   body: true
   content_moderation_control: true
   field_attachment: true
-  field_hia_attachment: true
   field_meta_tags: true
   field_photo: true
   field_publication_type: true
