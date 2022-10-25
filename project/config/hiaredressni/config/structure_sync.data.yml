@@ -1,0 +1,121 @@
+menus:
+  -
+    menu_name: main
+    title: Home
+    parent: null
+    uri: 'internal:/'
+    link_title: null
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-50'
+    langcode: und
+    uuid: 95c90042-f732-41c4-9027-b6de54788618
+  -
+    menu_name: main
+    title: FAQs
+    parent: null
+    uri: 'entity:node/8'
+    link_title: null
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-45'
+    langcode: und
+    uuid: 4c045267-07f4-43cc-b66e-34d9c127d12b
+  -
+    menu_name: main
+    title: 'Guidance for applicants'
+    parent: null
+    uri: 'internal:/node/5'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-49'
+    langcode: en
+    uuid: 2cec0e20-a211-4e17-b814-57cdca91980f
+  -
+    menu_name: main
+    title: 'Make an application'
+    parent: null
+    uri: 'internal:/node/6'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-48'
+    langcode: en
+    uuid: 49b6dacc-e275-428c-94c5-925f55a4c6a3
+  -
+    menu_name: main
+    title: 'Support services'
+    parent: null
+    uri: 'internal:/node/10'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-47'
+    langcode: en
+    uuid: 80de37f2-523a-4f78-b767-d1438f9028bd
+  -
+    menu_name: main
+    title: Legislation
+    parent: null
+    uri: 'internal:/node/11'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-46'
+    langcode: en
+    uuid: c0b0f11b-1bdb-4fe7-a3b2-1fb4029cb5c4
+  -
+    menu_name: main
+    title: Publications
+    parent: null
+    uri: 'internal:/publications'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-44'
+    langcode: en
+    uuid: 7b4479d3-d7f0-47e5-a9d3-53914040feaa
+  -
+    menu_name: main
+    title: 'Contact us'
+    parent: null
+    uri: 'internal:/node/12'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-43'
+    langcode: en
+    uuid: b55ea6a2-0435-4275-97ab-935c76d6dd83
+  -
+    menu_name: menu-footer-links
+    title: Cookies
+    parent: null
+    uri: 'internal:/node/3'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-49'
+    langcode: en
+    uuid: 40760d08-ae9f-4e4f-bf6b-f20a904fa815
+  -
+    menu_name: menu-footer-links
+    title: 'Accessibility statement'
+    parent: null
+    uri: 'entity:node/4'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-48'
+    langcode: en
+    uuid: 8579d8c6-8b1d-46c1-b74e-213267dc0083
