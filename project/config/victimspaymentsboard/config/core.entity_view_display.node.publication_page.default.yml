@@ -9,7 +9,6 @@ dependencies:
     - node.type.publication_page
   module:
     - datetime
-    - file
     - text
     - user
 id: node.publication_page.default
@@ -25,10 +24,11 @@ content:
     weight: 1
     region: content
   field_publication_attachment:
-    type: file_default
-    label: hidden
+    type: entity_reference_entity_view
+    label: above
     settings:
-      use_description_as_link_text: true
+      view_mode: embed
+      link: false
     third_party_settings: {  }
     weight: 2
     region: content
