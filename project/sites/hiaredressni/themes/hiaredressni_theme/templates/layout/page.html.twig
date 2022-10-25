@@ -153,7 +153,7 @@
     {% endif %}
   </div>
   {% if is_front %}
-    {% if page.top_first or page.top_second or page.top_third %}
+    {% if page.top_first or page.top_second or page.top_third or page.top_fourth %}
       {% if basic_page_structure is empty %}
         <div id="content">
       {% endif %}
@@ -172,6 +172,11 @@
         {% if page.top_third %}
           <div class="column">
             {{ page.top_third }}
+          </div>
+        {% endif %}
+        {% if page.top_fourth %}
+          <div class="column">
+            {{ page.top_fourth }}
           </div>
         {% endif %}
       </div>
