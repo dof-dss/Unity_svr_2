@@ -1,0 +1,25 @@
+uuid: b689066d-f155-4567-b2bd-e489a5724e8d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - unity_search_pages
+  theme:
+    - hiaredressni_theme
+id: sitesearchblock
+theme: hiaredressni_theme
+region: search
+weight: 0
+provider: null
+plugin: site_search_block
+settings:
+  id: site_search_block
+  label: 'Site search block'
+  label_display: '0'
+  provider: unity_search_pages
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /search
