@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.faq
+    - node.type.page
+    - node.type.publication_page
     - node.type.webform
   module:
     - content_moderation
@@ -95,5 +97,7 @@ type_settings:
   entity_types:
     node:
       - faq
+      - page
+      - publication_page
       - webform
   default_moderation_state: draft
