@@ -120,7 +120,7 @@ display:
         type: none
         options: {  }
       cache:
-        type: tag
+        type: search_api_tag
         options: {  }
       empty:
         search_api_spellcheck_did_you_mean:
@@ -228,7 +228,7 @@ display:
           separator: ''
           hide_empty: false
       query:
-        type: views_query
+        type: search_api_query
         options:
           bypass_access: false
           skip_access: false
