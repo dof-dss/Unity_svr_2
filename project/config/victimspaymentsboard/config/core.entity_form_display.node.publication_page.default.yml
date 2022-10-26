@@ -10,7 +10,7 @@ dependencies:
   module:
     - content_moderation
     - datetime
-    - file
+    - media_library
     - path
     - text
 id: node.publication_page.default
@@ -35,11 +35,11 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_publication_attachment:
-    type: file_generic
-    weight: 5
+    type: media_library_widget
+    weight: 121
     region: content
     settings:
-      progress_indicator: throbber
+      media_types: {  }
     third_party_settings: {  }
   field_publication_date:
     type: datetime_default

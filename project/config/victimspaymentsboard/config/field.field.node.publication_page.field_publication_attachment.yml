@@ -1,27 +1,29 @@
-uuid: 3d4ca481-ebbf-4498-a2cf-aa9faaa90dda
+uuid: e93f0d81-360e-4472-8138-93f1d5ff1919
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_publication_attachment
+    - media.type.document
     - node.type.publication_page
-  module:
-    - file
 id: node.publication_page.field_publication_attachment
 field_name: field_publication_attachment
 entity_type: node
 bundle: publication_page
 label: Attachment
-description: 'Upload files for publications here.'
+description: ''
 required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:file'
-  handler_settings: {  }
-  file_directory: publications
-  file_extensions: 'pdf doc docx xls xlsx xlsm ppt pptx odt ods odp dot zip'
-  max_filesize: '30 MB'
-  description_field: false
-field_type: file
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
