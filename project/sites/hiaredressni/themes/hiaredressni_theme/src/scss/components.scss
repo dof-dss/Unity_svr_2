@@ -46,7 +46,6 @@
   font-weight: normal;
 }
 
-
 #main-menu .menu-link,
 #main-menu .menu {
   background-color: #fff;
@@ -60,3 +59,13 @@
   color: #8a2be2;
   padding: 1rem;
 }
+
+.footer-area .column:last-child {
+  float: none;
+  width: unset;
+}
+
+#footer .column li {
+    display: inline;
+    padding: 2rem;
+  }

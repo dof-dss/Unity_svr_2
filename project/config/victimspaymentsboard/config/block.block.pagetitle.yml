@@ -21,4 +21,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "/home\r\n"
+    pages: "/home\r\n/publications"
