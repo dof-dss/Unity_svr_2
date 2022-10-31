@@ -29,11 +29,7 @@
   width: unset;
 }
 
-#footer {
-  border-top: 9px solid $brand-primary;
-
-  .column li {
+#footer .column li {
     display: inline;
     padding: 2rem;
   }
-}
