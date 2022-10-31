@@ -39,12 +39,14 @@
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
+    <div class="left">
     <h2{{ title_attributes }}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
   {% block content %}
     <div{{ content_attributes.addClass('content') }}>
       {{ content }}
+    </div>
     </div>
     <div class="right">
       <img class="block-about-us-icon" src="sites/hiaredressni/themes/hiaredressni_theme/images/hiaredress-about-the-redress.png" alt="" >
