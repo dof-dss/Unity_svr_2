@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.faq.field_meta_tags
     - node.type.faq
   module:
+    - entity_reference_revisions
     - user
 _core:
   default_config_hash: zVu9PRxZDIOBNsQU0-gGlPIwF8xWoIQn9dmr2-522bc
@@ -16,12 +17,18 @@ targetEntityType: node
 bundle: faq
 mode: teaser
 content:
-  links:
-    weight: 100
-    settings: {  }
+  field_faq:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
-  field_faq: true
+  content_moderation_control: true
   field_meta_tags: true
   langcode: true
+  links: true
+  search_api_excerpt: true

@@ -232,7 +232,7 @@ display:
       use_more: false
       use_more_always: true
       use_more_text: 'View reports'
-      link_display: custom_url
+      link_display: '0'
       link_url: 'documents/type/Annual reports'
       header: {  }
       footer:
@@ -246,7 +246,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<a href="/documents/type/Annual reports" class="btn">View reports</a>'
+            value: '<a href="/documents/type/annual-reports-1" class="btn">View reports</a>'
             format: full_html
           tokenize: false
       display_extenders: {  }

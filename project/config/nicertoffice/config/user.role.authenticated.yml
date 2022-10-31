@@ -2,7 +2,10 @@ uuid: 88bd3791-8156-4b19-ac75-e030b6d0b916
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.basic_html
   module:
+    - filter
     - google_analytics
     - media
     - node
@@ -24,6 +27,7 @@ permissions:
   - 'opt-in or out of google analytics tracking'
   - 'revert revisions'
   - 'use media wysiwyg'
+  - 'use text format basic_html'
   - 'use text format filtered_html'
   - 'use text format filtered_html_with_no_images'
   - 'view all revisions'

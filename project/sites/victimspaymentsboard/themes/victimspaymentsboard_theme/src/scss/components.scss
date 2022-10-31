@@ -17,23 +17,51 @@
     }
   }
     img {
-      height: 80px;
+      height: 8rem;
     }
     @include breakpoint($tab) {
     img {
-      height: 90px;
+      height: 9rem;
+      width: 20rem;
     }
   }
+}
+
+h1 {
+  margin: 2rem 0 2rem;
+}
+
+.front {
+  img {
+    width: 24.5rem;
+    height: 15rem;
+  }
+}
+
+.front a.btn {
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  width: 15rem;
 }
 
 .front .main-content{
   background: #e7d7e1 resolve('victims-payments-bkrd.png') center center no-repeat;
 
+  h2 {
+    margin-left: 2rem;
+
+    @media screen and (max-width: 961px) {
+      margin-left: 0;
+    }
+  }
+
   p {
     width: 60%;
+    margin-left: 2rem;
 
     @media screen and (max-width: 961px) {
       width: 100%;
+      margin-left: 0;
     }
   }
 }

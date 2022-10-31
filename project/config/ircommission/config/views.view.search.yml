@@ -253,7 +253,7 @@ display:
         type: none
         options: {  }
       cache:
-        type: none
+        type: search_api_tag
         options: {  }
       empty: {  }
       sorts:
@@ -279,6 +279,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: search_api_fulltext
           operator: or
           value: ''
           group: 1
@@ -303,8 +304,8 @@ display:
               supervisor_user: '0'
               editor_user: '0'
               admin_user: '0'
-            placeholder: 'Search site'
             expose_fields: false
+            placeholder: 'Search site'
             searched_fields_id: search_api_fulltext_searched_fields
           is_grouped: false
           group_info:
@@ -321,7 +322,6 @@ display:
           parse_mode: terms
           min_length: null
           fields: {  }
-          plugin_id: search_api_fulltext
       style:
         type: default
         options:
@@ -362,42 +362,6 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      pager:
-        type: full
-        options:
-          offset: 0
-          items_per_page: 20
-          total_pages: null
-          id: 0
-          tags:
-            next: 'next ›'
-            previous: '‹ Previous'
-            first: '« First'
-            last: 'last »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 5
-      cache:
-        type: none
-        options: {  }
-      defaults:
-        empty: false
-        cache: false
-        pager: false
-        fields: false
-        filters: true
-        filter_groups: true
-      display_extenders:
-        metatag_display_extender:
-          metatags: {  }
-          tokenize: false
-      path: search
       fields:
         title:
           id: title
@@ -406,6 +370,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: search_api_field
           label: ''
           exclude: false
           alter:
@@ -468,7 +433,6 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
-          plugin_id: search_api_field
         search_api_excerpt:
           id: search_api_excerpt
           table: search_api_index_default_content
@@ -476,6 +440,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: search_api
           label: ''
           exclude: false
           alter:
@@ -521,7 +486,6 @@ display:
           use_highlighting: true
           multi_type: separator
           multi_separator: ', '
-          plugin_id: search_api
         field_published_date:
           id: field_published_date
           table: search_api_index_default_content
@@ -529,6 +493,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: search_api_field
           label: ''
           exclude: false
           alter:
@@ -592,7 +557,30 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
-          plugin_id: search_api_field
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 20
+          total_pages: null
+          id: 0
+          tags:
+            next: 'next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 5
+      cache:
+        type: search_api_tag
+        options: {  }
       empty:
         area:
           id: area
@@ -601,12 +589,24 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: text
           empty: true
-          tokenize: false
           content:
             value: 'There are no results found.'
             format: basic_html
-          plugin_id: text
+          tokenize: false
+      defaults:
+        empty: false
+        cache: false
+        pager: false
+        fields: false
+        filters: true
+        filter_groups: true
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+      path: search
     cache_metadata:
       max-age: -1
       contexts:
@@ -632,6 +632,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: search_api_field
           label: ''
           exclude: false
           alter:
@@ -694,20 +695,19 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
-          plugin_id: search_api_field
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 5
       defaults:
-        fields: false
         pager: false
+        fields: false
       display_description: ''
       display_extenders:
         metatag_display_extender:
           metatags: {  }
           tokenize: false
-      pager:
-        type: some
-        options:
-          items_per_page: 5
-          offset: 0
     cache_metadata:
       max-age: -1
       contexts:

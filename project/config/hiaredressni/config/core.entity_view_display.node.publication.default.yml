@@ -31,25 +31,36 @@ content:
     region: content
   field_attachment:
     type: entity_reference_entity_view
-    label: inline
+    label: above
     settings:
       view_mode: embed
       link: false
     third_party_settings: {  }
     weight: 2
     region: content
-  field_photo:
-    type: entity_reference_entity_view
+  field_hia_attachment:
+    type: large_file_with_size
     label: hidden
-    settings:
-      view_mode: portrait_float
-      link: false
+    settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 2
+    region: content
+  field_hia_date_published:
+    type: datetime_default
+    label: inline
+    settings:
+      format_type: long
+      fromto: both
+      multiple_number: ''
+      multiple_from: ''
+      multiple_to: ''
+      show_remaining_days: 0
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_published_date:
     type: datetime_default
-    label: inline
+    label: hidden
     settings:
       timezone_override: ''
       format_type: unity_date
@@ -59,7 +70,9 @@ content:
 hidden:
   content_moderation_control: true
   field_meta_tags: true
+  field_photo: true
   field_publication_type: true
   field_summary: true
   langcode: true
   links: true
+  search_api_excerpt: true
