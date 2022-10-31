@@ -24,4 +24,12 @@
   }
 }
 
+.footer-area .column:last-child {
+  float: none;
+  width: unset;
+}
 
+#footer .column li {
+    display: inline;
+    padding: 2rem;
+  }
