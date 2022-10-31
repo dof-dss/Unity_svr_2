@@ -34,7 +34,7 @@
     flex: 2;
   }
 
-  .right{
+  .right {
     flex: 1;
   }
 }
@@ -47,16 +47,16 @@
 }
 
 
-#main-menu .menu-link, #main-menu .menu {
+#main-menu .menu-link,
+#main-menu .menu {
   background-color: #fff;
   color: $brand-primary;
 }
 
-#main-menu .menu .menu-item .active, #main-menu .menu .menu-item .active + .menu-main_sub .title a {
+#main-menu .menu .menu-item .active,
+#main-menu .menu .menu-item .active + .menu-main_sub .title a {
   background: $grey-lightest;
   border-bottom: none;
-  color: blueviolet;
+  color: #8a2be2;
   padding: 1rem;
 }
-
-
