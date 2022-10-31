@@ -10,7 +10,6 @@ dependencies:
     - node.type.publication_page
   module:
     - datetime
-    - file
     - text
     - user
 id: node.publication_page.teaser
@@ -25,23 +24,17 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_publication_attachment:
-    type: file_default
-    label: above
-    settings:
-      use_description_as_link_text: true
-    third_party_settings: {  }
-    weight: 2
-    region: content
   field_publication_date:
     type: datetime_default
     label: hidden
     settings:
       timezone_override: ''
-      format_type: long
+      format_type: unity_date
     third_party_settings: {  }
     weight: 1
     region: content
 hidden:
+  field_publication_attachment: true
   langcode: true
   links: true
+  search_api_excerpt: true

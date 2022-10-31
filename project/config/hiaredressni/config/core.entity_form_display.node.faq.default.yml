@@ -9,8 +9,8 @@ dependencies:
     - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
-    - entity_reference_revisions
     - metatag
+    - paragraphs
     - path
 _core:
   default_config_hash: B0jmbVU4DfBRgHF1-veNe1-C6DzkosmR_O9FrClgkCA
@@ -26,14 +26,16 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_faq:
-    type: entity_reference_revisions_autocomplete
+    type: entity_reference_paragraphs
     weight: 41
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: faq_accordion
     third_party_settings: {  }
   field_meta_tags:
     type: metatag_firehose

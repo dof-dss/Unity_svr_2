@@ -1,0 +1,28 @@
+uuid: 4b77e3ff-8b95-4032-a52e-2fbf095927ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.date
+  module:
+    - facets
+    - system
+  theme:
+    - hiaredressni_theme
+id: date
+theme: hiaredressni_theme
+region: search_facets
+weight: -5
+provider: null
+plugin: 'facet_block:date'
+settings:
+  id: 'facet_block:date'
+  label: Date
+  label_display: visible
+  provider: facets
+  block_id: date
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/publications\r\n/publications/date/*"

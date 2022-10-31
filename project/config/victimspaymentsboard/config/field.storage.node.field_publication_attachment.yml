@@ -1,22 +1,19 @@
-uuid: e33f80bb-d447-431b-b60b-00423902f645
-langcode: und
+uuid: 09465d5d-fd25-4e7e-945c-65191237eadb
+langcode: en
 status: true
 dependencies:
   module:
-    - file
+    - media
     - node
 id: node.field_publication_attachment
 field_name: field_publication_attachment
 entity_type: node
-type: file
+type: entity_reference
 settings:
-  target_type: file
-  display_field: false
-  display_default: false
-  uri_scheme: public
-module: file
+  target_type: media
+module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

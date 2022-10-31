@@ -1,0 +1,19 @@
+uuid: eed195c5-9246-47f5-9111-9dd4cff541cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.file.teaser
+    - field.field.file.document.field_file_language
+    - field.field.file.document.field_file_title
+  module:
+    - file
+id: file.document.teaser
+targetEntityType: file
+bundle: document
+mode: teaser
+content: {  }
+hidden:
+  field_file_language: true
+  field_file_title: true
+  langcode: true

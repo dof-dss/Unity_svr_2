@@ -1,0 +1,66 @@
+blocks:
+  -
+    info: 'Homepage Troubles info block'
+    langcode: en
+    uuid: 131f6977-0feb-41d5-8ab2-2b864c3d176c
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: '<p>The Victims’ Payments Board was established in February 2021. The Board is headed by a President appointed by the Lord Chief Justice, and will consist of a number of members including legal, medical and ordinary members. The purpose of the Board is to determine applications under the Troubles Permanent Disablement Payment Scheme (also referred to as the Victims’ Payments Scheme). Members will also have responsibility as members of the Victims’ Payments Board to assist the President with corporate governance responsibilities such as policy development, financial and risk management.&nbsp;</p><p><a class="btn" href="/node/9">Read more</a></p><p>We are currently experiencing delays in answering calls to the VPB contact number. We appreciate your patience in this matter. Please be advised, you can also contact us by emailing <a href="mailto:vpb@justice-ni.gov.uk">vpb@justice-ni.gov.uk</a></p><p>Applicants to the Scheme are reminded that it is not necessary to seek additional information from Health Trusts, GPs, Police, PRONI, etc in support of their application – this is because the Victims’ Payments Board has arrangements in place to formally request this information, as required. We will however require the basic details requested on the application form to include incident date, location and description.</p><p class="info-notice">When submitting an application to the Scheme, applicants should only include supporting information they currently hold.</p>'
+          summary: null
+          format: filtered_html
+  -
+    info: 'Homepage Guidance '
+    langcode: en
+    uuid: 26952bbb-e801-4018-b783-d0d86c28d92c
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p><a href=\"/node/19\"><img alt=\"\" data-delta=\"4\" data-fid=\"19\" data-media-element=\"1\" src=\"https://www.victimspaymentsboard.org.uk/sites/victimspayments/files/media-files/guidance-applicants.png\" /></a></p>\r\n\r\n<p><a href=\"/node/19\">Guidance to applicants</a></p>\r\n"
+          summary: null
+          format: full_html
+  -
+    info: 'Homepage Application'
+    langcode: en
+    uuid: a55e0911-498e-4208-8454-84b12715baa8
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p><a href=\"/node/36\"><img alt=\"\" data-delta=\"4\" data-fid=\"20\" data-media-element=\"1\" height=\"140\" src=\"https://www.victimspaymentsboard.org.uk/sites/victimspayments/files/media-files/making-an-application.png\" width=\"220\" /></a></p>\r\n\r\n<p><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"2adac6c4-9f2e-4a9b-b410-572a1aad96ed\" href=\"/node/36\">Making an application</a></p>\r\n"
+          summary: null
+          format: full_html
+  -
+    info: 'Homepage Support'
+    langcode: en
+    uuid: eb5a50b0-62f7-4aad-a60b-bead0a046169
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p><a href=\"/node/3\"><img alt=\"\" data-delta=\"4\" data-fid=\"21\" data-media-element=\"1\" src=\"https://www.victimspaymentsboard.org.uk/sites/victimspayments/files/media-files/support-services.png\" /></a></p>\r\n\r\n<p><a href=\"/node/3\">Support Services</a></p>\r\n"
+          summary: null
+          format: full_html
+  -
+    info: 'Homepage Contact us'
+    langcode: en
+    uuid: 5a9bcd27-0880-4903-bdbe-8899efcb18db
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p><a href=\"/node/34\"><img alt=\"\" data-delta=\"4\" data-fid=\"22\" data-media-element=\"1\" src=\"https://www.victimspaymentsboard.org.uk/sites/victimspayments/files/media-files/contact-us.png\" /></a></p>\r\n\r\n<p><a href=\"/node/34\">Contact us</a></p>\r\n"
+          summary: null
+          format: full_html
