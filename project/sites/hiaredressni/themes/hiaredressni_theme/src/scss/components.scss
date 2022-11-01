@@ -36,7 +36,7 @@
   margin-top: 0;
 }
 
-#block-homepageabouttheredressboard {
+.region-front-welcome #block-homepageabouttheredressboard {
   display: flex;
   text-align: left;
   padding: 4rem 0 5rem;
@@ -68,7 +68,7 @@
 #main-menu .menu .menu-item .active + .menu-main_sub .title a {
   background: $grey-lightest;
   border-bottom: none;
-  color: #8a2be2;
+  color: $brand-primary;
   padding: 1rem;
 }
 
