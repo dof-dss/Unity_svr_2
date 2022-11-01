@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.feature
     - node.type.featured_content_list
     - node.type.layout_page
     - node.type.link
@@ -100,6 +101,7 @@ type_settings:
       weight: -2
   entity_types:
     node:
+      - feature
       - featured_content_list
       - layout_page
       - link
