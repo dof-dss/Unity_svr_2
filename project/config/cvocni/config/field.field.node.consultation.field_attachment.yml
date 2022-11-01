@@ -1,0 +1,31 @@
+uuid: a39d54f8-14b6-4a89-b903-adbe81aba9e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachment
+    - media.type.document
+    - node.type.consultation
+_core:
+  default_config_hash: eLbYf5A_jjL2S2C7MdrxsZqEH_lMq1BiApoeHJdY7kU
+id: node.consultation.field_attachment
+field_name: field_attachment
+entity_type: node
+bundle: consultation
+label: Attachment
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

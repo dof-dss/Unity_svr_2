@@ -1,0 +1,27 @@
+uuid: 66a7889a-8046-485a-a442-82687c7e2e42
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.nigov_portrait_med_450_x1
+    - image.style.nigov_portrait_med_900_x2
+    - image.style.nigov_portrait_xl_1240_x2
+    - image.style.nigov_portrait_xl_620_x1
+_core:
+  default_config_hash: r8oVKtpSyeDkaFn1zgsRNfuYJsJHcJMUCwILjD1kM4s
+id: portrait_float_expandable
+label: 'Portrait float expandable'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - nigov_portrait_med_450_x1
+        - nigov_portrait_med_900_x2
+        - nigov_portrait_xl_1240_x2
+        - nigov_portrait_xl_620_x1
+breakpoint_group: responsive_image
+fallback_image_style: nigov_portrait_xl_620_x1
