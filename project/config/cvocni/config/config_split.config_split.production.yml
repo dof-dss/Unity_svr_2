@@ -7,9 +7,12 @@ label: production
 description: 'used for production site.'
 weight: 0
 folder: ../project/config/cvocni/production
-module: {  }
+module:
+  fastly: 0
 theme: {  }
-blacklist: {  }
+blacklist:
+  - fastly.settings
+  - fastly.settings
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
