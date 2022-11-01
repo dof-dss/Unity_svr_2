@@ -5,6 +5,48 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
+#logo {
+  @media screen and (max-width: $tab) {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+
+  a {
+    display: block;
+
+    &:focus {
+      background: none;
+      border-bottom: none;
+      outline: 0.3rem dashed #949494;
+      outline-offset: 1.2rem;
+    }
+  }
+
+  img {
+    height: 96px;
+  }
+}
+
+@media screen and (max-width: $tab) {
+  #logo {
+    padding: 0 1rem;
+  }
+
+  .top_left {
+    margin-bottom: 2rem;
+  }
+}
+
+@include breakpoint($tab) {
+  #views-exposed-form-search-site-search {
+    margin-top: 2.4rem;
+  }
+
+  #header {
+    margin-bottom: 2%;
+  }
+}
+
 .node-type-document,
 .node-type-faq,
 .node-type-webform {
