@@ -91,6 +91,7 @@ module:
   origins_common: 0
   origins_media: 0
   origins_metatag: 0
+  origins_qa: 0
   origins_toc: 0
   origins_translations: 0
   origins_unique_title: 0

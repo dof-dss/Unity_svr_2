@@ -251,6 +251,8 @@ jobs:
               if [[ -n $result ]]; then
                 echo "***** Config Import - ${site} *****"
                 platform drush "cim -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
+                echo "***** Enable QA accounts - ${site} *****"
+                platform drush "bulk_update_qa_accounts enable -l ${site}" -y -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH
               fi
             done
       - run:

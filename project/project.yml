@@ -17,7 +17,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/publicappointmentsni ; drush core-cron'
         database: publicappointmentsni
-        status: development
+        status: production
         default: false
     ircommission:
         name: 'Independent Reporting Commission'
@@ -53,14 +53,6 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/victimspaymentsboard ; drush core-cron'
         database: victimspaymentsboard
-        status: development
-        default: false
-    default:
-        name: 'Default site - do not delete'
-        url: 'mentalhealthchampion-ni.org.uk.{default}'
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/default ; drush core-cron'
-        database: default
         status: development
         default: false
     hiaredressni:

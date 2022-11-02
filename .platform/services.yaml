@@ -9,7 +9,6 @@ db:
             - imtacdb
             - nicertofficedb
             - victimspaymentsboarddb
-            - defaultdb
             - hiaredressnidb
             - cvocnidb
         endpoints:
@@ -37,10 +36,6 @@ db:
                 default_schema: victimspaymentsboarddb
                 privileges:
                     victimspaymentsboarddb: admin
-            default:
-                default_schema: defaultdb
-                privileges:
-                    defaultdb: admin
             hiaredressni:
                 default_schema: hiaredressnidb
                 privileges:

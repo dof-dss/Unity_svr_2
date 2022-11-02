@@ -1,11 +1,11 @@
-'https://www.publicappointmentsni.org/':
+'https://www.mentalhealthchampion-ni.org.uk.{default}/':
     type: upstream
     upstream: 'unity_svr_2:http'
     cache:
         enabled: 'false'
-'https://publicappointmentsni.org/':
+'https://mentalhealthchampion-ni.org.uk.{default}/':
     type: redirect
-    to: 'https://www.publicappointmentsni.org/'
+    to: 'https://www.mentalhealthchampion-ni.org.uk.{default}/'
 'https://www.ircommission.org/':
     type: upstream
     upstream: 'unity_svr_2:http'
