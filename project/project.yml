@@ -17,7 +17,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/publicappointmentsni ; drush core-cron'
         database: publicappointmentsni
-        status: development
+        status: production
         default: false
     ircommission:
         name: 'Independent Reporting Commission'
