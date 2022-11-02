@@ -4,3 +4,9 @@
  */
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/2_layout/index';
+
+.region-primary-menu .menu_wrapper {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #000;
+}

@@ -1,1 +1,770 @@
-#inner_header_wrapper{margin:0 auto;position:relative;overflow:inherit}#header{max-width:1024px;margin:1% auto;display:-ms-grid;display:grid;-ms-grid-columns:50% 7.5% 42.5%;grid-template-columns:50% 42.5%;grid-template-areas:'top-left top-right';-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}@media screen and (max-width: 766px){#header{margin:0 auto;-ms-grid-columns:1fr;grid-template-columns:1fr;grid-template-areas:'top-left' 'top-right'}}.top_left{min-height:90px;padding:0;position:relative;-ms-grid-column:1;grid-area:top-left;float:left}@supports (display: grid){.top_left{float:none}}@media (min-width: 766px){.top_left{min-height:110px}}.top_left #logo{position:absolute;left:0;top:0}.top_left #site-title #site-description{font-size:1.8rem;line-height:145%}.top_right{-ms-grid-row-align:center;align-self:center;-ms-grid-column:3;grid-area:top-right;float:right}@supports (display: grid) or (display: -ms-grid){.top_right{float:none}}@media screen and (max-width: 766px){.top_right{-ms-grid-column:1;-ms-grid-row:2;-ms-grid-column-align:unset;justify-self:unset}}.top_right .region-search{margin:.5rem 0}@media screen and (max-width: 766px){.top_right .region-search{width:100%;padding:0}}.top_right ul.menu li a.active{color:#6cdcff}@media screen and (max-width: 766px){.top_left,.top_right,.search_block{width:100%}}#logo{float:left;margin:.8rem 1rem .8rem 0}@media screen and (max-width: 766px){#logo{text-align:center;width:100%;margin:.8rem 0 0}}#logo img{display:block}@media screen and (max-width: 766px){#logo img{text-align:center;display:inline-block}}#site-title a,#site-description{font-weight:normal}#site-title,#site-description{float:left}@media screen and (max-width: 766px){#site-title,#site-description{margin:0;line-height:1.62em}}#site-title{font-size:3rem;margin:1rem 0 0;font-weight:bold}@media screen and (max-width: 766px){#site-title{padding:0;width:100%;display:inline-block}}#site-title a{float:left}@media screen and (max-width: 766px){#site-title a{width:100%;text-align:center}}#site-description{font-size:1.6rem;margin:0 0 2.4rem;margin:.4rem 0 0;float:left;clear:both;line-height:100%;font-style:italic;color:#0e6bb3}@media screen and (max-width: 766px){#site-description{padding-top:1.8rem;padding-bottom:.5rem;width:100%;text-align:center}}@media screen and (max-width: 766px){#headerHero{padding:.5rem 0 .5rem 10rem;min-height:54px;background-color:#07601f;position:relative}#headerHero.no-menu .burger-toggle{display:none !important}#headerHero.no-menu.no-search{display:none}#headerHero .region-search input[type='text'],#headerHero .region-search input[type='search']{max-width:100%;border:0;margin:.5em 0;float:none;border-radius:0;background:#fff}@supports (display: grid){#headerHero .region-search input[type='text'],#headerHero .region-search input[type='search']{margin:0}}}#container{clear:both;overflow:hidden}@media screen and (max-width: 961px){#container{padding:0 1rem}}.container-wrap{max-width:1024px;margin:0 auto 1rem;padding:0;overflow:hidden}.container{padding:0 15px}@media (min-width: 766px){.container{margin:0 auto;max-width:1024px;padding:0 20px}}.content-sidebar-wrap{float:left;width:100%}@media screen and (max-width: 961px){.content-sidebar-wrap{float:none;width:100% !important}}@media screen and (max-width: 766px){.content-sidebar-wrap{width:auto}}.content-sidebar-wrap .main-content{display:inline;margin-bottom:1rem;float:right;width:100%}@media screen and (max-width: 961px){.content-sidebar-wrap .main-content{margin:0;float:none}}@media screen and (max-width: 766px){.front .content-sidebar-wrap{margin:0}}.sidebar-first-layout{color:#111;float:left}@media screen and (max-width: 961px){.sidebar-first-layout{clear:both;float:none;width:100% !important;padding:0 1.5%}}@media screen and (max-width: 766px){.sidebar-first-layout{width:auto;clear:both}}@media screen and (max-width: 766px){.sidebar-first-layout .block{float:none !important;width:auto !important;margin-left:0}}.sidebar-second-layout{color:#111;float:right}@media screen and (max-width: 961px){.sidebar-second-layout{float:none;width:100% !important;padding:0 1.5%}}@media screen and (max-width: 766px){.sidebar-second-layout{width:auto}}@media screen and (max-width: 766px){.sidebar-second-layout .block{float:none !important;width:auto !important;margin-left:0}}aside .block .content{padding:0 1rem}aside #user-login-form input.form-text{width:90%}aside #user-login-form .form-actions{padding-top:0}.two-sidebars .content-sidebar-wrap{width:80%}.two-sidebars .main-content{width:75%}.two-sidebars .sidebar-first-layout{width:24%}.two-sidebars .sidebar-second-layout{width:19%}.sidebar-first .content-sidebar-wrap{width:100%}.sidebar-first .main-content{width:80%}.sidebar-first .sidebar-first-layout{width:19%}.sidebar-second .content-sidebar-wrap{width:75%}.sidebar-second .main-content{width:100%}.sidebar-second .sidebar-second-layout{width:22%}#head,.main-content,.sidebar-second-layout,.sidebar-first-layout{margin-top:1rem}@media screen and (max-width: 961px){.main-content{float:none;width:100% !important}}.region-front-welcome{max-width:1024px;margin:2% auto;text-align:center}@media screen and (max-width: 961px){.region-front-welcome{margin:1% 2%}}@media screen and (max-width: 766px){.region-front-welcome{padding:1rem}}@media screen and (max-width: 440px){.region-front-welcome{margin:0}}.region-front-welcome .block h2{text-align:center}#top-area{clear:both;position:relative;max-width:1024px;margin:0 auto;text-align:center}@media screen and (max-width: 961px){#top-area{padding:0 1.5rem}}@media screen and (max-width: 766px){#top-area{padding:0}}#top-area .block{margin:0}#top-area .column{float:left;width:32.3%;margin:0 .5rem}@media screen and (max-width: 961px){#top-area .column{width:32%}}@media screen and (max-width: 766px){#top-area .column{float:none !important;width:auto !important;margin:1rem}}#top-area .column:last-child{float:right;margin-right:0}@media screen and (max-width: 1153px){#top-area .column:last-child{margin-right:0}}#top-area .column .content{padding:1rem 0}#top-area .column:first-child{margin-left:0}@media screen and (max-width: 766px){#top-area .column:first-child{margin:1rem}}#top-area h2{font-size:2.8rem;line-height:3.6rem;margin:3.6rem 0 1.8rem;color:#555;padding:1rem 0;margin:0}#top-area .column-title{color:#e0e0e0}#footer{font-size:1.6rem;margin:0 0 2.4rem;overflow:auto;padding:1% 2% 2%;background:#e7e7e7;border-top:9px solid #07601f;max-width:1024px;margin:0 auto}@media screen and (max-width: 766px){#footer p{margin:0}}#footer .block>h2{color:#fff;padding:1rem 0;font-size:3rem}#footer .column li{display:block;padding:.3rem 0 .3rem .1rem;border-bottom-width:.1rem;border-bottom-style:dotted;border-color:#555}#footer ul{margin:0}.footer-area .column{float:left;width:24.2%;margin:0 0 0 1%;padding:1%}@media screen and (max-width: 766px){.footer-area .column{float:none;width:auto;margin:1rem}}.footer-area .column:first-child{margin-left:0}@media screen and (max-width: 766px){.footer-area .column:first-child{margin:1rem}}.footer-area .column:last-child{float:right}.footer-area .column-title{color:#111}.bottom_widget .footer-area .column{width:32.5%}.footer-area ul.menu li a.active{color:#ddd}.footer_block{clear:both}@media screen and (max-width: 961px){#footer_wrapper{padding:0 1.5rem}}@media screen and (max-width: 766px){#footer_wrapper{padding:0}}
+/*
+ * @file
+ * Defines the layout code for the theme.
+ */
+/* Vertical rhythm presets =========================================== */
+/* Breakpoints ======================================================== */
+/*
+ * @file
+ * Helper partial to outline the order partials should be loaded in this section - used for reference & in the style guide.
+ */
+/*
+ * @file
+ * Defines the layout styles for the header area.
+ */
+/* line 18, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+#inner_header_wrapper {
+  margin: 0 auto;
+  position: relative;
+  overflow: inherit;
+}
+
+/* line 24, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+#header {
+  max-width: 1024px;
+  margin: 1% auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 7.5% 42.5%;
+  grid-template-columns: 50% 42.5%;
+  grid-template-areas: 'top-left top-right';
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 766px) {
+  /* line 24, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+  #header {
+    margin: 0 auto;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'top-left' 'top-right';
+  }
+}
+
+/* line 43, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+.top_left {
+  min-height: 90px;
+  padding: 0;
+  position: relative;
+  -ms-grid-column: 1;
+  grid-area: top-left;
+  float: left;
+}
+
+@supports (display: grid) {
+  /* line 43, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+  .top_left {
+    float: none;
+  }
+}
+
+@media (min-width: 766px) {
+  /* line 43, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+  .top_left {
+    min-height: 110px;
+  }
+}
+
+/* line 60, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+.top_left #logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 67, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+.top_left #site-title #site-description {
+  font-size: 1.8rem;
+  line-height: 145%;
+}
+
+/* line 74, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+.top_right {
+  -ms-grid-row-align: center;
+  align-self: center;
+  -ms-grid-column: 3;
+  grid-area: top-right;
+  float: right;
+}
+
+@supports (display: grid) or (display: -ms-grid) {
+  /* line 74, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+  .top_right {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  /* line 74, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+  .top_right {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    -ms-grid-column-align: unset;
+    justify-self: unset;
+  }
+}
+
+/* line 92, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+.top_right .region-search {
+  margin: .5rem 0;
+}
+
+@media screen and (max-width: 766px) {
+  /* line 92, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+  .top_right .region-search {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* line 101, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+.top_right ul.menu li a.active {
+  color: #6cdcff;
+}
+
+@media screen and (max-width: 766px) {
+  /* line 106, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+  .top_left,
+  .top_right,
+  .search_block {
+    width: 100%;
+  }
+}
+
+/* line 114, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+#logo {
+  float: left;
+  margin: .8rem 1rem .8rem 0;
+}
+
+@media screen and (max-width: 766px) {
+  /* line 114, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+  #logo {
+    text-align: center;
+    width: 100%;
+    margin: .8rem 0 0;
+  }
+}
+
+/* line 124, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+#logo img {
+  display: block;
+}
+
+@media screen and (max-width: 766px) {
+  /* line 124, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+  #logo img {
+    text-align: center;
+    display: inline-block;
+  }
+}
+
+/* line 134, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+#site-title a,
+#site-description {
+  font-weight: normal;
+}
+
+/* line 139, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+#site-title,
+#site-description {
+  float: left;
+}
+
+@media screen and (max-width: 766px) {
+  /* line 139, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+  #site-title,
+  #site-description {
+    margin: 0;
+    line-height: 1.62em;
+  }
+}
+
+/* line 149, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+#site-title {
+  font-size: 3rem;
+  margin: 1rem 0 0;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 766px) {
+  /* line 149, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+  #site-title {
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+/* line 160, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+#site-title a {
+  float: left;
+}
+
+@media screen and (max-width: 766px) {
+  /* line 160, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+  #site-title a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* line 170, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+#site-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 1em 0 1.5em;
+  margin: .4rem 0 0;
+  float: left;
+  clear: both;
+  line-height: 100%;
+  font-style: italic;
+  color: #0e6bb3;
+}
+
+@media screen and (min-width: 766px) {
+  /* line 170, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+  #site-description {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  /* line 170, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+  #site-description {
+    padding-top: 1.8rem;
+    padding-bottom: .5rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  /* line 189, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+  #headerHero {
+    padding: .5rem 0 .5rem 10rem;
+    min-height: 54px;
+    background-color: #642e8d;
+    position: relative;
+  }
+  /* line 197, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+  #headerHero.no-menu .burger-toggle {
+    display: none !important;
+  }
+  /* line 201, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+  #headerHero.no-menu.no-search {
+    display: none;
+  }
+  /* line 207, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+  #headerHero .region-search input[type='text'],
+  #headerHero .region-search input[type='search'] {
+    max-width: 100%;
+    border: 0;
+    margin: .5em 0;
+    float: none;
+    border-radius: 0;
+    background: #fff;
+  }
+  @supports (display: grid) {
+    /* line 207, node_modules/nicsdru_unity_theme/src/scss/2_layout/_header.scss */
+    #headerHero .region-search input[type='text'],
+    #headerHero .region-search input[type='search'] {
+      margin: 0;
+    }
+  }
+}
+
+/*
+ * @file
+ * Defines the layouts for the container section of the page.
+ */
+/* line 21, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+#container {
+  clear: both;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 961px) {
+  /* line 21, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+  #container {
+    padding: 0 1rem;
+  }
+}
+
+/* line 30, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+.container-wrap {
+  max-width: 1024px;
+  margin: 0 auto 1rem;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* line 37, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+.container {
+  padding: 0 15px;
+}
+
+@media (min-width: 766px) {
+  /* line 37, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+  .container {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 20px;
+  }
+}
+
+/* line 46, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+.content-sidebar-wrap {
+  float: left;
+  width: 100%;
+}
+
+@media screen and (max-width: 961px) {
+  /* line 46, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+  .content-sidebar-wrap {
+    float: none;
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  /* line 46, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+  .content-sidebar-wrap {
+    width: auto;
+  }
+}
+
+/* line 59, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+.content-sidebar-wrap .main-content {
+  display: inline;
+  margin-bottom: 1rem;
+  float: right;
+  width: 100%;
+}
+
+@media screen and (max-width: 961px) {
+  /* line 59, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+  .content-sidebar-wrap .main-content {
+    margin: 0;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  /* line 71, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+  .front .content-sidebar-wrap {
+    margin: 0;
+  }
+}
+
+/* line 78, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+.sidebar-first-layout {
+  color: #111;
+  float: left;
+}
+
+@media screen and (max-width: 961px) {
+  /* line 78, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+  .sidebar-first-layout {
+    clear: both;
+    float: none;
+    width: 100% !important;
+    padding: 0 1.5%;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  /* line 78, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+  .sidebar-first-layout {
+    width: auto;
+    clear: both;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  /* line 94, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+  .sidebar-first-layout .block {
+    float: none !important;
+    width: auto !important;
+    margin-left: 0;
+  }
+}
+
+/* line 103, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+.sidebar-second-layout {
+  color: #111;
+  float: right;
+}
+
+@media screen and (max-width: 961px) {
+  /* line 103, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+  .sidebar-second-layout {
+    float: none;
+    width: 100% !important;
+    padding: 0 1.5%;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  /* line 103, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+  .sidebar-second-layout {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  /* line 117, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+  .sidebar-second-layout .block {
+    float: none !important;
+    width: auto !important;
+    margin-left: 0;
+  }
+}
+
+/* line 127, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+aside .block .content {
+  padding: 0 1rem;
+}
+
+/* line 132, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+aside #user-login-form input.form-text {
+  width: 90%;
+}
+
+/* line 136, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+aside #user-login-form .form-actions {
+  padding-top: 0;
+}
+
+/* 3 columns */
+/* line 112, node_modules/nicsdru_unity_theme/src/scss/init/unity-layout/_unity-layout.scss */
+.two-sidebars .content-sidebar-wrap {
+  width: 80%;
+}
+
+/* line 116, node_modules/nicsdru_unity_theme/src/scss/init/unity-layout/_unity-layout.scss */
+.two-sidebars .main-content {
+  width: 75%;
+}
+
+/* line 120, node_modules/nicsdru_unity_theme/src/scss/init/unity-layout/_unity-layout.scss */
+.two-sidebars .sidebar-first-layout {
+  width: 24%;
+}
+
+/* line 124, node_modules/nicsdru_unity_theme/src/scss/init/unity-layout/_unity-layout.scss */
+.two-sidebars .sidebar-second-layout {
+  width: 19%;
+}
+
+/* 2 columns: sidebar-first */
+/* line 71, node_modules/nicsdru_unity_theme/src/scss/init/unity-layout/_unity-layout.scss */
+.sidebar-first .content-sidebar-wrap {
+  width: 100%;
+}
+
+/* line 75, node_modules/nicsdru_unity_theme/src/scss/init/unity-layout/_unity-layout.scss */
+.sidebar-first .main-content {
+  width: 80%;
+}
+
+/* line 79, node_modules/nicsdru_unity_theme/src/scss/init/unity-layout/_unity-layout.scss */
+.sidebar-first .sidebar-first-layout {
+  width: 19%;
+}
+
+/* 2 columns: sidebar-second */
+/* line 83, node_modules/nicsdru_unity_theme/src/scss/init/unity-layout/_unity-layout.scss */
+.sidebar-second .content-sidebar-wrap {
+  width: 75%;
+}
+
+/* line 87, node_modules/nicsdru_unity_theme/src/scss/init/unity-layout/_unity-layout.scss */
+.sidebar-second .main-content {
+  width: 100%;
+}
+
+/* line 91, node_modules/nicsdru_unity_theme/src/scss/init/unity-layout/_unity-layout.scss */
+.sidebar-second .sidebar-second-layout {
+  width: 22%;
+}
+
+/* line 163, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+#head,
+.main-content,
+.sidebar-second-layout,
+.sidebar-first-layout {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 961px) {
+  /* line 170, node_modules/nicsdru_unity_theme/src/scss/2_layout/_container.scss */
+  .main-content {
+    float: none;
+    width: 100% !important;
+  }
+}
+
+/*
+ * @file
+ * Defines the layouts for particular regions of the page.
+ */
+/* line 20, node_modules/nicsdru_unity_theme/src/scss/2_layout/_regions.scss */
+.region-front-welcome {
+  max-width: 1024px;
+  margin: 2% auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 961px) {
+  /* line 20, node_modules/nicsdru_unity_theme/src/scss/2_layout/_regions.scss */
+  .region-front-welcome {
+    margin: 1% 2%;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  /* line 20, node_modules/nicsdru_unity_theme/src/scss/2_layout/_regions.scss */
+  .region-front-welcome {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /* line 20, node_modules/nicsdru_unity_theme/src/scss/2_layout/_regions.scss */
+  .region-front-welcome {
+    margin: 0;
+  }
+}
+
+/* line 37, node_modules/nicsdru_unity_theme/src/scss/2_layout/_regions.scss */
+.region-front-welcome .block h2 {
+  text-align: center;
+}
+
+/* line 43, node_modules/nicsdru_unity_theme/src/scss/2_layout/_regions.scss */
+#top-area {
+  clear: both;
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 961px) {
+  /* line 43, node_modules/nicsdru_unity_theme/src/scss/2_layout/_regions.scss */
+  #top-area {
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  /* line 43, node_modules/nicsdru_unity_theme/src/scss/2_layout/_regions.scss */
+  #top-area {
+    padding: 0;
+  }
+}
+
+/* line 58, node_modules/nicsdru_unity_theme/src/scss/2_layout/_regions.scss */
+#top-area .block {
+  margin: 0;
+}
+
+/* line 62, node_modules/nicsdru_unity_theme/src/scss/2_layout/_regions.scss */
+#top-area .column {
+  float: left;
+  width: 32.3%;
+  margin: 0 .5rem;
+}
+
+@media screen and (max-width: 961px) {
+  /* line 62, node_modules/nicsdru_unity_theme/src/scss/2_layout/_regions.scss */
+  #top-area .column {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  /* line 62, node_modules/nicsdru_unity_theme/src/scss/2_layout/_regions.scss */
+  #top-area .column {
+    float: none !important;
+    width: auto !important;
+    margin: 1rem;
+  }
+}
+
+/* line 77, node_modules/nicsdru_unity_theme/src/scss/2_layout/_regions.scss */
+#top-area .column:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1153px) {
+  /* line 77, node_modules/nicsdru_unity_theme/src/scss/2_layout/_regions.scss */
+  #top-area .column:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 86, node_modules/nicsdru_unity_theme/src/scss/2_layout/_regions.scss */
+#top-area .column .content {
+  padding: 1rem 0;
+}
+
+/* line 90, node_modules/nicsdru_unity_theme/src/scss/2_layout/_regions.scss */
+#top-area .column:first-child {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 766px) {
+  /* line 90, node_modules/nicsdru_unity_theme/src/scss/2_layout/_regions.scss */
+  #top-area .column:first-child {
+    margin: 1rem;
+  }
+}
+
+/* line 99, node_modules/nicsdru_unity_theme/src/scss/2_layout/_regions.scss */
+#top-area h2 {
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  margin: 3.6rem 0 1.8rem;
+  color: #555;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+/* line 106, node_modules/nicsdru_unity_theme/src/scss/2_layout/_regions.scss */
+#top-area .column-title {
+  color: #e0e0e0;
+}
+
+/*
+ * @file
+ * Defines the layouts for the footer area of the page.
+ */
+/* line 22, node_modules/nicsdru_unity_theme/src/scss/2_layout/_footer.scss */
+#footer {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 1em 0 1.5em;
+  overflow: auto;
+  padding: 1% 2% 2%;
+  background: #e7e7e7;
+  border-top: 9px solid #642e8d;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 766px) {
+  /* line 22, node_modules/nicsdru_unity_theme/src/scss/2_layout/_footer.scss */
+  #footer {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  /* line 31, node_modules/nicsdru_unity_theme/src/scss/2_layout/_footer.scss */
+  #footer p {
+    margin: 0;
+  }
+}
+
+/* line 39, node_modules/nicsdru_unity_theme/src/scss/2_layout/_footer.scss */
+#footer .block > h2 {
+  color: #fff;
+  padding: 1rem 0;
+  font-size: 3rem;
+}
+
+/* line 45, node_modules/nicsdru_unity_theme/src/scss/2_layout/_footer.scss */
+#footer .column li {
+  display: block;
+  padding: .3rem 0 .3rem .1rem;
+  border-bottom-width: .1rem;
+  border-bottom-style: dotted;
+  border-color: #555;
+}
+
+/* line 53, node_modules/nicsdru_unity_theme/src/scss/2_layout/_footer.scss */
+#footer ul {
+  margin: 0;
+}
+
+/* line 63, node_modules/nicsdru_unity_theme/src/scss/2_layout/_footer.scss */
+.footer-area .column {
+  float: left;
+  width: 24.2%;
+  margin: 0 0 0 1%;
+  padding: 1%;
+}
+
+@media screen and (max-width: 766px) {
+  /* line 63, node_modules/nicsdru_unity_theme/src/scss/2_layout/_footer.scss */
+  .footer-area .column {
+    float: none;
+    width: auto;
+    margin: 1rem;
+  }
+}
+
+/* line 75, node_modules/nicsdru_unity_theme/src/scss/2_layout/_footer.scss */
+.footer-area .column:first-child {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 766px) {
+  /* line 75, node_modules/nicsdru_unity_theme/src/scss/2_layout/_footer.scss */
+  .footer-area .column:first-child {
+    margin: 1rem;
+  }
+}
+
+/* line 83, node_modules/nicsdru_unity_theme/src/scss/2_layout/_footer.scss */
+.footer-area .column:last-child {
+  float: right;
+}
+
+/* line 87, node_modules/nicsdru_unity_theme/src/scss/2_layout/_footer.scss */
+.footer-area .column-title {
+  color: #111;
+}
+
+/* line 91, node_modules/nicsdru_unity_theme/src/scss/2_layout/_footer.scss */
+.bottom_widget .footer-area .column {
+  width: 32.5%;
+}
+
+/* line 96, node_modules/nicsdru_unity_theme/src/scss/2_layout/_footer.scss */
+.footer-area ul.menu li a.active {
+  color: #ddd;
+}
+
+/* line 101, node_modules/nicsdru_unity_theme/src/scss/2_layout/_footer.scss */
+.footer_block {
+  clear: both;
+}
+
+@media screen and (max-width: 961px) {
+  /* line 109, node_modules/nicsdru_unity_theme/src/scss/2_layout/_footer.scss */
+  #footer_wrapper {
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  /* line 109, node_modules/nicsdru_unity_theme/src/scss/2_layout/_footer.scss */
+  #footer_wrapper {
+    padding: 0;
+  }
+}
+
+/* line 8, src/scss/layout.scss */
+.region-primary-menu .menu_wrapper {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #000;
+}
+
+/*# sourceMappingURL=layout.css.map */

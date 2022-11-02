@@ -18,15 +18,19 @@ bundle: basic_page
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 0
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   content_moderation_control: true
   field_meta_tags: true
   field_next_audit_due: true
   langcode: true
-  links: true
