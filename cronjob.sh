@@ -17,3 +17,4 @@
 /bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-imtac" "/app/log/imtac/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
 /bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-victimspaymentsboard" "/app/log/victimspaymentsboard/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
 /bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-hiaredressni" "/app/log/hiaredressni/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
+/bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-ircommission" "/app/log/ircommission/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
