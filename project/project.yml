@@ -74,7 +74,7 @@ sites:
         default: false
     cvocni:
         name: 'Commission for victims of crime'
-        url: cvocni
+        url: cvocni.org
         solr: cvocni
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/cvocni ; drush core-cron'
