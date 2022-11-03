@@ -1,0 +1,17 @@
+uuid: eace14b6-5275-4282-9a5b-47a94da3d72f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: I9EKhNWhRC5LNG0KnarYKrmtC_a8pA9RBm0pC5f031o
+name: nigov_banner_1880x200_x2
+label: 'nigov banner 1880x200 (x2)'
+effects:
+  2d94549b-6b36-4b0a-9eba-fe9578f45fa1:
+    uuid: 2d94549b-6b36-4b0a-9eba-fe9578f45fa1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1880
+      height: 200
+      anchor: center-center

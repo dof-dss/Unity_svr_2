@@ -1,0 +1,10 @@
+uuid: e0328301-6195-4771-98a7-e9e04d45d1c8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: aaIJpvUFIQjarcB3oCGa4v2froiP6XAcPUtrbiYIDH8
+id: main
+label: 'Main menu'
+description: 'The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.'
+locked: true

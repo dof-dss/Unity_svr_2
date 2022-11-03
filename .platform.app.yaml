@@ -77,6 +77,8 @@ relationships:
     victimspaymentsboard_solr: 'solr:victimspaymentsboard'
     hiaredressni: 'db:hiaredressni'
     hiaredressni_solr: 'solr:hiaredressni'
+    cvocni: 'db:cvocni'
+    cvocni_solr: 'solr:cvocni'
 crons:
     mentalhealthchampionni:
         spec: '10 * * * *'
@@ -99,3 +101,7 @@ crons:
     hiaredressni:
         spec: '10 * * * *'
         cmd: 'cd web/sites/hiaredressni ; drush core-cron'
+    cvocni:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/cvocni ; drush core-cron'
+

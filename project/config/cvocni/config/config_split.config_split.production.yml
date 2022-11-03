@@ -1,0 +1,18 @@
+uuid: 0e0c07f3-94a9-490e-ac72-222c69bf881a
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: production
+description: 'used for production site.'
+weight: 0
+folder: ../project/config/cvocni/production
+module:
+  fastly: 0
+theme: {  }
+blacklist:
+  - fastly.settings
+  - fastly.settings
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
