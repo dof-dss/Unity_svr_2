@@ -6,20 +6,7 @@
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
 #logo {
-  a {
-    display: block;
-
-    &:focus {
-      background: none;
-      border-bottom: none;
-      outline: 0.3rem dashed #949494;
-      outline-offset: 1.2rem;
-    }
-  }
-    img {
-      height: 8rem;
-    }
-    @include breakpoint($tab) {
+  @include breakpoint($tab) {
     img {
       height: 9rem;
       width: 20rem;
@@ -44,7 +31,7 @@ h1 {
   width: 15rem;
 }
 
-.front .main-content{
+.front .main-content {
   background: #e7d7e1 resolve('victims-payments-bkrd.png') center center no-repeat;
 
   h2 {
@@ -68,6 +55,7 @@ h1 {
 
 #main-menu {
   background: $white;
+
   .menu-link,
   .menu .active,
   .menu-item.open .menu-toggle-btn {
@@ -88,6 +76,7 @@ h1 {
       color: $white;
     }
   }
+
   .menu-main_sub
   .menu-item
   span.active {
@@ -123,7 +112,7 @@ h1 {
     display: block;
     border-bottom: none;
 
-      &:hover {
+    &:hover {
       text-decoration: underline;
     }
   }
