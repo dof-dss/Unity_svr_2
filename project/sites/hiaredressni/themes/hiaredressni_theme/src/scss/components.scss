@@ -70,6 +70,7 @@
   border-bottom: none;
   color: $brand-primary;
   padding: 1rem;
+  font-size: 1.8rem;
 }
 
 .footer-area .column:last-child {
@@ -81,3 +82,12 @@
     display: inline;
     padding: 2rem;
   }
+
+.menu_wrapper {
+  border-bottom: 1px solid $brand-primary;
+  padding-bottom: 2rem;
+}
+
+#main-menu .menu-link, #main-menu .menu {
+  font-size: 1.8rem;
+}
