@@ -72,3 +72,4 @@ sites:
         cron_cmd: 'cd web/sites/cvocni ; drush core-cron'
         database: cvocni
         status: development
+        default: false
