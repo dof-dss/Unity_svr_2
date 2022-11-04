@@ -64,3 +64,160 @@ blocks:
           value: "<p><a href=\"/node/34\"><img alt=\"\" data-delta=\"4\" data-fid=\"22\" data-media-element=\"1\" src=\"https://www.victimspaymentsboard.org.uk/sites/victimspayments/files/media-files/contact-us.png\" /></a></p>\r\n\r\n<p><a href=\"/node/34\">Contact us</a></p>\r\n"
           summary: null
           format: full_html
+menus:
+  -
+    menu_name: main
+    title: Home
+    parent: null
+    uri: 'internal:/'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: und
+    uuid: c3c9d7cb-c41b-4e3d-aa70-4b803f588c9c
+  -
+    menu_name: main
+    title: 'About Us'
+    parent: null
+    uri: 'entity:node/51'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: true
+    weight: -49
+    langcode: en
+    uuid: 25d06bcc-9d2b-44b9-a8df-4eda4bee48e9
+  -
+    menu_name: main
+    title: Statistics
+    parent: 'menu_link_content:25d06bcc-9d2b-44b9-a8df-4eda4bee48e9'
+    uri: 'entity:node/50'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: en
+    uuid: ad164f33-5c12-4a3b-99ed-1911d509a6b5
+  -
+    menu_name: main
+    title: Regulations
+    parent: 'menu_link_content:25d06bcc-9d2b-44b9-a8df-4eda4bee48e9'
+    uri: 'entity:node/8'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: en
+    uuid: cc77209f-ef37-4d83-bfc8-f1c0f8fa4ba1
+  -
+    menu_name: main
+    title: 'Guidance to Applicants'
+    parent: null
+    uri: 'internal:/guidance-applicants-0'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -48
+    langcode: en
+    uuid: a1131e04-8f52-4b59-b622-a415d1aad5f4
+  -
+    menu_name: main
+    title: 'Making an Application'
+    parent: null
+    uri: 'entity:node/36'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -47
+    langcode: en
+    uuid: 61b3c02f-1177-41ec-86b9-aed2c27fb7c3
+  -
+    menu_name: main
+    title: 'Support Services'
+    parent: null
+    uri: 'entity:node/3'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -45
+    langcode: en
+    uuid: 6cfb50f4-9f48-4c32-9e26-63b6fd10f89c
+  -
+    menu_name: main
+    title: 'Contact Us'
+    parent: null
+    uri: 'entity:node/34'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -43
+    langcode: en
+    uuid: f993ff3c-6b38-4b22-9b99-1034ceff13ed
+  -
+    menu_name: menu-footer-links
+    title: '© Crown Copyright'
+    parent: null
+    uri: 'entity:node/5'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: en
+    uuid: bc3addd1-d0cd-4535-a360-b879da5eb005
+  -
+    menu_name: menu-footer-links
+    title: 'Accessibility Statement'
+    parent: null
+    uri: 'entity:node/7'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -48
+    langcode: en
+    uuid: 36b8ec9a-5503-4042-a021-e4bb71569442
+  -
+    menu_name: menu-footer-links
+    title: Cookies
+    parent: null
+    uri: 'entity:node/6'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: en
+    uuid: 2a49280d-698d-4286-9e17-647b5d0d1c31
+  -
+    menu_name: main
+    title: FAQ
+    parent: null
+    uri: 'entity:node/69'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -44
+    langcode: en
+    uuid: 50e6b826-53b2-4fa8-9f06-5ed9789bbe6d
+  -
+    menu_name: main
+    title: Publications
+    parent: null
+    uri: 'internal:/Publications'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -46
+    langcode: en
+    uuid: 060ace61-ab8a-431d-a338-ffeb16806c8c
