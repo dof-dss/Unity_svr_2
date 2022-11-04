@@ -5,15 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.media.media_library
     - field.field.media.remote_video.field_media_oembed_video
-    - image.style.medium
     - media.type.remote_video
   module:
-    - image
     - layout_builder
+    - media
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 _core:
   default_config_hash: s_qSuJ0lKjfrGfrxBFt6CCEL-gANHU5t6QmwwtZqCfc
 id: media.remote_video.media_library
@@ -21,19 +20,19 @@ targetEntityType: media
 bundle: remote_video
 mode: media_library
 content:
-  thumbnail:
-    type: image
-    weight: 0
-    region: content
+  field_media_oembed_video:
+    type: oembed
     label: hidden
     settings:
-      image_style: medium
-      image_link: ''
+      max_width: 0
+      max_height: 0
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   created: true
-  field_media_oembed_video: true
   langcode: true
   name: true
   search_api_excerpt: true
+  thumbnail: true
   uid: true

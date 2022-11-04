@@ -1,0 +1,30 @@
+uuid: 02bb2017-fa2e-47bd-9da3-f333b2c91afd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:d52fe534-3c51-4481-9861-b90e669d8403'
+  module:
+    - block_content
+    - system
+  theme:
+    - cvocni_theme
+id: homepagevictimsurvey
+theme: cvocni_theme
+region: top_third
+weight: -3
+provider: null
+plugin: 'block_content:d52fe534-3c51-4481-9861-b90e669d8403'
+settings:
+  id: 'block_content:d52fe534-3c51-4481-9861-b90e669d8403'
+  label: 'Homepage Victim Survey'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
