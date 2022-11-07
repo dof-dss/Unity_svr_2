@@ -5,23 +5,6 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
-#logo {
-  a {
-    display: block;
-
-    &:focus {
-      background: none;
-      border-bottom: none;
-      outline: 0.3rem dashed #949494;
-      outline-offset: 1.2rem;
-    }
-  }
-
-  img {
-    height: 90px;
-  }
-}
-
 #main-menu {
   background: $white;
   .menu-link,
@@ -69,5 +52,23 @@
         }
       }
     }
+  }
+}
+#victim-charter {
+  p {
+    background-color: #fee6d5;
+    padding-bottom: 2rem;
+  }
+}
+#how-to-complain {
+  p {
+    background-color: #d6fefc;
+    padding-bottom: 2rem;
+  }
+}
+#victim-survey {
+  p {
+    background-color: #fedfef;
+    padding-bottom: 2rem;
   }
 }

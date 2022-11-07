@@ -10,3 +10,27 @@
   border-bottom: 1px solid;
   border-color: #000;
 }
+
+.region-front-welcome {
+  display: flex;
+  justify-content: center;
+  padding-right: 20rem;
+  padding-left: 20rem;
+
+  @media screen and (max-width: 766px) {
+    padding-left: 5rem;
+    padding-right: 5rem
+  }
+}
+
+#top-area {
+  display: flex;
+
+  img {
+    border-top: #6b1092 solid 4px;
+  }
+}
+
+.first-top div {
+  background-color: #6b1092
+}

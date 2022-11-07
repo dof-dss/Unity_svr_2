@@ -16,6 +16,14 @@
 
   .container-wrap {
     display: flex;
+
+    @media screen and (max-width: $tab) {
+      flex-wrap: wrap;
+
+      .column {
+        flex: 1 1 calc(100% - 4rem);
+      }
+    }
   }
 
   .column h3 {
@@ -49,6 +57,18 @@
   .right {
     flex: 1;
   }
+
+  @media screen and (max-width: $tab) {
+    flex-direction: column-reverse;
+
+    .right {
+      text-align: center;
+    }
+
+    .left .content div:first-child {
+      text-align: center;
+    }
+  }
 }
 
 .region-front-welcome .block h2 {
@@ -56,6 +76,10 @@
   line-height: 4rem;
   text-align: left;
   font-weight: normal;
+
+  @media screen and (max-width: $tab) {
+    text-align: center;
+  }
 }
 
 #main-menu .menu-link,
@@ -70,6 +94,23 @@
   border-bottom: none;
   color: $brand-primary;
   padding: 1rem;
+  font-size: 1.8rem;
+}
+
+.region-primary-menu .menu_wrapper {
+  border-bottom: 1px solid $brand-primary;
+  padding-bottom: 2rem;
+}
+
+#main-menu .menu-link, #main-menu .menu {
+  font-size: 1.8rem;
+}
+
+#menu-main .menu-item {
+  @media screen and (max-width: $lap) {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
 }
 
 .footer-area .column:last-child {
@@ -80,4 +121,4 @@
 #footer .column li {
     display: inline;
     padding: 2rem;
-  }
+}
