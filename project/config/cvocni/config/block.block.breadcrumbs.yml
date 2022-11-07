@@ -1,4 +1,4 @@
-uuid: 79752e4b-d0c5-4665-bdc7-21496e73777b
+uuid: ab7bd094-0cb1-4a79-b21e-4b6a421b6e9e
 langcode: en
 status: true
 dependencies:
@@ -6,19 +6,19 @@ dependencies:
     - system
   theme:
     - cvocni_theme
-id: pagetitle
+id: breadcrumbs
 theme: cvocni_theme
-region: content
-weight: -4
+region: breadcrumb
+weight: 0
 provider: null
-plugin: page_title_block
+plugin: system_breadcrumb_block
 settings:
-  id: page_title_block
-  label: 'Page title'
+  id: system_breadcrumb_block
+  label: Breadcrumbs
   label_display: '0'
-  provider: core
+  provider: system
 visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "/home\r\n"
+    pages: '<front>'

@@ -141,10 +141,6 @@
           {% endif %}
         {% endif %}
 
-        {% if search_page %}
-          {{ drupal_block('page_title_block', wrapper=false) }}
-        {% endif %}
-
         <div id="content" {{ page.search_facets ? '' : 'class="main-content"' }}>
           {% if page.search_facets %}
             <header id="search-facets" class="sidebar-first-layout">
