@@ -83,6 +83,13 @@ hooks:
       drush -l $site -y config-import
       drush -l $site -y updatedb
       drush -l $site import-all-if-installed safe
+      if [ "$PLATFORM_ENVIRONMENT_TYPE" = production ]; then
+        # Disable QA logons
+        drush -l $site bulk_update_qa_accounts disable
+      else
+        # Enable QA logons
+        drush -l $site bulk_update_qa_accounts enable
+      fi
       # Turn off readonly mode.
       drush -l $site cset readonlymode.settings enabled 0 -y
     done
