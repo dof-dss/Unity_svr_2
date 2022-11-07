@@ -236,6 +236,9 @@
             "drupal/clientside_validation": {
                 "core/jquery.once is required": "https://www.drupal.org/files/issues/2021-02-23/3200022-01.patch",
                 "Cientside validation errors revert to being output as a label in webform wizard pages with ajax enabled": "https://www.drupal.org/files/issues/2021-02-24/3110890-reroll-for-3.0.x.patch"
+            },
+            "drupal/cookie_content_blocker": {
+                "Disable XSS for tag settings to allow HTML output": "https://gist.githubusercontent.com/omahm/eb99bc8278b57798a7d82bf06c27b8d1/raw/d9d75e06300a102b072dd8166f82ec381f211b9d/cookie_content_blocker_disable_xss"
             }
         },
         "drupal-scaffold": {
