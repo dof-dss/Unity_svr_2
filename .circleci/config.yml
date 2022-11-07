@@ -209,25 +209,25 @@ jobs:
       - run:
           name: Trigger a data sync from master environment to nightly edge build.
           command: |
-            platform sync data -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH -y
+            platform sync data -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH -y
       - run:
           name: Backup data sync if the previous attempt failed.
           command: |
             # Pause for the blocking activity to finish.
             sleep 90s
-            platform sync data -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH -y
+            platform sync data -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH -y
           when: on_fail
       - run:
           name: Turn off fastly module to allow for cleaner config import
           command: |
             for site in `ls -l ~/project/web/sites | grep ^d | awk '!/default/{print $9}'`
             do
-              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
+              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
               if [[ -n $result ]]; then
-                result2=$(platform drush "pml -l ${site}" -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH | (grep "Fastly (fastly)" || true) )
+                result2=$(platform drush "pml -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Fastly (fastly)" || true) )
                 if [[ -n $result2 ]]; then
                   echo "***** Uninstall Fastly - ${site} *****"
-                  platform drush "pmu fastly -l ${site}" -y -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH
+                  platform drush "pmu fastly -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
                 fi
             fi
             done
@@ -236,10 +236,10 @@ jobs:
           command: |
             for site in `ls -l ~/project/web/sites | grep ^d | awk '!/default/{print $9}'`
             do
-              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
+              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
               if [[ -n $result ]]; then
                 echo "***** Clear Cache - ${site} *****"
-                platform drush "cr -l ${site}" -y -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH
+                platform drush "cr -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
               fi
             done
       - run:
@@ -247,14 +247,14 @@ jobs:
           command: |
             for site in `ls -l ~/project/web/sites | grep ^d | awk '!/default/{print $9}'`
             do
-              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
+              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
               if [[ -n $result ]]; then
                 echo "***** Config Import - ${site} *****"
-                platform drush "cim -l ${site}" -y -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH
+                platform drush "cim -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
                 echo "***** Import blocks/taxonomies/menus - ${site} *****"
-                platform drush "import-all-if-installed safe -l ${site}" -y -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH
+                platform drush "import-all-if-installed safe -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
                 echo "***** Enable QA accounts - ${site} *****"
-                platform drush "bulk_update_qa_accounts enable -l ${site}" -y -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH
+                platform drush "bulk_update_qa_accounts enable -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
               fi
             done
       - run:
@@ -262,18 +262,18 @@ jobs:
           command: |
             for site in `ls -l ~/project/web/sites | grep ^d | awk '!/default/{print $9}'`
             do
-              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
+              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
               if [[ -n $result ]]; then
-                result2=$(platform drush "pml --status=enabled -l ${site}" -y -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH | (grep "solr" || true) )
+                result2=$(platform drush "pml --status=enabled -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "solr" || true) )
                 if [[ -n $result2 ]]; then
                   echo "***** Purge Solr index for - ${site} *****"
-                  platform ssh -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH \
+                  platform ssh -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH \
                     "curl http://${site}_solr.internal:8080/solr/${site}_index/update --data '<delete><query>*:*</query></delete>' -H 'Content-type:text/xml; charset=utf-8' \
                       && curl http://${site}_solr.internal:8080/solr/${site}_index/update --data '<commit/>' -H 'Content-type:text/xml; charset=utf-8'"
                   echo "***** Rebuild the Solr index for - ${site} *****"
-                  platform drush "sapi-c -l ${site}" -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH
-                  platform drush "sapi-r -l ${site}" -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH
-                  platform drush "sapi-i -l ${site}" -p $PLATFORM_PROJECT_ID -e $EDGE_BUILD_BRANCH
+                  platform drush "sapi-c -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
+                  platform drush "sapi-r -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
+                  platform drush "sapi-i -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
                 fi
               fi
             done
