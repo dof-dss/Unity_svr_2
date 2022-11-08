@@ -9,7 +9,7 @@ dependencies:
 id: mainpagecontent
 theme: cvocni_theme
 region: content
-weight: -3
+weight: -7
 provider: null
 plugin: system_main_block
 settings:
