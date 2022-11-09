@@ -55,7 +55,6 @@ module:
   geolocation_google_static_maps: 0
   geolocation_search_api: 0
   google_analytics: 0
-  google_tag: 0
   handy_cache_tags: 0
   help: 0
   history: 0
@@ -116,6 +115,7 @@ module:
   toolbar: 0
   twig_tweak: 0
   ultimate_cron: 0
+  unity_breadcrumbs: 0
   unity_common: 0
   unity_frontpage: 0
   unity_image_styles: 0
