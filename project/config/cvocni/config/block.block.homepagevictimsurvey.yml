@@ -12,7 +12,7 @@ dependencies:
 id: homepagevictimsurvey
 theme: cvocni_theme
 region: top_third
-weight: -3
+weight: -9
 provider: null
 plugin: 'block_content:d52fe534-3c51-4481-9861-b90e669d8403'
 settings:
