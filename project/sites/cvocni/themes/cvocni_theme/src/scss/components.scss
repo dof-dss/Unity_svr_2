@@ -5,6 +5,22 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
+.front #home-links {
+  border-bottom: solid 1px #4b4b4b;
+  border-top: solid 1px #4b4b4b;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.front {
+  .front-banner {
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+}
+
 #main-menu {
   background: $white;
   .menu-link,
