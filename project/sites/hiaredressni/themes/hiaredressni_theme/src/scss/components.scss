@@ -122,3 +122,7 @@
     display: inline;
     padding: 2rem;
 }
+
+#content a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper):not(.value):not(.card__title-link):not(.card):not(.layout-builder__link):not(.facets-soft-limit-link), .content a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper):not(.value):not(.card__title-link):not(.card):not(.layout-builder__link):not(.facets-soft-limit-link), #footer a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper):not(.value):not(.card__title-link):not(.card):not(.layout-builder__link):not(.facets-soft-limit-link) {
+  border-bottom: none;
+}
