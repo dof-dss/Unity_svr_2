@@ -5,6 +5,16 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/2_layout/index';
 
+.front .main-content {
+  p {
+    width: 65%;
+
+    @media screen and (max-width: 961px) {
+      width: 100%;
+    }
+  }
+}
+
 .content-sidebar-wrap {
   width: 65%;
 }

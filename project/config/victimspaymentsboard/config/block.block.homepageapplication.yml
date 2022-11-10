@@ -1,30 +1,25 @@
-uuid: f8324153-a9b7-4900-ae9f-5ff4354e02a4
+uuid: 6a0a519b-8689-4ddf-a53d-ec44aa3c545f
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:a55e0911-498e-4208-8454-84b12715baa8'
+    - 'block_content:link_block:35cd7b6a-cb9c-4988-9dee-24be3f5cb306'
   module:
     - block_content
-    - system
   theme:
     - victimspaymentsboard_theme
 id: homepageapplication
 theme: victimspaymentsboard_theme
 region: top_second
-weight: -5
+weight: 0
 provider: null
-plugin: 'block_content:a55e0911-498e-4208-8454-84b12715baa8'
+plugin: 'block_content:35cd7b6a-cb9c-4988-9dee-24be3f5cb306'
 settings:
-  id: 'block_content:a55e0911-498e-4208-8454-84b12715baa8'
+  id: 'block_content:35cd7b6a-cb9c-4988-9dee-24be3f5cb306'
   label: 'Homepage Application'
   label_display: '0'
   provider: block_content
   status: true
   info: ''
   view_mode: full
-visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: /home
+visibility: {  }
