@@ -36,7 +36,18 @@
   width: 30%;
 }
 
-.sidebar-first .main-content {
+.sidebar-first {
+
+  .content-sidebar-wrap {
+    width: 65%;
+  }
+
+  .main-content {
+    width: 65%;
+  }
+}
+
+.content-sidebar-wrap {
   width: 65%;
 }
 
