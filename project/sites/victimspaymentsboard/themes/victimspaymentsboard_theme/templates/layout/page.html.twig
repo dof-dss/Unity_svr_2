@@ -99,6 +99,9 @@
     {% if basic_page_structure is not empty or basic_page_structure is empty and not is_front %}
       <div class="content-sidebar-wrap{% if search_page %} search-page{% endif %}">
         {{ page.breadcrumb }}
+        {% if search_page %}
+          {{ drupal_block('page_title_block', wrapper=false) }}
+        {% endif %}
 
         {% if basic_page_structure is not empty and is_front %}
           {% if drupal_config('system.site', 'frontpage_title') %}
@@ -108,10 +111,6 @@
               </h1>
             </div>
           {% endif %}
-        {% endif %}
-
-        {% if search_page %}
-          {{ drupal_block('page_title_block', wrapper=false) }}
         {% endif %}
 
         <div id="content" {{ page.search_facets ? '' : 'class="main-content"' }}>
