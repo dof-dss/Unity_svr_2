@@ -109,7 +109,7 @@ display:
           exclude: true
           alter:
             alter_text: false
-            text: "{% if field_teaser|render is not empty %}\r\nhello\r\n{% endif %}"
+            text: ''
             make_link: true
             path: '{{ field_link_url }}'
             absolute: false
