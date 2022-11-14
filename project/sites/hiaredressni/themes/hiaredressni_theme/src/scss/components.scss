@@ -17,7 +17,17 @@
   .container-wrap {
     display: flex;
 
-    @media screen and (max-width: $tab) {
+    @media screen and (max-width: $tab)
+    {
+      flex-wrap: wrap;
+
+      .column {
+        flex: 1 1 calc(100% - 4rem);
+      }
+    }
+
+    @media screen and (max-width: $lap)
+    {
       flex-wrap: wrap;
 
       .column {
@@ -123,6 +133,16 @@
     padding: 2rem;
 }
 
-#content a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper):not(.value):not(.card__title-link):not(.card):not(.layout-builder__link):not(.facets-soft-limit-link), .content a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper):not(.value):not(.card__title-link):not(.card):not(.layout-builder__link):not(.facets-soft-limit-link), #footer a:not(.toolbar-icon):not(.file-link):not(.facet--btn):not(.facet-item--link):not(.btn):not(.ui-menu-item-wrapper):not(.thwooper):not(.value):not(.card__title-link):not(.card):not(.layout-builder__link):not(.facets-soft-limit-link) {
-  border-bottom: none;
+.welcome-links h3 {
+  text-align: -moz-center;
+
+  a {
+    display: block;
+    width: max-content;
+  }
 }
+
+.region #block-makeanapplication {
+  margin-left: 2rem;
+}
+
