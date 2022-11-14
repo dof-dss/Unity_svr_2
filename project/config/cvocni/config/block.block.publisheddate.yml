@@ -12,7 +12,7 @@ dependencies:
 id: publisheddate
 theme: cvocni_theme
 region: search_facets
-weight: 0
+weight: -5
 provider: null
 plugin: 'facet_block:published_date'
 settings:

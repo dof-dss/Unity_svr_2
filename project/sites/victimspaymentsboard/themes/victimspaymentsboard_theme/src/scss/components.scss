@@ -84,14 +84,23 @@ h1 {
 }
 
 #top-area .column .content {
-  border: 1px solid #e7d7e1;
+  border: 2px solid #e7d7e1;
 
-  p a {
+  a {
+    display: block;
+    min-height: 23rem;
+    background-color: #fff;
+    border-bottom: none;
+  }
+
+  p {
     display: block;
     border-bottom: none;
+    color: #0e6bb3;
 
-    &:hover {
-      text-decoration: underline;
+      &:hover {
+        text-decoration: underline;
+
     }
   }
 }

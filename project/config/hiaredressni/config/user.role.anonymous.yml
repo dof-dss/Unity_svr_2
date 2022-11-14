@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   module:
+    - eu_cookie_compliance
+    - media
     - system
 _core:
   default_config_hash: aj6ZXi0r2a2rs9TYsol23lyiTqdAokujUQnBl33OdFA
@@ -13,4 +15,6 @@ is_admin: false
 permissions:
   - 'access content'
   - 'diff view changes'
+  - 'display eu cookie compliance popup'
   - 'view files'
+  - 'view media'

@@ -85,6 +85,12 @@
 {% if is_front %}
   {{ page.slideshow }}
 
+  <div class="front-banner">
+    <img
+      src="sites/cvocni/themes/cvocni_theme/images/cvocni-banner.png"
+      alt="">
+  </div>
+
   {% if basic_page_structure is empty %}
     {% if drupal_config('system.site', 'frontpage_title') %}
       <h1 class="{{ drupal_config('system.site', 'frontpage_show_title') ? 'container-wrap' : 'visually-hidden' }}">
@@ -97,7 +103,7 @@
 
   {% if page.top_first or page.top_second or page.top_third %}
     {% if basic_page_structure is empty %}
-      <div id="content">
+      <div id="home-links">
     {% endif %}
     <div id="top-area" class="clearfix">
       {% if page.top_first %}

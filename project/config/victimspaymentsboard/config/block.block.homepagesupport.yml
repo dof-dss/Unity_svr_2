@@ -1,0 +1,25 @@
+uuid: de3745a4-91cd-40ae-8000-57d0e504e55d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:link_block:d7d316c2-19e8-4638-8273-0f159d0ff113'
+  module:
+    - block_content
+  theme:
+    - victimspaymentsboard_theme
+id: homepagesupport
+theme: victimspaymentsboard_theme
+region: top_third
+weight: 0
+provider: null
+plugin: 'block_content:d7d316c2-19e8-4638-8273-0f159d0ff113'
+settings:
+  id: 'block_content:d7d316c2-19e8-4638-8273-0f159d0ff113'
+  label: 'Homepage Support'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

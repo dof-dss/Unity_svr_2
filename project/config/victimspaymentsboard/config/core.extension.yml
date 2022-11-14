@@ -100,7 +100,6 @@ module:
   redis: 0
   responsive_image: 0
   scheduled_transitions: 0
-  search: 0
   search_api: 0
   search_api_autocomplete: 0
   search_api_location: 0
@@ -117,6 +116,7 @@ module:
   toolbar: 0
   twig_tweak: 0
   ultimate_cron: 0
+  unity_breadcrumbs: 0
   unity_common: 0
   unity_frontpage: 0
   unity_image_styles: 0

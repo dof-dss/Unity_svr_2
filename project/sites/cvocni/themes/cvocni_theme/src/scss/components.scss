@@ -5,6 +5,22 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
+.front #home-links {
+  border-bottom: solid 1px #4b4b4b;
+  border-top: solid 1px #4b4b4b;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.front {
+  .front-banner {
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+}
+
 #main-menu {
   background: $white;
   .menu-link,
@@ -72,3 +88,30 @@
     padding-bottom: 2rem;
   }
 }
+
+.front #bottom-area {
+  .column {
+    text-align: left;
+    padding: 1rem 2.5rem;
+    background: $grey-light;
+    margin: 1rem;
+
+    a.btn {
+      background: #6d0d96;
+      border-radius: 2.3rem;
+    }
+
+    h2 {
+      @include adjust-font-size-to(21px);
+      margin: 0;
+      padding: 1rem 0 2rem;
+      line-height: 1.5;
+    }
+
+    h3 {
+      @include adjust-font-size-to(18px);
+    }
+  }
+}
+
+
