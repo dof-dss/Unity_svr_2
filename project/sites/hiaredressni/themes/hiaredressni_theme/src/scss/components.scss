@@ -17,8 +17,7 @@
   .container-wrap {
     display: flex;
 
-    @media screen and (max-width: $tab)
-    {
+    @media screen and (max-width: $tab) {
       flex-wrap: wrap;
 
       .column {
@@ -26,8 +25,7 @@
       }
     }
 
-    @media screen and (max-width: $lap)
-    {
+    @media screen and (max-width: $lap) {
       flex-wrap: wrap;
 
       .column {
