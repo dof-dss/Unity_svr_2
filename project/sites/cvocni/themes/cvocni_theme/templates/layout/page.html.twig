@@ -83,7 +83,7 @@
 </div>
 
 {% if is_front %}
-  {{ page.slideshow }}
+
 
   <div class="front-banner">
     <img
@@ -97,9 +97,10 @@
         {{ drupal_config('system.site', 'frontpage_title') }}
       </h1>
     {% endif %}
+    {{ page.front_welcome }}
   {% endif %}
 
-  {{ page.front_welcome }}
+
 
   {% if page.top_first or page.top_second or page.top_third %}
     {% if basic_page_structure is empty %}
@@ -133,8 +134,9 @@
 
     {% if basic_page_structure is not empty or basic_page_structure is empty and not is_front %}
       <div class="content-sidebar-wrap{% if search_page %} search-page{% endif %}">
-        {% if not is_front %}
-          {{ page.breadcrumb }}
+        {{ page.breadcrumb }}
+        {% if search_page %}
+          {{ drupal_block('page_title_block', wrapper=false) }}
         {% endif %}
 
         {% if basic_page_structure is not empty and is_front %}

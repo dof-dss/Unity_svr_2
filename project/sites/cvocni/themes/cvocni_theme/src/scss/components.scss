@@ -114,4 +114,32 @@
   }
 }
 
+#footer {
+  //max-width: 1160px;
+  padding: 2rem;
+
+  @include breakpoint($tab) {
+    padding: 2%;
+  }
+
+  .footer-menu li {
+    padding-left: 0;
+    font-size: 1.6rem;
+    list-style-type: none;
+
+    @include breakpoint($mob) {
+      display: inline-block;
+      padding: 0 .8rem 0 0;
+      line-height: 1.8rem;
+      margin-right: .5rem;
+    }
+
+    a {
+      @media screen and (min-width: $mob) {
+        display: block;
+      }
+    }
+  }
+}
+
 
