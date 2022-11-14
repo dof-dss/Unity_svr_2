@@ -24,9 +24,12 @@ content:
     settings:
       image_link: content
       image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 6
     region: content
 hidden:
   field_metatag: true
   langcode: true
+  search_api_excerpt: true
