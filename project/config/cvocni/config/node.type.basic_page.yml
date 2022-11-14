@@ -18,7 +18,7 @@ third_party_settings:
     toc_source_container: '#block-mainpagecontent .content'
     toc_element: h2
     toc_exclusions: ''
-    toc_screen_depth: '1'
+    toc_screen_depth: '2'
     toc_debug: 0
 _core:
   default_config_hash: 6uHmFGAyA8P6J3-ur3GvatxtsSxEpHpRTg61Bz9muzg
