@@ -131,17 +131,21 @@
     padding: 2rem;
 }
 
-.welcome-links h3 {
+#content #top-area h3 {
   text-align: -moz-center;
 
   a {
     display: block;
     width: max-content;
+
+    &:hover {
+      background: #e7e7e7;
+    }
   }
 }
 
 .region #block-makeanapplication {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .footer-menu ul li {
