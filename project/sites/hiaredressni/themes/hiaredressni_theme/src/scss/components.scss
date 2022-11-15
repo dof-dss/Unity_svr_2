@@ -24,6 +24,14 @@
         flex: 1 1 calc(100% - 4rem);
       }
     }
+
+    @media screen and (max-width: $lap) {
+      flex-wrap: wrap;
+
+      .column {
+        flex: 1 1 calc(100% - 4rem);
+      }
+    }
   }
 
   .column h3 {
@@ -34,10 +42,6 @@
 
 #search-facets {
   width: 30%;
-}
-
-.sidebar-first .main-content {
-  width: 65%;
 }
 
 .current-search-item-results-count {
@@ -88,18 +92,42 @@
   color: $brand-primary;
 }
 
-#main-menu .menu .menu-item .active,
-#main-menu .menu .menu-item .active + .menu-main_sub .title a {
-  background: $grey-lightest;
-  border-bottom: none;
-  color: $brand-primary;
-  padding: 1rem;
-  font-size: 1.6rem;
-}
+#main-menu {
+  .menu-link,
+  .menu .active,
+  .menu-item.open .menu-toggle-btn {
+    color: $brand-primary;
+    @include adjust-font-size-to(16px);
+  }
 
-.region-primary-menu .menu_wrapper {
-  border-bottom: 1px solid $brand-primary;
-  padding-bottom: 2rem;
+  .menu-link {
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  }
+
+  .menu .menu-item .active {
+    border-color: $brand-primary;
+  }
+
+  .menu-main_sub {
+    background: $brand-primary;
+
+    .menu-item {
+      .active {
+        color: $white;
+        border-color: $white;
+      }
+
+      a {
+        &:hover,
+        &:focus {
+          background: $charcoal;
+        }
+      }
+    }
+  }
 }
 
 #main-menu .menu-link, #main-menu .menu {
@@ -121,6 +149,23 @@
 #footer .column li {
     display: inline;
     padding: 2rem;
+}
+
+#content #top-area h3 {
+  text-align: -moz-center;
+
+  a {
+    display: block;
+    width: max-content;
+
+    &:hover {
+      background: #e7e7e7;
+    }
+  }
+}
+
+.region #block-makeanapplication {
+  margin-left: 1rem;
 }
 
 .footer-menu ul li {
