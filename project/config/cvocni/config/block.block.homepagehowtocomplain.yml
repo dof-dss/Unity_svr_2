@@ -1,0 +1,30 @@
+uuid: 5e43a820-06e0-49b4-a946-f1fecd2df564
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:51aad198-6ff6-4ca4-ac34-f9b6b2c253a1'
+  module:
+    - block_content
+    - system
+  theme:
+    - cvocni_theme
+id: homepagehowtocomplain
+theme: cvocni_theme
+region: top_second
+weight: -3
+provider: null
+plugin: 'block_content:51aad198-6ff6-4ca4-ac34-f9b6b2c253a1'
+settings:
+  id: 'block_content:51aad198-6ff6-4ca4-ac34-f9b6b2c253a1'
+  label: 'Homepage how to complain'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

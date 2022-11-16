@@ -1,0 +1,24 @@
+uuid: ab7bd094-0cb1-4a79-b21e-4b6a421b6e9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cvocni_theme
+id: breadcrumbs
+theme: cvocni_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

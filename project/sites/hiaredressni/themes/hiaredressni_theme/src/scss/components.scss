@@ -16,6 +16,22 @@
 
   .container-wrap {
     display: flex;
+
+    @media screen and (max-width: $tab) {
+      flex-wrap: wrap;
+
+      .column {
+        flex: 1 1 calc(100% - 4rem);
+      }
+    }
+
+    @media screen and (max-width: $lap) {
+      flex-wrap: wrap;
+
+      .column {
+        flex: 1 1 calc(100% - 4rem);
+      }
+    }
   }
 
   .column h3 {
@@ -24,7 +40,15 @@
   }
 }
 
-#block-homepageabouttheredressboard {
+#search-facets {
+  width: 30%;
+}
+
+.current-search-item-results-count {
+  margin-top: 0;
+}
+
+.region-front-welcome #block-homepageabouttheredressboard {
   display: flex;
   text-align: left;
   padding: 4rem 0 5rem;
@@ -37,6 +61,18 @@
   .right {
     flex: 1;
   }
+
+  @media screen and (max-width: $tab) {
+    flex-direction: column-reverse;
+
+    .right {
+      text-align: center;
+    }
+
+    .left .content div:first-child {
+      text-align: center;
+    }
+  }
 }
 
 .region-front-welcome .block h2 {
@@ -44,6 +80,10 @@
   line-height: 4rem;
   text-align: left;
   font-weight: normal;
+
+  @media screen and (max-width: $tab) {
+    text-align: center;
+  }
 }
 
 #main-menu .menu-link,
@@ -52,12 +92,53 @@
   color: $brand-primary;
 }
 
-#main-menu .menu .menu-item .active,
-#main-menu .menu .menu-item .active + .menu-main_sub .title a {
-  background: $grey-lightest;
-  border-bottom: none;
-  color: #8a2be2;
-  padding: 1rem;
+#main-menu {
+  .menu-link,
+  .menu .active,
+  .menu-item.open .menu-toggle-btn {
+    color: $brand-primary;
+    @include adjust-font-size-to(16px);
+  }
+
+  .menu-link {
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  }
+
+  .menu .menu-item .active {
+    border-color: $brand-primary;
+  }
+
+  .menu-main_sub {
+    background: $brand-primary;
+
+    .menu-item {
+      .active {
+        color: $white;
+        border-color: $white;
+      }
+
+      a {
+        &:hover,
+        &:focus {
+          background: $charcoal;
+        }
+      }
+    }
+  }
+}
+
+#main-menu .menu-link, #main-menu .menu {
+  font-size: 1.6rem;
+}
+
+#menu-main .menu-item {
+  @media screen and (max-width: $lap) {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
 }
 
 .footer-area .column:last-child {
@@ -68,4 +149,25 @@
 #footer .column li {
     display: inline;
     padding: 2rem;
+}
+
+#content #top-area h3 {
+  text-align: -moz-center;
+
+  a {
+    display: block;
+    width: max-content;
+
+    &:hover {
+      background: #e7e7e7;
+    }
   }
+}
+
+.region #block-makeanapplication {
+  margin-left: 1rem;
+}
+
+.footer-menu ul li {
+  font-size: 1.4rem;
+}

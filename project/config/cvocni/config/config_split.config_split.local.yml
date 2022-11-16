@@ -1,0 +1,18 @@
+uuid: e7dbe7b1-fec8-46d0-8378-79fbd4e1b49f
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: local
+description: "Local development split. \r\nEnables debugging and development modules"
+weight: 0
+folder: ../project/config/cvocni/local
+module:
+  dblog: 0
+  easy_install: 0
+  views_ui: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

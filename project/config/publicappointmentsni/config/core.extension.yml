@@ -58,6 +58,7 @@ module:
   geolocation_google_static_maps: 0
   geolocation_search_api: 0
   google_analytics: 0
+  google_tag: 0
   handy_cache_tags: 0
   help: 0
   history: 0
@@ -91,6 +92,7 @@ module:
   origins_common: 0
   origins_media: 0
   origins_metatag: 0
+  origins_qa: 0
   origins_toc: 0
   origins_translations: 0
   origins_unique_title: 0

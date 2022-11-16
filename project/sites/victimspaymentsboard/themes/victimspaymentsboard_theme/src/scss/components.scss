@@ -6,20 +6,7 @@
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
 #logo {
-  a {
-    display: block;
-
-    &:focus {
-      background: none;
-      border-bottom: none;
-      outline: 0.3rem dashed #949494;
-      outline-offset: 1.2rem;
-    }
-  }
-    img {
-      height: 8rem;
-    }
-    @include breakpoint($tab) {
+  @include breakpoint($tab) {
     img {
       height: 9rem;
       width: 20rem;
@@ -44,30 +31,9 @@ h1 {
   width: 15rem;
 }
 
-.front .main-content{
-  background: #e7d7e1 resolve('victims-payments-bkrd.png') center center no-repeat;
-
-  h2 {
-    margin-left: 2rem;
-
-    @media screen and (max-width: 961px) {
-      margin-left: 0;
-    }
-  }
-
-  p {
-    width: 60%;
-    margin-left: 2rem;
-
-    @media screen and (max-width: 961px) {
-      width: 100%;
-      margin-left: 0;
-    }
-  }
-}
-
 #main-menu {
   background: $white;
+
   .menu-link,
   .menu .active,
   .menu-item.open .menu-toggle-btn {
@@ -88,6 +54,7 @@ h1 {
       color: $white;
     }
   }
+
   .menu-main_sub
   .menu-item
   span.active {
@@ -117,14 +84,23 @@ h1 {
 }
 
 #top-area .column .content {
-  border: 1px solid #e7d7e1;
+  border: 2px solid #e7d7e1;
 
-  p a {
+  a {
+    display: block;
+    min-height: 23rem;
+    background-color: #fff;
+    border-bottom: none;
+  }
+
+  p {
     display: block;
     border-bottom: none;
+    color: #0e6bb3;
 
       &:hover {
-      text-decoration: underline;
+        text-decoration: underline;
+
     }
   }
 }
