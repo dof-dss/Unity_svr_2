@@ -1,0 +1,55 @@
+name: NICS Origins
+type: profile
+description: To provide common functionality for various NICS websites
+core_version_requirement: ^8.8 || ^9
+install:
+  - node
+  - history
+  - block
+  - breakpoint
+  - ckeditor
+  - config
+  - contextual
+  - contact
+  - menu_link_content
+  - datetime
+  - datetime_range
+  - block_content
+  - editor
+  - help
+  - image
+  - layout_builder
+  - layout_discovery
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - big_pipe
+  - taxonomy
+  - dblog
+  - search
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - automated_cron
+  - origins_common
+  - origins_workflow
+  - ctools
+  - simplei
+  - pathauto
+  - token
+  - token_filter
+  - metatag
+  - diff
+dependencies:
+  - admin_toolbar
+  - admin_toolbar_tools
+  - admin_toolbar_links_access_filter
+  - address
+themes:
+  - stark
+  - adminimal_theme

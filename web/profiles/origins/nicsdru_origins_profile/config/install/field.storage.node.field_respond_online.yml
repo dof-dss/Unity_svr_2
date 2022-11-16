@@ -1,0 +1,21 @@
+uuid: 02262ea7-c952-47ab-9e22-0e2f4a34a135
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+_core:
+  default_config_hash: R69AM9S1LCKQDDmTKt5XC_sJAOmbmFVHc9e8PW2uH-s
+id: node.field_respond_online
+field_name: field_respond_online
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

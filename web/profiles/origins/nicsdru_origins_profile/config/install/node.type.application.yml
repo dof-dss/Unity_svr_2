@@ -1,0 +1,20 @@
+uuid: e55bfe8c-c53b-456c-8274-22a59a180e2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: HxAliK-6XOJRwfeyqUtrj8qYby0TibOXuqb89km0Kts
+name: Application
+type: application
+description: 'Use this content type as a gateway page to launch an external application.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

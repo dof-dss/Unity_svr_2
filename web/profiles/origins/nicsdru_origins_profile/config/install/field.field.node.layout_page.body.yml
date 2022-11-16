@@ -1,0 +1,24 @@
+uuid: 7b924d27-42a6-4c75-9e31-72cfcfbde6cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.layout_page
+  module:
+    - text
+_core:
+  default_config_hash: Z49uVah3bD-EJQbIXoiBkgMXc2GUA04nqZDPmMsMZ0U
+id: node.layout_page.body
+field_name: body
+entity_type: node
+bundle: layout_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

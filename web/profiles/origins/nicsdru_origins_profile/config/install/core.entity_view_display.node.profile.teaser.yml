@@ -1,0 +1,36 @@
+uuid: b20b455f-c770-4e38-b6a2-1cc99ea10dc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.profile.body
+    - field.field.node.profile.field_photo
+    - field.field.node.profile.field_summary
+    - node.type.profile
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: xn-g7_PJVAgSIAMdsVYE34yzRhxNRXuD10RlxHai468
+id: node.profile.teaser
+targetEntityType: node
+bundle: profile
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_photo: true
+  field_summary: true

@@ -1,0 +1,29 @@
+uuid: 918ef075-59a1-4d6f-bc44-683a2df51d07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachment
+    - node.type.consultation
+  module:
+    - file
+_core:
+  default_config_hash: CTtEBmpfya5mFmZ3DWGZmMFFsVh2fp_4hl6jX73VhPk
+id: node.consultation.field_attachment
+field_name: field_attachment
+entity_type: node
+bundle: consultation
+label: Attachment
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: consultations
+  file_extensions: 'pdf doc docx xls xlsx xlsm ppt pptx odt ods odp dot zip'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,32 @@
+uuid: 2f931d45-236e-42c8-9b80-8641888a0a50
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: FXohKdXl3EXbJ1CC3kad-q7JhkOgWnq--AP1mUPbsaQ
+id: node.field_link_type
+field_name: field_link_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: quicklink
+      label: 'Quick link'
+    -
+      value: agencylink
+      label: 'Agency link'
+    -
+      value: corporatelink
+      label: 'Corporate link'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

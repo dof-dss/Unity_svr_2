@@ -1,0 +1,39 @@
+uuid: 71a3e2d4-d65a-40ba-bc3e-d0637d290619
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.article.body
+    - field.field.node.article.field_next_audit_due
+    - field.field.node.article.field_summary
+    - field.field.node.article.field_toc_enable
+    - node.type.article
+  module:
+    - user
+_core:
+  default_config_hash: etMectyTp07oKbBG8K87abIl7D7evax93P5N5ojk10k
+id: node.article.rss
+targetEntityType: node
+bundle: article
+mode: rss
+content:
+  field_toc_enable:
+    type: boolean
+    weight: 2
+    region: content
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_next_audit_due: true
+  field_summary: true

@@ -1,0 +1,33 @@
+{
+  "name": "dof-dss/nicsdru_origins_profile",
+  "description": "Drupal install profile to provide common functionality for NICS websites",
+  "type": "drupal-profile",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  ],
+  "require": {
+    "dof-dss/nicsdru_origins_modules": "*",
+    "drupal/address": "^1.7",
+    "drupal/adminimal_theme": "^1.5",
+    "drupal/ctools": "^3.2",
+    "drupal/token": "^1.5",
+    "drupal/token_filter": "^1.1",
+    "drupal/pathauto": "^1.4",
+    "drupal/metatag": "^1.10",
+    "drupal/eu_cookie_compliance": "^1.8",
+    "drupal/simple_sitemap": "^3.3",
+    "drupal/simplei": "^1.1",
+    "drupal/handy_cache_tags": "^1.0",
+    "drupal/views_custom_cache_tag": "^1.1",
+    "drupal/layout_builder_modal": "^1.0@alpha",
+    "drupal/redirect": "^1.4",
+    "drupal/admin_toolbar": "^2.2"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require-dev": {
+  }
+}

@@ -1,0 +1,23 @@
+uuid: c4c269e9-0282-4b0b-89c1-cedf12446297
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_type
+    - node.type.link
+  module:
+    - options
+_core:
+  default_config_hash: VWY77QwwMUa-0r1ELh5tbTQfhFbT53T5ldGu0hfje5k
+id: node.link.field_link_type
+field_name: field_link_type
+entity_type: node
+bundle: link
+label: 'Link type'
+description: 'Choose a type for this link. The type defines where the link appears on the site home page.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

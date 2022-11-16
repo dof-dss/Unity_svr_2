@@ -1,0 +1,23 @@
+uuid: dd52c778-1e48-4b37-9963-86b86fe59828
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_info
+    - node.type.application
+  module:
+    - text
+_core:
+  default_config_hash: aP_ohJweT9TOipCXmVe44uDKtF2IKfj9w7c2pHKLWus
+id: node.application.field_additional_info
+field_name: field_additional_info
+entity_type: node
+bundle: application
+label: 'Additional information'
+description: 'Enter some optional additional information about this application.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
