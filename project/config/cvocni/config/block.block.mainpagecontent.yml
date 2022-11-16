@@ -1,0 +1,20 @@
+uuid: b2b51b3b-9d3b-4f03-b958-5879b04bb532
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cvocni_theme
+id: mainpagecontent
+theme: cvocni_theme
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

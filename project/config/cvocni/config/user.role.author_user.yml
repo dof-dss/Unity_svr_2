@@ -1,0 +1,79 @@
+uuid: fa758ef8-8d60-449e-a095-eaa1de865763
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.audio
+    - media.type.document
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - node.type.basic_page
+    - node.type.news
+    - node.type.publication
+    - workflows.workflow.nics_editorial_workflow
+  module:
+    - content_moderation
+    - entity_browser
+    - media
+    - menu_admin_per_menu
+    - moderation_sidebar
+    - node
+    - path
+    - system
+    - toolbar
+id: author_user
+label: 'author user'
+weight: 7
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access location_browser entity browser pages'
+  - 'access toolbar'
+  - 'administer main menu items'
+  - 'create audio media'
+  - 'create basic_page content'
+  - 'create document media'
+  - 'create file media'
+  - 'create image media'
+  - 'create news content'
+  - 'create publication content'
+  - 'create remote_video media'
+  - 'create url aliases'
+  - 'delete own audio media'
+  - 'delete own basic_page content'
+  - 'delete own document media'
+  - 'delete own file media'
+  - 'delete own image media'
+  - 'delete own news content'
+  - 'delete own publication content'
+  - 'delete own remote_video media'
+  - 'edit any basic_page content'
+  - 'edit any news content'
+  - 'edit any publication content'
+  - 'edit own audio media'
+  - 'edit own basic_page content'
+  - 'edit own document media'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'edit own news content'
+  - 'edit own publication content'
+  - 'edit own remote_video media'
+  - 'revert basic_page revisions'
+  - 'revert news revisions'
+  - 'revert publication revisions'
+  - 'use moderation sidebar'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition submit_for_review'
+  - 'view any unpublished content'
+  - 'view basic_page revisions'
+  - 'view latest version'
+  - 'view news revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view publication revisions'
+  - 'view the administration theme'

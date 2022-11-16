@@ -1,0 +1,24 @@
+uuid: 75236c78-3112-41f6-b3bc-b15f0abf7ef3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_news
+  module:
+    - views
+  theme:
+    - cvocni_theme
+id: views_block__latest_news_home_latest_news
+theme: cvocni_theme
+region: bottom_widget_1
+weight: -8
+provider: null
+plugin: 'views_block:latest_news-home_latest_news'
+settings:
+  id: 'views_block:latest_news-home_latest_news'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

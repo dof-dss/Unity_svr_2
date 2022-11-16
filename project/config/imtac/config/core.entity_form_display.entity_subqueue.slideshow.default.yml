@@ -1,0 +1,41 @@
+uuid: 644560d7-22fc-44ea-9a82-1ee536f07699
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.slideshow
+  module:
+    - entityqueue
+id: entity_subqueue.slideshow.default
+targetEntityType: entity_subqueue
+bundle: slideshow
+mode: default
+content:
+  items:
+    type: entityqueue_dragtable
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: '10'
+      size: '60'
+      placeholder: ''
+      link_to_entity: 0
+      link_to_edit_form: 0
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

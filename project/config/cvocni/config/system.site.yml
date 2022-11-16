@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
+langcode: en
+uuid: 184ff5cb-e70b-452a-9fd6-07d1f1a7c89a
+name: 'Commission for victims of crime NI'
+mail: test@test.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+frontpage_title: 'Welcome from the Commissioner Designate for Victims of Crime'
+frontpage_show_title: 0

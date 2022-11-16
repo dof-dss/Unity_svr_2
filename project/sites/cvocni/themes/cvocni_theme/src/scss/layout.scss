@@ -1,0 +1,82 @@
+/*
+ * @file
+ * Defines the layout code for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/2_layout/index';
+
+.region-primary-menu .menu_wrapper {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #000;
+}
+
+.region-front-welcome {
+  display: flex;
+  justify-content: center;
+  padding-right: 20rem;
+  padding-left: 20rem;
+
+  @media screen and (max-width: 766px) {
+    padding-left: 5rem;
+    padding-right: 5rem
+  }
+}
+
+#top-area {
+  display: flex;
+
+  img {
+    border-top: #6b1092 solid 4px;
+  }
+}
+
+.first-top div {
+  background-color: #6b1092
+}
+
+.path-news,
+.path-publications, {
+  .content-sidebar-wrap {
+    width: 100%;
+  }
+
+  .search-page {
+    .sidebar-first-layout {
+      padding-left: 0;
+    }
+
+    @include breakpoint($lap) {
+      .sidebar-first-layout {
+        width: 30%;
+      }
+
+      .main-content {
+        width: 65%;
+      }
+    }
+
+    .views-exposed-form {
+      p {
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+
+#bottom-area {
+  @include breakpoint($tab) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+
+  .column {
+    width: auto;
+    float: none;
+
+    @include breakpoint($tab) {
+      flex-basis: 46%;
+    }
+  }
+}

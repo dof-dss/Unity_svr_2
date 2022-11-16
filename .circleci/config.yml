@@ -178,11 +178,11 @@ jobs:
             export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
             [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
             nvm install v15.14.0
-            for site in `ls -l ~/project/web/sites | grep ^d | awk '{print $9}'`
+            for site in `ls -l ~/project/project/sites | grep ^d | awk '{print $9}'`
             do
-              if [[ -d ~/project/web/sites/${site}/themes/${site}_theme ]]; then
+              if [[ -d ~/project/project/sites/${site}/themes/${site}_theme ]]; then
                 echo "*** Building theme for ${site} ***"
-                cd ~/project/web/sites/${site}/themes/${site}_theme
+                cd ~/project/project/sites/${site}/themes/${site}_theme
                 sed -i -e "s/\"nicsdru_unity_theme.*/\"nicsdru_unity_theme\": \"github:dof-dss\/nicsdru_unity_theme#development\",/" package.json
                 npm install
                 npm rebuild node-sass
@@ -191,7 +191,7 @@ jobs:
                 git add *.css
                 git commit -m "Theme rebuild"
               else
-                echo "No theme folder detected under ~/project/web/sites/${site}/themes/${site}_theme, skipping."
+                echo "No theme folder detected under ~/project/project/sites/${site}/themes/${site}_theme, skipping."
               fi
             done
 
@@ -220,7 +220,7 @@ jobs:
       - run:
           name: Turn off fastly module to allow for cleaner config import
           command: |
-            for site in `ls -l ~/project/web/sites | grep ^d | awk '!/default/{print $9}'`
+            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
             do
               result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
               if [[ -n $result ]]; then
@@ -234,7 +234,7 @@ jobs:
       - run:
           name: Clear cache before config import
           command: |
-            for site in `ls -l ~/project/web/sites | grep ^d | awk '!/default/{print $9}'`
+            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
             do
               result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
               if [[ -n $result ]]; then
@@ -245,18 +245,22 @@ jobs:
       - run:
           name: Refresh configuration as our db will contain active prod config after sync operation
           command: |
-            for site in `ls -l ~/project/web/sites | grep ^d | awk '!/default/{print $9}'`
+            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
             do
               result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
               if [[ -n $result ]]; then
                 echo "***** Config Import - ${site} *****"
                 platform drush "cim -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
+                echo "***** Import blocks/taxonomies/menus - ${site} *****"
+                platform drush "import-all-if-installed safe -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
+                echo "***** Enable QA accounts - ${site} *****"
+                platform drush "bulk_update_qa_accounts enable -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
               fi
             done
       - run:
           name: Purge and rebuild Solr indexes
           command: |
-            for site in `ls -l ~/project/web/sites | grep ^d | awk '!/default/{print $9}'`
+            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
             do
               result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
               if [[ -n $result ]]; then

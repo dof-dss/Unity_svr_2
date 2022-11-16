@@ -1,0 +1,8 @@
+uuid: fd8c9a6a-b6f0-4a60-bb7f-44f9296de504
+langcode: en
+status: true
+dependencies: {  }
+id: link_block
+label: 'Link block'
+revision: 0
+description: 'Custom block type used for homepage divs'

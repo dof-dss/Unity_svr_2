@@ -1,0 +1,29 @@
+uuid: 7cfefe28-0fc8-43b3-8510-be0eb8742b4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - cvocni_theme
+id: sidemenu
+theme: cvocni_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'In this section'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

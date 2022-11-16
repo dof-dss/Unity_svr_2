@@ -56,10 +56,10 @@ $chroma: add-colors('functional', (
   error-bg:               'light-pink',
 
   menu-background:        'brand-primary',
-  menu-item-hover:        'brand-secondary',
+  menu-item-hover:        'brand-primary',
   menu-separator:         #fff,
   menu-sub-item-background: lighten(#606, 10),
-  menu-sub-item-hover:    'brand-primary',
+  menu-sub-item-hover:    #fff,
 
   table-background:       #fff,
   table-border:           #bbb,

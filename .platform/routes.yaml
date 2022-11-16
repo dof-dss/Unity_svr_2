@@ -6,14 +6,6 @@
 'https://mentalhealthchampion-ni.org.uk.{default}/':
     type: redirect
     to: 'https://www.mentalhealthchampion-ni.org.uk.{default}/'
-'https://www.publicappointmentsni.org/':
-    type: upstream
-    upstream: 'unity_svr_2:http'
-    cache:
-        enabled: 'false'
-'https://publicappointmentsni.org/':
-    type: redirect
-    to: 'https://www.publicappointmentsni.org/'
 'https://www.ircommission.org/':
     type: upstream
     upstream: 'unity_svr_2:http'
@@ -54,6 +46,14 @@
 'https://hiaredressni.uk/':
     type: redirect
     to: 'https://www.hiaredressni.uk/'
+'https://www.cvocni.org/':
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
+'https://cvocni.org/':
+    type: redirect
+    to: 'https://www.cvocni.org/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_2:http'
