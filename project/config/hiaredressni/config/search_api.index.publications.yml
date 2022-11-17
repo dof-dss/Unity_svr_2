@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - field.storage.node.field_publication_type
     - field.storage.node.field_published_date
     - search_api.server.solr_default
   module:
@@ -65,14 +64,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.body
-  field_publication_type:
-    label: Type
-    datasource_id: 'entity:node'
-    property_path: field_publication_type
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_publication_type
   field_published_date:
     label: Date
     datasource_id: 'entity:node'
@@ -136,7 +127,6 @@ processor_settings:
     all_fields: true
     fields:
       - body
-      - field_publication_type
       - langcode
       - spelling
       - title
