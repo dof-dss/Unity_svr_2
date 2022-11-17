@@ -14,11 +14,6 @@ targetEntityType: node
 bundle: feature
 mode: default
 content:
-  content_moderation_control:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
   field_photo:
     type: entity_reference_entity_view
     label: hidden
@@ -26,7 +21,7 @@ content:
       view_mode: slide
       link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_teaser:
     type: string
@@ -34,9 +29,10 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
 hidden:
+  content_moderation_control: true
   field_link_url: true
   langcode: true
   links: true

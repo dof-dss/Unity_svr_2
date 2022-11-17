@@ -6,7 +6,6 @@ dependencies:
     - entityqueue.entity_queue.slideshow
     - field.storage.node.field_photo
     - field.storage.node.field_teaser
-    - node.type.feature
   module:
     - entityqueue
     - node
@@ -274,18 +273,45 @@ display:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-        type:
-          id: type
+        entityqueue_relationship:
+          id: entityqueue_relationship
           table: node_field_data
-          field: type
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
           entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          value:
-            feature: feature
+          plugin_id: entity_queue_in_queue
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
           expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
             operator_limit_selection: false
             operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
         type: slick
         options:
@@ -352,7 +378,7 @@ display:
           admin_label: 'Content queue'
           entity_type: node
           plugin_id: entity_queue
-          required: false
+          required: true
           limit_queue: slideshow
       header: {  }
       footer: {  }
