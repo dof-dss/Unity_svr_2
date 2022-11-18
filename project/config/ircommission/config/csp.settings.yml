@@ -9,6 +9,7 @@ report-only:
       base: self
       sources:
         - 'https://www.google-analytics.com'
+        - 'https://region1.google-analytics.com'
     font-src:
       base: self
       sources:
