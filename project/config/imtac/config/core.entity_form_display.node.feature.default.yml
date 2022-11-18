@@ -7,7 +7,9 @@ dependencies:
     - field.field.node.feature.field_photo
     - field.field.node.feature.field_teaser
     - node.type.feature
+    - workflows.workflow.nics_editorial_workflow
   module:
+    - content_moderation
     - media_library
     - path
 id: node.feature.default
@@ -42,6 +44,12 @@ content:
     region: content
     settings:
       include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 11
+    region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path
@@ -95,4 +103,3 @@ content:
     third_party_settings: {  }
 hidden:
   field_link_url: true
-  moderation_state: true
