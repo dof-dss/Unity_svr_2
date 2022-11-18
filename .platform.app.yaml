@@ -1,5 +1,5 @@
 name: unity_svr_2
-type: 'php:8.0'
+type: 'php:8.1'
 dependencies:
     php:
         composer/composer: ^2
