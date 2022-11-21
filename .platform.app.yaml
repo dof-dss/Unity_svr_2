@@ -27,6 +27,9 @@ mounts:
     /.console:
         source: local
         source_path: console
+    /log:
+        source: local
+        source_path: log
 build:
     flavor: composer
 hooks:
