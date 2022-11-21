@@ -8,8 +8,7 @@ report-only:
     connect-src:
       base: self
       sources:
-        - 'https://www.google-analytics.com'
-        - 'https://region1.google-analytics.com'
+        - 'https://*.google-analytics.com'
     font-src:
       base: self
       sources:
