@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "07b7f3ae8f51b38539dec96a6375e3fe",
+    "content-hash": "948e850ec76c704fe9d047bf14cac351",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1875,16 +1875,16 @@
         },
         {
             "name": "dof-dss/nicsdru_origins_modules",
-            "version": "1.4.7",
+            "version": "1.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_origins_modules.git",
-                "reference": "ec4e427e7edca7755786a1f91009f60535141c30"
+                "reference": "6416f1e237c8732589ae1b95a7502abbea86d98d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/ec4e427e7edca7755786a1f91009f60535141c30",
-                "reference": "ec4e427e7edca7755786a1f91009f60535141c30",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/6416f1e237c8732589ae1b95a7502abbea86d98d",
+                "reference": "6416f1e237c8732589ae1b95a7502abbea86d98d",
                 "shasum": ""
             },
             "require": {
@@ -1898,9 +1898,9 @@
             "description": "Generic modules for DOF-DSS Drupal sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_origins_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/1.4.7"
+                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/1.4.8"
             },
-            "time": "2022-10-27T11:08:55+00:00"
+            "time": "2022-11-10T13:32:31+00:00"
         },
         {
             "name": "dof-dss/nicsdru_origins_profile",
@@ -1944,16 +1944,16 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_modules.git",
-                "reference": "86f132b3e202c59cfa353dddaefffaeb9b966b8b"
+                "reference": "6e552898d4053da4e301c96f1338c04b04810611"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/86f132b3e202c59cfa353dddaefffaeb9b966b8b",
-                "reference": "86f132b3e202c59cfa353dddaefffaeb9b966b8b",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/6e552898d4053da4e301c96f1338c04b04810611",
+                "reference": "6e552898d4053da4e301c96f1338c04b04810611",
                 "shasum": ""
             },
             "require": {
@@ -1967,22 +1967,22 @@
             "description": "Custom modules available to all Unity sites.",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/1.1.5"
+                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/1.1.6"
             },
-            "time": "2022-10-21T09:50:48+00:00"
+            "time": "2022-11-10T13:34:29+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_profile",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_profile.git",
-                "reference": "1b8b3a59618c9c424d1f59f89e6ce9678da3d65b"
+                "reference": "4c77fdecde8ac0e43b85b923091f6a3d10a4b152"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/1b8b3a59618c9c424d1f59f89e6ce9678da3d65b",
-                "reference": "1b8b3a59618c9c424d1f59f89e6ce9678da3d65b",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/4c77fdecde8ac0e43b85b923091f6a3d10a4b152",
+                "reference": "4c77fdecde8ac0e43b85b923091f6a3d10a4b152",
                 "shasum": ""
             },
             "require": {
@@ -1996,22 +1996,22 @@
             "description": "Custom install profile used by all Unity sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_profile/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/1.0.6"
+                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/1.0.7"
             },
-            "time": "2022-10-27T10:52:44+00:00"
+            "time": "2022-11-09T15:43:57+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_theme",
-            "version": "v0.1.63",
+            "version": "v0.1.64",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_theme.git",
-                "reference": "f75c612077510c2260cc1ec7ebe10aaabadb56f9"
+                "reference": "7fb98e3517d053195f0d2feaa373be048dc9cb0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/f75c612077510c2260cc1ec7ebe10aaabadb56f9",
-                "reference": "f75c612077510c2260cc1ec7ebe10aaabadb56f9",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/7fb98e3517d053195f0d2feaa373be048dc9cb0a",
+                "reference": "7fb98e3517d053195f0d2feaa373be048dc9cb0a",
                 "shasum": ""
             },
             "require": {
@@ -2035,9 +2035,9 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v0.1.63"
+                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v0.1.64"
             },
-            "time": "2022-10-21T10:28:09+00:00"
+            "time": "2022-11-10T11:28:35+00:00"
         },
         {
             "name": "drupal/address",
@@ -3527,6 +3527,10 @@
             ],
             "authors": [
                 {
+                    "name": "alexpott",
+                    "homepage": "https://www.drupal.org/user/157725"
+                },
+                {
                     "name": "chr.fritsch",
                     "homepage": "https://www.drupal.org/user/2103716"
                 },
@@ -4344,26 +4348,26 @@
         },
         {
             "name": "drupal/embed",
-            "version": "1.4.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/embed.git",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "09a2bda039bfbb3fff01c91964384bf3d924b8c5"
+                "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "6d2964775c3228d122cd61904786b3640fa83045"
             },
             "require": {
-                "drupal/core": "^8.7.7 || ^9"
+                "drupal/core": "^9.3 | ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1590176831",
+                    "version": "8.x-1.6",
+                    "datestamp": "1661298150",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5960,10 +5964,6 @@
             ],
             "authors": [
                 {
-                    "name": "RobLoach",
-                    "homepage": "https://www.drupal.org/user/61114"
-                },
-                {
                     "name": "bnjmnm",
                     "homepage": "https://www.drupal.org/user/2369194"
                 },
@@ -5992,12 +5992,28 @@
                     "homepage": "https://www.drupal.org/user/2972409"
                 },
                 {
+                    "name": "nod_",
+                    "homepage": "https://www.drupal.org/user/598310"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
                     "name": "sun",
                     "homepage": "https://www.drupal.org/user/54136"
                 },
                 {
                     "name": "webchick",
                     "homepage": "https://www.drupal.org/user/24967"
+                },
+                {
+                    "name": "Wim Leers",
+                    "homepage": "https://www.drupal.org/user/99777"
                 },
                 {
                     "name": "zrpnr",
@@ -6365,10 +6381,6 @@
             ],
             "authors": [
                 {
-                    "name": "Sam152",
-                    "homepage": "https://www.drupal.org/user/1485048"
-                },
-                {
                     "name": "acbramley",
                     "homepage": "https://www.drupal.org/user/1036766"
                 },
@@ -6383,6 +6395,10 @@
                 {
                     "name": "rikki_iki",
                     "homepage": "https://www.drupal.org/user/1068918"
+                },
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
                 }
             ],
             "description": "This module provides an Entity Browser for Media.",
@@ -6529,10 +6545,6 @@
             ],
             "authors": [
                 {
-                    "name": "RyanPrice",
-                    "homepage": "https://www.drupal.org/user/873848"
-                },
-                {
                     "name": "aaron",
                     "homepage": "https://www.drupal.org/user/33420"
                 },
@@ -6543,6 +6555,10 @@
                 {
                     "name": "rphair",
                     "homepage": "https://www.drupal.org/user/3196607"
+                },
+                {
+                    "name": "RyanPrice",
+                    "homepage": "https://www.drupal.org/user/873848"
                 },
                 {
                     "name": "vaibhavjain",
@@ -17758,6 +17774,10 @@
                 {
                     "name": "robwilmshurst",
                     "homepage": "https://www.drupal.org/user/144488"
+                },
+                {
+                    "name": "smustgrave",
+                    "homepage": "https://www.drupal.org/user/3252890"
                 }
             ],
             "description": "Provides stage_file_proxy module.",
