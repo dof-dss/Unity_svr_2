@@ -11,7 +11,7 @@
 name: 'unity'
 
 # The runtime the application uses.
-type: 'php:8.0'
+type: 'php:8.1'
 
 dependencies:
   php:
@@ -46,6 +46,9 @@ mounts:
   '/.console':
     source: local
     source_path: 'console'
+  '/log':
+    source: local
+    source_path: 'log'
 
 # Configuration of the build of this application.
 build:

@@ -71,3 +71,7 @@ domain_all_sites: false
 settings_tab_enabled: false
 containing_element: body
 cookie_policy_version: 1.0.0
+close_button_action: close_banner
+reject_button_label: ''
+reject_button_enabled: false
+close_button_enabled: false

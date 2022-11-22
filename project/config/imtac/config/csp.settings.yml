@@ -8,7 +8,7 @@ report-only:
     connect-src:
       base: self
       sources:
-        - 'https://www.google-analytics.com'
+        - 'https://*.google-analytics.com'
     font-src:
       base: self
       sources:
@@ -21,6 +21,7 @@ report-only:
       base: self
       sources:
         - 'https://www.youtube.com'
+        - 'https://*.twitter.com'
     img-src:
       base: self
       sources:
@@ -33,6 +34,7 @@ report-only:
         - 'https://maps.gstatic.com'
         - 'https://maps.googleapis.com'
         - 'data:'
+        - 'https://*.twitter.com'
     manifest-src:
       base: self
     script-src:
@@ -40,6 +42,7 @@ report-only:
       sources:
         - 'https://www.googletagmanager.com'
         - 'https://www.google-analytics.com'
+        - 'http://*.twitter.com'
     script-src-attr:
       base: self
     script-src-elem:
@@ -47,6 +50,7 @@ report-only:
       sources:
         - 'https://www.googletagmanager.com'
         - 'https://www.google-analytics.com'
+        - 'http://*.twitter.com'
     style-src:
       base: self
     style-src-attr:

@@ -42,12 +42,6 @@ settings:
     drupallink:
       linkit_enabled: false
       linkit_profile: ''
-    language:
-      language_list: un
-    stylescombo:
-      styles: ''
-    tokenbrowser:
-      token_types: {  }
 image_upload:
   status: false
   scheme: public
