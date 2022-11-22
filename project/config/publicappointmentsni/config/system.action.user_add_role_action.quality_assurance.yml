@@ -1,0 +1,14 @@
+uuid: 04bf84e5-7668-4c76-bccf-b3ce98ca1cc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.quality_assurance
+  module:
+    - user
+id: user_add_role_action.quality_assurance
+label: 'Add the Quality Assurance role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: quality_assurance
