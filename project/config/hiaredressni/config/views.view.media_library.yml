@@ -764,6 +764,8 @@ display:
           settings:
             image_style: thumbnail
             image_link: content
+            image_loading:
+              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -2110,6 +2112,8 @@ display:
           settings:
             image_style: media_library
             image_link: ''
+            image_loading:
+              attribute: lazy
         name:
           id: name
           label: Name

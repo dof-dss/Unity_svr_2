@@ -61,12 +61,8 @@ settings:
     drupallink:
       linkit_enabled: true
       linkit_profile: default
-    language:
-      language_list: un
     stylescombo:
       styles: "p.info-notice|Information notice\r\na.btn|Button"
-    tokenbrowser:
-      token_types: {  }
 image_upload:
   status: true
   scheme: public

@@ -22,3 +22,8 @@ matchers:
       include_unpublished: false
       result_description: ''
     weight: 0
+  d070f34b-f610-4f69-89ac-e39556edf8ef:
+    id: email
+    uuid: d070f34b-f610-4f69-89ac-e39556edf8ef
+    settings: {  }
+    weight: 0

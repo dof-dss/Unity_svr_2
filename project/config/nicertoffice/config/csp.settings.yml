@@ -7,7 +7,7 @@ report-only:
       base: self
     connect-src:
       sources:
-        - 'https://www.google-analytics.com'
+        - 'https://*.google-analytics.com'
       base: self
     font-src:
       sources:

@@ -85,6 +85,7 @@ module:
   migrate_tools: 0
   migrate_upgrade: 0
   moderation_sidebar: 0
+  mysql: 0
   node: 0
   node_edit_protection: 0
   noreferrer: 0
