@@ -1,0 +1,41 @@
+uuid: 1ee339c2-2938-4fbd-b95c-8bcd06ae49c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.article_full_expandable
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_media_image
+    - media.type.image
+    - responsive_image.styles.inline_xl_expandable
+  module:
+    - layout_builder
+    - responsive_image
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+_core:
+  default_config_hash: BHHXqTGWRoOm9ejVm7lM8VT4iSke3Fo7GQtM2S1z2_Q
+id: media.image.article_full_expandable
+targetEntityType: media
+bundle: image
+mode: article_full_expandable
+content:
+  field_media_image:
+    label: visually_hidden
+    settings:
+      responsive_image_style: inline_xl_expandable
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    weight: 1
+    region: content
+hidden:
+  created: true
+  field_caption: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true
