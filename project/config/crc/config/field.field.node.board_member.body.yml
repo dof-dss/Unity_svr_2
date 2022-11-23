@@ -1,0 +1,32 @@
+uuid: a1f65cfd-bc59-4179-bf63-5cd65b4131b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.board_member
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: avWC00IS2tlGI6ll3a2AVj8WxeBLU78XhhAe17s8jak
+id: node.board_member.body
+field_name: body
+entity_type: node
+bundle: board_member
+label: Body
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

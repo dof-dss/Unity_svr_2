@@ -82,3 +82,12 @@ sites:
         database: nijac
         status: development
         default: false
+    crc:
+        name: 'Community Relations Council'
+        url: community-relations.org.uk
+        solr: crc
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/crc ; drush core-cron'
+        database: crc
+        status: development
+        default: false

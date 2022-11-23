@@ -1,0 +1,23 @@
+uuid: 8b29ef31-c301-49c5-aeb7-ce99cd22a5b1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: W2MMMGUmTG52TR_LreOBpoJOOZgCwKjukGoZZVYGbh8
+id: node.field_member_role
+field_name: field_member_role
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
