@@ -1,0 +1,17 @@
+uuid: ebccf1c5-faab-4115-a087-549df46d828e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ueOB4q4hq3Zoeqdq5ylT25ZiU-VPwTfxjlPsvjg3eNM
+name: slideshow_x2
+label: 'Slideshow x2'
+effects:
+  2fc6ec89-ba43-4b6f-a87c-7759e5d600e6:
+    uuid: 2fc6ec89-ba43-4b6f-a87c-7759e5d600e6
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 2048
+      height: 680
+      anchor: center-center

@@ -1,0 +1,17 @@
+uuid: 2a2e4985-b9b2-453b-97cb-ff7bebdc0972
+langcode: en
+status: true
+dependencies:
+  module:
+    - field
+title: 'Purges deleted Field API data'
+id: field_cron
+weight: 0
+module: field
+callback: field_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database
