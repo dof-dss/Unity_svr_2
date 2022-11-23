@@ -73,3 +73,12 @@ sites:
         database: cvocni
         status: development
         default: false
+    nijac:
+        name: 'Northern Ireland Judicial Appointments Commission'
+        url: nijac.gov.uk
+        solr: nijac
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/nijac ; drush core-cron'
+        database: nijac
+        status: development
+        default: false

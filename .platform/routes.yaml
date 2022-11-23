@@ -54,6 +54,14 @@
 'https://cvocni.org/':
     type: redirect
     to: 'https://www.cvocni.org/'
+'https://www.nijac.gov.uk/':
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
+'https://nijac.gov.uk/':
+    type: redirect
+    to: 'https://www.nijac.gov.uk/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_2:http'
