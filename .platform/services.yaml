@@ -11,6 +11,7 @@ db:
             - victimspaymentsboarddb
             - hiaredressnidb
             - cvocnidb
+            - nijacdb
         endpoints:
             mentalhealthchampionni:
                 default_schema: mentalhealthchampionnidb
@@ -44,6 +45,10 @@ db:
                 default_schema: cvocnidb
                 privileges:
                     cvocnidb: admin
+            nijac:
+                default_schema: nijacdb
+                privileges:
+                    nijacdb: admin
 solr:
     type: 'solr:7.7'
     disk: 1024
@@ -65,6 +70,8 @@ solr:
                 conf_dir: !archive solr_config/
             cvocni_index:
                 conf_dir: !archive solr_config/
+            nijac_index:
+                conf_dir: !archive solr_config/
         endpoints:
             mentalhealthchampionni:
                 core: mentalhealthchampionni_index
@@ -82,5 +89,7 @@ solr:
                 core: hiaredressni_index
             cvocni:
                 core: cvocni_index
+            nijac:
+                core: nijac_index
 redis:
     type: 'redis:6.0'
