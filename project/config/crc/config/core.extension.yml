@@ -23,6 +23,7 @@ module:
   content_moderation: 0
   contextual: 0
   cookie_content_blocker: 0
+  crc_migrations: 0
   csp: 0
   ctools: 0
   datetime: 0
@@ -76,6 +77,7 @@ module:
   metatag_open_graph: 0
   metatag_twitter_cards: 0
   metatag_views: 0
+  migrate_absolute_links: 0
   moderation_sidebar: 0
   node: 0
   node_edit_protection: 0
