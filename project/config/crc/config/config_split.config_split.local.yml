@@ -1,0 +1,24 @@
+uuid: 2dc96988-f501-446f-8029-864cba4d0176
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: local
+description: ''
+weight: 0
+folder: ../project/config/crc/local
+module:
+  dblog: 0
+  easy_install: 0
+  migrate: 0
+  migrate_drupal: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  migrate_upgrade: 0
+  views_ui: 0
+  nicsdru_unity_profile: 1000
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

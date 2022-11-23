@@ -1,0 +1,15 @@
+uuid: 393f4ef2-1422-480f-9ffa-d12941a440a2
+langcode: en
+status: true
+dependencies: {  }
+id: hosted
+label: hosted
+description: ''
+weight: 0
+folder: ../project/config/crc/hosted
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
