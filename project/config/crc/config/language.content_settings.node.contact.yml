@@ -1,0 +1,13 @@
+uuid: 34d184b8-7ac6-4a36-935a-ef28a688c15e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contact
+_core:
+  default_config_hash: JZ6RGE9aZ44MkQt5VXxJ9p4bR7aNcEK4M_VvPLXa5gs
+id: node.contact
+target_entity_type_id: node
+target_bundle: contact
+default_langcode: site_default
+language_alterable: false
