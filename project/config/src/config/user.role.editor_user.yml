@@ -1,15 +1,14 @@
-uuid: b364692e-ef3d-4276-9ce9-289494778a3e
+uuid: bfca2a81-7ba2-4f6e-bbeb-1ab3a3118969
 langcode: en
 status: true
 dependencies:
   module:
+    - node
     - redirect
     - system
-_core:
-  default_config_hash: cI6O43jts_j67JaySnvjojNUQYYJXQmbWghOsb7iQNY
-id: supervisor_user
-label: 'supervisor user'
-weight: 3
+id: editor_user
+label: 'editor user'
+weight: 5
 is_admin: null
 permissions:
   - 'access administration menu'
@@ -19,6 +18,7 @@ permissions:
   - 'add media from remote sources'
   - 'administer book outlines'
   - 'administer main-menu menu items'
+  - 'administer nodes'
   - 'administer redirects'
   - 'create files'
   - 'create new books'
@@ -65,11 +65,9 @@ permissions:
   - 'unflag content_audit'
   - 'use text format filtered_html'
   - 'use text format filtered_html_with_no_images'
-  - 'use workbench_media add form'
+  - 'use text format filtered_html_with_tokens'
   - 'use workbench_moderation my drafts tab'
   - 'use workbench_moderation needs review tab'
   - 'view all unpublished content'
-  - 'view moderation history'
-  - 'view moderation messages'
   - 'view own files'
   - 'view the administration theme'
