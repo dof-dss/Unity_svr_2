@@ -1,17 +1,15 @@
-uuid: 65af270b-e2d0-49e8-b069-eac8b1de01a8
+uuid: 8ff0e3d0-480f-40ba-9058-58c9a4f01fe2
 langcode: und
 status: true
 dependencies:
   module:
-    - node
-_core:
-  default_config_hash: __YmHpC0JHR4G_jKdC8bv1kSE7i3vazZ2bEqbxuIur4
-id: node.field_teaser
-field_name: field_teaser
-entity_type: node
+    - file
+id: file.field_file_image_title_text
+field_name: field_file_image_title_text
+entity_type: file
 type: string
 settings:
-  max_length: 120
+  max_length: 255
   case_sensitive: false
   is_ascii: false
 module: core
