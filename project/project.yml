@@ -35,7 +35,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/imtac ; drush core-cron'
         database: imtac
-        status: development
+        status: production
         default: false
     nicertoffice:
         name: 'Northern Ireland Certification Officer for Trade Unions and Employers'' Associations'

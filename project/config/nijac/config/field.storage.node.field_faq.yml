@@ -1,0 +1,22 @@
+uuid: ab98aa25-7b06-474a-ad41-e3272b562ff4
+langcode: und
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+_core:
+  default_config_hash: S3Upem2GMIsJwHeBNg_N9SnU9tw4QQZma_wIjPjZAEs
+id: node.field_faq
+field_name: field_faq
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: node
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

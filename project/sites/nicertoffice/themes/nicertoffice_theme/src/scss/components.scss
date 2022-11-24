@@ -93,6 +93,14 @@
 
     &:first-child {
       background: #e6d9e7;
+
+      .content {
+        padding: 0;
+
+        a {
+          color: #0d63a5;
+        }
+      }
     }
 
     &:nth-child(2) {
@@ -110,7 +118,7 @@
 
   ul {
     margin-left: 2.4rem;
-    padding: 1rem 1rem 1.2rem 0;
+    padding: 0 1rem 1.2rem 0;
     position: relative;
 
     li {

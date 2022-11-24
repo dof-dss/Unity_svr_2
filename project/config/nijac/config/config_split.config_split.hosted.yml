@@ -1,0 +1,15 @@
+uuid: b0bc41ce-c35c-423c-b1ce-d5ad0b74b5f4
+langcode: en
+status: true
+dependencies: {  }
+id: hosted
+label: hosted
+description: 'Use for any sites that are ''hosted'' and not running locally, whether development, QA or production.'
+weight: 0
+folder: ../project/config/nijac/hosted
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
