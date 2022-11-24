@@ -2,7 +2,10 @@ uuid: 5e4ba0c0-2f19-4109-b6ca-09be72b44c19
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.project_profile
   module:
+    - node
     - system
 _core:
   default_config_hash: AyMCT1boGFkm3MNXLyv6ZV7yMdWLY-U3WQLhzDDkWGE
@@ -33,8 +36,6 @@ permissions:
   - 'edit own video files'
   - 'moderate content from draft to needs_review'
   - 'moderate content from needs_review to draft'
-  - 'use text format filtered_html'
-  - 'use text format filtered_html_with_no_images'
   - 'use workbench_moderation my drafts tab'
   - 'use workbench_moderation needs review tab'
   - 'view all unpublished content'

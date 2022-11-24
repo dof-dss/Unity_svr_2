@@ -3,8 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.core_funded_groups
+    - node.type.event
+    - node.type.funding_schemes
     - node.type.news
+    - node.type.staff_member
   module:
+    - menu_admin_per_menu
     - node
     - redirect
     - system
@@ -78,8 +83,6 @@ permissions:
   - 'unflag content_audit'
   - 'update featured_event_queue entityqueue'
   - 'update featured_news_queue entityqueue'
-  - 'use text format filtered_html'
-  - 'use text format filtered_html_with_no_images'
   - 'use workbench_media add form'
   - 'use workbench_moderation my drafts tab'
   - 'use workbench_moderation needs review tab'

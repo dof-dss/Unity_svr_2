@@ -1,6 +1,6 @@
 uuid: ed635b79-bf3e-4c3f-923f-652d02aae536
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - token_filter
@@ -21,7 +21,8 @@ filters:
     provider: token_filter
     status: true
     weight: -44
-    settings: {  }
+    settings:
+      replace_empty: ''
   filter_null:
     id: filter_null
     provider: filter
