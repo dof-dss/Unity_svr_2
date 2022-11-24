@@ -89,5 +89,12 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/src ; drush core-cron'
         database: src
+    crc:
+        name: 'Community Relations Council'
+        url: community-relations.org.uk
+        solr: crc
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/crc ; drush core-cron'
+        database: crc
         status: development
         default: false

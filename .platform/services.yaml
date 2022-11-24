@@ -13,6 +13,7 @@ db:
             - cvocnidb
             - nijacdb
             - srcdb
+            - crcdb
         endpoints:
             mentalhealthchampionni:
                 default_schema: mentalhealthchampionnidb
@@ -54,6 +55,10 @@ db:
                 default_schema: srcdb
                 privileges:
                     srcdb: admin
+            crc:
+                default_schema: crcdb
+                privileges:
+                    crcdb: admin
 solr:
     type: 'solr:7.7'
     disk: 1024
@@ -78,6 +83,7 @@ solr:
             nijac_index:
                 conf_dir: !archive solr_config/
             src_index:
+            crc_index:
                 conf_dir: !archive solr_config/
         endpoints:
             mentalhealthchampionni:
@@ -100,5 +106,7 @@ solr:
                 core: nijac_index
             src:
                 core: src_index
+            crc:
+                core: crc_index
 redis:
     type: 'redis:6.0'

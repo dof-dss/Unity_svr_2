@@ -1,0 +1,24 @@
+uuid: 62b7b418-b4a3-43e6-8d48-08c55fa6a7a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.faq
+_core:
+  default_config_hash: '-SjJDXZRbKdLfmhi2GPFjZGd1AZNJ4BOt01_-77vcfM'
+id: node.faq.status
+field_name: status
+entity_type: node
+bundle: faq
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

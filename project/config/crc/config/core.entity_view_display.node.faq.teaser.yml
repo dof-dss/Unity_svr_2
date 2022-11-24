@@ -1,0 +1,27 @@
+uuid: 02efa91a-67ab-4b07-9000-15b94341ea84
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.faq.field_faq
+    - field.field.node.faq.field_meta_tags
+    - node.type.faq
+  module:
+    - user
+_core:
+  default_config_hash: zVu9PRxZDIOBNsQU0-gGlPIwF8xWoIQn9dmr2-522bc
+id: node.faq.teaser
+targetEntityType: node
+bundle: faq
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_faq: true
+  field_meta_tags: true
+  langcode: true

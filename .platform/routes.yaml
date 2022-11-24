@@ -55,6 +55,7 @@
     type: redirect
     to: 'https://www.nijac.gov.uk/'
 'https://www.sentencereview.org.uk/':
+'https://www.community-relations.org.uk/':
     type: upstream
     upstream: 'unity_svr_2:http'
     cache:
@@ -62,6 +63,9 @@
 'https://sentencereview.org.uk/':
     type: redirect
     to: 'https://www.sentencereview.org.uk/'
+'https://community-relations.org.uk/':
+    type: redirect
+    to: 'https://www.community-relations.org.uk/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_2:http'
