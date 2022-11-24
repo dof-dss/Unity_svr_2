@@ -1,0 +1,24 @@
+uuid: d9bc7cbf-5e4e-40b5-82cc-2ebb9c5c9425
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.consultation
+_core:
+  default_config_hash: RBH3-f-WaKtuvY8-xIT39tvWS1264MNhx6rfgEExnPQ
+id: node.consultation.status
+field_name: status
+entity_type: node
+bundle: consultation
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

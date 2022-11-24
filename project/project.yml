@@ -82,3 +82,12 @@ sites:
         database: nijac
         status: development
         default: false
+    src:
+        name: 'Sentence Review Commissioners'
+        url: sentencereview.org.uk
+        solr: src
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/src ; drush core-cron'
+        database: src
+        status: development
+        default: false
