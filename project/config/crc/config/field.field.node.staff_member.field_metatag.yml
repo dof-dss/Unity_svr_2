@@ -1,0 +1,21 @@
+uuid: 326b3223-b1e4-46e7-94b3-459ec70adb86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatag
+    - node.type.staff_member
+  module:
+    - metatag
+id: node.staff_member.field_metatag
+field_name: field_metatag
+entity_type: node
+bundle: staff_member
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

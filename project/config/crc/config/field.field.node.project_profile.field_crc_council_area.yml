@@ -1,0 +1,23 @@
+uuid: 7d39e9f8-671d-4c25-a186-0bc4a243000f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_crc_council_area
+    - node.type.project_profile
+  module:
+    - options
+id: node.project_profile.field_crc_council_area
+field_name: field_crc_council_area
+entity_type: node
+bundle: project_profile
+label: 'Council Area'
+description: 'Please choose the council areas from the select list. Hold Ctlr to select more than one area.'
+required: true
+translatable: false
+default_value:
+  -
+    value: antrim_and_newtownabbey_borough_council
+default_value_callback: ''
+settings: {  }
+field_type: list_string

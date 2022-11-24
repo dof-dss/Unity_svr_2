@@ -1,0 +1,18 @@
+uuid: 5a03a40c-bee3-4f9e-bc96-884eaeb752ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.project_profile
+id: node.project_profile.title
+field_name: title
+entity_type: node
+bundle: project_profile
+label: 'Group Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

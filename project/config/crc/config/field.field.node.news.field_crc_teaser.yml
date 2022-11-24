@@ -1,0 +1,19 @@
+uuid: 021cc73d-bc5d-4c08-8b01-bb6b4f4ba3fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_crc_teaser
+    - node.type.news
+id: node.news.field_crc_teaser
+field_name: field_crc_teaser
+entity_type: node
+bundle: news
+label: Teaser
+description: 'Please add a short teaser of the content.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

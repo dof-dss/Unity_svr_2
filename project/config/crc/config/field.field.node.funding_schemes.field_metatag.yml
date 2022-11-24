@@ -1,0 +1,21 @@
+uuid: b6cf4973-010a-4d47-ae71-8012510b2636
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatag
+    - node.type.funding_schemes
+  module:
+    - metatag
+id: node.funding_schemes.field_metatag
+field_name: field_metatag
+entity_type: node
+bundle: funding_schemes
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

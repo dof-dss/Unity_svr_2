@@ -1,0 +1,33 @@
+uuid: 2183c33c-3a5b-455a-86d6-764acd5253ef
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_crc_t_buc_aim
+field_name: field_crc_t_buc_aim
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: our_children_and_young_people
+      label: 'Our Children and Young People'
+    -
+      value: our_shared_community
+      label: 'Our Shared Community'
+    -
+      value: our_safe_community
+      label: 'Our Safe Community'
+    -
+      value: our_cultural_expression
+      label: 'Our Cultural Expression'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

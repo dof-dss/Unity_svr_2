@@ -1,0 +1,37 @@
+uuid: 4246cf9f-8acd-4454-82d2-0a3a25cc2b00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.body
+    - field.field.node.event.field_crc_event_date
+    - field.field.node.event.field_crc_teaser
+    - field.field.node.event.field_metatag
+    - field.field.node.event.field_photo
+    - node.type.event
+  module:
+    - text
+    - user
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_crc_event_date: true
+  field_crc_teaser: true
+  field_metatag: true
+  field_photo: true
+  langcode: true

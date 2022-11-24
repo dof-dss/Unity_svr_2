@@ -1,0 +1,21 @@
+uuid: 769f2624-be7d-4ad8-bf18-0120b572cda6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_funding_scheme_type
+    - node.type.funding_schemes
+  module:
+    - options
+id: node.funding_schemes.field_funding_scheme_type
+field_name: field_funding_scheme_type
+entity_type: node
+bundle: funding_schemes
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

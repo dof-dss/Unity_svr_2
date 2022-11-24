@@ -1,0 +1,21 @@
+uuid: 62634d2a-7fbe-4437-a5e0-5434401072ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_crc_t_buc_aim
+    - node.type.project_profile
+  module:
+    - options
+id: node.project_profile.field_crc_t_buc_aim
+field_name: field_crc_t_buc_aim
+entity_type: node
+bundle: project_profile
+label: 'T:BUC Aim'
+description: 'Please choose the aim of the group from the select list. Hold Ctrl to select more than one.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

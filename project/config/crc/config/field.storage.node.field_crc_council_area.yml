@@ -1,0 +1,57 @@
+uuid: 9a475114-ae2c-402c-8e58-392001e496ac
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_crc_council_area
+field_name: field_crc_council_area
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: antrim_and_newtownabbey_borough_council
+      label: 'Antrim and Newtownabbey Borough Council'
+    -
+      value: ards_and_north_down_borough_council
+      label: 'Ards and North Down Borough Council'
+    -
+      value: armagh_city_banbridge_and_craigavon_borough_council
+      label: 'Armagh City, Banbridge and Craigavon Borough Council'
+    -
+      value: belfast_city_council
+      label: 'Belfast City Council'
+    -
+      value: causeway_coast_and_glens_borough_council
+      label: 'Causeway Coast and Glens Borough Council'
+    -
+      value: derry_city_and_strabane_district_council
+      label: 'Derry City and Strabane District Council'
+    -
+      value: fermanagh_and_omagh_district_council
+      label: 'Fermanagh and Omagh District Council'
+    -
+      value: lisburn_and_castlereagh_city_council
+      label: 'Lisburn and Castlereagh City Council'
+    -
+      value: mid_and_east_antrim_borough_council
+      label: 'Mid and East Antrim Borough Council'
+    -
+      value: mid_ulster_district_council
+      label: 'Mid Ulster District Council'
+    -
+      value: newry_mourne_and_down_district_council
+      label: 'Newry, Mourne and Down District Council'
+    -
+      value: regional
+      label: Regional
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
