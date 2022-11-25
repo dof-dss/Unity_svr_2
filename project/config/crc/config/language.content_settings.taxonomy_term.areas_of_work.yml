@@ -1,0 +1,11 @@
+uuid: a93bc129-7404-45ca-80ef-7ed31def0762
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.areas_of_work
+id: taxonomy_term.areas_of_work
+target_entity_type_id: taxonomy_term
+target_bundle: areas_of_work
+default_langcode: site_default
+language_alterable: false

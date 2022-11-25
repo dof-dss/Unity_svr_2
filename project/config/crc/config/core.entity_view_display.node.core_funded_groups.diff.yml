@@ -10,7 +10,6 @@ dependencies:
     - node.type.core_funded_groups
   module:
     - layout_builder
-    - options
     - text
     - user
 third_party_settings:
@@ -29,14 +28,8 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_areas_work:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
 hidden:
+  field_areas_work: true
   field_meta_tags: true
   langcode: true
   links: true

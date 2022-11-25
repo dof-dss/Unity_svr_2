@@ -10,7 +10,6 @@ dependencies:
     - node.type.funding_schemes
   module:
     - datetime
-    - options
     - text
     - user
 id: node.funding_schemes.default
@@ -35,9 +34,10 @@ content:
     weight: 1
     region: content
   field_funding_scheme_type:
-    type: list_default
+    type: entity_reference_label
     label: above
-    settings: {  }
+    settings:
+      link: true
     third_party_settings: {  }
     weight: 2
     region: content

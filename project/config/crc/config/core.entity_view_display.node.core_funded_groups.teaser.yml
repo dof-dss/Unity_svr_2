@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.core_funded_groups.field_meta_tags
     - node.type.core_funded_groups
   module:
-    - options
     - text
     - user
 id: node.core_funded_groups.teaser
@@ -25,14 +24,8 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_areas_work:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
 hidden:
+  field_areas_work: true
   field_meta_tags: true
   langcode: true
   links: true

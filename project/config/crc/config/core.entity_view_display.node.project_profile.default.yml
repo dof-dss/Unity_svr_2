@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.project_profile.field_meta_tags
     - node.type.project_profile
   module:
-    - options
     - text
     - user
 id: node.project_profile.default
@@ -33,18 +32,20 @@ content:
     weight: 3
     region: content
   field_crc_council_area:
-    type: list_default
+    type: entity_reference_label
     label: above
-    settings: {  }
+    settings:
+      link: true
     third_party_settings: {  }
-    weight: 1
+    weight: 4
     region: content
   field_crc_t_buc_aim:
-    type: list_default
+    type: entity_reference_label
     label: above
-    settings: {  }
+    settings:
+      link: true
     third_party_settings: {  }
-    weight: 2
+    weight: 5
     region: content
 hidden:
   field_meta_tags: true

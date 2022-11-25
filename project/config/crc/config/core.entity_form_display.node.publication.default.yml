@@ -70,7 +70,7 @@ content:
         show_edit: '1'
   field_publication_type:
     type: options_select
-    weight: 10
+    weight: 26
     region: content
     settings: {  }
     third_party_settings: {  }

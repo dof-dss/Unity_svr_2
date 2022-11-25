@@ -1,28 +1,26 @@
-uuid: dbae782c-f1e2-43d0-a36f-05656ea178d6
+uuid: 75591a06-5d3f-4c2c-9d4f-988fd9091270
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_publication_type
     - node.type.publication
-    - taxonomy.vocabulary.publications_topics
-_core:
-  default_config_hash: 14NqevawhWXgH65cBjkur-vAx00JJGor75I4qW8N8pY
+    - taxonomy.vocabulary.publication_types
 id: node.publication.field_publication_type
 field_name: field_publication_type
 entity_type: node
 bundle: publication
-label: 'Publication type'
+label: Type
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      publications_topics: publications_topics
+      publication_types: publication_types
     sort:
       field: name
       direction: asc

@@ -1,50 +1,19 @@
-uuid: 4fae4b80-a3ec-46fb-844d-b582d635b4a7
-langcode: und
+uuid: 4e57b4e0-e249-4024-b35c-02f81e030f8d
+langcode: en
 status: true
 dependencies:
   module:
     - node
-    - options
+    - taxonomy
 id: node.field_areas_work
 field_name: field_areas_work
 entity_type: node
-type: list_string
+type: entity_reference
 settings:
-  allowed_values:
-    -
-      value: Interfaces(Urban)DevelopmentSharedSpaces
-      label: 'Interfaces (Urban) and development of shared spaces'
-    -
-      value: Interfaces(Rural)ContestedSpaces
-      label: 'Interfaces (Rural) and contested spaces'
-    -
-      value: SharedSpaces
-      label: 'Shared spaces – venue provision'
-    -
-      value: FaithBasedWork
-      label: 'Faith based work'
-    -
-      value: CulturalCelebrationsCommemorations
-      label: 'Cultural celebrations & commemorations'
-    -
-      value: PolicingCommunitySafety
-      label: 'Policing & Community Safety'
-    -
-      value: AddressingLlegacyPast
-      label: 'Addressing the legacy of the past'
-    -
-      value: IdentityBasedWork
-      label: 'Identity based work'
-    -
-      value: Sectarianism
-      label: Sectarianism
-    -
-      value: OtherAreasCommunityRelationsWork
-      label: 'Other areas of community relations work'
-  allowed_values_function: ''
-module: options
+  target_type: taxonomy_term
+module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

@@ -1,30 +1,17 @@
-uuid: 88f99b45-67cd-4d57-9623-910c86079382
-langcode: und
+uuid: 970e7132-d2e0-4610-ac70-076a85e31622
+langcode: en
 status: true
 dependencies:
   module:
     - node
-    - options
+    - taxonomy
 id: node.field_funding_scheme_type
 field_name: field_funding_scheme_type
 entity_type: node
-type: list_string
+type: entity_reference
 settings:
-  allowed_values:
-    -
-      value: CoreFunding
-      label: 'Core Funding'
-    -
-      value: MediaGrant
-      label: 'Media Grant'
-    -
-      value: PublicationsGrant
-      label: 'Publications Grant'
-    -
-      value: CommunityRelationsCulturalDiversityGrant
-      label: 'Community Relations/Cultural Diversity Grant'
-  allowed_values_function: ''
-module: options
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true

@@ -119,8 +119,14 @@ process:
           source: value
   field_funding_scheme_type:
     -
-      plugin: get
+      plugin: static_map
       source: field_funding_scheme_type
+      default_value: null
+      map:
+        CoreFunding: 18
+        MediaGrant: 19
+        PublicationsGrant: 20
+        CommunityRelationsCulturalDiversityGrant: 21
   field_metatag:
     -
       plugin: d7_metatag_entities

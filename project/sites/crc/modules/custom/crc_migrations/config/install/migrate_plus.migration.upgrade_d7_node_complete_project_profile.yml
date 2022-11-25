@@ -113,12 +113,32 @@ process:
       source: field_crc_contact_details
   field_crc_council_area:
     -
-      plugin: get
+      plugin: static_map
       source: field_crc_council_area
+      default_value: null
+      map:
+        antrim_and_newtownabbey_borough_council: 24
+        ards_and_north_down_borough_council: 25
+        armagh_city_banbridge_and_craigavon_borough_council: 26
+        belfast_city_council: 27
+        causeway_coast_and_glens_borough_council: 28
+        derry_city_and_strabane_district_council: 29
+        fermanagh_and_omagh_district_council: 30
+        lisburn_and_castlereagh_city_council: 31
+        mid_and_east_antrim_borough_council: 32
+        mid_ulster_district_council: 33
+        newry_mourne_and_down_district_council: 34
+        regional: 35
   field_crc_t_buc_aim:
     -
-      plugin: get
+      plugin: static_map
       source: field_crc_t_buc_aim
+      default_value: null
+      map:
+        our_children_and_young_people: 36
+        our_shared_community: 37
+        our_safe_community: 38
+        our_cultural_expression: 39
   field_metatag:
     -
       plugin: d7_metatag_entities

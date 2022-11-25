@@ -1,24 +1,17 @@
-uuid: 9257a684-6d2c-49aa-8eeb-3248e9861099
-langcode: und
+uuid: e6efb4ef-77b9-4a5f-bcc1-376b0418c16a
+langcode: en
 status: true
 dependencies:
   module:
     - node
-    - options
+    - taxonomy
 id: node.field_news_type
 field_name: field_news_type
 entity_type: node
-type: list_string
+type: entity_reference
 settings:
-  allowed_values:
-    -
-      value: NewsRelease
-      label: 'News release'
-    -
-      value: PressRelease
-      label: 'Press release'
-  allowed_values_function: ''
-module: options
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true

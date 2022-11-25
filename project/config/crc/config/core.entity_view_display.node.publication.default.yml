@@ -13,7 +13,6 @@ dependencies:
     - node.type.publication
   module:
     - datetime
-    - origins_common
     - text
     - user
 _core:
@@ -37,7 +36,7 @@ content:
       view_mode: embed
       link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_photo:
     type: entity_reference_entity_view
@@ -46,17 +45,7 @@ content:
       view_mode: portrait_float
       link: false
     third_party_settings: {  }
-    weight: 4
-    region: content
-  field_publication_type:
-    type: html_list_formatter
-    label: above
-    settings:
-      list_type: ul
-      list_classes: ''
-      display_item_link: false
-    third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_published_date:
     type: datetime_default
@@ -70,6 +59,7 @@ content:
 hidden:
   content_moderation_control: true
   field_meta_tags: true
+  field_publication_type: true
   field_summary: true
   langcode: true
   links: true
