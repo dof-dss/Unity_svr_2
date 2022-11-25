@@ -113,8 +113,17 @@ process:
         plain_text: plain_text
   field_publication_type:
     -
-      plugin: get
+      plugin: static_map
       source: field_publication_type
+      default_value: null
+      map:
+        AnnualReports: 1
+        Consulations: 2
+        CouncilMinutes: 3
+        Publication: 4
+        Research: 5
+        SharedSpace: 6
+        eNews: 7
   field_attachment:
     -
       plugin: callback
@@ -131,7 +140,7 @@ process:
 destination:
   plugin: 'entity_complete:node'
   translations: true
-  default_bundle: publication_page
+  default_bundle: publication
 migration_dependencies:
   required:
     - upgrade_d7_user

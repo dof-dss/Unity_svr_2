@@ -109,8 +109,20 @@ process:
         plain_text: plain_text
   field_areas_work:
     -
-      plugin: get
+      plugin: static_map
       source: field_areas_work
+      default_value: null
+      map:
+        Interfaces(Urban)DevelopmentSharedSpaces: 8
+        Interfaces(Rural)ContestedSpace: 9
+        SharedSpaces: 10
+        FaithBasedWork: 11
+        CulturalCelebrationsCommemorations: 12
+        PolicingCommunitySafety: 13
+        AddressingLlegacyPast: 14
+        IdentityBasedWork: 15
+        Sectarianism: 16
+        OtherAreasCommunityRelationsWork: 17
   field_metatag:
     -
       plugin: d7_metatag_entities
