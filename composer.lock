@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "948e850ec76c704fe9d047bf14cac351",
+    "content-hash": "dc4d6c502c02f5efb28c39000a1dcf39",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1973,16 +1973,16 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_profile",
-            "version": "1.0.7",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_profile.git",
-                "reference": "4c77fdecde8ac0e43b85b923091f6a3d10a4b152"
+                "reference": "7da4e1363e8808b279e69b680875d802b71bf781"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/4c77fdecde8ac0e43b85b923091f6a3d10a4b152",
-                "reference": "4c77fdecde8ac0e43b85b923091f6a3d10a4b152",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/7da4e1363e8808b279e69b680875d802b71bf781",
+                "reference": "7da4e1363e8808b279e69b680875d802b71bf781",
                 "shasum": ""
             },
             "require": {
@@ -1996,22 +1996,22 @@
             "description": "Custom install profile used by all Unity sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_profile/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/1.0.7"
+                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/1.0.8"
             },
-            "time": "2022-11-09T15:43:57+00:00"
+            "time": "2022-11-22T12:21:52+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_theme",
-            "version": "v0.1.64",
+            "version": "v0.1.65",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_theme.git",
-                "reference": "7fb98e3517d053195f0d2feaa373be048dc9cb0a"
+                "reference": "0121a9d7b7b016d120d9f77134858c8e3f462d2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/7fb98e3517d053195f0d2feaa373be048dc9cb0a",
-                "reference": "7fb98e3517d053195f0d2feaa373be048dc9cb0a",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/0121a9d7b7b016d120d9f77134858c8e3f462d2c",
+                "reference": "0121a9d7b7b016d120d9f77134858c8e3f462d2c",
                 "shasum": ""
             },
             "require": {
@@ -2035,9 +2035,9 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v0.1.64"
+                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v0.1.65"
             },
-            "time": "2022-11-10T11:28:35+00:00"
+            "time": "2022-11-22T11:28:35+00:00"
         },
         {
             "name": "drupal/address",
@@ -8557,26 +8557,26 @@
         },
         {
             "name": "drupal/twig_field_value",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/twig_field_value.git",
-                "reference": "2.0.0"
+                "reference": "2.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/twig_field_value-2.0.0.zip",
-                "reference": "2.0.0",
-                "shasum": "d2d0db6249493542bf9d568970f67d10ce143f90"
+                "url": "https://ftp.drupal.org/files/projects/twig_field_value-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "c448df55d01e17d352370d5366124d28d3d0cb21"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8 || ^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0",
-                    "datestamp": "1587069998",
+                    "version": "2.0.1",
+                    "datestamp": "1665604686",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
