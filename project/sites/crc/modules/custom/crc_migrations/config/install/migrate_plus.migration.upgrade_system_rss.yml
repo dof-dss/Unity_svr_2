@@ -1,0 +1,30 @@
+uuid: 0a5c62da-dc46-4f7c-9fab-5e6092ca494a
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_system_rss
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'RSS configuration'
+source:
+  plugin: variable
+  variables:
+    - feed_item_length
+  source_module: system
+process:
+  items/view_mode:
+    -
+      plugin: get
+      source: feed_item_length
+destination:
+  plugin: config
+  config_name: system.rss
+migration_dependencies:
+  required: {  }
+  optional: {  }
