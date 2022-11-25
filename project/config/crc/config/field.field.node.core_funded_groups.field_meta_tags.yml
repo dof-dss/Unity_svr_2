@@ -1,16 +1,16 @@
-uuid: b6cf4973-010a-4d47-ae71-8012510b2636
+uuid: b680673c-2a86-49f0-b818-2949160d3231
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_metatag
-    - node.type.funding_schemes
+    - field.storage.node.field_meta_tags
+    - node.type.core_funded_groups
   module:
     - metatag
-id: node.funding_schemes.field_metatag
-field_name: field_metatag
+id: node.core_funded_groups.field_meta_tags
+field_name: field_meta_tags
 entity_type: node
-bundle: funding_schemes
+bundle: core_funded_groups
 label: 'Meta tags'
 description: ''
 required: false

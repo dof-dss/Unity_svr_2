@@ -4,9 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
-    - field.field.node.news.field_crc_teaser
     - field.field.node.news.field_meta_tags
-    - field.field.node.news.field_metatag
     - field.field.node.news.field_news_type
     - field.field.node.news.field_photo
     - field.field.node.news.field_published_date
@@ -48,13 +46,6 @@ content:
   field_meta_tags:
     type: metatag_firehose
     weight: 15
-    region: content
-    settings:
-      sidebar: true
-    third_party_settings: {  }
-  field_metatag:
-    type: metatag_firehose
-    weight: 26
     region: content
     settings:
       sidebar: true
@@ -159,5 +150,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_crc_teaser: true
   field_news_type: true

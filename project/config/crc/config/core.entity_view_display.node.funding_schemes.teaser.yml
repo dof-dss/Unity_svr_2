@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.funding_schemes.body
     - field.field.node.funding_schemes.field_deadline_date
     - field.field.node.funding_schemes.field_funding_scheme_type
-    - field.field.node.funding_schemes.field_metatag
+    - field.field.node.funding_schemes.field_meta_tags
     - node.type.funding_schemes
   module:
     - text
@@ -23,15 +23,11 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 101
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   field_deadline_date: true
   field_funding_scheme_type: true
-  field_metatag: true
+  field_meta_tags: true
   langcode: true
+  links: true

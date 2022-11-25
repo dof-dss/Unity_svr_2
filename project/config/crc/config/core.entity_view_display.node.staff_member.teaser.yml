@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.staff_member.body
     - field.field.node.staff_member.field_member_image
     - field.field.node.staff_member.field_member_role
-    - field.field.node.staff_member.field_metatag
+    - field.field.node.staff_member.field_meta_tags
     - node.type.staff_member
   module:
     - text
@@ -23,15 +23,11 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 101
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   field_member_image: true
   field_member_role: true
-  field_metatag: true
+  field_meta_tags: true
   langcode: true
+  links: true

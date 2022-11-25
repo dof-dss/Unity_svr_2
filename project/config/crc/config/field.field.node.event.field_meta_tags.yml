@@ -1,16 +1,16 @@
-uuid: 7350281e-4eab-46ed-a85e-cc68e3f8af0c
+uuid: dc772d9c-2a17-4c5c-a021-b36e1585b304
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_metatag
-    - node.type.core_funded_groups
+    - field.storage.node.field_meta_tags
+    - node.type.event
   module:
     - metatag
-id: node.core_funded_groups.field_metatag
-field_name: field_metatag
+id: node.event.field_meta_tags
+field_name: field_meta_tags
 entity_type: node
-bundle: core_funded_groups
+bundle: event
 label: 'Meta tags'
 description: ''
 required: false

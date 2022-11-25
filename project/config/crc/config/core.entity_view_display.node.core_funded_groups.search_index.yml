@@ -1,27 +1,31 @@
-uuid: 58edbcec-fd02-445f-88a3-7c3ed7a14766
+uuid: a81cfade-f650-4bcd-b414-601b1a844a25
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.search_index
     - field.field.node.core_funded_groups.body
     - field.field.node.core_funded_groups.field_areas_work
     - field.field.node.core_funded_groups.field_meta_tags
     - node.type.core_funded_groups
   module:
+    - layout_builder
     - options
     - text
     - user
-id: node.core_funded_groups.teaser
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.core_funded_groups.search_index
 targetEntityType: node
 bundle: core_funded_groups
-mode: teaser
+mode: search_index
 content:
   body:
-    type: text_summary_or_trimmed
+    type: text_default
     label: hidden
-    settings:
-      trim_length: 600
+    settings: {  }
     third_party_settings: {  }
     weight: 0
     region: content

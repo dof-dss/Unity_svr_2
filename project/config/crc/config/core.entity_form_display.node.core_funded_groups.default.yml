@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.node.core_funded_groups.body
     - field.field.node.core_funded_groups.field_areas_work
-    - field.field.node.core_funded_groups.field_metatag
+    - field.field.node.core_funded_groups.field_meta_tags
     - node.type.core_funded_groups
   module:
     - content_moderation
@@ -33,7 +33,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_metatag:
+  field_meta_tags:
     type: metatag_firehose
     weight: 122
     region: content

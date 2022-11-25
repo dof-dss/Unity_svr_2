@@ -5,9 +5,10 @@ dependencies:
   config:
     - field.field.node.core_funded_groups.body
     - field.field.node.core_funded_groups.field_areas_work
-    - field.field.node.core_funded_groups.field_metatag
+    - field.field.node.core_funded_groups.field_meta_tags
     - node.type.core_funded_groups
   module:
+    - options
     - text
     - user
 id: node.core_funded_groups.default
@@ -20,14 +21,16 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 0
     region: content
-  links:
+  field_areas_work:
+    type: list_default
+    label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
-  field_areas_work: true
-  field_metatag: true
+  field_meta_tags: true
   langcode: true
+  links: true

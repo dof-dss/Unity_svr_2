@@ -6,7 +6,7 @@ dependencies:
     - field.field.node.staff_member.body
     - field.field.node.staff_member.field_member_image
     - field.field.node.staff_member.field_member_role
-    - field.field.node.staff_member.field_metatag
+    - field.field.node.staff_member.field_meta_tags
     - node.type.staff_member
   module:
     - content_moderation
@@ -34,7 +34,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_metatag:
+  field_meta_tags:
     type: metatag_firehose
     weight: 122
     region: content

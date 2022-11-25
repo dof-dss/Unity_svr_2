@@ -5,9 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.diff
     - field.field.node.news.body
-    - field.field.node.news.field_crc_teaser
     - field.field.node.news.field_meta_tags
-    - field.field.node.news.field_metatag
     - field.field.node.news.field_news_type
     - field.field.node.news.field_photo
     - field.field.node.news.field_published_date
@@ -19,6 +17,7 @@ dependencies:
     - field_group
     - layout_builder
     - metatag
+    - options
     - text
     - user
 third_party_settings:
@@ -33,7 +32,7 @@ third_party_settings:
       label: 'Additional content details'
       parent_name: ''
       region: content
-      weight: 3
+      weight: 4
       format_type: html_element
       format_settings:
         classes: field-collection
@@ -66,6 +65,13 @@ content:
     third_party_settings: {  }
     weight: 8
     region: content
+  field_news_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_photo:
     type: entity_reference_entity_view
     label: hidden
@@ -94,9 +100,6 @@ content:
     region: content
 hidden:
   content_moderation_control: true
-  field_crc_teaser: true
-  field_metatag: true
-  field_news_type: true
   field_summary: true
   langcode: true
   links: true

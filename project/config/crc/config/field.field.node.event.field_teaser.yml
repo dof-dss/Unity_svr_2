@@ -1,21 +1,19 @@
-uuid: 3da85818-6188-4f20-b9e1-0dd4f8ece20f
+uuid: c905c6c3-0ba6-45f5-aa61-24762c1b70a2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_metatag
+    - field.storage.node.field_teaser
     - node.type.event
-  module:
-    - metatag
-id: node.event.field_metatag
-field_name: field_metatag
+id: node.event.field_teaser
+field_name: field_teaser
 entity_type: node
 bundle: event
-label: 'Meta tags'
+label: Teaser
 description: ''
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: metatag
+field_type: string

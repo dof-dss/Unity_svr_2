@@ -6,7 +6,7 @@ dependencies:
     - field.field.node.funding_schemes.body
     - field.field.node.funding_schemes.field_deadline_date
     - field.field.node.funding_schemes.field_funding_scheme_type
-    - field.field.node.funding_schemes.field_metatag
+    - field.field.node.funding_schemes.field_meta_tags
     - node.type.funding_schemes
   module:
     - content_moderation
@@ -34,7 +34,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_metatag:
+  field_meta_tags:
     type: metatag_firehose
     weight: 122
     region: content

@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.project_profile.field_crc_contact_details
     - field.field.node.project_profile.field_crc_council_area
     - field.field.node.project_profile.field_crc_t_buc_aim
-    - field.field.node.project_profile.field_metatag
+    - field.field.node.project_profile.field_meta_tags
     - node.type.project_profile
   module:
     - content_moderation
@@ -35,7 +35,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_metatag:
+  field_meta_tags:
     type: metatag_firehose
     weight: 122
     region: content
