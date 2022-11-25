@@ -50,6 +50,12 @@ content:
     settings:
       sidebar: true
     third_party_settings: {  }
+  field_news_type:
+    type: options_select
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_photo:
     type: media_library_widget
     weight: 12
@@ -149,5 +155,4 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_news_type: true
+hidden: {  }
