@@ -36,6 +36,7 @@
 }
 
 .node-type-document,
+.node-type-decision,
 .node-type-faq,
 .node-type-webform {
   @include breakpoint($tab) {
