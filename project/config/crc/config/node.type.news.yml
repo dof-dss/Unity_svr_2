@@ -7,9 +7,8 @@ dependencies:
     - origins_toc
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
   origins_toc:
     toc_enable: 0
     toc_title: 'Table of contents'
@@ -22,9 +21,9 @@ third_party_settings:
     toc_debug: 0
 _core:
   default_config_hash: MDBRelCFIWMUAdxoEVb_Yf9JKky-iGqLY6fLfi4LPT4
-name: News
+name: 'News page'
 type: news
-description: 'Use this content type for news items, press releases and announcements.'
+description: 'Use <em>news pages</em> for your news items, press releases and announcements.'
 help: ''
 new_revision: true
 preview_mode: 1

@@ -129,8 +129,12 @@ process:
           source: value
   field_news_type:
     -
-      plugin: get
+      plugin: static_map
       source: field_news_type
+      default_value: null
+      map:
+        NewsRelease: 22
+        PressRelease: 23
   field_crc_teaser:
     -
       plugin: get
