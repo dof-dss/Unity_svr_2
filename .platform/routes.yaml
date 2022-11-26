@@ -14,14 +14,6 @@
 'https://ircommission.org/':
     type: redirect
     to: 'https://www.ircommission.org/'
-'https://www.imtac.org.uk/':
-    type: upstream
-    upstream: 'unity_svr_2:http'
-    cache:
-        enabled: 'false'
-'https://imtac.org.uk/':
-    type: redirect
-    to: 'https://www.imtac.org.uk/'
 'https://www.nicertoffice.org.uk/':
     type: upstream
     upstream: 'unity_svr_2:http'
@@ -62,6 +54,18 @@
 'https://nijac.gov.uk/':
     type: redirect
     to: 'https://www.nijac.gov.uk/'
+'https://www.sentencereview.org.uk/':
+'https://www.community-relations.org.uk/':
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
+'https://sentencereview.org.uk/':
+    type: redirect
+    to: 'https://www.sentencereview.org.uk/'
+'https://community-relations.org.uk/':
+    type: redirect
+    to: 'https://www.community-relations.org.uk/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_2:http'

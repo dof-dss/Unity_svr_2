@@ -35,7 +35,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/imtac ; drush core-cron'
         database: imtac
-        status: development
+        status: production
         default: false
     nicertoffice:
         name: 'Northern Ireland Certification Officer for Trade Unions and Employers'' Associations'
@@ -80,5 +80,21 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/nijac ; drush core-cron'
         database: nijac
+        status: development
+        default: false
+    src:
+        name: 'Sentence Review Commissioners'
+        url: sentencereview.org.uk
+        solr: src
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/src ; drush core-cron'
+        database: src
+    crc:
+        name: 'Community Relations Council'
+        url: community-relations.org.uk
+        solr: crc
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/crc ; drush core-cron'
+        database: crc
         status: development
         default: false

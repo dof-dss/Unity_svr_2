@@ -1,0 +1,8 @@
+uuid: faf32f25-090c-4a11-87ce-481a7ca4c037
+langcode: en
+status: true
+dependencies: {  }
+name: 'council area'
+vid: council_area
+description: 'council area terms for project profile content type'
+weight: 0

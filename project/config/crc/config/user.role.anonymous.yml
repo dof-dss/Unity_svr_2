@@ -1,0 +1,16 @@
+uuid: 1a2ec3f8-3664-4916-bd8e-c5ed9c49cbf2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+_core:
+  default_config_hash: aj6ZXi0r2a2rs9TYsol23lyiTqdAokujUQnBl33OdFA
+id: anonymous
+label: 'anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'diff view changes'
+  - 'view files'

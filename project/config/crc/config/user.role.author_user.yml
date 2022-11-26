@@ -1,0 +1,43 @@
+uuid: 5e4ba0c0-2f19-4109-b6ca-09be72b44c19
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.project_profile
+  module:
+    - node
+    - system
+_core:
+  default_config_hash: AyMCT1boGFkm3MNXLyv6ZV7yMdWLY-U3WQLhzDDkWGE
+id: author_user
+label: 'author user'
+weight: 2
+is_admin: null
+permissions:
+  - 'access administration menu'
+  - 'access administration pages'
+  - 'access ckeditor link'
+  - 'add media from remote sources'
+  - 'administer main-menu menu items'
+  - 'create files'
+  - 'create publication_page content'
+  - 'delete any project_profile content'
+  - 'download any audio files'
+  - 'download any document files'
+  - 'download any image files'
+  - 'download any video files'
+  - 'download own audio files'
+  - 'download own document files'
+  - 'download own image files'
+  - 'download own video files'
+  - 'edit own audio files'
+  - 'edit own document files'
+  - 'edit own image files'
+  - 'edit own video files'
+  - 'moderate content from draft to needs_review'
+  - 'moderate content from needs_review to draft'
+  - 'use workbench_moderation my drafts tab'
+  - 'use workbench_moderation needs review tab'
+  - 'view all unpublished content'
+  - 'view own files'
+  - 'view the administration theme'
