@@ -1,0 +1,18 @@
+uuid: 4e6a0195-7bed-4e3e-af76-42bec027f06f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nijac_theme
+id: pagetitle
+theme: nijac_theme
+region: content
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }
