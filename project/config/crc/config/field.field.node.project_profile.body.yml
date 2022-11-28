@@ -1,0 +1,23 @@
+uuid: caf35191-3344-4902-97b1-ab8849f920b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.project_profile
+  module:
+    - text
+id: node.project_profile.body
+field_name: body
+entity_type: node
+bundle: project_profile
+label: Description
+description: 'Please enter a description of the project.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary
