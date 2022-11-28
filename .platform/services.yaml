@@ -83,6 +83,7 @@ solr:
             nijac_index:
                 conf_dir: !archive solr_config/
             src_index:
+                conf_dir: !archive solr_config/
             crc_index:
                 conf_dir: !archive solr_config/
         endpoints:
