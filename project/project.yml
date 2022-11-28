@@ -90,7 +90,7 @@ sites:
         cron_cmd: 'cd web/sites/src ; drush core-cron'
         database: src
         status: development
-        defauklt: false
+        default: false
     crc:
         name: 'Community Relations Council'
         url: community-relations.org.uk
