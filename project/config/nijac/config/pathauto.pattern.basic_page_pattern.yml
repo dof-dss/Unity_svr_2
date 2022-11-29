@@ -13,6 +13,10 @@ pattern: '[node:title]'
 selection_criteria:
   1c138d06-12b7-4ff5-b6ad-2a28718ad244:
     id: node_type
+    negate: false
+    uuid: 1c138d06-12b7-4ff5-b6ad-2a28718ad244
+    context_mapping:
+      node: node
     bundles:
       basic_page: basic_page
       contact: contact
@@ -20,10 +24,17 @@ selection_criteria:
       link: link
       profile: profile
       webform: webform
+  f2160f23-9924-41dc-ba65-317662397b12:
+    id: 'entity_bundle:node'
     negate: false
+    uuid: f2160f23-9924-41dc-ba65-317662397b12
     context_mapping:
       node: node
-    uuid: 1c138d06-12b7-4ff5-b6ad-2a28718ad244
+    bundles:
+      basic_page: basic_page
+      faq: faq
+      terms: terms
+      webform: webform
 selection_logic: and
 weight: -5
 relationships: {  }
