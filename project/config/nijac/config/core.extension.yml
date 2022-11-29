@@ -36,6 +36,7 @@ module:
   entity_browser_entity_form: 0
   entity_embed: 0
   entity_reference_revisions: 0
+  entityqueue: 0
   facets: 0
   facets_pretty_paths: 0
   field: 0
@@ -111,13 +112,11 @@ module:
   toolbar: 0
   twig_tweak: 0
   ultimate_cron: 0
-  unity_breadcrumbs: 0
   unity_common: 0
   unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0
   unity_map_embed: 0
-  unity_search_pages: 0
   user: 0
   views_custom_cache_tag: 0
   webform: 0
