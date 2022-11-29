@@ -1,0 +1,22 @@
+uuid: d632070a-7019-47d9-adcd-0741d97a931e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.terms
+id: node.terms.status
+field_name: status
+entity_type: node
+bundle: terms
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
