@@ -7,12 +7,10 @@ dependencies:
     - field.field.node.news.body
     - field.field.node.news.field_meta_tags
     - field.field.node.news.field_photo
-    - field.field.node.news.field_published_date
-    - field.field.node.news.field_summary
+    - field.field.node.news.field_publication_date
     - field.field.node.news.field_teaser
     - node.type.news
   module:
-    - datetime
     - field_group
     - layout_builder
     - metatag
@@ -20,20 +18,21 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
   field_group:
     group_additional_content_details:
       children:
         - field_teaser
         - field_meta_tags
+      label: 'Additional content details'
       parent_name: ''
+      region: content
       weight: 3
       format_type: html_element
-      region: content
       format_settings:
-        id: ''
         classes: field-collection
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -41,7 +40,6 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: 'Additional content details'
 _core:
   default_config_hash: ElksGJzjUxwYGlvHiX7g8ocPamDh8hURTB7lEmD_WIM
 id: node.news.diff
@@ -50,47 +48,38 @@ bundle: news
 mode: diff
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_meta_tags:
     type: metatag_empty_formatter
-    weight: 8
-    region: content
     label: inline
     settings: {  }
     third_party_settings: {  }
+    weight: 8
+    region: content
   field_photo:
     type: entity_reference_entity_view
-    weight: 1
-    region: content
     label: hidden
     settings:
       view_mode: landscape_float
       link: false
     third_party_settings: {  }
-  field_published_date:
-    weight: 0
-    label: inline
-    settings:
-      timezone_override: ''
-      format_type: unity_date
-    third_party_settings: {  }
-    type: datetime_default
+    weight: 1
     region: content
   field_teaser:
     type: string
-    weight: 7
-    region: content
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 7
+    region: content
 hidden:
   content_moderation_control: true
-  field_summary: true
+  field_publication_date: true
   langcode: true
   links: true
