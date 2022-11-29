@@ -65,6 +65,9 @@ module:
   inline_form_errors: 0
   language: 0
   layout_builder: 0
+  layout_builder_modal: 0
+  layout_builder_restrictions: 0
+  layout_builder_restrictions_by_region: 0
   layout_discovery: 0
   link: 0
   link_fix_absolute_urls: 0
@@ -126,6 +129,7 @@ module:
   unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0
+  unity_landing_pages: 0
   unity_map_embed: 0
   unity_search_pages: 0
   user: 0
