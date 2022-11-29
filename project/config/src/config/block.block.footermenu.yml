@@ -1,0 +1,25 @@
+uuid: a11b1c02-1a6c-4305-971a-8826740775a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-footer-menu
+  module:
+    - system
+  theme:
+    - src_theme
+id: footermenu
+theme: src_theme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-footer-menu'
+settings:
+  id: 'system_menu_block:menu-footer-menu'
+  label: 'Footer menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.terms.body
+    - field.field.node.terms.field_meta_tags
     - node.type.terms
   module:
     - content_moderation
+    - metatag
     - path
     - text
 id: node.terms.default
@@ -29,6 +31,13 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 122
+    region: content
+    settings:
+      sidebar: true
     third_party_settings: {  }
   langcode:
     type: language_select

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.terms.body
+    - field.field.node.terms.field_meta_tags
     - node.type.terms
   module:
     - text
@@ -18,12 +19,10 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  content_moderation_control: true
+  field_meta_tags: true
   langcode: true
+  links: true
