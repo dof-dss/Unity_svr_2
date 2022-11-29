@@ -1,8 +1,0 @@
-uuid: 34ff47ba-d187-447e-9380-f76b8ee7b624
-langcode: en
-status: true
-dependencies: {  }
-id: menu-our-work
-label: 'Our work'
-description: 'The work that community relations is involved in'
-locked: false
