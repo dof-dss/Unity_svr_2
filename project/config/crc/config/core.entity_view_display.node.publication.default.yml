@@ -7,8 +7,8 @@ dependencies:
     - field.field.node.publication.field_attachment
     - field.field.node.publication.field_meta_tags
     - field.field.node.publication.field_photo
+    - field.field.node.publication.field_publication_date
     - field.field.node.publication.field_publication_type
-    - field.field.node.publication.field_published_date
     - field.field.node.publication.field_summary
     - node.type.publication
   module:
@@ -27,7 +27,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_attachment:
     type: entity_reference_entity_view
@@ -36,25 +36,25 @@ content:
       view_mode: embed
       link: false
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_photo:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: portrait_float
+      view_mode: landscape_float
       link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
-  field_published_date:
+  field_publication_date:
     type: datetime_default
-    label: inline
+    label: above
     settings:
       timezone_override: ''
       format_type: unity_date
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
 hidden:
   content_moderation_control: true
