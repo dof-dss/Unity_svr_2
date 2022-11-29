@@ -116,7 +116,7 @@ process:
         title: title
         width: width
         height: height
-  field_published_date:
+  field_publication_date:
     -
       plugin: sub_process
       source: field_published_date
