@@ -4,7 +4,7 @@ first_day: 0
 country:
   default: GB
 timezone:
-  default: UTC
+  default: Europe/London
   user:
     configurable: true
     default: 0
