@@ -15,7 +15,7 @@ plugin: system_breadcrumb_block
 settings:
   id: system_breadcrumb_block
   label: Breadcrumbs
-  label_display: visible
+  label_display: '0'
   provider: system
 visibility:
   request_path:
