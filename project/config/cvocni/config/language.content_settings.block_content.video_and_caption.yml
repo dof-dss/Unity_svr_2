@@ -1,0 +1,11 @@
+uuid: 364d3e51-490b-4425-a60f-233046f50dd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.video_and_caption
+id: block_content.video_and_caption
+target_entity_type_id: block_content
+target_bundle: video_and_caption
+default_langcode: site_default
+language_alterable: false
