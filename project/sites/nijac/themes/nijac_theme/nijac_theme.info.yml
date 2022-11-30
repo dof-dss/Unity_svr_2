@@ -8,6 +8,7 @@ libraries:
   - nijac_theme/site-styling
   - nicsdru_unity_theme/board_member
   - nicsdru_unity_theme/accordions
+  - nicsdru_unity_theme/unity-slider
 
 libraries-override:
   nicsdru_unity_theme/unity-global-styling:
