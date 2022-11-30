@@ -1,0 +1,42 @@
+uuid: 79483010-5215-4566-9c42-d96cb82d08ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.video_and_caption
+    - field.field.block_content.video_and_caption.field_caption
+    - field.field.block_content.video_and_caption.field_video
+    - field.field.block_content.video_and_caption.field_video_caption_display
+  module:
+    - options
+id: block_content.video_and_caption.default
+targetEntityType: block_content
+bundle: video_and_caption
+mode: default
+content:
+  field_caption:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_video:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_video_caption_display:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

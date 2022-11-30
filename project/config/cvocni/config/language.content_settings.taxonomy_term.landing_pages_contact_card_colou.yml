@@ -1,0 +1,11 @@
+uuid: f6f2e485-0f95-4a70-8629-d04d4061ff3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.landing_pages_contact_card_colou
+id: taxonomy_term.landing_pages_contact_card_colou
+target_entity_type_id: taxonomy_term
+target_bundle: landing_pages_contact_card_colou
+default_langcode: site_default
+language_alterable: false

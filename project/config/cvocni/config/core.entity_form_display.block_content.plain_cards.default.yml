@@ -1,0 +1,36 @@
+uuid: afb6fcae-b6da-4ad6-a379-e9d314fbcedf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.plain_cards
+    - field.field.block_content.plain_cards.field_card_layout
+    - field.field.block_content.plain_cards.field_plain_cards
+  module:
+    - paragraphs
+id: block_content.plain_cards.default
+targetEntityType: block_content
+bundle: plain_cards
+mode: default
+content:
+  field_card_layout:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_plain_cards:
+    type: entity_reference_paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: card_plain
+    third_party_settings: {  }
+hidden:
+  info: true
+  langcode: true

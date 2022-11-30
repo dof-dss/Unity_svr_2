@@ -1,0 +1,20 @@
+uuid: 40577ce8-835e-4d2e-84d4-db02b5caa3be
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - media
+id: block_content.field_video
+field_name: field_video
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

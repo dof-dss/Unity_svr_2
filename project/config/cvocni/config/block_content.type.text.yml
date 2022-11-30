@@ -1,0 +1,8 @@
+uuid: 70d757a5-cdd9-4888-8cd4-9efe6ad9676e
+langcode: en
+status: true
+dependencies: {  }
+id: text
+label: Text
+revision: 1
+description: 'A block containing a restricted set of text formatting tools.'

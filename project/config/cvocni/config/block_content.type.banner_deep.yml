@@ -1,0 +1,8 @@
+uuid: eec4a0a8-8e12-479c-9056-e34fd7cb6c28
+langcode: en
+status: true
+dependencies: {  }
+id: banner_deep
+label: 'Banner deep'
+revision: 1
+description: 'Block for displaying a deep banner image on landing page layouts.  Optionally add a strap line below the banner.'
