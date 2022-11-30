@@ -17,6 +17,7 @@ module:
   config: 0
   config_filter: 0
   config_ignore: 0
+  config_split: 0
   content_lock: 0
   content_lock_timeout: 0
   content_moderation: 0
@@ -26,11 +27,9 @@ module:
   ctools: 0
   datetime: 0
   datetime_range: 0
-  dblog: 0
   diff: 0
   dynamic_entity_reference: 0
   dynamic_page_cache: 0
-  easy_install: 0
   editor: 0
   embed: 0
   entity_browser: 0
@@ -39,6 +38,8 @@ module:
   entity_reference_revisions: 0
   facets: 0
   facets_pretty_paths: 0
+  facets_summary: 0
+  fastly: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -52,6 +53,7 @@ module:
   geolocation: 0
   geolocation_google_maps: 0
   geolocation_google_static_maps: 0
+  geolocation_search_api: 0
   google_analytics: 0
   google_tag: 0
   handy_cache_tags: 0
@@ -79,11 +81,6 @@ module:
   metatag_twitter_cards: 0
   metatag_verification: 0
   metatag_views: 0
-  migrate: 0
-  migrate_absolute_links: 0
-  migrate_drupal: 0
-  migrate_plus: 0
-  migrate_tools: 0
   migrate_upgrade: 0
   moderation_sidebar: 0
   mysql: 0
@@ -107,8 +104,13 @@ module:
   responsive_image: 0
   scheduled_transitions: 0
   search: 0
+  search_api: 0
+  search_api_autocomplete: 0
+  search_api_location: 0
+  search_api_location_views: 0
+  search_api_solr: 0
+  search_api_spellcheck: 0
   simplei: 0
-  src: 0
   structure_sync: 0
   system: 0
   taxonomy: 0
@@ -119,14 +121,14 @@ module:
   twig_tweak: 0
   ultimate_cron: 0
   unity_common: 0
-  unity_file_migrations: 0
   unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0
   unity_map_embed: 0
+  unity_search_pages: 0
+  update: 0
   user: 0
   views_custom_cache_tag: 0
-  views_ui: 0
   webform: 0
   webform_access: 0
   webform_node: 0
@@ -147,4 +149,5 @@ theme:
   stable: 0
   adminimal_theme: 0
   nicsdru_unity_theme: 0
+  src_theme: 0
 profile: nicsdru_unity_profile
