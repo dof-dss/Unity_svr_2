@@ -10,6 +10,8 @@ module:
   blazy: 0
   block: 0
   block_content: 0
+  block_content_permissions: 0
+  block_field: 0
   breakpoint: 0
   ckeditor: 0
   clientside_validation: 0
@@ -118,6 +120,8 @@ module:
   structure_sync: 0
   system: 0
   taxonomy: 0
+  telephone: 0
+  telephone_plus: 0
   text: 0
   token: 0
   token_filter: 0

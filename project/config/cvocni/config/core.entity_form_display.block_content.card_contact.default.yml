@@ -1,0 +1,44 @@
+uuid: 57cf4704-095e-4ee9-beae-8b42fc86a5c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_contact
+    - field.field.block_content.card_contact.field_card_style
+    - field.field.block_content.card_contact.field_telephone
+  module:
+    - dynamic_entity_reference
+    - telephone_plus
+id: block_content.card_contact.default
+targetEntityType: block_content
+bundle: card_contact
+mode: default
+content:
+  field_card_style:
+    type: dynamic_entity_reference_options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_telephone:
+    type: telephone_plus_widget
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }
