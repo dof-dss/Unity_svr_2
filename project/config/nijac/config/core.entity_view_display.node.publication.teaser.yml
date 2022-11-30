@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.publication.field_photo
     - field.field.node.publication.field_publication_type
     - field.field.node.publication.field_published_date
-    - field.field.node.publication.field_summary
     - node.type.publication
   module:
     - datetime
@@ -24,13 +23,13 @@ mode: teaser
 content:
   field_published_date:
     type: datetime_default
-    weight: 0
-    region: content
     label: hidden
     settings:
       timezone_override: ''
       format_type: unity_date
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   body: true
   content_moderation_control: true
@@ -38,6 +37,5 @@ hidden:
   field_meta_tags: true
   field_photo: true
   field_publication_type: true
-  field_summary: true
   langcode: true
   links: true
