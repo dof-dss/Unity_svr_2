@@ -1,0 +1,35 @@
+uuid: 9e6253a1-bcaa-4fef-8126-baeb8e0a09fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.plain_cards
+    - field.field.block_content.plain_cards.field_card_layout
+    - field.field.block_content.plain_cards.field_plain_cards
+  module:
+    - entity_reference_revisions
+    - options
+id: block_content.plain_cards.default
+targetEntityType: block_content
+bundle: plain_cards
+mode: default
+content:
+  field_card_layout:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_plain_cards:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
