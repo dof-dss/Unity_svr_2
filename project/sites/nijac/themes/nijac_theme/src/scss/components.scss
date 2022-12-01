@@ -5,6 +5,56 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
+.region-primary-menu .menu_wrapper {
+  background-color: $brand-secondary;
+}
+
+#main-menu .menu .menu-item .active,
+#main-menu .menu .menu-item .active + .menu-main_sub .title a {
+  border-bottom-color: $brand-primary;
+}
+
+#top-area {
+  background-color: #edd5c4;
+  max-width: 100%;
+  text-align: left;
+  padding: 4.5rem 0 5.5rem;
+  margin-top: 2rem;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .column {
+    background: $white;
+    padding: 2rem;
+    flex-basis: 100%;
+    margin: 1rem 0 1rem;
+
+    @media screen and (max-width: $tab) {
+      margin: 1rem;
+    }
+
+    &:first-child {
+      @include breakpoint($tab) {
+        flex-basis: 32%;
+      }
+    }
+
+    &:last-child {
+      margin-right: 1rem;
+
+      @include breakpoint($tab) {
+        margin-right: 0;
+        flex-basis: 66%;
+      }
+    }
+  }
+}
+
 .sidebar-second-layout {
   .rel-menu--latest-news {
     margin-bottom: 2rem;
@@ -37,4 +87,200 @@
 
 p.published-date {
   font-weight: bold;
+}
+
+#block-views-block-latest-news-home-latest-news {
+  ul {
+    margin-left: 1.6rem;
+  }
+
+  article.node--type-news {
+
+    h3 {
+      @include adjust-font-size-to(18px);
+      margin: 0;
+      display: inline;
+
+      &:after {
+        content: ' ~';
+      }
+    }
+
+    p.published-date {
+      margin-bottom: 0;
+      @include adjust-font-size-to(18px);
+      display: inline;
+    }
+  }
+}
+
+#block-judiciallife {
+  ul {
+    margin-left: 1.6rem;
+  }
+}
+
+#bottom-area {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .block {
+    background: $grey-light;
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    @include breakpoint($tab) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  .column {
+    margin: 0;
+    padding: 0;
+    flex-basis: 100%;
+
+    @include breakpoint($tab) {
+      flex-basis: 32%;
+    }
+  }
+
+  h2 {
+    @include adjust-font-size-to(40px);
+    font-weight: 500;
+    line-height: 4rem;
+    padding: 2rem 6rem 2rem 1rem;
+    margin: 0;
+  }
+
+  a.btn {
+    min-width: 17rem;
+    text-align: center;
+  }
+}
+
+#twitter-area {
+  background: #e5eaef url('/sites/nijac/themes/nijac_theme/images/twitter-bg.png') 0 100% no-repeat;
+  padding: 3rem 0;
+
+  .twitter-block {
+    h2 {
+      padding-left: 0;
+    }
+
+    .content {
+      @include breakpoint($lap) {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+      }
+    }
+
+    a.btn {
+      @include breakpoint($lap) {
+        display: inline-block;
+        position: absolute;
+        bottom: 29px;
+        margin-top: 0;
+      }
+    }
+
+    iframe {
+      margin-top: 0;
+    }
+  }
+}
+
+#footer {
+  max-width: 100%;
+
+  #footer-area {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .column {
+      flex-basis: 80%;
+
+      @media screen and (max-width: $tab) {
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      @include breakpoint($mob) {
+        flex-basis: 50%;
+      }
+
+      @include breakpoint($tab) {
+        flex-basis: 29%;
+      }
+
+      &:first-child {
+        @include breakpoint($tab) {
+          flex-basis: 39%;
+        }
+      }
+
+      &:last-child {
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      li {
+        border: none;
+      }
+
+      .media-image,
+      .social-icons {
+        margin: 0;
+      }
+    }
+  }
+
+  .btn {
+    @include adjust-font-size-to(21px);
+    line-height: 2.8rem;
+    font-weight: 300;
+    padding: 2rem 1.5rem;
+    text-transform: uppercase;
+  }
+
+  .block > h2 {
+    color: $headings;
+  }
+
+  .footer_credit #footer-menu .menu .menu-item a {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer_credit {
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+
+  .footer-menu {
+    margin-top: 2.4rem;
+
+    li {
+      padding-left: 0;
+      font-size: 1.4rem;
+      display: block;
+
+      @include breakpoint($tab) {
+        display: inline-block;
+        padding: 0 .8rem 0 0;
+        line-height: 1.8rem;
+        margin-right: .5rem;
+      }
+    }
+  }
+}
+
+.quicklinks-menu {
+  &.block > h2 {
+    margin-bottom: 1.3rem;
+  }
 }

@@ -29,15 +29,11 @@
  * @ingroup themeable
  */
 #}
-<div class="content twitter-block block">
-  {% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
-  {% endif %}
-  <div class="content">
-  <p>Stay up-to-date and follow us on Twitter</p>
-  <a class="twitter-timeline" data-height="521" data-width="600" data-link-color="#008290" data-tweet-limit="1"
-     data-chrome="noheader nofooter" href="https://twitter.com/NijacNews">Tweets by NIJAC</a>
-  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <a class="twitter-link btn" href="https://twitter.com/NijacNews">Follow us</a>
-  </div>
-</div>
+
+{% if label %}
+<h2>{{ label }}</h2>
+{% endif %}
+
+{% block content %}
+  {{ content }}
+{% endblock %}
