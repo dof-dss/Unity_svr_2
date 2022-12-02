@@ -1,0 +1,25 @@
+uuid: 1128a12a-ed25-4c92-bf2e-259666d7f961
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:ebc3b1bc-eaac-421d-be96-b25e41e9dbb2'
+  module:
+    - block_content
+  theme:
+    - nijac_theme
+id: sociallinks
+theme: nijac_theme
+region: footer_third
+weight: 0
+provider: null
+plugin: 'block_content:ebc3b1bc-eaac-421d-be96-b25e41e9dbb2'
+settings:
+  id: 'block_content:ebc3b1bc-eaac-421d-be96-b25e41e9dbb2'
+  label: 'Social links'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

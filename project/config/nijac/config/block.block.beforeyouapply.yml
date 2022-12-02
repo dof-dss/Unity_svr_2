@@ -1,0 +1,25 @@
+uuid: b8317d64-915c-4f5b-955a-79d39f4e8531
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:c08a86ff-49e8-432e-b39e-e63f7c223568'
+  module:
+    - block_content
+  theme:
+    - nijac_theme
+id: beforeyouapply
+theme: nijac_theme
+region: bottom_widget_1
+weight: -5
+provider: null
+plugin: 'block_content:c08a86ff-49e8-432e-b39e-e63f7c223568'
+settings:
+  id: 'block_content:c08a86ff-49e8-432e-b39e-e63f7c223568'
+  label: 'Before you apply'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
