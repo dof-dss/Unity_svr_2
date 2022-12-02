@@ -1,0 +1,25 @@
+uuid: c7297053-e80a-4e09-9993-3c5fc7f4a4f8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:a4aec882-d099-40ff-9689-bbec2b8f5b0e'
+  module:
+    - block_content
+  theme:
+    - nijac_theme
+id: twitterblock
+theme: nijac_theme
+region: twitter
+weight: 0
+provider: null
+plugin: 'block_content:a4aec882-d099-40ff-9689-bbec2b8f5b0e'
+settings:
+  id: 'block_content:a4aec882-d099-40ff-9689-bbec2b8f5b0e'
+  label: Twitter
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

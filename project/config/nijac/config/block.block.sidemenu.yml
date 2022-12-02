@@ -5,7 +5,6 @@ dependencies:
   config:
     - system.menu.main
   module:
-    - node
     - system
   theme:
     - nijac_theme
@@ -23,12 +22,4 @@ settings:
   level: 1
   depth: 0
   expand_all_items: false
-visibility:
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
-    bundles:
-      basic_page: basic_page
-      board_member: board_member
+visibility: {  }
