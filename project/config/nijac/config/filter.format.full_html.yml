@@ -178,12 +178,12 @@ filters:
     weight: 4
     settings:
       optionset: default
+      media_switch: ''
       layout: ''
       skin: ''
       background: false
       responsive_image_style: ''
       image_style: ''
-      media_switch: ''
       ratio: ''
       thumbnail_style: ''
       overridables:

@@ -13,3 +13,36 @@
     }
   }
 }
+
+.path-news,
+.path-publications {
+  .content-sidebar-wrap {
+    width: 100%;
+  }
+
+  .search-page {
+    .sidebar-first-layout {
+      padding-left: 0;
+    }
+
+    @include breakpoint($lap) {
+      .sidebar-first-layout {
+        width: 30%;
+      }
+
+      .main-content {
+        width: 65%;
+      }
+    }
+
+    .views-exposed-form {
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+}
