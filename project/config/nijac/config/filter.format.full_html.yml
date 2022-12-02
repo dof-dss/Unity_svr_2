@@ -121,3 +121,11 @@ filters:
     weight: -48
     settings:
       replace_empty: '1'
+  slick_filter:
+    id: slick_filter
+    provider: slick
+    status: false
+    weight: 4
+    settings:
+      optionset: default
+      media_switch: ''
