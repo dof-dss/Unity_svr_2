@@ -16,6 +16,7 @@ dependencies:
     - media
     - noreferrer
     - origins_common
+    - slick
     - token_filter
 _core:
   default_config_hash: 3ajhjZAPYv7k_l_F-pSml_31VZZPpNytjtVVvg2dENc
@@ -148,3 +149,33 @@ filters:
     weight: -37
     settings:
       replace_empty: '0'
+  slick_filter:
+    id: slick_filter
+    provider: slick
+    status: false
+    weight: 4
+    settings:
+      optionset: default
+      media_switch: ''
+      layout: ''
+      skin: ''
+      background: false
+      responsive_image_style: ''
+      image_style: ''
+      ratio: ''
+      thumbnail_style: ''
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: false
