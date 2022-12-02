@@ -1,0 +1,25 @@
+uuid: 566b8ed7-acbf-4406-b1ae-31ba4407d250
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-quick-links
+  module:
+    - system
+  theme:
+    - nijac_theme
+id: quicklinks
+theme: nijac_theme
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-quick-links'
+settings:
+  id: 'system_menu_block:menu-quick-links'
+  label: 'Quick links'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

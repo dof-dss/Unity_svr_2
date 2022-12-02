@@ -5,6 +5,7 @@ dependencies:
   config:
     - node.type.faq
     - node.type.news
+    - node.type.terms
   module:
     - node
     - path
