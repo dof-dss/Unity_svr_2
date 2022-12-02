@@ -32,7 +32,7 @@ settings:
         -
           name: Linking
           items:
-            - Linkit
+            - DrupalLink
             - DrupalUnlink
         -
           name: Lists
@@ -60,8 +60,11 @@ settings:
             - Maximize
             - Source
   plugins:
+    drupallink:
+      linkit_enabled: true
+      linkit_profile: default
     stylescombo:
-      styles: ''
+      styles: "p.info-notice|Information notice\r\na.btn|Button"
 image_upload:
   status: true
   scheme: public

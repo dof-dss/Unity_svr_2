@@ -1,0 +1,25 @@
+uuid: a32bbeb6-993c-4b7f-bb6d-2c1aa458be63
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:2124777b-e3a2-447b-8fe2-d211113d1f85'
+  module:
+    - block_content
+  theme:
+    - nijac_theme
+id: footercontactinfo
+theme: nijac_theme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:2124777b-e3a2-447b-8fe2-d211113d1f85'
+settings:
+  id: 'block_content:2124777b-e3a2-447b-8fe2-d211113d1f85'
+  label: 'Contact Us'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

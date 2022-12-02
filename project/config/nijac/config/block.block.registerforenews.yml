@@ -1,0 +1,25 @@
+uuid: 718fb761-04c7-4682-ac68-2fde49bb2839
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:86006327-5172-4dc1-9d4d-36077ec3a9b2'
+  module:
+    - block_content
+  theme:
+    - nijac_theme
+id: registerforenews
+theme: nijac_theme
+region: footer_third
+weight: 0
+provider: null
+plugin: 'block_content:86006327-5172-4dc1-9d4d-36077ec3a9b2'
+settings:
+  id: 'block_content:86006327-5172-4dc1-9d4d-36077ec3a9b2'
+  label: 'Register for Enews'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
