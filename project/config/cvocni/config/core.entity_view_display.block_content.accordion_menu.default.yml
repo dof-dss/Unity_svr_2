@@ -1,0 +1,26 @@
+uuid: e3957e06-a7b3-4bb5-b4e0-1106f155dcdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.accordion_menu
+    - field.field.block_content.accordion_menu.field_accordion_sections
+  module:
+    - entity_reference_revisions
+id: block_content.accordion_menu.default
+targetEntityType: block_content
+bundle: accordion_menu
+mode: default
+content:
+  field_accordion_sections:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

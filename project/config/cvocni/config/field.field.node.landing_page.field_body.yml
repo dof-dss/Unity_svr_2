@@ -1,0 +1,25 @@
+uuid: cc350da9-050b-4b3f-959f-2538471f2174
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.landing_page
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats: {  }
+id: node.landing_page.field_body
+field_name: field_body
+entity_type: node
+bundle: landing_page
+label: Body
+description: 'This optional field may contain text that can be positioned on the page when managing the layout.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

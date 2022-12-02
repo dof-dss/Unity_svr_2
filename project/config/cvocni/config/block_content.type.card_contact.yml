@@ -1,0 +1,8 @@
+uuid: f0edb4ac-a5a4-4a1e-bb93-6198d3f026e2
+langcode: en
+status: true
+dependencies: {  }
+id: card_contact
+label: 'Card - contact'
+revision: 1
+description: ''

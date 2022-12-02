@@ -1,0 +1,29 @@
+uuid: 8a429b2e-4770-4f62-81f4-7bcc2591565b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_deep
+    - field.storage.block_content.field_banner_image_overlay
+    - media.type.image
+id: block_content.banner_deep.field_banner_image_overlay
+field_name: field_banner_image_overlay
+entity_type: block_content
+bundle: banner_deep
+label: 'Banner image overlay'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: revision_created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
