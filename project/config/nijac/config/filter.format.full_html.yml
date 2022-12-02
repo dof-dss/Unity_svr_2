@@ -157,20 +157,6 @@ filters:
     weight: -48
     settings:
       replace_empty: '1'
-  cookie_content_blocker_filter:
-    id: cookie_content_blocker_filter
-    provider: cookie_content_blocker
-    status: false
-    weight: 0
-    settings:
-      disable_xss: '0'
-  origins_media_cookie_content_blocker_embed_filter:
-    id: origins_media_cookie_content_blocker_embed_filter
-    provider: origins_common
-    status: false
-    weight: 0
-    settings:
-      replacement_text: 'Click here to view the video content'
   slick_filter:
     id: slick_filter
     provider: slick
@@ -178,12 +164,12 @@ filters:
     weight: 4
     settings:
       optionset: default
-      media_switch: ''
       layout: ''
       skin: ''
       background: false
       responsive_image_style: ''
       image_style: ''
+      media_switch: ''
       ratio: ''
       thumbnail_style: ''
       overridables:
@@ -201,3 +187,17 @@ filters:
       thumbnail_effect: ''
       thumbnail_position: ''
       override: false
+  cookie_content_blocker_filter:
+    id: cookie_content_blocker_filter
+    provider: cookie_content_blocker
+    status: false
+    weight: 0
+    settings:
+      disable_xss: '0'
+  origins_media_cookie_content_blocker_embed_filter:
+    id: origins_media_cookie_content_blocker_embed_filter
+    provider: origins_common
+    status: false
+    weight: 0
+    settings:
+      replacement_text: 'Click here to view the video content'
