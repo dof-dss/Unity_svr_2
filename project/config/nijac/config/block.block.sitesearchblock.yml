@@ -1,0 +1,25 @@
+uuid: 56c2cab0-76d4-4e0b-b598-165fecc782c4
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+    - unity_search_pages
+  theme:
+    - nijac_theme
+id: sitesearchblock
+theme: nijac_theme
+region: search
+weight: 0
+provider: null
+plugin: site_search_block
+settings:
+  id: site_search_block
+  label: 'Site search block'
+  label_display: '0'
+  provider: unity_search_pages
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /search
