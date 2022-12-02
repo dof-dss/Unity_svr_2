@@ -3,19 +3,39 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.article_float
+    - core.entity_view_mode.media.article_float_expandable
+    - core.entity_view_mode.media.article_full
+    - core.entity_view_mode.media.article_full_expandable
+    - core.entity_view_mode.media.banner_deep
+    - core.entity_view_mode.media.banner_thin
+    - core.entity_view_mode.media.card_large
+    - core.entity_view_mode.media.card_small
     - core.entity_view_mode.media.embed
+    - core.entity_view_mode.media.feature_card
+    - core.entity_view_mode.media.full
+    - core.entity_view_mode.media.landing_full
     - core.entity_view_mode.media.landscape_float
     - core.entity_view_mode.media.landscape_float_xp
     - core.entity_view_mode.media.landscape_full
     - core.entity_view_mode.media.landscape_full_xp
+    - core.entity_view_mode.media.media_library
+    - core.entity_view_mode.media.member_image_small
+    - core.entity_view_mode.media.news_thumbnail
     - core.entity_view_mode.media.portrait_float
     - core.entity_view_mode.media.portrait_float_xp
     - core.entity_view_mode.media.portrait_full
+    - core.entity_view_mode.media.slide
+    - core.entity_view_mode.media.token
+    - core.entity_view_mode.media.unity_3_col_images
   module:
+    - cookie_content_blocker
     - editor
     - entity_embed
     - media
     - noreferrer
+    - origins_common
+    - slick
     - token_filter
 _core:
   default_config_hash: Qz_ghgT5Z32QINhy2dM-vKWUVIO5psmUQ_w5oDQssW0
@@ -95,19 +115,35 @@ filters:
     settings:
       default_view_mode: embed
       allowed_view_modes:
+        article_float: article_float
+        article_float_expandable: article_float_expandable
+        article_full: article_full
+        article_full_expandable: article_full_expandable
+        banner_deep: banner_deep
+        banner_thin: banner_thin
+        card_large: card_large
+        card_small: card_small
         embed: embed
+        feature_card: feature_card
+        full: full
+        landing_full: landing_full
         landscape_float: landscape_float
         landscape_float_xp: landscape_float_xp
         landscape_full: landscape_full
         landscape_full_xp: landscape_full_xp
+        media_library: media_library
+        member_image_small: member_image_small
+        news_thumbnail: news_thumbnail
         portrait_float: portrait_float
         portrait_float_xp: portrait_float_xp
         portrait_full: portrait_full
+        slide: slide
+        token: token
+        unity_3_col_images: unity_3_col_images
       allowed_media_types:
         audio: audio
         image: image
         remote_video: remote_video
-        video: video
   noreferrer:
     id: noreferrer
     provider: noreferrer
@@ -121,3 +157,47 @@ filters:
     weight: -48
     settings:
       replace_empty: '1'
+  cookie_content_blocker_filter:
+    id: cookie_content_blocker_filter
+    provider: cookie_content_blocker
+    status: false
+    weight: 0
+    settings:
+      disable_xss: '0'
+  origins_media_cookie_content_blocker_embed_filter:
+    id: origins_media_cookie_content_blocker_embed_filter
+    provider: origins_common
+    status: false
+    weight: 0
+    settings:
+      replacement_text: 'Click here to view the video content'
+  slick_filter:
+    id: slick_filter
+    provider: slick
+    status: false
+    weight: 4
+    settings:
+      optionset: default
+      layout: ''
+      skin: ''
+      background: false
+      responsive_image_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: false

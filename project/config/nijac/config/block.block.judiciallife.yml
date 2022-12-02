@@ -1,0 +1,25 @@
+uuid: 33428d8a-e13e-416c-abf2-f3a0dc29fefa
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:ad2bc896-fdbe-404e-8e89-166ee0b9ae9b'
+  module:
+    - block_content
+  theme:
+    - nijac_theme
+id: judiciallife
+theme: nijac_theme
+region: top_first
+weight: 0
+provider: null
+plugin: 'block_content:ad2bc896-fdbe-404e-8e89-166ee0b9ae9b'
+settings:
+  id: 'block_content:ad2bc896-fdbe-404e-8e89-166ee0b9ae9b'
+  label: 'Judicial life'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

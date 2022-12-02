@@ -1,22 +1,22 @@
-uuid: fdbd881d-02d7-4b97-af98-24b1ac337b77
+uuid: 566b8ed7-acbf-4406-b1ae-31ba4407d250
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.main
+    - system.menu.menu-quick-links
   module:
     - system
   theme:
     - nijac_theme
-id: sidemenu
+id: quicklinks
 theme: nijac_theme
-region: sidebar_second
+region: footer_second
 weight: 0
 provider: null
-plugin: 'system_menu_block:main'
+plugin: 'system_menu_block:menu-quick-links'
 settings:
-  id: 'system_menu_block:main'
-  label: 'In this section'
+  id: 'system_menu_block:menu-quick-links'
+  label: 'Quick links'
   label_display: visible
   provider: system
   level: 1
