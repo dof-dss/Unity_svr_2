@@ -19,13 +19,13 @@ processor_configs:
 facets:
   publication_type:
     checked: true
-    label: 'Publication type'
+    label: Type
     separator: ', '
     show_count: false
     weight: 0
   publication_date_publications:
     checked: true
-    label: 'Publication date'
+    label: Date
     separator: ', '
     show_count: false
     weight: 0
