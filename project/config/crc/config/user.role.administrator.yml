@@ -6,6 +6,6 @@ _core:
   default_config_hash: J8rXM_vdD29ZTEwtLOs84Vsn-PTRH-ZDh_Pi610CAEI
 id: administrator
 label: Administrator
-weight: 2
+weight: -8
 is_admin: true
 permissions: {  }
