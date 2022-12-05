@@ -1,0 +1,29 @@
+uuid: 25454e1f-8b7d-48e9-a0c6-ad4f28eb7aed
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.publication_date
+  module:
+    - facets
+    - system
+  theme:
+    - nijac_theme
+id: publicationdate
+theme: nijac_theme
+region: search_facets
+weight: -3
+provider: null
+plugin: 'facet_block:publication_date'
+settings:
+  id: 'facet_block:publication_date'
+  label: Date
+  label_display: visible
+  provider: facets
+  block_id: publicationdate
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/news\r\n/news/date/*"

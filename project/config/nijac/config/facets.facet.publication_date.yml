@@ -1,23 +1,23 @@
-uuid: 2e8b1a61-f249-4f6a-acc0-31b72a5e16d8
+uuid: 550cf797-9e91-41f0-9f06-d26a3e539c60
 langcode: en
 status: true
 dependencies:
   config:
-    - search_api.index.publications
-    - views.view.publications_search
+    - search_api.index.news
+    - views.view.news_search
   module:
     - facets_pretty_paths
     - search_api
 third_party_settings:
   facets_pretty_paths:
     coder: default_coder
-id: publication_type
-name: Type
+id: publication_date
+name: Date
 weight: 0
 min_count: 1
-url_alias: type
-facet_source_id: 'search_api:views_page__publications_search__publication_search_page'
-field_identifier: field_publication_type
+url_alias: date
+facet_source_id: 'search_api:views_page__news_search__news_search_page'
+field_identifier: field_publication_date
 query_operator: and
 hard_limit: 0
 exclude: false
@@ -34,7 +34,7 @@ widget:
     reset_text: 'Show all'
     hide_reset_when_no_selection: false
     soft_limit_settings:
-      show_less_label: 'Show less'
+      show_less_label: 'Show fewer'
       show_more_label: 'Show more'
 empty_behavior:
   behavior: none
@@ -48,17 +48,25 @@ processor_configs:
       sort: 20
     settings:
       sort: ASC
+  date_facet_drilldown:
+    processor_id: date_facet_drilldown
+    weights:
+      build: 1
+    settings: {  }
+  date_item:
+    processor_id: date_item
+    weights:
+      build: 35
+    settings:
+      date_display: actual_date
+      granularity: 6
+      date_format: ''
   raw_value_widget_order:
     processor_id: raw_value_widget_order
     weights:
       sort: 50
     settings:
       sort: DESC
-  translate_entity:
-    processor_id: translate_entity
-    weights:
-      build: 5
-    settings: {  }
   url_processor_handler:
     processor_id: url_processor_handler
     weights:
