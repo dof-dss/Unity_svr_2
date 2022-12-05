@@ -10,6 +10,7 @@ folder: ../project/config/nijac/production
 module: {  }
 theme: {  }
 blacklist: {  }
-graylist: {  }
+graylist:
+  - nijac_theme.settings
 graylist_dependents: true
 graylist_skip_equal: true
