@@ -102,13 +102,11 @@
         {{ drupal_block('page_title_block', wrapper=false) }}
       {% endif %}
 
-      {% if basic_page_structure is not empty and is_front %}
+      {% if is_front %}
         {% if drupal_config('system.site', 'frontpage_title') %}
-          <div class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
-            <h1>
-              {{ drupal_config('system.site', 'frontpage_title') }}
-            </h1>
-          </div>
+          <h1 class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
+            {{ drupal_config('system.site', 'frontpage_title') }}
+          </h1>
         {% endif %}
       {% endif %}
 
