@@ -2,70 +2,38 @@ uuid: d6564820-ee5e-4fe4-8ba3-e938a53d9ba0
 langcode: en
 status: true
 dependencies:
-  config:
-    - node.type.core_funded_groups
-    - node.type.event
-    - node.type.funding_schemes
-    - node.type.news
-    - node.type.project_profile
-    - node.type.staff_member
   module:
+    - media
     - node
-    - path
     - pathauto
     - system
 _core:
   default_config_hash: zLyQwFO06-pj9Gj5UZMWuk_aAuAOSC8YqFEHItUk-Tc
 id: authenticated
 label: 'authenticated user'
-weight: 1
+weight: -9
 is_admin: false
 permissions:
   - 'access administration menu'
-  - 'access administration pages'
   - 'access content'
   - 'access media browser'
   - 'access workbench'
-  - 'create core_funded_groups content'
-  - 'create event content'
-  - 'create funding_schemes content'
-  - 'create news content'
   - 'create page content'
-  - 'create project_profile content'
   - 'create publication_page content'
-  - 'create staff_member content'
-  - 'create url aliases'
-  - 'delete own core_funded_groups content'
-  - 'delete own event content'
-  - 'delete own funding_schemes content'
-  - 'delete own news content'
   - 'delete own page content'
-  - 'delete own project_profile content'
   - 'delete own publication_page content'
-  - 'delete own staff_member content'
   - 'diff view changes'
-  - 'edit any core_funded_groups content'
-  - 'edit any event content'
-  - 'edit any funding_schemes content'
-  - 'edit any news content'
   - 'edit any page content'
-  - 'edit any project_profile content'
   - 'edit any publication_page content'
-  - 'edit any staff_member content'
-  - 'edit own core_funded_groups content'
-  - 'edit own event content'
-  - 'edit own funding_schemes content'
-  - 'edit own news content'
   - 'edit own page content'
-  - 'edit own project_profile content'
   - 'edit own publication_page content'
-  - 'edit own staff_member content'
   - 'notify of path changes'
   - 'revert revisions'
   - 'use media wysiwyg'
+  - 'view all revisions'
   - 'view files'
+  - 'view media'
   - 'view moderation history'
   - 'view moderation messages'
   - 'view own unpublished content'
   - 'view revisions'
-  - 'view the administration theme'

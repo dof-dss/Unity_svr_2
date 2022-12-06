@@ -237,14 +237,15 @@ p.published-date {
         margin: 0;
       }
     }
-  }
 
-  .btn {
-    @include adjust-font-size-to(21px);
-    line-height: 2.8rem;
-    font-weight: 300;
-    padding: 2rem 1.5rem;
-    text-transform: uppercase;
+    #block-registerforenews .content a:first-child {
+      padding: 2rem 1.5rem;
+      margin: 1rem 0 1.5em;
+
+      &:hover {
+        border-bottom: none;
+      }
+    }
   }
 
   .block > h2 {
@@ -283,4 +284,31 @@ p.published-date {
   &.block > h2 {
     margin-bottom: 1.3rem;
   }
+}
+
+#block-registerforenews {
+  a:first-child {
+    @include breakpoint($tab) {
+      @include adjust-font-size-to(21px);
+    }
+
+    @include adjust-font-size-to(18px);
+    display: inline-block;
+    color: $white;
+    text-align: center;
+    cursor: pointer;
+    background: $link;
+    border-radius: 0;
+    border: 3px solid transparent;
+    text-decoration: none;
+    line-height: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      background: $ash-grey;
+    }
+  }
+
 }
