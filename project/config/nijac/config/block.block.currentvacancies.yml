@@ -1,0 +1,25 @@
+uuid: 5c3278a6-4b70-452e-859c-a79edc3510ea
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:3fd1a3af-91f5-4f7b-b61e-31fe7e3444da'
+  module:
+    - block_content
+  theme:
+    - nijac_theme
+id: currentvacancies
+theme: nijac_theme
+region: bottom_widget_1
+weight: -6
+provider: null
+plugin: 'block_content:3fd1a3af-91f5-4f7b-b61e-31fe7e3444da'
+settings:
+  id: 'block_content:3fd1a3af-91f5-4f7b-b61e-31fe7e3444da'
+  label: 'Current vacancies'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

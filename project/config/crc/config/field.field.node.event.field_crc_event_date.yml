@@ -1,0 +1,21 @@
+uuid: abd6da45-fbb0-4b5d-9bca-3682fcf117ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_crc_event_date
+    - node.type.event
+  module:
+    - datetime_range
+id: node.event.field_crc_event_date
+field_name: field_crc_event_date
+entity_type: node
+bundle: event
+label: 'Event date'
+description: 'Please enter the event start and end dates from the pop up calender.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

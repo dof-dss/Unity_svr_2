@@ -1,0 +1,15 @@
+uuid: cde0e315-ed9c-4c67-b8e9-aa192540e39c
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: production
+description: ''
+weight: 0
+folder: ../project/config/crc/production
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

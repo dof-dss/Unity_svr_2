@@ -1,0 +1,30 @@
+uuid: 5a9a4dab-5b72-42d2-b4c2-a0bfdeae8b94
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.terms.body
+    - field.field.node.terms.field_meta_tags
+    - node.type.terms
+  module:
+    - text
+    - user
+id: node.terms.teaser
+targetEntityType: node
+bundle: terms
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  content_moderation_control: true
+  field_meta_tags: true
+  langcode: true
+  links: true

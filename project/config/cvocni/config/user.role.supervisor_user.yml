@@ -3,19 +3,23 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.node.landing_page.default
     - media.type.audio
     - media.type.document
     - media.type.file
     - media.type.image
     - media.type.remote_video
     - node.type.basic_page
+    - node.type.landing_page
     - node.type.news
     - node.type.publication
     - workflows.workflow.nics_editorial_workflow
   module:
+    - block_content_permissions
     - content_moderation
     - entity_browser
     - file
+    - layout_builder
     - media
     - menu_admin_per_menu
     - moderation_sidebar
@@ -68,11 +72,21 @@ permissions:
   - 'administer main menu items'
   - 'administer redirects'
   - 'audit content'
+  - 'configure editable landing_page node layout overrides'
+  - 'create accordion_menu block content'
+  - 'create and edit custom blocks'
   - 'create application content'
   - 'create article content'
   - 'create audio media'
+  - 'create banner_deep block content'
+  - 'create basic_block block content'
   - 'create basic_page content'
   - 'create book content'
+  - 'create card_contact block content'
+  - 'create card_nested_standard block content'
+  - 'create card_nested_wide block content'
+  - 'create card_standard block content'
+  - 'create card_wide block content'
   - 'create department_management content'
   - 'create document media'
   - 'create embargoed_publication content'
@@ -81,24 +95,38 @@ permissions:
   - 'create files'
   - 'create gallery content'
   - 'create image media'
+  - 'create information_notice block content'
   - 'create irish_news content'
+  - 'create landing_page content'
   - 'create new books'
   - 'create news content'
   - 'create page content'
+  - 'create plain_cards block content'
   - 'create publication content'
   - 'create publication_page content'
   - 'create remote_video media'
   - 'create staff_member content'
+  - 'create text block content'
   - 'create url aliases'
   - 'create vacancy content'
+  - 'create video block content'
   - 'create video media'
+  - 'create video_and_caption block content'
   - 'delete all revisions'
+  - 'delete any accordion_menu block content'
   - 'delete any application content'
   - 'delete any article content'
   - 'delete any audio files'
   - 'delete any audio media'
+  - 'delete any banner_deep block content'
+  - 'delete any basic_block block content'
   - 'delete any basic_page content'
   - 'delete any book content'
+  - 'delete any card_contact block content'
+  - 'delete any card_nested_standard block content'
+  - 'delete any card_nested_wide block content'
+  - 'delete any card_standard block content'
+  - 'delete any card_wide block content'
   - 'delete any department_management content'
   - 'delete any document files'
   - 'delete any document media'
@@ -108,16 +136,22 @@ permissions:
   - 'delete any gallery content'
   - 'delete any image files'
   - 'delete any image media'
+  - 'delete any information_notice block content'
   - 'delete any irish_news content'
+  - 'delete any landing_page content'
   - 'delete any news content'
   - 'delete any page content'
+  - 'delete any plain_cards block content'
   - 'delete any publication content'
   - 'delete any publication_page content'
   - 'delete any remote_video media'
   - 'delete any staff_member content'
+  - 'delete any text block content'
   - 'delete any vacancy content'
+  - 'delete any video block content'
   - 'delete any video files'
   - 'delete any video media'
+  - 'delete any video_and_caption block content'
   - 'delete application revisions'
   - 'delete article revisions'
   - 'delete basic_page revisions'
@@ -145,6 +179,7 @@ permissions:
   - 'delete own image files'
   - 'delete own image media'
   - 'delete own irish_news content'
+  - 'delete own landing_page content'
   - 'delete own news content'
   - 'delete own page content'
   - 'delete own publication content'
@@ -187,6 +222,7 @@ permissions:
   - 'edit any image files'
   - 'edit any image media'
   - 'edit any irish_news content'
+  - 'edit any landing_page content'
   - 'edit any news content'
   - 'edit any page content'
   - 'edit any publication content'
@@ -213,6 +249,7 @@ permissions:
   - 'edit own image files'
   - 'edit own image media'
   - 'edit own irish_news content'
+  - 'edit own landing_page content'
   - 'edit own news content'
   - 'edit own page content'
   - 'edit own publication content'
@@ -274,6 +311,19 @@ permissions:
   - 'unflag featured_news'
   - 'unflag hide_content'
   - 'unflag home_page_display'
+  - 'update any accordion_menu block content'
+  - 'update any banner_deep block content'
+  - 'update any basic_block block content'
+  - 'update any card_contact block content'
+  - 'update any card_nested_standard block content'
+  - 'update any card_nested_wide block content'
+  - 'update any card_standard block content'
+  - 'update any card_wide block content'
+  - 'update any information_notice block content'
+  - 'update any plain_cards block content'
+  - 'update any text block content'
+  - 'update any video block content'
+  - 'update any video_and_caption block content'
   - 'use editorial transition create_new_draft'
   - 'use editorial transition publish'
   - 'use editorial transition reject'

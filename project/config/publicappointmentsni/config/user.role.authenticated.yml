@@ -6,7 +6,6 @@ dependencies:
     - filter.format.basic_html
   module:
     - filter
-    - google_analytics
     - media
     - node
     - pathauto
@@ -34,7 +33,6 @@ permissions:
   - 'edit own staff_member content'
   - 'flag independent_assessor_biographies'
   - 'notify of path changes'
-  - 'opt-in or out of google analytics tracking'
   - 'revert revisions'
   - 'unflag independent_assessor_biographies'
   - 'use media wysiwyg'

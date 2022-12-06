@@ -1,0 +1,40 @@
+uuid: 48ec2eb4-6597-4354-912e-e490692546f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.accordion_menu
+    - field.storage.block_content.field_accordion_sections
+    - paragraphs.paragraphs_type.accordion_section
+  module:
+    - entity_reference_revisions
+id: block_content.accordion_menu.field_accordion_sections
+field_name: field_accordion_sections
+entity_type: block_content
+bundle: accordion_menu
+label: 'Accordion sections'
+description: 'Add accordion sections. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      accordion_section: accordion_section
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_section:
+        weight: 5
+        enabled: true
+      card_plain:
+        weight: 6
+        enabled: false
+      faq_accordian:
+        weight: 3
+        enabled: false
+      map:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

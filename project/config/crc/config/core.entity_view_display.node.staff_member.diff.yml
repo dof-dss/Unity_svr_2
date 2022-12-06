@@ -1,0 +1,52 @@
+uuid: f322c808-70de-4e85-9ed8-ab7fdfbadd0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.diff
+    - field.field.node.staff_member.body
+    - field.field.node.staff_member.field_member_image
+    - field.field.node.staff_member.field_member_role
+    - field.field.node.staff_member.field_meta_tags
+    - node.type.staff_member
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.staff_member.diff
+targetEntityType: node
+bundle: staff_member
+mode: diff
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_member_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: landscape_float
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_member_role:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_meta_tags: true
+  langcode: true
+  links: true

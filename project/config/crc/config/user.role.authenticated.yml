@@ -1,0 +1,39 @@
+uuid: d6564820-ee5e-4fe4-8ba3-e938a53d9ba0
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+    - pathauto
+    - system
+_core:
+  default_config_hash: zLyQwFO06-pj9Gj5UZMWuk_aAuAOSC8YqFEHItUk-Tc
+id: authenticated
+label: 'authenticated user'
+weight: -9
+is_admin: false
+permissions:
+  - 'access administration menu'
+  - 'access content'
+  - 'access media browser'
+  - 'access workbench'
+  - 'create page content'
+  - 'create publication_page content'
+  - 'delete own page content'
+  - 'delete own publication_page content'
+  - 'diff view changes'
+  - 'edit any page content'
+  - 'edit any publication_page content'
+  - 'edit own page content'
+  - 'edit own publication_page content'
+  - 'notify of path changes'
+  - 'revert revisions'
+  - 'use media wysiwyg'
+  - 'view all revisions'
+  - 'view files'
+  - 'view media'
+  - 'view moderation history'
+  - 'view moderation messages'
+  - 'view own unpublished content'
+  - 'view revisions'

@@ -1,0 +1,16 @@
+uuid: 2398ddfd-13d3-4c6b-a210-3486a9deafbf
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: production
+description: 'Used for production site.'
+weight: 0
+folder: ../project/config/nijac/production
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - nijac_theme.settings
+graylist_dependents: true
+graylist_skip_equal: true

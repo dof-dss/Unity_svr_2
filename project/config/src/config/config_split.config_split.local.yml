@@ -1,0 +1,25 @@
+uuid: 5dcc3946-7f63-4d43-95dd-e195444985a8
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: local
+description: "Local development split. \r\nEnables debugging and development modules"
+weight: 0
+folder: ../project/config/src/local
+module:
+  dblog: 0
+  easy_install: 0
+  migrate: 0
+  migrate_absolute_links: 0
+  migrate_drupal: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  src: 0
+  unity_file_migrations: 0
+  views_ui: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

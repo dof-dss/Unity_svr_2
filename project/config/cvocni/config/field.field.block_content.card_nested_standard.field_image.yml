@@ -1,0 +1,29 @@
+uuid: b95ab413-5e66-47b4-8858-f08cfa50fbc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_nested_standard
+    - field.storage.block_content.field_image
+    - media.type.image
+id: block_content.card_nested_standard.field_image
+field_name: field_image
+entity_type: block_content
+bundle: card_nested_standard
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

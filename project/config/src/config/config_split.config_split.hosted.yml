@@ -1,0 +1,15 @@
+uuid: 29c46698-7b46-43e7-9df4-9232b1d6a155
+langcode: en
+status: true
+dependencies: {  }
+id: hosted
+label: hosted
+description: 'Use for any sites that are ''hosted'' and not running locally, whether development, QA or production.'
+weight: 0
+folder: ../project/config/src/hosted
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

@@ -1,0 +1,26 @@
+uuid: c0bfa32d-947d-4858-9990-92e0c826aee2
+langcode: en
+status: true
+dependencies:
+  module:
+    - google_analytics
+    - media
+    - node
+    - system
+_core:
+  default_config_hash: zLyQwFO06-pj9Gj5UZMWuk_aAuAOSC8YqFEHItUk-Tc
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'opt-in or out of google analytics tracking'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'view all revisions'
+  - 'view media'
+  - 'view own unpublished content'

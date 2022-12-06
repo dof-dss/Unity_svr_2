@@ -1,0 +1,25 @@
+uuid: 3a238df7-2309-40e0-9814-1cde30057333
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:f0d07858-065a-4c0d-937e-ab5c10159fa5'
+  module:
+    - block_content
+  theme:
+    - nijac_theme
+id: howtoapply
+theme: nijac_theme
+region: bottom_widget_2
+weight: 0
+provider: null
+plugin: 'block_content:f0d07858-065a-4c0d-937e-ab5c10159fa5'
+settings:
+  id: 'block_content:f0d07858-065a-4c0d-937e-ab5c10159fa5'
+  label: 'How to apply'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

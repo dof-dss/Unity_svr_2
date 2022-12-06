@@ -1,0 +1,11 @@
+uuid: ca19f173-2c28-4acc-8d37-481e36e280b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_deep
+id: block_content.banner_deep
+target_entity_type_id: block_content
+target_bundle: banner_deep
+default_langcode: site_default
+language_alterable: false

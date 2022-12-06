@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
+langcode: en
+uuid: 91d62cb7-0c0c-4da6-b2e6-25ceda55c9f2
+name: 'Northern Ireland Judicial Appointments Commission'
+mail: eddwebdev@finance-ni.gov.uk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+frontpage_title: 'Welcome to Northern Ireland Judicial Appointments Commission'
+frontpage_show_title: 0

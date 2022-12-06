@@ -1,0 +1,22 @@
+uuid: 8dde595f-fa9d-4f0a-9a4e-7ea57ec31064
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: terms_pattern
+label: 'Terms pattern'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  a413b3cc-b087-4b3e-a1c6-59b10513f318:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: a413b3cc-b087-4b3e-a1c6-59b10513f318
+    context_mapping:
+      node: node
+    bundles:
+      terms: terms
+selection_logic: and
+weight: -5
+relationships: {  }

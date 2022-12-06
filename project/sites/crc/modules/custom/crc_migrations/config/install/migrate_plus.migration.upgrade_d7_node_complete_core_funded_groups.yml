@@ -1,0 +1,142 @@
+uuid: 53f1ab51-49b1-436a-b775-162e0d40f521
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_complete_core_funded_groups
+class: Drupal\node\Plugin\migrate\D7NodeTranslation
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node complete (Core funded groups)'
+source:
+  plugin: d7_node_complete
+  node_type: core_funded_groups
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  content_translation_source:
+    -
+      plugin: get
+      source: source_langcode
+  comment_node_core_funded_groups/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+    -
+      plugin: media_wysiwyg_filter
+    -
+      plugin: filter_absolute_links
+
+      replace_urls:
+        http://www.community-relations.org.uk
+        https://www.community-relations.org.uk
+    -
+      plugin: site_files_filter
+      from_ref: sites/crc/files
+      to_ref: files/crc
+    -
+      plugin: site_files_filter
+      from_ref: sites/community-relations.org.uk/files
+      to_ref: files/crc
+  body/0/format:
+    -
+      plugin: static_map
+      bypass: true
+      source: body/0/format
+      map:
+        filtered_html: basic_html
+        filtered_html_with_no_images: basic_html
+        filtered_html_with_tokens: basic_html
+        restricted_html: basic_html
+        plain_text: plain_text
+  field_areas_work:
+    -
+      plugin: static_map
+      source: field_areas_work
+      default_value: null
+      map:
+        Interfaces(Urban)DevelopmentSharedSpaces: 8
+        Interfaces(Rural)ContestedSpace: 9
+        SharedSpaces: 10
+        FaithBasedWork: 11
+        CulturalCelebrationsCommemorations: 12
+        PolicingCommunitySafety: 13
+        AddressingLlegacyPast: 14
+        IdentityBasedWork: 15
+        Sectarianism: 16
+        OtherAreasCommunityRelationsWork: 17
+  field_metatag:
+    -
+      plugin: d7_metatag_entities
+      source: pseudo_metatag_entities
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: core_funded_groups
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_metatag_field_node
+    - upgrade_d7_metatag_field_instance_node_core_funded_groups
+    - upgrade_d7_metatag_field_instance_widget_settings_node_core_funded_groups
