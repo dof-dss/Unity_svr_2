@@ -1,0 +1,25 @@
+uuid: 65bf4276-9b8d-4424-a4bd-aea04327ac11
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-menu-footer-links
+  module:
+    - system
+  theme:
+    - nijac_theme
+id: footerlinks
+theme: nijac_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-menu-footer-links'
+settings:
+  id: 'system_menu_block:menu-menu-footer-links'
+  label: 'Footer links'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

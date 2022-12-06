@@ -1,0 +1,25 @@
+uuid: e37188c4-9249-471a-a4b7-11e0c4ce1f6d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:6530c9db-a06a-420f-91e0-551590d0f939'
+  module:
+    - block_content
+  theme:
+    - nijac_theme
+id: completedappointments
+theme: nijac_theme
+region: bottom_widget_3
+weight: 0
+provider: null
+plugin: 'block_content:6530c9db-a06a-420f-91e0-551590d0f939'
+settings:
+  id: 'block_content:6530c9db-a06a-420f-91e0-551590d0f939'
+  label: 'Completed appointments'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

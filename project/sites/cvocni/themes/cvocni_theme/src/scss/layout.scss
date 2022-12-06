@@ -8,7 +8,7 @@
 .region-primary-menu .menu_wrapper {
   border-top: 1px solid;
   border-bottom: 1px solid;
-  border-color: #000;
+  border-color: #6d0d96;
 }
 
 .region-front-welcome {
@@ -26,8 +26,12 @@
 #top-area {
   display: flex;
 
+  .column .content {
+    padding: 4rem 0;
+  }
+
   img {
-    border-top: #6b1092 solid 4px;
+    border-top: #6b1092 solid 10px;
   }
 }
 
@@ -69,6 +73,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 4rem;
+    margin-top: 4rem;
   }
 
   .column {

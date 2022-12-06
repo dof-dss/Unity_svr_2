@@ -1,0 +1,24 @@
+uuid: 5a074033-a541-4613-b3e3-90be53323499
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_date
+    - node.type.news
+  module:
+    - datetime
+id: node.news.field_publication_date
+field_name: field_publication_date
+entity_type: node
+bundle: news
+label: 'Publication date'
+description: 'Please select the publication date of this news item, or accept the default value of today.'
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

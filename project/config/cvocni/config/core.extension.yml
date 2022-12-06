@@ -10,6 +10,8 @@ module:
   blazy: 0
   block: 0
   block_content: 0
+  block_content_permissions: 0
+  block_field: 0
   breakpoint: 0
   ckeditor: 0
   clientside_validation: 0
@@ -65,6 +67,9 @@ module:
   inline_form_errors: 0
   language: 0
   layout_builder: 0
+  layout_builder_modal: 0
+  layout_builder_restrictions: 0
+  layout_builder_restrictions_by_region: 0
   layout_discovery: 0
   link: 0
   link_fix_absolute_urls: 0
@@ -115,6 +120,8 @@ module:
   structure_sync: 0
   system: 0
   taxonomy: 0
+  telephone: 0
+  telephone_plus: 0
   text: 0
   token: 0
   token_filter: 0
@@ -126,9 +133,9 @@ module:
   unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0
+  unity_landing_pages: 0
   unity_map_embed: 0
   unity_search_pages: 0
-  update: 0
   user: 0
   views_custom_cache_tag: 0
   webform: 0

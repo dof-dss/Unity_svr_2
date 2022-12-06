@@ -1,0 +1,8 @@
+uuid: 1b275ec0-933f-45cf-bcba-05ced2508cf6
+langcode: en
+status: true
+dependencies: {  }
+id: video
+label: Video
+revision: 1
+description: ''

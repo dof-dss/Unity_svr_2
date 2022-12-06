@@ -1,0 +1,8 @@
+uuid: 38a14952-0e0a-4db4-9d7d-ca9c587f8768
+langcode: en
+status: true
+dependencies: {  }
+id: card_nested_wide
+label: 'Card nested - wide'
+revision: 1
+description: 'Provides a block with nested block elements.'

@@ -1,0 +1,23 @@
+uuid: 03860468-f620-49c8-8330-ad7ed3bc338d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.funding_schemes
+  module:
+    - text
+id: node.funding_schemes.body
+field_name: body
+entity_type: node
+bundle: funding_schemes
+label: Body
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

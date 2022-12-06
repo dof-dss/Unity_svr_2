@@ -1,0 +1,25 @@
+uuid: f2a1e3b1-a732-4fc9-a3f5-fb1dcc1c8c88
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:01b69632-7440-4dc7-8576-70c74f214fa7'
+  module:
+    - block_content
+  theme:
+    - nijac_theme
+id: selectionprocess
+theme: nijac_theme
+region: bottom_widget_3
+weight: 0
+provider: null
+plugin: 'block_content:01b69632-7440-4dc7-8576-70c74f214fa7'
+settings:
+  id: 'block_content:01b69632-7440-4dc7-8576-70c74f214fa7'
+  label: 'Selection process'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
