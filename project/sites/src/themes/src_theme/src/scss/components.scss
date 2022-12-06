@@ -14,3 +14,15 @@
   display: inline;
   padding: 2rem;
 }
+
+.node-type-publication {
+  .content-sidebar-wrap {
+    @include breakpoint($tab) {
+      width: 65%;
+    }
+  }
+}
+
+.published-date {
+  font-weight: bold;
+}
