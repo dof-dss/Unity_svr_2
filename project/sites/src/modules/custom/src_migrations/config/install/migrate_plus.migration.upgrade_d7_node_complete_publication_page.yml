@@ -133,13 +133,13 @@ process:
       source: field_publication_type
       default_value: null
       map:
-        application: 1
+        minutes: 1
         guidance: 2
-        legislationAndRegulations: 3
-        minutes: 4
+        application: 3
+        legislationAndRegulations: 4
         reports: 5
         statistics: 6
-  field_src_attachment:
+  field_attachment:
     -
       plugin: sub_process
       source: field_src_attachment
