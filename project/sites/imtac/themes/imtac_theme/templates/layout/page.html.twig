@@ -113,7 +113,11 @@
 
 <div id="container">
   <div class="container-wrap">
+    {% if search_page %}
     <div class="content-sidebar-wrap {% if search_page %}search-page{% endif %}">
+      {% else %}
+      <main class="content-sidebar-wrap {% if search_page %}search-page{% endif %}">
+      {% endif %}
       {{ page.breadcrumb }}
       {% if search_page %}
         {{ drupal_block('page_title_block', wrapper=false) }}
@@ -130,9 +134,12 @@
           </header>
         {% endif %}
         {% if page.content %}
-          <main id="post-content" {{ page.search_facets ? 'class="main-content"' : '' }}>
+          {% if search_page %}
+          <div id="post-content" {{ page.search_facets ? 'class="main-content" role="main"' : '' }}>
+            {% else %}
+              {% endif %}
             {{ page.content }}
-          </main>
+          </div>
         {% endif %}
       {% if is_front %}
         {% if page.bottom_widget_1 or page.bottom_widget_2 or page.bottom_widget_3 %}
@@ -163,7 +170,11 @@
           {{ page.sidebar_first }}
         </aside>
       {% endif %}
+      {% if not search_page %}
+    </main>
+    {% else %}
     </div>
+      {% endif %}
     {% if page.sidebar_second %}
       <aside id="sidebar-second" class="sidebar-second-layout">
         {{ page.sidebar_second }}
