@@ -109,17 +109,11 @@
 
 <div id="container">
   <div class="container-wrap">
-    <div class="content-sidebar-wrap {% if search_page %}search-page{% endif %}">
-      {% if is_front %}
-        {% if drupal_config('system.site', 'frontpage_title') %}
-          <div class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
-            <h1>
-              {{ drupal_config('system.site', 'frontpage_title') }}
-            </h1>
-          </div>
-
+    {% if search_page %}
+    <div class="content-sidebar-wrap search-page">
+      {% else %}
+      <main class="content-sidebar-wrap">
         {% endif %}
-      {% endif %}
       {{ page.breadcrumb }}
       {% if search_page %}
         {{ drupal_block('page_title_block', wrapper=false) }}
@@ -128,7 +122,14 @@
       {% if evidence_search %}
         {{ drupal_entity('block_content', 4) }}
       {% endif %}
-
+        {% if is_front %}
+          {% if drupal_config('system.site', 'frontpage_title') %}
+            <h1
+              class="{{ drupal_config('system.site', 'frontpage_show_title') ? 'container-wrap' : 'visually-hidden' }}">
+              {{ drupal_config('system.site', 'frontpage_title') }}
+            </h1>
+          {% endif %}
+        {% endif %}
       <div id="content" {{ page.search_facets ? '' : 'class="main-content"' }}>
         {% if page.search_facets %}
           <header id="search-facets" class="sidebar-first-layout">
@@ -141,9 +142,9 @@
           </header>
         {% endif %}
         {% if page.content %}
-          <main id="post-content" {{ page.search_facets ? 'class="main-content"' : '' }}>
+          <div id="post-content" {{ page.search_facets ? 'class="main-content" role="main"' : '' }}>
             {{ page.content }}
-          </main>
+          </div>
         {% endif %}
       </div>
       {% if page.sidebar_first %}
@@ -151,7 +152,11 @@
           {{ page.sidebar_first }}
         </aside>
       {% endif %}
+        {% if not search_page %}
+      </main>
+      {% else %}
     </div>
+    {% endif %}
     {% if page.sidebar_second %}
       <aside id="sidebar-second" class="sidebar-second-layout">
         {{ page.sidebar_second }}
