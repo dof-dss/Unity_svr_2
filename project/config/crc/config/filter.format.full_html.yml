@@ -12,6 +12,7 @@ dependencies:
     - core.entity_view_mode.media.portrait_float_xp
     - core.entity_view_mode.media.portrait_full
   module:
+    - cookie_content_blocker
     - editor
     - entity_embed
     - media
@@ -128,3 +129,10 @@ filters:
     weight: 0
     settings:
       replacement_text: 'Click here to view the video content'
+  cookie_content_blocker_filter:
+    id: cookie_content_blocker_filter
+    provider: cookie_content_blocker
+    status: false
+    weight: 0
+    settings:
+      disable_xss: '0'
