@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "238129ca5af34ec9dd56fd8cd2e91ba5",
+    "content-hash": "08df5d3463cda1759032abb46767cfef",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1875,16 +1875,16 @@
         },
         {
             "name": "dof-dss/nicsdru_origins_modules",
-            "version": "1.4.7",
+            "version": "1.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_origins_modules.git",
-                "reference": "ec4e427e7edca7755786a1f91009f60535141c30"
+                "reference": "3f931658496711f0b5fddaad7f0a0647c6d31ae8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/ec4e427e7edca7755786a1f91009f60535141c30",
-                "reference": "ec4e427e7edca7755786a1f91009f60535141c30",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/3f931658496711f0b5fddaad7f0a0647c6d31ae8",
+                "reference": "3f931658496711f0b5fddaad7f0a0647c6d31ae8",
                 "shasum": ""
             },
             "require": {
@@ -1898,9 +1898,9 @@
             "description": "Generic modules for DOF-DSS Drupal sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_origins_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/1.4.7"
+                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/1.4.9"
             },
-            "time": "2022-10-27T11:08:55+00:00"
+            "time": "2022-12-06T14:35:26+00:00"
         },
         {
             "name": "dof-dss/nicsdru_origins_profile",
@@ -1944,16 +1944,16 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
-            "version": "1.1.5",
+            "version": "1.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_modules.git",
-                "reference": "86f132b3e202c59cfa353dddaefffaeb9b966b8b"
+                "reference": "8e504f6ec9e5e38cdc840434ee7b5a9a11cb4006"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/86f132b3e202c59cfa353dddaefffaeb9b966b8b",
-                "reference": "86f132b3e202c59cfa353dddaefffaeb9b966b8b",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/8e504f6ec9e5e38cdc840434ee7b5a9a11cb4006",
+                "reference": "8e504f6ec9e5e38cdc840434ee7b5a9a11cb4006",
                 "shasum": ""
             },
             "require": {
@@ -1967,22 +1967,22 @@
             "description": "Custom modules available to all Unity sites.",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/1.1.5"
+                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/1.1.8"
             },
-            "time": "2022-10-21T09:50:48+00:00"
+            "time": "2022-12-06T14:33:15+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_profile",
-            "version": "1.0.6",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_profile.git",
-                "reference": "1b8b3a59618c9c424d1f59f89e6ce9678da3d65b"
+                "reference": "7da4e1363e8808b279e69b680875d802b71bf781"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/1b8b3a59618c9c424d1f59f89e6ce9678da3d65b",
-                "reference": "1b8b3a59618c9c424d1f59f89e6ce9678da3d65b",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/7da4e1363e8808b279e69b680875d802b71bf781",
+                "reference": "7da4e1363e8808b279e69b680875d802b71bf781",
                 "shasum": ""
             },
             "require": {
@@ -1996,22 +1996,22 @@
             "description": "Custom install profile used by all Unity sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_profile/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/1.0.6"
+                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/1.0.8"
             },
-            "time": "2022-10-27T10:52:44+00:00"
+            "time": "2022-11-22T12:21:52+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_theme",
-            "version": "v0.1.63",
+            "version": "v0.1.66",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_theme.git",
-                "reference": "f75c612077510c2260cc1ec7ebe10aaabadb56f9"
+                "reference": "6cc03b8d863ed81e0d622b92a5bb15e7a2b2b887"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/f75c612077510c2260cc1ec7ebe10aaabadb56f9",
-                "reference": "f75c612077510c2260cc1ec7ebe10aaabadb56f9",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/6cc03b8d863ed81e0d622b92a5bb15e7a2b2b887",
+                "reference": "6cc03b8d863ed81e0d622b92a5bb15e7a2b2b887",
                 "shasum": ""
             },
             "require": {
@@ -2035,9 +2035,9 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v0.1.63"
+                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v0.1.66"
             },
-            "time": "2022-10-21T10:28:09+00:00"
+            "time": "2022-12-06T14:22:07+00:00"
         },
         {
             "name": "drupal/address",
@@ -3189,12 +3189,12 @@
             ],
             "authors": [
                 {
-                    "name": "Pasqualle",
-                    "homepage": "https://www.drupal.org/user/80733"
-                },
-                {
                     "name": "codebymikey",
                     "homepage": "https://www.drupal.org/user/3573206"
+                },
+                {
+                    "name": "Pasqualle",
+                    "homepage": "https://www.drupal.org/user/80733"
                 }
             ],
             "description": "Provides basic revert and update functionality for other modules",
@@ -3526,6 +3526,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "alexpott",
+                    "homepage": "https://www.drupal.org/user/157725"
+                },
                 {
                     "name": "chr.fritsch",
                     "homepage": "https://www.drupal.org/user/2103716"
@@ -5960,10 +5964,6 @@
             ],
             "authors": [
                 {
-                    "name": "RobLoach",
-                    "homepage": "https://www.drupal.org/user/61114"
-                },
-                {
                     "name": "bnjmnm",
                     "homepage": "https://www.drupal.org/user/2369194"
                 },
@@ -5992,12 +5992,28 @@
                     "homepage": "https://www.drupal.org/user/2972409"
                 },
                 {
+                    "name": "nod_",
+                    "homepage": "https://www.drupal.org/user/598310"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
                     "name": "sun",
                     "homepage": "https://www.drupal.org/user/54136"
                 },
                 {
                     "name": "webchick",
                     "homepage": "https://www.drupal.org/user/24967"
+                },
+                {
+                    "name": "Wim Leers",
+                    "homepage": "https://www.drupal.org/user/99777"
                 },
                 {
                     "name": "zrpnr",
@@ -6365,10 +6381,6 @@
             ],
             "authors": [
                 {
-                    "name": "Sam152",
-                    "homepage": "https://www.drupal.org/user/1485048"
-                },
-                {
                     "name": "acbramley",
                     "homepage": "https://www.drupal.org/user/1036766"
                 },
@@ -6383,6 +6395,10 @@
                 {
                     "name": "rikki_iki",
                     "homepage": "https://www.drupal.org/user/1068918"
+                },
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
                 }
             ],
             "description": "This module provides an Entity Browser for Media.",
@@ -6529,10 +6545,6 @@
             ],
             "authors": [
                 {
-                    "name": "RyanPrice",
-                    "homepage": "https://www.drupal.org/user/873848"
-                },
-                {
                     "name": "aaron",
                     "homepage": "https://www.drupal.org/user/33420"
                 },
@@ -6543,6 +6555,10 @@
                 {
                     "name": "rphair",
                     "homepage": "https://www.drupal.org/user/3196607"
+                },
+                {
+                    "name": "RyanPrice",
+                    "homepage": "https://www.drupal.org/user/873848"
                 },
                 {
                     "name": "vaibhavjain",
@@ -10632,6 +10648,10 @@
                 "source": "https://github.com/maennchen/ZipStream-PHP/tree/2.2.1"
             },
             "funding": [
+                {
+                    "url": "https://github.com/maennchen",
+                    "type": "github"
+                },
                 {
                     "url": "https://opencollective.com/zipstream",
                     "type": "open_collective"
@@ -17893,6 +17913,10 @@
                 {
                     "name": "robwilmshurst",
                     "homepage": "https://www.drupal.org/user/144488"
+                },
+                {
+                    "name": "smustgrave",
+                    "homepage": "https://www.drupal.org/user/3252890"
                 }
             ],
             "description": "Provides stage_file_proxy module.",
@@ -20917,5 +20941,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.0.0"
 }
