@@ -83,34 +83,59 @@
 </div>
 
 {% if is_front %}
-  {% if basic_page_structure is empty %}
-    {% if drupal_config('system.site', 'frontpage_title') %}
-      <h1 class="{{ drupal_config('system.site', 'frontpage_show_title') ? 'container-wrap' : 'visually-hidden' }}">
-        {{ drupal_config('system.site', 'frontpage_title') }}
-      </h1>
-    {% endif %}
-  {% endif %}
+  {{ page.slideshow }}
+
   {{ page.front_welcome }}
-{% endif %}
 
-<div id="container">
-  <div class="container-wrap">
+  {% if page.top_first or page.top_second or page.top_third %}
+    {% if basic_page_structure is empty %}
+<main id="content">
+  {% endif %}
+  <div id="top-area" class="clearfix">
+    <div class="container">
+      {% if page.top_first %}
+        <div class="column">
+          {{ page.top_first }}
+        </div>
+      {% endif %}
+      {% if page.top_second %}
+        <div class="column">
+          {{ page.top_second }}
+        </div>
+      {% endif %}
+      {% if page.top_third %}
+        <div class="column">
+          {{ page.top_third }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+  {% endif %}
 
-    {% if basic_page_structure is not empty or basic_page_structure is empty and not is_front %}
-      <div class="content-sidebar-wrap{% if search_page %} search-page{% endif %}">
-        {{ page.breadcrumb }}
+  <div id="container">
+    <div class="container-wrap">
+
+      {% if basic_page_structure is not empty or basic_page_structure is empty and not is_front %}
         {% if search_page %}
-          {{ drupal_block('page_title_block', wrapper=false) }}
+          <div class="content-sidebar-wrap search-page">
+        {% else %}
+          <main class="content-sidebar-wrap">
+        {% endif %}
+        {% if not is_front %}
+          {{ page.breadcrumb }}
         {% endif %}
 
-        {% if basic_page_structure is not empty and is_front %}
+        {% if is_front %}
           {% if drupal_config('system.site', 'frontpage_title') %}
-            <div class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
-              <h1>
-                {{ drupal_config('system.site', 'frontpage_title') }}
-              </h1>
-            </div>
+            <h1 class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
+              {{ drupal_config('system.site', 'frontpage_title') }}
+            </h1>
           {% endif %}
+        {% endif %}
+
+        {% if search_page %}
+          {{ drupal_block('page_title_block', wrapper=false) }}
         {% endif %}
 
         <div id="content" {{ page.search_facets ? '' : 'class="main-content"' }}>
@@ -125,9 +150,9 @@
             </header>
           {% endif %}
           {% if page.content %}
-            <main id="post-content" {{ page.search_facets ? 'class="main-content"' : '' }}>
+            <div id="post-content" {{ page.search_facets ? 'class="main-content" role="main"' : '' }}>
               {{ page.content }}
-            </main>
+            </div>
           {% endif %}
         </div>
         {% if page.sidebar_first %}
@@ -135,63 +160,46 @@
             {{ page.sidebar_first }}
           </aside>
         {% endif %}
-      </div>
-      {% if page.sidebar_second %}
-        <aside id="sidebar-second" class="sidebar-second-layout">
-          {{ page.sidebar_second }}
-        </aside>
-      {% endif %}
-    {% endif %}
-  </div>
-  {% if is_front %}
-    {% if page.top_first or page.top_second or page.top_third or page.top_fourth %}
-      <div id="top-area" class="clearfix">
-        {% if page.top_first %}
-          <div class="column">
-            {{ page.top_first }}
+        {% if not search_page %}
+          </main>
+        {% else %}
           </div>
         {% endif %}
-        {% if page.top_second %}
-          <div class="column">
-            {{ page.top_second }}
-          </div>
-        {% endif %}
-        {% if page.top_third %}
-          <div class="column">
-            {{ page.top_third }}
-          </div>
-        {% endif %}
-        {% if page.top_fourth %}
-          <div class="column">
-            {{ page.top_fourth }}
-          </div>
+        {% if page.sidebar_second %}
+          <aside id="sidebar-second" class="sidebar-second-layout">
+            {{ page.sidebar_second }}
+          </aside>
         {% endif %}
       {% endif %}
-      </div>
 
-    {% if page.bottom_widget_1 or page.bottom_widget_2 or page.bottom_widget_3 %}
-      <div id="bottom_wrapper" class="footer_block bottom_widget">
-        <div id="bottom-area" class="footer-area clearfix">
-          {% if page.bottom_widget_1 %}
-            <div class="column">
-              {{ page.bottom_widget_1 }}
-            </div>
-          {% endif %}
-          {% if page.bottom_widget_2 %}
-            <div class="column">
-              {{ page.bottom_widget_2 }}
-            </div>
-          {% endif %}
-          {% if page.bottom_widget_3 %}
-            <div class="column">
-              {{ page.bottom_widget_3 }}
-            </div>
-          {% endif %}
+      {% if is_front %}
+        {% if page.bottom_widget_1 or page.bottom_widget_2 or page.bottom_widget_3 %}
+          <div id="bottom_wrapper" class="footer_block bottom_widget">
+          <div id="bottom-area" class="footer-area clearfix">
+            {% if page.bottom_widget_1 %}
+              <div class="column">
+                {{ page.bottom_widget_1 }}
+              </div>
+            {% endif %}
+            {% if page.bottom_widget_2 %}
+              <div class="column">
+                {{ page.bottom_widget_2 }}
+              </div>
+            {% endif %}
+            {% if page.bottom_widget_3 %}
+              <div class="column">
+                {{ page.bottom_widget_3 }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
         </div>
-      </div>
-    {% endif %}
-  {% endif %}
-</div>
+      {% endif %}
+    </div>
+  </div>
+{% if basic_page_structure is empty %}
+</main>
+{% endif %}
 
 <footer id="footer">
   <div id="footer_wrapper">
