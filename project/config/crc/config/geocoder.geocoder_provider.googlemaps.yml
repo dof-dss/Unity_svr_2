@@ -8,8 +8,8 @@ id: googlemaps
 label: GoogleMaps
 plugin: googlemaps
 configuration:
-  region: gb
-  apiKey: '<placeholder>'
   throttle:
     period: null
     limit: null
+  apiKey: '<placeholder>'
+  region: gb
