@@ -20,7 +20,7 @@ node_modules/
 /project/config/**/migrate_plus.*
 
 # Ignore sensitive information
-/web/sites/*/settings.local.php
+/project/sites/*/settings.local.php
 
 # Ignore Drupal's file directory
 /project/sites/*/files/
