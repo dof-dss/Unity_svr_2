@@ -90,13 +90,6 @@
       src="sites/publicappointmentsni/themes/publicappointmentsni_theme/images/cpani-banner.jpg"
       alt="">
   </div>
-  {% if basic_page_structure is empty %}
-    {% if drupal_config('system.site', 'frontpage_title') %}
-      <h1 class="{{ drupal_config('system.site', 'frontpage_show_title') ? 'container-wrap' : 'visually-hidden' }}">
-        {{ drupal_config('system.site', 'frontpage_title') }}
-      </h1>
-    {% endif %}
-  {% endif %}
 
   {{ page.front_welcome }}
 {% endif %}
@@ -105,48 +98,53 @@
   <div class="container-wrap">
 
     {% if basic_page_structure is not empty or basic_page_structure is empty and not is_front %}
-      <div class="content-sidebar-wrap{% if search_page %} search-page{% endif %}">
-        {% if not is_front %}
-          {{ page.breadcrumb }}
+      {% if search_page %}
+        <div class="content-sidebar-wrap search-page">
+      {% else %}
+        <main class="content-sidebar-wrap">
+      {% endif %}
+      {% if not is_front %}
+        {{ page.breadcrumb }}
+      {% endif %}
+      {% if is_front %}
+        {% if drupal_config('system.site', 'frontpage_title') %}
+          <h1 class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
+            {{ drupal_config('system.site', 'frontpage_title') }}
+          </h1>
         {% endif %}
+      {% endif %}
 
-        {% if basic_page_structure is not empty and is_front %}
-          {% if drupal_config('system.site', 'frontpage_title') %}
-            <div class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
-              <h1>
-                {{ drupal_config('system.site', 'frontpage_title') }}
-              </h1>
-            </div>
-          {% endif %}
+      {% if search_page %}
+        {{ drupal_block('page_title_block', wrapper=false) }}
+      {% endif %}
+
+      <div id="content" {{ page.search_facets ? '' : 'class="main-content"' }}>
+        {% if page.search_facets %}
+          <header id="search-facets" class="sidebar-first-layout">
+            <nav aria-label="Skip links">
+              <a href="#post-content" class="skip-link visually-hidden focusable">
+                {{- 'Skip to results'|t -}}
+              </a>
+            </nav>
+            {{ page.search_facets }}
+          </header>
         {% endif %}
-
-        {% if search_page %}
-          {{ drupal_block('page_title_block', wrapper=false) }}
-        {% endif %}
-
-        <div id="content" {{ page.search_facets ? '' : 'class="main-content"' }}>
-          {% if page.search_facets %}
-            <header id="search-facets" class="sidebar-first-layout">
-              <nav aria-label="Skip links">
-                <a href="#post-content" class="skip-link visually-hidden focusable">
-                  {{- 'Skip to results'|t -}}
-                </a>
-              </nav>
-              {{ page.search_facets }}
-            </header>
-          {% endif %}
-          {% if page.content %}
-            <main id="post-content" {{ page.search_facets ? 'class="main-content"' : '' }}>
-              {{ page.content }}
-            </main>
-          {% endif %}
-        </div>
-        {% if page.sidebar_first %}
-          <aside id="sidebar-first" class="sidebar-first-layout">
-            {{ page.sidebar_first }}
-          </aside>
+        {% if page.content %}
+          <div id="post-content" {{ page.search_facets ? 'class="main-content" role="main"' : '' }}>
+            {{ page.content }}
+          </div>
         {% endif %}
       </div>
+      {% if page.sidebar_first %}
+        <aside id="sidebar-first" class="sidebar-first-layout">
+          {{ page.sidebar_first }}
+        </aside>
+      {% endif %}
+      {% if not search_page %}
+        </main>
+      {% else %}
+        </div>
+      {% endif %}
       {% if page.sidebar_second %}
         <aside id="sidebar-second" class="sidebar-second-layout">
           {{ page.sidebar_second }}
@@ -194,6 +192,7 @@
     </div>
 
     {% if page.bottom_widget_1 or page.bottom_widget_2 or page.bottom_widget_3 %}
+      {# An extra area on the homepage to add 1 to 3 blocks. May be twitter widgets or just block content. #}
       <div id="bottom_wrapper" class="footer_block bottom_widget">
         <div id="bottom-area" class="footer-area clearfix">
           {% if page.bottom_widget_1 %}
