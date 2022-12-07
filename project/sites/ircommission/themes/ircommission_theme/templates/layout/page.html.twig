@@ -54,13 +54,11 @@
  */
 #}
 {% set hero_attributes = create_attribute() %}
-{%
-  set hero_classes = [
+{% set hero_classes = [
   'top_right',
   page.primary_menu ? 'with-menu' : 'no-menu',
   page.search ? 'with-search' : 'no-search',
-]
-%}
+] %}
 
 <div id="header_wrapper">
   <div id="inner_header_wrapper">
@@ -83,7 +81,8 @@
   {{ page.slideshow }}
   {{ page.front_welcome }}
   <div class="front-banner">
-    <img src="sites/ircommission/themes/ircommission_theme/images/irc-commissioners-banner.jpg" alt="IRC Commissioners(from left) John McBurney, Tim O’Connor, Monica McWilliams, Mitchell Reiss">
+    <img src="sites/ircommission/themes/ircommission_theme/images/irc-commissioners-banner.jpg"
+         alt="IRC Commissioners(from left) John McBurney, Tim O’Connor, Monica McWilliams, Mitchell Reiss">
     <p>IRC Commissioners(from left) John McBurney, Tim O’Connor, Monica McWilliams, Mitchell Reiss</p></div>
 
   {% if page.top_first or page.top_second or page.top_third %}
@@ -114,14 +113,14 @@
       {% else %}
       <main class="content-sidebar-wrap">
         {% endif %}
-      {{ page.breadcrumb }}
-      {% if search_page %}
-        {{ drupal_block('page_title_block', wrapper=false) }}
-      {% endif %}
+        {{ page.breadcrumb }}
+        {% if search_page %}
+          {{ drupal_block('page_title_block', wrapper=false) }}
+        {% endif %}
 
-      {% if evidence_search %}
-        {{ drupal_entity('block_content', 4) }}
-      {% endif %}
+        {% if evidence_search %}
+          {{ drupal_entity('block_content', 4) }}
+        {% endif %}
         {% if is_front %}
           {% if drupal_config('system.site', 'frontpage_title') %}
             <h1
@@ -130,28 +129,28 @@
             </h1>
           {% endif %}
         {% endif %}
-      <div id="content" {{ page.search_facets ? '' : 'class="main-content"' }}>
-        {% if page.search_facets %}
-          <header id="search-facets" class="sidebar-first-layout">
-            <nav aria-label="Skip links">
-              <a href="#post-content" class="skip-link visually-hidden focusable">
-                {{- 'Skip to results'|t -}}
-              </a>
-            </nav>
-            {{ page.search_facets }}
-          </header>
+        <div id="content" {{ page.search_facets ? '' : 'class="main-content"' }}>
+          {% if page.search_facets %}
+            <header id="search-facets" class="sidebar-first-layout">
+              <nav aria-label="Skip links">
+                <a href="#post-content" class="skip-link visually-hidden focusable">
+                  {{- 'Skip to results'|t -}}
+                </a>
+              </nav>
+              {{ page.search_facets }}
+            </header>
+          {% endif %}
+          {% if page.content %}
+            <div id="post-content" {{ page.search_facets ? 'class="main-content" role="main"' : '' }}>
+              {{ page.content }}
+            </div>
+          {% endif %}
+        </div>
+        {% if page.sidebar_first %}
+          <aside id="sidebar-first" class="sidebar-first-layout">
+            {{ page.sidebar_first }}
+          </aside>
         {% endif %}
-        {% if page.content %}
-          <div id="post-content" {{ page.search_facets ? 'class="main-content" role="main"' : '' }}>
-            {{ page.content }}
-          </div>
-        {% endif %}
-      </div>
-      {% if page.sidebar_first %}
-        <aside id="sidebar-first" class="sidebar-first-layout">
-          {{ page.sidebar_first }}
-        </aside>
-      {% endif %}
         {% if not search_page %}
       </main>
       {% else %}
@@ -164,6 +163,7 @@
     {% endif %}
     {% if is_front %}
       {% if page.bottom_widget_1 or page.bottom_widget_2 or page.bottom_widget_3 %}
+        {# An extra area on the homepage to add 1 to 3 blocks. May be twitter widgets or just block content. #}
         <div id="bottom_wrapper" class="footer_block bottom_widget">
           <div id="bottom-area" class="footer-area clearfix">
             {% if page.bottom_widget_1 %}

@@ -103,43 +103,43 @@
       {% else %}
         <main class="content-sidebar-wrap">
       {% endif %}
-        {% if not is_front %}
-          {{ page.breadcrumb }}
+      {% if not is_front %}
+        {{ page.breadcrumb }}
+      {% endif %}
+      {% if is_front %}
+        {% if drupal_config('system.site', 'frontpage_title') %}
+          <h1 class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
+            {{ drupal_config('system.site', 'frontpage_title') }}
+          </h1>
         {% endif %}
-        {% if is_front %}
-          {% if drupal_config('system.site', 'frontpage_title') %}
-            <h1 class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
-              {{ drupal_config('system.site', 'frontpage_title') }}
-            </h1>
-          {% endif %}
-        {% endif %}
+      {% endif %}
 
-        {% if search_page %}
-          {{ drupal_block('page_title_block', wrapper=false) }}
-        {% endif %}
+      {% if search_page %}
+        {{ drupal_block('page_title_block', wrapper=false) }}
+      {% endif %}
 
-        <div id="content" {{ page.search_facets ? '' : 'class="main-content"' }}>
-          {% if page.search_facets %}
-            <header id="search-facets" class="sidebar-first-layout">
-              <nav aria-label="Skip links">
-                <a href="#post-content" class="skip-link visually-hidden focusable">
-                  {{- 'Skip to results'|t -}}
-                </a>
-              </nav>
-              {{ page.search_facets }}
-            </header>
-          {% endif %}
-          {% if page.content %}
-            <div id="post-content" {{ page.search_facets ? 'class="main-content" role="main"' : '' }}>
-              {{ page.content }}
-            </div>
-          {% endif %}
-        </div>
-        {% if page.sidebar_first %}
-          <aside id="sidebar-first" class="sidebar-first-layout">
-            {{ page.sidebar_first }}
-          </aside>
+      <div id="content" {{ page.search_facets ? '' : 'class="main-content"' }}>
+        {% if page.search_facets %}
+          <header id="search-facets" class="sidebar-first-layout">
+            <nav aria-label="Skip links">
+              <a href="#post-content" class="skip-link visually-hidden focusable">
+                {{- 'Skip to results'|t -}}
+              </a>
+            </nav>
+            {{ page.search_facets }}
+          </header>
         {% endif %}
+        {% if page.content %}
+          <div id="post-content" {{ page.search_facets ? 'class="main-content" role="main"' : '' }}>
+            {{ page.content }}
+          </div>
+        {% endif %}
+      </div>
+      {% if page.sidebar_first %}
+        <aside id="sidebar-first" class="sidebar-first-layout">
+          {{ page.sidebar_first }}
+        </aside>
+      {% endif %}
       {% if not search_page %}
         </main>
       {% else %}
@@ -192,6 +192,7 @@
     </div>
 
     {% if page.bottom_widget_1 or page.bottom_widget_2 or page.bottom_widget_3 %}
+      {# An extra area on the homepage to add 1 to 3 blocks. May be twitter widgets or just block content. #}
       <div id="bottom_wrapper" class="footer_block bottom_widget">
         <div id="bottom-area" class="footer-area clearfix">
           {% if page.bottom_widget_1 %}
