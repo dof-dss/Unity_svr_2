@@ -89,7 +89,7 @@
 
   {% if page.top_first or page.top_second or page.top_third %}
     {% if basic_page_structure is empty %}
-      <div id="content">
+      <main id="content">
     {% endif %}
     <div id="top-area" class="clearfix">
       <div class="container">
@@ -110,9 +110,6 @@
         {% endif %}
       </div>
     </div>
-    {% if basic_page_structure is empty %}
-      </div>
-    {% endif %}
   {% endif %}
 {% endif %}
 
@@ -209,6 +206,9 @@
       </div>
     </div>
   {% endif %}
+{% endif %}
+        {% if basic_page_structure is empty %}
+      </main>
 {% endif %}
 
 <footer id="footer">
