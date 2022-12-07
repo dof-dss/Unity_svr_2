@@ -7,7 +7,8 @@ label: production
 description: ''
 weight: 0
 folder: ../project/config/victimspaymentsboard/production
-module: {  }
+module:
+  fastly: 0
 theme: {  }
 blacklist: {  }
 graylist: {  }
