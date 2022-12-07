@@ -24,7 +24,6 @@ module:
   content_moderation: 0
   contextual: 0
   cookie_content_blocker: 0
-  crc_migrations: 0
   csp: 0
   ctools: 0
   date_facet_drilldown: 0
@@ -120,7 +119,6 @@ module:
   ultimate_cron: 0
   unity_breadcrumbs: 0
   unity_common: 0
-  unity_file_migrations: 0
   unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0
