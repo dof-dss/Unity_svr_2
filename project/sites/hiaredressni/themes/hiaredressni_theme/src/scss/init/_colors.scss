@@ -58,8 +58,8 @@ $chroma: add-colors('functional', (
   menu-background:        'brand-primary',
   menu-item-hover:        'brand-primary',
   menu-separator:         #fff,
-  menu-sub-item-background: lighten(#606, 10),
-  menu-sub-item-hover:    #fff,
+  menu-sub-item-background: 'brand-primary',
+  menu-sub-item-hover:    'brand-primary',
 
   table-background:       #fff,
   table-border:           #bbb,
