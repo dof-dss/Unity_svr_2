@@ -114,6 +114,10 @@
   .menu-main_sub {
     background: $brand-primary;
 
+    .menu-link {
+      background: $brand-primary;
+    }
+
     .menu-item {
       .active {
         color: $white;
