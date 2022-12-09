@@ -1,3 +1,10 @@
+#############################################################################
+###                           --== IMPORTANT ==--                         ###
+#############################################################################
+# If you require changes to this file you must edit the file within the     #
+# original repository.Any changes here will be overwritten when the project #
+# is built.                                                                 #
+#############################################################################
 name: unity_svr_2
 type: 'php:8.1'
 dependencies:
@@ -7,7 +14,7 @@ runtime:
     extensions:
         - apcu
         - redis
-disk: 8000
+disk: 30720
 mounts:
     /web/files:
         source: local

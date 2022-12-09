@@ -2,44 +2,11 @@
 
 # Variables to indicate key settings files or directories for Drupal.
 DRUPAL_ROOT=/app/web
-DRUPAL_SETTINGS_FILE=$DRUPAL_ROOT/sites/default/settings.php
-DRUPAL_SERVICES_FILE=$DRUPAL_ROOT/sites/default/services.yml
 DRUPAL_CUSTOM_CODE=$DRUPAL_ROOT/modules/custom
 
 # Semaphore files to control whether we need to trigger an install
 # of supporting software or config files.
 NODE_YARN_INSTALLED=/etc/NODE_YARN_INSTALLED
-
-# Create export directories for config and data.
-if [ ! -d "/app/.lando/exports" ]; then
-  echo "Creating export directories"
-  mkdir -p /app/.lando/exports/config && mkdir /app/.lando/exports/data
-fi
-
-# If we don't have a Drupal 8 install, download it.
-if [ ! -d "/app/web/core" ]; then
-  echo "Installing Drupal"
-  composer -d/app install
-fi
-
-# Create Drupal public files directory and set IO permissions.
-if [ ! -d "/app/web/files" ]; then
-  echo "Creating public Drupal files directory"
-  mkdir -p /app/web/files
-  chmod -R 0777 /app/web/files
-fi
-
-# Create Drupal private file directory above web root.
-if [ ! -d "/app/.lando/private" ]; then
-  echo "Creating private Drupal files directory"
-  mkdir -p /app.lando//private
-fi
-
-# Copy default services config and replace key values for local development.
-cp -v /app/.lando/config/drupal.services.yml $DRUPAL_SERVICES_FILE
-
-echo "Copying Redis service overrides"
-cp -v /app/.lando/config/redis.services.yml $DRUPAL_ROOT/sites/default/redis.services.yml
 
 # Set Simple test variables and put PHPUnit config in place.
 if [ ! -f "${DRUPAL_ROOT}/core/phpunit.xml" ]; then

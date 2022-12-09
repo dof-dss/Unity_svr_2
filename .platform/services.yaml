@@ -1,6 +1,13 @@
+#############################################################################
+###                           --== IMPORTANT ==--                         ###
+#############################################################################
+# If you require changes to this file you must edit the file within the     #
+# original repository.Any changes here will be overwritten when the project #
+# is built.                                                                 #
+#############################################################################
 db:
     type: 'mariadb:10.4'
-    disk: 4000
+    disk: 40960
     configuration:
         schemas:
             - mentalhealthchampionnidb
