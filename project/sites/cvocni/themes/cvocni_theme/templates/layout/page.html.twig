@@ -84,13 +84,13 @@
 
 {% if is_front %}
 
-
   <div class="front-banner">
     <img
       src="sites/cvocni/themes/cvocni_theme/images/cvocni-banner.png"
       alt="">
   </div>
 
+{{ page.front_welcome }}
 
   {% if page.top_first or page.top_second or page.top_third %}
     {% if basic_page_structure is empty %}
