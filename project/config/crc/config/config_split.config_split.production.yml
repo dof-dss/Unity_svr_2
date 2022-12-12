@@ -7,9 +7,11 @@ label: production
 description: ''
 weight: 0
 folder: ../project/config/crc/production
-module: {  }
+module:
+  fastly: 0
 theme: {  }
-blacklist: {  }
+blacklist:
+  - fastly.settings
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
