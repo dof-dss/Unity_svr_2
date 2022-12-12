@@ -22,7 +22,7 @@ blocks:
     fields:
       body:
         -
-          value: "<p><img alt=\"Contact us\" data-delta=\"4\" data-fid=\"22\" data-media-element=\"1\" src=\"https://www.victimspaymentsboard.org.uk/sites/victimspayments/files/media-files/contact-us.png\" /></p>\r\n\r\n<p>Contact us</p>\r\n"
+          value: "<p><img alt=\"Contact us\" data-delta=\"4\" data-fid=\"22\" data-media-element=\"1\" src=\"https://www.victimspaymentsboard.org.uk/sites/victimspayments/files/media-files/contact-us.png\" /></p>\r\n\r\n<p><span>Contact us</span></p>\r\n"
           summary: ''
           format: full_html
       field_link:
@@ -40,7 +40,7 @@ blocks:
     fields:
       body:
         -
-          value: "<p><img alt=\"Support services\" data-delta=\"4\" data-fid=\"21\" data-media-element=\"1\" src=\"https://www.victimspaymentsboard.org.uk/sites/victimspayments/files/media-files/support-services.png\" /></p>\r\n\r\n<p>Support Services</p>\r\n"
+          value: "<p><img alt=\"Support services\" data-delta=\"4\" data-fid=\"21\" data-media-element=\"1\" src=\"https://www.victimspaymentsboard.org.uk/sites/victimspayments/files/media-files/support-services.png\" /></p>\r\n\r\n<p><span>Support Services</p></span>\r\n"
           summary: ''
           format: full_html
       field_link:
@@ -58,7 +58,7 @@ blocks:
     fields:
       body:
         -
-          value: "<p><img alt=\"Guidance for applicants\" data-delta=\"4\" data-fid=\"19\" data-media-element=\"1\" src=\"https://www.victimspaymentsboard.org.uk/sites/victimspayments/files/media-files/guidance-applicants.png\" /></p>\r\n\r\n<p>Guidance to applicants</p>\r\n"
+          value: "<p><img alt=\"Guidance for applicants\" data-delta=\"4\" data-fid=\"19\" data-media-element=\"1\" src=\"https://www.victimspaymentsboard.org.uk/sites/victimspayments/files/media-files/guidance-applicants.png\" /></p>\r\n\r\n<p><span>Guidance for applicants</span></p>\r\n"
           summary: ''
           format: full_html
       field_link:
@@ -76,7 +76,7 @@ blocks:
     fields:
       body:
         -
-          value: "<p><img alt=\"making an application\" data-delta=\"4\" data-fid=\"20\" data-media-element=\"1\" height=\"140\" src=\"https://www.victimspaymentsboard.org.uk/sites/victimspayments/files/media-files/making-an-application.png\" width=\"220\" /></p>\r\n\r\n<p>Making an application</p>\r\n"
+          value: "<p><img alt=\"making an application\" data-delta=\"4\" data-fid=\"20\" data-media-element=\"1\" height=\"140\" src=\"https://www.victimspaymentsboard.org.uk/sites/victimspayments/files/media-files/making-an-application.png\" width=\"220\" /></p>\r\n\r\n<p><span>Making an application</p></span>\r\n"
           summary: ''
           format: full_html
       field_link:

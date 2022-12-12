@@ -98,9 +98,12 @@ h1 {
     border-bottom: none;
     color: #0e6bb3;
 
-      &:hover {
-        text-decoration: underline;
+    span {
+      border-bottom: 1px solid #0e6bb3;
 
+      &:hover {
+        border-bottom: 2px solid #000;
+      }
     }
   }
 }
