@@ -37,6 +37,7 @@
  * - page.top_second: Items for the second top region.
  * - page.top_third: Items for the third top region.
  * - page.breadcrumb: Items for the breadcrumb region.
+ * - page.search_facets: Search facet region for search pages.
  * - page.content: The main content of the current page.
  * - page.sidebar_first: Items for the first sidebar.
  * - page.sidebar_second: Items for the second sidebar.
@@ -48,6 +49,10 @@
  * - page.footer_third: Items for the third footer region.
  * - page.footer_fourth: Items for the fourth footer region.
  * - page.footer: Items for the bottom footer region.
+ *
+ * - basic_page_structure: There is a checkbox in the theme settings UI
+ *   to check if a basic page is used in the homepage structure. This template
+ *   is set up for a homepage that doesn't use a basic page in it's structure.
  *
  * @see template_preprocess_page()
  * @see html.html.twig
@@ -79,56 +84,64 @@
 
 {% if is_front %}
   {{ page.slideshow }}
+
   {{ page.front_welcome }}
+
   <div class="front-banner">
     <img src="sites/ircommission/themes/ircommission_theme/images/irc-commissioners-banner.jpg"
-         alt="IRC Commissioners(from left) John McBurney, Tim O’Connor, Monica McWilliams, Mitchell Reiss">
-    <p>IRC Commissioners(from left) John McBurney, Tim O’Connor, Monica McWilliams, Mitchell Reiss</p></div>
+         alt="IRC Commissioners(from left) John McBurney, Tim O'Connor, Monica McWilliams, Mitchell Reiss">
+    <p>IRC Commissioners(from left) John McBurney, Tim O'Connor, Monica McWilliams, Mitchell Reiss</p>
+  </div>
 
   {% if page.top_first or page.top_second or page.top_third %}
-    <div id="top-area" class="clearfix">
-      {% if page.top_first %}
-        <div class="column">
-          {{ page.top_first }}
-        </div>
-      {% endif %}
-      {% if page.top_second %}
-        <div class="column">
-          {{ page.top_second }}
-        </div>
-      {% endif %}
-      {% if page.top_third %}
-        <div class="column">
-          {{ page.top_third }}
-        </div>
-      {% endif %}
-    </div>
+    {% if basic_page_structure is empty %}
+<main id="content">
   {% endif %}
-{% endif %}
+  <div id="top-area" class="clearfix">
+    {% if page.top_first %}
+      <div class="column">
+        {{ page.top_first }}
+      </div>
+    {% endif %}
+    {% if page.top_second %}
+      <div class="column">
+        {{ page.top_second }}
+      </div>
+    {% endif %}
+    {% if page.top_third %}
+      <div class="column">
+        {{ page.top_third }}
+      </div>
+    {% endif %}
+  </div>
+  {% endif %}
+  {% endif %}
 
-<div id="container">
-  <div class="container-wrap">
-    {% if search_page %}
-    <div class="content-sidebar-wrap search-page">
-      {% else %}
-      <main class="content-sidebar-wrap">
-        {% endif %}
-        {{ page.breadcrumb }}
+  <div id="container">
+    <div class="container-wrap">
+
+      {% if basic_page_structure is not empty or basic_page_structure is empty and not is_front %}
         {% if search_page %}
-          {{ drupal_block('page_title_block', wrapper=false) }}
+          <div class="content-sidebar-wrap search-page">
+        {% else %}
+          <main class="content-sidebar-wrap">
+        {% endif %}
+        {% if not is_front %}
+          {{ page.breadcrumb }}
         {% endif %}
 
-        {% if evidence_search %}
-          {{ drupal_entity('block_content', 4) }}
-        {% endif %}
         {% if is_front %}
           {% if drupal_config('system.site', 'frontpage_title') %}
-            <h1
-              class="{{ drupal_config('system.site', 'frontpage_show_title') ? 'container-wrap' : 'visually-hidden' }}">
+            <h1 class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
               {{ drupal_config('system.site', 'frontpage_title') }}
             </h1>
           {% endif %}
         {% endif %}
+
+        {% if search_page %}
+          {{ drupal_block('page_title_block', wrapper=false) }}
+        {% endif %}
+
         <div id="content" {{ page.search_facets ? '' : 'class="main-content"' }}>
           {% if page.search_facets %}
             <header id="search-facets" class="sidebar-first-layout">
@@ -152,19 +165,21 @@
           </aside>
         {% endif %}
         {% if not search_page %}
-      </main>
-      {% else %}
-    </div>
-    {% endif %}
-    {% if page.sidebar_second %}
-      <aside id="sidebar-second" class="sidebar-second-layout">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
-    {% if is_front %}
-      {% if page.bottom_widget_1 or page.bottom_widget_2 or page.bottom_widget_3 %}
+          </main>
+        {% else %}
+          </div>
+        {% endif %}
+        {% if page.sidebar_second %}
+          <aside id="sidebar-second" class="sidebar-second-layout">
+            {{ page.sidebar_second }}
+          </aside>
+        {% endif %}
+      {% endif %}
+
+      {% if is_front %}
         {# An extra area on the homepage to add 1 to 3 blocks. May be twitter widgets or just block content. #}
-        <div id="bottom_wrapper" class="footer_block bottom_widget">
+        {% if page.bottom_widget_1 or page.bottom_widget_2 or page.bottom_widget_3 %}
+          <div id="bottom_wrapper" class="footer_block bottom_widget">
           <div id="bottom-area" class="footer-area clearfix">
             {% if page.bottom_widget_1 %}
               <div class="column">
@@ -182,16 +197,19 @@
               </div>
             {% endif %}
           </div>
+        {% endif %}
         </div>
       {% endif %}
-    {% endif %}
+    </div>
   </div>
-</div>
+  {% if basic_page_structure is empty %}
+</main>
+{% endif %}
 
 <footer id="footer">
-  <div id="footer_wrapper" class="container-wrap">
+  <div id="footer_wrapper">
     {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth or page.footer %}
-      <div id="footer-area" class="footer-area clearfix">
+      <div id="footer-area" class="footer-area container-wrap clearfix">
         {% if page.footer_first %}
           <div class="column">
             {{ page.footer_first }}
@@ -222,5 +240,3 @@
     {% endif %}
   </div>
 </footer>
-
-
