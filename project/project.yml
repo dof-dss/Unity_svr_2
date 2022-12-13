@@ -1,5 +1,8 @@
+project_type: unity
 project_name: 'Unity Svr 2'
 project_id: kamkoebtv74zm
+project_disk_size: 8000
+db_disk_size: 4000
 sites:
     mentalhealthchampionni:
         name: 'Mental Health Champion for Northern Ireland'
