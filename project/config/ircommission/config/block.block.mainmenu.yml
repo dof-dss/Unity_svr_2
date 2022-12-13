@@ -5,6 +5,7 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - block_visibility_groups
     - system
   theme:
     - ircommission_theme
@@ -20,6 +21,10 @@ settings:
   label_display: '0'
   provider: system
   level: 1
-  depth: 0
-  expand_all_items: false
-visibility: {  }
+  depth: 2
+  expand_all_items: true
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
