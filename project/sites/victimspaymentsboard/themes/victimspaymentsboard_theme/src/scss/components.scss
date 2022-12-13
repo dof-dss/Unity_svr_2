@@ -99,10 +99,10 @@ h1 {
     color: #0e6bb3;
 
     span {
-      border-bottom: 1px solid #0e6bb3;
+      border-bottom: 1px solid $link;
 
       &:hover {
-        border-bottom: 2px solid #000;
+        border-bottom: 2px solid $black;
       }
     }
   }
