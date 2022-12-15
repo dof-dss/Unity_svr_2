@@ -1,0 +1,33 @@
+uuid: 8e867be8-7760-4912-a0d0-4ffbe5ad6bb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.faq_accordian.field_answer
+    - field.field.paragraph.faq_accordian.field_question
+    - paragraphs.paragraphs_type.faq_accordian
+  module:
+    - text
+_core:
+  default_config_hash: pPhABRDDtAjY8Rn2G3WzPOKe65ojWK0rh2w6a2rZwKw
+id: paragraph.faq_accordian.default
+targetEntityType: paragraph
+bundle: faq_accordian
+mode: default
+content:
+  field_answer:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_question:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

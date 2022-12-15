@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_publication_type
     - node.type.publication
-    - taxonomy.vocabulary.publications_topics
+    - taxonomy.vocabulary.publication_type
 _core:
   default_config_hash: 14NqevawhWXgH65cBjkur-vAx00JJGor75I4qW8N8pY
 id: node.publication.field_publication_type
@@ -14,7 +14,7 @@ entity_type: node
 bundle: publication
 label: 'Publication type'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -22,10 +22,10 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      publications_topics: publications_topics
+      publication_type: publication_type
     sort:
       field: name
       direction: asc
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: publication_type
 field_type: entity_reference
