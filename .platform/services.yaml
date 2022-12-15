@@ -21,6 +21,7 @@ db:
             - nijacdb
             - srcdb
             - crcdb
+            - sentencereviewdb
         endpoints:
             mentalhealthchampionni:
                 default_schema: mentalhealthchampionnidb
@@ -66,6 +67,10 @@ db:
                 default_schema: crcdb
                 privileges:
                     crcdb: admin
+            sentencereview:
+                default_schema: sentencereviewdb
+                privileges:
+                    sentencereviewdb: admin
 solr:
     type: 'solr:7.7'
     disk: 1024
@@ -93,6 +98,8 @@ solr:
                 conf_dir: !archive solr_config/
             crc_index:
                 conf_dir: !archive solr_config/
+            sentencereview_index:
+                conf_dir: !archive solr_config/
         endpoints:
             mentalhealthchampionni:
                 core: mentalhealthchampionni_index
@@ -116,5 +123,7 @@ solr:
                 core: src_index
             crc:
                 core: crc_index
+            sentencereview:
+                core: sentencereview_index
 redis:
     type: 'redis:6.0'

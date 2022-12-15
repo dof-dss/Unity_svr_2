@@ -103,3 +103,12 @@ sites:
         database: crc
         status: development
         default: false
+    sentencereview:
+        name: 'Sentence Review Commissioners'
+        url: sentencereview.org.uk
+        solr: sentencereview
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/sentencereview ; drush core-cron'
+        database: sentencereview
+        status: development
+        default: false
