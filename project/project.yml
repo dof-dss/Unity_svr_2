@@ -85,15 +85,6 @@ sites:
         database: nijac
         status: development
         default: false
-    src:
-        name: 'Sentence Review Commissioners'
-        url: sentencereview.org.uk
-        solr: src
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/src ; drush core-cron'
-        database: src
-        status: development
-        default: false
     communityrelations:
         name: 'Community Relations Council'
         url: community-relations.org.uk
@@ -101,5 +92,14 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/communityrelations ; drush core-cron'
         database: communityrelations
+        status: development
+        default: false
+    sentencereview:
+        name: 'Sentence Review Commissioners'
+        url: sentencereview.org.uk
+        solr: sentencereview
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/sentencereview ; drush core-cron'
+        database: sentencereview
         status: development
         default: false
