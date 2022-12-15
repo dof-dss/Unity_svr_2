@@ -1,4 +1,4 @@
-uuid: 73f3cfb0-ba4f-47ab-8f3b-f0eb6b2dcb74
+uuid: 2b0b3b8c-3f4e-4e38-bc4f-da5f85030867
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,6 @@ dependencies:
     - field.storage.node.field_publication_type
     - node.type.publication_page
     - taxonomy.vocabulary.publication_types
-  module:
-    - dynamic_entity_reference
 id: node.publication_page.field_publication_type
 field_name: field_publication_type
 entity_type: node
@@ -19,65 +17,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  taxonomy_term:
-    handler: 'default:taxonomy_term'
-    handler_settings:
-      target_bundles:
-        publication_types: publication_types
-      sort:
-        field: name
-        direction: asc
-      auto_create: false
-      auto_create_bundle: ''
-  contact_message:
-    handler: 'default:contact_message'
-    handler_settings: {  }
-  node:
-    handler: 'default:node'
-    handler_settings: {  }
-  content_moderation_state:
-    handler: 'default:content_moderation_state'
-    handler_settings: {  }
-  block_content:
-    handler: 'default:block_content'
-    handler_settings: {  }
-  menu_link_content:
-    handler: 'default:menu_link_content'
-    handler_settings: {  }
-  entity_subqueue:
-    handler: 'default:entity_subqueue'
-    handler_settings: {  }
-  entity_embed_fake_entity:
-    handler: 'default:entity_embed_fake_entity'
-    handler_settings: {  }
-  file:
-    handler: 'default:file'
-    handler_settings: {  }
-  flagging:
-    handler: 'default:flagging'
-    handler_settings: {  }
-  media:
-    handler: 'default:media'
-    handler_settings: {  }
-  paragraph:
-    handler: 'default:paragraph'
-    handler_settings: {  }
-  redirect:
-    handler: 'default:redirect'
-    handler_settings: {  }
-  search_api_task:
-    handler: 'default:search_api_task'
-    handler_settings: {  }
-  path_alias:
-    handler: 'default:path_alias'
-    handler_settings: {  }
-  user:
-    handler: 'default:user'
-    handler_settings: {  }
-  webform_submission:
-    handler: 'default:webform_submission'
-    handler_settings: {  }
-  scheduled_transition:
-    handler: 'default:scheduled_transition'
-    handler_settings: {  }
-field_type: dynamic_entity_reference
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      publication_types: publication_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

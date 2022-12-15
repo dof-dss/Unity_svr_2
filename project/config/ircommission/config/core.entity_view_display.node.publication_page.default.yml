@@ -11,7 +11,6 @@ dependencies:
     - node.type.publication_page
   module:
     - datetime
-    - dynamic_entity_reference
     - text
     - user
 id: node.publication_page.default
@@ -45,7 +44,7 @@ content:
     weight: 0
     region: content
   field_publication_type:
-    type: dynamic_entity_reference_label
+    type: entity_reference_label
     label: above
     settings:
       link: true

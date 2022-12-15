@@ -1,20 +1,17 @@
-uuid: a6f1a664-0c7b-457a-afd6-4aad20dfee00
+uuid: 7f9558ec-06dd-456c-b672-4d02c715a98c
 langcode: en
 status: true
 dependencies:
   module:
-    - dynamic_entity_reference
     - node
     - taxonomy
 id: node.field_publication_type
 field_name: field_publication_type
 entity_type: node
-type: dynamic_entity_reference
+type: entity_reference
 settings:
-  exclude_entity_types: false
-  entity_type_ids:
-    taxonomy_term: taxonomy_term
-module: dynamic_entity_reference
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true

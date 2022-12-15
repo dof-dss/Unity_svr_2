@@ -13,7 +13,6 @@ dependencies:
   module:
     - content_moderation
     - datetime
-    - dynamic_entity_reference
     - media_library
     - metatag
     - path
@@ -46,6 +45,7 @@ content:
     region: content
     settings:
       sidebar: true
+      use_details: true
     third_party_settings: {  }
   field_publication_date:
     type: datetime_default
@@ -54,13 +54,13 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_publication_type:
-    type: dynamic_entity_reference_default
+    type: entity_reference_autocomplete
     weight: 27
     region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
-      size: 40
+      size: 60
       placeholder: ''
     third_party_settings: {  }
   langcode:
