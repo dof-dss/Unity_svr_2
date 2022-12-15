@@ -1,27 +1,20 @@
-uuid: 4d1f3a9e-41b5-4905-8bc5-4a1ad263f184
+uuid: a6f1a664-0c7b-457a-afd6-4aad20dfee00
 langcode: en
 status: true
 dependencies:
   module:
+    - dynamic_entity_reference
     - node
-    - options
+    - taxonomy
 id: node.field_publication_type
 field_name: field_publication_type
 entity_type: node
-type: list_string
+type: dynamic_entity_reference
 settings:
-  allowed_values:
-    -
-      value: correspondence
-      label: Correspondence
-    -
-      value: key_document
-      label: 'Key documents'
-    -
-      value: reports
-      label: Reports
-  allowed_values_function: ''
-module: options
+  exclude_entity_types: false
+  entity_type_ids:
+    taxonomy_term: taxonomy_term
+module: dynamic_entity_reference
 locked: false
 cardinality: 1
 translatable: true

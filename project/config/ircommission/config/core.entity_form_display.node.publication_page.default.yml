@@ -13,6 +13,7 @@ dependencies:
   module:
     - content_moderation
     - datetime
+    - dynamic_entity_reference
     - media_library
     - metatag
     - path
@@ -53,10 +54,14 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_publication_type:
-    type: options_select
-    weight: 11
+    type: dynamic_entity_reference_default
+    weight: 27
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 40
+      placeholder: ''
     third_party_settings: {  }
   langcode:
     type: language_select
