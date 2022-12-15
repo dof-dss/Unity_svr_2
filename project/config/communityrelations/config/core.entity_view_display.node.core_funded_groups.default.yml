@@ -1,0 +1,36 @@
+uuid: d724bfcf-b15b-4b65-8703-d8b6bc1277e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.core_funded_groups.body
+    - field.field.node.core_funded_groups.field_areas_work
+    - field.field.node.core_funded_groups.field_meta_tags
+    - node.type.core_funded_groups
+  module:
+    - text
+    - user
+id: node.core_funded_groups.default
+targetEntityType: node
+bundle: core_funded_groups
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_areas_work:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_meta_tags: true
+  langcode: true
+  links: true

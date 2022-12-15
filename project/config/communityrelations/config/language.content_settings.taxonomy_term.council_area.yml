@@ -1,0 +1,11 @@
+uuid: 28df6cf0-c682-435d-9677-86bbdf2c3a1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.council_area
+id: taxonomy_term.council_area
+target_entity_type_id: taxonomy_term
+target_bundle: council_area
+default_langcode: site_default
+language_alterable: false
