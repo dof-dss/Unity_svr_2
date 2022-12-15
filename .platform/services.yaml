@@ -19,10 +19,8 @@ db:
             - hiaredressnidb
             - cvocnidb
             - nijacdb
-            - crcdb
-            - sentencereviewdb
-            - srcdb
             - communityrelationsdb
+            - sentencereviewdb
         endpoints:
             mentalhealthchampionni:
                 default_schema: mentalhealthchampionnidb
@@ -60,22 +58,14 @@ db:
                 default_schema: nijacdb
                 privileges:
                     nijacdb: admin
-            crc:
-                default_schema: crcdb
-                privileges:
-                    crcdb: admin
-            sentencereview:
-                default_schema: sentencereviewdb
-                privileges:
-                    sentencereviewdb: admin
-            src:
-                default_schema: srcdb
-                privileges:
-                    srcdb: admin
             communityrelations:
                 default_schema: communityrelationsdb
                 privileges:
                     communityrelationsdb: admin
+            sentencereview:
+                default_schema: sentencereviewdb
+                privileges:
+                    sentencereviewdb: admin
 solr:
     type: 'solr:7.7'
     disk: 1024
@@ -98,9 +88,6 @@ solr:
             cvocni_index:
                 conf_dir: !archive solr_config/
             nijac_index:
-                conf_dir: !archive solr_config/
-            crc_index:
-            src_index:
                 conf_dir: !archive solr_config/
             communityrelations_index:
                 conf_dir: !archive solr_config/
@@ -125,13 +112,9 @@ solr:
                 core: cvocni_index
             nijac:
                 core: nijac_index
-            crc:
-                core: crc_index
-            sentencereview:
-                core: sentencereview_index
-            src:
-                core: src_index
             communityrelations:
                 core: communityrelations_index
+            sentencereview:
+                core: sentencereview_index
 redis:
     type: 'redis:6.0'
