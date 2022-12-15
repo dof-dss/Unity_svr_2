@@ -1,0 +1,45 @@
+uuid: 5f552eb4-3160-460b-b25a-014b8ae59176
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.diff
+    - field.field.node.project_profile.body
+    - field.field.node.project_profile.field_crc_contact_details
+    - field.field.node.project_profile.field_crc_council_area
+    - field.field.node.project_profile.field_crc_t_buc_aim
+    - field.field.node.project_profile.field_meta_tags
+    - node.type.project_profile
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.project_profile.diff
+targetEntityType: node
+bundle: project_profile
+mode: diff
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_crc_contact_details:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  field_crc_council_area: true
+  field_crc_t_buc_aim: true
+  field_meta_tags: true
+  langcode: true
+  links: true

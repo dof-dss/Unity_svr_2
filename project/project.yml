@@ -94,12 +94,12 @@ sites:
         database: src
         status: development
         default: false
-    crc:
+    communityrelations:
         name: 'Community Relations Council'
         url: community-relations.org.uk
-        solr: crc
+        solr: communityrelations
         cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/crc ; drush core-cron'
-        database: crc
+        cron_cmd: 'cd web/sites/communityrelations ; drush core-cron'
+        database: communityrelations
         status: development
         default: false
