@@ -1,8 +1,0 @@
-uuid: da38b0c0-714c-4fc7-82b5-a88291d7140b
-langcode: en
-status: true
-dependencies: {  }
-name: 'areas of work'
-vid: areas_of_work
-description: 'areas of work dropdown for core funded groups content type'
-weight: 0

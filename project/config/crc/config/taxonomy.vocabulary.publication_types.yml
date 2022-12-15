@@ -1,8 +1,0 @@
-uuid: 0600489c-21e2-40dd-a927-8f99838214a5
-langcode: en
-status: true
-dependencies: {  }
-name: 'publication types'
-vid: publication_types
-description: ''
-weight: 0
