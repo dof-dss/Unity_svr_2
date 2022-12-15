@@ -99,6 +99,11 @@ crons:
     mentalhealthchampionni:
         spec: '10 * * * *'
         cmd: 'cd web/sites/mentalhealthchampionni ; drush core-cron'
+    logging:
+        spec: '*/5 * * * *'
+        commands:
+            start: '/bin/bash /app/cronjob.sh'
+        shutdown_timeout: 290
     publicappointmentsni:
         spec: '10 * * * *'
         cmd: 'cd web/sites/publicappointmentsni ; drush core-cron'
