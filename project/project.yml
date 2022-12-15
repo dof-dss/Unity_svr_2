@@ -86,12 +86,22 @@ sites:
         status: development
         default: false
     crc:
+    src:
+        name: 'Sentence Review Commissioners'
+        url: sentencereview.org.uk
+        solr: src
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/src ; drush core-cron'
+        database: src
+        status: development
+        default: false
+    communityrelations:
         name: 'Community Relations Council'
         url: community-relations.org.uk
-        solr: crc
+        solr: communityrelations
         cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/crc ; drush core-cron'
-        database: crc
+        cron_cmd: 'cd web/sites/communityrelations ; drush core-cron'
+        database: communityrelations
         status: development
         default: false
     sentencereview:

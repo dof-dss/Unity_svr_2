@@ -1,0 +1,33 @@
+uuid: c8449f74-48cc-4697-8c04-a4b02ead12ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.funding_schemes.body
+    - field.field.node.funding_schemes.field_deadline_date
+    - field.field.node.funding_schemes.field_funding_scheme_type
+    - field.field.node.funding_schemes.field_meta_tags
+    - node.type.funding_schemes
+  module:
+    - text
+    - user
+id: node.funding_schemes.teaser
+targetEntityType: node
+bundle: funding_schemes
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_deadline_date: true
+  field_funding_scheme_type: true
+  field_meta_tags: true
+  langcode: true
+  links: true

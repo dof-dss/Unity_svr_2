@@ -1,0 +1,17 @@
+uuid: f4484041-0994-45c4-bde1-82893676567d
+langcode: en
+status: true
+dependencies:
+  module:
+    - google_analytics
+title: 'Default cron handler'
+id: google_analytics_cron
+weight: 0
+module: google_analytics
+callback: google_analytics_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

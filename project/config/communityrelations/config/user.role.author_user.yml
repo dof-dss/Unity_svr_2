@@ -1,0 +1,138 @@
+uuid: 5e4ba0c0-2f19-4109-b6ca-09be72b44c19
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.audio
+    - media.type.document
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - node.type.basic_page
+    - node.type.core_funded_groups
+    - node.type.event
+    - node.type.funding_schemes
+    - node.type.news
+    - node.type.project_profile
+    - node.type.publication
+    - node.type.staff_member
+    - workflows.workflow.nics_editorial_workflow
+  module:
+    - content_moderation
+    - entity_browser
+    - media
+    - menu_admin_per_menu
+    - moderation_sidebar
+    - node
+    - path
+    - system
+    - toolbar
+_core:
+  default_config_hash: AyMCT1boGFkm3MNXLyv6ZV7yMdWLY-U3WQLhzDDkWGE
+id: author_user
+label: 'author user'
+weight: -5
+is_admin: null
+permissions:
+  - 'access administration menu'
+  - 'access administration pages'
+  - 'access ckeditor link'
+  - 'access content overview'
+  - 'access location_browser entity browser pages'
+  - 'access toolbar'
+  - 'add media from remote sources'
+  - 'administer main menu items'
+  - 'administer main-menu menu items'
+  - 'create audio media'
+  - 'create basic_page content'
+  - 'create core_funded_groups content'
+  - 'create document media'
+  - 'create event content'
+  - 'create file media'
+  - 'create files'
+  - 'create funding_schemes content'
+  - 'create image media'
+  - 'create news content'
+  - 'create project_profile content'
+  - 'create publication content'
+  - 'create publication_page content'
+  - 'create remote_video media'
+  - 'create staff_member content'
+  - 'create url aliases'
+  - 'delete own audio media'
+  - 'delete own basic_page content'
+  - 'delete own core_funded_groups content'
+  - 'delete own document media'
+  - 'delete own event content'
+  - 'delete own file media'
+  - 'delete own funding_schemes content'
+  - 'delete own image media'
+  - 'delete own news content'
+  - 'delete own project_profile content'
+  - 'delete own publication content'
+  - 'delete own remote_video media'
+  - 'delete own staff_member content'
+  - 'download any audio files'
+  - 'download any document files'
+  - 'download any image files'
+  - 'download any video files'
+  - 'download own audio files'
+  - 'download own document files'
+  - 'download own image files'
+  - 'download own video files'
+  - 'edit any basic_page content'
+  - 'edit any core_funded_groups content'
+  - 'edit any event content'
+  - 'edit any funding_schemes content'
+  - 'edit any news content'
+  - 'edit any project_profile content'
+  - 'edit any publication content'
+  - 'edit any staff_member content'
+  - 'edit own audio files'
+  - 'edit own audio media'
+  - 'edit own basic_page content'
+  - 'edit own core_funded_groups content'
+  - 'edit own document files'
+  - 'edit own document media'
+  - 'edit own event content'
+  - 'edit own file media'
+  - 'edit own funding_schemes content'
+  - 'edit own image files'
+  - 'edit own image media'
+  - 'edit own news content'
+  - 'edit own project_profile content'
+  - 'edit own publication content'
+  - 'edit own remote_video media'
+  - 'edit own staff_member content'
+  - 'edit own video files'
+  - 'moderate content from draft to needs_review'
+  - 'moderate content from needs_review to draft'
+  - 'revert basic_page revisions'
+  - 'revert core_funded_groups revisions'
+  - 'revert event revisions'
+  - 'revert funding_schemes revisions'
+  - 'revert news revisions'
+  - 'revert project_profile revisions'
+  - 'revert publication revisions'
+  - 'revert staff_member revisions'
+  - 'use moderation sidebar'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition submit_for_review'
+  - 'use workbench_moderation my drafts tab'
+  - 'use workbench_moderation needs review tab'
+  - 'view all unpublished content'
+  - 'view any unpublished content'
+  - 'view basic_page revisions'
+  - 'view core_funded_groups revisions'
+  - 'view event revisions'
+  - 'view funding_schemes revisions'
+  - 'view latest version'
+  - 'view news revisions'
+  - 'view own files'
+  - 'view own unpublished media'
+  - 'view project_profile revisions'
+  - 'view publication revisions'
+  - 'view staff_member revisions'
+  - 'view the administration theme'

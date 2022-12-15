@@ -1,0 +1,29 @@
+uuid: e88ee937-8bd9-4c76-9779-363b923b91ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_areas_work
+    - node.type.core_funded_groups
+    - taxonomy.vocabulary.areas_of_work
+id: node.core_funded_groups.field_areas_work
+field_name: field_areas_work
+entity_type: node
+bundle: core_funded_groups
+label: 'areas work'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      areas_of_work: areas_of_work
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
