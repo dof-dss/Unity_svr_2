@@ -19,7 +19,6 @@ db:
             - hiaredressnidb
             - cvocnidb
             - nijacdb
-            - srcdb
             - crcdb
             - sentencereviewdb
         endpoints:
@@ -59,10 +58,6 @@ db:
                 default_schema: nijacdb
                 privileges:
                     nijacdb: admin
-            src:
-                default_schema: srcdb
-                privileges:
-                    srcdb: admin
             crc:
                 default_schema: crcdb
                 privileges:
@@ -94,8 +89,6 @@ solr:
                 conf_dir: !archive solr_config/
             nijac_index:
                 conf_dir: !archive solr_config/
-            src_index:
-                conf_dir: !archive solr_config/
             crc_index:
                 conf_dir: !archive solr_config/
             sentencereview_index:
@@ -119,8 +112,6 @@ solr:
                 core: cvocni_index
             nijac:
                 core: nijac_index
-            src:
-                core: src_index
             crc:
                 core: crc_index
             sentencereview:
