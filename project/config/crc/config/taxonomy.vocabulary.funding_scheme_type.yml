@@ -1,8 +1,0 @@
-uuid: 3d94c552-7e20-4910-95be-7a43accca6a4
-langcode: en
-status: true
-dependencies: {  }
-name: 'funding scheme type'
-vid: funding_scheme_type
-description: ''
-weight: 0
