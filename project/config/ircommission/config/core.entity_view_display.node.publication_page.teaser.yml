@@ -11,26 +11,27 @@ dependencies:
     - field.field.node.publication_page.field_publication_type
     - node.type.publication_page
   module:
-    - text
+    - datetime
     - user
 id: node.publication_page.teaser
 targetEntityType: node
 bundle: publication_page
 mode: teaser
 content:
-  body:
-    type: text_summary_or_trimmed
+  field_publication_date:
+    type: datetime_default
     label: hidden
     settings:
-      trim_length: 600
+      timezone_override: ''
+      format_type: unity_date
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
+  body: true
   content_moderation_control: true
   field_attachment: true
   field_metatag: true
-  field_publication_date: true
   field_publication_type: true
   langcode: true
   links: true

@@ -35,25 +35,18 @@ content:
     weight: 2
     region: content
   field_publication_date:
-    type: datetime_custom
+    type: datetime_default
     label: hidden
     settings:
       timezone_override: ''
-      date_format: 'd F Y'
+      format_type: unity_date
     third_party_settings: {  }
     weight: 0
-    region: content
-  field_publication_type:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 3
     region: content
 hidden:
   content_moderation_control: true
   field_metatag: true
+  field_publication_type: true
   langcode: true
   links: true
   search_api_excerpt: true

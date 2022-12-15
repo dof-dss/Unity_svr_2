@@ -13,7 +13,6 @@ dependencies:
   module:
     - datetime
     - layout_builder
-    - text
     - user
 third_party_settings:
   layout_builder:
@@ -24,33 +23,19 @@ targetEntityType: node
 bundle: publication_page
 mode: search_index
 content:
-  body:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_attachment:
-    type: entity_reference_entity_view
-    label: above
-    settings:
-      view_mode: embed
-      link: false
-    third_party_settings: {  }
-    weight: 2
-    region: content
   field_publication_date:
-    type: datetime_custom
+    type: datetime_default
     label: hidden
     settings:
       timezone_override: ''
-      date_format: 'd F Y'
+      format_type: unity_date
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
+  body: true
   content_moderation_control: true
+  field_attachment: true
   field_metatag: true
   field_publication_type: true
   langcode: true
