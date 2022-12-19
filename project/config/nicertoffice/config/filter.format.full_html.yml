@@ -136,11 +136,3 @@ filters:
     weight: 0
     settings:
       replacement_text: 'Click here to view the video content'
-  slick_filter:
-    id: slick_filter
-    provider: slick
-    status: false
-    weight: 4
-    settings:
-      optionset: default
-      media_switch: ''
