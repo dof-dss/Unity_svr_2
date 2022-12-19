@@ -1,4 +1,4 @@
-uuid: e7e4e54f-2aba-4642-9aa3-7bc9db5b2b1c
+uuid: 4eb6cbcf-1c1e-4c87-b930-e821ae2b6cd7
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
     - system
   theme:
     - ircommission_theme
-id: publicationdate_2
+id: publicationdate
 theme: ircommission_theme
 region: search_facets
 weight: 0
@@ -21,7 +21,7 @@ settings:
   label: Date
   label_display: visible
   provider: facets
-  block_id: publicationdate_2
+  block_id: publicationdate
 visibility:
   condition_group:
     id: condition_group
