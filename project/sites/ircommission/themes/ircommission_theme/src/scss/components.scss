@@ -212,10 +212,6 @@ a[href="/news"] {
   border-bottom: 0px;
 }
 
-.search-result{
-  border-bottom: none;
-}
-
 input[type="checkbox"] {
   display: none;
 }
@@ -563,6 +559,7 @@ footer {
 
 .block-views-exposed-filter-blockpublications-search-publication-search-page {
   margin-top: 4.5rem;
+  font-size: 1.8rem;
 }
 
 .views-row.search-result {
@@ -616,4 +613,12 @@ footer {
       margin-bottom: 2rem;
     }
   }
+}
+
+.current-search-item-results-count {
+  text-align: left;
+}
+
+article header h2 {
+  text-align: left;
 }
