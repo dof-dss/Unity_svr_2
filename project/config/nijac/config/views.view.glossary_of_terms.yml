@@ -8,6 +8,7 @@ dependencies:
   module:
     - node
     - user
+    - views_custom_cache_tag
 id: glossary_of_terms
 label: 'Glossary of terms'
 module: views
@@ -90,8 +91,9 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
-        options: {  }
+        type: custom_tag
+        options:
+          custom_tag: 'handy_cache_tags:node:terms'
       empty: {  }
       sorts:
         title:

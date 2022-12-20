@@ -1,0 +1,8 @@
+uuid: 43e013ad-39a8-482a-a69c-44f8af362476
+langcode: en
+status: true
+dependencies: {  }
+name: 'Publication Type'
+vid: publication_type
+description: ''
+weight: 0

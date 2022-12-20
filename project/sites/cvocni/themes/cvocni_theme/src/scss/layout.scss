@@ -68,6 +68,12 @@
   }
 }
 
+.node-type-landing-page {
+  .content-sidebar-wrap {
+    width: 100%;
+  }
+}
+
 #bottom-area {
   @include breakpoint($tab) {
     display: flex;

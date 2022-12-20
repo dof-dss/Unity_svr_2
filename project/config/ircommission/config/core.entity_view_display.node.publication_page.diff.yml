@@ -12,13 +12,36 @@ dependencies:
     - node.type.publication_page
   module:
     - datetime
+    - field_group
     - layout_builder
+    - metatag
     - text
     - user
 third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
+  field_group:
+    group_additional_content_details:
+      children:
+        - field_publication_type
+        - field_metatag
+      label: 'Additional content details'
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: field-collection
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 id: node.publication_page.diff
 targetEntityType: node
 bundle: publication_page
@@ -40,6 +63,13 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
+  field_metatag:
+    type: metatag_empty_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
   field_publication_date:
     type: datetime_custom
     label: hidden
@@ -49,10 +79,16 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_publication_type:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
 hidden:
   content_moderation_control: true
-  field_metatag: true
-  field_publication_type: true
   langcode: true
   links: true
   search_api_excerpt: true

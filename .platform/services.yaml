@@ -1,3 +1,10 @@
+#############################################################################
+###                           --== IMPORTANT ==--                         ###
+#############################################################################
+# If you require changes to this file you must edit the file within the     #
+# original repository.Any changes here will be overwritten when the project #
+# is built.                                                                 #
+#############################################################################
 db:
     type: 'mariadb:10.4'
     disk: 4000
@@ -12,8 +19,8 @@ db:
             - hiaredressnidb
             - cvocnidb
             - nijacdb
-            - srcdb
-            - crcdb
+            - communityrelationsdb
+            - sentencereviewdb
         endpoints:
             mentalhealthchampionni:
                 default_schema: mentalhealthchampionnidb
@@ -51,14 +58,14 @@ db:
                 default_schema: nijacdb
                 privileges:
                     nijacdb: admin
-            src:
-                default_schema: srcdb
+            communityrelations:
+                default_schema: communityrelationsdb
                 privileges:
-                    srcdb: admin
-            crc:
-                default_schema: crcdb
+                    communityrelationsdb: admin
+            sentencereview:
+                default_schema: sentencereviewdb
                 privileges:
-                    crcdb: admin
+                    sentencereviewdb: admin
 solr:
     type: 'solr:7.7'
     disk: 1024
@@ -82,9 +89,9 @@ solr:
                 conf_dir: !archive solr_config/
             nijac_index:
                 conf_dir: !archive solr_config/
-            src_index:
+            communityrelations_index:
                 conf_dir: !archive solr_config/
-            crc_index:
+            sentencereview_index:
                 conf_dir: !archive solr_config/
         endpoints:
             mentalhealthchampionni:
@@ -105,9 +112,9 @@ solr:
                 core: cvocni_index
             nijac:
                 core: nijac_index
-            src:
-                core: src_index
-            crc:
-                core: crc_index
+            communityrelations:
+                core: communityrelations_index
+            sentencereview:
+                core: sentencereview_index
 redis:
     type: 'redis:6.0'

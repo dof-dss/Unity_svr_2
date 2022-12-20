@@ -63,7 +63,7 @@
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
         "dinbror/blazy": "^1.8",
-        "dof-dss/nicsdru_origins_modules": "^1.4",
+        "dof-dss/nicsdru_origins_modules": "^2.1",
         "dof-dss/nicsdru_origins_profile": "0.1.11",
         "dof-dss/nicsdru_unity_modules": "^1.1",
         "dof-dss/nicsdru_unity_profile": "^1.0",
@@ -166,6 +166,8 @@
         "vlucas/phpdotenv": "^2.4"
     },
     "require-dev": {
+        "dof-dss/maestro-hosting": "^1.0",
+        "dof-dss/maestro-shell": "^1.0",
         "drupal/coder": "^8.3",
         "drupal/core-dev": "^9.0.0",
         "drupal/devel": "^4.1",
@@ -306,5 +308,10 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "scripts": {
+        "post-package-update": [
+            "Maestro\\Shell\\Events\\ComposerEventListener::postPackageUpdate"
+        ]
     }
 }
