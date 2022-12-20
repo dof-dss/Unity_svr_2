@@ -97,23 +97,21 @@
 
   {% if page.top_first or page.top_second or page.top_third %}
     <div id="top-area" class="clearfix">
-      <div class="container">
-        {% if page.top_first %}
-          <div class="column">
-            {{ page.top_first }}
-          </div>
-        {% endif %}
-        {% if page.top_second %}
-          <div class="column">
-            {{ page.top_second }}
-          </div>
-        {% endif %}
-        {% if page.top_third %}
-          <div class="column">
-            {{ page.top_third }}
-          </div>
-        {% endif %}
-      </div>
+      {% if page.top_first %}
+        <div class="column">
+          {{ page.top_first }}
+        </div>
+      {% endif %}
+      {% if page.top_second %}
+        <div class="column">
+          {{ page.top_second }}
+        </div>
+      {% endif %}
+      {% if page.top_third %}
+        <div class="column">
+          {{ page.top_third }}
+        </div>
+      {% endif %}
     </div>
   {% endif %}
   {% endif %}
