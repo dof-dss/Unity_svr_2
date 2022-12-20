@@ -205,6 +205,8 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      link_display: custom_url
+      link_url: /news
       header: {  }
       footer:
         area:
@@ -217,7 +219,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<a href="/news" class="btn">Read more</a>'
+            value: ''
             format: full_html
           tokenize: false
       display_extenders: {  }
@@ -255,38 +257,28 @@ display:
       style:
         type: html_list
         options:
-          grouping: {  }
-          row_class: ''
+          row_class: item
           default_row_class: false
+          uses_fields: false
           type: ul
           wrapper_class: item-list
           class: ''
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          default_field_elements: false
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: teaser
       defaults:
+        use_more: false
+        use_more_always: false
+        use_more_text: false
         style: false
         row: false
-        footer: false
+        footer: true
       display_description: ''
-      footer:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: false
-          content:
-            value: '<a href="/news" class="btn">More news</a>'
-            format: full_html
-          tokenize: false
+      use_more: true
+      use_more_always: true
+      use_more_text: 'More News'
       display_extenders:
         metatag_display_extender: {  }
     cache_metadata:

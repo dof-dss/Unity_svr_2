@@ -21,7 +21,7 @@ settings:
   label_display: visible
   provider: system
   level: 1
-  depth: 2
+  depth: 0
   expand_all_items: false
 visibility:
   condition_group:

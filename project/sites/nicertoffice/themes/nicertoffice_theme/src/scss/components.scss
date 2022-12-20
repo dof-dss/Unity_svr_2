@@ -35,6 +35,7 @@
   }
 }
 
+.front,
 .node-type-document,
 .node-type-decision,
 .node-type-faq,
@@ -46,7 +47,8 @@
   }
 }
 
-.paragraph--type--map {
+.paragraph--type--map,
+.node-type-webform address {
   margin-bottom: 2.4rem;
 }
 
@@ -100,6 +102,10 @@
 
         a {
           color: #0d63a5;
+
+          &:focus {
+            color: $white;
+          }
         }
       }
     }
