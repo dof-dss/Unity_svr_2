@@ -14,7 +14,7 @@
   }
 }
 
-@media (min-width: 766px) {
+@include breakpoint($tab) {
   .region-primary-menu .menu_wrapper {
     border-top: 1px solid;
     border-bottom: 1px solid;
