@@ -1,4 +1,4 @@
-uuid: a7e7f79f-f3d1-422b-b7d9-5e7873133f54
+uuid: 7bb00539-71ce-4420-8933-4da8d5aed7ea
 langcode: en
 status: true
 dependencies:
@@ -8,19 +8,24 @@ dependencies:
   module:
     - search_api
 id: publication_summary
-name: 'Publication summary'
+name: 'Publications summary'
 facet_source_id: 'search_api:views_page__publications_search__publication_search_page'
-processor_configs: {  }
+processor_configs:
+  hide_when_not_rendered:
+    processor_id: hide_when_not_rendered
+    weights:
+      build: '45'
+    settings: {  }
 facets:
   publication_date:
     checked: true
-    label: Date
+    label: 'Publication date'
     separator: ', '
     show_count: false
     weight: 0
   publication_type:
     checked: true
-    label: Type
+    label: 'Publication type'
     separator: ', '
     show_count: false
     weight: 0

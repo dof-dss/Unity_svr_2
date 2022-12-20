@@ -1,4 +1,4 @@
-uuid: 4fd331ed-fa6e-4946-a122-509f0fe476d3
+uuid: 943adc5d-c095-421f-ae4a-42c390dfd003
 langcode: en
 status: true
 dependencies:
@@ -17,9 +17,9 @@ processor_configs:
       build: '45'
     settings: {  }
 facets:
-  publication_date_news:
+  published_date:
     checked: true
-    label: 'Publication date'
+    label: 'Published date'
     separator: ', '
     show_count: false
     weight: 0

@@ -1,4 +1,4 @@
-uuid: dc4af681-d6d1-4c9f-9aa0-246d0ebe6487
+uuid: 6eb1d67f-8718-45fc-89b6-57b10dc95ec1
 langcode: en
 status: true
 dependencies:
@@ -12,14 +12,14 @@ third_party_settings:
   facets_pretty_paths:
     coder: default_coder
 id: publication_type
-name: 'Publication Type'
+name: 'Publication type'
 weight: 0
 min_count: 1
 url_alias: type
 facet_source_id: 'search_api:views_page__publications_search__publication_search_page'
 field_identifier: field_publication_type
 query_operator: and
-hard_limit: 50
+hard_limit: 0
 exclude: false
 use_hierarchy: false
 keep_hierarchy_parents_active: false
@@ -48,14 +48,14 @@ processor_configs:
       sort: 20
     settings:
       sort: ASC
-  count_widget_order:
-    processor_id: count_widget_order
+  raw_value_widget_order:
+    processor_id: raw_value_widget_order
     weights:
-      sort: 30
+      sort: 50
     settings:
       sort: DESC
-  list_item:
-    processor_id: list_item
+  translate_entity:
+    processor_id: translate_entity
     weights:
       build: 5
     settings: {  }

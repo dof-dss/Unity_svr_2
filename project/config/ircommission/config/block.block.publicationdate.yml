@@ -1,9 +1,9 @@
-uuid: 46d2f0b7-8309-41bd-b517-ac4249cb8018
+uuid: 4eb6cbcf-1c1e-4c87-b930-e821ae2b6cd7
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.publication_date_news
+    - facets.facet.publication_date
   module:
     - block_visibility_groups
     - facets
@@ -13,15 +13,14 @@ dependencies:
 id: publicationdate
 theme: ircommission_theme
 region: search_facets
-weight: -7
+weight: 0
 provider: null
-plugin: 'facet_block:publication_date_news'
+plugin: 'facet_block:publication_date'
 settings:
-  id: 'facet_block:publication_date_news'
-  label: 'Published date'
+  id: 'facet_block:publication_date'
+  label: Date
   label_display: visible
   provider: facets
-  context_mapping: {  }
   block_id: publicationdate
 visibility:
   condition_group:
@@ -31,4 +30,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/news\r\n/news/date/*"
+    pages: "/publications\r\n/publications/date/*\r\n/publications/type/*"

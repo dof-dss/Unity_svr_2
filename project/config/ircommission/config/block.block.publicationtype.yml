@@ -1,4 +1,4 @@
-uuid: 8797ee3f-4ab0-4a9c-b942-e8e763482187
+uuid: fc256ec8-219b-474b-a7e6-8514d004dec7
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ dependencies:
 id: publicationtype
 theme: ircommission_theme
 region: search_facets
-weight: -6
+weight: 0
 provider: null
 plugin: 'facet_block:publication_type'
 settings:

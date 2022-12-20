@@ -1,4 +1,4 @@
-uuid: a8a5a7bc-2c71-42dd-b348-096b0bac0232
+uuid: 092eefcb-6326-47c6-9ae3-e12513c5d3fb
 langcode: en
 status: true
 dependencies:
@@ -11,8 +11,8 @@ dependencies:
 third_party_settings:
   facets_pretty_paths:
     coder: default_coder
-id: publication_date_news
-name: 'Publication date'
+id: published_date
+name: 'Published date'
 weight: 0
 min_count: 1
 url_alias: date
@@ -61,11 +61,6 @@ processor_configs:
       date_display: actual_date
       granularity: 6
       date_format: ''
-  hierarchy_processor:
-    processor_id: hierarchy_processor
-    weights:
-      build: 100
-    settings: {  }
   raw_value_widget_order:
     processor_id: raw_value_widget_order
     weights:
