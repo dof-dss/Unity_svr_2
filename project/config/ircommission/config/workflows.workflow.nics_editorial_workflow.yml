@@ -3,13 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.feature
-    - node.type.featured_content_list
-    - node.type.layout_page
-    - node.type.link
     - node.type.news
     - node.type.page
-    - node.type.profile
     - node.type.publication_page
     - node.type.webform
   module:
@@ -101,13 +96,8 @@ type_settings:
       weight: -2
   entity_types:
     node:
-      - feature
-      - featured_content_list
-      - layout_page
-      - link
       - news
       - page
-      - profile
       - publication_page
       - webform
   default_moderation_state: draft

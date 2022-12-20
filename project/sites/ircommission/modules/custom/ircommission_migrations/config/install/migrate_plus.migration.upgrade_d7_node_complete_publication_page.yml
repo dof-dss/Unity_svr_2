@@ -87,6 +87,9 @@ process:
       replace_urls:
         http://www.ircommission.org
         https://www.ircommission.org
+        http://test-ircommission.nigov.net
+        http://ircommission-drupal.nigov.net
+        http://drupal-ircommission.thestables.net
     -
       plugin: site_files_filter
       from_ref: sites/ircommission/files
@@ -94,6 +97,10 @@ process:
     -
       plugin: site_files_filter
       from_ref: sites/ircommission.org/files
+      to_ref: files/ircommission
+    -
+      plugin: site_files_filter
+      from_ref: sites/ircommission-drupal.nigov.net/files
       to_ref: files/ircommission
     -
       plugin: str_replace
@@ -122,9 +129,13 @@ process:
           to_format: Y-m-d
           source: value
   field_publication_type:
-    -
-      plugin: get
+    - plugin: static_map
       source: field_publication_type
+      default_value: null
+      map:
+        correspondence: 6
+        keyDocuments: 7
+        reports: 4
   field_attachment:
     -
       plugin: callback

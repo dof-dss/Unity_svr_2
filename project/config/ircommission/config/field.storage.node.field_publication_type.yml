@@ -1,27 +1,17 @@
-uuid: 4d1f3a9e-41b5-4905-8bc5-4a1ad263f184
+uuid: 7f9558ec-06dd-456c-b672-4d02c715a98c
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - options
+    - taxonomy
 id: node.field_publication_type
 field_name: field_publication_type
 entity_type: node
-type: list_string
+type: entity_reference
 settings:
-  allowed_values:
-    -
-      value: correspondence
-      label: Correspondence
-    -
-      value: key_document
-      label: 'Key documents'
-    -
-      value: reports
-      label: Reports
-  allowed_values_function: ''
-module: options
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true
