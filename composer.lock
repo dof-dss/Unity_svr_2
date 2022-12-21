@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "874fb63cbb253ab18f0b326545b3e4da",
+    "content-hash": "df564151d21b575bd074b1071b809cb7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -17424,12 +17424,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/maestro-hosting.git",
-                "reference": "38e984e"
+                "reference": "60a2c37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/maestro-hosting/zipball/38e984e",
-                "reference": "38e984e",
+                "url": "https://api.github.com/repos/dof-dss/maestro-hosting/zipball/60a2c37",
+                "reference": "60a2c37",
                 "shasum": ""
             },
             "require": {
@@ -17456,7 +17456,7 @@
                 "issues": "https://github.com/dof-dss/maestro-hosting/issues",
                 "source": "https://github.com/dof-dss/maestro-hosting/tree/D8UN-1675"
             },
-            "time": "2022-12-21T10:36:15+00:00"
+            "time": "2022-12-21T10:48:10+00:00"
         },
         {
             "name": "dof-dss/maestro-shell",
