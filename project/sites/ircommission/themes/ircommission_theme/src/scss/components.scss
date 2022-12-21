@@ -212,10 +212,6 @@ a[href="/news"] {
   border-bottom: 0px;
 }
 
-input[type="checkbox"] {
-  display: none;
-}
-
 #head, .main-content, .sidebar-second-layout, .sidebar-first-layout {
   margin-top: 0;
 }
@@ -558,7 +554,6 @@ footer {
 }
 
 .block-views-exposed-filter-blockpublications-search-publication-search-page {
-  margin-top: 4.5rem;
   font-size: 1.8rem;
 }
 
@@ -616,9 +611,5 @@ footer {
 }
 
 .current-search-item-results-count {
-  text-align: left;
-}
-
-article header h2 {
   text-align: left;
 }
