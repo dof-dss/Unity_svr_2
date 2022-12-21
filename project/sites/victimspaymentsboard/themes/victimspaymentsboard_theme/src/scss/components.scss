@@ -14,14 +14,6 @@
   }
 }
 
-@include breakpoint($tab) {
-  .region-primary-menu .menu_wrapper {
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    border-color: #333;
-  }
-}
-
 h1 {
   margin: 2rem 0 2rem;
 }
