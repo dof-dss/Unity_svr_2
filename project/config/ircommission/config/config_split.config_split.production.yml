@@ -6,7 +6,7 @@ id: production
 label: production
 description: 'Used for production site.'
 weight: 0
-folder: ../config/ircommission/production
+folder: ../project/config/ircommission/production
 module: {  }
 theme: {  }
 blacklist: {  }
