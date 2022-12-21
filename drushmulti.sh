@@ -19,7 +19,7 @@ else
 fi
 
 # Run command across all sites
-for site in `ls -l project/sites | grep ^d | awk '!/default/{print $9}'`
+for site in `ls -l web/sites | grep ^d | awk '!/default/{print $9}'`
 do
   echo "** $site **"
   ${PREFIX} drush -l $site $1 $2 $3 $4 $5

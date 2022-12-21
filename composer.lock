@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9cab55e017a54f3832177a49b2eb0f27",
+    "content-hash": "e6187d8bc527de92f48a86d8c06f51c6",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1875,16 +1875,16 @@
         },
         {
             "name": "dof-dss/nicsdru_origins_modules",
-            "version": "2.1.0",
+            "version": "1.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_origins_modules.git",
-                "reference": "f00dd6cf572549bf93a70032c27d34c14e85d9a7"
+                "reference": "3f931658496711f0b5fddaad7f0a0647c6d31ae8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/f00dd6cf572549bf93a70032c27d34c14e85d9a7",
-                "reference": "f00dd6cf572549bf93a70032c27d34c14e85d9a7",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/3f931658496711f0b5fddaad7f0a0647c6d31ae8",
+                "reference": "3f931658496711f0b5fddaad7f0a0647c6d31ae8",
                 "shasum": ""
             },
             "require": {
@@ -1898,9 +1898,9 @@
             "description": "Generic modules for DOF-DSS Drupal sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_origins_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/2.1.0"
+                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/1.4.9"
             },
-            "time": "2022-12-16T09:55:49+00:00"
+            "time": "2022-12-06T14:35:26+00:00"
         },
         {
             "name": "dof-dss/nicsdru_origins_profile",
@@ -1944,16 +1944,16 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
-            "version": "1.1.9",
+            "version": "1.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_modules.git",
-                "reference": "a8caf23fbe73915c3aeb412b1e4b425c7ff69833"
+                "reference": "8e504f6ec9e5e38cdc840434ee7b5a9a11cb4006"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/a8caf23fbe73915c3aeb412b1e4b425c7ff69833",
-                "reference": "a8caf23fbe73915c3aeb412b1e4b425c7ff69833",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/8e504f6ec9e5e38cdc840434ee7b5a9a11cb4006",
+                "reference": "8e504f6ec9e5e38cdc840434ee7b5a9a11cb4006",
                 "shasum": ""
             },
             "require": {
@@ -1967,9 +1967,9 @@
             "description": "Custom modules available to all Unity sites.",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/1.1.9"
+                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/1.1.8"
             },
-            "time": "2022-12-20T10:52:02+00:00"
+            "time": "2022-12-06T14:33:15+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_profile",
@@ -2714,6 +2714,10 @@
             ],
             "authors": [
                 {
+                    "name": "aidanlis",
+                    "homepage": "https://www.drupal.org/user/502018"
+                },
+                {
                     "name": "Cyclodex",
                     "homepage": "https://www.drupal.org/user/1305230"
                 },
@@ -2726,20 +2730,16 @@
                     "homepage": "https://www.drupal.org/user/647364"
                 },
                 {
-                    "name": "Pol",
-                    "homepage": "https://www.drupal.org/user/47194"
-                },
-                {
-                    "name": "aidanlis",
-                    "homepage": "https://www.drupal.org/user/502018"
-                },
-                {
                     "name": "kalman.hosszu",
                     "homepage": "https://www.drupal.org/user/267481"
                 },
                 {
                     "name": "nagy.balint",
                     "homepage": "https://www.drupal.org/user/1763952"
+                },
+                {
+                    "name": "Pol",
+                    "homepage": "https://www.drupal.org/user/47194"
                 },
                 {
                     "name": "shadcn",
@@ -2791,6 +2791,10 @@
             ],
             "authors": [
                 {
+                    "name": "aidanlis",
+                    "homepage": "https://www.drupal.org/user/502018"
+                },
+                {
                     "name": "Cyclodex",
                     "homepage": "https://www.drupal.org/user/1305230"
                 },
@@ -2803,20 +2807,16 @@
                     "homepage": "https://www.drupal.org/user/647364"
                 },
                 {
-                    "name": "Pol",
-                    "homepage": "https://www.drupal.org/user/47194"
-                },
-                {
-                    "name": "aidanlis",
-                    "homepage": "https://www.drupal.org/user/502018"
-                },
-                {
                     "name": "kalman.hosszu",
                     "homepage": "https://www.drupal.org/user/267481"
                 },
                 {
                     "name": "nagy.balint",
                     "homepage": "https://www.drupal.org/user/1763952"
+                },
+                {
+                    "name": "Pol",
+                    "homepage": "https://www.drupal.org/user/47194"
                 },
                 {
                     "name": "shadcn",
@@ -3189,12 +3189,12 @@
             ],
             "authors": [
                 {
-                    "name": "Pasqualle",
-                    "homepage": "https://www.drupal.org/user/80733"
-                },
-                {
                     "name": "codebymikey",
                     "homepage": "https://www.drupal.org/user/3573206"
+                },
+                {
+                    "name": "Pasqualle",
+                    "homepage": "https://www.drupal.org/user/80733"
                 }
             ],
             "description": "Provides basic revert and update functionality for other modules",
@@ -4348,26 +4348,26 @@
         },
         {
             "name": "drupal/embed",
-            "version": "1.6.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/embed.git",
-                "reference": "8.x-1.6"
+                "reference": "8.x-1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "6d2964775c3228d122cd61904786b3640fa83045"
+                "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "09a2bda039bfbb3fff01c91964384bf3d924b8c5"
             },
             "require": {
-                "drupal/core": "^9.3 | ^10"
+                "drupal/core": "^8.7.7 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.6",
-                    "datestamp": "1661298150",
+                    "version": "8.x-1.4",
+                    "datestamp": "1590176831",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4993,12 +4993,12 @@
                     "homepage": "https://www.drupal.org/node/2625160/committers"
                 },
                 {
-                    "name": "Upchuk",
-                    "homepage": "https://www.drupal.org/user/1885838"
+                    "name": "StryKaizer",
+                    "homepage": "https://www.drupal.org/user/462700"
                 },
                 {
-                    "name": "phenaproxima",
-                    "homepage": "https://www.drupal.org/user/205645"
+                    "name": "Upchuk",
+                    "homepage": "https://www.drupal.org/user/1885838"
                 }
             ],
             "description": "Pretty paths for Facets.",
@@ -8323,20 +8323,12 @@
             ],
             "authors": [
                 {
-                    "name": "Andriy Khomych",
-                    "homepage": "https://www.drupal.org/user/3287133"
-                },
-                {
-                    "name": "JacobSanford",
-                    "homepage": "https://www.drupal.org/user/806538"
-                },
-                {
-                    "name": "VladimirAus",
-                    "homepage": "https://www.drupal.org/user/673120"
-                },
-                {
                     "name": "alesbencina",
                     "homepage": "https://www.drupal.org/user/3558110"
+                },
+                {
+                    "name": "Andriy Khomych",
+                    "homepage": "https://www.drupal.org/user/3287133"
                 },
                 {
                     "name": "aurelianzaha",
@@ -8345,6 +8337,10 @@
                 {
                     "name": "dragan_bp",
                     "homepage": "https://www.drupal.org/user/3578037"
+                },
+                {
+                    "name": "JacobSanford",
+                    "homepage": "https://www.drupal.org/user/806538"
                 },
                 {
                     "name": "joaogarin",
@@ -8361,6 +8357,10 @@
                 {
                     "name": "mh86",
                     "homepage": "https://www.drupal.org/user/59747"
+                },
+                {
+                    "name": "VladimirAus",
+                    "homepage": "https://www.drupal.org/user/673120"
                 }
             ],
             "description": "This module provides a powerful interface for managing taxonomies.",
@@ -8557,26 +8557,26 @@
         },
         {
             "name": "drupal/twig_field_value",
-            "version": "2.0.1",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/twig_field_value.git",
-                "reference": "2.0.1"
+                "reference": "2.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/twig_field_value-2.0.1.zip",
-                "reference": "2.0.1",
-                "shasum": "c448df55d01e17d352370d5366124d28d3d0cb21"
+                "url": "https://ftp.drupal.org/files/projects/twig_field_value-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "d2d0db6249493542bf9d568970f67d10ce143f90"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.1",
-                    "datestamp": "1665604686",
+                    "version": "2.0.0",
+                    "datestamp": "1587069998",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8924,12 +8924,12 @@
                 "drupal/telephone_validation": "~2.0",
                 "drupal/token": "~1.0",
                 "drupal/variationcache": "~1.0",
+                "drupal/webform-webform_group": "*",
                 "drupal/webform_access": "*",
                 "drupal/webform_attachment": "*",
                 "drupal/webform_clientside_validation": "*",
                 "drupal/webform_devel": "*",
                 "drupal/webform_entity_print": "*",
-                "drupal/webform_group": "*",
                 "drupal/webform_node": "*",
                 "drupal/webform_options_limit": "*",
                 "drupal/webform_scheduled_email": "*",
@@ -10648,6 +10648,10 @@
                 "source": "https://github.com/maennchen/ZipStream-PHP/tree/2.2.1"
             },
             "funding": [
+                {
+                    "url": "https://github.com/maennchen",
+                    "type": "github"
+                },
                 {
                     "url": "https://opencollective.com/zipstream",
                     "type": "open_collective"
@@ -17420,16 +17424,16 @@
         },
         {
             "name": "dof-dss/maestro-hosting",
-            "version": "1.0.3",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/maestro-hosting.git",
-                "reference": "fee94ab70274379946cbfff98ef086042b114541"
+                "reference": "b1f01547a34e148b3e42b89b289088caf87d05d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/maestro-hosting/zipball/fee94ab70274379946cbfff98ef086042b114541",
-                "reference": "fee94ab70274379946cbfff98ef086042b114541",
+                "url": "https://api.github.com/repos/dof-dss/maestro-hosting/zipball/b1f01547a34e148b3e42b89b289088caf87d05d5",
+                "reference": "b1f01547a34e148b3e42b89b289088caf87d05d5",
                 "shasum": ""
             },
             "require": {
@@ -17454,22 +17458,22 @@
             "description": "Maestro hosting resources",
             "support": {
                 "issues": "https://github.com/dof-dss/maestro-hosting/issues",
-                "source": "https://github.com/dof-dss/maestro-hosting/tree/1.0.3"
+                "source": "https://github.com/dof-dss/maestro-hosting/tree/1.0"
             },
-            "time": "2022-12-15T15:07:56+00:00"
+            "time": "2022-11-23T14:49:29+00:00"
         },
         {
             "name": "dof-dss/maestro-shell",
-            "version": "1.0.1",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/maestro-shell.git",
-                "reference": "165deeb3e417397105d9b92b592ea49db4bd6624"
+                "reference": "504ae9e5c4cd7ee18e9a8a6b8ad13bfa24da2d31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/maestro-shell/zipball/165deeb3e417397105d9b92b592ea49db4bd6624",
-                "reference": "165deeb3e417397105d9b92b592ea49db4bd6624",
+                "url": "https://api.github.com/repos/dof-dss/maestro-shell/zipball/504ae9e5c4cd7ee18e9a8a6b8ad13bfa24da2d31",
+                "reference": "504ae9e5c4cd7ee18e9a8a6b8ad13bfa24da2d31",
                 "shasum": ""
             },
             "require": {
@@ -17512,9 +17516,9 @@
             "description": "Shell for working with Maestro projects.",
             "support": {
                 "issues": "https://github.com/dof-dss/maestro-shell/issues",
-                "source": "https://github.com/dof-dss/maestro-shell/tree/1.0.1"
+                "source": "https://github.com/dof-dss/maestro-shell/tree/1.0"
             },
-            "time": "2022-12-13T13:14:26+00:00"
+            "time": "2022-11-23T14:50:10+00:00"
         },
         {
             "name": "drupal/coder",
@@ -20622,16 +20626,16 @@
         },
         {
             "name": "symfony/http-client",
-            "version": "v5.4.16",
+            "version": "v5.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-client.git",
-                "reference": "0f43af12a27733a060b92396b7bde84a4376da0a"
+                "reference": "8f29b0f06c9ff48c8431e78eb90c8bd6f82cb12b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client/zipball/0f43af12a27733a060b92396b7bde84a4376da0a",
-                "reference": "0f43af12a27733a060b92396b7bde84a4376da0a",
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/8f29b0f06c9ff48c8431e78eb90c8bd6f82cb12b",
+                "reference": "8f29b0f06c9ff48c8431e78eb90c8bd6f82cb12b",
                 "shasum": ""
             },
             "require": {
@@ -20689,7 +20693,7 @@
             "description": "Provides powerful methods to fetch HTTP resources synchronously or asynchronously",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-client/tree/v5.4.16"
+                "source": "https://github.com/symfony/http-client/tree/v5.4.15"
             },
             "funding": [
                 {
@@ -20705,7 +20709,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-09T11:27:39+00:00"
+            "time": "2022-10-25T16:22:13+00:00"
         },
         {
             "name": "symfony/lock",
