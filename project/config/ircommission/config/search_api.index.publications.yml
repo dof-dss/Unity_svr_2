@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - field.storage.node.field_publication_type
     - field.storage.node.field_publication_date
+    - field.storage.node.field_publication_type
     - search_api.server.default
   module:
     - node
@@ -24,10 +24,10 @@ field_settings:
       config:
         - field.storage.node.body
   field_publication_type:
-    label: Type
+    label: 'Publication type'
     datasource_id: 'entity:node'
     property_path: field_publication_type
-    type: string
+    type: integer
     dependencies:
       config:
         - field.storage.node.field_publication_type
@@ -56,6 +56,16 @@ field_settings:
     dependencies:
       module:
         - node
+  title_fulltext:
+    label: 'Title fulltext'
+    property_path: aggregated_field
+    type: text
+    boost: !!float 13
+    configuration:
+      type: union
+      fields:
+        - 'entity:node/body'
+        - 'entity:node/title'
 datasource_settings:
   'entity:node':
     bundles:
