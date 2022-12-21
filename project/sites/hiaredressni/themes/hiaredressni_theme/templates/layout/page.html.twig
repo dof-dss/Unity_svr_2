@@ -84,6 +84,7 @@
 
 {% if is_front %}
   {{ page.slideshow }}
+{# If the homepage has no basic page then make the content the Main section and add the h1. #}
 {% if basic_page_structure is empty %}
 <main id="content">
   {% if drupal_config('system.site', 'frontpage_title') %}
@@ -95,8 +96,7 @@
   {{ page.front_welcome }}
 
   {% if page.top_first or page.top_second or page.top_third %}
-  <div id="top-area" class="clearfix">
-    <div class="container">
+    <div id="top-area" class="clearfix">
       {% if page.top_first %}
         <div class="column">
           {{ page.top_first }}
@@ -113,96 +113,97 @@
         </div>
       {% endif %}
     </div>
-  </div>
   {% endif %}
   {% endif %}
 
-  <div id="container">
-    <div class="container-wrap">
-
-      {% if basic_page_structure is not empty or basic_page_structure is empty and not is_front %}
+  {# If the homepage has a basic page or for every other page apart from the homepage show the basic page structure. #}
+  {% if basic_page_structure is not empty or basic_page_structure is empty and not is_front %}
+    <div id="container">
+      <div class="container-wrap">
         {% if search_page %}
-          <div class="content-sidebar-wrap search-page">
-        {% else %}
+        <div class="content-sidebar-wrap search-page">
+          {% else %}
+          {# If the homepage has basic page or for every other page apart from the homepage then make the content the Main section and add the h1. #}
           <main class="content-sidebar-wrap">
-        {% endif %}
-        {% if not is_front %}
-          {{ page.breadcrumb }}
-        {% endif %}
+            {% endif %}
+            {% if not is_front %}
+              {{ page.breadcrumb }}
+            {% endif %}
 
-        {% if is_front %}
-          {% if drupal_config('system.site', 'frontpage_title') %}
-            <h1 class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
-              {{ drupal_config('system.site', 'frontpage_title') }}
-            </h1>
-          {% endif %}
-        {% endif %}
+            {% if is_front %}
+              {% if drupal_config('system.site', 'frontpage_title') %}
+                <h1 class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
+                  {{ drupal_config('system.site', 'frontpage_title') }}
+                </h1>
+              {% endif %}
+            {% endif %}
 
-        {% if search_page %}
-          {{ drupal_block('page_title_block', wrapper=false) }}
-        {% endif %}
+            {% if search_page %}
+              {{ drupal_block('page_title_block', wrapper=false) }}
+            {% endif %}
 
-        <div id="content" {{ page.search_facets ? '' : 'class="main-content"' }}>
-          {% if page.search_facets %}
-            <header id="search-facets" class="sidebar-first-layout">
-              <nav aria-label="Skip links">
-                <a href="#post-content" class="skip-link visually-hidden focusable">
-                  {{- 'Skip to results'|t -}}
-                </a>
-              </nav>
-              {{ page.search_facets }}
-            </header>
-          {% endif %}
-          {% if page.content %}
-            <div id="post-content" {{ page.search_facets ? 'class="main-content" role="main"' : '' }}>
-              {{ page.content }}
+            <div id="content" {{ page.search_facets ? '' : 'class="main-content"' }}>
+              {% if page.search_facets %}
+                <header id="search-facets" class="sidebar-first-layout">
+                  <nav aria-label="Skip links">
+                    <a href="#post-content" class="skip-link visually-hidden focusable">
+                      {{- 'Skip to results'|t -}}
+                    </a>
+                  </nav>
+                  {{ page.search_facets }}
+                </header>
+              {% endif %}
+              {% if page.content %}
+                <div id="post-content" {{ page.search_facets ? 'class="main-content" role="main"' : '' }}>
+                  {{ page.content }}
+                </div>
+              {% endif %}
             </div>
-          {% endif %}
+            {% if not search_page %}
+          </main>
+          {% else %}
         </div>
+        {% endif %}
         {% if page.sidebar_first %}
           <aside id="sidebar-first" class="sidebar-first-layout">
             {{ page.sidebar_first }}
           </aside>
-        {% endif %}
-        {% if not search_page %}
-          </main>
-        {% else %}
-          </div>
         {% endif %}
         {% if page.sidebar_second %}
           <aside id="sidebar-second" class="sidebar-second-layout">
             {{ page.sidebar_second }}
           </aside>
         {% endif %}
-      {% endif %}
-
-      {% if is_front %}
-        {# An extra area on the homepage to add 1 to 3 blocks. May be twitter widgets or just block content. #}
-        {% if page.bottom_widget_1 or page.bottom_widget_2 or page.bottom_widget_3 %}
-          <div id="bottom_wrapper" class="footer_block bottom_widget">
-          <div id="bottom-area" class="footer-area clearfix">
-            {% if page.bottom_widget_1 %}
-              <div class="column">
-                {{ page.bottom_widget_1 }}
-              </div>
-            {% endif %}
-            {% if page.bottom_widget_2 %}
-              <div class="column">
-                {{ page.bottom_widget_2 }}
-              </div>
-            {% endif %}
-            {% if page.bottom_widget_3 %}
-              <div class="column">
-                {{ page.bottom_widget_3 }}
-              </div>
-            {% endif %}
-          </div>
-        {% endif %}
-        </div>
-      {% endif %}
+      </div>
     </div>
-  </div>
-  {% if basic_page_structure is empty %}
+  {% endif %}
+
+  {% if is_front %}
+    {# An extra area on the homepage to add 1 to 3 blocks. May be twitter widgets or just block content. #}
+    {% if page.bottom_widget_1 or page.bottom_widget_2 or page.bottom_widget_3 %}
+      <div id="bottom_wrapper" class="footer_block bottom_widget">
+        <div id="bottom-area" class="footer-area container-wrap clearfix">
+          {% if page.bottom_widget_1 %}
+            <div class="column">
+              {{ page.bottom_widget_1 }}
+            </div>
+          {% endif %}
+          {% if page.bottom_widget_2 %}
+            <div class="column">
+              {{ page.bottom_widget_2 }}
+            </div>
+          {% endif %}
+          {% if page.bottom_widget_3 %}
+            <div class="column">
+              {{ page.bottom_widget_3 }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+  {% endif %}
+  {# If the homepage has no basic page then end the Main section. #}
+  {% if basic_page_structure is empty and is_front %}
 </main>
 {% endif %}
 
