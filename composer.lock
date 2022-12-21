@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9cab55e017a54f3832177a49b2eb0f27",
+    "content-hash": "80463ccc147ccf5c42ac32c054c595af",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1875,21 +1875,22 @@
         },
         {
             "name": "dof-dss/nicsdru_origins_modules",
-            "version": "2.1.0",
+            "version": "dev-development",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_origins_modules.git",
-                "reference": "f00dd6cf572549bf93a70032c27d34c14e85d9a7"
+                "reference": "1313446bb6d56faf4ebac14d6b98192e43e6d8ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/f00dd6cf572549bf93a70032c27d34c14e85d9a7",
-                "reference": "f00dd6cf572549bf93a70032c27d34c14e85d9a7",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/1313446bb6d56faf4ebac14d6b98192e43e6d8ae",
+                "reference": "1313446bb6d56faf4ebac14d6b98192e43e6d8ae",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "^1.6"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1898,9 +1899,9 @@
             "description": "Generic modules for DOF-DSS Drupal sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_origins_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/2.1.0"
+                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/development"
             },
-            "time": "2022-12-16T09:55:49+00:00"
+            "time": "2022-12-16T10:07:00+00:00"
         },
         {
             "name": "dof-dss/nicsdru_origins_profile",
@@ -1944,21 +1945,22 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
-            "version": "1.1.9",
+            "version": "dev-development",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_modules.git",
-                "reference": "a8caf23fbe73915c3aeb412b1e4b425c7ff69833"
+                "reference": "f94a6f0e7c60895bb97ab25b20d3dbbe010ee7c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/a8caf23fbe73915c3aeb412b1e4b425c7ff69833",
-                "reference": "a8caf23fbe73915c3aeb412b1e4b425c7ff69833",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/f94a6f0e7c60895bb97ab25b20d3dbbe010ee7c9",
+                "reference": "f94a6f0e7c60895bb97ab25b20d3dbbe010ee7c9",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "^1.9"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1967,9 +1969,9 @@
             "description": "Custom modules available to all Unity sites.",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/1.1.9"
+                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/development"
             },
-            "time": "2022-12-20T10:52:02+00:00"
+            "time": "2022-12-19T14:16:06+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_profile",
@@ -2002,21 +2004,22 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_theme",
-            "version": "v0.1.66",
+            "version": "dev-development",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_theme.git",
-                "reference": "6cc03b8d863ed81e0d622b92a5bb15e7a2b2b887"
+                "reference": "11a003fc99091c00d6010ab6c40ee945b9a857c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/6cc03b8d863ed81e0d622b92a5bb15e7a2b2b887",
-                "reference": "6cc03b8d863ed81e0d622b92a5bb15e7a2b2b887",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/11a003fc99091c00d6010ab6c40ee945b9a857c5",
+                "reference": "11a003fc99091c00d6010ab6c40ee945b9a857c5",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.0"
             },
+            "default-branch": true,
             "type": "drupal-custom-theme",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2035,9 +2038,9 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v0.1.66"
+                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/development"
             },
-            "time": "2022-12-06T14:22:07+00:00"
+            "time": "2022-12-20T14:59:39+00:00"
         },
         {
             "name": "drupal/address",
@@ -20922,6 +20925,9 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "dof-dss/nicsdru_origins_modules": 20,
+        "dof-dss/nicsdru_unity_modules": 20,
+        "dof-dss/nicsdru_unity_theme": 20,
         "drupal/block_field": 5,
         "drupal/config_readonly": 10,
         "drupal/date_facet_drilldown": 20,
@@ -20937,5 +20943,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
