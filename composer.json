@@ -166,7 +166,7 @@
         "vlucas/phpdotenv": "^2.4"
     },
     "require-dev": {
-        "dof-dss/maestro-hosting": "dev-D8UN-1675#60a2c37",
+        "dof-dss/maestro-hosting": "dev-D8UN-1675#853b2f6",
         "dof-dss/maestro-shell": "^1.0",
         "drupal/coder": "^8.3",
         "drupal/core-dev": "^9.0.0",
