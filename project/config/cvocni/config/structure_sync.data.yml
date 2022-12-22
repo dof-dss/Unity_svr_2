@@ -277,3 +277,38 @@ menus:
     weight: -48
     langcode: en
     uuid: 9f3a3349-6a3b-44e4-b016-b080f78c92bf
+taxonomies:
+  landing_pages_contact_card_colou: {  }
+  publication_type:
+    -
+      vid: publication_type
+      tid: '1'
+      langcode: en
+      name: 'Test type 1'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 0c8b88a8-65b1-4d34-b23a-5992d1d37c38
+    -
+      vid: publication_type
+      tid: '2'
+      langcode: en
+      name: 'Test type 2'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: ffdb7e4c-3534-4352-b5d4-950cb4f22e99
+    -
+      vid: publication_type
+      tid: '3'
+      langcode: en
+      name: 'Test type 3'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 67c1396a-b326-489c-9f3f-fa3c202725c7
+  site_topics: {  }
+  tags: {  }
