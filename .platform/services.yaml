@@ -7,7 +7,7 @@
 #############################################################################
 db:
     type: 'mariadb:10.4'
-    disk: 4000
+    disk: 8000
     configuration:
         schemas:
             - mentalhealthchampionnidb
