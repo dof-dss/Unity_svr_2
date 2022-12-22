@@ -57,7 +57,7 @@ $settings['container_yamls'][] = $app_root . '/sites/local.services.yml';
 // Once you have a site/db installed. Enable the Redis module and change the $redis_enabled to true.
 $redis_enabled = FALSE;
 if ($redis_enabled && !InstallerKernel::installationAttempted() &&
-  extension_loaded('redis') && class_exists('Drupal\redis\ClientFactory')) {
+    extension_loaded('redis') && class_exists('Drupal\redis\ClientFactory')) {
   $settings['redis.connection']['interface'] = 'PhpRedis';
   $settings['redis.connection']['host'] = getenv('REDIS_HOSTNAME');
   $settings['redis.connection']['port'] = getenv('REDIS_PORT');
