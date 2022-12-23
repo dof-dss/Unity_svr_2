@@ -27,6 +27,8 @@ content:
     settings:
       image_style: medium
       image_link: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     type: image
     weight: 1
@@ -36,5 +38,6 @@ hidden:
   field_caption: true
   langcode: true
   name: true
+  search_api_excerpt: true
   thumbnail: true
   uid: true
