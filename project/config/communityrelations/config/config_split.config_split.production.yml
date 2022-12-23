@@ -6,7 +6,7 @@ id: production
 label: production
 description: ''
 weight: 0
-folder: ../project/config/crc/production
+folder: ../project/config/communityrelations/production
 module:
   fastly: 0
 theme: {  }
