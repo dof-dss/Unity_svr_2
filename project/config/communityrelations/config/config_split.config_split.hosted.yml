@@ -6,7 +6,7 @@ id: hosted
 label: hosted
 description: ''
 weight: 0
-folder: ../project/config/crc/hosted
+folder: ../project/config/communityrelations/hosted
 module: {  }
 theme: {  }
 blacklist: {  }
