@@ -51,14 +51,14 @@
   {% endif %}
 
   {% if rows %}
-    <div class="view-content" role="region" aria-label="{{ "search results"|t }}">
+    <div class="view-content" aria-label="{{ "search results"|t }}">
       {% if header %}
         {{ header }}
       {% endif %}
       {{ rows }}
     </div>
   {% elseif empty %}
-    <div class="view-empty" role="region" aria-label="{{ "search results"|t }}">
+    <div class="view-empty" aria-label="{{ "search results"|t }}">
       {% if header %}
         {{ header }}
       {% endif %}

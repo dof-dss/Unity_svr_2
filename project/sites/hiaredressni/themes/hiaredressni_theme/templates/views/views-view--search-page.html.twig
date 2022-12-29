@@ -45,20 +45,20 @@
     {{ title }}
   {% endif %}
   {% if exposed %}
-    <div class="view-filters" role="search" aria-label="{{ "filter search results"|t }}">
+    <div class="view-filters" aria-label="{{ "filter search results"|t }}">
       {{ exposed }}
     </div>
   {% endif %}
 
   {% if rows %}
-    <div class="view-content" role="region" aria-label="{{ "search results"|t }}">
+    <div class="view-content" aria-label="{{ "search results"|t }}">
       {% if header %}
         {{ header }}
       {% endif %}
       {{ rows }}
     </div>
   {% elseif empty %}
-    <div class="view-empty" role="region" aria-label="{{ "search results"|t }}">
+    <div class="view-empty" aria-label="{{ "search results"|t }}">
       {% if header %}
         {{ header }}
       {% endif %}
