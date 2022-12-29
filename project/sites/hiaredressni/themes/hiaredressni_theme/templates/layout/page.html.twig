@@ -95,7 +95,7 @@
   {% endif %}
   {{ page.front_welcome }}
 
-  {% if page.top_first or page.top_second or page.top_third %}
+  {% if page.top_first or page.top_second or page.top_third or page.top_fourth %}
     <div id="top-area" class="clearfix">
       {% if page.top_first %}
         <div class="column">
@@ -110,6 +110,11 @@
       {% if page.top_third %}
         <div class="column">
           {{ page.top_third }}
+        </div>
+      {% endif %}
+      {% if page.top_fourth %}
+        <div class="column">
+          {{ page.top_fourth }}
         </div>
       {% endif %}
     </div>

@@ -6,13 +6,27 @@
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
 
-#logo img {
-  height: 90px;
-}
-
 #top-area {
-
   margin: 5% auto 6%;
+  display: flex;
+
+  @media screen and (max-width: $desk) {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  @media screen and (max-width: $tab) {
+    flex-direction: column;
+  }
+
+  > .column {
+    @media screen and (max-width: $desk) {
+      display: flex;
+      flex-basis: calc(50% - 4rem);
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
 
   .container-wrap {
     display: flex;
