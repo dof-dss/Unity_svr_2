@@ -77,7 +77,7 @@
 ] %}
 
 {% if not page %}
-<article{{ attributes.addClass(classes).setAttribute('id', 'node-' ~ node.id) }}>
+<article{{ attributes.addClass(classes).setAttribute('id', 'node-' ~ node.id).removeAttribute('role') }}>
   {% endif %}
   <h3{{ title_attributes.addClass('title') }}>
     <a href="{{ url }}" rel="bookmark">{{ label }}</a>
