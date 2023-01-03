@@ -98,7 +98,8 @@ h1 {
     border-bottom: none;
     color: #0e6bb3;
 
-    span {
+    &:last-child {
+      display: inline-block;
       border-bottom: 1px solid $link;
 
       &:hover {

@@ -252,10 +252,6 @@ footer {
   }
 }
 
-.region-bottom-widget-2 .field-content {
-  display: inline-flex;
-}
-
 .content.page-content div:first-child {
   display: block;
 }
@@ -347,9 +343,14 @@ footer {
   }
 }
 
-#block-views-block-front-latest-news-home-latest-news .views-row {
+#block-views-block-front-latest-news-home-latest-news {
   text-align: center;
-  margin-top: 0.5rem;
+
+  h3 {
+    @include responsive-typo-map($normal-text);
+    margin: 0;
+    line-height: 2.2rem;
+  }
 }
 
 #block-views-block-irc-key-documents-views-block-1-2 h2 {
