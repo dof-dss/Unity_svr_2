@@ -12,8 +12,11 @@ dependencies:
     - core.entity_view_mode.media.portrait_float_xp
     - core.entity_view_mode.media.portrait_full
   module:
+    - blazy
+    - cookie_content_blocker
     - editor
     - entity_embed
+    - linkit
     - media
     - noreferrer
     - origins_common
@@ -28,71 +31,71 @@ filters:
     id: filter_align
     provider: filter
     status: false
-    weight: -42
+    weight: -41
     settings: {  }
   filter_caption:
     id: filter_caption
     provider: filter
     status: false
-    weight: -41
+    weight: -40
     settings: {  }
   filter_htmlcorrector:
     id: filter_htmlcorrector
     provider: filter
     status: false
-    weight: -39
+    weight: -38
     settings: {  }
   editor_file_reference:
     id: editor_file_reference
     provider: editor
     status: false
-    weight: -38
+    weight: -37
     settings: {  }
   entity_embed:
     id: entity_embed
     provider: entity_embed
     status: true
-    weight: -46
+    weight: -44
     settings: {  }
   filter_autop:
     id: filter_autop
     provider: filter
     status: false
-    weight: -43
+    weight: -42
     settings: {  }
   filter_html:
     id: filter_html
     provider: filter
-    status: false
-    weight: -45
+    status: true
+    weight: -50
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <sup> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <p> <h1> <pre> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title>'
-      filter_html_help: true
+      allowed_html: '<a class href hreflang data-entity-type data-entity-uuid data-entity-substitution> <em> <strong> <cite> <blockquote cite> <code> <ul class type> <ol class start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <p class translate> <br> <span> <img src alt height width data-* typeof> <sup> <table class> <caption> <tbody> <thead> <tfoot> <th scope> <td> <tr> <drupal-entity data-entity-type data-entity-uuid data-entity-substitution data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button alt title class> <picture data-* alt title class> <source srcset media type> <address> <drupal-media data-entity-type data-entity-id data-entity-uuid data-entity-substitution data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button data-view-mode alt title class>'
+      filter_html_help: false
       filter_html_nofollow: false
   filter_html_escape:
     id: filter_html_escape
     provider: filter
     status: false
-    weight: -44
+    weight: -43
     settings: {  }
   filter_html_image_secure:
     id: filter_html_image_secure
     provider: filter
     status: false
-    weight: -40
+    weight: -39
     settings: {  }
   filter_url:
     id: filter_url
     provider: filter
     status: true
-    weight: -50
+    weight: -49
     settings:
       filter_url_length: 72
   media_embed:
     id: media_embed
     provider: media
     status: true
-    weight: -47
+    weight: -45
     settings:
       default_view_mode: default
       allowed_view_modes:
@@ -112,19 +115,44 @@ filters:
     id: noreferrer
     provider: noreferrer
     status: true
-    weight: -49
+    weight: -48
     settings: {  }
   token_filter:
     id: token_filter
     provider: token_filter
     status: true
-    weight: -48
+    weight: -46
     settings:
       replace_empty: '1'
   origins_media_cookie_content_blocker_embed_filter:
     id: origins_media_cookie_content_blocker_embed_filter
     provider: origins_common
-    status: false
-    weight: 0
+    status: true
+    weight: -47
     settings:
       replacement_text: 'Click here to view the video content'
+  blazy_filter:
+    id: blazy_filter
+    provider: blazy
+    status: false
+    weight: -34
+    settings:
+      filter_tags:
+        img: img
+        iframe: iframe
+      media_switch: ''
+      use_data_uri: '0'
+  cookie_content_blocker_filter:
+    id: cookie_content_blocker_filter
+    provider: cookie_content_blocker
+    status: true
+    weight: -36
+    settings:
+      disable_xss: '1'
+  linkit:
+    id: linkit
+    provider: linkit
+    status: false
+    weight: -35
+    settings:
+      title: true
