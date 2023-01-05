@@ -25,6 +25,19 @@ blocks:
           value: '<iframe src="https://www.google.com/maps/d/embed?mid=1uuGu5yOclN1YhkvjAW08sUKM2dIn-H05&ehbc=2E312F" width="640" height="480"></iframe>'
           summary: ''
           format: full_html
+  -
+    info: 'Frontpage banner'
+    langcode: en
+    uuid: 6fb7cefc-3f76-4754-9e3c-f9093f5b1656
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<h2>Equity, diversity, interconnectedness</h2>\r\n\r\n<p><a class=\"btn\" href=\"/node/1\">Find out more about us</a></p>\r\n"
+          summary: null
+          format: basic_html
 menus:
   -
     menu_name: main
