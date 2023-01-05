@@ -8,6 +8,7 @@ description: "Local development split. \r\nEnables debugging and development mod
 weight: 0
 folder: ../project/config/hiaredressni/local
 module:
+  clone_nodes: 0
   dblog: 0
   easy_install: 0
   hiaredressni_migrations: 0
