@@ -13,4 +13,4 @@ features:
 logo:
   path: sites/cvocni/themes/cvocni_theme/logo.svg
   url: ''
-  use_default: false
+  use_default: true
