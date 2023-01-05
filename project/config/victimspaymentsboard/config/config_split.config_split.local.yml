@@ -8,6 +8,7 @@ description: ''
 weight: 0
 folder: ../project/config/victimspaymentsboard/local
 module:
+  clone_nodes: 0
   dblog: 0
   easy_install: 0
   migrate: 0
