@@ -1,23 +1,23 @@
-uuid: d65216d1-9683-4ac8-95be-01ed6266c98d
+uuid: ae101819-7948-4970-9655-90164addbbf6
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic_block:0640f73c-379c-49c9-b23d-a2f7f76250b9'
+    - 'block_content:basic_block:6fb7cefc-3f76-4754-9e3c-f9093f5b1656'
   module:
     - block_content
     - system
   theme:
     - crc_theme
-id: fundingmap
+id: frontpagebanner
 theme: crc_theme
-region: content
+region: front_welcome
 weight: 0
 provider: null
-plugin: 'block_content:0640f73c-379c-49c9-b23d-a2f7f76250b9'
+plugin: 'block_content:6fb7cefc-3f76-4754-9e3c-f9093f5b1656'
 settings:
-  id: 'block_content:0640f73c-379c-49c9-b23d-a2f7f76250b9'
-  label: 'Funding Map'
+  id: 'block_content:6fb7cefc-3f76-4754-9e3c-f9093f5b1656'
+  label: 'Frontpage banner'
   label_display: '0'
   provider: block_content
   status: true
@@ -27,4 +27,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /funding-map
+    pages: '<front>'
