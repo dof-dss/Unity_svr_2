@@ -54,7 +54,6 @@ module:
   geolocation_google_maps: 0
   geolocation_google_static_maps: 0
   geolocation_search_api: 0
-  google_analytics: 0
   google_tag: 0
   handy_cache_tags: 0
   help: 0
@@ -81,7 +80,6 @@ module:
   metatag_twitter_cards: 0
   metatag_verification: 0
   metatag_views: 0
-  migrate_upgrade: 0
   moderation_sidebar: 0
   mysql: 0
   node: 0
