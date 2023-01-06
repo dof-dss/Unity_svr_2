@@ -38,6 +38,28 @@ blocks:
           value: "<h2>Equity, diversity, interconnectedness</h2>\r\n\r\n<p><a class=\"btn\" href=\"/node/1\">Find out more about us</a></p>\r\n"
           summary: null
           format: basic_html
+  -
+    info: 'Twitter block'
+    langcode: en
+    uuid: fec7177a-e9b7-434a-8537-17525e787e3b
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body: {  }
+  -
+    info: 'Subscribe '
+    langcode: en
+    uuid: a61001f2-48cb-475e-a6cb-ded357c1ea39
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Subscribe here to our monthly events list and quarterly newsletter</p>\r\n\r\n<p><a class=\"btn\" href=\"/subscribe\">Subscribe</a></p>\r\n"
+          summary: null
+          format: basic_html
 menus:
   -
     menu_name: main

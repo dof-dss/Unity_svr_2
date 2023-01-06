@@ -1,26 +1,26 @@
-uuid: 2703f6ff-106a-4a5e-b9bf-3a0ba359fad3
+uuid: 3c6f4c8f-0cbf-454e-8bee-cccdcc009b0c
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.latest_news
+    - views.view.latest_events
   module:
     - system
     - views
   theme:
     - crc_theme
-id: views_block__latest_news_home_latest_news
+id: views_block__latest_events_block_1
 theme: crc_theme
-region: top_first
+region: top_second
 weight: 0
 provider: null
-plugin: 'views_block:latest_news-home_latest_news'
+plugin: 'views_block:latest_events-block_1'
 settings:
-  id: 'views_block:latest_news-home_latest_news'
-  label: 'Latest News'
+  id: 'views_block:latest_events-block_1'
+  label: ''
   label_display: visible
   provider: views
-  views_label: 'Latest News'
+  views_label: ''
   items_per_page: none
 visibility:
   request_path:
