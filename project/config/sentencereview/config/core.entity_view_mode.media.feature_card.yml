@@ -1,0 +1,12 @@
+uuid: 254cefcc-a367-4497-a065-c5cc61352c9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: 47jG0sEt_pH2gOfIDt2IcoyeWIpO62TqybyoDWH8VZI
+id: media.feature_card
+label: 'Feature card'
+targetEntityType: media
+cache: true
