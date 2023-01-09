@@ -33,7 +33,7 @@ content:
       format_type: unity_date
       separator: '-'
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_photo:
     type: entity_reference_entity_view
@@ -42,17 +42,11 @@ content:
       view_mode: landscape_float
       link: false
     third_party_settings: {  }
-    weight: 3
-    region: content
-  field_teaser:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 4
+    weight: 2
     region: content
 hidden:
   field_meta_tags: true
+  field_teaser: true
   langcode: true
   links: true
+  search_api_excerpt: true

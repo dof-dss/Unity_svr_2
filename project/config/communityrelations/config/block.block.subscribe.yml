@@ -1,0 +1,30 @@
+uuid: 3531ac08-0b6f-44ce-be94-b7e0443a03d5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:a61001f2-48cb-475e-a6cb-ded357c1ea39'
+  module:
+    - block_content
+    - system
+  theme:
+    - crc_theme
+id: subscribe
+theme: crc_theme
+region: top_fourth
+weight: 0
+provider: null
+plugin: 'block_content:a61001f2-48cb-475e-a6cb-ded357c1ea39'
+settings:
+  id: 'block_content:a61001f2-48cb-475e-a6cb-ded357c1ea39'
+  label: 'Subscribe '
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
