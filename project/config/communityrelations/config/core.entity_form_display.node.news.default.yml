@@ -45,14 +45,14 @@ content:
     third_party_settings: {  }
   field_meta_tags:
     type: metatag_firehose
-    weight: 15
+    weight: 14
     region: content
     settings:
       sidebar: true
     third_party_settings: {  }
   field_news_type:
     type: options_select
-    weight: 26
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -70,14 +70,6 @@ content:
     weight: 10
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_summary:
-    type: text_textarea
-    weight: 14
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
     third_party_settings: {  }
   field_teaser:
     type: string_textfield
@@ -155,4 +147,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_summary: true

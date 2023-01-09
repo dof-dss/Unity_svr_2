@@ -109,6 +109,10 @@
     padding: 1rem 1rem 1rem 1rem;
   }
 
+  p {
+    text-align: left;
+  }
+
   h2 {
     font-size: 2rem;
     text-align: left;
@@ -118,11 +122,32 @@
   h2.title {
     font-size: 1.8rem;
   }
+  .more-link {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+}
+
+.region-top-first {
+  padding: 2rem;
+
+  table {
+    border: 0px;
+
+    td {
+      background: $white;
+      border: $white;
+    }
+  }
 }
 
 .region-top-second {
   background: #9f268a;
   padding: 2rem;
+
+  h2 {
+    color: $white;
+  }
 
   table {
     border: 0px;
@@ -133,6 +158,7 @@
     }
   }
 }
+
 
 .region-top-third {
   background: #4e780b;
