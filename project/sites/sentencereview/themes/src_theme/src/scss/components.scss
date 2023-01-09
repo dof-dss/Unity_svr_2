@@ -93,8 +93,10 @@
   font-weight: bold;
 }
 
-#container .container-wrap .content-sidebar-wrap {
-  width: 65%;
+.front {
+  .content-sidebar-wrap {
+    width: 65%;
+  }
 }
 
 .footer-area .column:last-child {
