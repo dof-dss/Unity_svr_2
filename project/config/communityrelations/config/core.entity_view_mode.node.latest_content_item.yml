@@ -1,0 +1,10 @@
+uuid: a63122ef-498b-4f2b-9d42-96a639c1b3c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.latest_content_item
+label: 'Latest content item'
+targetEntityType: node
+cache: true

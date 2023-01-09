@@ -19,3 +19,11 @@
 // Ensure any custom fonts get loaded first to minimize front-end performance impact.
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/1_base/index';
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: $tab) {
+    display: block;
+  }
+}

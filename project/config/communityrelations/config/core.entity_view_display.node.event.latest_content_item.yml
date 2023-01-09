@@ -1,9 +1,9 @@
-uuid: 74666cdc-714f-4498-948f-96ff945466ee
+uuid: 22b15634-4b67-48d2-9547-cf3acc9b8f9e
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.latest_content_item
     - field.field.node.event.body
     - field.field.node.event.field_crc_event_date
     - field.field.node.event.field_meta_tags
@@ -11,18 +11,31 @@ dependencies:
     - field.field.node.event.field_teaser
     - node.type.event
   module:
+    - layout_builder
     - user
-id: node.event.teaser
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.event.latest_content_item
 targetEntityType: node
 bundle: event
-mode: teaser
+mode: latest_content_item
 content:
   field_photo:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: article_float
+      view_mode: landscape_full
       link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_teaser:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
     weight: 0
     region: content
@@ -30,7 +43,6 @@ hidden:
   body: true
   field_crc_event_date: true
   field_meta_tags: true
-  field_teaser: true
   langcode: true
   links: true
   search_api_excerpt: true

@@ -87,12 +87,12 @@
 
   {{ page.front_welcome }}
 
-  {% if page.top_first or page.top_second or page.top_third %}
+  {% if page.top_first or page.top_second or page.top_third or page.top_fourth %}
     {% if basic_page_structure is empty %}
 <main id="content">
   {% endif %}
   <div id="top-area" class="clearfix">
-    <div class="container">
+    <div class="flex-row">
       {% if page.top_first %}
         <div class="column">
           {{ page.top_first }}
@@ -102,10 +102,17 @@
         <div class="column">
           {{ page.top_second }}
         </div>
+    </div>
       {% endif %}
+    <div class="flex-row">
       {% if page.top_third %}
         <div class="column">
           {{ page.top_third }}
+        </div>
+      {% endif %}
+      {% if page.top_fourth %}
+        <div class="column">
+          {{ page.top_fourth }}
         </div>
       {% endif %}
     </div>
