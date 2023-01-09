@@ -1,4 +1,4 @@
-uuid: 3c6f4c8f-0cbf-454e-8bee-cccdcc009b0c
+uuid: 221aaffd-f0d8-4ff8-a050-8b7a23aa17ac
 langcode: en
 status: true
 dependencies:
@@ -9,14 +9,14 @@ dependencies:
     - views
   theme:
     - crc_theme
-id: views_block__latest_events_block_1
+id: views_block__latest_events_latest_events
 theme: crc_theme
 region: top_second
 weight: 0
 provider: null
-plugin: 'views_block:latest_events-block_1'
+plugin: 'views_block:latest_events-latest_events'
 settings:
-  id: 'views_block:latest_events-block_1'
+  id: 'views_block:latest_events-latest_events'
   label: ''
   label_display: visible
   provider: views
