@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - google_analytics
     - media
     - node
     - search_api_autocomplete
@@ -16,7 +15,6 @@ weight: 1
 is_admin: false
 permissions:
   - 'access content'
-  - 'opt-in or out of google analytics tracking'
   - 'use search_api_autocomplete for search'
   - 'view all revisions'
   - 'view media'
