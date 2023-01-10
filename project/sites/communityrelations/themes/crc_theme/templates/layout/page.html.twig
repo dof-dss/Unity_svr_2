@@ -94,24 +94,24 @@
   <div id="top-area" class="clearfix">
     <div class="flex-row">
       {% if page.top_first %}
-        <div class="column">
+        <div id="latest-news-home" class="column">
           {{ page.top_first }}
         </div>
       {% endif %}
       {% if page.top_second %}
-        <div class="column">
+        <div id="latest-event-home" class="column">
           {{ page.top_second }}
         </div>
     </div>
       {% endif %}
     <div class="flex-row">
       {% if page.top_third %}
-        <div class="column">
+        <div id="twitter-home" class="column">
           {{ page.top_third }}
         </div>
       {% endif %}
       {% if page.top_fourth %}
-        <div class="column">
+        <div id="subscribe-home" class="column">
           {{ page.top_fourth }}
         </div>
       {% endif %}
