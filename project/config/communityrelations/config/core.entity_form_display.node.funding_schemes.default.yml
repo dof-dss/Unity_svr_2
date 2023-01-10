@@ -37,13 +37,13 @@ content:
     third_party_settings: {  }
   field_deadline_date:
     type: datetime_default
-    weight: 13
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   field_funding_scheme_type:
     type: options_select
-    weight: 26
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
