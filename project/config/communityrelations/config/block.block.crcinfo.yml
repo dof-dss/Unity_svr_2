@@ -1,0 +1,25 @@
+uuid: 5f48962c-4b4e-4864-ab5f-7d23a9a969ef
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:a68f15c8-0d07-4df5-83cd-875ce3e9c60e'
+  module:
+    - block_content
+  theme:
+    - crc_theme
+id: crcinfo
+theme: crc_theme
+region: footer_first
+weight: -12
+provider: null
+plugin: 'block_content:a68f15c8-0d07-4df5-83cd-875ce3e9c60e'
+settings:
+  id: 'block_content:a68f15c8-0d07-4df5-83cd-875ce3e9c60e'
+  label: 'Contact Information'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

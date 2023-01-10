@@ -57,9 +57,44 @@ blocks:
     fields:
       body:
         -
-          value: "<p>Subscribe here to our monthly events list and quarterly newsletter</p>\r\n\r\n<p><a class=\"btn\" href=\"/subscribe\">Subscribe</a></p>\r\n"
+          value: "<p>Subscribe here to our monthly events list and quarterly newsletter</p>\r\n\r\n<p><a class=\"btn\" href=\"https://nicrc.us19.list-manage.com/subscribe/post?u=24c770853af741fb3f810d33c&amp;id=b26057857c\">Subscribe</a></p>\r\n"
           summary: null
           format: basic_html
+  -
+    info: 'Contact Information'
+    langcode: en
+    uuid: a68f15c8-0d07-4df5-83cd-875ce3e9c60e
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<address><strong>NI Community Relations Council</strong><br />\r\n2nd Floor<br />\r\nEquality House<br />\r\n7-9 Shaftesbury Square<br />\r\nBelfast<br />\r\nBT2 7DB<br />\r\n<a href=\"mailto:info@nicrc.org.uk\">info@nicrc.org.uk</a><br />\r\nTel: +44 (0) 28 9022 7500</address>\r\n"
+          summary: null
+          format: full_html
+  -
+    info: 'Useful Links'
+    langcode: en
+    uuid: 2358a373-7783-40a1-a73f-5462e15260d0
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"a9352a70-0db6-49f1-9bb3-1c9376b72c4a\" href=\"/node/75\">Links</a></p>\r\n\r\n<p><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"633c2259-c215-4f9e-91ce-d36bfbe5f812\" href=\"/node/1113\">Accessibility</a></p>\r\n\r\n<p><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"bd37719e-1b02-4227-b587-a47443b4fd1f\" href=\"/node/77\">Disclaimer</a></p>\r\n\r\n<p><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"028c3da3-955d-4291-808a-b1ff437b964b\" href=\"/node/78\">Freedom of Information</a></p>\r\n"
+          summary: null
+          format: basic_html
+  -
+    info: 'Social links'
+    langcode: en
+    uuid: a2dedecd-540b-41b6-ae30-87af5c0415f0
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body: {  }
 menus:
   -
     menu_name: main
@@ -389,7 +424,7 @@ menus:
     menu_name: main
     title: 'Publications Grant Scheme'
     parent: 'menu_link_content:6d849f82-58f7-4dba-9cb5-fc2105b15f96'
-    uri: 'entity:node/847'
+    uri: 'entity:node/89'
     link_title: ''
     description: null
     enabled: true
@@ -493,3 +528,51 @@ menus:
     weight: -46
     langcode: en
     uuid: 1e27f577-473c-4aa8-9411-abd8fc2ae52c
+  -
+    menu_name: menu-footer-links
+    title: 'Accessibility Statement'
+    parent: null
+    uri: 'entity:node/76'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: en
+    uuid: 3ceb5d32-922d-4857-8d90-6cdaa9b72377
+  -
+    menu_name: menu-footer-links
+    title: Cookies
+    parent: null
+    uri: 'entity:node/221'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -47
+    langcode: en
+    uuid: dce7d677-c8ce-488d-b2b5-bbab4ef1aeac
+  -
+    menu_name: menu-footer-links
+    title: 'Privacy Statement'
+    parent: null
+    uri: 'entity:node/974'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -48
+    langcode: en
+    uuid: 519ffb66-5358-4527-bdac-9b483cdab5c6
+  -
+    menu_name: menu-footer-links
+    title: 'Terms and Conditions'
+    parent: null
+    uri: 'entity:node/1561'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: en
+    uuid: d89e7924-fcdb-411d-8c6a-c9421cc94817
