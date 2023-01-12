@@ -1,0 +1,17 @@
+uuid: 2163278e-800d-4962-83b3-4dab0717d0b3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: znASEDqVJa5nUfA6aBN7mzjiDonSOdd_EHwQUp1S1SE
+name: nigov_portrait_xl_1240_x2
+label: 'nigov portrait xl 1240 (x2)'
+effects:
+  afe2ca81-2beb-40c3-bcc0-dfbc61e9380b:
+    uuid: afe2ca81-2beb-40c3-bcc0-dfbc61e9380b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1240
+      height: 1860
+      anchor: center-center
