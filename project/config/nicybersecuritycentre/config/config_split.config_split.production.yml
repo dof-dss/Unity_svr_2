@@ -1,0 +1,15 @@
+uuid: cf4c8c86-fa9b-413b-b07a-632d77521911
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: production
+description: 'Used for the production site only.'
+weight: 0
+folder: ../project/config/nicybersecuritycentre/production
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

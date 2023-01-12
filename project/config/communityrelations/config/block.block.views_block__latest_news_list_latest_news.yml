@@ -5,7 +5,7 @@ dependencies:
   config:
     - views.view.latest_news_list
   module:
-    - system
+    - node
     - views
   theme:
     - crc_theme
@@ -23,7 +23,10 @@ settings:
   views_label: ''
   items_per_page: none
 visibility:
-  request_path:
-    id: request_path
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
     negate: false
-    pages: '/news/*'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      news: news
