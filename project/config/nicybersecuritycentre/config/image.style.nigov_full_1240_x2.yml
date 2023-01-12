@@ -1,0 +1,17 @@
+uuid: 4e50ce6f-75c2-48ee-8757-c89843441c5a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-h5yLhimDfTOHWDwtFYkC1Nc5i7fcyrokZiwoK8sNsk'
+name: nigov_full_1240_x2
+label: 'nigov full 1240 (x2)'
+effects:
+  ed8d5142-3412-492b-af9a-45139d7e3c32:
+    uuid: ed8d5142-3412-492b-af9a-45139d7e3c32
+    id: image_scale
+    weight: 1
+    data:
+      width: 1240
+      height: null
+      upscale: false
