@@ -5,7 +5,7 @@ dependencies:
   config:
     - views.view.latest_news
   module:
-    - system
+    - node
     - views
   theme:
     - cvocni_theme
@@ -21,9 +21,12 @@ settings:
   label_display: visible
   provider: views
   views_label: ''
-  items_per_page: none
+  items_per_page: '4'
 visibility:
-  request_path:
-    id: request_path
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
     negate: false
-    pages: '/news/*'
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      news: news

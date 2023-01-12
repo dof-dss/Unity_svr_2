@@ -10,5 +10,10 @@ dependencies:
 id: news_summary
 name: 'News Summary'
 facet_source_id: 'search_api:views_page__news_search__news_search_page'
-processor_configs: {  }
+processor_configs:
+  show_count:
+    processor_id: show_count
+    weights:
+      build: '5'
+    settings: {  }
 facets: {  }
