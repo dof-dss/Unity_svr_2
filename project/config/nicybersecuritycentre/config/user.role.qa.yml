@@ -1,0 +1,11 @@
+uuid: 244f978d-252a-4d4a-86ef-0337452a8584
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: o_YCYlJ4mK-6cT4SRvQsKL37Mj9pmDpJdcj4yfunEFk
+id: qa
+label: 'Quality Assurance'
+weight: 6
+is_admin: null
+permissions: {  }
