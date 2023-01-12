@@ -103,3 +103,12 @@ sites:
         database: sentencereview
         status: development
         default: false
+    nicybersecuritycentre:
+        name: 'NI Cyber Security Centre'
+        url: nicybersecuritycentre.gov.uk
+        solr: nicybersecuritycentre
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/nicybersecuritycentre ; drush core-cron'
+        database: nicybersecuritycentre
+        status: development
+        default: false
