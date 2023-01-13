@@ -159,14 +159,11 @@
   }
 }
 
-.footer-area .column:last-child {
-  float: none;
-  width: unset;
-}
-
-#footer .column li {
-    display: inline;
-    padding: 2rem;
+#block-guidanceforapplicants,
+#block-makeanapplication,
+#block-keydocuments,
+#block-legaladviceandsupport .content {
+  text-align: -webkit-center;
 }
 
 #content #top-area h3 {
@@ -186,6 +183,15 @@
   margin-left: 1rem;
 }
 
+.footer-area .column:last-child {
+  float: none;
+  width: unset;
+}
+
+#footer .column li {
+  display: inline;
+  padding: 2rem;
+}
 .footer-menu ul li {
   font-size: 1.4rem;
 }
