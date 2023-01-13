@@ -1,4 +1,4 @@
-uuid: 91ee7210-267b-40d9-a63b-39f708b4018b
+uuid: dca84590-6ba2-41e9-abc7-e57a9b4b6f77
 langcode: en
 status: true
 dependencies:
@@ -9,11 +9,9 @@ dependencies:
     - node
     - redirect
     - system
-_core:
-  default_config_hash: cI6O43jts_j67JaySnvjojNUQYYJXQmbWghOsb7iQNY
-id: supervisor_user
-label: 'supervisor user'
-weight: 3
+id: editor_user
+label: 'editor user'
+weight: 5
 is_admin: null
 permissions:
   - 'access administration menu'
@@ -23,6 +21,7 @@ permissions:
   - 'add media from remote sources'
   - 'administer book outlines'
   - 'administer main-menu menu items'
+  - 'administer nodes'
   - 'administer redirects'
   - 'create files'
   - 'create new books'
@@ -56,8 +55,6 @@ permissions:
   - 'edit own image files'
   - 'edit own video files'
   - 'flag content_audit'
-  - 'manipulate all entityqueues'
-  - 'manipulate entityqueues'
   - 'moderate content from draft to needs_review'
   - 'moderate content from needs_review to draft'
   - 'moderate content from needs_review to published'
@@ -67,14 +64,11 @@ permissions:
   - 'show core Outline form element'
   - 'show core Outline tab'
   - 'unflag content_audit'
-  - 'update homepage_links_queue entityqueue'
   - 'use text format filtered_html'
   - 'use text format filtered_html_with_no_images'
-  - 'use workbench_media add form'
+  - 'use text format filtered_html_with_tokens'
   - 'use workbench_moderation my drafts tab'
   - 'use workbench_moderation needs review tab'
   - 'view all unpublished content'
-  - 'view moderation history'
-  - 'view moderation messages'
   - 'view own files'
   - 'view the administration theme'

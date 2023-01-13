@@ -1,21 +1,19 @@
-uuid: 177a40bb-a0b7-487e-bec1-c8debb54b30e
+uuid: 7d417181-2bcd-4837-b089-ee28ffb9819a
 langcode: und
 status: true
 dependencies:
   module:
     - node
     - text
-_core:
-  default_config_hash: 2OyA4KOqAR4iPtXDSdUCJoTUHxUUV5OofI6uYawtIR8
-id: node.body
-field_name: body
+id: node.field_cyber_description
+field_name: field_cyber_description
 entity_type: node
-type: text_with_summary
+type: text_long
 settings: {  }
 module: text
 locked: false
 cardinality: 1
 translatable: true
 indexes: {  }
-persist_with_no_fields: true
+persist_with_no_fields: false
 custom_storage: false

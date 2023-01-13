@@ -1,11 +1,11 @@
-uuid: 961b891b-b21a-436e-a606-8294f1e454d3
-langcode: en
+uuid: 5f0c4c9b-72ec-4bd5-b8ad-5b792f8c91f3
+langcode: und
 status: true
 dependencies:
   module:
     - node
-id: node.field_teaser
-field_name: field_teaser
+id: node.field_cyber_teaser
+field_name: field_cyber_teaser
 entity_type: node
 type: string
 settings:

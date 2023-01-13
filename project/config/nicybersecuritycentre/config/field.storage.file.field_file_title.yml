@@ -1,15 +1,15 @@
-uuid: 961b891b-b21a-436e-a606-8294f1e454d3
-langcode: en
+uuid: 484c6445-d20c-4d3b-b459-af4e2af1c158
+langcode: und
 status: true
 dependencies:
   module:
-    - node
-id: node.field_teaser
-field_name: field_teaser
-entity_type: node
+    - file
+id: file.field_file_title
+field_name: field_file_title
+entity_type: file
 type: string
 settings:
-  max_length: 120
+  max_length: 255
   case_sensitive: false
   is_ascii: false
 module: core

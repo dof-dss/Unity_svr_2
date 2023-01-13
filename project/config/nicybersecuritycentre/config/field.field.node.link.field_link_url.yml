@@ -14,12 +14,12 @@ field_name: field_link_url
 entity_type: node
 bundle: link
 label: 'Link URL'
-description: 'Enter the URL for this link. Start the link with a / to link to content on this site, or use http:// or https:// to link to other sites.'
-required: true
+description: 'Please add the external URL path for the link.'
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  link_type: 17
   title: 0
+  link_type: 16
 field_type: link
