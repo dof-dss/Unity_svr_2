@@ -1,0 +1,19 @@
+uuid: 4bcdfa24-c714-41ef-883b-ced86142d79f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.featured_article
+id: node.featured_article.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: featured_article
+label: Teaser
+description: 'Please add a short teaser in relation to the featured article.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

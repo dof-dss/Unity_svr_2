@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.link.field_link_type
+    - field.field.node.link.body
     - field.field.node.link.field_link_url
     - field.field.node.link.field_meta_tags
+    - field.field.node.link.field_photo
+    - field.field.node.link.field_teaser
     - node.type.link
   module:
     - user
@@ -16,18 +18,13 @@ id: node.link.teaser
 targetEntityType: node
 bundle: link
 mode: teaser
-content:
-  field_link_type:
-    type: entity_reference_label
-    weight: 0
-    region: content
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
+content: {  }
 hidden:
+  body: true
   content_moderation_control: true
   field_link_url: true
   field_meta_tags: true
+  field_photo: true
+  field_teaser: true
   langcode: true
   links: true

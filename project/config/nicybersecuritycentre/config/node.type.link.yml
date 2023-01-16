@@ -9,7 +9,7 @@ third_party_settings:
   menu_ui:
     available_menus:
       - main
-    parent: 'main:'
+    parent: 'main-menu:0:'
   origins_toc:
     toc_enable: 0
     toc_title: 'Table of contents'
@@ -24,7 +24,7 @@ _core:
   default_config_hash: xRUwdXK1RLqM9v3JPVhZQYePTe7J5JUJtsl5MUcVJJs
 name: Link
 type: link
-description: 'Use this content type to create links.'
+description: ''
 help: ''
 new_revision: true
 preview_mode: 1
