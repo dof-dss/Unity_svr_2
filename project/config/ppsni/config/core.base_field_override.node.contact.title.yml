@@ -1,0 +1,20 @@
+uuid: 96e74b3d-8d18-458e-a765-eca396818c5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contact
+_core:
+  default_config_hash: 2zOouNvee9r1JZnoVe_9wj7ffAcnwtw68Ocp_Vz8rAo
+id: node.contact.title
+field_name: title
+entity_type: node
+bundle: contact
+label: 'Main heading'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
