@@ -4,8 +4,13 @@ status: true
 dependencies:
   config:
     - node.type.basic_page
+    - node.type.core_funded_groups
+    - node.type.event
+    - node.type.funding_schemes
     - node.type.news
+    - node.type.project_profile
     - node.type.publication
+    - node.type.staff_member
     - node.type.webform
   module:
     - content_moderation
@@ -97,7 +102,12 @@ type_settings:
   entity_types:
     node:
       - basic_page
+      - core_funded_groups
+      - event
+      - funding_schemes
       - news
+      - project_profile
       - publication
+      - staff_member
       - webform
   default_moderation_state: draft

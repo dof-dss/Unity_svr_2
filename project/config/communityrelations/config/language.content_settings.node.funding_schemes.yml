@@ -1,0 +1,11 @@
+uuid: c1d3a774-6fd4-4e60-a077-dd00f628bc81
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.funding_schemes
+id: node.funding_schemes
+target_entity_type_id: node
+target_bundle: funding_schemes
+default_langcode: site_default
+language_alterable: false

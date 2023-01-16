@@ -1,0 +1,11 @@
+uuid: 34f5de6e-a5b3-456b-86ef-fbb5b8583964
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.core_funded_groups
+id: node.core_funded_groups
+target_entity_type_id: node
+target_bundle: core_funded_groups
+default_langcode: site_default
+language_alterable: false
