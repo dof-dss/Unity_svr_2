@@ -6,47 +6,35 @@ mirror_operations:
   'reschedule scheduled transitions': update
 automation:
   cron_create_queue_items: true
-message_transition_latest: 'Scheduled transition: transitioning latest revision from [scheduled-transitions:from-state] to [scheduled-transitions:to-state]'
-message_transition_historical: 'Scheduled transition: copied revision #[scheduled-transitions:from-revision-id] and changed from [scheduled-transitions:from-state] to [scheduled-transitions:to-state]'
-message_transition_copy_latest_draft: 'Scheduled transition: reverted [scheduled-transitions:latest-state] revision #[scheduled-transitions:latest-revision-id] back to top'
-message_override: false
 bundles:
   -
     entity_type: node
     bundle: basic_page
   -
     entity_type: node
-    bundle: board_member
+    bundle: core_funded_groups
   -
     entity_type: node
-    bundle: consultation
+    bundle: event
   -
     entity_type: node
-    bundle: contact
-  -
-    entity_type: node
-    bundle: faq
-  -
-    entity_type: node
-    bundle: feature
-  -
-    entity_type: node
-    bundle: featured_content_list
-  -
-    entity_type: node
-    bundle: layout_page
-  -
-    entity_type: node
-    bundle: link
+    bundle: funding_schemes
   -
     entity_type: node
     bundle: news
   -
     entity_type: node
-    bundle: profile
+    bundle: project_profile
   -
     entity_type: node
     bundle: publication
   -
     entity_type: node
+    bundle: staff_member
+  -
+    entity_type: node
     bundle: webform
+message_transition_latest: 'Scheduled transition: transitioning latest revision from [scheduled-transitions:from-state] to [scheduled-transitions:to-state]'
+message_transition_historical: 'Scheduled transition: copied revision #[scheduled-transitions:from-revision-id] and changed from [scheduled-transitions:from-state] to [scheduled-transitions:to-state]'
+message_transition_copy_latest_draft: 'Scheduled transition: reverted [scheduled-transitions:latest-state] revision #[scheduled-transitions:latest-revision-id] back to top'
+message_override: false
