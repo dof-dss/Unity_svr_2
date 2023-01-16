@@ -10,7 +10,7 @@ id: node.link.title
 field_name: title
 entity_type: node
 bundle: link
-label: 'Main heading'
+label: Title
 description: ''
 required: true
 translatable: true

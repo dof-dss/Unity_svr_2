@@ -1,19 +1,17 @@
-uuid: 73972f40-4029-49d5-ad01-8fb4b6f72c9b
+uuid: 961b891b-b21a-436e-a606-8294f1e454d3
 langcode: en
 status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: __YmHpC0JHR4G_jKdC8bv1kSE7i3vazZ2bEqbxuIur4
 id: node.field_teaser
 field_name: field_teaser
 entity_type: node
 type: string
 settings:
-  max_length: 140
-  is_ascii: false
+  max_length: 120
   case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: 1
