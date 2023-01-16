@@ -1,0 +1,22 @@
+uuid: 6c1061b2-17ae-489a-bc53-2338e9f8059d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.core_funded_groups
+id: node.core_funded_groups.promote
+field_name: promote
+entity_type: node
+bundle: core_funded_groups
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

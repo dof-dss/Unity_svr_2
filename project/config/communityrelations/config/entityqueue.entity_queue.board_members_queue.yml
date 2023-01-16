@@ -20,7 +20,7 @@ entity_settings:
     auto_create: false
     auto_create_bundle: ''
     auto_entityqueue:
-      auto_add: 1
+      auto_add: 0
       insert_front: 1
 queue_settings:
   min_size: 0
