@@ -112,3 +112,12 @@ sites:
         database: nicybersecuritycentre
         status: development
         default: false
+    ppsni:
+        name: 'Public Prosecution Service'
+        url: ppsni.gov.uk
+        solr: ppsni
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/ppsni ; drush core-cron'
+        database: ppsni
+        status: development
+        default: false
