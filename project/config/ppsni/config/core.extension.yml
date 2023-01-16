@@ -80,7 +80,9 @@ module:
   metatag_verification: 0
   metatag_views: 0
   migrate: 0
+  migrate_absolute_links: 0
   migrate_drupal: 0
+  migrate_drupal_ui: 0
   migrate_plus: 0
   migrate_tools: 0
   migrate_upgrade: 0
@@ -117,6 +119,7 @@ module:
   twig_tweak: 0
   ultimate_cron: 0
   unity_common: 0
+  unity_file_migrations: 0
   unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0
