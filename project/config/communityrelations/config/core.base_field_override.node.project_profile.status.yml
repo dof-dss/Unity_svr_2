@@ -1,0 +1,22 @@
+uuid: 89769f8c-3247-4f7b-8102-d9f7f530bce0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.project_profile
+id: node.project_profile.status
+field_name: status
+entity_type: node
+bundle: project_profile
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

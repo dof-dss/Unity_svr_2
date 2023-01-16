@@ -1,24 +1,28 @@
-uuid: 7cda2e74-d692-48de-aa54-debf229325e2
+uuid: 003d92d4-1fd9-4134-94c1-ee45c2ca604a
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.link
+    - node.type.contact
   module:
     - allowed_formats
     - text
 third_party_settings:
   allowed_formats:
-    allowed_formats:
-      - basic_html
-id: node.link.body
+    basic_html: basic_html
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: Q06QZKSbW5KkRtfrzX1Xan4rLT-yTbrvCnge3cqG0Ns
+id: node.contact.body
 field_name: body
 entity_type: node
-bundle: link
-label: Description
-description: 'Please a description of the link here.'
-required: false
+bundle: contact
+label: Body
+description: ''
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
