@@ -1,0 +1,22 @@
+uuid: 32f36166-e241-42eb-9bf9-3ec3ef1ed666
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: featured_article_pattern
+label: 'Featured article pattern'
+type: 'canonical_entities:node'
+pattern: 'articles/[node:title]'
+selection_criteria:
+  36b9d4fd-9cae-48d4-b794-e52d45b184b2:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 36b9d4fd-9cae-48d4-b794-e52d45b184b2
+    context_mapping:
+      node: node
+    bundles:
+      featured_article: featured_article
+selection_logic: and
+weight: -5
+relationships: {  }
