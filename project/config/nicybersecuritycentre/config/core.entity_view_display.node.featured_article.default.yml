@@ -11,7 +11,6 @@ dependencies:
     - node.type.featured_article
   module:
     - datetime
-    - metatag
     - text
     - user
 id: node.featured_article.default
@@ -24,44 +23,29 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
-    region: content
-  field_meta_tags:
-    type: metatag_empty_formatter
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 105
+    weight: 2
     region: content
   field_photo:
-    type: entity_reference_label
-    label: above
+    type: entity_reference_entity_view
+    label: hidden
     settings:
-      link: true
+      view_mode: article_float
+      link: false
     third_party_settings: {  }
-    weight: 103
+    weight: 1
     region: content
   field_published_date:
     type: datetime_default
-    label: above
+    label: inline
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: unity_date
     third_party_settings: {  }
-    weight: 102
-    region: content
-  field_teaser:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 104
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  content_moderation_control: true
+  field_meta_tags: true
+  field_teaser: true
   langcode: true
+  links: true
