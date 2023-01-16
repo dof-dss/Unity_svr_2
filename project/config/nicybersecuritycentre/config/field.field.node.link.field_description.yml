@@ -1,9 +1,9 @@
-uuid: 7cda2e74-d692-48de-aa54-debf229325e2
+uuid: 9f91f3a1-35c3-4024-9998-c4961589d2cb
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.body
+    - field.storage.node.field_description
     - node.type.link
   module:
     - allowed_formats
@@ -12,14 +12,14 @@ third_party_settings:
   allowed_formats:
     allowed_formats:
       - basic_html
-id: node.link.body
-field_name: body
+id: node.link.field_description
+field_name: field_description
 entity_type: node
 bundle: link
 label: Description
-description: 'Please a description of the link here.'
+description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
