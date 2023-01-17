@@ -1,0 +1,28 @@
+uuid: 24b4ee72-84ce-4fa1-b493-97cfc5924c3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.date_published_article
+  module:
+    - facets
+    - system
+  theme:
+    - nicybersecuritycentre_theme
+id: date_articles
+theme: nicybersecuritycentre_theme
+region: search_facets
+weight: -3
+provider: null
+plugin: 'facet_block:date_published_article'
+settings:
+  id: 'facet_block:date_published_article'
+  label: Date
+  label_display: visible
+  provider: facets
+  block_id: date_articles
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/articles\r\n/articles/date/*"
