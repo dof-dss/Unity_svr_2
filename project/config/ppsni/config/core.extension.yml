@@ -6,6 +6,7 @@ module:
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
   allowed_formats: 0
+  auto_entityqueue: 0
   automated_cron: 0
   blazy: 0
   block: 0
@@ -17,6 +18,7 @@ module:
   config: 0
   config_filter: 0
   config_ignore: 0
+  config_split: 0
   content_lock: 0
   content_lock_timeout: 0
   content_moderation: 0
@@ -26,17 +28,16 @@ module:
   ctools: 0
   datetime: 0
   datetime_range: 0
-  dblog: 0
   diff: 0
   dynamic_entity_reference: 0
   dynamic_page_cache: 0
-  easy_install: 0
   editor: 0
   embed: 0
   entity_browser: 0
   entity_browser_entity_form: 0
   entity_embed: 0
   entity_reference_revisions: 0
+  entityqueue: 0
   facets: 0
   facets_pretty_paths: 0
   field: 0
@@ -79,11 +80,6 @@ module:
   metatag_twitter_cards: 0
   metatag_verification: 0
   metatag_views: 0
-  migrate: 0
-  migrate_drupal: 0
-  migrate_plus: 0
-  migrate_tools: 0
-  migrate_upgrade: 0
   moderation_sidebar: 0
   mysql: 0
   node: 0
@@ -124,7 +120,6 @@ module:
   update: 0
   user: 0
   views_custom_cache_tag: 0
-  views_ui: 0
   webform: 0
   webform_access: 0
   webform_node: 0
