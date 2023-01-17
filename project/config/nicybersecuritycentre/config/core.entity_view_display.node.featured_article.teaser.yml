@@ -11,26 +11,33 @@ dependencies:
     - field.field.node.featured_article.field_teaser
     - node.type.featured_article
   module:
-    - text
     - user
 id: node.featured_article.teaser
 targetEntityType: node
 bundle: featured_article
 mode: teaser
 content:
-  body:
-    type: text_summary_or_trimmed
+  field_photo:
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      trim_length: 600
+      view_mode: unity_3_col_images
+      link: false
     third_party_settings: {  }
     weight: 0
     region: content
+  field_teaser:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
+  body: true
   content_moderation_control: true
   field_meta_tags: true
-  field_photo: true
   field_published_date: true
-  field_teaser: true
   langcode: true
   links: true

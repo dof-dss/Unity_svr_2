@@ -9,3 +9,15 @@ function victimspaymentsboard_theme_theme_suggestions_block_alter(array &$sugges
     array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
   }
 }
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function victimspaymentsboard_theme_theme_preprocess_html(&$variables) {
+  if (!empty($variables['node_type'])) {
+    if (($variables['node_type'] == 'basic_page') || ($variables['node_type'] == 'publication_page')) {
+      $variables['attributes']['class'][] = 'one-sidebar';
+      $variables['attributes']['class'][] = 'sidebar-second';
+    }
+  }
+}
