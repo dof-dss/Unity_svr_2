@@ -27,9 +27,11 @@ content:
     weight: 0
     region: content
 hidden:
+  content_moderation_control: true
   field_crc_contact_details: true
   field_crc_council_area: true
   field_crc_t_buc_aim: true
   field_meta_tags: true
   langcode: true
   links: true
+  search_api_excerpt: true
