@@ -6,6 +6,8 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
     - field.field.node.page.field_enable_toc
+    - field.field.node.page.field_meta_tags
+    - field.field.node.page.field_next_audit_due
     - node.type.page
   module:
     - text
@@ -30,4 +32,6 @@ content:
     region: content
 hidden:
   field_enable_toc: true
+  field_meta_tags: true
+  field_next_audit_due: true
   langcode: true
