@@ -1,0 +1,23 @@
+uuid: 92fe532f-e5d3-4875-8062-1905413a0e9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.nigov_banner_1880x200_x2
+    - image.style.nigov_banner_940x100_x1
+_core:
+  default_config_hash: IFwEyGnK_5gm86R2EHt-s3im2dfWdL5458pysLjMZuE
+id: thin_banner
+label: 'Banner thin'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - nigov_banner_1880x200_x2
+        - nigov_banner_940x100_x1
+breakpoint_group: responsive_image
+fallback_image_style: nigov_banner_940x100_x1

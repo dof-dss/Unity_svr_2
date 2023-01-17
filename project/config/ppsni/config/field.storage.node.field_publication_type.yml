@@ -1,0 +1,22 @@
+uuid: 02e20c6e-504a-45e1-9e0d-42807e4588d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+_core:
+  default_config_hash: e4x9ghNeGMDBWb34flNGaCxZNhE1JJddu_3NMWrRqss
+id: node.field_publication_type
+field_name: field_publication_type
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
