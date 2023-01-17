@@ -28,6 +28,7 @@ content:
     region: content
 hidden:
   body: true
+  content_moderation_control: true
   field_crc_event_date: true
   field_meta_tags: true
   field_teaser: true
