@@ -1,30 +1,58 @@
-uuid: 6ced97ef-26dc-4135-8ea3-333bf8d2cf1c
+uuid: 87ea9ad3-d06b-42e9-a159-ceeadb2361bb
 langcode: en
 status: true
 dependencies:
   config:
     - node.type.news
   module:
+    - block
     - node
+    - path
+    - pathauto
     - redirect
     - system
-_core:
-  default_config_hash: cI6O43jts_j67JaySnvjojNUQYYJXQmbWghOsb7iQNY
-id: supervisor_user
-label: 'supervisor user'
-weight: 3
+    - taxonomy
+id: admin_user
+label: 'admin user'
+weight: 6
 is_admin: null
 permissions:
   - 'access administration menu'
   - 'access administration pages'
   - 'access ckeditor link'
+  - 'access content overview'
+  - 'access printer-friendly version'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access user profiles'
   - 'add content to books'
   - 'add media from remote sources'
+  - 'add terms in site_structure'
+  - 'add terms in topics'
+  - 'administer actions'
+  - 'administer blocks'
   - 'administer book outlines'
+  - 'administer content types'
+  - 'administer entityqueue'
+  - 'administer eu cookie warning'
   - 'administer main-menu menu items'
+  - 'administer media browser'
+  - 'administer modules'
   - 'administer nivo slider'
-  - 'administer nodequeue'
+  - 'administer nodes'
+  - 'administer pathauto'
+  - 'administer permissions'
   - 'administer redirects'
+  - 'administer site configuration'
+  - 'administer software updates'
+  - 'administer taxonomy'
+  - 'administer themes'
+  - 'administer url aliases'
+  - 'administer users'
+  - 'administer workbench'
+  - 'administer workbench moderation'
+  - 'block IP addresses'
+  - 'bypass node access'
   - 'create files'
   - 'create new books'
   - 'create publication_page content'
@@ -41,6 +69,8 @@ permissions:
   - 'delete own publication_page content'
   - 'delete own video files'
   - 'delete revisions'
+  - 'delete terms in 1'
+  - 'delete terms in 2'
   - 'download any audio files'
   - 'download any document files'
   - 'download any image files'
@@ -59,11 +89,10 @@ permissions:
   - 'edit own image files'
   - 'edit own publication_page content'
   - 'edit own video files'
+  - 'edit terms in 1'
+  - 'edit terms in 2'
   - 'flag content_audit'
-  - 'manipulate all entityqueues'
-  - 'manipulate all queues'
-  - 'manipulate entityqueues'
-  - 'manipulate queues'
+  - 'flush caches'
   - 'moderate content from draft to needs_review'
   - 'moderate content from needs_review to draft'
   - 'moderate content from needs_review to published'
@@ -73,14 +102,14 @@ permissions:
   - 'show core Outline form element'
   - 'show core Outline tab'
   - 'unflag content_audit'
-  - 'update featured_news_queue entityqueue'
   - 'use text format filtered_html'
+  - 'use text format filtered_html_enhanced_no_media'
   - 'use text format filtered_html_with_no_images'
+  - 'use text format filtered_html_with_tokens'
   - 'use workbench_media add form'
   - 'use workbench_moderation my drafts tab'
   - 'use workbench_moderation needs review tab'
   - 'view all unpublished content'
-  - 'view moderation history'
-  - 'view moderation messages'
   - 'view own files'
+  - 'view own private files'
   - 'view the administration theme'

@@ -1,14 +1,12 @@
-uuid: a6540ede-90e5-491e-8332-b7f59b81bb73
+uuid: 6c1d01e6-49c6-4526-bfb6-2152171cb4e3
 langcode: und
 status: true
 dependencies:
   module:
     - datetime
     - node
-_core:
-  default_config_hash: 3tpwHAUvVnxhVywjAwQuZh2lWqxhX521AyKeA3eaR14
-id: node.field_published_date
-field_name: field_published_date
+id: node.field_publication_date
+field_name: field_publication_date
 entity_type: node
 type: datetime
 settings:

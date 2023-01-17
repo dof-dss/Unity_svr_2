@@ -1,18 +1,16 @@
-uuid: 32ebb8f8-e438-4e15-83c8-223c906fdbdb
+uuid: 575527df-e140-42e9-be7e-c90b2026e53f
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.news
-_core:
-  default_config_hash: MU9Gxb3GoC55bh-2Fwx5VG4fOn4X7N77V2kul4V__gU
-id: node.news.title
+    - node.type.page
+id: node.page.title
 field_name: title
 entity_type: node
-bundle: news
+bundle: page
 label: 'Title (Main heading)'
 description: ''
-required: true
+required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''

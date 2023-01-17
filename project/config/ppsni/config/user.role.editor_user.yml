@@ -1,4 +1,4 @@
-uuid: 6ced97ef-26dc-4135-8ea3-333bf8d2cf1c
+uuid: 6c278417-cebf-4012-9884-ba488f4156ea
 langcode: en
 status: true
 dependencies:
@@ -8,11 +8,9 @@ dependencies:
     - node
     - redirect
     - system
-_core:
-  default_config_hash: cI6O43jts_j67JaySnvjojNUQYYJXQmbWghOsb7iQNY
-id: supervisor_user
-label: 'supervisor user'
-weight: 3
+id: editor_user
+label: 'editor user'
+weight: 5
 is_admin: null
 permissions:
   - 'access administration menu'
@@ -23,7 +21,7 @@ permissions:
   - 'administer book outlines'
   - 'administer main-menu menu items'
   - 'administer nivo slider'
-  - 'administer nodequeue'
+  - 'administer nodes'
   - 'administer redirects'
   - 'create files'
   - 'create new books'
@@ -60,10 +58,6 @@ permissions:
   - 'edit own publication_page content'
   - 'edit own video files'
   - 'flag content_audit'
-  - 'manipulate all entityqueues'
-  - 'manipulate all queues'
-  - 'manipulate entityqueues'
-  - 'manipulate queues'
   - 'moderate content from draft to needs_review'
   - 'moderate content from needs_review to draft'
   - 'moderate content from needs_review to published'
@@ -73,14 +67,11 @@ permissions:
   - 'show core Outline form element'
   - 'show core Outline tab'
   - 'unflag content_audit'
-  - 'update featured_news_queue entityqueue'
   - 'use text format filtered_html'
   - 'use text format filtered_html_with_no_images'
-  - 'use workbench_media add form'
+  - 'use text format filtered_html_with_tokens'
   - 'use workbench_moderation my drafts tab'
   - 'use workbench_moderation needs review tab'
   - 'view all unpublished content'
-  - 'view moderation history'
-  - 'view moderation messages'
   - 'view own files'
   - 'view the administration theme'

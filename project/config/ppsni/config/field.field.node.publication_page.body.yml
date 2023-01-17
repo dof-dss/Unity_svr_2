@@ -1,25 +1,23 @@
-uuid: beeada28-5868-424e-adae-c4a77abf22fc
+uuid: fba0aa0b-3bff-47d0-a3bd-b077b1134cff
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.news
+    - node.type.publication_page
   module:
     - text
-_core:
-  default_config_hash: u1pxGrNXR4V2q0lHTM0AuVdnbyTLitNAlxGCLqWujyg
-id: node.news.body
+id: node.publication_page.body
 field_name: body
 entity_type: node
-bundle: news
+bundle: publication_page
 label: Body
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  display_summary: false
+  display_summary: true
   required_summary: false
 field_type: text_with_summary
