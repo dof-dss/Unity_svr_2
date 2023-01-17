@@ -1,0 +1,190 @@
+uuid: a89fab4e-1fc0-4441-ac89-eea0ce581ef7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XauSES2rkcQaJ4Rtnj80NfyWas_ooCJtbryfMRzP6bg
+id: upgrade_d7_node_complete_publication_page
+class: Drupal\node\Plugin\migrate\D7NodeTranslation
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node complete (Publication page)'
+source:
+  plugin: d7_node_complete
+  node_type: publication_page
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  content_translation_source:
+    -
+      plugin: get
+      source: source_langcode
+  comment_node_publication_page/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+    -
+      plugin: media_wysiwyg_filter
+    -
+      plugin: filter_absolute_links
+      replace_urls:
+        http://www.ppsni.gov.uk
+        https://www.ppsni.gov.uk
+    -
+      plugin: site_files_filter
+      from_ref: sites/ppsni/files
+      to_ref: files/ppsni
+    -
+      plugin: site_files_filter
+      from_ref: sites/www.ppsni.gov.uk/files
+      to_ref: files/ppsni
+    -
+      plugin: str_replace
+      regex: true
+      search: /(<ul>)?(<li>)?(<div[^>]*>)?<a href="(\S+?files\/\S+)".*?>\s*[^<]*(\([^<]*\))?<\/a>(<\/div>)?(<\/li>)?(<\/ul>)?/
+      replace: ''
+  body/0/format:
+    -
+      plugin: static_map
+      bypass: true
+      source: body/0/format
+      map:
+        filtered_html: basic_html
+        filtered_html_with_no_images: basic_html
+        filtered_html_with_tokens: basic_html
+        restricted_html: basic_html
+        plain_text: plain_text
+  field_publication_date:
+    -
+      plugin: sub_process
+      source: field_publication_date
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d H:i:s'
+          to_format: Y-m-d
+          source: value
+  field_publication_type:
+    - plugin: static_map
+      source: field_publication_type
+      default_value: null
+      map:
+        agendas: 6
+        businessplans: 7
+        circulars: 8
+        consultationreports: 9
+        contractmanagement: 10
+        corporatereports: 11
+        correspondence: 12
+        decisions: 13
+        developmentplanframework: 14
+        financial: 15
+        foiresponses: 16
+        forms: 17
+        guidance: 18
+        impactassessments: 19
+        independentreports: 20
+        inspectionreports: 22
+        jointcommuniques: 21
+        legislation: 23
+        listsregisters: 24
+        maps: 25
+        memoranda: 26
+        notices: 27
+        policypapers: 28
+        promotional: 29
+        researchanalysis: 30
+        speeches: 31
+        surveys: 32
+        supportmaterial: 33
+        statisticalreports: 34
+  field_topic:
+    -
+      plugin: sub_process
+      source: field_topic
+      process:
+        target_id: tid
+  field_attachment:
+    -
+      plugin: sub_process
+      source: field_pps_attachment
+      process:
+        target_id: fid
+        display: display
+        description: description
+  field_metatag:
+    -
+      plugin: d7_metatag_entities
+      source: pseudo_metatag_entities
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: publication_page
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_metatag_field_node
+    - upgrade_d7_metatag_field_instance_node_publication_page
+    - upgrade_d7_metatag_field_instance_widget_settings_node_publication_page
