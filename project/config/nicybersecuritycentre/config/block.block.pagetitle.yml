@@ -2,6 +2,8 @@ uuid: 21688734-5449-4a07-a766-f0715f3e19db
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - nicybersecuritycentre_theme
 id: pagetitle
@@ -15,4 +17,8 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/articles\r\n/articles/date/*"
