@@ -22,6 +22,7 @@ db:
             - communityrelationsdb
             - sentencereviewdb
             - nicybersecuritycentredb
+            - ppsnidb
         endpoints:
             mentalhealthchampionni:
                 default_schema: mentalhealthchampionnidb
@@ -71,6 +72,10 @@ db:
                 default_schema: nicybersecuritycentredb
                 privileges:
                     nicybersecuritycentredb: admin
+            ppsni:
+                default_schema: ppsnidb
+                privileges:
+                    ppsnidb: admin
 solr:
     type: 'solr:7.7'
     disk: 1024
@@ -100,6 +105,8 @@ solr:
                 conf_dir: !archive solr_config/
             nicybersecuritycentre_index:
                 conf_dir: !archive solr_config/
+            ppsni_index:
+                conf_dir: !archive solr_config/
         endpoints:
             mentalhealthchampionni:
                 core: mentalhealthchampionni_index
@@ -125,5 +132,7 @@ solr:
                 core: sentencereview_index
             nicybersecuritycentre:
                 core: nicybersecuritycentre_index
+            ppsni:
+                core: ppsni_index
 redis:
     type: 'redis:6.0'

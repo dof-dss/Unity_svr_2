@@ -12,7 +12,7 @@ entity_type: node
 bundle: funding_schemes
 label: Type
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

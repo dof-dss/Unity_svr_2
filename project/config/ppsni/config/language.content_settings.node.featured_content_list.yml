@@ -1,0 +1,13 @@
+uuid: c77b32c6-9bae-4de2-82c8-c6673d5c2f36
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.featured_content_list
+_core:
+  default_config_hash: TlGJ7n0hK45-hsKhrTdldhtL3yycDENlpDuMURougNw
+id: node.featured_content_list
+target_entity_type_id: node
+target_bundle: featured_content_list
+default_langcode: site_default
+language_alterable: false

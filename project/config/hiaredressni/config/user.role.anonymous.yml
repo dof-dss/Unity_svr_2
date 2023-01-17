@@ -2,8 +2,11 @@ uuid: 80cd72e8-0a39-4bcc-b95f-47f10af321f3
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.restricted_html
   module:
     - eu_cookie_compliance
+    - filter
     - media
     - system
 _core:
@@ -16,5 +19,6 @@ permissions:
   - 'access content'
   - 'diff view changes'
   - 'display eu cookie compliance popup'
+  - 'use text format restricted_html'
   - 'view files'
   - 'view media'

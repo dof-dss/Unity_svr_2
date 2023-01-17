@@ -1,0 +1,31 @@
+uuid: 144f1363-5df8-4eb4-9de4-c57e915876b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_type
+    - node.type.link
+    - taxonomy.vocabulary.publications_topics
+_core:
+  default_config_hash: '-l-3G75w2jMpF0E03SkorND3U64EXGhP46gSJOH-kfk'
+id: node.link.field_link_type
+field_name: field_link_type
+entity_type: node
+bundle: link
+label: 'Link type'
+description: 'Choose a type for this link. The type defines where the link appears on the site home page.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      publications_topics: publications_topics
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

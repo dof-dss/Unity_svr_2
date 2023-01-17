@@ -1,0 +1,30 @@
+uuid: e88a2cd9-1e46-4df4-b10c-3c0e554a994c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contact.body
+    - field.field.node.contact.field_meta_tags
+    - node.type.contact
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: coFQajb-OABMpa-W8XlX9RyVipDKVmvdkcDQcjEysyM
+id: node.contact.default
+targetEntityType: node
+bundle: contact
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  content_moderation_control: true
+  field_meta_tags: true
+  langcode: true
+  links: true

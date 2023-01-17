@@ -10,10 +10,8 @@ dependencies:
     - text
 third_party_settings:
   allowed_formats:
-    basic_html: basic_html
-    restricted_html: '0'
-    full_html: '0'
-    plain_text: '0'
+    allowed_formats:
+      - basic_html
 _core:
   default_config_hash: C-lA3ztVbA5TJnvirrD4aVYAmyWW9m9gxUarBR68jy8
 id: node.publication.body
@@ -23,7 +21,7 @@ bundle: publication
 label: Body
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

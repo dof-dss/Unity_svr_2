@@ -1,0 +1,18 @@
+uuid: 21688734-5449-4a07-a766-f0715f3e19db
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nicybersecuritycentre_theme
+id: pagetitle
+theme: nicybersecuritycentre_theme
+region: content
+weight: -1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }
