@@ -1,0 +1,20 @@
+uuid: 679a994d-3414-4bb1-b530-1076324a0bbb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nicybersecuritycentre_theme
+id: breadcrumbs
+theme: nicybersecuritycentre_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }
