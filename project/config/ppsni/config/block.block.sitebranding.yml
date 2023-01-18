@@ -1,0 +1,23 @@
+uuid: 6b6e0d49-7186-4f8e-9a4b-f7078f46fca8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ppsni_theme
+id: sitebranding
+theme: ppsni_theme
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }
