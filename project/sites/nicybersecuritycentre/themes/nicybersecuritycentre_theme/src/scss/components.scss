@@ -45,3 +45,16 @@
     }
   }
 }
+
+#block-cyberheaderdescription {
+  max-width: 1024px;
+  margin: 0 auto;
+
+  .content {
+    max-width: 90%;
+
+    h2 {
+      color: $white;
+    }
+  }
+}
