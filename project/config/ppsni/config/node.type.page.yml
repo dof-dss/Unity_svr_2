@@ -10,11 +10,11 @@ third_party_settings:
     available_menus: {  }
     parent: ''
   origins_toc:
-    toc_enable: 0
+    toc_enable: 1
     toc_title: 'Table of contents'
-    toc_location: ''
+    toc_location: .page-title
     toc_insert: after
-    toc_source_container: ''
+    toc_source_container: '#block-mainpagecontent .content'
     toc_element: h2
     toc_exclusions: ''
     toc_screen_depth: '1'
