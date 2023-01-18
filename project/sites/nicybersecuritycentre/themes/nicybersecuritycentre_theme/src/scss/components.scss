@@ -45,3 +45,23 @@
     }
   }
 }
+
+.path-useful-contacts {
+  .content-sidebar-wrap {
+    @include breakpoint($tab) {
+      width: 65%;
+    }
+  }
+
+  p {
+    overflow: hidden;
+  }
+
+  .cyberItem {
+    display: flex;
+  }
+
+  .media-image[data-picture-mapping="inline"] > img {
+    max-width: 180px;
+  }
+}
