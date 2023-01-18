@@ -45,6 +45,7 @@ content:
     weight: 2
     region: content
 hidden:
+  content_moderation_control: true
   field_meta_tags: true
   field_teaser: true
   langcode: true

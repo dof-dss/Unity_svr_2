@@ -29,7 +29,9 @@ content:
     weight: 0
     region: content
 hidden:
+  content_moderation_control: true
   field_areas_work: true
   field_meta_tags: true
   langcode: true
   links: true
+  search_api_excerpt: true
