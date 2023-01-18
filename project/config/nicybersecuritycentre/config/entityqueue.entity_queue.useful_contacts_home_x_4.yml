@@ -1,0 +1,26 @@
+uuid: 26fae57e-bf97-4bfa-b536-3982efb9d385
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: useful_contacts_home_x_4
+label: 'Useful contacts home x 4'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      link: link
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 4
+  act_as_queue: false
+  reverse: false
