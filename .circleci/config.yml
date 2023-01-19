@@ -3,7 +3,7 @@ version: 2.1
 # Default docker image.
 default_docker_image: &docker_image
   docker:
-    - image: thecodingmachine/php:8.0-v4-apache-node14
+    - image: thecodingmachine/php:8.1-v4-apache-node14
       environment:
         PLATFORM_REGION: "uk-1.platform.sh"
         PROJECT_ROOT: "/home/docker/project"
@@ -14,7 +14,7 @@ default_docker_image: &docker_image
         PHP_INI_MAX_INPUT_TIME: 60
 custom_npm_docker_image: &custom_npm_docker_image
   docker:
-    - image: circleci/php:8.0-apache-browsers
+    - image: circleci/php:8.1-apache-browsers
       environment:
         PLATFORM_REGION: "uk-1.platform.sh"
         PROJECT_ROOT: "/home/circleci/project"
@@ -214,7 +214,7 @@ jobs:
           name: Backup data sync if the previous attempt failed.
           command: |
             # Pause for the blocking activity to finish.
-            sleep 90s
+            sleep 300s
             platform sync data -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH -y
           when: on_fail
       - run:
@@ -334,7 +334,7 @@ workflows:
     triggers:
       - schedule:
           # At 01:23 Monday to Friday
-          cron: "23 1 * * 1-5"
+          cron: "55 1 * * 1-5"
           filters:
             branches:
               only:
