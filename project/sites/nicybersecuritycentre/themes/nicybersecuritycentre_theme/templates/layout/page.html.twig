@@ -100,6 +100,10 @@
 
   {% if page.top_first or page.top_second or page.top_third %}
     <div id="top-area" class="clearfix">
+      <h2 class="advice-head">
+        <a href="/advice-and-guidance">Advice and Guidance</a>
+      </h2>
+      <div class="content">
       {% if page.top_first %}
         <div class="column">
           {{ page.top_first }}
@@ -115,6 +119,7 @@
           {{ page.top_third }}
         </div>
       {% endif %}
+      </div>
     </div>
   {% endif %}
   {% endif %}

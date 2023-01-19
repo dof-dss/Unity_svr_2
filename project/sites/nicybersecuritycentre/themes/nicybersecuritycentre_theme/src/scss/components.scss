@@ -52,9 +52,118 @@
 
   .content {
     max-width: 90%;
+    padding-left: 1rem;
+
+    @include breakpoint($lap) {
+      padding-left: 0;
+    }
 
     h2 {
       color: $white;
+    }
+  }
+}
+
+#block-views-block-featured-article-featured-home {
+  article {
+    @include breakpoint($tab) {
+      display: flex;
+      column-gap: 4rem;
+    }
+
+    .group-left {
+      @include breakpoint($tab) {
+        flex: 2;
+      }
+    }
+
+    .group-right {
+      text-align: left;
+
+      h2 {
+        margin-top: 1.2rem;
+        text-align: left;
+      }
+
+      @include breakpoint($tab) {
+        flex: 1;
+
+        p:last-of-type {
+          @include adjust-font-size-to(24px);
+          line-height: 2.7rem;
+        }
+
+        .view-footer {
+          position: absolute;
+          bottom: 3.3rem;
+        }
+      }
+    }
+  }
+
+  .content article .group-left a {
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+#header_wrapper {
+  background: #653692 resolve('cyber-header-bg.png') no-repeat;
+  padding: 1rem 0 1rem;
+  background-size: cover;
+}
+
+#content #block-views-block-featured-article-featured-home .content article .group-left a {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+#top-area {
+  background: $offwhite;
+  max-width: 100%;
+
+  h2,
+  p {
+    color: $text;
+  }
+
+  .advice-head {
+    color: $link;
+    @include responsive-typo-map($h1-text);
+    margin: 0;
+    line-height: 6rem;
+  }
+
+  .content {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .column {
+      float: none;
+      width: 100%;
+      text-align: left;
+
+      @include breakpoint($tab) {
+        width: 30rem;
+
+        p {
+          letter-spacing: 0.2px;
+        }
+      }
+    }
+  }
+}
+
+#bottom-area {
+  .column {
+    &:first-child {
+      width: 100%;
+      text-align: center;
     }
   }
 }
