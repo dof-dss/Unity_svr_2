@@ -24,16 +24,14 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 101
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  content_moderation_control: true
   field_attachment: true
   field_publication_date: true
   field_publication_type: true
   field_topic: true
   langcode: true
+  links: true
+  search_api_excerpt: true

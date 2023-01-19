@@ -6,6 +6,8 @@ dependencies:
     - node.type.feature
     - node.type.featured_content_list
     - node.type.news
+    - node.type.page
+    - node.type.publication_page
     - node.type.webform
   module:
     - content_moderation
@@ -99,5 +101,7 @@ type_settings:
       - feature
       - featured_content_list
       - news
+      - page
+      - publication_page
       - webform
   default_moderation_state: draft
