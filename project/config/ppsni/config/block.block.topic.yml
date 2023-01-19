@@ -1,0 +1,28 @@
+uuid: f1a6ea98-0122-4bd8-aa93-c665ead9b350
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.topic
+  module:
+    - facets
+    - system
+  theme:
+    - ppsni_theme
+id: topic
+theme: ppsni_theme
+region: search_facets
+weight: -1
+provider: null
+plugin: 'facet_block:topic'
+settings:
+  id: 'facet_block:topic'
+  label: Topic
+  label_display: visible
+  provider: facets
+  block_id: topic
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/publications\r\n/publications/date/*\r\n/publications/type/*\r\n/publications/topic/*"

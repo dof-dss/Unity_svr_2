@@ -23,41 +23,30 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 1
     region: content
   field_attachment:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     label: above
     settings:
-      link: true
-    third_party_settings: {  }
-    weight: 4
-    region: content
-  field_publication_date:
-    type: datetime_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  field_publication_type:
-    type: entity_reference_label
-    label: above
-    settings:
+      view_mode: default
       link: true
     third_party_settings: {  }
     weight: 2
     region: content
-  field_topic:
-    type: entity_reference_label
-    label: above
+  field_publication_date:
+    type: datetime_default
+    label: inline
     settings:
-      link: true
+      timezone_override: ''
+      format_type: unity_date
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
 hidden:
+  content_moderation_control: true
+  field_publication_type: true
+  field_topic: true
   langcode: true
   links: true
+  search_api_excerpt: true
