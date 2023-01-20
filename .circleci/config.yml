@@ -151,7 +151,7 @@ jobs:
           command: |
             sudo apt-get install php-gd
             sudo apt-get update
-            suod apt-get install make
+            sudo apt-get install make
       - install_psh_cli
       - run:
           name: Switch to edge branch
