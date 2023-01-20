@@ -109,7 +109,7 @@
 }
 
 #header_wrapper {
-  background: #653692 resolve('cyber-header-bg.png') no-repeat;
+  background: $brand-primary resolve('cyber-header-bg.png') no-repeat;
   padding: 1rem 0 1rem;
   background-size: cover;
 }
