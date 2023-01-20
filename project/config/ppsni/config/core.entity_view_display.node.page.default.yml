@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.page.field_next_audit_due
     - node.type.page
   module:
-    - datetime
     - metatag
     - text
     - user
@@ -23,29 +22,19 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 0
     region: content
   field_meta_tags:
     type: metatag_empty_formatter
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 102
-    region: content
-  field_next_audit_due:
-    type: datetime_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 103
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
+  content_moderation_control: true
   field_enable_toc: true
+  field_next_audit_due: true
   langcode: true
+  links: true
+  search_api_excerpt: true
