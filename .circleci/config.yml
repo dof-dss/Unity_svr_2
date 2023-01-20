@@ -149,9 +149,7 @@ jobs:
       - run:
           name: Add OS and PHP extensions
           command: |
-            sudo apt-get install php-gd
             sudo apt-get update
-            sudo apt-get install make
       - install_psh_cli
       - run:
           name: Switch to edge branch
