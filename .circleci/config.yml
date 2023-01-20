@@ -169,10 +169,10 @@ jobs:
             # Download and configure node and npm.
             alias python=python3
             curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-            source ~/.bashrc
       - run:
           name: Rebuild site themes
           command: |
+            source ~/.bashrc
             nvm install v15.14.0
             for site in `ls -l ~/project/project/sites | grep ^d | awk '{print $9}'`
             do
@@ -181,6 +181,7 @@ jobs:
                 cd ~/project/project/sites/${site}/themes/${site}_theme
                 sed -i -e "s/\"nicsdru_unity_theme.*/\"nicsdru_unity_theme\": \"github:dof-dss\/nicsdru_unity_theme#development\",/" package.json
                 npm install
+                npm install -g npm-run-all
                 npm rebuild node-sass
                 npm run build
 
