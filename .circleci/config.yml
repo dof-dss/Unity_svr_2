@@ -168,10 +168,8 @@ jobs:
             # Need to re-build site theme with any Unity changes.
             # Download and configure node and npm.
             alias python=python3
-            git clone https://github.com/nvm-sh/nvm.git
-            cd nvm
-            chmod +x install.sh
-            ./install.sh
+            curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+            source ~/.bashrc
       - run:
           name: Rebuild site themes
           command: |
