@@ -1,4 +1,4 @@
-uuid: 221aaffd-f0d8-4ff8-a050-8b7a23aa17ac
+uuid: f3b2ccf9-656c-41d9-bbec-4eeee5c2a9a8
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,9 @@ dependencies:
     - system
     - views
   theme:
-    - crc_theme
+    - communityrelations_theme
 id: views_block__latest_events_latest_events
-theme: crc_theme
+theme: communityrelations_theme
 region: top_second
 weight: 0
 provider: null

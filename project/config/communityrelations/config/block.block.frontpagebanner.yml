@@ -1,4 +1,4 @@
-uuid: ae101819-7948-4970-9655-90164addbbf6
+uuid: b6ab44f6-eddb-4855-9c53-02dc88ed2591
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,9 @@ dependencies:
     - block_content
     - system
   theme:
-    - crc_theme
+    - communityrelations_theme
 id: frontpagebanner
-theme: crc_theme
+theme: communityrelations_theme
 region: front_welcome
 weight: 0
 provider: null

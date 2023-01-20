@@ -1,4 +1,4 @@
-uuid: 088d9c57-8bbf-4bd7-81c0-4a048646dfb2
+uuid: 13cef713-bb14-4a2b-a2e4-1827c801da42
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - block_content
   theme:
-    - crc_theme
+    - communityrelations_theme
 id: twitterblock
-theme: crc_theme
+theme: communityrelations_theme
 region: top_third
 weight: 0
 provider: null

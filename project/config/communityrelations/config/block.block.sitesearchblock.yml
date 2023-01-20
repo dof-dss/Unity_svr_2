@@ -1,4 +1,4 @@
-uuid: f1c32f98-99c0-4c5c-ab3b-ff61aba28ce6
+uuid: 40f336e6-d187-400d-bfdb-cc2a8b1130fc
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,9 @@ dependencies:
     - system
     - unity_search_pages
   theme:
-    - crc_theme
+    - communityrelations_theme
 id: sitesearchblock
-theme: crc_theme
+theme: communityrelations_theme
 region: search
 weight: 0
 provider: null

@@ -1,6 +1,6 @@
 {
   "masterPicture": "images/favicon.svg",
-  "iconsPath": "/sites/crc/themes/crc_theme/images/favicons/",
+  "iconsPath": "/sites/communityrelations/themes/communityrelations_theme/images/favicons/",
   "design": {
     "ios": {
       "pictureAspect": "backgroundAndMargin",
@@ -12,7 +12,7 @@
         "precomposedIcons": false,
         "declareOnlyDefaultIcon": true
       },
-      "appName": "crc"
+      "appName": "communityrelations"
     },
     "desktopBrowser": {},
     "windows": {
@@ -28,13 +28,13 @@
           "rectangle": false
         }
       },
-      "appName": "crc"
+      "appName": "communityrelations"
     },
     "androidChrome": {
       "pictureAspect": "noChange",
       "themeColor": "#ffffff",
       "manifest": {
-        "name": "crc",
+        "name": "communityrelations",
         "display": "standalone",
         "orientation": "notSet",
         "onConflict": "override",

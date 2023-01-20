@@ -1,4 +1,4 @@
-uuid: de00292b-2f5a-48ef-9e2d-5777d3af4aa2
+uuid: 39c9d30e-2e9c-44f6-98d3-8d4a381d468b
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - system
   theme:
-    - crc_theme
+    - communityrelations_theme
 id: footerlinks
-theme: crc_theme
+theme: communityrelations_theme
 region: footer
 weight: -11
 provider: null

@@ -1,5 +1,5 @@
 {
-  "name": "crc_theme",
+  "name": "communityrelations_theme",
   "version": "0.0.0",
   "description": "A package of utilities used to theme our site",
   "devDependencies": {
