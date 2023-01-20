@@ -20,6 +20,7 @@ regions:
   header: 'Site branding'
   search: 'Search'
   primary_menu: 'Main menu'
+  header_block: 'Header block'
   slideshow: 'Slideshow'
   front_welcome: 'Front welcome'
   top_first: 'First top'

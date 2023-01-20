@@ -1,0 +1,25 @@
+uuid: 7f757e85-ec40-44e2-a9d7-8c7ac4d73310
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:f1a0605d-ab65-4b31-ac00-8b778b494e97'
+  module:
+    - block_content
+  theme:
+    - nicybersecuritycentre_theme
+id: threats
+theme: nicybersecuritycentre_theme
+region: top_first
+weight: 0
+provider: null
+plugin: 'block_content:f1a0605d-ab65-4b31-ac00-8b778b494e97'
+settings:
+  id: 'block_content:f1a0605d-ab65-4b31-ac00-8b778b494e97'
+  label: Threats
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

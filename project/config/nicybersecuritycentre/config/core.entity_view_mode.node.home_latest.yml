@@ -1,0 +1,10 @@
+uuid: 809737bd-4383-44cf-9b0d-6d4bafe2f7ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.home_latest
+label: 'Home latest'
+targetEntityType: node
+cache: true

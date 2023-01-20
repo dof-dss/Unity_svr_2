@@ -1,0 +1,25 @@
+uuid: caa8c228-e5d8-4b3c-bfdb-8487cb18d61a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-footer-links
+  module:
+    - system
+  theme:
+    - nicybersecuritycentre_theme
+id: footerlinks
+theme: nicybersecuritycentre_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-footer-links'
+settings:
+  id: 'system_menu_block:menu-footer-links'
+  label: 'Footer links'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

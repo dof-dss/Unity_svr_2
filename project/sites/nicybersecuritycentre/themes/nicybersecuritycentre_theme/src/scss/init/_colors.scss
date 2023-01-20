@@ -24,12 +24,12 @@ $chroma: add-colors((
   grey-lightest:          #f4f4f4,
   grey-medium:            #cdcdcd,
   white:                  #fff,
-  offwhite:               #f3f8fc,
+  offwhite:               #f2f8ec,
   dark-red:               #b63a1b, // 4.53:1 with light-pink
   hc-red:                 #d1431f, // 4.63:1 with white
   light-pink:             #ffdae0, // 4.53:1 with dark-red
 
-  brand-primary:          #550060,
+  brand-primary:          #653692,
 
   brand-secondary:        #cbb67c,
 
@@ -76,7 +76,7 @@ $chroma: add-colors('functional', (
   table-cell-text:        'text',
 
   footer-background:      #e7e7e7,
-  footer-border:          'brand-secondary',
+  footer-border:          'brand-primary',
   footer-text:            'text',
   footer-headings:        'text',
 
