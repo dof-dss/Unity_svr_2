@@ -165,6 +165,7 @@ jobs:
           command: |
             # Need to re-build site theme with any Unity changes.
             # Download and configure node and npm.
+            alias python=python3
             git clone https://github.com/nvm-sh/nvm.git
             cd nvm
             chmod +x install.sh
@@ -181,7 +182,7 @@ jobs:
                 echo "*** Building theme for ${site} ***"
                 cd ~/project/project/sites/${site}/themes/${site}_theme
                 sed -i -e "s/\"nicsdru_unity_theme.*/\"nicsdru_unity_theme\": \"github:dof-dss\/nicsdru_unity_theme#development\",/" package.json
-                npm install
+                npm install --verbose
                 npm rebuild node-sass
                 npm run build
 
