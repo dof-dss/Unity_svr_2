@@ -230,10 +230,10 @@ display:
         type: normal
         title: Publications
         description: ''
-        weight: -46
+        weight: 0
         expanded: false
         menu_name: main
-        parent: ''
+        parent: 'menu_link_content:e5d621bf-7a66-4d88-8dcc-8db48bb062ff'
         context: '0'
     cache_metadata:
       max-age: -1

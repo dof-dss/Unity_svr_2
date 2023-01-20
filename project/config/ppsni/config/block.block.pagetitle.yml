@@ -1,0 +1,24 @@
+uuid: 3bbe1e81-25b7-481f-a8e8-2e881a67e457
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ppsni_theme
+id: pagetitle
+theme: ppsni_theme
+region: content
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "<front>\r\n/search\r\n/news\r\n/news/date/*\r\n/node/*/revisions/view/*\r\n/publications\r\n/publications/date/*\r\n/publications/type/*"
