@@ -7,7 +7,8 @@ label: Production
 description: 'Used for the production site only.'
 weight: 0
 folder: ../project/config/hiaredressni/production
-module: {  }
+module:
+  fastly: 0
 theme: {  }
 blacklist: {  }
 graylist: {  }
