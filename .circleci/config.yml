@@ -17,7 +17,7 @@ custom_npm_docker_image: &custom_npm_docker_image
     - image: cimg/php:8.1-browsers
       environment:
         PLATFORM_REGION: "uk-1.platform.sh"
-        PROJECT_ROOT: "/home/docker/project"
+        PROJECT_ROOT: "/home/circleci/project"
         # git variables to avoid empty committer identity errors
         EMAIL: "circleci@localhost"
         GIT_COMMITTER_NAME: "Circle CI"
