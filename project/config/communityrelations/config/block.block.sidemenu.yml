@@ -1,4 +1,4 @@
-uuid: d9a28698-4105-4516-ae62-b1dd7b2d293f
+uuid: fed30efc-0b39-413c-9444-65fa750e0e89
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,9 @@ dependencies:
     - node
     - system
   theme:
-    - crc_theme
+    - communityrelations_theme
 id: sidemenu
-theme: crc_theme
+theme: communityrelations_theme
 region: sidebar_second
 weight: 0
 provider: null
