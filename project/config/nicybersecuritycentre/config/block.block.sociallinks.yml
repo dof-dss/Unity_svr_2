@@ -1,0 +1,25 @@
+uuid: 91d1343d-db93-479d-84a7-a89ea3a941f7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:0ae84700-a7bc-4942-a5a1-6687110fda49'
+  module:
+    - block_content
+  theme:
+    - nicybersecuritycentre_theme
+id: sociallinks
+theme: nicybersecuritycentre_theme
+region: footer_third
+weight: 0
+provider: null
+plugin: 'block_content:0ae84700-a7bc-4942-a5a1-6687110fda49'
+settings:
+  id: 'block_content:0ae84700-a7bc-4942-a5a1-6687110fda49'
+  label: 'Follow us'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

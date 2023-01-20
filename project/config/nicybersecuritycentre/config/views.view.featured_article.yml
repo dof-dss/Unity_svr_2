@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.home_latest
     - core.entity_view_mode.node.teaser
     - node.type.featured_article
   module:
@@ -93,7 +94,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 3
+          items_per_page: 1
       exposed_form:
         type: basic
         options:
@@ -165,7 +166,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: home_latest
       query:
         type: views_query
         options:
@@ -186,12 +187,49 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  featured_home:
+    id: featured_home
+    display_title: 'Homepage Featured'
+    display_plugin: block
+    position: 2
+    display_options:
+      display_description: ''
+      display_extenders:
+        metatag_display_extender: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
   featured_most_recent:
     id: featured_most_recent
     display_title: 'Most recent'
     display_plugin: block
     position: 1
     display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 3
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
+      defaults:
+        pager: false
+        style: false
+        row: false
       display_description: ''
       display_extenders:
         metatag_display_extender: {  }

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.home_latest
     - entityqueue.entity_queue.useful_contacts
     - entityqueue.entity_queue.useful_contacts_home_x_4
     - node.type.link
@@ -435,15 +436,26 @@ display:
           offset: 0
           items_per_page: 4
       style:
-        type: default
+        type: html_list
+        options:
+          row_class: ''
+          default_row_class: false
+          uses_fields: false
+          type: ul
+          wrapper_class: cyber-list
+          class: ''
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: home_latest
       defaults:
         pager: false
         style: false
         row: false
         relationships: false
         fields: false
+        header: false
       relationships:
         entityqueue_relationship:
           id: entityqueue_relationship
@@ -457,6 +469,20 @@ display:
           required: false
           limit_queue: useful_contacts_home_x_4
       display_description: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "<h2><a href=\"/useful-contacts\">Cyber hub</a></h2>\r\n<p>The Cyber Hub enables quick access to other key sources of cyber related information.</p>"
+            format: basic_html
+          tokenize: false
       display_extenders:
         metatag_display_extender: {  }
     cache_metadata:

@@ -60,6 +60,9 @@ settings:
             - Maximize
             - Source
   plugins:
+    drupallink:
+      linkit_enabled: false
+      linkit_profile: ''
     stylescombo:
       styles: ''
 image_upload:

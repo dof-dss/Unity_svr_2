@@ -1,0 +1,63 @@
+uuid: 3113dedc-672f-4894-88dc-9c6c32fbf783
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.home_latest
+    - field.field.node.link.field_description
+    - field.field.node.link.field_link_url
+    - field.field.node.link.field_meta_tags
+    - field.field.node.link.field_photo
+    - field.field.node.link.field_teaser
+    - node.type.link
+  module:
+    - layout_builder
+    - link
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: 1JRBurDvPd-oZ3jiYRJuNjmfVurzykTVuGOqkKkFdec
+id: node.link.home_latest
+targetEntityType: node
+bundle: link
+mode: home_latest
+content:
+  field_link_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: card_large
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_teaser:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  content_moderation_control: true
+  field_description: true
+  field_meta_tags: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,25 @@
+uuid: f5266b52-115f-43b4-8e36-686e5bd81093
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:1c25d2ff-8a6e-47ba-b730-4fa286e8c5b3'
+  module:
+    - block_content
+  theme:
+    - nicybersecuritycentre_theme
+id: incidentresponse
+theme: nicybersecuritycentre_theme
+region: top_third
+weight: 0
+provider: null
+plugin: 'block_content:1c25d2ff-8a6e-47ba-b730-4fa286e8c5b3'
+settings:
+  id: 'block_content:1c25d2ff-8a6e-47ba-b730-4fa286e8c5b3'
+  label: 'Incident response '
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

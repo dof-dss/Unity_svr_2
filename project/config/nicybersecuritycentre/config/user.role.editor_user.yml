@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.featured_article
     - node.type.link
     - node.type.publication
   module:
