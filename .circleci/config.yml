@@ -67,7 +67,6 @@ commands:
       - run:
           name: Switch dof-dss packages to HEAD on development branch
           command: |
-            cd project
             composer require dof-dss/nicsdru_unity_theme:dev-development \
               dof-dss/nicsdru_origins_modules:dev-development \
                 dof-dss/nicsdru_unity_modules:dev-development
