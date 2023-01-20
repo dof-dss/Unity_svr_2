@@ -173,8 +173,6 @@ jobs:
       - run:
           name: Rebuild site themes
           command: |
-            export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
             nvm install v15.14.0
             for site in `ls -l ~/project/project/sites | grep ^d | awk '{print $9}'`
             do
@@ -182,7 +180,7 @@ jobs:
                 echo "*** Building theme for ${site} ***"
                 cd ~/project/project/sites/${site}/themes/${site}_theme
                 sed -i -e "s/\"nicsdru_unity_theme.*/\"nicsdru_unity_theme\": \"github:dof-dss\/nicsdru_unity_theme#development\",/" package.json
-                npm install --verbose
+                npm install
                 npm rebuild node-sass
                 npm run build
 
