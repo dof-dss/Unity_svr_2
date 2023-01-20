@@ -1,4 +1,4 @@
-uuid: 5f48962c-4b4e-4864-ab5f-7d23a9a969ef
+uuid: fe39660f-8e90-40fe-9eb7-21ad22eefe7b
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - block_content
   theme:
-    - crc_theme
+    - communityrelations_theme
 id: crcinfo
-theme: crc_theme
+theme: communityrelations_theme
 region: footer_first
 weight: -12
 provider: null

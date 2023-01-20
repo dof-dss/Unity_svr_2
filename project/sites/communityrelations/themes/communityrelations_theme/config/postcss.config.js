@@ -15,7 +15,7 @@ module.exports = (ctx) => ({
       cachebuster: true,
       relative: true,
       loadPaths: ['images'],
-      baseUrl: '/themes/crc_theme/'
+      baseUrl: '/themes/communityrelations_theme/'
     }
   }
 })

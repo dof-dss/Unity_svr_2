@@ -1,4 +1,4 @@
-uuid: 95897be3-a630-4583-be82-8fcd183d94f5
+uuid: 2e776e73-7866-42e8-bbea-586eb6ea8b29
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,9 @@ dependencies:
     - system
     - views
   theme:
-    - crc_theme
+    - communityrelations_theme
 id: exposedformnews_searchnews_search_page
-theme: crc_theme
+theme: communityrelations_theme
 region: search_facets
 weight: -5
 provider: null
