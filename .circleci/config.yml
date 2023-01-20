@@ -182,6 +182,8 @@ jobs:
                 echo "*** Building theme for ${site} ***"
                 cd ~/project/project/sites/${site}/themes/${site}_theme
                 sed -i -e "s/\"nicsdru_unity_theme.*/\"nicsdru_unity_theme\": \"github:dof-dss\/nicsdru_unity_theme#development\",/" package.json
+                npm cache clean --force
+                rm -f ~/project/project/sites/${site}/themes/${site}_theme/package-lock.json
                 npm install
                 npm install -g npm-run-all
                 npm rebuild node-sass
