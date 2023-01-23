@@ -18,8 +18,7 @@ custom_npm_docker_image: &custom_npm_docker_image
       environment:
         PLATFORM_REGION: "uk-1.platform.sh"
         PROJECT_ROOT: "/home/docker/project"
-        PHP_EXTENSION_GD: 1
-        PHP_EXTENSIONS: "gd pcntl posix"
+        PHP_EXTENSIONS: "gd"
         # git variables to avoid empty committer identity errors
         EMAIL: "circleci@localhost"
         GIT_COMMITTER_NAME: "Circle CI"
