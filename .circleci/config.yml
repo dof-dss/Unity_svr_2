@@ -14,7 +14,7 @@ default_docker_image: &docker_image
         PHP_INI_MAX_INPUT_TIME: 60
 custom_npm_docker_image: &custom_npm_docker_image
   docker:
-    - image: circleci/php:8.1-apache-browsers
+    - image: cimg/php:8.1-browsers
       environment:
         PLATFORM_REGION: "uk-1.platform.sh"
         PROJECT_ROOT: "/home/circleci/project"
@@ -147,11 +147,7 @@ jobs:
       - run:
           name: Add OS and PHP extensions
           command: |
-            sudo cp $PROJECT_ROOT/.circleci/docker-php-circleci.ini /usr/local/etc/php/conf.d/
-            wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-            sudo apt update --allow-releaseinfo-change
-            sudo apt install -y libpng-dev
-            sudo docker-php-ext-install gd pcntl posix
+            sudo apt-get update
       - install_psh_cli
       - run:
           name: Switch to edge branch
@@ -167,17 +163,15 @@ jobs:
           command: |
             # Need to re-build site theme with any Unity changes.
             # Download and configure node and npm.
-            sudo apt install libjpeg-dev automake python -y
-            git clone https://github.com/nvm-sh/nvm.git
-            cd nvm
-            chmod +x install.sh
-            ./install.sh
+            alias python=python3
+            curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
       - run:
           name: Rebuild site themes
           command: |
-            export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-            nvm install v15.14.0
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+            [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+            nvm install v14.17.5
             for site in `ls -l ~/project/project/sites | grep ^d | awk '{print $9}'`
             do
               if [[ -d ~/project/project/sites/${site}/themes/${site}_theme ]]; then
@@ -310,34 +304,8 @@ workflows:
 
   # A nightly build of the project, using all dof-dss packages at HEAD from development branch.
   nightly-edge-build:
-    when:
-      and:
-        - not:
-          equal: [ "https://github.com/dof-dss/unity_base", << pipeline.project.git_url >> ]
-    triggers:
-      - schedule:
-          # At 00:30 Monday to Friday
-          cron: "30 0 * * 1-5"
-          filters:
-            branches:
-              only:
-                - development
     jobs:
       - edge_build
-
-  # A nightly deploy or re-deploy of the edge site after the git branch has been created in nightly-edge-build.
-  nightly-edge-build-post-build-tasks:
-    when:
-      and:
-        - not:
-          equal: [ "https://github.com/dof-dss/unity_base", << pipeline.project.git_url >> ]
-    triggers:
-      - schedule:
-          # At 01:23 Monday to Friday
-          cron: "55 1 * * 1-5"
-          filters:
-            branches:
-              only:
-                - edge
-    jobs:
-      - sync_data
+      - sync_data:
+          requires:
+            - edge_build
