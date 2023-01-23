@@ -1,4 +1,4 @@
-uuid: b4324006-4158-4031-b424-a9a2d8e23ed0
+uuid: 04d45030-20a5-4998-bc0a-1e359236e1f9
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,9 @@ dependencies:
     - facets
     - system
   theme:
-    - src_theme
+    - sentencereview_theme
 id: publicationtype
-theme: src_theme
+theme: sentencereview_theme
 region: search_facets
 weight: -2
 provider: null

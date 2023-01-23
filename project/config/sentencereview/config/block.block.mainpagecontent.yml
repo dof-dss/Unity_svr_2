@@ -1,15 +1,15 @@
-uuid: dabc3fc4-c925-424d-96da-ffc9f533d071
+uuid: 1b28173b-802e-4250-b708-c6b06d2d2c0e
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - src_theme
+    - sentencereview_theme
 id: mainpagecontent
-theme: src_theme
+theme: sentencereview_theme
 region: content
-weight: -1
+weight: -3
 provider: null
 plugin: system_main_block
 settings:
