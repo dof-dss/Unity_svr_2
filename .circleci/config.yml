@@ -167,7 +167,7 @@ jobs:
           command: |
             # Need to re-build site theme with any Unity changes.
             # Download and configure node and npm.
-            sudo apt install libjpeg-dev automake python -y
+            sudo apt install libjpeg-dev make python g++ -y
             git clone https://github.com/nvm-sh/nvm.git
             cd nvm
             chmod +x install.sh
