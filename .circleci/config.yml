@@ -172,7 +172,7 @@ jobs:
             [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
             [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
             nvm install v15.14.0
-            for site in `ls -l ~/project/project/sites | grep ^d | awk '{print $9}'`
+            for site in `ls -l ~/project/project/sites | grep ^d | awk '{print $9}' | tail +2`
             do
               if [[ -d ~/project/project/sites/${site}/themes/${site}_theme ]]; then
                 echo "*** Building theme for ${site} ***"
