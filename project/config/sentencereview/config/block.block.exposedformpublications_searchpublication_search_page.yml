@@ -1,4 +1,4 @@
-uuid: 02b40043-ff1e-447a-9a28-aad1ebfbb722
+uuid: 8c37d4ef-4e23-4f7d-a29d-89176ed0cdba
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,9 @@ dependencies:
     - system
     - views
   theme:
-    - src_theme
+    - sentencereview_theme
 id: exposedformpublications_searchpublication_search_page
-theme: src_theme
+theme: sentencereview_theme
 region: search_facets
 weight: -4
 provider: null
