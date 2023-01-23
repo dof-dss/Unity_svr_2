@@ -1,13 +1,13 @@
-uuid: 76f8093e-3c2b-4c8a-b170-5a9028dc6310
+uuid: 124469fb-f5ae-4d23-8cf5-300e94574f95
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - src_theme
+    - sentencereview_theme
 id: sitebranding
-theme: src_theme
+theme: sentencereview_theme
 region: header
 weight: 0
 provider: null
