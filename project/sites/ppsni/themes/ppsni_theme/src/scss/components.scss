@@ -58,3 +58,19 @@
     }
   }
 }
+.front {
+  #slick-views-slideshow-slideshow-1-slider {
+    .slide__caption {
+      @include breakpoint($tab) {
+        background: rgba(0, 0, 0, 0.6);
+        font-size: 2rem;
+        padding: 1rem 1rem 1rem 1rem;
+      }
+
+      .slide__caption {
+        font-size: 2rem;
+        padding: 1rem 1rem 1rem 1rem;
+      }
+    }
+  }
+}
