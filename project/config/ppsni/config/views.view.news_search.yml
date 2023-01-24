@@ -23,7 +23,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'News Search'
+      title: News
       fields:
         body:
           id: body
@@ -251,13 +251,14 @@ display:
     position: 1
     display_options:
       cache:
-        type: none
+        type: search_api_tag
+        options: {  }
       defaults:
         cache: false
       exposed_block: true
       display_extenders:
         metatag_display_extender: {  }
-      path: News
+      path: news
       menu:
         type: normal
         title: News
