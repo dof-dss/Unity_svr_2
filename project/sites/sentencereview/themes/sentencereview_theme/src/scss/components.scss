@@ -1,0 +1,110 @@
+/*
+ * @file
+ * Defines the components for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+#main-menu {
+  .menu {
+    .menu-item {
+      border-right: 1px solid #fff;
+      font-size: $p-font-size;
+
+      @media screen and (max-width: $tab) {
+        border-right: none;
+      }
+
+      &:last-child {
+        border-right: 0;
+      }
+
+      &.open {
+        .menu-toggle-btn {
+          background-color: $white;
+          font-weight: normal;
+          color: $text;
+        }
+      }
+
+      .active {
+        background: $menu-item-hover;
+        border-bottom-color: $brand-primary;
+        color: #fff;
+      }
+    }
+  }
+
+  .menu-link,
+  .menu .active {
+    color: $charcoal;
+    border-bottom: 5px solid transparent;
+
+    @media screen and (max-width: $tab) {
+      text-align: center;
+    }
+
+    &:hover {
+      color: #fff;
+      border-bottom-color: $brand-primary;
+    }
+
+    &:focus {
+      background-color: $brand-primary;
+      border-bottom-color: $brand-primary;
+      color: $black;
+    }
+  }
+
+  .menu-main_sub {
+    background: $menu-sub-item-background;
+
+    .menu-item {
+      border-right: none;
+
+      @media screen and (max-width: $tab) {
+        background: $menu-sub-item-background;
+      }
+    }
+
+    .menu-link,
+    .menu-item span.active {
+      @media screen and (max-width: $tab) {
+        text-align: center;
+      }
+
+      &.active {
+        background: lighten($charcoal, 10%);
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.node-type-publication {
+  .content-sidebar-wrap {
+    @include breakpoint($tab) {
+      width: 65%;
+    }
+  }
+}
+
+.published-date {
+  font-weight: bold;
+}
+
+.front {
+  .content-sidebar-wrap {
+    width: 65%;
+  }
+}
+
+.footer-area .column:last-child {
+  float: none;
+  width: unset;
+}
+
+#footer .column li {
+  display: inline;
+  padding: 2rem;
+}

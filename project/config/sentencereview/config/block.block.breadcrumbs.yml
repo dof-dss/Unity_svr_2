@@ -1,13 +1,13 @@
-uuid: a85154e8-aa9a-4cf9-a919-779477afe33d
+uuid: 370dd728-1c88-441c-b4b3-787ee31f8b47
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - src_theme
+    - sentencereview_theme
 id: breadcrumbs
-theme: src_theme
+theme: sentencereview_theme
 region: breadcrumb
 weight: 0
 provider: null
