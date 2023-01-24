@@ -147,20 +147,6 @@ filters:
       thumbnail_effect: ''
       thumbnail_position: ''
       override: false
-  cookie_content_blocker_filter:
-    id: cookie_content_blocker_filter
-    provider: cookie_content_blocker
-    status: true
-    weight: -35
-    settings:
-      disable_xss: '1'
-  origins_media_cookie_content_blocker_embed_filter:
-    id: origins_media_cookie_content_blocker_embed_filter
-    provider: origins_common
-    status: true
-    weight: -47
-    settings:
-      replacement_text: 'Click here to view the video content'
   blazy_filter:
     id: blazy_filter
     provider: blazy
@@ -172,6 +158,13 @@ filters:
         iframe: iframe
       media_switch: ''
       use_data_uri: '0'
+  cookie_content_blocker_filter:
+    id: cookie_content_blocker_filter
+    provider: cookie_content_blocker
+    status: true
+    weight: -35
+    settings:
+      disable_xss: '1'
   linkit:
     id: linkit
     provider: linkit
@@ -179,3 +172,10 @@ filters:
     weight: -36
     settings:
       title: true
+  origins_media_cookie_content_blocker_embed_filter:
+    id: origins_media_cookie_content_blocker_embed_filter
+    provider: origins_common
+    status: true
+    weight: -47
+    settings:
+      replacement_text: 'Click here to view the video content'
