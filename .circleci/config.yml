@@ -151,7 +151,7 @@ jobs:
           command: |
             wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
             sudo apt update --allow-releaseinfo-change
-            sudo apt install -y libpng-dev
+            sudo apt install libjpeg-dev make python g++ -y
       - install_psh_cli
       - run:
           name: Switch to edge branch
@@ -167,7 +167,6 @@ jobs:
           command: |
             # Need to re-build site theme with any Unity changes.
             # Download and configure node and npm.
-            sudo apt install libjpeg-dev make python g++ -y
             git clone https://github.com/nvm-sh/nvm.git
             cd nvm
             chmod +x install.sh
