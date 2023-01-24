@@ -1,0 +1,25 @@
+uuid: e4e33ee0-5a12-4ff3-ad30-1fcf5dab995f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:d33e5b82-49b6-4792-b609-b5b2b9002fa1'
+  module:
+    - block_content
+  theme:
+    - ppsni_theme
+id: twitterblock
+theme: ppsni_theme
+region: bottom_widget_3
+weight: -8
+provider: null
+plugin: 'block_content:d33e5b82-49b6-4792-b609-b5b2b9002fa1'
+settings:
+  id: 'block_content:d33e5b82-49b6-4792-b609-b5b2b9002fa1'
+  label: 'Twitter block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

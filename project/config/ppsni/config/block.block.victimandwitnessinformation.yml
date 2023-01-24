@@ -1,0 +1,30 @@
+uuid: 00907015-5769-43b3-814f-0a769571cb84
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:fbbec229-8750-45e7-b152-5d96994bc0ae'
+  module:
+    - block_content
+    - system
+  theme:
+    - ppsni_theme
+id: victimandwitnessinformation
+theme: ppsni_theme
+region: footer_first
+weight: -9
+provider: null
+plugin: 'block_content:fbbec229-8750-45e7-b152-5d96994bc0ae'
+settings:
+  id: 'block_content:fbbec229-8750-45e7-b152-5d96994bc0ae'
+  label: 'Victim and Witness Information'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

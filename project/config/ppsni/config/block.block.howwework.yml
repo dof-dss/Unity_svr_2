@@ -1,0 +1,30 @@
+uuid: 4810ab8d-0ee5-486d-8333-e1c6a91f2b1f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:0474ea51-31a9-4710-a70f-8fb732c16807'
+  module:
+    - block_content
+    - system
+  theme:
+    - ppsni_theme
+id: howwework
+theme: ppsni_theme
+region: footer_first
+weight: -10
+provider: null
+plugin: 'block_content:0474ea51-31a9-4710-a70f-8fb732c16807'
+settings:
+  id: 'block_content:0474ea51-31a9-4710-a70f-8fb732c16807'
+  label: 'How we work'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
