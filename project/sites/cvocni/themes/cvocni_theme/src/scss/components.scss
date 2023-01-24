@@ -21,6 +21,10 @@
   }
 }
 
+.top_left #logo img {
+  height: 150px;
+}
+
 #main-menu {
   background: $white;
   .menu-link,
@@ -99,6 +103,11 @@
     a.btn {
       background: #6d0d96;
       border-radius: 2.3rem;
+
+        &:hover,
+        &:focus {
+          background: $black;
+        }
     }
 
     h2 {

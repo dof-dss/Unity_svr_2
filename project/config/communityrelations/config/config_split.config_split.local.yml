@@ -6,8 +6,9 @@ id: local
 label: local
 description: ''
 weight: 0
-folder: ../project/config/crc/local
+folder: ../project/config/communityrelations/local
 module:
+  clone_nodes: 0
   crc_migrations: 0
   dblog: 0
   easy_install: 0

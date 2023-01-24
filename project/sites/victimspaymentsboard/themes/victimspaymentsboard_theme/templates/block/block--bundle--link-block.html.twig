@@ -45,7 +45,7 @@
   {% block content %}
     <div{{ content_attributes.addClass('content') }}>
       <a href="{{ content.field_link[0]["#url"]|render }}">
-        {{ content|without("field_link") }}</a>
+        {{ content|without("field_link") }}
       </a>
     </div>
   {% endblock %}

@@ -1,0 +1,288 @@
+/*
+ * @file
+ * Defines the components for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+.top_left #logo {
+  @include breakpoint($tab) {
+    img {
+      height: 14rem;
+    }
+  }
+}
+
+.region-front-welcome {
+  background: resolve('crc-banner-img.png') no-repeat 50%;
+  padding: 5rem 5rem 5rem 5rem;
+}
+
+#block-frontpagebanner {
+  background: rgba(72, 119, 195, 0.85);
+  padding: 2.6rem 0 2rem;
+
+  h2 {
+    @include adjust-font-size-to(55px);
+    color: white;
+    line-height: 1.5;
+  }
+
+  a.btn {
+    background: #0e1b5b;
+    font-size: 2.1rem;
+    line-height: 3.5rem;
+    padding: 1rem 2.8rem;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus {
+      opacity: .7;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+.region-primary-menu .menu_wrapper {
+  @include breakpoint($tab) {
+    margin-top: 4rem;
+  }
+}
+
+#main-menu {
+  background: $white;
+
+  .menu-link,
+  .menu .active,
+  .menu-item.open .menu-toggle-btn {
+    color: $brand-primary;
+    @include adjust-font-size-to(16px);
+  }
+
+  .menu
+  .menu-item
+  .active {
+    border-bottom-color: $brand-primary;
+  }
+
+  .menu-link {
+    &:hover,
+    &:focus {
+      background: $brand-primary;
+      color: $white;
+    }
+  }
+
+  .menu-main_sub
+  .menu-item
+  span.active {
+    @include adjust-font-size-to(14px);
+    border-bottom-color: $brand-secondary;
+    padding: 1rem;
+  }
+
+  .menu-main_sub {
+    background: $brand-primary;
+
+    .menu-item {
+      .active {
+        background: $brand-secondary;
+        color: $white;
+      }
+
+      a {
+        &:hover,
+        &:focus {
+          color: $white;
+          background: $brand-secondary;
+        }
+      }
+    }
+  }
+}
+
+#top-area {
+  .column {
+    width: 50%;
+    margin: 0;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0;
+    color: $black;
+  }
+  h2.title {
+    font-size: 1.8rem;
+  }
+  .more-link {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+}
+
+.region-top-first {
+  padding: 2rem;
+
+  table {
+    border: 0px;
+
+    td {
+      background: $white;
+      border: $white;
+    }
+  }
+}
+
+.region-top-second {
+  background: #9f268a;
+  padding: 2rem;
+
+  h2 {
+    color: $white;
+  }
+
+  table {
+    border: 0px;
+
+    td {
+      background: #9f268a;
+      border: #9f268a;
+    }
+  }
+}
+
+
+.region-top-third {
+  background: #4e780b;
+  padding: 2rem;
+}
+.region-top-fourth {
+  background: resolve('crc-subscribe-bg.png') repeat 50%;;
+  padding: 2rem;
+  height: 67rem;
+
+    h2 {
+      color: $white;
+    }
+    p {
+      color: $white;
+      text-align: left;
+    }
+}
+
+#latest-event-home {
+  background: #9f268a;
+
+    h2, a , p {
+      color: $white;
+    }
+}
+
+#twitter-home {
+  h2, a {
+    color: $white;
+  }
+}
+
+#block-views-block-latest-events-block-1 {
+    h2 {
+      color: $white;
+    }
+    span {
+      color: $white;
+    }
+}
+
+#block-subscribe {
+    h2 {
+      color: $white;
+  }
+}
+
+.sidebar-second .sidebar-second-layout {
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+
+  h2 {
+    @include responsive-typo-map($h2-text);
+    padding: 0;
+    font-size: 2.8rem;
+    margin: 0.4rem 0rem 0.2rem 0rem;
+  }
+
+  h2.title {
+    font-size:1.8rem;
+    line-height: 1.5;
+  }
+
+  p.published-date {
+    font-size: 1.6rem;
+    margin-bottom: 0rem;
+  }
+
+  ul {
+    margin-bottom: 1rem;
+
+    li {
+      padding: 0 0 .6rem 1rem;
+      list-style: none;
+      margin: 0 0 .2rem;
+      position: relative;
+
+      &::before {
+        content: "-";
+        left: 0;
+        position: absolute;
+        top: 0;
+      }
+
+      .date-published {
+        display: block;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+      }
+    }
+  }
+}
+
+#footer-area .block {
+  h2 {
+    color: $black;
+    font-size: 2.5rem;
+  }
+}
+
+#footer {
+  //max-width: 1160px;
+  padding: 2rem;
+
+  @include breakpoint($tab) {
+    padding: 2%;
+  }
+
+  .footer-menu li {
+    padding-left: 0;
+    font-size: 1.6rem;
+    list-style-type: none;
+
+    @include breakpoint($mob) {
+      display: inline-block;
+      padding: 0 .8rem 0 0;
+      line-height: 1.8rem;
+      margin-right: .5rem;
+    }
+
+    a {
+      @media screen and (min-width: $mob) {
+        display: block;
+      }
+    }
+  }
+}

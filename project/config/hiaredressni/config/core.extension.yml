@@ -51,10 +51,6 @@ module:
   geocoder_address: 0
   geocoder_field: 0
   geolocation: 0
-  geolocation_google_maps: 0
-  geolocation_google_static_maps: 0
-  geolocation_search_api: 0
-  google_analytics: 0
   google_tag: 0
   handy_cache_tags: 0
   help: 0
@@ -122,7 +118,6 @@ module:
   unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0
-  unity_map_embed: 0
   unity_search_pages: 0
   user: 0
   views_custom_cache_tag: 0

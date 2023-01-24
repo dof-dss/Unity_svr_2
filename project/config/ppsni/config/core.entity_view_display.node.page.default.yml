@@ -1,0 +1,40 @@
+uuid: 7f645747-0b9a-4e1a-9be7-4476d07df21a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_enable_toc
+    - field.field.node.page.field_meta_tags
+    - field.field.node.page.field_next_audit_due
+    - node.type.page
+  module:
+    - metatag
+    - text
+    - user
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  content_moderation_control: true
+  field_enable_toc: true
+  field_next_audit_due: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,29 @@
+uuid: f3b2ccf9-656c-41d9-bbec-4eeee5c2a9a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_events
+  module:
+    - system
+    - views
+  theme:
+    - communityrelations_theme
+id: views_block__latest_events_latest_events
+theme: communityrelations_theme
+region: top_second
+weight: 0
+provider: null
+plugin: 'views_block:latest_events-latest_events'
+settings:
+  id: 'views_block:latest_events-latest_events'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,28 @@
+uuid: c1529410-a991-40d0-b0f1-a91858011534
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.published_date
+  module:
+    - facets
+    - system
+  theme:
+    - ppsni_theme
+id: publisheddate
+theme: ppsni_theme
+region: search_facets
+weight: -4
+provider: null
+plugin: 'facet_block:published_date'
+settings:
+  id: 'facet_block:published_date'
+  label: 'Published date'
+  label_display: visible
+  provider: facets
+  block_id: publisheddate
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/news\r\n/news/date/*"

@@ -1,0 +1,20 @@
+uuid: c4e36173-5baf-4c79-927c-9edcf752b453
+langcode: en
+status: true
+dependencies: {  }
+id: migrate_drupal_7
+label: 'Import from Drupal 7'
+description: 'Migrations originally generated from drush migrate-upgrade --configure-only'
+source_type: 'Drupal 7'
+module: null
+shared_configuration:
+  source:
+    key: drupal_7
+    database:
+      driver: mysql
+      username: drupal9
+      password: drupal9
+      host: database
+      port: ''
+      database: nicybersecuritycentre_legacy
+      prefix: null

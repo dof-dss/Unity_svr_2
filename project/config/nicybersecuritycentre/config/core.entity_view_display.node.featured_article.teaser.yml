@@ -1,0 +1,43 @@
+uuid: 6a76942b-9be8-43e9-a52d-3e30c9722b76
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.featured_article.body
+    - field.field.node.featured_article.field_meta_tags
+    - field.field.node.featured_article.field_photo
+    - field.field.node.featured_article.field_published_date
+    - field.field.node.featured_article.field_teaser
+    - node.type.featured_article
+  module:
+    - user
+id: node.featured_article.teaser
+targetEntityType: node
+bundle: featured_article
+mode: teaser
+content:
+  field_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: unity_3_col_images
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_teaser:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  content_moderation_control: true
+  field_meta_tags: true
+  field_published_date: true
+  langcode: true
+  links: true

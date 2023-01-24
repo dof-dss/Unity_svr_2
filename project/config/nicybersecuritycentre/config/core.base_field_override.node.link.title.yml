@@ -1,0 +1,20 @@
+uuid: 0222d0d6-a314-459c-b5e6-378eb42fe6bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.link
+_core:
+  default_config_hash: q_2cZuele0KIEVykW6zqIt0KA_IDPkljL8rEziOEK4w
+id: node.link.title
+field_name: title
+entity_type: node
+bundle: link
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,32 @@
+uuid: 79dfc6e6-360d-47a5-b2de-cc6db395c77b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_news_list
+  module:
+    - node
+    - views
+  theme:
+    - communityrelations_theme
+id: views_block__latest_news_list_latest_news
+theme: communityrelations_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:latest_news_list-latest_news'
+settings:
+  id: 'views_block:latest_news_list-latest_news'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      news: news

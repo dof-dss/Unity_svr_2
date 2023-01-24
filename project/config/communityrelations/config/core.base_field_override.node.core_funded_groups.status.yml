@@ -1,0 +1,22 @@
+uuid: 4c8bba89-80e7-4ece-9cc6-29162b9603ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.core_funded_groups
+id: node.core_funded_groups.status
+field_name: status
+entity_type: node
+bundle: core_funded_groups
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

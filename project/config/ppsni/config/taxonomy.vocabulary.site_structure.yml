@@ -1,0 +1,8 @@
+uuid: ee27b667-d204-4fca-89b3-3b7efc7b1973
+langcode: en
+status: true
+dependencies: {  }
+name: 'Site structure'
+vid: site_structure
+description: 'Enables content to be structured into areas of work'
+weight: 0

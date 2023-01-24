@@ -1,0 +1,25 @@
+uuid: 189979f0-efe3-428d-b464-b242c9d95ba8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:2358a373-7783-40a1-a73f-5462e15260d0'
+  module:
+    - block_content
+  theme:
+    - communityrelations_theme
+id: usefullinks
+theme: communityrelations_theme
+region: footer_second
+weight: -12
+provider: null
+plugin: 'block_content:2358a373-7783-40a1-a73f-5462e15260d0'
+settings:
+  id: 'block_content:2358a373-7783-40a1-a73f-5462e15260d0'
+  label: 'Useful Links'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 1b28173b-802e-4250-b708-c6b06d2d2c0e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sentencereview_theme
+id: mainpagecontent
+theme: sentencereview_theme
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

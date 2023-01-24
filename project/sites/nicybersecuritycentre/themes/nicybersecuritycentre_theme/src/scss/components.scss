@@ -1,0 +1,369 @@
+/*
+ * @file
+ * Defines the components for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+.node-type-featured-article {
+  #sidebar-second {
+    float: none;
+
+    @include breakpoint($tab) {
+      width: 65%;
+    }
+  }
+
+  .most-recent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    article {
+      position: relative;
+      padding-bottom: 3rem;
+      margin-bottom: 2rem;
+
+      @include breakpoint($mob) {
+        flex-basis: 20rem;
+      }
+    }
+
+    h3 {
+      @include adjust-font-size-to(21px);
+      margin: 2.4rem 0 1.2rem;
+    }
+
+    .view-footer {
+      position: absolute;
+      bottom: 0;
+      list-style: none;
+
+      a {
+        display: block;
+      }
+    }
+  }
+}
+
+#block-cyberheaderdescription {
+  max-width: 1024px;
+  margin: 0 auto;
+
+  .content {
+    max-width: 90%;
+    padding-left: 1rem;
+
+    @include breakpoint($lap) {
+      padding-left: 0;
+    }
+
+    h2 {
+      color: $white;
+    }
+  }
+}
+
+#block-views-block-featured-article-featured-home {
+  article {
+    @include breakpoint($tab) {
+      display: flex;
+      column-gap: 4rem;
+    }
+
+    .group-left {
+      @include breakpoint($tab) {
+        flex: 2;
+      }
+    }
+
+    .group-right {
+      text-align: left;
+      position: relative;
+
+      h2 {
+        margin-top: 1.2rem;
+        text-align: left;
+      }
+
+      @include breakpoint($tab) {
+        flex: 1;
+
+        p:last-of-type {
+          @include adjust-font-size-to(24px);
+          line-height: 2.7rem;
+        }
+
+        .view-footer {
+          position: absolute;
+          bottom: 3.3rem;
+        }
+      }
+    }
+  }
+
+  .content article .group-left a {
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+#header_wrapper {
+  background: $brand-primary resolve('cyber-header-bg.png') no-repeat;
+  padding: 1rem 0 1rem;
+  background-size: cover;
+}
+
+#content #block-views-block-featured-article-featured-home .content article .group-left a {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+#top-area {
+  background: $offwhite;
+  max-width: 100%;
+
+  h2,
+  p {
+    color: $text;
+  }
+
+  .advice-head {
+    color: $link;
+    @include responsive-typo-map($h1-text);
+    margin: 0;
+    line-height: 6rem;
+  }
+
+  .content {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .column {
+      float: none;
+      width: 100%;
+      text-align: left;
+
+      @include breakpoint($tab) {
+        width: 30rem;
+
+        p {
+          letter-spacing: 0.2px;
+        }
+      }
+    }
+  }
+}
+
+#bottom-area {
+  header {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+
+  #block-views-block-useful-contacts-useful-contacts-home .cyber-list ul:first-child li a {
+    border-bottom: none;
+
+    &:focus,
+    &:hover {
+      padding: 0;
+      margin: 0;
+      outline: 2px solid $black;
+      outline-offset: 7px;
+      background: $grey-lightest;
+    }
+  }
+
+  .column {
+    &:first-child {
+      width: 100%;
+      margin: 0;
+      padding: 1rem;
+    }
+  }
+
+  .footer-area {
+    .column:last-child {
+      float: none;
+    }
+  }
+
+  .cyber-list ul:first-child {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+
+    li {
+      display: flex;
+
+      article {
+        display: flex;
+        padding: 1rem;
+
+        &:focus,
+        &:hover {
+          background: $grey-lightest;
+        }
+
+        h3 {
+          color: $link;
+        }
+      }
+
+      @include breakpoint($tab) {
+        width: 22.5rem;
+      }
+    }
+
+    .field-photo {
+      display: flex;
+      align-items: center;
+
+      .media-image {
+        margin: 0;
+
+        &[data-picture-mapping="card_large"] > img {
+          max-width: 205px;
+        }
+      }
+    }
+  }
+}
+
+.path-useful-contacts {
+  .content-sidebar-wrap {
+    @include breakpoint($tab) {
+      width: 65%;
+    }
+  }
+
+  p {
+    overflow: hidden;
+  }
+
+  .cyberItem {
+    display: flex;
+  }
+
+  .media-image[data-picture-mapping="inline"] > img {
+    max-width: 180px;
+  }
+}
+
+#footer {
+  max-width: 100%;
+
+  #footer-area .footer-menu .menu .menu-item a,
+  #footer_wrapper .footer_credit .footer-menu .menu .menu-item a {
+    padding: 0;
+    margin: 0;
+  }
+
+  #block-cispandincidentfooter {
+    ul {
+      margin-left: 1.7rem;
+
+      @include breakpoint($tab) {
+        margin: 0;
+      }
+    }
+
+     li {
+      display: list-item;
+      padding: 0;
+      border: none
+    }
+  }
+
+  .footer-area {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+
+    .column {
+      float: none;
+      width: unset;
+      flex-basis: 17rem;
+
+      &:first-child {
+        padding-left: 0;
+        margin-left: 0;
+        flex-basis: 25rem;
+      }
+
+      &:nth-child(2) {
+        padding-left: 0;
+        margin-left: 0;
+        flex-basis: 49rem;
+      }
+
+      &:last-child {
+        padding-left: 0;
+      }
+    }
+
+    .social-icons {
+      margin: 0;
+    }
+  }
+
+  .footer-menu {
+    margin-top: 2.4rem;
+
+    li {
+      padding-left: 0;
+      font-size: 1.4rem;
+      display: block;
+
+      @include breakpoint($tab) {
+        display: inline-block;
+        padding: 0 .8rem 0 0;
+        line-height: 1.8rem;
+        margin-right: .5rem;
+      }
+    }
+  }
+}
+
+.path-webform {
+  @include breakpoint($tab) {
+    .content-sidebar-wrap {
+      width: 65%;
+    }
+  }
+
+  .webform-submission-form input[type="submit"] {
+    background: $link none;
+    line-height: 1.5;
+    border: 3px solid transparent;
+    color: #fff;
+    font-weight: normal;
+    text-shadow: none;
+    text-underline-offset: .25em;
+    box-shadow: none;
+    margin: 1rem 0 0;
+    text-align: center;
+    padding: .6rem 1.6rem;
+    cursor: pointer;
+    border-radius: 0;
+
+    &:hover,
+    &:focus {
+      background: $ash-grey;
+      outline: none;
+      opacity: 1;
+    }
+
+    &:focus {
+      border-color: $black;
+    }
+  }
+}

@@ -7,7 +7,7 @@
 #############################################################################
 db:
     type: 'mariadb:10.4'
-    disk: 8000
+    disk: 6144
     configuration:
         schemas:
             - mentalhealthchampionnidb
@@ -21,6 +21,8 @@ db:
             - nijacdb
             - communityrelationsdb
             - sentencereviewdb
+            - nicybersecuritycentredb
+            - ppsnidb
         endpoints:
             mentalhealthchampionni:
                 default_schema: mentalhealthchampionnidb
@@ -66,6 +68,14 @@ db:
                 default_schema: sentencereviewdb
                 privileges:
                     sentencereviewdb: admin
+            nicybersecuritycentre:
+                default_schema: nicybersecuritycentredb
+                privileges:
+                    nicybersecuritycentredb: admin
+            ppsni:
+                default_schema: ppsnidb
+                privileges:
+                    ppsnidb: admin
 solr:
     type: 'solr:7.7'
     disk: 1024
@@ -93,6 +103,10 @@ solr:
                 conf_dir: !archive solr_config/
             sentencereview_index:
                 conf_dir: !archive solr_config/
+            nicybersecuritycentre_index:
+                conf_dir: !archive solr_config/
+            ppsni_index:
+                conf_dir: !archive solr_config/
         endpoints:
             mentalhealthchampionni:
                 core: mentalhealthchampionni_index
@@ -116,5 +130,9 @@ solr:
                 core: communityrelations_index
             sentencereview:
                 core: sentencereview_index
+            nicybersecuritycentre:
+                core: nicybersecuritycentre_index
+            ppsni:
+                core: ppsni_index
 redis:
     type: 'redis:6.0'

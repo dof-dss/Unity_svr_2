@@ -12,7 +12,7 @@ entity_type: node
 bundle: news
 label: 'News type'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

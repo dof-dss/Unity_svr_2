@@ -1,135 +1,5 @@
 blocks:
   -
-    info: 'CRC Info on footer'
-    langcode: en
-    uuid: 9f038275-2e19-499c-a1ad-7f4d55b5ee4b
-    bundle: basic
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: '<address><strong>NI Community Relations Council</strong><br />2nd Floor<br />Equality House<br />7-9 Shaftesbury Square<br />Belfast<br />BT2 7DB<br /><a href="mailto:info@nicrc.org.uk">info@nicrc.org.uk</a><br />Tel: +44 (0) 28 9022 7500</address>'
-          summary: null
-          format: filtered_html
-  -
-    info: 'Social icons'
-    langcode: en
-    uuid: 9e1d6dc4-5416-41e5-803a-6e2f366ace3f
-    bundle: basic
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: '<p>Social icons</p>'
-          summary: null
-          format: filtered_html
-  -
-    info: Credits
-    langcode: en
-    uuid: 8d019167-8752-45f0-a1c6-357eb4bb1ae9
-    bundle: basic
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: '<p><small>&copy; Community Relations Council</small></p>'
-          summary: null
-          format: plain_text
-  -
-    info: 'NI exec and T:buc logos'
-    langcode: en
-    uuid: 1458f375-e2dd-4748-a9a0-3dd9770d41aa
-    bundle: basic
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: '<div><img alt="Northern Ireland Executive logo" class="media-element file-default" data-delta="1" src="/sites/crc/files/media-files/ni-executive-rev.png" width="240" height="60"><img alt="T:Buc logo" class="media-element file-default" data-delta="2" src="/sites/crc/files/media-files/tbuc-logo-reversed.png" width="131" height="60"></div>'
-          summary: null
-          format: filtered_html
-  -
-    info: 'A block to add a youtube description and link'
-    langcode: en
-    uuid: 79138a7d-07d3-4994-9847-17336a8a1db7
-    bundle: basic
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: '<p>[[{"fid":"618","view_mode":"default","fields":{"format":"default","field_file_image_caption_text[und][0][value]":""},"type":"media","field_deltas":{"1":{"format":"default","field_file_image_caption_text[und][0][value]":""}},"link_text":null,"attributes":{"class":"media-element file-default","data-delta":"1"}}]]</p><h2>Watch our videos on youtube</h2><p><span><a href="http://www.youtube.com/channel/UCBtSZAanddpQpHiGrkO3gVQ">Find more</a></span></p>'
-          summary: null
-          format: filtered_html
-  -
-    info: 'Feedblitz Subscribe block'
-    langcode: en
-    uuid: 03cb6488-8259-4430-812c-60a136c825b0
-    bundle: basic
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: '<p>Subscribe here to our monthly events list and quarterly newsletter</p>'
-          summary: null
-          format: filtered_html
-  -
-    info: 'Equity, diversity, interdependence'
-    langcode: en
-    uuid: 2f67d510-e64b-4b36-bb02-33c3eeb8a1be
-    bundle: basic
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: '<h2>Equity, diversity, interconnectedness</h2><p><a class="btn" href="/node/1">Find out more about us</a></p>'
-          summary: null
-          format: filtered_html
-  -
-    info: 'CRC online footer info'
-    langcode: en
-    uuid: ef13f3cc-210d-4a87-a8c8-6cc734e93ea6
-    bundle: basic
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: '<address><a href="mailto:info@nicrc.org.uk">info@nicrc.org.uk</a></address><address><a href="http://www.nicrc.org.uk">www.nicrc.org.uk</a></address><address>Tel: +44 (0) 28 9022 7500</address>'
-          summary: null
-          format: filtered_html
-  -
-    info: 'Funding map 2021'
-    langcode: en
-    uuid: d8ad4f72-32a7-4c61-bbee-40ccda7956c4
-    bundle: basic
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: '<p>See block--block--9.tpl.php</p>'
-          summary: null
-          format: filtered_html
-  -
-    info: 'Funding map 2020'
-    langcode: en
-    uuid: df72fb2b-77ec-4e2c-962a-70d9f61d62b6
-    bundle: basic
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: '<p>See block--block--10.tpl.php</p>'
-          summary: null
-          format: filtered_html
-  -
     info: 'Funding Map'
     langcode: en
     uuid: 0640f73c-379c-49c9-b23d-a2f7f76250b9
@@ -155,6 +25,76 @@ blocks:
           value: '<iframe src="https://www.google.com/maps/d/embed?mid=1uuGu5yOclN1YhkvjAW08sUKM2dIn-H05&ehbc=2E312F" width="640" height="480"></iframe>'
           summary: ''
           format: full_html
+  -
+    info: 'Frontpage banner'
+    langcode: en
+    uuid: 6fb7cefc-3f76-4754-9e3c-f9093f5b1656
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<h2>Equity, diversity, interconnectedness</h2>\r\n\r\n<p><a class=\"btn\" href=\"/node/1\">Find out more about us</a></p>\r\n"
+          summary: null
+          format: basic_html
+  -
+    info: 'Twitter block'
+    langcode: en
+    uuid: fec7177a-e9b7-434a-8537-17525e787e3b
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body: {  }
+  -
+    info: 'Subscribe '
+    langcode: en
+    uuid: a61001f2-48cb-475e-a6cb-ded357c1ea39
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Subscribe here to our monthly events list and quarterly newsletter</p>\r\n\r\n<p><a class=\"btn\" href=\"https://nicrc.us19.list-manage.com/subscribe/post?u=24c770853af741fb3f810d33c&amp;id=b26057857c\">Subscribe</a></p>\r\n"
+          summary: null
+          format: basic_html
+  -
+    info: 'Contact Information'
+    langcode: en
+    uuid: a68f15c8-0d07-4df5-83cd-875ce3e9c60e
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<address><strong>NI Community Relations Council</strong><br />\r\n2nd Floor<br />\r\nEquality House<br />\r\n7-9 Shaftesbury Square<br />\r\nBelfast<br />\r\nBT2 7DB<br />\r\n<a href=\"mailto:info@nicrc.org.uk\">info@nicrc.org.uk</a><br />\r\nTel: +44 (0) 28 9022 7500</address>\r\n"
+          summary: null
+          format: full_html
+  -
+    info: 'Useful Links'
+    langcode: en
+    uuid: 2358a373-7783-40a1-a73f-5462e15260d0
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"a9352a70-0db6-49f1-9bb3-1c9376b72c4a\" href=\"/node/75\">Links</a></p>\r\n\r\n<p><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"633c2259-c215-4f9e-91ce-d36bfbe5f812\" href=\"/node/1113\">Accessibility</a></p>\r\n\r\n<p><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"bd37719e-1b02-4227-b587-a47443b4fd1f\" href=\"/node/77\">Disclaimer</a></p>\r\n\r\n<p><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"028c3da3-955d-4291-808a-b1ff437b964b\" href=\"/node/78\">Freedom of Information</a></p>\r\n"
+          summary: null
+          format: basic_html
+  -
+    info: 'Social links'
+    langcode: en
+    uuid: a2dedecd-540b-41b6-ae30-87af5c0415f0
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body: {  }
 menus:
   -
     menu_name: main
@@ -484,7 +424,7 @@ menus:
     menu_name: main
     title: 'Publications Grant Scheme'
     parent: 'menu_link_content:6d849f82-58f7-4dba-9cb5-fc2105b15f96'
-    uri: 'entity:node/847'
+    uri: 'entity:node/89'
     link_title: ''
     description: null
     enabled: true
@@ -588,3 +528,51 @@ menus:
     weight: -46
     langcode: en
     uuid: 1e27f577-473c-4aa8-9411-abd8fc2ae52c
+  -
+    menu_name: menu-footer-links
+    title: 'Accessibility Statement'
+    parent: null
+    uri: 'entity:node/76'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: en
+    uuid: 3ceb5d32-922d-4857-8d90-6cdaa9b72377
+  -
+    menu_name: menu-footer-links
+    title: Cookies
+    parent: null
+    uri: 'entity:node/221'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -47
+    langcode: en
+    uuid: dce7d677-c8ce-488d-b2b5-bbab4ef1aeac
+  -
+    menu_name: menu-footer-links
+    title: 'Privacy Statement'
+    parent: null
+    uri: 'entity:node/974'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -48
+    langcode: en
+    uuid: 519ffb66-5358-4527-bdac-9b483cdab5c6
+  -
+    menu_name: menu-footer-links
+    title: 'Terms and Conditions'
+    parent: null
+    uri: 'entity:node/1561'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: en
+    uuid: d89e7924-fcdb-411d-8c6a-c9421cc94817

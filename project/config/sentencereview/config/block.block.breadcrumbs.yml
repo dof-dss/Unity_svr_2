@@ -1,0 +1,24 @@
+uuid: 370dd728-1c88-441c-b4b3-787ee31f8b47
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sentencereview_theme
+id: breadcrumbs
+theme: sentencereview_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

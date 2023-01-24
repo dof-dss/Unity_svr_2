@@ -1,4 +1,4 @@
-uuid: a7a3c69b-b49e-433b-9eb5-7426c10211db
+uuid: 0221460b-7f37-489c-910f-aa3f5efd7c8a
 langcode: en
 status: true
 dependencies:
@@ -15,17 +15,18 @@ mode: default
 content:
   field_answer:
     type: text_default
-    label: hidden
+    label: above
     settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_question:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
     third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+  field_question:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

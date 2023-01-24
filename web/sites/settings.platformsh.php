@@ -8,13 +8,12 @@
  */
 
 use Drupal\Core\Installer\InstallerKernel;
-use Platformsh\ConfigReader\Config as PlatformConfig;
 
 if (!isset($subsite_id)) {
   $subsite_id = 'database';
 }
 
-$platformsh = new PlatformConfig();
+$platformsh = new \Platformsh\ConfigReader\Config();
 
 if (!$platformsh->inRuntime()) {
   return;
@@ -22,7 +21,6 @@ if (!$platformsh->inRuntime()) {
 
 // Configure the database.
 $creds = $platformsh->credentials($subsite_id);
-
 if ($creds) {
   $databases['default']['default'] = [
     'driver' => $creds['scheme'],

@@ -1,0 +1,31 @@
+uuid: 4d1b2327-d5ed-4a79-9ae7-0428a4870d62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachment
+    - media.type.document
+    - media.type.file
+    - node.type.publication_page
+id: node.publication_page.field_attachment
+field_name: field_attachment
+entity_type: node
+bundle: publication_page
+label: Attachment
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+      file: file
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: document
+field_type: entity_reference

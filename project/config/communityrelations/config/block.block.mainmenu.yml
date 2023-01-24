@@ -1,4 +1,4 @@
-uuid: 54f61b85-6a0c-4923-baf7-27f63d8566ae
+uuid: 836e463f-54c8-4982-acd2-5fe364a69ef4
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - system
   theme:
-    - crc_theme
+    - communityrelations_theme
 id: mainmenu
-theme: crc_theme
+theme: communityrelations_theme
 region: primary_menu
 weight: 0
 provider: null

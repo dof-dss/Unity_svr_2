@@ -6,11 +6,15 @@
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
 #logo {
-  @include breakpoint($tab) {
     img {
       height: 9rem;
       width: 20rem;
     }
+  }
+
+#headerHero {
+  @media screen and (max-width: 766px) {
+  margin-top: 2rem;
   }
 }
 
@@ -98,7 +102,8 @@ h1 {
     border-bottom: none;
     color: #0e6bb3;
 
-    span {
+    &:last-child {
+      display: inline-block;
       border-bottom: 1px solid $link;
 
       &:hover {

@@ -1,13 +1,13 @@
-uuid: 1e444573-0cf7-43e1-a4e2-c81c2e89a65c
+uuid: 695f2ea5-3226-44f1-8880-296dc895a870
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - crc_theme
+    - communityrelations_theme
 id: breadcrumbs
-theme: crc_theme
+theme: communityrelations_theme
 region: breadcrumb
 weight: 0
 provider: null

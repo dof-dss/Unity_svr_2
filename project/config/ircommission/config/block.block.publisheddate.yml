@@ -1,0 +1,33 @@
+uuid: 442ab05d-cce6-4ba2-b4be-22161ebb4059
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.published_date
+  module:
+    - block_visibility_groups
+    - facets
+    - system
+  theme:
+    - ircommission_theme
+id: publisheddate
+theme: ircommission_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'facet_block:published_date'
+settings:
+  id: 'facet_block:published_date'
+  label: Date
+  label_display: visible
+  provider: facets
+  block_id: publisheddate
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/news\r\n/news/date/*"

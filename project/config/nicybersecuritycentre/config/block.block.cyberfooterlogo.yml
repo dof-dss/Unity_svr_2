@@ -1,0 +1,25 @@
+uuid: 907b32f0-c17c-45ba-be90-c2e9c0914c31
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:5c376675-f4a7-43e7-a130-d470f646ef26'
+  module:
+    - block_content
+  theme:
+    - nicybersecuritycentre_theme
+id: cyberfooterlogo
+theme: nicybersecuritycentre_theme
+region: footer_first
+weight: -10
+provider: null
+plugin: 'block_content:5c376675-f4a7-43e7-a130-d470f646ef26'
+settings:
+  id: 'block_content:5c376675-f4a7-43e7-a130-d470f646ef26'
+  label: 'Cyber footer logo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

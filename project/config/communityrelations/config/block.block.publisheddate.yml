@@ -1,4 +1,4 @@
-uuid: 558c524f-c13c-45a9-878e-317061a86917
+uuid: 9e4c80aa-ec0b-4c78-b838-58af52a9f499
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,9 @@ dependencies:
     - facets
     - system
   theme:
-    - crc_theme
+    - communityrelations_theme
 id: publisheddate
-theme: crc_theme
+theme: communityrelations_theme
 region: search_facets
 weight: -3
 provider: null

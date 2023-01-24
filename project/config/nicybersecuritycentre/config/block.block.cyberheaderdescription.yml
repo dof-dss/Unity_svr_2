@@ -1,0 +1,30 @@
+uuid: 2a0a5d44-884b-4cf6-947e-dad4a450509b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:9b7e2dc7-b5f7-4c35-9930-e6244b75f83a'
+  module:
+    - block_content
+    - system
+  theme:
+    - nicybersecuritycentre_theme
+id: cyberheaderdescription
+theme: nicybersecuritycentre_theme
+region: header_block
+weight: -6
+provider: null
+plugin: 'block_content:9b7e2dc7-b5f7-4c35-9930-e6244b75f83a'
+settings:
+  id: 'block_content:9b7e2dc7-b5f7-4c35-9930-e6244b75f83a'
+  label: 'Cyber header description'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

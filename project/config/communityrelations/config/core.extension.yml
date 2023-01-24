@@ -42,6 +42,7 @@ module:
   facets: 0
   facets_pretty_paths: 0
   facets_summary: 0
+  fastly: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -55,7 +56,6 @@ module:
   geolocation: 0
   geolocation_google_maps: 0
   geolocation_google_static_maps: 0
-  google_analytics: 0
   handy_cache_tags: 0
   help: 0
   history: 0
@@ -81,6 +81,7 @@ module:
   metatag_twitter_cards: 0
   metatag_views: 0
   moderation_sidebar: 0
+  mysql: 0
   node: 0
   node_edit_protection: 0
   noreferrer: 0
@@ -145,5 +146,5 @@ theme:
   stable: 0
   adminimal_theme: 0
   nicsdru_unity_theme: 0
-  crc_theme: 0
+  communityrelations_theme: 0
 profile: nicsdru_unity_profile

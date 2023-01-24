@@ -16,4 +16,16 @@ processor_configs:
     weights:
       build: '45'
     settings: {  }
-facets: {  }
+facets:
+  publication_type:
+    checked: true
+    label: Type
+    separator: ', '
+    show_count: false
+    weight: 0
+  published_date_publications:
+    checked: true
+    label: Date
+    separator: ', '
+    show_count: false
+    weight: 0

@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - google_analytics
     - media
     - node
     - pathauto
@@ -21,7 +20,6 @@ permissions:
   - 'access workbench'
   - 'diff view changes'
   - 'notify of path changes'
-  - 'opt-in or out of google analytics tracking'
   - 'revert revisions'
   - 'use media wysiwyg'
   - 'view all revisions'

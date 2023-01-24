@@ -1,0 +1,25 @@
+uuid: 7a7917c7-e985-48d9-a182-ed5a794fe958
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:a2dedecd-540b-41b6-ae30-87af5c0415f0'
+  module:
+    - block_content
+  theme:
+    - communityrelations_theme
+id: sociallinks
+theme: communityrelations_theme
+region: footer_fourth
+weight: -12
+provider: null
+plugin: 'block_content:a2dedecd-540b-41b6-ae30-87af5c0415f0'
+settings:
+  id: 'block_content:a2dedecd-540b-41b6-ae30-87af5c0415f0'
+  label: 'Social links'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

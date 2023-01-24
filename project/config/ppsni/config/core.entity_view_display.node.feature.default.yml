@@ -1,0 +1,41 @@
+uuid: c34bb7aa-2b95-4e64-aa43-321c643d3fc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.feature.field_link_url
+    - field.field.node.feature.field_photo
+    - field.field.node.feature.field_teaser
+    - node.type.feature
+  module:
+    - user
+_core:
+  default_config_hash: bKYw2YnlhyxL8rYEwBvP6i5DJjbGzBYcfaoLSAZJCN4
+id: node.feature.default
+targetEntityType: node
+bundle: feature
+mode: default
+content:
+  field_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: slide
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_teaser:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  content_moderation_control: true
+  field_link_url: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -26,8 +26,10 @@ content:
     weight: 0
     region: content
 hidden:
+  content_moderation_control: true
   field_deadline_date: true
   field_funding_scheme_type: true
   field_meta_tags: true
   langcode: true
   links: true
+  search_api_excerpt: true

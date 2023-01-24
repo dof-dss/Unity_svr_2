@@ -1,0 +1,25 @@
+uuid: 9bc65c75-fd77-4050-97e1-3f8a4d818784
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:9c7adb2d-3b50-49d1-a7f0-735cd0a9afb4'
+  module:
+    - block_content
+  theme:
+    - nicybersecuritycentre_theme
+id: protections
+theme: nicybersecuritycentre_theme
+region: top_second
+weight: 0
+provider: null
+plugin: 'block_content:9c7adb2d-3b50-49d1-a7f0-735cd0a9afb4'
+settings:
+  id: 'block_content:9c7adb2d-3b50-49d1-a7f0-735cd0a9afb4'
+  label: Protections
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

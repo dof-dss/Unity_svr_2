@@ -1,0 +1,32 @@
+uuid: 27c169e8-0705-47ff-a1bd-cca6c03da5cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.featured_article
+  module:
+    - node
+    - views
+  theme:
+    - nicybersecuritycentre_theme
+id: views_block__featured_article_featured_most_recent
+theme: nicybersecuritycentre_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:featured_article-featured_most_recent'
+settings:
+  id: 'views_block:featured_article-featured_most_recent'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      featured_article: featured_article

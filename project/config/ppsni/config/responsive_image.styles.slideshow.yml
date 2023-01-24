@@ -1,0 +1,23 @@
+uuid: 4a072467-b5a4-49da-a3ce-2a0b523a49f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.slideshow_1024x340_
+    - image.style.slideshow_x2
+_core:
+  default_config_hash: 8kra8wQC0Tnhtf6qRVuudCcRsCihfBDIkfhK4JnlxNA
+id: slideshow
+label: Slideshow
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - slideshow_1024x340_
+        - slideshow_x2
+breakpoint_group: responsive_image
+fallback_image_style: slideshow_1024x340_

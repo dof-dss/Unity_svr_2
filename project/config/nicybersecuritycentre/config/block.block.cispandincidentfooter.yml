@@ -1,0 +1,25 @@
+uuid: e136c232-c782-446e-b09b-abfbf27f3544
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:4f90b6c5-7dd4-4f5b-8cd0-a8f111adbfb7'
+  module:
+    - block_content
+  theme:
+    - nicybersecuritycentre_theme
+id: cispandincidentfooter
+theme: nicybersecuritycentre_theme
+region: footer_second
+weight: -10
+provider: null
+plugin: 'block_content:4f90b6c5-7dd4-4f5b-8cd0-a8f111adbfb7'
+settings:
+  id: 'block_content:4f90b6c5-7dd4-4f5b-8cd0-a8f111adbfb7'
+  label: 'CISP and Incident footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

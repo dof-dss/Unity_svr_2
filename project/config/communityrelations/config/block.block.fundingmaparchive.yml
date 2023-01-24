@@ -1,4 +1,4 @@
-uuid: 77919f62-7b35-490f-9be5-a4c78b8337de
+uuid: 1122564a-484c-4c2f-8183-a0dc637bb108
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,9 @@ dependencies:
     - block_content
     - system
   theme:
-    - crc_theme
+    - communityrelations_theme
 id: fundingmaparchive
-theme: crc_theme
+theme: communityrelations_theme
 region: content
 weight: 0
 provider: null

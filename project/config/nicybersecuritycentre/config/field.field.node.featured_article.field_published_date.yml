@@ -1,0 +1,24 @@
+uuid: 6a0709fd-38b6-4594-baff-23ab9b870470
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_published_date
+    - node.type.featured_article
+  module:
+    - datetime
+id: node.featured_article.field_published_date
+field_name: field_published_date
+entity_type: node
+bundle: featured_article
+label: 'Date published'
+description: 'Please select the publication date of this article from the pop up calender.'
+required: true
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

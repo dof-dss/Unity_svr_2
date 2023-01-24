@@ -36,7 +36,7 @@ content:
       view_mode: landscape_float
       link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_published_date:
     type: datetime_default
@@ -47,17 +47,11 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_summary:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
 hidden:
   content_moderation_control: true
   field_meta_tags: true
   field_news_type: true
+  field_summary: true
   field_teaser: true
   langcode: true
   links: true
