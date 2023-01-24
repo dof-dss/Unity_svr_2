@@ -2,7 +2,10 @@ uuid: d55e8988-14fa-48c2-a1f2-6882193514e9
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.publication_page
   module:
+    - node
     - system
 _core:
   default_config_hash: AyMCT1boGFkm3MNXLyv6ZV7yMdWLY-U3WQLhzDDkWGE

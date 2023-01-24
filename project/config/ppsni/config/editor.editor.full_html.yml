@@ -32,8 +32,8 @@ settings:
         -
           name: Linking
           items:
-            - Linkit
             - DrupalUnlink
+            - DrupalLink
         -
           name: Lists
           items:
@@ -60,6 +60,9 @@ settings:
             - Maximize
             - Source
   plugins:
+    drupallink:
+      linkit_enabled: true
+      linkit_profile: default
     stylescombo:
       styles: ''
 image_upload:

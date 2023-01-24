@@ -1,0 +1,30 @@
+uuid: 6021c13f-29d4-4111-98b8-9163548f9caf
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:022a4599-345d-4609-a4db-3a989cafdeb1'
+  module:
+    - block_content
+    - system
+  theme:
+    - ppsni_theme
+id: aboutthepublicprosecutionservice
+theme: ppsni_theme
+region: front_welcome
+weight: -7
+provider: null
+plugin: 'block_content:022a4599-345d-4609-a4db-3a989cafdeb1'
+settings:
+  id: 'block_content:022a4599-345d-4609-a4db-3a989cafdeb1'
+  label: 'About the Public Prosecution Service'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.news
+    - node.type.page
+    - node.type.publication_page
   module:
     - node
     - redirect
