@@ -121,6 +121,29 @@
 #footer {
   background: $white;
 
+  @include breakpoint($tab) {
+    padding: 2%;
+  }
+
+  .footer-menu li {
+    padding-left: 0;
+    font-size: 1.6rem;
+    list-style-type: none;
+
+    @include breakpoint($mob) {
+      display: inline-block;
+      padding: 0 .8rem 0 0;
+      line-height: 1.8rem;
+      margin-right: .5rem;
+    }
+
+    a {
+      @media screen and (min-width: $mob) {
+        display: block;
+      }
+    }
+  }
+
   .footer-area {
     display: flex;
     @media screen and (max-width: $tab) {
@@ -145,3 +168,22 @@
     }
   }
 }
+
+.region-footer {
+  background: #212129;
+  border-top: 9px solid #a8288e;
+  padding: 2rem;
+
+  h2  {
+    @include adjust-font-size-to(24px);
+    color: $white;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  address {
+    color: $white;
+    margin-left: 2rem;
+    }
+  }
+
