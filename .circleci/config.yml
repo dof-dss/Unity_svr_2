@@ -150,7 +150,7 @@ jobs:
           command: |
             curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
             sudo apt update --allow-releaseinfo-change
-            sudo apt install libjpeg-dev make python g++ -y
+            sudo apt install libjpeg-dev make python g++ dh-autoreconf -y
       - install_psh_cli
       - run:
           name: Switch to edge branch
