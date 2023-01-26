@@ -73,6 +73,41 @@ blocks:
           value: "<h3><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"1c0d63e0-d3e3-4744-a97f-0fa5141f5997\" href=\"/node/566\">Statistics and Research</a></h3>\r\n\r\n<p>Statistical information on key topic areas within the PPS, including files received, conviction rates, thematic bulletins, surveys and results.</p>\r\n"
           summary: null
           format: basic_html
+  -
+    info: 'Contact Information'
+    langcode: en
+    uuid: 9628957b-46fa-4f2d-a3a7-103c6789096a
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<h2>Contact Information</h2>\r\n\r\n<address>Public Prosecution Service</address>\r\n\r\n<address>Belfast Chambers</address>\r\n\r\n<address>93 Chichester Street</address>\r\n\r\n<address>Belfast</address>\r\n\r\n<address>BT1 3JR</address>\r\n\r\n<address>Email: <a href=\"mailto:info@ppsni-gov.uk\">info@ppsni.gov.uk</a></address>\r\n\r\n<address>Tel: +44 (0) 28 9089 7100</address>\r\n\r\n<p>&nbsp;</p>\r\n"
+          summary: null
+          format: full_html
+  -
+    info: 'Social links'
+    langcode: en
+    uuid: dd507b77-8aab-4cc9-81e1-8b48d4787c48
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body: {  }
+  -
+    info: 'Footer logo'
+    langcode: en
+    uuid: 2e7428cf-d540-4ec4-ac16-f0bd30aebbaa
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<drupal-media data-align=\"center\" data-entity-type=\"media\" data-entity-uuid=\"09f1caa6-dda4-4607-8805-aeb6e17fe6ea\"></drupal-media>\r\n"
+          summary: ''
+          format: basic_html
 menus:
   -
     menu_name: main
