@@ -10,8 +10,8 @@ dependencies:
     - ppsni_theme
 id: twitterblock
 theme: ppsni_theme
-region: bottom_widget_3
-weight: -8
+region: top_second
+weight: -11
 provider: null
 plugin: 'block_content:d33e5b82-49b6-4792-b609-b5b2b9002fa1'
 settings:

@@ -38,7 +38,7 @@
   }
 }
 
-#bottom-area {
+#top-area {
   @include breakpoint($tab) {
     display: flex;
     justify-content: space-between;

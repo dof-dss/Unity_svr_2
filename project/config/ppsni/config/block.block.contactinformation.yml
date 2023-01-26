@@ -10,8 +10,8 @@ dependencies:
     - ppsni_theme
 id: contactinformation
 theme: ppsni_theme
-region: footer
-weight: -12
+region: footer_first
+weight: -11
 provider: null
 plugin: 'block_content:9628957b-46fa-4f2d-a3a7-103c6789096a'
 settings:

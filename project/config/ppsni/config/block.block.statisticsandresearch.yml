@@ -11,7 +11,7 @@ dependencies:
     - ppsni_theme
 id: statisticsandresearch
 theme: ppsni_theme
-region: footer_second
+region: bottom_widget_2
 weight: -10
 provider: null
 plugin: 'block_content:49f709c0-3c03-4c04-b1ae-550af51b4f9f'
