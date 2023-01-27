@@ -1,0 +1,25 @@
+uuid: c6f63cdc-c81a-4380-8335-1545ec5c353f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:dd507b77-8aab-4cc9-81e1-8b48d4787c48'
+  module:
+    - block_content
+  theme:
+    - ppsni_theme
+id: sociallinks
+theme: ppsni_theme
+region: footer_second
+weight: 0
+provider: null
+plugin: 'block_content:dd507b77-8aab-4cc9-81e1-8b48d4787c48'
+settings:
+  id: 'block_content:dd507b77-8aab-4cc9-81e1-8b48d4787c48'
+  label: 'Social links'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

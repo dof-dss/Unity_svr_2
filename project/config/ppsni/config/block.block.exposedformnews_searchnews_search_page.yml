@@ -12,7 +12,7 @@ dependencies:
 id: exposedformnews_searchnews_search_page
 theme: ppsni_theme
 region: search_facets
-weight: -6
+weight: -11
 provider: null
 plugin: 'views_exposed_filter_block:news_search-news_search_page'
 settings:

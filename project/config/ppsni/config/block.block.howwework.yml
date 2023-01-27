@@ -11,8 +11,8 @@ dependencies:
     - ppsni_theme
 id: howwework
 theme: ppsni_theme
-region: footer_first
-weight: -10
+region: bottom_widget_1
+weight: -11
 provider: null
 plugin: 'block_content:0474ea51-31a9-4710-a70f-8fb732c16807'
 settings:

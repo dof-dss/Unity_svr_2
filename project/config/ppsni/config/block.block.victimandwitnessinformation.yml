@@ -11,8 +11,8 @@ dependencies:
     - ppsni_theme
 id: victimandwitnessinformation
 theme: ppsni_theme
-region: footer_first
-weight: -9
+region: bottom_widget_1
+weight: -10
 provider: null
 plugin: 'block_content:fbbec229-8750-45e7-b152-5d96994bc0ae'
 settings:
