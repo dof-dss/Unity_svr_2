@@ -78,3 +78,32 @@
     margin: 1.2rem 1rem 1.8rem 3.6rem;
   }
 }
+
+.views-row.board-card {
+  .board-title {
+    position: relative;
+    padding-right: 3rem;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: -.6rem;
+      width: 3rem;
+      height: 3rem;
+      background-image: resolve('arrow_forward_link_blue.svg');
+      background-position: center center;
+      background-size: 2.4rem auto;
+      background-repeat: no-repeat;
+    }
+  }
+
+  a {
+    &:hover .board-title:after,
+    &:focus .board-title:after {
+      background-color: $ash-grey;
+      background-image: resolve('arrow_forward_white.svg');
+    }
+  }
+}
