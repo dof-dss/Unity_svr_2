@@ -35,12 +35,16 @@ elements: |-
     '#required': true
     '#required_error': 'This field is required'
   date_of_birth:
-    '#type': date
+    '#type': datelist
     '#title': 'Date of Birth'
     '#title_display': before
     '#description_display': before
-    '#date_date_min': '1940'
-    '#date_date_max': '2023'
+    '#date_part_order':
+      - day
+      - month
+      - year
+    '#date_year_range': '1900:2023'
+    '#date_year_range_reverse': true
   contact_us:
     '#type': checkboxes
     '#title': 'Contact Us'
@@ -51,13 +55,17 @@ elements: |-
       Telephone: Telephone
       Email: Email
       Letter: Letter
-  pps_case_reference_number_6_7_digits_:
-    '#type': number
+  pps_case_number:
+    '#type': textfield
     '#title': 'PPS case number'
-    '#description': 'PPS case reference number (6/7 digits)'
+    '#description': |-
+      <br />
+      PPS case reference number (6/7 digits)
     '#title_display': none
     '#description_display': before
-    '#autocomplete': 'off'
+    '#counter_type': character
+    '#counter_minimum': 6
+    '#counter_maximum': 7
   pps_question_1:
     '#type': textarea
     '#title': 'PPS question 1'
@@ -70,6 +78,9 @@ elements: |-
     '#description': 'Please tell us what happened (Please provide as much detail as you can to ensure that your complaint is dealt with appropriately.)'
     '#title_display': none
     '#description_display': before
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
 css: ''
 javascript: ''
 settings:
@@ -175,7 +186,7 @@ settings:
   confirmation_type: page
   confirmation_url: ''
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: 'Thank you for your submission.'
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -187,16 +198,16 @@ settings:
   limit_total_interval: null
   limit_total_message: ''
   limit_total_unique: false
-  limit_user: null
-  limit_user_interval: null
-  limit_user_message: ''
+  limit_user: 5
+  limit_user_interval: 86400
+  limit_user_message: 'Maximum submissions per user per day is 5. You have reached your maximum.'
   limit_user_unique: false
   entity_limit_total: null
   entity_limit_total_interval: null
   entity_limit_user: null
   entity_limit_user_interval: null
-  purge: none
-  purge_days: null
+  purge: completed
+  purge_days: 1
   results_disabled: false
   results_disabled_ignore: false
   results_customize: false
@@ -251,5 +262,79 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  email:
+    id: email
+    handler_id: email
+    label: Email
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: webdev@finance-ni.gov.uk
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Feedback form submission from: Complaints'
+      body: "Submitted on [webform_submission:created]<br />\r\nSubmitted values are:<br />\r\n[webform_submission:values]"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_1:
+    id: email
+    handler_id: email_1
+    label: Email
+    notes: ''
+    status: false
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: info@ppsni.gov.uk
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Feedback form submission from: Complaints'
+      body: "Submitted on [webform_submission:created]<br />\r\nSubmitted values are:<br />\r\n[webform_submission:values]"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
 variants: {  }

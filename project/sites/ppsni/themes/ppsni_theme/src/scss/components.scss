@@ -172,3 +172,37 @@
     }
   }
 }
+.node-type-webform {
+  @include breakpoint($tab) {
+    .content-sidebar-wrap {
+      width: 65%;
+    }
+  }
+
+  .webform-submission-form input[type="submit"] {
+    background: $link none;
+    line-height: 1.5;
+    border: 3px solid transparent;
+    color: #fff;
+    font-weight: normal;
+    text-shadow: none;
+    text-underline-offset: .25em;
+    box-shadow: none;
+    margin: 1rem 0 0;
+    text-align: center;
+    padding: .6rem 1.6rem;
+    cursor: pointer;
+    border-radius: 0;
+
+    &:hover,
+    &:focus {
+      background: $ash-grey;
+      outline: none;
+      opacity: 1;
+    }
+
+    &:focus {
+      border-color: $black;
+    }
+  }
+}
