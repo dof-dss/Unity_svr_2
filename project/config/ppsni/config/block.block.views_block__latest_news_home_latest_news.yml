@@ -10,8 +10,8 @@ dependencies:
     - ppsni_theme
 id: views_block__latest_news_home_latest_news
 theme: ppsni_theme
-region: bottom_widget_1
-weight: 0
+region: top_first
+weight: -11
 provider: null
 plugin: 'views_block:latest_news-home_latest_news'
 settings:
