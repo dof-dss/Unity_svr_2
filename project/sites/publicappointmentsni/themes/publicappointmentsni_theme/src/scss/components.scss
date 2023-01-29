@@ -102,7 +102,7 @@
   a {
     &:hover .board-title:after,
     &:focus .board-title:after {
-      background-color: $ash-grey;
+      background-color: $charcoal;
       background-image: resolve('arrow_forward_white.svg');
     }
   }
