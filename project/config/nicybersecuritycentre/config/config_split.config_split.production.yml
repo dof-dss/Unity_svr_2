@@ -7,9 +7,12 @@ label: production
 description: 'Used for the production site only.'
 weight: 0
 folder: ../project/config/nicybersecuritycentre/production
-module: {  }
+module:
+  fastly: 0
 theme: {  }
-blacklist: {  }
-graylist: {  }
+blacklist:
+  - fastly.settings
+graylist:
+  - nicybersecuritycentre_theme.settings
 graylist_dependents: true
 graylist_skip_equal: true
