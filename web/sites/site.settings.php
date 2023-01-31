@@ -87,6 +87,7 @@ if (!empty(getenv('PLATFORM_BRANCH'))) {
       break;
 
     case 'D8UN-uat':
+    case 'uat':
       // UAT environment purple toolbar.
       $env_colour = '#9370DB';
       break;
