@@ -23,7 +23,7 @@ custom_npm_docker_image: &custom_npm_docker_image
         EMAIL: "circleci@localhost"
         GIT_COMMITTER_NAME: "Circle CI"
         GIT_AUTHOR_NAME: "Circle CI"
-        EDGE_BUILD_BRANCH: "D8UN-edge"
+        EDGE_BUILD_BRANCH: "edge"
 
 # Re-usable commands.
 commands:
