@@ -333,6 +333,14 @@
   }
 }
 
+.node-type-publication {
+  @include breakpoint($tab) {
+    .content-sidebar-wrap {
+      width: 65%;
+    }
+  }
+}
+
 .path-webform {
   @include breakpoint($tab) {
     .content-sidebar-wrap {
