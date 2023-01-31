@@ -188,10 +188,18 @@
   width: unset;
 }
 
-#footer .column li {
-  display: inline;
-  padding: 2rem;
+#footer {
+  max-width: 100%;
 }
+
+#footer-menu {
+  text-align: left;
+}
+
+#footer .column li {
+ display: inline;
+}
+
 .footer-menu ul li {
   font-size: 1.4rem;
 }
