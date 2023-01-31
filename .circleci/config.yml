@@ -256,26 +256,26 @@ jobs:
                 platform drush "bulk_update_qa_accounts enable -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
               fi
             done
-      - run:
-          name: Purge and rebuild Solr indexes
-          command: |
-            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
-            do
-              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
-              if [[ -n $result ]]; then
-                result2=$(platform drush "pml --status=enabled -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "solr" || true) )
-                if [[ -n $result2 ]]; then
-                  echo "***** Purge Solr index for - ${site} *****"
-                  platform ssh -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH \
-                    "curl http://${site}_solr.internal:8080/solr/${site}_index/update --data '<delete><query>*:*</query></delete>' -H 'Content-type:text/xml; charset=utf-8' \
-                      && curl http://${site}_solr.internal:8080/solr/${site}_index/update --data '<commit/>' -H 'Content-type:text/xml; charset=utf-8'"
-                  echo "***** Rebuild the Solr index for - ${site} *****"
-                  platform drush "sapi-c -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
-                  platform drush "sapi-r -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
-                  platform drush "sapi-i -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
-                fi
-              fi
-            done
+      #- run:
+      #    name: Purge and rebuild Solr indexes
+      #    command: |
+      #      for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
+      #      do
+      #        result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
+      #        if [[ -n $result ]]; then
+      #          result2=$(platform drush "pml --status=enabled -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "solr" || true) )
+      #          if [[ -n $result2 ]]; then
+      #            echo "***** Purge Solr index for - ${site} *****"
+      #            platform ssh -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH \
+      #              "curl http://${site}_solr.internal:8080/solr/${site}_index/update --data '<delete><query>*:*</query></delete>' -H 'Content-type:text/xml; charset=utf-8' \
+      #                && curl http://${site}_solr.internal:8080/solr/${site}_index/update --data '<commit/>' -H 'Content-type:text/xml; charset=utf-8'"
+      #            echo "***** Rebuild the Solr index for - ${site} *****"
+      #            platform drush "sapi-c -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
+      #            platform drush "sapi-r -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
+      #            platform drush "sapi-i -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
+      #          fi
+      #        fi
+      #      done
   # Checks to ensure that Unity Base has not been polluted with project files.
   unity_base_checks:
     <<: *docker_image
