@@ -1,0 +1,25 @@
+uuid: aaf7fc8e-51d4-4aa5-9cb3-f1d5f4890811
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:9628957b-46fa-4f2d-a3a7-103c6789096a'
+  module:
+    - block_content
+  theme:
+    - ppsni_theme
+id: contactinformation
+theme: ppsni_theme
+region: footer_first
+weight: -11
+provider: null
+plugin: 'block_content:9628957b-46fa-4f2d-a3a7-103c6789096a'
+settings:
+  id: 'block_content:9628957b-46fa-4f2d-a3a7-103c6789096a'
+  label: 'Contact Information'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

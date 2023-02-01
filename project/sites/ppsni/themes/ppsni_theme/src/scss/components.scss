@@ -58,6 +58,20 @@
     }
   }
 }
+
+.region-front-welcome p {
+  font-size: 2.1rem;
+  text-align: left;
+  display: flex;
+  line-height: 3rem;
+  justify-content: center;
+  width: 100%;
+
+  .btn {
+    width: 30rem;
+  }
+}
+
 .front {
   #slick-views-slideshow-slideshow-1-slider {
     .slide__caption {
@@ -71,6 +85,124 @@
         font-size: 2rem;
         padding: 1rem 1rem 1rem 1rem;
       }
+    }
+  }
+}
+.front #top-area {
+  border-bottom: 9px solid $brand-secondary;
+
+  .column {
+    text-align: left;
+    padding: 1rem 2.5rem;
+    background: $grey-light;
+    margin: 1rem;
+
+    h2 {
+      @include adjust-font-size-to(24px);
+      margin: 0;
+      padding: 1rem 0 2rem;
+      line-height: 1.5;
+      color: $black;
+  }
+}
+      h3 {
+        @include adjust-font-size-to(18px);
+        margin: 0;
+    }
+  }
+
+.front #bottom-area {
+  display: flex;
+  justify-content: space-evenly;
+  @media screen and (max-width: $tab) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    width: 45%;
+    @media screen and (max-width: $tab) {
+      width: auto;
+    }
+
+    .block {
+      background: #f6f6f6;
+      border-top: 1px solid #161762;
+      padding: 1.2rem 1.2rem 2rem 1.2rem;
+      margin-bottom: 3rem;
+      min-height: 20rem;
+      box-sizing: border-box;
+    }
+  }
+}
+
+#footer {
+  @include breakpoint($tab) {
+    padding: 2%;
+  }
+
+  .footer-area {
+    display: flex;
+
+    .column {
+      width: auto;
+
+      h2 {
+        margin: 2.6rem 0 1.8rem;
+      }
+    }
+  }
+
+  .footer-menu li {
+    padding-left: 0;
+    font-size: 1.6rem;
+    list-style-type: none;
+
+    @include breakpoint($mob) {
+      display: inline-block;
+      padding: 0 .8rem 0 0;
+      line-height: 1.8rem;
+      margin-right: .5rem;
+    }
+
+    a {
+      @media screen and (min-width: $mob) {
+        display: block;
+      }
+    }
+  }
+}
+.node-type-webform {
+  @include breakpoint($tab) {
+    .content-sidebar-wrap {
+      width: 65%;
+    }
+  }
+
+  .webform-submission-form input[type="submit"] {
+    background: $link none;
+    line-height: 1.5;
+    border: 3px solid transparent;
+    color: #fff;
+    font-weight: normal;
+    text-shadow: none;
+    text-underline-offset: .25em;
+    box-shadow: none;
+    margin: 1rem 0 0;
+    text-align: center;
+    padding: .6rem 1.6rem;
+    cursor: pointer;
+    border-radius: 0;
+
+    &:hover,
+    &:focus {
+      background: $ash-grey;
+      outline: none;
+      opacity: 1;
+    }
+
+    &:focus {
+      border-color: $black;
     }
   }
 }

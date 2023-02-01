@@ -1,0 +1,30 @@
+uuid: 4c5b89f3-51a6-4f74-a8d9-13d27cb12f6a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:e93001ed-4bad-4bf4-8143-f8f7215073c9'
+  module:
+    - block_content
+    - system
+  theme:
+    - ppsni_theme
+id: crimetypes
+theme: ppsni_theme
+region: bottom_widget_2
+weight: -11
+provider: null
+plugin: 'block_content:e93001ed-4bad-4bf4-8143-f8f7215073c9'
+settings:
+  id: 'block_content:e93001ed-4bad-4bf4-8143-f8f7215073c9'
+  label: 'Crime types'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

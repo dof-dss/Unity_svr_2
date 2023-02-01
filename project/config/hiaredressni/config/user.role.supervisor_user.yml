@@ -52,7 +52,6 @@ permissions:
   - 'add scheduled transitions node publication'
   - 'add scheduled transitions node webform'
   - 'administer book outlines'
-  - 'administer filters'
   - 'administer main menu items'
   - 'administer main-menu menu items'
   - 'administer redirects'

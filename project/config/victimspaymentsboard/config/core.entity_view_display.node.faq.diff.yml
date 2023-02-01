@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.diff
     - field.field.node.faq.field_faq
     - field.field.node.faq.field_meta_tags
-    - field.field.node.faq.field_metatag
     - node.type.faq
   module:
     - entity_reference_revisions
@@ -62,6 +61,6 @@ content:
     region: content
 hidden:
   content_moderation_control: true
-  field_metatag: true
   langcode: true
   links: true
+  search_api_excerpt: true

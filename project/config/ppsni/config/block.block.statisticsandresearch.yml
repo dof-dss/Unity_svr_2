@@ -1,0 +1,30 @@
+uuid: 6d7acdd8-8be9-4598-9b3b-c9e7e6911581
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:49f709c0-3c03-4c04-b1ae-550af51b4f9f'
+  module:
+    - block_content
+    - system
+  theme:
+    - ppsni_theme
+id: statisticsandresearch
+theme: ppsni_theme
+region: bottom_widget_2
+weight: -10
+provider: null
+plugin: 'block_content:49f709c0-3c03-4c04-b1ae-550af51b4f9f'
+settings:
+  id: 'block_content:49f709c0-3c03-4c04-b1ae-550af51b4f9f'
+  label: 'Statistics and Research'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

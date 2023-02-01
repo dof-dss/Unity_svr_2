@@ -89,6 +89,8 @@
 
   .column {
     flex-basis: 100%;
+    position: relative;
+    padding-bottom: 6rem;
 
     @include breakpoint($tab) {
       flex-basis: 32%;
@@ -102,6 +104,10 @@
 
         a {
           color: #0d63a5;
+
+          &.btn {
+            color: $white;
+          }
 
           &:focus {
             color: $white;
@@ -141,11 +147,13 @@
 
   .btn {
     text-align: center;
-    max-width: 190px;
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
     margin-left: auto;
     margin-right: auto;
+    width: 190px;
   }
 
   h2 {

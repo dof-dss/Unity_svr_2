@@ -30,7 +30,7 @@ We call a macro which calls itself to render the full tree.
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-<ul id="menu-main" class="menu menu-main">
+<ul id="menu-main" class="menu menu-main" role="menu">
   {% else %}
   {# Add parent link and text to its child menu list #}
   <ul class="menu-main_sub">
