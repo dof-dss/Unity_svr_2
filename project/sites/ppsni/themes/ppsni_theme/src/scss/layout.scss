@@ -38,4 +38,20 @@
   }
 }
 
+#top-area {
+  @include breakpoint($tab) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+  }
 
+  .column {
+    width: auto;
+    float: none;
+
+    @include breakpoint($tab) {
+      flex-basis: 46%;
+    }
+  }
+}

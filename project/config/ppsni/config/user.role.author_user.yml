@@ -2,8 +2,26 @@ uuid: d55e8988-14fa-48c2-a1f2-6882193514e9
 langcode: en
 status: true
 dependencies:
+  config:
+    - media.type.audio
+    - media.type.document
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - node.type.feature
+    - node.type.news
+    - node.type.page
+    - node.type.publication_page
+    - workflows.workflow.nics_editorial_workflow
   module:
+    - content_moderation
+    - entity_browser
+    - media
+    - menu_admin_per_menu
+    - moderation_sidebar
+    - node
     - system
+    - toolbar
 _core:
   default_config_hash: AyMCT1boGFkm3MNXLyv6ZV7yMdWLY-U3WQLhzDDkWGE
 id: author_user
@@ -14,9 +32,32 @@ permissions:
   - 'access administration menu'
   - 'access administration pages'
   - 'access ckeditor link'
+  - 'access content overview'
+  - 'access location_browser entity browser pages'
+  - 'access media overview'
+  - 'access site reports'
+  - 'access toolbar'
   - 'add media from remote sources'
+  - 'administer main menu items'
+  - 'create audio media'
+  - 'create document media'
+  - 'create feature content'
+  - 'create file media'
   - 'create files'
+  - 'create image media'
+  - 'create news content'
+  - 'create page content'
   - 'create publication_page content'
+  - 'create remote_video media'
+  - 'delete own audio media'
+  - 'delete own document media'
+  - 'delete own feature content'
+  - 'delete own file media'
+  - 'delete own image media'
+  - 'delete own news content'
+  - 'delete own page content'
+  - 'delete own publication_page content'
+  - 'delete own remote_video media'
   - 'download any audio files'
   - 'download any document files'
   - 'download any image files'
@@ -25,16 +66,45 @@ permissions:
   - 'download own document files'
   - 'download own image files'
   - 'download own video files'
+  - 'edit any feature content'
+  - 'edit any news content'
+  - 'edit any page content'
+  - 'edit any publication_page content'
   - 'edit own audio files'
+  - 'edit own audio media'
   - 'edit own document files'
+  - 'edit own document media'
+  - 'edit own feature content'
+  - 'edit own file media'
   - 'edit own image files'
+  - 'edit own image media'
+  - 'edit own news content'
+  - 'edit own page content'
+  - 'edit own publication_page content'
+  - 'edit own remote_video media'
   - 'edit own video files'
   - 'moderate content from draft to needs_review'
   - 'moderate content from needs_review to draft'
+  - 'revert feature revisions'
+  - 'revert news revisions'
+  - 'revert page revisions'
+  - 'revert publication_page revisions'
+  - 'use moderation sidebar'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition submit_for_review'
   - 'use text format filtered_html'
   - 'use text format filtered_html_with_no_images'
   - 'use workbench_moderation my drafts tab'
   - 'use workbench_moderation needs review tab'
   - 'view all unpublished content'
+  - 'view any unpublished content'
+  - 'view feature revisions'
+  - 'view latest version'
+  - 'view news revisions'
   - 'view own files'
+  - 'view own unpublished media'
+  - 'view page revisions'
+  - 'view publication_page revisions'
   - 'view the administration theme'

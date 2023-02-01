@@ -81,12 +81,13 @@ if (!empty(getenv('PLATFORM_BRANCH'))) {
       $config['config_split.config_split.hosted']['status'] = FALSE;
       break;
 
-    case 'D8UN-edge':
+    case 'edge':
       // Edge environment orange toolbar.
       $env_colour = '#e56716';
       break;
 
     case 'D8UN-uat':
+    case 'uat':
       // UAT environment purple toolbar.
       $env_colour = '#9370DB';
       break;
