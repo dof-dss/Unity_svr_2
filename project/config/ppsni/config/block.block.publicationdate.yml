@@ -12,7 +12,7 @@ dependencies:
 id: publicationdate
 theme: ppsni_theme
 region: search_facets
-weight: -3
+weight: -8
 provider: null
 plugin: 'facet_block:date'
 settings:

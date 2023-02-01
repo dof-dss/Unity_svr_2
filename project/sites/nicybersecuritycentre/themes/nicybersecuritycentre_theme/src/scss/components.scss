@@ -333,7 +333,8 @@
   }
 }
 
-.node-type-publication {
+.node-type-publication,
+.node-type-webform {
   @include breakpoint($tab) {
     .content-sidebar-wrap {
       width: 65%;
@@ -341,13 +342,7 @@
   }
 }
 
-.path-webform {
-  @include breakpoint($tab) {
-    .content-sidebar-wrap {
-      width: 65%;
-    }
-  }
-
+.node-type-webform {
   .webform-submission-form input[type="submit"] {
     background: $link none;
     line-height: 1.5;

@@ -22,11 +22,6 @@ content:
   contact:
     weight: 5
     region: content
-  google_analytics:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   language:
     weight: 0
     region: content

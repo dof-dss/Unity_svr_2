@@ -238,11 +238,14 @@ p.published-date {
       }
     }
 
-    #block-registerforenews .content a:first-child {
-      padding: 2rem 1.5rem;
-      margin: 1rem 0 1.5em;
+    #block-registerforenews .content a {
+      &:first-child {
+        padding: 2rem 1.5rem;
+        margin: 1rem 0 1.5em;
+      }
 
-      &:hover {
+      &:not(.btn),
+      &:not(.btn):hover {
         border-bottom: none;
       }
     }
@@ -310,5 +313,4 @@ p.published-date {
       background: $ash-grey;
     }
   }
-
 }

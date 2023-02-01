@@ -1,4 +1,113 @@
-blocks: {  }
+blocks:
+  -
+    info: 'About the Public Prosecution Service'
+    langcode: en
+    uuid: 022a4599-345d-4609-a4db-3a989cafdeb1
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>The Public Prosecution Service (PPS) is the principal prosecuting authority in Northern Ireland, with responsibility for taking decisions as to prosecution in all cases investigated by the police. We also consider cases initiated or investigated by other statutory authorities, such as HM Revenue and Customs. We act impartially and in the interests of justice at all times, applying the highest professional standards and treating everyone fairly and with respect. We are at the heart of the criminal justice system and work with partners to build a safer community in which we respect the law and each other.</p>\r\n\r\n<p><a class=\"btn\" href=\"/about-pps\">More about us</a></p>\r\n"
+          summary: null
+          format: basic_html
+  -
+    info: 'Twitter block'
+    langcode: en
+    uuid: d33e5b82-49b6-4792-b609-b5b2b9002fa1
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body: {  }
+  -
+    info: 'How we work'
+    langcode: en
+    uuid: 0474ea51-31a9-4710-a70f-8fb732c16807
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<h3><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"6c8c9932-4f49-4bab-9bde-f16c4b2ed546\" href=\"/node/20\">How we work</a></h3>\r\n\r\n<p>How prosecution decisions are made, alternatives to prosecution, prosecution guidance and how to request a review of a no prosecution decision</p>\r\n"
+          summary: null
+          format: basic_html
+  -
+    info: 'Victim and Witness Information'
+    langcode: en
+    uuid: fbbec229-8750-45e7-b152-5d96994bc0ae
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<h3><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"52176b26-5301-497a-9440-0643d9403948\" href=\"/node/18\">Victim and Witness Information</a></h3>\r\n\r\n<p>The prosecution process explained, advice on attending court and the services we provide to victims and witnesses</p>\r\n"
+          summary: null
+          format: basic_html
+  -
+    info: 'Crime types'
+    langcode: en
+    uuid: e93001ed-4bad-4bf4-8143-f8f7215073c9
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<h3><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"02c32c62-2a07-4f19-a0c4-6ac3b8b80394\" href=\"/node/19\">Crime types</a></h3>\r\n\r\n<p>Details of how the PPS handle specific crime times, including legacy cases and sexual offences</p>\r\n"
+          summary: null
+          format: basic_html
+  -
+    info: 'Statistics and Research'
+    langcode: en
+    uuid: 49f709c0-3c03-4c04-b1ae-550af51b4f9f
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<h3><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"1c0d63e0-d3e3-4744-a97f-0fa5141f5997\" href=\"/node/566\">Statistics and Research</a></h3>\r\n\r\n<p>Statistical information on key topic areas within the PPS, including files received, conviction rates, thematic bulletins, surveys and results.</p>\r\n"
+          summary: null
+          format: basic_html
+  -
+    info: 'Contact Information'
+    langcode: en
+    uuid: 9628957b-46fa-4f2d-a3a7-103c6789096a
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<h2>Contact Information</h2>\r\n\r\n<address>Public Prosecution Service</address>\r\n\r\n<address>Belfast Chambers</address>\r\n\r\n<address>93 Chichester Street</address>\r\n\r\n<address>Belfast</address>\r\n\r\n<address>BT1 3JR</address>\r\n\r\n<address>Email: <a href=\"mailto:info@ppsni-gov.uk\">info@ppsni.gov.uk</a></address>\r\n\r\n<address>Tel: +44 (0) 28 9089 7100</address>\r\n\r\n<p>&nbsp;</p>\r\n"
+          summary: null
+          format: full_html
+  -
+    info: 'Social links'
+    langcode: en
+    uuid: dd507b77-8aab-4cc9-81e1-8b48d4787c48
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body: {  }
+  -
+    info: 'Footer logo'
+    langcode: en
+    uuid: 2e7428cf-d540-4ec4-ac16-f0bd30aebbaa
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<drupal-media data-align=\"center\" data-entity-type=\"media\" data-entity-uuid=\"09f1caa6-dda4-4607-8805-aeb6e17fe6ea\"></drupal-media>\r\n"
+          summary: ''
+          format: basic_html
 menus:
   -
     menu_name: main

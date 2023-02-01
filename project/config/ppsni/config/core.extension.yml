@@ -41,6 +41,7 @@ module:
   entityqueue: 0
   facets: 0
   facets_pretty_paths: 0
+  facets_summary: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -54,7 +55,6 @@ module:
   geolocation: 0
   geolocation_google_maps: 0
   geolocation_google_static_maps: 0
-  google_analytics: 0
   google_tag: 0
   handy_cache_tags: 0
   help: 0
@@ -109,6 +109,9 @@ module:
   search_api_solr: 0
   search_api_spellcheck: 0
   simplei: 0
+  slick: 0
+  slick_ui: 0
+  slick_views: 0
   structure_sync: 0
   system: 0
   taxonomy: 0
@@ -118,6 +121,7 @@ module:
   toolbar: 0
   twig_tweak: 0
   ultimate_cron: 0
+  unity_breadcrumbs: 0
   unity_common: 0
   unity_frontpage: 0
   unity_image_styles: 0

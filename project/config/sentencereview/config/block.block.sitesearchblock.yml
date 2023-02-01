@@ -1,4 +1,4 @@
-uuid: 20339194-f94c-494f-a095-e363e0b46918
+uuid: 21ba7083-7b2b-485b-9169-4fb7ebad551f
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,9 @@ dependencies:
     - system
     - unity_search_pages
   theme:
-    - src_theme
+    - sentencereview_theme
 id: sitesearchblock
-theme: src_theme
+theme: sentencereview_theme
 region: search
 weight: 0
 provider: null
