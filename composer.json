@@ -178,7 +178,6 @@
         "drupal/upgrade_status": "^3.18",
         "kint-php/kint": "^3.3",
         "mglaman/drupal-check": "^1.4",
-        "mglaman/phpstan-drupal": "1.1.27",
         "previousnext/phpunit-finder": "^1.0@alpha",
         "slevomat/coding-standard": "^7.0"
     },
