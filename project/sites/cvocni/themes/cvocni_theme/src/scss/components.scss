@@ -74,6 +74,7 @@
     }
   }
 }
+
 #victim-charter {
   p {
     background-color: #fee6d5;
@@ -90,6 +91,20 @@
   p {
     background-color: #fedfef;
     padding-bottom: 2rem;
+  }
+}
+
+.front #top-area {
+  .column {
+    padding: 0rem;
+
+    &:first-child {
+      margin-left: 10px;
+    }
+
+    &:last-child {
+      margin-right: 10px
+    }
   }
 }
 
