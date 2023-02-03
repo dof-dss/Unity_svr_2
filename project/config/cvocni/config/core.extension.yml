@@ -42,6 +42,7 @@ module:
   facets: 0
   facets_pretty_paths: 0
   facets_summary: 0
+  fastly: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -81,11 +82,6 @@ module:
   metatag_open_graph: 0
   metatag_twitter_cards: 0
   metatag_views: 0
-  migrate: 0
-  migrate_drupal: 0
-  migrate_plus: 0
-  migrate_tools: 0
-  migrate_upgrade: 0
   moderation_sidebar: 0
   mysql: 0
   node: 0
