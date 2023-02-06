@@ -5,10 +5,19 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
+#header {
+  @media screen and (min-width: $tab) {
+  margin-bottom: 5rem;
+}
+  }
+
 .top_left #logo {
-  @include breakpoint($tab) {
-    img {
-      height: 14rem;
+  img {
+    height: 10rem;
+  }
+     @media screen and (min-width: $tab) {
+      img {
+        height: 14rem;
     }
   }
 }
@@ -16,6 +25,7 @@
 .region-front-welcome {
   background: resolve('crc-banner-img.png') no-repeat 50%;
   padding: 5rem 5rem 5rem 5rem;
+  margin: auto;
 }
 
 #block-frontpagebanner {
@@ -26,14 +36,29 @@
     @include adjust-font-size-to(55px);
     color: white;
     line-height: 1.5;
+
+    @media screen and (max-width: $tab) {
+      @include adjust-font-size-to(30px);
+    }
+    @media screen and (max-width: $mob) {
+      @include adjust-font-size-to(18px);
+    }
   }
 
   a.btn {
     background: #0e1b5b;
-    font-size: 2.1rem;
+    @include adjust-font-size-to(21px);
     line-height: 3.5rem;
     padding: 1rem 2.8rem;
     border-radius: 5px;
+
+    @media screen and (max-width: $tab) {
+      @include adjust-font-size-to(16px);
+      display: inline;
+    }
+    @media screen and (max-width: $mob) {
+      @include adjust-font-size-to(12px)
+    }
 
     &:hover,
     &:focus {
@@ -45,64 +70,16 @@
 }
 
 .region-primary-menu .menu_wrapper {
-  @include breakpoint($tab) {
-    margin-top: 6rem;
-  }
+  background-color: $brand-primary;
 }
 
-#main-menu {
-  background: $white;
-
-  .menu-link,
-  .menu .active,
-  .menu-item.open .menu-toggle-btn {
-    color: $brand-primary;
-    @include adjust-font-size-to(16px);
-  }
-
-  .menu
-  .menu-item
-  .active {
-    border-bottom-color: $brand-primary;
-  }
-
-  .menu-link {
-    &:hover,
-    &:focus {
-      background: $brand-primary;
-      color: $white;
-    }
-  }
-
-  .menu-main_sub
-  .menu-item
-  span.active {
-    @include adjust-font-size-to(14px);
-    border-bottom-color: $brand-secondary;
-    padding: 1rem;
-  }
-
-  .menu-main_sub {
-    background: $brand-primary;
-
-    .menu-item {
-      .active {
-        background: $brand-secondary;
-        color: $white;
-      }
-
-      a {
-        &:hover,
-        &:focus {
-          color: $white;
-          background: $brand-secondary;
-        }
-      }
-    }
-  }
+#main-menu .menu .menu-item .active,
+#main-menu .menu .menu-item .active + .menu-main_sub .title a {
+  border-bottom-color: $brand-secondary;
 }
 
 #top-area {
+  margin: 2% auto;
   .column {
     width: 50%;
     margin: 0;
@@ -113,16 +90,16 @@
   }
 
   h2 {
-    font-size: 2rem;
+    @include adjust-font-size-to(20px);
     text-align: left;
     margin: 0;
     color: $black;
   }
   h2.title {
-    font-size: 1.8rem;
+    @include adjust-font-size-to(18px);
   }
   .more-link {
-    font-size: 1.8rem;
+    @include adjust-font-size-to(18px);
     text-align: left;
   }
 }
@@ -212,18 +189,18 @@
 
   h2 {
     @include responsive-typo-map($h2-text);
+    @include adjust-font-size-to(28px);
     padding: 0;
-    font-size: 2.8rem;
     margin: 0.4rem 0rem 0.2rem 0rem;
   }
 
   h2.title {
-    font-size:1.8rem;
+    @include adjust-font-size-to(18px);
     line-height: 1.5;
   }
 
   p.published-date {
-    font-size: 1.6rem;
+    @include adjust-font-size-to(16px);
     margin-bottom: 0rem;
   }
 
@@ -244,8 +221,8 @@
       }
 
       .date-published {
+        @include adjust-font-size-to(14px);
         display: block;
-        font-size: 1.4rem;
         line-height: 1.8rem;
       }
     }
@@ -255,7 +232,7 @@
 #footer-area .block {
   h2 {
     color: $black;
-    font-size: 2.5rem;
+    @include adjust-font-size-to(25px)
   }
 }
 
@@ -268,8 +245,8 @@
   }
 
   .footer-menu li {
+    @include adjust-font-size-to(16px);
     padding-left: 0;
-    font-size: 1.6rem;
     list-style-type: none;
 
     @include breakpoint($mob) {
