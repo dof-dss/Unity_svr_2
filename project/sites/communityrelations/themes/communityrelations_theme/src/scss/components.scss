@@ -47,17 +47,17 @@
 
   a.btn {
     background: #0e1b5b;
-    font-size: 2.1rem;
+    @include adjust-font-size-to(21px);
     line-height: 3.5rem;
     padding: 1rem 2.8rem;
     border-radius: 5px;
 
     @media screen and (max-width: $tab) {
-      font-size: 1.6rem;
+      @include adjust-font-size-to(16px);
       display: inline;
     }
     @media screen and (max-width: $mob) {
-      font-size: 1.2rem
+      @include adjust-font-size-to(12px)
     }
 
     &:hover,
@@ -90,16 +90,16 @@
   }
 
   h2 {
-    font-size: 2rem;
+    @include adjust-font-size-to(20px);
     text-align: left;
     margin: 0;
     color: $black;
   }
   h2.title {
-    font-size: 1.8rem;
+    @include adjust-font-size-to(18px);
   }
   .more-link {
-    font-size: 1.8rem;
+    @include adjust-font-size-to(18px);
     text-align: left;
   }
 }
@@ -189,18 +189,18 @@
 
   h2 {
     @include responsive-typo-map($h2-text);
+    @include adjust-font-size-to(28px);
     padding: 0;
-    font-size: 2.8rem;
     margin: 0.4rem 0rem 0.2rem 0rem;
   }
 
   h2.title {
-    font-size:1.8rem;
+    @include adjust-font-size-to(18px);
     line-height: 1.5;
   }
 
   p.published-date {
-    font-size: 1.6rem;
+    @include adjust-font-size-to(16px);
     margin-bottom: 0rem;
   }
 
@@ -221,8 +221,8 @@
       }
 
       .date-published {
+        @include adjust-font-size-to(14px);
         display: block;
-        font-size: 1.4rem;
         line-height: 1.8rem;
       }
     }
@@ -232,7 +232,7 @@
 #footer-area .block {
   h2 {
     color: $black;
-    font-size: 2.5rem;
+    @include adjust-font-size-to(25px)
   }
 }
 
@@ -245,8 +245,8 @@
   }
 
   .footer-menu li {
+    @include adjust-font-size-to(16px);
     padding-left: 0;
-    font-size: 1.6rem;
     list-style-type: none;
 
     @include breakpoint($mob) {
