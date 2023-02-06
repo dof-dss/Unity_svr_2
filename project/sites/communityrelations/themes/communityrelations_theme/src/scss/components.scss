@@ -5,10 +5,19 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
+#header {
+  @media screen and (min-width: $tab) {
+  margin-bottom: 5rem;
+}
+  }
+
 .top_left #logo {
-  @include breakpoint($tab) {
-    img {
-      height: 14rem;
+  img {
+    height: 10rem;
+  }
+     @media screen and (min-width: $tab) {
+      img {
+        height: 14rem;
     }
   }
 }
@@ -16,6 +25,7 @@
 .region-front-welcome {
   background: resolve('crc-banner-img.png') no-repeat 50%;
   padding: 5rem 5rem 5rem 5rem;
+  margin: auto;
 }
 
 #block-frontpagebanner {
@@ -23,9 +33,16 @@
   padding: 2.6rem 0 2rem;
 
   h2 {
-    @include adjust-font-size-to(55px);
+    font-size: 55px;
     color: white;
     line-height: 1.5;
+
+    @media screen and (max-width: $tab) {
+      font-size: 30px;
+    }
+    @media screen and (max-width: $mob) {
+      font-size: 18px;
+    }
   }
 
   a.btn {
@@ -34,6 +51,14 @@
     line-height: 3.5rem;
     padding: 1rem 2.8rem;
     border-radius: 5px;
+
+    @media screen and (max-width: $tab) {
+      font-size: 1.6rem;
+      display: inline;
+    }
+    @media screen and (max-width: $mob) {
+      font-size: 1.2rem
+    }
 
     &:hover,
     &:focus {
@@ -45,64 +70,16 @@
 }
 
 .region-primary-menu .menu_wrapper {
-  @include breakpoint($tab) {
-    margin-top: 6rem;
-  }
+  background-color: $brand-primary;
 }
 
-#main-menu {
-  background: $white;
-
-  .menu-link,
-  .menu .active,
-  .menu-item.open .menu-toggle-btn {
-    color: $brand-primary;
-    @include adjust-font-size-to(16px);
-  }
-
-  .menu
-  .menu-item
-  .active {
-    border-bottom-color: $brand-primary;
-  }
-
-  .menu-link {
-    &:hover,
-    &:focus {
-      background: $brand-primary;
-      color: $white;
-    }
-  }
-
-  .menu-main_sub
-  .menu-item
-  span.active {
-    @include adjust-font-size-to(14px);
-    border-bottom-color: $brand-secondary;
-    padding: 1rem;
-  }
-
-  .menu-main_sub {
-    background: $brand-primary;
-
-    .menu-item {
-      .active {
-        background: $brand-secondary;
-        color: $white;
-      }
-
-      a {
-        &:hover,
-        &:focus {
-          color: $white;
-          background: $brand-secondary;
-        }
-      }
-    }
-  }
+#main-menu .menu .menu-item .active,
+#main-menu .menu .menu-item .active + .menu-main_sub .title a {
+  border-bottom-color: $brand-secondary;
 }
 
 #top-area {
+  margin: 2% auto;
   .column {
     width: 50%;
     margin: 0;
