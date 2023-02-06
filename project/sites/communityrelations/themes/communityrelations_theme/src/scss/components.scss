@@ -33,15 +33,15 @@
   padding: 2.6rem 0 2rem;
 
   h2 {
-    font-size: 55px;
+    @include adjust-font-size-to(55px);
     color: white;
     line-height: 1.5;
 
     @media screen and (max-width: $tab) {
-      font-size: 30px;
+      @include adjust-font-size-to(30px);
     }
     @media screen and (max-width: $mob) {
-      font-size: 18px;
+      @include adjust-font-size-to(18px);
     }
   }
 
