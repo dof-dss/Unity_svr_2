@@ -153,6 +153,8 @@
 }
 
 #menu-main .menu-item {
+  margin-right: 0.2rem;
+
   @media screen and (max-width: $lap) {
     padding-left: .5rem;
     padding-right: .5rem;
