@@ -142,11 +142,12 @@
 .region-top-third {
   background: #4e780b;
   padding: 2rem;
+  height: 65rem;
 }
 .region-top-fourth {
   background: resolve('crc-subscribe-bg.png') repeat 50%;;
   padding: 2rem;
-  height: 67rem;
+  height: 65rem;
 
     h2 {
       color: $white;
