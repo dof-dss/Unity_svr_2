@@ -48,19 +48,14 @@ processor_configs:
       sort: 20
     settings:
       sort: ASC
-  date_facet_drilldown:
-    processor_id: date_facet_drilldown
-    weights:
-      build: 1
-    settings: {  }
   date_item:
     processor_id: date_item
     weights:
       build: 35
     settings:
-      date_display: actual_date
+      date_display: relative_date
       granularity: 6
-      date_format: ''
+      date_format: 'Y'
   raw_value_widget_order:
     processor_id: raw_value_widget_order
     weights:
