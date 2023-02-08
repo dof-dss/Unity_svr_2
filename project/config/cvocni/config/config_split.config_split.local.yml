@@ -8,6 +8,11 @@ description: "Local development split. \r\nEnables debugging and development mod
 weight: 0
 folder: ../project/config/cvocni/local
 module:
+  migrate: 0
+  migrate_drupal: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  migrate_upgrade: 0
   clone_nodes: 0
   dblog: 0
   easy_install: 0
