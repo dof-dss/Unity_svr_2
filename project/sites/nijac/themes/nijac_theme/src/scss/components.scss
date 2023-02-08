@@ -14,6 +14,10 @@
   border-bottom-color: $brand-primary;
 }
 
+a.btn {
+  background-color: $brand-primary;
+}
+
 #top-area {
   background-color: #edd5c4;
   max-width: 100%;
@@ -300,7 +304,7 @@ p.published-date {
     color: $white;
     text-align: center;
     cursor: pointer;
-    background: $link;
+    background: $brand-primary;
     border-radius: 0;
     border: 3px solid transparent;
     text-decoration: none;
