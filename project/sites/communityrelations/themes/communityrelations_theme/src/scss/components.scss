@@ -114,15 +114,6 @@
 
 .region-top-first {
   padding: 2rem;
-
-  table {
-    border: 0px;
-
-    td {
-      background: $white;
-      border: $white;
-    }
-  }
 }
 
 .region-top-second {
@@ -132,17 +123,7 @@
   h2 {
     color: $white;
   }
-
-  table {
-    border: 0px;
-
-    td {
-      background: #9f268a;
-      border: #9f268a;
-    }
-  }
 }
-
 
 .region-top-third {
   background: #4e780b;
@@ -192,47 +173,31 @@
   }
 }
 
-.sidebar-second .sidebar-second-layout {
-  margin-bottom: 2rem;
-  padding-top: 1rem;
+.sidebar-second-layout {
+  .rel-menu--latest-news {
+    margin-bottom: 2rem;
 
-  h2 {
-    @include responsive-typo-map($h2-text);
-    @include adjust-font-size-to(28px);
-    padding: 0;
-    margin: 0.4rem 0rem 0.2rem 0rem;
-  }
+    ul {
+      margin-bottom: 1rem;
 
-  h2.title {
-    @include adjust-font-size-to(18px);
-    line-height: 1.5;
-  }
+      li {
+        padding: 0 0 .6rem 1rem;
+        list-style: none;
+        margin: 0 0 .2rem;
+        position: relative;
 
-  p.published-date {
-    @include adjust-font-size-to(16px);
-    margin-bottom: 0rem;
-  }
+        &::before {
+          content: "-";
+          left: 0;
+          position: absolute;
+          top: 0;
+        }
 
-  ul {
-    margin-bottom: 1rem;
-
-    li {
-      padding: 0 0 .6rem 1rem;
-      list-style: none;
-      margin: 0 0 .2rem;
-      position: relative;
-
-      &::before {
-        content: "-";
-        left: 0;
-        position: absolute;
-        top: 0;
-      }
-
-      .date-published {
-        @include adjust-font-size-to(14px);
-        display: block;
-        line-height: 1.8rem;
+        .date-published {
+          display: block;
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+        }
       }
     }
   }
