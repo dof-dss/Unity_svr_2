@@ -32,12 +32,35 @@
     padding-right: 5rem
   }
 }
+.region-top-first {
+  background: #fee6d5;
+
+  .media-image {
+    margin: 0
+  }
+}
+.region-top-second {
+  background: #d6fefc;
+
+  .media-image {
+    margin: 0
+  }
+}
+.region-top-third {
+  background: #fedfef;
+
+  .media-image {
+    margin: 0
+  }
+}
 
 #top-area {
   display: flex;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 
   .column .content {
-    padding: 4rem 0;
+    padding: 0rem 0rem 3rem;
   }
 
   img {
