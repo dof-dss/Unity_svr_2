@@ -195,7 +195,7 @@
 
         .date-published {
           display: block;
-          font-size: 1.4rem;
+          @include adjust-font-size-to(25px);
           line-height: 1.8rem;
         }
       }
