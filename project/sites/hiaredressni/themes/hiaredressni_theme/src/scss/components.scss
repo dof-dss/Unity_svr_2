@@ -153,6 +153,8 @@
 }
 
 #menu-main .menu-item {
+  margin-right: 0.5rem;
+
   @media screen and (max-width: $lap) {
     padding-left: .5rem;
     padding-right: .5rem;
@@ -197,7 +199,8 @@
 }
 
 #footer .column li {
- display: inline;
+  display: inline;
+  border-bottom-style: none;
 }
 
 .footer-menu ul li {

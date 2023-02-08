@@ -162,7 +162,7 @@ settings:
   entity_limit_user_interval: 86400
   purge: completed
   purge_days: 1
-  results_disabled: false
+  results_disabled: true
   results_disabled_ignore: false
   results_customize: false
   token_view: false

@@ -12,7 +12,6 @@ module:
 theme: {  }
 blacklist:
   - fastly.settings
-  - fastly.settings
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
