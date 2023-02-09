@@ -9,7 +9,7 @@ dependencies:
   module:
     - geolocation
 _core:
-  default_config_hash: EKxeWt4uFhp85DrdiCtYhkiTcOyD87oLW9yd4jmFKMI
+  default_config_hash: yi9DQ4oT_bjHZ8kSymfpZBui6TYNAnN3P11ZE7S7j7E
 id: block_content.map.default
 targetEntityType: block_content
 bundle: map
@@ -36,7 +36,14 @@ content:
             reset_zoom: true
           map_center_id: fit_bounds
       map_provider_id: google_maps
-      map_provider_settings: {  }
+      map_provider_settings:
+        type: ROADMAP
+        zoom: 15
+        minZoom: 0
+        maxZoom: 20
+        height: 400px
+        width: 100%
+        gestureHandling: auto
       data_provider_settings: {  }
     third_party_settings: {  }
     weight: 1
