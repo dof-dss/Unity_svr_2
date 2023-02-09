@@ -8,7 +8,6 @@ dependencies:
     - field.storage.node.field_crc_event_date
     - field.storage.node.field_deadline_date
     - field.storage.node.field_funding_scheme_type
-    - field.storage.node.field_news_type
     - field.storage.node.field_publication_type
     - field.storage.node.field_published_date
     - field.storage.node.field_teaser
@@ -113,14 +112,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_funding_scheme_type
-  field_news_type:
-    label: 'News type'
-    datasource_id: 'entity:node'
-    property_path: field_news_type
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_news_type
   field_publication_type:
     label: Type
     datasource_id: 'entity:node'
