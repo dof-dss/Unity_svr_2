@@ -98,7 +98,7 @@
   }
 
   h2 {
-    @include adjust-font-size-to(20px);
+    @include adjust-font-size-to(24px);
     text-align: left;
     margin: 0;
     color: $black;
@@ -112,8 +112,26 @@
   }
 }
 
+#latest-event-home,
+#latest-event-home-2,
+#latest-news-home,
+#latest-news-home-2 {
+  display:flex;
+  align-items: center;
+}
+
 .region-top-first {
   padding: 2rem;
+
+  h3 {
+    @include adjust-font-size-to(20px);
+    text-align: left;
+  }
+  h4 {
+    @include adjust-font-size-to(16px);
+    margin: 1.5rem;
+    text-align: left;
+  }
 }
 
 .region-top-second {
@@ -122,6 +140,15 @@
 
   h2 {
     color: $white;
+  }
+  h3 {
+    @include adjust-font-size-to(20px);
+    text-align: left;
+  }
+  h4 {
+    @include adjust-font-size-to(16px);
+    margin: 1.5rem;
+    text-align: left;
   }
 }
 
@@ -195,7 +222,7 @@
 
         .date-published {
           display: block;
-          @include adjust-font-size-to(25px);
+          @include adjust-font-size-to(14px);
           line-height: 1.8rem;
         }
       }
