@@ -35,5 +35,3 @@ visibility:
       node: '@node.node_route_context:node'
     bundles:
       basic_page: basic_page
-      news: news
-      publication: publication
