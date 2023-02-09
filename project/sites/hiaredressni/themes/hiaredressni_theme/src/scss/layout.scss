@@ -14,3 +14,26 @@
     }
   }
 }
+
+.footer-area .column:last-child {
+  float: none;
+  width: unset;
+}
+
+#footer {
+  max-width: 100%;
+}
+
+#footer-menu {
+  text-align: left;
+}
+
+#footer .column li {
+  display: inline;
+  border-bottom-style: none;
+  padding: 0 .8rem 0 0;
+}
+
+.footer-menu ul li {
+  font-size: 1.4rem;
+}
