@@ -66,14 +66,42 @@
  * @see template_preprocess_node()
  */
 #}
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    'clearfix',
+  ]
+%}
 
-<article>
-  {{ content.field_photo }}
-  <h3>
-    <a href="{{ url }}">{{ node.label }}</a>
-  </h3>
-  {{ content | without('field_photo') }}
-  <div class="view-footer">
-    <a href="{{ url }}">Read more<span class="visually-hidden">about {{ node.label }}</span></a>
+{% if not page %}
+<article{{ attributes.addClass(classes).setAttribute('id', 'node-' ~ node.id).removeAttribute('role') }}>
+  <header>
+{% endif %}
+    {{ title_prefix }}
+      {% if label and not page %}
+      <h3{{ title_attributes.addClass('title') }}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h3>
+    {% endif %}
+    {{ title_suffix }}
+    {% if display_submitted %}
+      <div class="node__meta">
+        <span{{ author_attributes.addClass('submitted') }}>
+          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+        </span>
+      </div>
+    {% endif %}
+  {% if not page %}
+  </header>
+  {% endif %}
+  <div{{ content_attributes.addClass('content') }}>
+    {{ content }}
   </div>
+{% if not page %}
 </article>
+{% endif %}
