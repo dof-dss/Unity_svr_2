@@ -215,7 +215,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: span
+          element_type: div
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -280,14 +280,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: h4
           element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -322,41 +322,16 @@ display:
           exposed: false
           granularity: second
       style:
-        type: table
+        type: default
         options:
           grouping: {  }
           row_class: ''
           default_row_class: false
-          columns:
-            title: title
-            field_photo: field_photo
-          default: '-1'
-          info:
-            title:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_photo:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          override: true
-          sticky: false
-          summary: ''
-          empty_table: false
-          caption: ''
-          description: ''
       row:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: latest_content_item
+          view_mode: teaser
       defaults:
         use_more: false
         use_more_always: false
@@ -368,10 +343,10 @@ display:
         fields: false
         sorts: false
       display_description: ''
-      use_more: true
+      use_more: false
       use_more_always: true
       use_more_text: 'More News'
-      link_display: custom_url
+      link_display: '0'
       link_url: /news
       display_extenders:
         metatag_display_extender: {  }
@@ -494,14 +469,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h2
+          element_type: h3
           element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: false
+          element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -610,13 +585,10 @@ display:
           default_row_class: false
           uses_fields: false
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          default_field_elements: true
-          inline:
-            title: title
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: latest_content_item
       defaults:
         title: false
         link_display: false
