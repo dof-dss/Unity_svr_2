@@ -31,13 +31,10 @@
  */
 #}
 
-<div class="presentation" id="latest-news-home">
-  {{ title }}
-
+<div>
   {% if rows -%}
     {{ rows }}
   {% elseif empty -%}
     {{ empty }}
   {% endif %}
-
 </div>
