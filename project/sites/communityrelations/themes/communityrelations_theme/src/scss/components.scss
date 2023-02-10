@@ -98,7 +98,7 @@
   }
 
   h2 {
-    @include adjust-font-size-to(20px);
+    @include adjust-font-size-to(24px);
     text-align: left;
     margin: 0;
     color: $black;
@@ -111,9 +111,187 @@
     text-align: left;
   }
 }
+.latest-event-top {
+  a {
+    background: #9f268a;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .board__image {
+    max-width: 45rem;
+  }
+  .board-title {
+    position: relative;
+    padding-right: 2rem;
+  }
+  .board__body {
+    position: relative;
+    padding-right: 2rem;
+    flex: auto;
+    margin-left: 1rem;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 7rem;
+      right: 0.4rem;
+      width: 3rem;
+      height: 3rem;
+      background-image: resolve('arrow_forward_link_blue.svg');
+      background-position: center center;
+      background-size: 2.4rem auto;
+      background-repeat: no-repeat;
+    }
+  }
+  &:hover .board__body:after,
+  &:focus .board__body:after {
+    background-color: $charcoal;
+    background-image: resolve('arrow_forward_white.svg');
+  }
+}
+
+.latest-news-top {
+  a {
+    background: $grey-light;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .board__image {
+    max-width: 45rem;
+  }
+
+  .board-title {
+    position: relative;
+    padding-right: 2rem;
+  }
+
+  .board__body {
+    position: relative;
+    padding-right: 2rem;
+    flex: auto;
+    margin-left: 1rem;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 7rem;
+      right: 0.4rem;
+      width: 3rem;
+      height: 3rem;
+      background-image: resolve('arrow_forward_link_blue.svg');
+      background-position: center center;
+      background-size: 2.4rem auto;
+      background-repeat: no-repeat;
+    }
+  }
+  &:hover .board__body:after,
+  &:focus .board__body:after {
+    background-color: $charcoal;
+    background-image: resolve('arrow_forward_white.svg');
+  }
+}
+
+.latest-news-bottom {
+  a {
+    display:flex;
+    column-gap: 2rem;
+    background: $grey-light;
+  }
+
+  .board__image {
+    max-width: 20rem;
+  }
+  .board-title {
+    position: relative;
+    padding-right: 2rem;
+  }
+  .board__body {
+    position: relative;
+    padding-right: 2rem;
+    flex: auto;
+    margin-left: 1rem;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 7rem;
+      right: 0.4rem;
+      width: 3rem;
+      height: 3rem;
+      background-image: resolve('arrow_forward_link_blue.svg');
+      background-position: center center;
+      background-size: 2.4rem auto;
+      background-repeat: no-repeat;
+    }
+  }
+    &:hover .board__body:after,
+    &:focus .board__body:after {
+      background-color: $charcoal;
+      background-image: resolve('arrow_forward_white.svg');
+    }
+  }
+
+
+.latest-event-bottom {
+  a {
+    display: flex;
+    column-gap: 2rem;
+    background: #9f268a;
+  }
+  
+  .board__image {
+    max-width: 20rem;
+  }
+  .board-title {
+    position: relative;
+    padding-right: 2rem;
+  }
+  .board__body {
+    position: relative;
+    padding-right: 2rem;
+    flex: auto;
+    margin-left: 1rem;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 7rem;
+      right: 0.4rem;
+      width: 3rem;
+      height: 3rem;
+      background-image: resolve('arrow_forward_link_blue.svg');
+      background-position: center center;
+      background-size: 2.4rem auto;
+      background-repeat: no-repeat;
+    }
+  }
+  &:hover .board__body:after,
+  &:focus .board__body:after {
+    background-color: $charcoal;
+    background-image: resolve('arrow_forward_white.svg');
+  }
+}
+
+
 
 .region-top-first {
   padding: 2rem;
+
+  h3 {
+    @include adjust-font-size-to(20px);
+    text-align: left;
+  }
+  h4 {
+    @include adjust-font-size-to(18px);
+    margin: 1.5rem;
+    text-align: left;
+  }
 }
 
 .region-top-second {
@@ -121,6 +299,17 @@
   padding: 2rem;
 
   h2 {
+    color: $white;
+  }
+  h3 {
+    @include adjust-font-size-to(20px);
+    text-align: left;
+    color: $white;
+  }
+  h4 {
+    @include adjust-font-size-to(18px);
+    margin: 1.5rem;
+    text-align: left;
     color: $white;
   }
 }
@@ -195,7 +384,7 @@
 
         .date-published {
           display: block;
-          @include adjust-font-size-to(25px);
+          @include adjust-font-size-to(14px);
           line-height: 1.8rem;
         }
       }
