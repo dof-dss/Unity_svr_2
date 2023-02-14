@@ -94,10 +94,10 @@
   {% endif %}
   {% endif %}
   {{ page.front_welcome }}
-  <div class="front-banner">
+  <div class="front-banner container">
     <img src="sites/ircommission/themes/ircommission_theme/images/irc-commissioners-banner.jpg"
-         alt="IRC Commissioners(from left) John McBurney, Tim O'Connor, Monica McWilliams, Mitchell Reiss">
-    <p>IRC Commissioners(from left) John McBurney, Tim O'Connor, Monica McWilliams, Mitchell Reiss</p>
+         alt="IRC Commissioners (from left) John McBurney, Tim O'Connor, Monica McWilliams, Mitchell Reiss">
+    <p>IRC Commissioners (from left) John McBurney, Tim O'Connor, Monica McWilliams, Mitchell Reiss</p>
   </div>
 
   {% if page.top_first or page.top_second or page.top_third %}
@@ -189,7 +189,7 @@
     {# An extra area on the homepage to add 1 to 3 blocks. May be twitter widgets or just block content. #}
     {% if page.bottom_widget_1 or page.bottom_widget_2 or page.bottom_widget_3 %}
       <div id="bottom_wrapper" class="footer_block bottom_widget">
-        <div id="bottom-area" class="footer-area container-wrap clearfix">
+        <div id="bottom-area" class="footer-area container-wrap">
           {% if page.bottom_widget_1 %}
             <div class="column">
               {{ page.bottom_widget_1 }}

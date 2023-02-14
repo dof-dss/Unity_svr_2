@@ -39,7 +39,7 @@ _core:
   default_config_hash: cI6O43jts_j67JaySnvjojNUQYYJXQmbWghOsb7iQNY
 id: supervisor_user
 label: 'supervisor user'
-weight: -7
+weight: -6
 is_admin: null
 permissions:
   - 'access administration menu'
@@ -53,8 +53,13 @@ permissions:
   - 'add content to books'
   - 'add media from remote sources'
   - 'add scheduled transitions node basic_page'
+  - 'add scheduled transitions node core_funded_groups'
+  - 'add scheduled transitions node event'
+  - 'add scheduled transitions node funding_schemes'
   - 'add scheduled transitions node news'
+  - 'add scheduled transitions node project_profile'
   - 'add scheduled transitions node publication'
+  - 'add scheduled transitions node staff_member'
   - 'add scheduled transitions node webform'
   - 'administer book outlines'
   - 'administer main menu items'
@@ -182,8 +187,13 @@ permissions:
   - 'moderate content from needs_review to published'
   - 'moderate content from published to needs_review'
   - 'reschedule scheduled transitions node basic_page'
+  - 'reschedule scheduled transitions node core_funded_groups'
+  - 'reschedule scheduled transitions node event'
+  - 'reschedule scheduled transitions node funding_schemes'
   - 'reschedule scheduled transitions node news'
+  - 'reschedule scheduled transitions node project_profile'
   - 'reschedule scheduled transitions node publication'
+  - 'reschedule scheduled transitions node staff_member'
   - 'reschedule scheduled transitions node webform'
   - 'revert all revisions'
   - 'revert basic_page revisions'
@@ -230,8 +240,13 @@ permissions:
   - 'view project_profile revisions'
   - 'view publication revisions'
   - 'view scheduled transitions node basic_page'
+  - 'view scheduled transitions node core_funded_groups'
+  - 'view scheduled transitions node event'
+  - 'view scheduled transitions node funding_schemes'
   - 'view scheduled transitions node news'
+  - 'view scheduled transitions node project_profile'
   - 'view scheduled transitions node publication'
+  - 'view scheduled transitions node staff_member'
   - 'view scheduled transitions node webform'
   - 'view staff_member revisions'
   - 'view the administration theme'
