@@ -111,16 +111,29 @@
     }
   }
 
+#topics-home {
+  h2 {
+    margin: 0;
+    padding-bottom: 1%;
+    @media screen and (max-width: $tab) {
+      padding: 2%;
+    }
+  }
+  h3 {
+    margin: 1.6rem 0 1.8rem;
+  }
+}
+
 .front #bottom-area {
   display: flex;
-  justify-content: space-evenly;
   @media screen and (max-width: $tab) {
     flex-direction: column;
     align-items: center;
   }
 
   .column {
-    width: 45%;
+    width: 50%;
+    padding: 0;
     @media screen and (max-width: $tab) {
       width: auto;
     }
