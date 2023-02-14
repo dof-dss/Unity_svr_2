@@ -41,3 +41,9 @@ facets:
     separator: ', '
     show_count: false
     weight: 0
+  event_date:
+    checked: true
+    label: 'Event date'
+    separator: ', '
+    show_count: false
+    weight: 0
