@@ -39,21 +39,28 @@
 
     .column {
       float: none;
-      margin: 1rem 0;
+      margin: 1rem 0 2rem;
       flex-basis: 32.5%;
       width: 100%;
       padding: 0 2rem;
 
       @include breakpoint($phab) {
-        padding: 0 1rem;
+        padding: 0 1rem 3rem;
         margin: 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
       }
     }
 
     .region-bottom-widget-1,
     .region-bottom-widget-2,
     .region-bottom-widget-3 {
-      height: 100%
+      @include breakpoint($tab) {
+        height: 100%;
+        display: flex;
+      }
+
     }
   }
 
@@ -75,34 +82,27 @@
     .btnwrap, footer {
       margin-top: 1rem;
     }
+
+    .btnwrap {
+      @include breakpoint($tab) {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+      }
+    }
   }
 
-  .about-IRC-flex {
-    @include breakpoint($phab){
-      position: relative;
-      height: 100%;
-
-      .btnwrap {
-        position: absolute;
-        bottom: 5px;
-        width: 100%
-      }
+  .about-IRC-flex,
+  .contextual-region {
+    @include breakpoint($phab) {
+      position: static;
+      width: 100%;
+      margin-bottom: 2rem;
     }
   }
 
   .block-views-blockfront-latest-news-home-latest-news {
-    position: relative;
-
-    @include breakpoint($phab) {
-      height: 100%;
-
-      footer {
-        position: absolute;
-        bottom: 5px;
-        width: 100%
-      }
-    }
-
     h3 {
       @include responsive-typo-map($normal-text);
       font-weight: normal;
@@ -110,12 +110,13 @@
     }
   }
 
-  .block-views-blockirc-key-documents-views-block-key-docs-homepage {
+  .block-views-blockkey-documents-key-docs-home {
     .dash-list {
       text-align: left;
     }
   }
 }
+
 
 #main-menu {
   .menu .menu-item {
@@ -136,26 +137,6 @@
       .active {
         border-top: none;
       }
-    }
-  }
-}
-
-#footer {
-  @media screen and (max-width: $tab) {
-    padding: 2rem;
-  }
-
-  .footer-menu li {
-    padding-left: 0;
-    //font-size: 1.4rem;
-    line-height: 2.4rem;
-    display: block;
-
-    @include breakpoint($tab) {
-      display: inline-block;
-      padding: 0 .8rem 0 0;
-      line-height: 1.8rem;
-      margin-right: .5rem;
     }
   }
 }

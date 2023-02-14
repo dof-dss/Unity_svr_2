@@ -1,18 +1,19 @@
-uuid: 2660bd2d-d21f-4c12-aabb-7a581ce3eab9
+uuid: 6a0126d8-b404-4d77-96be-3dc789f45069
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
-    - field.storage.node.field_published_date
-    - node.type.news
+    - node.type.publication_page
+    - taxonomy.vocabulary.publication_types
+  content:
+    - 'taxonomy_term:publication_types:bccdd021-fbb6-40bc-8eee-8846122aa19e'
   module:
     - datetime
     - node
+    - taxonomy
     - user
-    - views_custom_cache_tag
-id: latest_news
-label: 'Latest News'
+id: key_documents
+label: 'Key documents'
 module: views
 description: ''
 tag: ''
@@ -25,59 +26,12 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Latest News'
+      title: 'Key documents'
       fields:
         title:
           id: title
           table: node_field_data
           field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: title
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            trim: false
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_published_date:
-          id: field_published_date
-          table: node__field_published_date
-          field: field_published_date
           relationship: none
           group_type: group
           admin_label: ''
@@ -111,23 +65,22 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: span
-          element_class: date-published
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: false
+          element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_default
+          type: string
           settings:
-            timezone_override: ''
-            format_type: unity_date
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -142,7 +95,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 2
+          items_per_page: 3
       exposed_form:
         type: basic
         options:
@@ -158,15 +111,14 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: custom_tag
-        options:
-          custom_tag: 'handy_cache_tags:node:news'
+        type: tag
+        options: {  }
       empty: {  }
       sorts:
-        field_published_date_value:
-          id: field_published_date_value
-          table: node__field_published_date
-          field: field_published_date_value
+        field_publication_date_value:
+          id: field_publication_date_value
+          table: node__field_publication_date
+          field: field_publication_date_value
           relationship: none
           group_type: group
           admin_label: ''
@@ -174,7 +126,7 @@ display:
           order: DESC
           expose:
             label: ''
-            field_identifier: field_published_date_value
+            field_identifier: ''
           exposed: false
           granularity: second
       arguments: {  }
@@ -196,15 +148,25 @@ display:
           id: type
           table: node_field_data
           field: type
-          relationship: none
-          group_type: group
-          admin_label: ''
           entity_type: node
           entity_field: type
           plugin_id: bundle
-          operator: in
           value:
-            news: news
+            publication_page: publication_page
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_publication_type_target_id:
+          id: field_publication_type_target_id
+          table: node__field_publication_type
+          field: field_publication_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            7: 7
           group: 1
           exposed: false
           expose:
@@ -234,14 +196,28 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+          reduce_duplicates: false
+          vid: publication_types
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
       style:
-        type: default
+        type: html_list
         options:
           grouping: {  }
           row_class: ''
           default_row_class: false
+          type: ul
+          wrapper_class: dash-list
+          class: ''
       row:
         type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       query:
         type: views_query
         options:
@@ -251,13 +227,13 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: ''
       use_more: true
       use_more_always: true
-      use_more_text: 'More news'
+      use_more_text: 'More documents'
       link_display: custom_url
-      link_url: /news
-      header: {  }
-      footer:
+      link_url: /key-documents
+      header:
         area:
           id: area
           table: views
@@ -268,119 +244,35 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<a href="/news" class="more"</a>More news ...</a>'
-            format: basic_html
+            value: '<i class="far fa-folder"></i>'
+            format: full_html
           tokenize: false
+      footer: {  }
       display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_published_date'
-  home_latest_news:
-    id: home_latest_news
-    display_title: 'Home latest News'
-    display_plugin: block
-    position: 2
-    display_options:
-      style:
-        type: default
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: false
-      row:
-        type: 'entity:node'
-        options:
-          relationship: none
-          view_mode: teaser
-      defaults:
-        use_more: true
-        use_more_always: true
-        use_more_text: true
-        link_display: true
-        link_url: true
-        style: false
-        row: false
-        header: false
-        footer: false
-      display_description: ''
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: false
-          content:
-            value: '<span class="far fa-file-alt"></span>'
-            format: basic_html
-          tokenize: false
-      footer: {  }
-      display_extenders:
-        metatag_display_extender: {  }
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_published_date'
-  latest_news_list:
-    id: latest_news_list
-    display_title: 'Latest News List Items'
+      tags: {  }
+  key_docs_home:
+    id: key_docs_home
+    display_title: Block
     display_plugin: block
     position: 1
     display_options:
-      defaults:
-        header: false
-        footer: false
-      display_description: ''
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: false
-          content:
-            value: '<span class="far fa-file-alt"></span>'
-            format: full_html
-          tokenize: false
-      footer:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: false
-          content:
-            value: '<div class="btnwrap"><a class="btn" href="/news">More news</a></div>'
-            format: basic_html
-          tokenize: false
       display_extenders:
         metatag_display_extender: {  }
+      block_description: 'Key documents homepage'
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_published_date'
+      tags: {  }
