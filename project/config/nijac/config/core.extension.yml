@@ -125,6 +125,7 @@ module:
   unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0
+  unity_map_block: 0
   unity_search_pages: 0
   user: 0
   views_custom_cache_tag: 0
