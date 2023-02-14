@@ -10,7 +10,8 @@ dependencies:
     - text
 third_party_settings:
   allowed_formats:
-    allowed_formats: {  }
+    allowed_formats:
+      - basic_html
 id: node.page.body
 field_name: body
 entity_type: node
