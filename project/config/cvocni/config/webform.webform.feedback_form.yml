@@ -78,19 +78,29 @@ elements: |-
       '#options': yes_no
     please_provide_your_name_and_telephone_number:
       '#type': fieldset
-      '#title': 'Please provide your name and telephone number'
+      '#title': 'Please provide your contact details'
       '#states':
         visible:
           ':input[name="contact_you_about_your_experience"]':
             value: 'Yes'
       name:
-        '#type': textarea
+        '#type': textfield
         '#title': Name
+        '#required': true
       telephone_number:
         '#type': tel
         '#title': 'Telephone number'
         '#pattern': '^[0-9\(\) \+\-]{6,20}$'
         '#pattern_error': 'Please enter a valid phone number'
+        '#required': true
+      email:
+        '#type': email
+        '#title': 'Email address'
+        '#required': true
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': 'Send feedback'
 css: ''
 javascript: ''
 settings:
