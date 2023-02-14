@@ -249,7 +249,8 @@ display:
     position: 1
     display_options:
       cache:
-        type: none
+        type: search_api_tag
+        options: {  }
       defaults:
         cache: false
       exposed_block: true
