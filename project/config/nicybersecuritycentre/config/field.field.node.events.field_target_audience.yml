@@ -1,0 +1,29 @@
+uuid: cef777aa-ce26-475c-a264-623f87d4a9d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_target_audience
+    - node.type.events
+    - taxonomy.vocabulary.event_audience
+id: node.events.field_target_audience
+field_name: field_target_audience
+entity_type: node
+bundle: events
+label: 'Target audience'
+description: 'Choose the event target audience from the dropdown list.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_audience: event_audience
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
