@@ -248,6 +248,10 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      cache:
+        type: none
+      defaults:
+        cache: false
       exposed_block: true
       display_extenders:
         metatag_display_extender: {  }

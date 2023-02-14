@@ -129,6 +129,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_organisation_sector
+  field_target_audience:
+    label: 'Target audience'
+    datasource_id: 'entity:node'
+    property_path: field_target_audience
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_target_audience
   langcode:
     label: Language
     datasource_id: 'entity:node'
