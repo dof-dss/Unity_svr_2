@@ -1,6 +1,6 @@
 uuid: 92a4059a-46b2-4d36-8f7a-1c352bf38765
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - search_api.index.default_content
@@ -14,6 +14,9 @@ index_id: default_content
 suggester_settings:
   live_results:
     fields: {  }
+    highlight:
+      enabled: false
+      field: ''
     view_modes:
       'entity:node':
         feature: ''
@@ -25,9 +28,6 @@ suggester_settings:
         profile: ''
         publication_page: ''
         webform: ''
-    highlight:
-      enabled: false
-      field: ''
 suggester_weights:
   live_results: 0
 suggester_limits: {  }
@@ -40,6 +40,6 @@ options:
   limit: 10
   min_length: 1
   show_count: false
-  autosubmit: true
-  submit_button_selector: ':submit'
   delay: null
+  submit_button_selector: ':submit'
+  autosubmit: true

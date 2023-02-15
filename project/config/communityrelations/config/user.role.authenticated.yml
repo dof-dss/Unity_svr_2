@@ -5,7 +5,6 @@ dependencies:
   module:
     - media
     - node
-    - pathauto
     - system
 _core:
   default_config_hash: zLyQwFO06-pj9Gj5UZMWuk_aAuAOSC8YqFEHItUk-Tc
@@ -27,7 +26,6 @@ permissions:
   - 'edit any publication_page content'
   - 'edit own page content'
   - 'edit own publication_page content'
-  - 'notify of path changes'
   - 'revert revisions'
   - 'use media wysiwyg'
   - 'view all revisions'

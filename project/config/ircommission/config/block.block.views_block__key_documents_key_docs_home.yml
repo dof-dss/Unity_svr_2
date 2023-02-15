@@ -1,23 +1,23 @@
-uuid: ea36d529-4628-4c3c-b872-32cac3d4a518
+uuid: d91252fa-7663-4346-9e78-582aa3632a9f
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.irc_key_documents_views
+    - views.view.key_documents
   module:
     - block_visibility_groups
     - system
     - views
   theme:
     - ircommission_theme
-id: views_block__irc_key_documents_views_block_key_docs_homepage
+id: views_block__key_documents_key_docs_home
 theme: ircommission_theme
 region: bottom_widget_3
 weight: 0
 provider: null
-plugin: 'views_block:irc_key_documents_views-block_key_docs_homepage'
+plugin: 'views_block:key_documents-key_docs_home'
 settings:
-  id: 'views_block:irc_key_documents_views-block_key_docs_homepage'
+  id: 'views_block:key_documents-key_docs_home'
   label: ''
   label_display: visible
   provider: views
