@@ -26,7 +26,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_photo:
     type: entity_reference_entity_view
@@ -35,11 +35,11 @@ content:
       view_mode: landscape_float
       link: false
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_published_date:
     type: datetime_default
-    label: above
+    label: hidden
     settings:
       timezone_override: ''
       format_type: unity_date
