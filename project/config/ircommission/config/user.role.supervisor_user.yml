@@ -14,9 +14,6 @@ dependencies:
     - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
-    - contextual
-    - entity_browser
-    - entityqueue
     - file
     - layout_builder
     - media
@@ -40,7 +37,6 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content overview'
-  - 'access contextual links'
   - 'access files overview'
   - 'access location_browser entity browser pages'
   - 'access toolbar'
@@ -101,7 +97,6 @@ permissions:
   - 'edit own page content'
   - 'edit own publication_page content'
   - 'edit own remote_video media'
-  - 'manipulate entityqueues'
   - 'reschedule scheduled transitions node featured_content_list'
   - 'reschedule scheduled transitions node layout_page'
   - 'reschedule scheduled transitions node link'
@@ -113,7 +108,6 @@ permissions:
   - 'revert news revisions'
   - 'revert page revisions'
   - 'revert publication_page revisions'
-  - 'update slideshow entityqueue'
   - 'use moderation sidebar'
   - 'use nics_editorial_workflow transition archive'
   - 'use nics_editorial_workflow transition create_new_draft'
