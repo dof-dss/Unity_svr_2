@@ -1,25 +1,25 @@
-uuid: 1b17c8cc-7e38-44d7-b045-28ad6f37526f
+uuid: 4c928198-00dd-4bc5-982b-7194ed752512
 langcode: en
 status: true
 dependencies:
   config:
-    - search_api.index.featured_article
-    - views.view.featured_search
+    - search_api.index.events_index
+    - views.view.events_search
   module:
     - facets_pretty_paths
     - search_api
 third_party_settings:
   facets_pretty_paths:
     coder: default_coder
-id: date_published_article
-name: Date
+id: location
+name: Location
 weight: 0
 min_count: 1
-url_alias: date
-facet_source_id: 'search_api:views_page__featured_search__articles_search_page'
-field_identifier: field_published_date
+url_alias: location
+facet_source_id: 'search_api:views_page__events_search__events_search_page'
+field_identifier: field_location
 query_operator: and
-hard_limit: 0
+hard_limit: 50
 exclude: false
 use_hierarchy: false
 keep_hierarchy_parents_active: false
@@ -48,25 +48,17 @@ processor_configs:
       sort: 20
     settings:
       sort: ASC
-  date_facet_drilldown:
-    processor_id: date_facet_drilldown
-    weights:
-      build: 1
-    settings: {  }
-  date_item:
-    processor_id: date_item
-    weights:
-      build: 35
-    settings:
-      date_display: actual_date
-      granularity: 6
-      date_format: ''
   display_value_widget_order:
     processor_id: display_value_widget_order
     weights:
       sort: 40
     settings:
       sort: ASC
+  list_item:
+    processor_id: list_item
+    weights:
+      build: 5
+    settings: {  }
   url_processor_handler:
     processor_id: url_processor_handler
     weights:

@@ -1,0 +1,28 @@
+uuid: 414ecb0d-28c0-4e00-93db-70114a097c69
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.organisation_sector
+  module:
+    - facets
+    - system
+  theme:
+    - nicybersecuritycentre_theme
+id: sector
+theme: nicybersecuritycentre_theme
+region: search_facets
+weight: -5
+provider: null
+plugin: 'facet_block:organisation_sector'
+settings:
+  id: 'facet_block:organisation_sector'
+  label: Sector
+  label_display: visible
+  provider: facets
+  block_id: sector
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events\r\n/events/location/*\r\n/events/type/*\r\n/events/audience/*\r\n/events/sector/*\r\n/events/date/*"

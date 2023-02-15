@@ -1,25 +1,25 @@
-uuid: 1b17c8cc-7e38-44d7-b045-28ad6f37526f
+uuid: d1cfa097-85f1-4314-ab2d-7931ead59ed5
 langcode: en
 status: true
 dependencies:
   config:
-    - search_api.index.featured_article
-    - views.view.featured_search
+    - search_api.index.events_index
+    - views.view.events_search
   module:
     - facets_pretty_paths
     - search_api
 third_party_settings:
   facets_pretty_paths:
     coder: default_coder
-id: date_published_article
-name: Date
+id: event_date
+name: 'Event date'
 weight: 0
 min_count: 1
 url_alias: date
-facet_source_id: 'search_api:views_page__featured_search__articles_search_page'
-field_identifier: field_published_date
+facet_source_id: 'search_api:views_page__events_search__events_search_page'
+field_identifier: field_event_date
 query_operator: and
-hard_limit: 0
+hard_limit: 50
 exclude: false
 use_hierarchy: false
 keep_hierarchy_parents_active: false

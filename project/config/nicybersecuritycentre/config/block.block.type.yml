@@ -1,28 +1,28 @@
-uuid: 24b4ee72-84ce-4fa1-b493-97cfc5924c3f
+uuid: cbeb7d68-ef0f-4054-98f9-872e7c46dfad
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.date_published_article
+    - facets.facet.type
   module:
     - facets
     - system
   theme:
     - nicybersecuritycentre_theme
-id: date_articles
+id: type
 theme: nicybersecuritycentre_theme
 region: search_facets
-weight: -11
+weight: -4
 provider: null
-plugin: 'facet_block:date_published_article'
+plugin: 'facet_block:type'
 settings:
-  id: 'facet_block:date_published_article'
-  label: Date
+  id: 'facet_block:type'
+  label: Type
   label_display: visible
   provider: facets
-  block_id: date_articles
+  block_id: type
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/articles\r\n/articles/date/*"
+    pages: "/events\r\n/events/location/*\r\n/events/type/*\r\n/events/audience/*\r\n/events/sector/*\r\n/events/date/*"
