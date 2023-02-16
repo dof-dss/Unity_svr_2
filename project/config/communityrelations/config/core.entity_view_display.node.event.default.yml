@@ -23,7 +23,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_crc_event_date:
     type: daterange_default
@@ -33,7 +33,7 @@ content:
       format_type: unity_date
       separator: '-'
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_photo:
     type: entity_reference_entity_view
@@ -42,7 +42,7 @@ content:
       view_mode: landscape_float
       link: false
     third_party_settings: {  }
-    weight: 2
+    weight: 0
     region: content
 hidden:
   content_moderation_control: true

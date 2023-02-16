@@ -12,7 +12,7 @@ entity_type: node
 bundle: event
 label: Photo
 description: 'Please pick a photo from the media browser in relation to the event.'
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
