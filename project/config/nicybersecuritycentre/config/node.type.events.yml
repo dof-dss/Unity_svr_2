@@ -4,11 +4,22 @@ status: true
 dependencies:
   module:
     - menu_ui
+    - origins_toc
 third_party_settings:
   menu_ui:
     available_menus:
       - main
     parent: 'main:'
+  origins_toc:
+    toc_enable: 1
+    toc_title: Contents
+    toc_location: '#block-pagetitle'
+    toc_insert: after
+    toc_source_container: '#block-mainpagecontent .content'
+    toc_element: h2
+    toc_exclusions: ''
+    toc_screen_depth: '2'
+    toc_debug: 0
 name: Events
 type: events
 description: ''
