@@ -11,7 +11,7 @@
   }
 }
 
-#footer {
+#footer #footer_wrapper {
   @media screen and (max-width: $tab) {
     padding: 2rem;
   }
@@ -29,6 +29,10 @@
         padding: 0 .8rem 0 0;
         line-height: 1.8rem;
         margin-right: .5rem;
+      }
+
+      a {
+        margin: 0;
       }
     }
   }
