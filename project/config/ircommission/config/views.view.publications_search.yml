@@ -176,10 +176,10 @@ display:
           total_pages: null
           id: 0
           tags:
-            next: next›
-            previous: ‹previous
-            first: '« First'
-            last: 'Last »'
+            next: 'next ›'
+            previous: '‹ previous'
+            first: '« first'
+            last: 'last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
