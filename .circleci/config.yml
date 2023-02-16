@@ -23,7 +23,7 @@ custom_npm_docker_image: &custom_npm_docker_image
         EMAIL: "circleci@localhost"
         GIT_COMMITTER_NAME: "Circle CI"
         GIT_AUTHOR_NAME: "Circle CI"
-        EDGE_BUILD_BRANCH: "edge"
+        EDGE_BUILD_BRANCH: "D8UN-edge"
 
 # Re-usable commands.
 commands:
@@ -256,26 +256,26 @@ jobs:
                 platform drush "bulk_update_qa_accounts enable -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
               fi
             done
-      #- run:
-      #    name: Purge and rebuild Solr indexes
-      #    command: |
-      #      for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
-      #      do
-      #        result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
-      #        if [[ -n $result ]]; then
-      #          result2=$(platform drush "pml --status=enabled -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "solr" || true) )
-      #          if [[ -n $result2 ]]; then
-      #            echo "***** Purge Solr index for - ${site} *****"
-      #            platform ssh -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH \
-      #              "curl http://${site}_solr.internal:8080/solr/${site}_index/update --data '<delete><query>*:*</query></delete>' -H 'Content-type:text/xml; charset=utf-8' \
-      #                && curl http://${site}_solr.internal:8080/solr/${site}_index/update --data '<commit/>' -H 'Content-type:text/xml; charset=utf-8'"
-      #            echo "***** Rebuild the Solr index for - ${site} *****"
-      #            platform drush "sapi-c -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
-      #            platform drush "sapi-r -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
-      #            platform drush "sapi-i -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
-      #          fi
-      #        fi
-      #      done
+      - run:
+          name: Purge and rebuild Solr indexes
+          command: |
+            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
+            do
+              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
+              if [[ -n $result ]]; then
+                result2=$(platform drush "pml --status=enabled -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "solr" || true) )
+                if [[ -n $result2 ]]; then
+                  echo "***** Purge Solr index for - ${site} *****"
+                  platform ssh -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH \
+                    "curl http://${site}_solr.internal:8080/solr/${site}_index/update --data '<delete><query>*:*</query></delete>' -H 'Content-type:text/xml; charset=utf-8' \
+                      && curl http://${site}_solr.internal:8080/solr/${site}_index/update --data '<commit/>' -H 'Content-type:text/xml; charset=utf-8'"
+                  echo "***** Rebuild the Solr index for - ${site} *****"
+                  platform drush "sapi-c -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
+                  platform drush "sapi-r -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
+                  platform drush "sapi-i -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
+                fi
+              fi
+            done
   # Checks to ensure that Unity Base has not been polluted with project files.
   unity_base_checks:
     <<: *docker_image
@@ -294,49 +294,9 @@ jobs:
 
 workflows:
   version: 2
-  build-test-deploy:
-    jobs:
-      - build
-      - unity_base_checks:
-          requires:
-            - build
-      - coding_standards:
-          requires:
-            - build
-      - deprecated_code:
-          requires:
-            - build
-
-  # A nightly build of the project, using all dof-dss packages at HEAD from development branch.
   nightly-edge-build:
-    when:
-      and:
-        - not:
-          equal: [ "https://github.com/dof-dss/unity_base", << pipeline.project.git_url >> ]
-    triggers:
-      - schedule:
-          # At 00:30 Monday to Friday
-          cron: "30 0 * * 1-5"
-          filters:
-            branches:
-              only:
-                - development
     jobs:
       - edge_build
-
-  # A nightly deploy or re-deploy of the edge site after the git branch has been created in nightly-edge-build.
-  nightly-edge-build-post-build-tasks:
-    when:
-      and:
-        - not:
-          equal: [ "https://github.com/dof-dss/unity_base", << pipeline.project.git_url >> ]
-    triggers:
-      - schedule:
-          # At 01:23 Monday to Friday
-          cron: "55 1 * * 1-5"
-          filters:
-            branches:
-              only:
-                - edge
-    jobs:
-      - sync_data
+      - sync_data:
+          requires:
+            - edge_build
