@@ -255,7 +255,7 @@ display:
             operator: search_api_fulltext_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: search_api_fulltext
+            identifier: search
             required: false
             remember: false
             multiple: false
@@ -282,7 +282,7 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           parse_mode: terms
-          min_length: null
+          min_length: 2
           fields: {  }
       style:
         type: default

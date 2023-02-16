@@ -10,6 +10,7 @@ folder: ../project/config/ircommission/production
 module: {  }
 theme: {  }
 blacklist: {  }
-graylist: {  }
+graylist:
+  - ircommission_theme.settings
 graylist_dependents: true
 graylist_skip_equal: true

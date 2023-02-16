@@ -1,0 +1,8 @@
+uuid: 91b055c6-cd8e-4a12-b4da-80233234d18b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Event organisational sector'
+vid: event_organisational_sector
+description: ''
+weight: 0

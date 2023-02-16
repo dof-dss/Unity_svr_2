@@ -12,6 +12,9 @@ bundles:
     bundle: basic_page
   -
     entity_type: node
+    bundle: events
+  -
+    entity_type: node
     bundle: featured_article
   -
     entity_type: node
