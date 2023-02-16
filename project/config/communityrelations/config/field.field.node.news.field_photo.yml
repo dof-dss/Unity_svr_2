@@ -14,7 +14,7 @@ entity_type: node
 bundle: news
 label: Photo
 description: 'Please choose an image  to be displayed with this news item. '
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
