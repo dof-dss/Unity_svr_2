@@ -10,8 +10,8 @@ dependencies:
     - hiaredressni_theme
 id: footerlinks
 theme: hiaredressni_theme
-region: footer_first
-weight: 0
+region: footer
+weight: -7
 provider: null
 plugin: 'system_menu_block:menu-footer-links'
 settings:
