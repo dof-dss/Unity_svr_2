@@ -149,6 +149,7 @@
         "drupal/telephone_plus": "1.x-dev",
         "drupal/token": "^1.5",
         "drupal/token_filter": "^1.1",
+        "drupal/trace_cache_tags": "3.x-dev",
         "drupal/twig_field_value": "^2.0",
         "drupal/twig_tweak": "^2.4",
         "drupal/ultimate_cron": "^2.0@alpha",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5591aa47cfabaff723ddf1d98c498a4a",
+    "content-hash": "04a7e90f8683ec689d1f182c8ae29581",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -8523,6 +8523,47 @@
             "homepage": "https://www.drupal.org/project/token_filter",
             "support": {
                 "source": "https://git.drupalcode.org/project/token_filter"
+            }
+        },
+        {
+            "name": "drupal/trace_cache_tags",
+            "version": "dev-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/trace_cache_tags.git",
+                "reference": "4bc497d08a7d98c3d0be3a45cab4390304a64156"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.x-dev",
+                    "datestamp": "1624893009",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "DuttonMa",
+                    "homepage": "https://www.drupal.org/user/2250396"
+                }
+            ],
+            "description": "Developer aid to log cache tags being invalidated to the watchdog",
+            "homepage": "https://www.drupal.org/project/trace_cache_tags",
+            "support": {
+                "source": "https://git.drupalcode.org/project/trace_cache_tags"
             }
         },
         {
@@ -20765,6 +20806,7 @@
         "drupal/inline_entity_form": 5,
         "drupal/search_api_location": 15,
         "drupal/telephone_plus": 20,
+        "drupal/trace_cache_tags": 20,
         "drupal/ultimate_cron": 15,
         "previousnext/phpunit-finder": 15
     },
