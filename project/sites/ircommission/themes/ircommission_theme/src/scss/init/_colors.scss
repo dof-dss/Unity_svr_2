@@ -41,7 +41,7 @@ $chroma: define-color-scheme('functional', 'Colors used by functional parts of t
 $chroma: add-colors('functional', (
   // Colors used in the main content area.
   text:                   #373737,
-  headings:               'brand-tertiary',
+  headings:               #111,
 
   link:                   #0e6bb3,
   link-hover:             #0e6bb3,
