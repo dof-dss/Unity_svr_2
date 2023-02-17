@@ -1,0 +1,8 @@
+uuid: 71f20090-21bd-4956-9ace-97bad06c0161
+langcode: en
+status: true
+dependencies: {  }
+name: 'Event audience'
+vid: event_audience
+description: ''
+weight: 0

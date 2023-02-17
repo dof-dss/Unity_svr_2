@@ -263,7 +263,7 @@ display:
         type: normal
         title: News
         description: ''
-        weight: 0
+        weight: -46
         expanded: false
         menu_name: main
         parent: ''

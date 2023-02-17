@@ -1,0 +1,28 @@
+uuid: 958d1a25-a6af-4956-977d-81ec8aed8be3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.events_search
+  module:
+    - system
+    - views
+  theme:
+    - nicybersecuritycentre_theme
+id: exposedformevents_searchevents_search_page
+theme: nicybersecuritycentre_theme
+region: search_facets
+weight: -9
+provider: null
+plugin: 'views_exposed_filter_block:events_search-events_search_page'
+settings:
+  id: 'views_exposed_filter_block:events_search-events_search_page'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events\r\n/events/location/*\r\n/events/type/*\r\n/events/audience/*\r\n/events/sector/*\r\n/events/date/*"

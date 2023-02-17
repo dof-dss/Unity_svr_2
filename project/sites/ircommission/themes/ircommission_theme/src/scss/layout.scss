@@ -7,53 +7,45 @@
 
 .front {
   .front-banner{
-    max-width: 1023px;
-    margin: 0 auto;
+    padding: 0;
+  }
+}
 
-    @include breakpoint($tab) {
-      margin: 0 auto 4rem;
+#footer #footer_wrapper {
+  @media screen and (max-width: $tab) {
+    padding: 2rem;
+  }
+
+  .footer-menu {
+    margin: 2% auto;
+
+    li {
+      padding-left: 0;
+      line-height: 2.4rem;
+      display: block;
+
+      @include breakpoint($tab) {
+        display: inline-block;
+        padding: 0 .8rem 0 0;
+        line-height: 1.8rem;
+        margin-right: .5rem;
+      }
+
+      a {
+        margin: 0;
+      }
+    }
+  }
+
+}
+
+.path-news,
+.path-publications {
+  .search-page {
+    .views-exposed-form {
+      p {
+        margin-bottom: 0;
+      }
     }
   }
 }
-
-.content {
-  span {
-    color: $brand-primary;
-  }
-  .page-content{
-    color: $charcoal;
-  }
-}
-
-.page-title span{
-  color: $brand-tertiary;
-}
-
-.menu.menu-main {
-  background-color: $charcoal;
-}
-
-#edit-submit-search {
-  color: $charcoal;
-}
-
-.content-sidebar-wrap .main-content {
-  margin-bottom: 0 ;
-}
-
-.front .front-banner{
-  margin: 0 auto;
-}
-
-.footer-area .column {
-  padding:0;
-}
-
-.views-row.search-result {
-  border-bottom: 1px solid $grey-medium;
-}
-
-
-
-
-

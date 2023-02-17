@@ -36,17 +36,19 @@ We call a macro which calls itself to render the full tree.
   <ul class="menu-main_sub">
     {% endif %}
     {% for item in items %}
-      {%
-        set classes = [
+      {% set classes = [
         'menu-item',
         item.is_expanded ? 'expanded' : 'leaf',
         item.is_collapsed ? 'collapsed',
         item.in_active_trail ? 'active-trail',
         loop.last ? 'last',
-      ]
-      %}
+      ] %}
       <li{{ item.attributes.addClass(classes) }}>
-        {{ link(item.title, item.url, { 'class':['menu-link'], 'role':['menuitem'] }) }}
+        {% if item.is_expanded %}
+          {{ link(item.title, item.url, { 'class':['menu-link'], 'role':['button'] }) }}
+        {% else %}
+          {{ link(item.title, item.url, { 'class':['menu-link'] }) }}
+        {% endif %}
         {% if item.is_expanded %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         {% endif %}
@@ -54,4 +56,4 @@ We call a macro which calls itself to render the full tree.
     {% endfor %}
   </ul>
   {% endif %}
-{% endmacro %}
+  {% endmacro %}

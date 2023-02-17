@@ -209,7 +209,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      use_more: false
+      use_more: true
       use_more_always: true
       use_more_text: 'More news'
       link_display: custom_url
@@ -377,23 +377,10 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: ''
+            value: '<span class="far fa-file-alt"></span>'
             format: full_html
           tokenize: false
-      footer:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: false
-          content:
-            value: '<div class="btnwrap"><a class="btn" href="/news">More news</a></div>'
-            format: basic_html
-          tokenize: false
+      footer: {  }
       display_extenders:
         metatag_display_extender: {  }
     cache_metadata:

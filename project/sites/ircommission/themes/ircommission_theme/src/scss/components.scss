@@ -5,469 +5,140 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
-#main-menu .menu .menu-item .active,
-#main-menu .menu .menu-item .active + .menu-main_sub .title a {
- background: $brand-primary;
- color: #fff;
-border-bottom-color: $brand-primary;
-}
-
-#footer {
-  background: inherit;
-  border-top: 0;
-  max-width: 100%;
-  padding: 0;
-  overflow: auto;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  margin: 0 auto;
-}
-
-.footer_credit {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-}
-
-#block-menu-menu-footer-links {
-  outline: none;
-  position: relative;
-}
-
-#footer-menu li {
-  display: inline;
-  margin: 0 16px 0 0;
-  padding: 0;
-  font-size: 1.8rem;
-  line-height: 1.8rem;
-}
-
-#block-ircommission-theme-aboutircblock h2 {
-  margin-bottom: 0;
-
-  @media screen and (max-width: $tab) {
-    margin: 0;
-    text-align: center;
-  }
-
-  @media screen and (max-width: $mob) {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-.btnwrap {
-  display: inline-block;
-  width: 100%;
-  bottom: 0;
-  left:0;
-  position: absolute;
-  text-align: center;
-}
-
-.content {
-  .fas {
-    color: $brand-tertiary;
-    font-size: 10rem;
-    line-height: 0.8;
-    margin: 2rem;
-    display: block;
-    text-align: center ;
-  }
-  .fa {
-    color: $brand-tertiary;
-    font-size: 10rem;
-    line-height: 1;
-    margin: 2rem 0;
-    margin-left: 1rem;
-  }
-}
-
-fas.fa-file-alt {
-
-  @media screen and (max-width: $tab) {
-    display: inherit;
-    text-align: center;
-    margin: 3rem;
-  }
-
-  @media screen and (max-width: $mob) {
-    margin: 2rem;
-  }
-}
-
-.fas.fa-folder {
-  margin-bottom: 1.5rem;
-
-  @media screen and (max-width: $tab) {
-    margin: 2rem;
-    display: inherit;
-    text-align: center;
-  }
-}
-
-.fa.fa-users  {
-  color: $brand-tertiary;
-  font-size: 10rem;
-  line-height: 0.8;
-  margin: 2rem 0;
-  display: block;
-  text-align: center;
-
-  @media screen and (max-width: $tab) {
-    text-align: center;
-    margin : 2rem 0;
-    display: inherit;
-  }
-
-  @media screen and (max-width: $mob) {
-    margin : 4rem;
-  }
-}
-
-.front-banner {
-  p {
-    position: center;
-    color: #fff;
-    background-color: $charcoal;
-    text-align: center;
-    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-    font-weight: normal;
-    padding: 2.3rem 1.5rem;
-
-    @media screen and (max-width: $mob) {
-      margin-bottom: 0;
-      }
-  }
-
-  img {
-    vertical-align: top;
-  }
-}
-
-#footer ul {
-  margin: auto;
-  text-align: left;
-}
-
-#bottom_wrapper{
-  display:flex;
-}
-
-.footer-area {
-  display: flex;
-  padding-bottom: 3rem;
-  justify-content: space-between;
-  column-gap: 2rem;
-
-  @media screen and (max-width: $tab) {
-    flex-flow: column;
-    margin: 0;
-  }
-
-  @media screen and (max-width: $mob) {
-    margin: 0;
-  }
-}
-
-.footer-area .column {
-  display: flex;
-
-  @media screen and (max-width: $tab) {
-    float: none !important;
-    width: auto !important;
-  }
-
-  @media screen and (max-width: $mob) {
-    margin: 0;
-  }
-}
-
-.region-bottom-widget-1,
-.region-bottom-widget-2,
-.region-bottom-widget-3{
-  display: flex;
-
-  @media screen and (max-width: $tab) {
-    width: 100%;
-  }
-}
-
-.btn a.btn {
-  margin: 0;
-}
-
-#footer_wrapper {
-  border-top: 9px solid $brand-secondary;
-  background-color: $footer-background;
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 3rem 1.8rem 1.8rem;
-}
-
-a.btn {
-  margin: 0;
-}
-
-footer {
-  text-align: center;
-}
-
-#main-menu .menu-link:hover, #main-menu .menu-link:focus {
-  background: $brand-primary;
-}
-
-.about-IRC-flex{
-  position: relative;
-}
-
-.region-bottom-widget-2,
-.region-bottom-widget-3,
-.btn-wrap {
-  footer {
-    justify-content: center;
-  }
-}
-
-.btn-wrap  {
-  width: 100%;
-}
-
-.region-bottom-widget-2 footer .btn {
-  position: absolute;
-  bottom: 0;
-  display: block;
-  margin-left: 8rem;
-
-  @media screen and (max-width: $tab) {
-    display: inline-block;
-    position: relative;
-    margin: 0;
-    text-align: center;
-  }
-
-  @media screen and (max-width: $mob) {
-    margin: 0;
-  }
-}
-
-.content.page-content div:first-child {
-  display: block;
-}
-
-#main-menu .menu-item.open .menu-toggle-btn {
-  font-weight: 500;
-}
-
-#main-menu .menu-main_sub {
-  background: $charcoal;
-}
-
-.menu-item.leaf.title * {
-  box-sizing: content-box;
-}
-
-.irc-text {
-    margin-top: 2rem;
-
-      @media screen and (max-width: $tab) {
-        margin-bottom: 6rem;
-        text-align: left;
-  }
-
-  p {
-    text-align: center;
-    line-height: 1.5;
-    margin-bottom: 7rem;
-
-      @media screen and (max-width: $tab) {
-        margin: 2rem;
-        margin-top: 3rem;
+.front {
+  .front-banner {
+    img {
+      display: block;
     }
+
+    p {
+      padding: .5em;
+      background-color: $grey-lightest;
+      color: $text;
+      text-align: center;
 
       @media screen and (max-width: $mob) {
-        margin: 0;
-    }
-  }
-}
-
-.about-IRC-flex .btn {
-
-  @media screen and (max-width: $tab) {
-    position: relative;
-    bottom: 0;
-    display: inline-block;
-    margin: 0;
-  }
-}
-
-.about-IRC-flex .btnwrap .btn {
-  @media screen and (max-width: $mob) {
-    margin-left: 0;
-  }
-}
-
-.region-bottom-widget-3 .btnwrap {
-  @media screen and (max-width: $mob) {
-    margin-left: 5rem;
-  }
-}
-
-.content footer {
-  margin-top: 4rem;
-}
-
-.block > h2 {
-  font-size: 2.7rem;
-  text-align: center;
-  color: $brand-tertiary;
-}
-
-#block-views-block-irc-key-documents-views-block-key-docs-homepage .item-list ul li {
-  margin-bottom: 0.9rem;
-  list-style: none;
-}
-
-.item-list ul {
-  li {
-    position: relative;
-    list-style: none;
-
-    &::before {
-      content: '-';
-      position: absolute;
-      left: -20px;
-      top: 0;
-    }
-  }
-}
-
-#block-views-block-front-latest-news-home-latest-news {
-  text-align: center;
-
-  h3 {
-    @include responsive-typo-map($normal-text);
-    margin: 0;
-    line-height: 2.2rem;
-  }
-}
-
-#block-views-block-irc-key-documents-views-block-1-2 h2 {
-  margin-left: 27px;
-}
-
-.block-views-blockfront-latest-news-home-latest-newsheader,
-.block-views-blockirc-key-documents-views-block-key-docs-homepage {
-  .content header {
-    text-align: center;
-  }
-}
-
-.block-views-blockirc-key-documents-views-block-key-docs-homepage .item-list {
-  @media screen and (max-width: $tab) {
-    margin-left: 5rem;
-  }
-}
-
-#block-views-block-front-latest-news-home-latest-news h2 {
-
-  @media screen and (max-width: $tab) {
-    margin: 0;
-  }
-}
-
-.region-bottom-widget-2 .views-row {
-  font-size: 1.8rem;
-  text-align: center;
-  line-height: 1.5;
-
-  @media screen and (max-width: $tab) {
-    margin-left: 0;
-  }
-
-  @media screen and (max-width: $mob) {
-    margin-left: 0;
-  }
-}
-
-#block-views-block-front-latest-news-home-latest-news, #block-views-block-irc-key-documents-views-block-1-2, #block-ircommission-theme-aboutircblock {
-  position: relative;
-}
-
-#block-views-block-irc-key-documents-views-block-1-2 a.btn {
-  position: absolute;
-  bottom: 0;
-  display: block;
-  margin-left: 8rem;
-}
-
-.block-views-blockirc-key-documents-views-block-1 .content, .block-views-blockfront-latest-news-home-latest-news .content, .about-IRC-flex .content {
-  margin-bottom: 4rem;
-}
-
-#block-views-block-irc-key-documents-views-block-1-2 h2 {
-  @media screen and (max-width: $mob) {
-    margin-left: 4rem;
-  }
-}
-
-.block-views-blockirc-key-documents-views-block-key-docs-homepage h2 {
-
-  @media screen and (max-width: $tab) {
-    margin: 0;
-    text-align: center;
-  }
-}
-
-.block-views-blockfront-latest-news-home-latest-news {
-
-  @media screen and (max-width: $tab) {
-    display:flex;
-    flex-flow: column;
-    width: 100%;
-  }
-
-  h2 {
-    @media screen and (max-width: $tab) {
-      text-align: center;
-    }
-
-    @media screen and (max-width: $mob) {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-  }
-}
-
-.path-publications {
-  .search-page {
-    .sidebar-first-layout {
-      padding-left: 0;
-    }
-
-    @include breakpoint($lap) {
-      .sidebar-first-layout {
-        width: 30%;
-      }
-
-      .main-content {
-        width: 65%;
-      }
-    }
-
-    .views-exposed-form {
-      p {
         margin-bottom: 0;
       }
     }
+  }
 
-    h2 {
-      margin-top: 0;
-    }
+  .bottom_widget {
+    margin-bottom: 2.4rem;
 
-    .metaListItem {
-      margin-left: 2rem;
+    @include breakpoint($phab) {
+      padding-bottom: 2rem;
     }
   }
+
+  #bottom-area {
+    @include breakpoint($phab) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .column {
+      float: none;
+      margin: 1rem 0 2rem;
+      flex-basis: 32.5%;
+      width: 100%;
+      padding: 0 2rem;
+
+      @include breakpoint($phab) {
+        padding: 0 1rem 3rem;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+    }
+
+    .region-bottom-widget-1,
+    .region-bottom-widget-2,
+    .region-bottom-widget-3 {
+      @include breakpoint($tab) {
+        height: 100%;
+        display: flex;
+      }
+    }
+  }
+
+  .block {
+    text-align: center;
+
+    > h2 {
+      text-align: center;
+    }
+
+    .fa, .far {
+      color: $brand-tertiary;
+      font-size: 10rem;
+      line-height: 1;
+      margin: 2rem;
+      display: block;
+    }
+
+    .btnwrap, footer {
+      margin-top: 1rem;
+    }
+
+    .btnwrap {
+      @include breakpoint($tab) {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+
+  .about-IRC-flex,
+  .contextual-region {
+    @include breakpoint($phab) {
+      position: static;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .block-views-blockfront-latest-news-home-latest-news {
+    h3 {
+      @include responsive-typo-map($normal-text);
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+  }
+
+  .block-views-blockkey-documents-key-docs-home {
+    .dash-list {
+      text-align: left;
+    }
+  }
+}
+
+#main-menu {
+  .menu .menu-item {
+    .active {
+      background-color: $brand-secondary;
+      border-bottom-color: $white;
+
+      @include breakpoint($tab) {
+        border-bottom-color: $brand-secondary;
+      }
+    }
+  }
+  .menu-main_sub {
+    width: 100%;
+
+    .title {
+      .menu-link,
+      .active {
+        border-top: none;
+      }
+    }
+  }
+}
+
+#footer {
+  font-size: 1.6rem;
 }

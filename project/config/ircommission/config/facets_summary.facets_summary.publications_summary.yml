@@ -1,4 +1,4 @@
-uuid: 8f6f8861-53a9-4f26-b1f1-0cd80857bd8a
+uuid: 7bb00539-71ce-4420-8933-4da8d5aed7ea
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - search_api
 id: publications_summary
 name: 'Publications summary'
-facet_source_id: 'search_api:views_page__publications_search__publications_search_page'
+facet_source_id: 'search_api:views_page__publications_search__publication_search_page'
 processor_configs:
   hide_when_not_rendered:
     processor_id: hide_when_not_rendered
@@ -19,13 +19,13 @@ processor_configs:
 facets:
   publication_date:
     checked: true
-    label: Date
+    label: 'Publication date'
     separator: ', '
     show_count: false
     weight: 0
-  type:
+  publication_type:
     checked: true
-    label: Type
+    label: 'Publication type'
     separator: ', '
     show_count: false
     weight: 0

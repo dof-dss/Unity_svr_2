@@ -37,7 +37,6 @@ permissions:
   - 'access location_browser entity browser pages'
   - 'access toolbar'
   - 'add media from remote sources'
-  - 'administer filters'
   - 'administer main menu items'
   - 'administer main-menu menu items'
   - 'create audio media'

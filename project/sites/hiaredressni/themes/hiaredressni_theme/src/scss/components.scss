@@ -153,6 +153,8 @@
 }
 
 #menu-main .menu-item {
+  margin-right: 0.5rem;
+
   @media screen and (max-width: $lap) {
     padding-left: .5rem;
     padding-right: .5rem;
@@ -183,15 +185,24 @@
   margin-left: 1rem;
 }
 
-.footer-area .column:last-child {
-  float: none;
-  width: unset;
-}
+//.footer-area .column:last-child {
+//  float: none;
+//  width: unset;
+//}
 
-#footer .column li {
-  display: inline;
-  padding: 2rem;
-}
-.footer-menu ul li {
-  font-size: 1.4rem;
-}
+//#footer {
+//  max-width: 100%;
+//}
+
+//#footer-menu {
+//  text-align: left;
+//}
+
+//#footer .column li {
+//  display: inline;
+//  border-bottom-style: none;
+//}
+
+//.footer-menu ul li {
+//  font-size: 1.4rem;
+//}

@@ -1,0 +1,29 @@
+uuid: c1a8182d-67cc-4783-b139-9d8256560576
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organisation_sector
+    - node.type.events
+    - taxonomy.vocabulary.event_organisational_sector
+id: node.events.field_organisation_sector
+field_name: field_organisation_sector
+entity_type: node
+bundle: events
+label: 'Organisation sector'
+description: 'Choose the Event organisation sector from the dropdown list.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_organisational_sector: event_organisational_sector
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

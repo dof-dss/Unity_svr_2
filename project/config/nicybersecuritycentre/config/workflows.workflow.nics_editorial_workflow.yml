@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - node.type.basic_page
+    - node.type.events
     - node.type.featured_article
     - node.type.link
     - node.type.publication
@@ -98,6 +99,7 @@ type_settings:
   entity_types:
     node:
       - basic_page
+      - events
       - featured_article
       - link
       - publication

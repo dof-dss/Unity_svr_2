@@ -11,8 +11,8 @@ dependencies:
     - ppsni_theme
 id: crimetypes
 theme: ppsni_theme
-region: footer_fourth
-weight: -10
+region: bottom_widget_2
+weight: -11
 provider: null
 plugin: 'block_content:e93001ed-4bad-4bf4-8143-f8f7215073c9'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: date_articles
 theme: nicybersecuritycentre_theme
 region: search_facets
-weight: -3
+weight: -11
 provider: null
 plugin: 'facet_block:date_published_article'
 settings:
