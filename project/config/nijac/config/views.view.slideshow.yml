@@ -245,7 +245,7 @@ display:
       cache:
         type: custom_tag
         options:
-          custom_tag: "node_list:feature\r\nnode_list:featured_content_list"
+          custom_tag: "node_list:feature\r\nentity_subqueue:slideshow"
       empty: {  }
       sorts:
         entityqueue_relationship:
