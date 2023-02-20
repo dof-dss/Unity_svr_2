@@ -1,0 +1,15 @@
+uuid: 033193c1-7ea7-4478-8fa9-b7bd542f8597
+langcode: en
+status: true
+dependencies: {  }
+id: hosted
+label: hosted
+description: 'Use for any sites that are ''hosted'' and not running locally, whether development, QA or production.'
+weight: 0
+folder: ../project/config/pacni/hosted
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
