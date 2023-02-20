@@ -15,25 +15,23 @@
   }
 }
 
-.footer-area .column:last-child {
-  float: none;
-  width: unset;
-}
-
 #footer {
-  max-width: 100%;
-}
+  .footer-menu li {
+    padding-left: 0;
+    font-size: 1.6rem;
+    list-style-type: none;
 
-#footer-menu {
-  text-align: left;
-}
+    @include breakpoint($mob) {
+      display: inline-block;
+      padding: 0 .8rem 0 0;
+      line-height: 1.8rem;
+      margin-right: .5rem;
+    }
 
-#footer .column li {
-  display: inline;
-  border-bottom-style: none;
-  padding: 0 .8rem 0 0;
-}
-
-.footer-menu ul li {
-  font-size: 1.4rem;
+    a {
+      @media screen and (min-width: $mob) {
+        display: block;
+      }
+    }
+  }
 }

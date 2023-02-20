@@ -51,6 +51,10 @@
         flex-direction: column;
         position: relative;
       }
+
+      h2 {
+        color: $brand-tertiary;
+      }
     }
 
     .region-bottom-widget-1,
