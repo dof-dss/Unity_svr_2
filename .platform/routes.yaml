@@ -93,6 +93,14 @@
 'https://ppsni.gov.uk/':
     type: redirect
     to: 'https://www.ppsni.gov.uk/'
+'https://www.pacni.gov.uk/':
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
+'https://pacni.gov.uk/':
+    type: redirect
+    to: 'https://www.pacni.gov.uk/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_2:http'
