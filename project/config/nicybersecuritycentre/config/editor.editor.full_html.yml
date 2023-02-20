@@ -32,7 +32,6 @@ settings:
         -
           name: Linking
           items:
-            - Linkit
             - DrupalUnlink
         -
           name: Lists
@@ -43,7 +42,6 @@ settings:
           name: Media
           items:
             - DrupalMediaLibrary
-            - map
         -
           name: Tasks
           items:
