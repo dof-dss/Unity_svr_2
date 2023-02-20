@@ -121,3 +121,12 @@ sites:
         database: ppsni
         status: development
         default: false
+    pacni:
+        name: 'Planning Appeals Commission'
+        url: pacni.gov.uk
+        solr: pacni
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/pacni ; drush core-cron'
+        database: pacni
+        status: development
+        default: false
