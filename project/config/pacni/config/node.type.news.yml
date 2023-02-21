@@ -22,7 +22,7 @@ third_party_settings:
     toc_debug: 0
 _core:
   default_config_hash: MDBRelCFIWMUAdxoEVb_Yf9JKky-iGqLY6fLfi4LPT4
-name: News
+name: 'News page'
 type: news
 description: 'Use this content type for news items, press releases and announcements.'
 help: ''
