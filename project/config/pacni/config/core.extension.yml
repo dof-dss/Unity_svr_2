@@ -86,6 +86,7 @@ module:
   origins_qa: 0
   origins_toc: 0
   origins_unique_title: 0
+  pacni_migrations: 0
   page_cache: 0
   path: 0
   path_alias: 0
@@ -133,4 +134,5 @@ theme:
   stable: 0
   adminimal_theme: 0
   nicsdru_unity_theme: 0
+  pacni_theme: 0
 profile: nicsdru_unity_profile

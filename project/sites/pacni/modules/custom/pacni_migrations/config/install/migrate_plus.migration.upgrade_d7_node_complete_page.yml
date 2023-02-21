@@ -1,4 +1,4 @@
-uuid: bc8e5c67-13f6-43ab-b8b2-4703522a9fc7
+uuid: 7a620364-8ea4-4a5d-be26-68fd024a4c3b
 langcode: en
 status: true
 dependencies: {  }
@@ -80,6 +80,33 @@ process:
     -
       plugin: get
       source: body
+    -
+      plugin: media_wysiwyg_filter
+    -
+      plugin: filter_absolute_links
+
+      replace_urls:
+        http://www.pacni.gov.uk
+        https://www.pacni.gov.uk
+    -
+      plugin: site_files_filter
+      from_ref: sites/pacni/files
+      to_ref: files/pacni
+    -
+      plugin: site_files_filter
+      from_ref: sites/pacni.gov.uk/files
+      to_ref: files/pacni
+  body/0/format:
+    -
+      plugin: static_map
+      bypass: true
+      source: body/0/format
+      map:
+        filtered_html: basic_html
+        filtered_html_with_no_images: basic_html
+        filtered_html_with_tokens: basic_html
+        restricted_html: basic_html
+        plain_text: plain_text
   field_enable_toc:
     -
       plugin: get
@@ -91,7 +118,7 @@ process:
 destination:
   plugin: 'entity_complete:node'
   translations: true
-  default_bundle: page
+  default_bundle: basic_page
 migration_dependencies:
   required:
     - upgrade_d7_user
