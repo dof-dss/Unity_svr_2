@@ -219,18 +219,6 @@ menus:
     uuid: 2a49280d-698d-4286-9e17-647b5d0d1c31
   -
     menu_name: main
-    title: FAQ
-    parent: null
-    uri: 'entity:node/69'
-    link_title: ''
-    description: null
-    enabled: true
-    expanded: false
-    weight: -44
-    langcode: en
-    uuid: 50e6b826-53b2-4fa8-9f06-5ed9789bbe6d
-  -
-    menu_name: main
     title: Publications
     parent: null
     uri: 'internal:/Publications'
@@ -241,3 +229,15 @@ menus:
     weight: -46
     langcode: en
     uuid: 060ace61-ab8a-431d-a338-ffeb16806c8c
+  -
+    menu_name: main
+    title: FAQ
+    parent: null
+    uri: 'entity:node/73'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -44
+    langcode: en
+    uuid: 9a645bfc-90a7-44f7-9905-69ab6cdd873e
