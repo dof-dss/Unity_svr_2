@@ -31,7 +31,7 @@ _core:
   default_config_hash: AyMCT1boGFkm3MNXLyv6ZV7yMdWLY-U3WQLhzDDkWGE
 id: author_user
 label: 'author user'
-weight: -5
+weight: -7
 is_admin: null
 permissions:
   - 'access administration menu'
@@ -39,6 +39,7 @@ permissions:
   - 'access ckeditor link'
   - 'access content overview'
   - 'access location_browser entity browser pages'
+  - 'access media overview'
   - 'access toolbar'
   - 'add media from remote sources'
   - 'administer main menu items'

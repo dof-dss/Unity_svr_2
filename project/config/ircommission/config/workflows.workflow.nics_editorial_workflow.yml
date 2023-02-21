@@ -6,7 +6,6 @@ dependencies:
     - node.type.news
     - node.type.page
     - node.type.publication_page
-    - node.type.webform
   module:
     - content_moderation
 _core:
@@ -99,5 +98,4 @@ type_settings:
       - news
       - page
       - publication_page
-      - webform
   default_moderation_state: draft

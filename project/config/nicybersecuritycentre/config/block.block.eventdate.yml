@@ -1,0 +1,28 @@
+uuid: ebcdfe09-3aad-432a-bd98-a462a3bdbb67
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.event_date
+  module:
+    - facets
+    - system
+  theme:
+    - nicybersecuritycentre_theme
+id: eventdate
+theme: nicybersecuritycentre_theme
+region: search_facets
+weight: -8
+provider: null
+plugin: 'facet_block:event_date'
+settings:
+  id: 'facet_block:event_date'
+  label: 'Event date'
+  label_display: visible
+  provider: facets
+  block_id: eventdate
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events\r\n/events/location/*\r\n/events/type/*\r\n/events/audience/*\r\n/events/sector/*\r\n/events/date/*"

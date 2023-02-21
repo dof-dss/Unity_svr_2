@@ -1,0 +1,50 @@
+uuid: dd16ff93-be14-4bab-af91-ef2be72f4977
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.events.body
+    - field.field.node.events.field_event_date
+    - field.field.node.events.field_event_type
+    - field.field.node.events.field_location
+    - field.field.node.events.field_meta_tags
+    - field.field.node.events.field_organisation_name
+    - field.field.node.events.field_organisation_sector
+    - field.field.node.events.field_target_audience
+    - node.type.events
+  module:
+    - datetime_range
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.events.search_index
+targetEntityType: node
+bundle: events
+mode: search_index
+content:
+  field_event_date:
+    type: daterange_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: unity_date
+      separator: '-'
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  content_moderation_control: true
+  field_event_type: true
+  field_location: true
+  field_meta_tags: true
+  field_organisation_name: true
+  field_organisation_sector: true
+  field_target_audience: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

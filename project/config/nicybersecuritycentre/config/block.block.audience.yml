@@ -1,0 +1,28 @@
+uuid: 79d63363-5e7c-446c-a307-c28c85769ab5
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.target_audience
+  module:
+    - facets
+    - system
+  theme:
+    - nicybersecuritycentre_theme
+id: audience
+theme: nicybersecuritycentre_theme
+region: search_facets
+weight: -6
+provider: null
+plugin: 'facet_block:target_audience'
+settings:
+  id: 'facet_block:target_audience'
+  label: Audience
+  label_display: visible
+  provider: facets
+  block_id: audience
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events\r\n/events/location/*\r\n/events/type/*\r\n/events/audience/*\r\n/events/sector/*\r\n/events/date/*"

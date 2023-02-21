@@ -12,7 +12,7 @@ third_party_settings:
     parent: 'main:'
   origins_toc:
     toc_enable: 1
-    toc_title: 'Table of contents'
+    toc_title: Contents
     toc_location: .page-title
     toc_insert: after
     toc_source_container: '#block-mainpagecontent .content'

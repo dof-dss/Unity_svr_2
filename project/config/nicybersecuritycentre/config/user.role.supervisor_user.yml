@@ -9,6 +9,7 @@ dependencies:
     - media.type.image
     - media.type.remote_video
     - node.type.basic_page
+    - node.type.events
     - node.type.featured_article
     - node.type.link
     - node.type.publication
@@ -49,6 +50,7 @@ permissions:
   - 'add content to books'
   - 'add media from remote sources'
   - 'add scheduled transitions node basic_page'
+  - 'add scheduled transitions node events'
   - 'add scheduled transitions node featured_article'
   - 'add scheduled transitions node link'
   - 'add scheduled transitions node publication'
@@ -60,6 +62,7 @@ permissions:
   - 'create audio media'
   - 'create basic_page content'
   - 'create document media'
+  - 'create events content'
   - 'create featured_article content'
   - 'create file media'
   - 'create files'
@@ -74,6 +77,7 @@ permissions:
   - 'delete any basic_page content'
   - 'delete any document files'
   - 'delete any document media'
+  - 'delete any events content'
   - 'delete any featured_article content'
   - 'delete any file media'
   - 'delete any image files'
@@ -84,6 +88,7 @@ permissions:
   - 'delete any remote_video media'
   - 'delete any video files'
   - 'delete basic_page revisions'
+  - 'delete events revisions'
   - 'delete featured_article revisions'
   - 'delete link revisions'
   - 'delete own audio files'
@@ -91,6 +96,7 @@ permissions:
   - 'delete own basic_page content'
   - 'delete own document files'
   - 'delete own document media'
+  - 'delete own events content'
   - 'delete own featured_article content'
   - 'delete own file media'
   - 'delete own image files'
@@ -114,6 +120,7 @@ permissions:
   - 'edit any basic_page content'
   - 'edit any document files'
   - 'edit any document media'
+  - 'edit any events content'
   - 'edit any featured_article content'
   - 'edit any file media'
   - 'edit any image files'
@@ -128,6 +135,7 @@ permissions:
   - 'edit own basic_page content'
   - 'edit own document files'
   - 'edit own document media'
+  - 'edit own events content'
   - 'edit own featured_article content'
   - 'edit own file media'
   - 'edit own image files'
@@ -143,10 +151,12 @@ permissions:
   - 'moderate content from needs_review to published'
   - 'moderate content from published to needs_review'
   - 'reschedule scheduled transitions node basic_page'
+  - 'reschedule scheduled transitions node events'
   - 'reschedule scheduled transitions node featured_article'
   - 'reschedule scheduled transitions node link'
   - 'reschedule scheduled transitions node publication'
   - 'revert basic_page revisions'
+  - 'revert events revisions'
   - 'revert featured_article revisions'
   - 'revert link revisions'
   - 'revert publication revisions'
@@ -177,6 +187,7 @@ permissions:
   - 'view any unpublished content'
   - 'view basic_page revisions'
   - 'view content references'
+  - 'view events revisions'
   - 'view featured_article revisions'
   - 'view latest version'
   - 'view link revisions'
@@ -186,6 +197,7 @@ permissions:
   - 'view own unpublished media'
   - 'view publication revisions'
   - 'view scheduled transitions node basic_page'
+  - 'view scheduled transitions node events'
   - 'view scheduled transitions node featured_article'
   - 'view scheduled transitions node link'
   - 'view scheduled transitions node publication'

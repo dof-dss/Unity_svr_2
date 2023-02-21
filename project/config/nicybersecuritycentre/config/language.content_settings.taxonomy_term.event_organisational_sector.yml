@@ -1,0 +1,11 @@
+uuid: e764aa03-d8a0-4f3d-8cf3-17676e3f6e40
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.event_organisational_sector
+id: taxonomy_term.event_organisational_sector
+target_entity_type_id: taxonomy_term
+target_bundle: event_organisational_sector
+default_langcode: site_default
+language_alterable: false

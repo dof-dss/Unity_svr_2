@@ -1,0 +1,28 @@
+uuid: 2f9d2416-6e7d-4bcc-b851-7040e0ab51c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.location
+  module:
+    - facets
+    - system
+  theme:
+    - nicybersecuritycentre_theme
+id: location
+theme: nicybersecuritycentre_theme
+region: search_facets
+weight: -7
+provider: null
+plugin: 'facet_block:location'
+settings:
+  id: 'facet_block:location'
+  label: Location
+  label_display: visible
+  provider: facets
+  block_id: location
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events\r\n/events/location/*\r\n/events/type/*\r\n/events/audience/*\r\n/events/sector/*\r\n/events/date/*\r\n/events/date/*"

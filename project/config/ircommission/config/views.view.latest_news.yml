@@ -251,6 +251,11 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      use_more: true
+      use_more_always: true
+      use_more_text: 'More news'
+      link_display: custom_url
+      link_url: /news
       header: {  }
       footer:
         area:
@@ -294,11 +299,31 @@ display:
           relationship: none
           view_mode: teaser
       defaults:
+        use_more: true
+        use_more_always: true
+        use_more_text: true
+        link_display: true
+        link_url: true
         style: false
         row: false
         header: false
+        footer: false
       display_description: ''
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<span class="far fa-file-alt"></span>'
+            format: basic_html
+          tokenize: false
+      footer: {  }
       display_extenders:
         metatag_display_extender: {  }
     cache_metadata:
@@ -331,7 +356,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<div class="fa fa-file-text-o"> </div>'
+            value: '<span class="far fa-file-alt"></span>'
             format: full_html
           tokenize: false
       footer:
