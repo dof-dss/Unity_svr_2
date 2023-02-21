@@ -1,0 +1,20 @@
+uuid: 5a320b10-6c8a-4ee2-93df-e52d1af25204
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pacni_theme
+id: mainpagecontent
+theme: pacni_theme
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
