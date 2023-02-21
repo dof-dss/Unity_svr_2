@@ -9,6 +9,7 @@ dependencies:
     - media.type.image
     - media.type.remote_video
     - node.type.basic_page
+    - node.type.events
     - node.type.featured_article
     - node.type.link
     - node.type.publication
@@ -42,6 +43,7 @@ permissions:
   - 'create audio media'
   - 'create basic_page content'
   - 'create document media'
+  - 'create events content'
   - 'create featured_article content'
   - 'create file media'
   - 'create files'
@@ -53,6 +55,7 @@ permissions:
   - 'delete own audio media'
   - 'delete own basic_page content'
   - 'delete own document media'
+  - 'delete own events content'
   - 'delete own featured_article content'
   - 'delete own file media'
   - 'delete own image media'
@@ -68,6 +71,7 @@ permissions:
   - 'download own image files'
   - 'download own video files'
   - 'edit any basic_page content'
+  - 'edit any events content'
   - 'edit any featured_article content'
   - 'edit any link content'
   - 'edit any publication content'
@@ -76,6 +80,7 @@ permissions:
   - 'edit own basic_page content'
   - 'edit own document files'
   - 'edit own document media'
+  - 'edit own events content'
   - 'edit own featured_article content'
   - 'edit own file media'
   - 'edit own image files'
@@ -87,6 +92,7 @@ permissions:
   - 'moderate content from draft to needs_review'
   - 'moderate content from needs_review to draft'
   - 'revert basic_page revisions'
+  - 'revert events revisions'
   - 'revert featured_article revisions'
   - 'revert link revisions'
   - 'revert publication revisions'
@@ -102,6 +108,7 @@ permissions:
   - 'view all unpublished content'
   - 'view any unpublished content'
   - 'view basic_page revisions'
+  - 'view events revisions'
   - 'view featured_article revisions'
   - 'view latest version'
   - 'view link revisions'

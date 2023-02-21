@@ -1,3 +1,69 @@
+blocks:
+  -
+    info: 'Homepage about the redress board'
+    langcode: en
+    uuid: 404a1d6a-7c8f-4b6a-9aaa-ae9b9de00e18
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>The Historical Institutional Abuse (Northern Ireland) Act 2019 received Royal Assent on 5 November 2019. The Act provides the legal framework for the establishment of the Historical Institutional Abuse Redress Board (the Board).</p>\r\n\r\n<p><a class=\"btn\" href=\"/about-us\">Read more</a></p>\r\n"
+          summary: null
+          format: basic_html
+  -
+    info: 'Guidance for applicants'
+    langcode: en
+    uuid: fe1f8e39-f247-40dc-9d01-f8aa36509f7c
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<h3><a href=\"/node/5\"><img alt=\"\" data-delta=\"1\" data-fid=\"9\" data-media-element=\"1\" src=\"https://www.hiaredressni.uk.dev-54ta5gq-erekdd7fnk5be.uk-1.platformsh.site/sites/hiaredress/files/media-files/hiaredress-guidance.png\" /><br />\r\nGuidance for applicants</a></h3>\r\n"
+          summary: null
+          format: basic_html
+  -
+    info: 'Make an application'
+    langcode: en
+    uuid: 96b8fe22-7eea-431e-af40-88924a632b62
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<h3><a href=\"/node/6\"><img alt=\"\" data-delta=\"1\" data-fid=\"10\" data-media-element=\"1\" src=\"https://www.hiaredressni.uk.dev-54ta5gq-erekdd7fnk5be.uk-1.platformsh.site/sites/hiaredress/files/media-files/hiaredess-application.png\" /><br />\r\nMake an application</a></h3>\r\n"
+          summary: null
+          format: basic_html
+  -
+    info: 'Legal advice and support'
+    langcode: en
+    uuid: 651a014d-6d65-4560-9b66-f6ba5205ffba
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<h3><a href=\"/node/27\"><img alt=\"\" data-delta=\"1\" data-fid=\"12\" data-media-element=\"1\" src=\"https://www.hiaredressni.uk.dev-54ta5gq-erekdd7fnk5be.uk-1.platformsh.site/sites/hiaredress/files/media-files/hiaredress-legal.png\" /><br />\r\nLegal advice and support</a></h3>\r\n"
+          summary: null
+          format: basic_html
+  -
+    info: 'Key documents'
+    langcode: en
+    uuid: 87716003-cca2-4c0a-b276-527f370c4e02
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<h3><a href=\"/node/26\"><img alt=\"\" data-delta=\"1\" data-fid=\"11\" data-media-element=\"1\" src=\"https://www.hiaredressni.uk.dev-54ta5gq-erekdd7fnk5be.uk-1.platformsh.site/sites/hiaredress/files/media-files/hiaredress-documents.png\" /><br />\r\nKey documents</a></h3>\r\n"
+          summary: null
+          format: basic_html
 menus:
   -
     menu_name: main
@@ -6,9 +72,9 @@ menus:
     uri: 'internal:/'
     link_title: null
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-50'
+    enabled: true
+    expanded: false
+    weight: -50
     langcode: und
     uuid: 95c90042-f732-41c4-9027-b6de54788618
   -
@@ -18,9 +84,9 @@ menus:
     uri: 'entity:node/8'
     link_title: null
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-45'
+    enabled: true
+    expanded: false
+    weight: -45
     langcode: und
     uuid: 4c045267-07f4-43cc-b66e-34d9c127d12b
   -
@@ -30,9 +96,9 @@ menus:
     uri: 'internal:/node/5'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-49'
+    enabled: true
+    expanded: false
+    weight: -49
     langcode: en
     uuid: 2cec0e20-a211-4e17-b814-57cdca91980f
   -
@@ -42,9 +108,9 @@ menus:
     uri: 'internal:/node/6'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-48'
+    enabled: true
+    expanded: false
+    weight: -48
     langcode: en
     uuid: 49b6dacc-e275-428c-94c5-925f55a4c6a3
   -
@@ -54,9 +120,9 @@ menus:
     uri: 'internal:/node/10'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-47'
+    enabled: true
+    expanded: false
+    weight: -47
     langcode: en
     uuid: 80de37f2-523a-4f78-b767-d1438f9028bd
   -
@@ -66,9 +132,9 @@ menus:
     uri: 'internal:/node/11'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-46'
+    enabled: true
+    expanded: false
+    weight: -46
     langcode: en
     uuid: c0b0f11b-1bdb-4fe7-a3b2-1fb4029cb5c4
   -
@@ -78,9 +144,9 @@ menus:
     uri: 'internal:/publications'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-44'
+    enabled: true
+    expanded: false
+    weight: -44
     langcode: en
     uuid: 7b4479d3-d7f0-47e5-a9d3-53914040feaa
   -
@@ -90,9 +156,9 @@ menus:
     uri: 'internal:/node/12'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-43'
+    enabled: true
+    expanded: false
+    weight: -43
     langcode: en
     uuid: b55ea6a2-0435-4275-97ab-935c76d6dd83
   -
@@ -102,9 +168,9 @@ menus:
     uri: 'internal:/node/3'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-49'
+    enabled: true
+    expanded: false
+    weight: -49
     langcode: en
     uuid: 40760d08-ae9f-4e4f-bf6b-f20a904fa815
   -
@@ -114,8 +180,8 @@ menus:
     uri: 'entity:node/4'
     link_title: ''
     description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-48'
+    enabled: true
+    expanded: false
+    weight: -48
     langcode: en
     uuid: 8579d8c6-8b1d-46c1-b74e-213267dc0083

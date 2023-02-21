@@ -1,0 +1,37 @@
+uuid: 1c728c32-db3b-4e5f-98ac-4f6735994aa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.diff
+    - field.field.node.page.body
+    - field.field.node.page.field_enable_toc
+    - field.field.node.page.field_metatag
+    - node.type.page
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.page.diff
+targetEntityType: node
+bundle: page
+mode: diff
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  content_moderation_control: true
+  field_enable_toc: true
+  field_metatag: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

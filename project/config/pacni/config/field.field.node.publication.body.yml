@@ -1,0 +1,32 @@
+uuid: a108b3d4-0c52-4251-beb8-2b72a28b5c03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.publication
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: C-lA3ztVbA5TJnvirrD4aVYAmyWW9m9gxUarBR68jy8
+id: node.publication.body
+field_name: body
+entity_type: node
+bundle: publication
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

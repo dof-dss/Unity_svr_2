@@ -1,0 +1,30 @@
+uuid: 7d5ef382-d261-42f9-9f08-67266cc70e71
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:map:2b976082-72a9-4887-a42d-136a5638e1d8'
+  module:
+    - block_content
+    - system
+  theme:
+    - nijac_theme
+id: nijacmaplocation
+theme: nijac_theme
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:2b976082-72a9-4887-a42d-136a5638e1d8'
+settings:
+  id: 'block_content:2b976082-72a9-4887-a42d-136a5638e1d8'
+  label: 'Nijac map block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /contact-us

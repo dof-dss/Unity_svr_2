@@ -5,6 +5,7 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - node
     - system
   theme:
     - cvocni_theme
@@ -27,3 +28,10 @@ visibility:
     id: request_path
     negate: true
     pages: '<front>'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      basic_page: basic_page

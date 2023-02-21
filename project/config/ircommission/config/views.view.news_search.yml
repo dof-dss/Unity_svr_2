@@ -177,8 +177,8 @@ display:
           tags:
             next: 'next ›'
             previous: '‹ previous'
-            first: '« First'
-            last: 'Last »'
+            first: '« first'
+            last: 'last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -254,7 +254,7 @@ display:
             operator: search_api_fulltext_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: query_news
+            identifier: search
             required: false
             remember: false
             multiple: false
@@ -264,10 +264,9 @@ display:
               administrator: '0'
               author_user: '0'
               supervisor_user: '0'
-              editor_user: '0'
-              admin_user: '0'
+              qa: '0'
             expose_fields: false
-            placeholder: ''
+            placeholder: Keywords
             searched_fields_id: search_api_fulltext_searched_fields
           is_grouped: false
           group_info:

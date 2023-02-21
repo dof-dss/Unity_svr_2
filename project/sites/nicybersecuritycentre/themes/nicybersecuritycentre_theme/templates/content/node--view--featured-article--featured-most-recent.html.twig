@@ -74,6 +74,6 @@
   </h3>
   {{ content | without('field_photo') }}
   <div class="view-footer">
-    <a href="{{ url }}" aria-label="Read more about {{ node.label }}">Read more</a>
+    <a href="{{ url }}">Read more<span class="visually-hidden">about {{ node.label }}</span></a>
   </div>
 </article>

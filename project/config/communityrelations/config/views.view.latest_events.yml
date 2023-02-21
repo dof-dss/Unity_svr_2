@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.latest_content_item
+    - core.entity_view_mode.node.teaser
     - field.storage.node.field_photo
     - field.storage.node.field_teaser
     - node.type.event
@@ -292,14 +294,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h2
+          element_type: h3
           element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: false
+          element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -393,14 +395,10 @@ display:
           default_row_class: false
           uses_fields: false
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          default_field_elements: true
-          inline:
-            title: title
-            field_photo: field_photo
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: latest_content_item
       defaults:
         title: false
         use_more: false
@@ -428,7 +426,7 @@ display:
         - 'config:field.storage.node.field_teaser'
   latest_events:
     id: latest_events
-    display_title: Block
+    display_title: 'Home latest event'
     display_plugin: block
     position: 1
     display_options:
@@ -470,7 +468,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: span
+          element_type: div
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -535,7 +533,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: h4
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -567,50 +565,32 @@ display:
           offset: 1
           items_per_page: 2
       style:
-        type: table
+        type: default
         options:
           grouping: {  }
           row_class: ''
           default_row_class: false
-          columns:
-            title: title
-            field_photo: field_photo
-          default: '-1'
-          info:
-            title:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_photo:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          override: true
-          sticky: false
-          summary: ''
-          empty_table: false
-          caption: ''
-          description: ''
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          default_field_elements: true
-          inline:
-            title: title
-            field_photo: field_photo
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: teaser
       defaults:
         pager: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        link_display: false
+        link_url: false
         style: false
         row: false
         fields: false
+      display_description: ''
+      use_more: false
+      use_more_always: false
+      use_more_text: 'More Events'
+      link_display: '0'
+      link_url: /events
       display_extenders:
         metatag_display_extender: {  }
     cache_metadata:

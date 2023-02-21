@@ -20,7 +20,7 @@ entity_type: node
 bundle: news
 label: Body
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

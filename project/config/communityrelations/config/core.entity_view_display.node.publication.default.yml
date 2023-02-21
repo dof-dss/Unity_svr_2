@@ -27,7 +27,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_attachment:
     type: entity_reference_entity_view
@@ -36,16 +36,16 @@ content:
       view_mode: embed
       link: false
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_photo:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: portrait_float
+      view_mode: landscape_float
       link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 1
     region: content
   field_publication_date:
     type: datetime_default
