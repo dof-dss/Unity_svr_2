@@ -38,6 +38,7 @@ module:
   entity_reference_revisions: 0
   facets: 0
   facets_pretty_paths: 0
+  facets_summary: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -86,6 +87,7 @@ module:
   origins_qa: 0
   origins_toc: 0
   origins_unique_title: 0
+  pacni_migrations: 0
   page_cache: 0
   path: 0
   path_alias: 0
@@ -95,6 +97,12 @@ module:
   responsive_image: 0
   scheduled_transitions: 0
   search: 0
+  search_api: 0
+  search_api_autocomplete: 0
+  search_api_location: 0
+  search_api_location_views: 0
+  search_api_solr: 0
+  search_api_spellcheck: 0
   simplei: 0
   structure_sync: 0
   system: 0
@@ -110,6 +118,7 @@ module:
   unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0
+  unity_search_pages: 0
   update: 0
   user: 0
   views_custom_cache_tag: 0
@@ -133,4 +142,5 @@ theme:
   stable: 0
   adminimal_theme: 0
   nicsdru_unity_theme: 0
+  pacni_theme: 0
 profile: nicsdru_unity_profile

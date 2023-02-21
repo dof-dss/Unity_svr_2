@@ -1,4 +1,4 @@
-uuid: 27c8b03f-47d3-4e78-888e-e182c4717f69
+uuid: 7d06f2dc-68ec-4611-9e10-c75732505f51
 langcode: en
 status: true
 dependencies: {  }
@@ -80,6 +80,32 @@ process:
     -
       plugin: get
       source: body
+    -
+      plugin: media_wysiwyg_filter
+    -
+      plugin: filter_absolute_links
+      replace_urls:
+        http://www.pacni.gov.uk
+        https://www.pacni.gov.uk
+    -
+      plugin: site_files_filter
+      from_ref: sites/pacni/files
+      to_ref: files/pacni
+    -
+      plugin: site_files_filter
+      from_ref: sites/pacni.gov.uk/files
+      to_ref: files/pacni
+  body/0/format:
+    -
+      plugin: static_map
+      bypass: true
+      source: body/0/format
+      map:
+        filtered_html: basic_html
+        filtered_html_with_no_images: basic_html
+        filtered_html_with_tokens: basic_html
+        restricted_html: basic_html
+        plain_text: plain_text
   field_photo:
     -
       plugin: sub_process
@@ -98,7 +124,7 @@ process:
         value:
           plugin: format_date
           from_format: 'Y-m-d H:i:s'
-          to_format: Y-m-d
+          to_format: 'Y-m-d\TH:i:s'
           source: value
   field_teaser:
     -
