@@ -98,6 +98,7 @@ module:
   redis: 0
   responsive_image: 0
   scheduled_transitions: 0
+  search: 0
   search_api: 0
   search_api_autocomplete: 0
   search_api_location: 0
@@ -120,6 +121,7 @@ module:
   unity_image_styles: 0
   unity_internal_link_checker: 0
   unity_search_pages: 0
+  update: 0
   user: 0
   views_custom_cache_tag: 0
   webform: 0
