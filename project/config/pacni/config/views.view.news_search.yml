@@ -9,6 +9,7 @@ dependencies:
   module:
     - search_api
     - text
+    - views_custom_cache_tag
 id: news_search
 label: 'News search'
 module: views
@@ -254,6 +255,12 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      cache:
+        type: custom_tag
+        options:
+          custom_tag: ''
+      defaults:
+        cache: false
       exposed_block: true
       display_extenders:
         metatag_display_extender:
