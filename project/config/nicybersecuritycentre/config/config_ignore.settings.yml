@@ -7,4 +7,5 @@ ignored_config_entities:
   - 'nicybersecuritycentre_theme.settings:pinterest_profile_url'
   - 'nicybersecuritycentre_theme.settings:youtube_profile_url'
   - 'nicybersecuritycentre_theme.settings:instagram_profile_url'
+  - 'nicybersecuritycentre_theme.settings:basic_page_structure'
   - block.block.sociallinks
