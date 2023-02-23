@@ -20,3 +20,5 @@
 /bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-ircommission" "/app/log/ircommission/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
 /bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-nijac" "/app/log/nijac/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
 /bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-nicybersecuritycentre" "/app/log/nicybersecuritycentre/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
+/bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-cvocni" "/app/log/cvocni/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
+/bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-nicertoffice" "/app/log/nicertoffice/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
