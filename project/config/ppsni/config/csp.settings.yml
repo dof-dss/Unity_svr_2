@@ -6,22 +6,24 @@ report-only:
     default-src:
       base: self
     connect-src:
+      base: self
       sources:
         - 'https://www.google-analytics.com'
-      base: self
     font-src:
+      base: self
       sources:
         - 'https://themes.googleusercontent.com'
         - 'https://fonts.gstatic.com'
         - 'https://use.fontawesome.com'
         - 'https://cdn.jsdelivr.net'
         - 'data:'
-      base: self
     frame-src:
+      base: self
       sources:
         - 'https://www.youtube.com'
-      base: self
+        - 'https://*.twitter.com'
     img-src:
+      base: self
       sources:
         - 'https://translate.google.com'
         - 'https://www.googletagmanager.com'
@@ -32,78 +34,80 @@ report-only:
         - 'https://maps.gstatic.com'
         - 'https://maps.googleapis.com'
         - 'data:'
-      base: self
+        - 'https://*.twitter.com'
     manifest-src:
       base: self
     script-src:
+      base: self
       sources:
         - 'https://www.googletagmanager.com'
         - 'https://www.google-analytics.com'
-      base: self
+        - 'https://*.twitter.com'
     script-src-attr:
       base: self
     script-src-elem:
+      base: self
       sources:
         - 'https://www.googletagmanager.com'
         - 'https://www.google-analytics.com'
-      base: self
+        - 'https://*.twitter.com'
     style-src:
       base: self
     style-src-attr:
+      base: self
       flags:
         - unsafe-inline
-      base: self
     style-src-elem:
       base: self
     block-all-mixed-content: true
   reporting:
-    plugin: sitelog
+    plugin: none
 enforce:
   enable: false
   directives:
     default-src:
       base: self
     font-src:
+      base: self
       sources:
         - 'https://themes.googleusercontent.com'
         - 'https://fonts.gstatic.com'
         - 'https://use.fontawesome.com'
         - 'https://cdn.jsdelivr.net'
         - 'data:'
-      base: self
     frame-src:
+      base: self
       sources:
         - 'https://www.youtube.com'
-      base: self
     img-src:
+      base: self
       sources:
         - 'https://cdn.jsdelivr.net'
         - 'https://i.ytimg.com'
         - 'https://maps.gstatic.com'
         - 'https://maps.googleapis.com'
         - 'data:'
-      base: self
     script-src:
+      base: self
       sources:
         - 'https://www.googletagmanager.com'
         - 'https://www.google-analytics.com'
-      base: self
     script-src-elem:
+      base: self
       sources:
         - 'https://www.googletagmanager.com'
         - 'https://www.google-analytics.com'
-      base: self
     style-src:
       base: self
     style-src-attr:
+      base: self
       flags:
         - unsafe-inline
-      base: self
     style-src-elem:
+      base: self
       sources:
         - 'https://www.googletagmanager.com'
         - 'https://www.google-analytics.com'
-      base: self
     block-all-mixed-content: true
   reporting:
     plugin: sitelog
