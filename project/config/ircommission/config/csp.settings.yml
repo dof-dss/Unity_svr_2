@@ -57,7 +57,7 @@ report-only:
       base: self
     block-all-mixed-content: true
   reporting:
-    plugin: sitelog
+    plugin: none
 enforce:
   enable: false
   directives:
