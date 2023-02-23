@@ -2,12 +2,9 @@ uuid: c43c7bb4-6c93-434a-b249-4110bb71792b
 langcode: en
 status: true
 dependencies:
-  config:
-    - node.type.page
   module:
+    - media
     - node
-    - path
-    - pathauto
     - system
 _core:
   default_config_hash: zLyQwFO06-pj9Gj5UZMWuk_aAuAOSC8YqFEHItUk-Tc
@@ -17,24 +14,18 @@ weight: 1
 is_admin: false
 permissions:
   - 'access administration menu'
-  - 'access administration pages'
   - 'access content'
   - 'access media browser'
   - 'access workbench'
-  - 'create page content'
-  - 'create url aliases'
-  - 'delete own page content'
   - 'diff view changes'
-  - 'edit any page content'
-  - 'edit own page content'
-  - 'notify of path changes'
   - 'revert revisions'
   - 'use media wysiwyg'
   - 'use text format filtered_html'
   - 'use text format filtered_html_with_no_images'
+  - 'view all revisions'
   - 'view files'
+  - 'view media'
   - 'view moderation history'
   - 'view moderation messages'
   - 'view own unpublished content'
   - 'view revisions'
-  - 'view the administration theme'
