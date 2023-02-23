@@ -2,7 +2,10 @@ uuid: c43c7bb4-6c93-434a-b249-4110bb71792b
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.basic_html
   module:
+    - filter
     - media
     - node
     - system
@@ -20,6 +23,7 @@ permissions:
   - 'diff view changes'
   - 'revert revisions'
   - 'use media wysiwyg'
+  - 'use text format basic_html'
   - 'use text format filtered_html'
   - 'use text format filtered_html_with_no_images'
   - 'view all revisions'
