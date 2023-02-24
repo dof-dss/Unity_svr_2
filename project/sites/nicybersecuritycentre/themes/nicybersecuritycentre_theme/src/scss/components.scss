@@ -7,7 +7,7 @@
 
 .node-type-featured-article {
   #sidebar-second {
-    float: none;
+    float: left;
 
     @include breakpoint($tab) {
       width: 65%;
