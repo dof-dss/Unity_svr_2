@@ -21,6 +21,6 @@ entity_settings:
     auto_create_bundle: ''
 queue_settings:
   min_size: 0
-  max_size: 1
+  max_size: 5
   act_as_queue: false
   reverse: false

@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.feature.body
     - field.field.node.feature.field_link_url
     - field.field.node.feature.field_photo
     - field.field.node.feature.field_teaser
@@ -22,7 +21,6 @@ content:
     weight: 100
     region: content
 hidden:
-  body: true
   field_link_url: true
   field_photo: true
   field_teaser: true

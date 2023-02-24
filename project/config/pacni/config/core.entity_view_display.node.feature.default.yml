@@ -3,26 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.feature.body
     - field.field.node.feature.field_link_url
     - field.field.node.feature.field_photo
     - field.field.node.feature.field_teaser
     - node.type.feature
   module:
-    - text
     - user
 id: node.feature.default
 targetEntityType: node
 bundle: feature
 mode: default
 content:
-  body:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
   field_photo:
     type: entity_reference_entity_view
     label: hidden
