@@ -11,7 +11,7 @@ dependencies:
 id: hearingsandsitevisitsblock
 theme: pacni_theme
 region: bottom_widget_3
-weight: 0
+weight: -5
 provider: null
 plugin: 'block_content:2d50cbe1-72c4-48cb-b733-680579b6064e'
 settings:

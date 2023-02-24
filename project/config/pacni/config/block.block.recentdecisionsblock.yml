@@ -11,7 +11,7 @@ dependencies:
 id: recentdecisionsblock
 theme: pacni_theme
 region: bottom_widget_1
-weight: 0
+weight: -5
 provider: null
 plugin: 'block_content:1ec0f22f-4fe1-4d77-8f2e-629fb486eaab'
 settings:
