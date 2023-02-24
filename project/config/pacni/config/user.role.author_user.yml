@@ -10,7 +10,6 @@ dependencies:
     - media.type.remote_video
     - node.type.basic_page
     - node.type.news
-    - node.type.page
     - node.type.publication
     - workflows.workflow.nics_editorial_workflow
   module:
