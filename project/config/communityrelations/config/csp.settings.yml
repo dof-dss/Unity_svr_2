@@ -9,6 +9,8 @@ report-only:
       base: self
       sources:
         - 'https://www.google-analytics.com'
+        - 'https://region1.google-analytics.com'
+        - 'https://*.twitter.com'
     font-src:
       base: self
       sources:
@@ -17,10 +19,12 @@ report-only:
         - 'https://use.fontawesome.com'
         - 'https://cdn.jsdelivr.net'
         - 'data:'
+        - '*.typekit.com'
     frame-src:
       base: self
       sources:
         - 'https://www.youtube.com'
+        - 'https://*.twitter.com'
     img-src:
       base: self
       sources:
@@ -33,6 +37,7 @@ report-only:
         - 'https://maps.gstatic.com'
         - 'https://maps.googleapis.com'
         - 'data:'
+        - 'https://*.twitter.com'
     manifest-src:
       base: self
     script-src:
@@ -40,6 +45,7 @@ report-only:
       sources:
         - 'https://www.googletagmanager.com'
         - 'https://www.google-analytics.com'
+        - 'https://*.twitter.com'
     script-src-attr:
       base: self
     script-src-elem:
@@ -47,8 +53,11 @@ report-only:
       sources:
         - 'https://www.googletagmanager.com'
         - 'https://www.google-analytics.com'
+        - 'https://*.twitter.com'
     style-src:
       base: self
+      sources:
+        - '*.typekit.com'
     style-src-attr:
       base: self
       flags:
