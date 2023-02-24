@@ -12,6 +12,7 @@ sites:
         cron_cmd: 'cd web/sites/mentalhealthchampionni ; drush core-cron'
         database: mentalhealthchampionni
         status: production
+        default: true
     publicappointmentsni:
         name: 'The Commissioner for Public Appointments for Northern Ireland'
         url: publicappointmentsni.org
@@ -74,6 +75,7 @@ sites:
         cron_cmd: 'cd web/sites/cvocni ; drush core-cron'
         database: cvocni
         status: production
+        default: false
     nijac:
         name: 'Northern Ireland Judicial Appointments Commission'
         url: nijac.gov.uk
