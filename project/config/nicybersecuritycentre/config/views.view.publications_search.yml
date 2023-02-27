@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - search_api.index.publications
-    - system.menu.main
   module:
     - search_api
 id: publications_search
@@ -227,13 +226,13 @@ display:
         metatag_display_extender: {  }
       path: publications
       menu:
-        type: normal
-        title: Publications
+        type: none
+        title: ''
         description: ''
-        weight: 0
+        weight: -67
         expanded: false
         menu_name: main
-        parent: 'menu_link_content:e5d621bf-7a66-4d88-8dcc-8db48bb062ff'
+        parent: ''
         context: '0'
     cache_metadata:
       max-age: -1
