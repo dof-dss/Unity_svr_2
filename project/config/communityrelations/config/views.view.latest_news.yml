@@ -342,12 +342,27 @@ display:
         row: false
         fields: false
         sorts: false
+        footer: false
       display_description: ''
       use_more: false
       use_more_always: true
       use_more_text: 'More News'
       link_display: '0'
       link_url: /news
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<div class="btnwrap"><a class="btn" href="/news">More News</a></div>'
+            format: basic_html
+          tokenize: false
       display_extenders:
         metatag_display_extender: {  }
     cache_metadata:
