@@ -585,12 +585,14 @@ display:
         style: false
         row: false
         fields: false
+        footer: false
       display_description: ''
-      use_more: false
-      use_more_always: false
-      use_more_text: 'More Events'
-      link_display: '0'
+      use_more: true
+      use_more_always: true
+      use_more_text: 'More Events...'
+      link_display: custom_url
       link_url: /events
+      footer: {  }
       display_extenders:
         metatag_display_extender: {  }
     cache_metadata:

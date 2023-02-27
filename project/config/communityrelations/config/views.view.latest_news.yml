@@ -342,12 +342,14 @@ display:
         row: false
         fields: false
         sorts: false
+        footer: false
       display_description: ''
-      use_more: false
+      use_more: true
       use_more_always: true
-      use_more_text: 'More News'
-      link_display: '0'
+      use_more_text: 'More News...'
+      link_display: custom_url
       link_url: /news
+      footer: {  }
       display_extenders:
         metatag_display_extender: {  }
     cache_metadata:
