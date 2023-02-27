@@ -28,19 +28,33 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: content
   field_crc_contact_details:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
+  field_crc_council_area:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 1
+    region: content
+  field_crc_t_buc_aim:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
     region: content
 hidden:
   content_moderation_control: true
-  field_crc_council_area: true
-  field_crc_t_buc_aim: true
   field_meta_tags: true
   langcode: true
   links: true
