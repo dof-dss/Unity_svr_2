@@ -22,7 +22,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_deadline_date:
     type: datetime_default
@@ -31,7 +31,7 @@ content:
       timezone_override: ''
       format_type: unity_date
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
 hidden:
   content_moderation_control: true

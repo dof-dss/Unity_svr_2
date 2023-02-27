@@ -1,0 +1,13 @@
+uuid: a3376533-b627-4dbd-b5b4-61fb3afdf0d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.publication
+_core:
+  default_config_hash: XEbj6qrSkl0t1lt57TFGdE3wggCq0boOYvrevmkQYdw
+id: node.publication
+target_entity_type_id: node
+target_bundle: publication
+default_langcode: site_default
+language_alterable: false

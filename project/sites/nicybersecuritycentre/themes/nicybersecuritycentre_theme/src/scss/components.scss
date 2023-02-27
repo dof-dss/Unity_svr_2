@@ -5,9 +5,42 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
+.block-link {
+  display: flex;
+
+  .block-link--teaser {
+    position: relative;
+    padding-right: 4rem;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      right: .1rem;
+      width: 3rem;
+      height: 3rem;
+      background-image: resolve('arrow_forward_link_blue.svg');
+      background-position: center center;
+      background-size: 2.4rem auto;
+      background-repeat: no-repeat;
+    }
+  }
+
+  a {
+    background: $grey-light;
+
+    &:hover .block-link--teaser:after,
+    &:focus .block-link--teaser:after {
+      background-color: $charcoal;
+      background-image: resolve('arrow_forward_white.svg');
+    }
+  }
+}
+
 .node-type-featured-article {
   #sidebar-second {
-    float: none;
+    float: left;
 
     @include breakpoint($tab) {
       width: 65%;
@@ -20,28 +53,19 @@
     justify-content: space-between;
 
     article {
-      position: relative;
       padding-bottom: 3rem;
       margin-bottom: 2rem;
 
       @include breakpoint($mob) {
-        flex-basis: 20rem;
+        flex-basis: 21.5rem;
       }
     }
 
     h3 {
       @include adjust-font-size-to(21px);
-      margin: 2.4rem 0 1.2rem;
-    }
-
-    .view-footer {
-      position: absolute;
-      bottom: 0;
-      list-style: none;
-
-      a {
-        display: block;
-      }
+      color: $link;
+      margin: 0;
+      padding: 1rem 0;
     }
   }
 }
@@ -66,24 +90,31 @@
 
 #block-views-block-featured-article-featured-home {
   article {
-    @include breakpoint($tab) {
-      display: flex;
-      column-gap: 4rem;
-    }
-
-    .group-left {
+    a {
       @include breakpoint($tab) {
-        flex: 2;
+        display: flex;
+        column-gap: 4rem;
       }
     }
 
-    .group-right {
+    .block-link__image {
+      @include breakpoint($tab) {
+        flex: 2;
+      }
+
+      .media-image {
+        margin: 0;
+      }
+    }
+
+    .block-link__body {
       text-align: left;
       position: relative;
 
       h2 {
         margin-top: 1.2rem;
         text-align: left;
+        color: $link;
       }
 
       @include breakpoint($tab) {
@@ -107,6 +138,25 @@
     padding: 0;
   }
 
+}
+
+#content #block-views-block-featured-article-featured-home .most-recent .block-link a,
+#content #sidebar-second .most-recent .block-link a,
+#content #block-views-block-useful-contacts-useful-contacts-home .cyber-list ul:first-child li a {
+  padding: 1rem;
+  margin: 0;
+  border: none;
+
+  &:hover,
+  &:focus {
+    border: none;
+    background: #e4f0fa;
+  }
+
+  &:focus {
+    outline: 2px solid $black;
+    outline-offset: -2px;
+  }
 }
 
 #header_wrapper {
@@ -166,19 +216,6 @@
     padding-bottom: 3rem;
   }
 
-  #block-views-block-useful-contacts-useful-contacts-home .cyber-list ul:first-child li a {
-    border-bottom: none;
-
-    &:focus,
-    &:hover {
-      padding: 0;
-      margin: 0;
-      outline: 2px solid $black;
-      outline-offset: 7px;
-      background: $grey-lightest;
-    }
-  }
-
   .column {
     &:first-child {
       width: 100%;
@@ -204,14 +241,6 @@
       display: flex;
 
       article {
-        display: flex;
-        padding: 1rem;
-
-        &:focus,
-        &:hover {
-          background: $grey-lightest;
-        }
-
         h3 {
           color: $link;
         }

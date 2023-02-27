@@ -74,7 +74,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/cvocni ; drush core-cron'
         database: cvocni
-        status: development
+        status: production
         default: false
     nijac:
         name: 'Northern Ireland Judicial Appointments Commission'
@@ -119,5 +119,14 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/ppsni ; drush core-cron'
         database: ppsni
+        status: development
+        default: false
+    pacni:
+        name: 'Planning Appeals Commission'
+        url: pacni.gov.uk
+        solr: pacni
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/pacni ; drush core-cron'
+        database: pacni
         status: development
         default: false

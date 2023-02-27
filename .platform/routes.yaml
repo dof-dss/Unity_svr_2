@@ -45,14 +45,6 @@
 'https://hiaredressni.uk/':
     type: redirect
     to: 'https://www.hiaredressni.uk/'
-'https://www.cvocni.org/':
-    type: upstream
-    upstream: 'unity_svr_2:http'
-    cache:
-        enabled: 'false'
-'https://cvocni.org/':
-    type: redirect
-    to: 'https://www.cvocni.org/'
 'https://www.nijac.gov.uk/':
     type: upstream
     upstream: 'unity_svr_2:http'
@@ -93,6 +85,14 @@
 'https://ppsni.gov.uk/':
     type: redirect
     to: 'https://www.ppsni.gov.uk/'
+'https://www.pacni.gov.uk/':
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
+'https://pacni.gov.uk/':
+    type: redirect
+    to: 'https://www.pacni.gov.uk/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_2:http'
