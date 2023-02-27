@@ -107,7 +107,6 @@
     @include adjust-font-size-to(18px);
   }
   .more-link {
-    @include adjust-font-size-to(18px);
     text-align: left;
   }
 }
@@ -230,6 +229,8 @@
 }
 
 .latest-news-bottom {
+  padding-bottom: 2rem;
+
   a {
     display:flex;
     column-gap: 2rem;
@@ -287,6 +288,8 @@
 
 
 .latest-event-bottom {
+  padding-bottom: 2rem;
+
   a {
     display: flex;
     column-gap: 2rem;
@@ -369,6 +372,41 @@
   &:focus {
     border: none;
     background: #771c67;
+  }
+
+  &:focus {
+    outline: 2px solid $black;
+    outline-offset: -2px;
+  }
+}
+
+#content #block-views-block-latest-news-home-latest-news .more-link a {
+  @include adjust-font-size-to(20px);
+  text-align: left;
+
+  &:hover,
+  &:focus {
+    border: none;
+    background: #e4f0fa;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: 2px solid $black;
+    outline-offset: -2px;
+    color: #0e6bb3;
+  }
+}
+
+#content #block-views-block-latest-events-latest-events .more-link a {
+  @include adjust-font-size-to(20px);
+  text-align: left;
+
+  &:hover,
+  &:focus {
+    border: none;
+    background: #771c67;
+    text-decoration: underline;
   }
 
   &:focus {

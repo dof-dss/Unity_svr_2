@@ -587,25 +587,12 @@ display:
         fields: false
         footer: false
       display_description: ''
-      use_more: false
-      use_more_always: false
-      use_more_text: 'More Events'
-      link_display: '0'
+      use_more: true
+      use_more_always: true
+      use_more_text: 'More Events...'
+      link_display: custom_url
       link_url: /events
-      footer:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: false
-          content:
-            value: '<div class="btnwrap"><a class="btn" href="/events">More Events</a></div>'
-            format: basic_html
-          tokenize: false
+      footer: {  }
       display_extenders:
         metatag_display_extender: {  }
     cache_metadata:
