@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.body
     - search_api.index.featured_article
-    - system.menu.main
   module:
     - search_api
     - text
@@ -263,10 +262,10 @@ display:
         metatag_display_extender: {  }
       path: articles
       menu:
-        type: normal
-        title: 'Latest news'
+        type: none
+        title: ''
         description: ''
-        weight: -73
+        weight: -75
         expanded: false
         menu_name: main
         parent: ''
