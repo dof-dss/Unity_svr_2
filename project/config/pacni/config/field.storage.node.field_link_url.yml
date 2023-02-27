@@ -1,15 +1,16 @@
-uuid: 1ec2b5d4-59bc-4890-83e8-01a214ec1f4e
-langcode: und
+uuid: 5335c55d-a624-4e56-a830-a934da2d09ee
+langcode: en
 status: true
 dependencies:
   module:
+    - link
     - node
-id: node.field_enable_toc
-field_name: field_enable_toc
+id: node.field_link_url
+field_name: field_link_url
 entity_type: node
-type: boolean
+type: link
 settings: {  }
-module: core
+module: link
 locked: false
 cardinality: 1
 translatable: true
