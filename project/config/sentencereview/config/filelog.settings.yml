@@ -1,7 +1,7 @@
 _core:
   default_config_hash: U3bch6QlHy9RyVtqTqAjgLm3MI5tw4ODY3316QCZSzI
 enabled: true
-location: /app/log/default
+location: /app/log/sentencereview
 rotation:
   schedule: daily
   delete: true
