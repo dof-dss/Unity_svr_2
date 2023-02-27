@@ -67,13 +67,10 @@
  */
 #}
 
-<article>
+<article class="block-link">
+  <a href="{{ url }}">
   {{ content.field_photo }}
-  <h3>
-    <a href="{{ url }}">{{ node.label }}</a>
-  </h3>
-  {{ content | without('field_photo') }}
-  <div class="view-footer">
-    <a href="{{ url }}">Read more<span class="visually-hidden">about {{ node.label }}</span></a>
-  </div>
+  <h3>{{ node.label }}</h3>
+  {{ content.field_teaser }}
+  </a>
 </article>

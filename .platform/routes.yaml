@@ -5,6 +5,14 @@
 # original repository.Any changes here will be overwritten when the project #
 # is built.                                                                 #
 #############################################################################
+'https://www.mentalhealthchampion-ni.org.uk.{default}/':
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
+'https://mentalhealthchampion-ni.org.uk.{default}/':
+    type: redirect
+    to: 'https://www.mentalhealthchampion-ni.org.uk.{default}/'
 'https://www.ircommission.org/':
     type: upstream
     upstream: 'unity_svr_2:http'

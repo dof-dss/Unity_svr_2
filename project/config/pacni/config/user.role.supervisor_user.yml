@@ -9,8 +9,8 @@ dependencies:
     - media.type.image
     - media.type.remote_video
     - node.type.basic_page
+    - node.type.feature
     - node.type.news
-    - node.type.page
     - node.type.publication
     - workflows.workflow.nics_editorial_workflow
   module:
@@ -57,6 +57,7 @@ permissions:
   - 'create audio media'
   - 'create basic_page content'
   - 'create document media'
+  - 'create feature content'
   - 'create file media'
   - 'create files'
   - 'create image media'
@@ -72,6 +73,7 @@ permissions:
   - 'delete any basic_page content'
   - 'delete any document files'
   - 'delete any document media'
+  - 'delete any feature content'
   - 'delete any file media'
   - 'delete any image files'
   - 'delete any image media'
@@ -81,12 +83,14 @@ permissions:
   - 'delete any remote_video media'
   - 'delete any video files'
   - 'delete basic_page revisions'
+  - 'delete feature revisions'
   - 'delete news revisions'
   - 'delete own audio files'
   - 'delete own audio media'
   - 'delete own basic_page content'
   - 'delete own document files'
   - 'delete own document media'
+  - 'delete own feature content'
   - 'delete own file media'
   - 'delete own image files'
   - 'delete own image media'
@@ -111,6 +115,7 @@ permissions:
   - 'edit any basic_page content'
   - 'edit any document files'
   - 'edit any document media'
+  - 'edit any feature content'
   - 'edit any file media'
   - 'edit any image files'
   - 'edit any image media'
@@ -125,6 +130,7 @@ permissions:
   - 'edit own basic_page content'
   - 'edit own document files'
   - 'edit own document media'
+  - 'edit own feature content'
   - 'edit own file media'
   - 'edit own image files'
   - 'edit own image media'
@@ -145,6 +151,7 @@ permissions:
   - 'reschedule scheduled transitions node webform'
   - 'revert all revisions'
   - 'revert basic_page revisions'
+  - 'revert feature revisions'
   - 'revert news revisions'
   - 'revert page revisions'
   - 'revert publication revisions'
@@ -173,6 +180,7 @@ permissions:
   - 'view any unpublished content'
   - 'view basic_page revisions'
   - 'view content references'
+  - 'view feature revisions'
   - 'view latest version'
   - 'view moderation history'
   - 'view moderation messages'
