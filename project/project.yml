@@ -130,3 +130,12 @@ sites:
         database: pacni
         status: development
         default: false
+    cosicani:
+        name: cosica
+        url: cosica-ni.org
+        solr: cosicani
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/cosicani ; drush core-cron'
+        database: cosicani
+        status: development
+        default: false
