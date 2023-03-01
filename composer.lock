@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b9ef1d20b5a695669b04890b8424ce2",
+    "content-hash": "c425f8179abf461cd3459bff2932bf44",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5293,6 +5293,50 @@
             }
         },
         {
+            "name": "drupal/file_delete_ui",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/file_delete_ui.git",
+                "reference": "1.0.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/file_delete_ui-1.0.0-beta2.zip",
+                "reference": "1.0.0-beta2",
+                "shasum": "76e04136bda06294ed40b266b47dafce4cbf7a85"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-beta2",
+                    "datestamp": "1673897599",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "douggreen",
+                    "homepage": "https://www.drupal.org/user/29191"
+                }
+            ],
+            "description": "Add capability for admins to delete files",
+            "homepage": "https://www.drupal.org/project/file_delete_ui",
+            "support": {
+                "source": "https://git.drupalcode.org/project/file_delete_ui"
+            }
+        },
+        {
             "name": "drupal/filelog",
             "version": "2.1.1",
             "source": {
@@ -6375,6 +6419,53 @@
             "homepage": "https://www.drupal.org/project/media_entity_browser",
             "support": {
                 "source": "https://git.drupalcode.org/project/media_entity_browser"
+            }
+        },
+        {
+            "name": "drupal/media_file_delete",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/media_file_delete.git",
+                "reference": "1.3.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_file_delete-1.3.0.zip",
+                "reference": "1.3.0",
+                "shasum": "a3772a9c4b96d9f0c93eb3ebcac2f4041db93f1d"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ~9.0 || ~10.0"
+            },
+            "require-dev": {
+                "drupal/entity_usage": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.3.0",
+                    "datestamp": "1669241949",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                }
+            ],
+            "description": "Provides content editors the ability to delete associated files when deleting media items",
+            "homepage": "https://www.drupal.org/project/media_file_delete",
+            "support": {
+                "source": "https://git.drupalcode.org/project/media_file_delete"
             }
         },
         {
@@ -20761,6 +20852,7 @@
         "drupal/config_readonly": 10,
         "drupal/date_facet_drilldown": 20,
         "drupal/facets_pretty_paths": 10,
+        "drupal/file_delete_ui": 10,
         "drupal/flag": 10,
         "drupal/inline_entity_form": 5,
         "drupal/search_api_location": 15,
