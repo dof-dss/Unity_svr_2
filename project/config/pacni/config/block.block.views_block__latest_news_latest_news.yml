@@ -10,8 +10,8 @@ dependencies:
     - pacni_theme
 id: views_block__latest_news_latest_news
 theme: pacni_theme
-region: bottom_widget_2
-weight: -4
+region: bottom_widget_5
+weight: -7
 provider: null
 plugin: 'views_block:latest_news-latest_news'
 settings:
