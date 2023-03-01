@@ -1,0 +1,17 @@
+uuid: a36d2b38-4902-45c6-ae77-01074ba91aef
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RMZznDHP44nv5ETxUiM66qPvXRG_XaoasyU-tmnuM5Q
+name: nigov_landscape_med_900x600_x2
+label: 'nigov landscape med 900x600 (x2)'
+effects:
+  3a4f088a-b829-41cb-a95a-ce05305807a7:
+    uuid: 3a4f088a-b829-41cb-a95a-ce05305807a7
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 900
+      height: 600
+      anchor: center-center
