@@ -16,8 +16,9 @@ module:
   migrate_drupal: 0
   migrate_plus: 0
   migrate_tools: 0
-  unity_file_migrations: 0
+  pacni_migrations: 0
   views_ui: 0
+  unity_file_migrations: 0
 theme: {  }
 blacklist: {  }
 graylist: {  }
