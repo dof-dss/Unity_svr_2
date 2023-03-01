@@ -1,0 +1,13 @@
+uuid: 0348c514-ead7-423a-8674-34f5df52c7b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.board_member
+_core:
+  default_config_hash: CivwBLD5GTEqfdVa43q9B5GfGI2tV3vuCfQKhjNLl7Q
+id: node.board_member
+target_entity_type_id: node
+target_bundle: board_member
+default_langcode: site_default
+language_alterable: false
