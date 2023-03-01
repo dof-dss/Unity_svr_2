@@ -1,0 +1,25 @@
+uuid: e50c50a2-cc96-4883-b121-3a4d2fd83b8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_url
+    - node.type.feature
+  module:
+    - link
+_core:
+  default_config_hash: ZM_q7jM_t9gUKkS99BB3Llyas8OkZiRC6U9cv_bGdlA
+id: node.feature.field_link_url
+field_name: field_link_url
+entity_type: node
+bundle: feature
+label: Link
+description: 'The URL to where a user should go for more on this feature item.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link
