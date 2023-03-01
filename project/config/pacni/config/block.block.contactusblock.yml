@@ -10,8 +10,8 @@ dependencies:
     - pacni_theme
 id: contactusblock
 theme: pacni_theme
-region: bottom_widget_1
-weight: -4
+region: bottom_widget_4
+weight: -7
 provider: null
 plugin: 'block_content:bfbf8202-8956-4472-a742-f896bb74746e'
 settings:
