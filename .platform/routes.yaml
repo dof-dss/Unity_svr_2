@@ -93,6 +93,14 @@
 'https://pacni.gov.uk/':
     type: redirect
     to: 'https://www.pacni.gov.uk/'
+'https://www.cosica-ni.org/':
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
+'https://cosica-ni.org/':
+    type: redirect
+    to: 'https://www.cosica-ni.org/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_2:http'
