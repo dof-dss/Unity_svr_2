@@ -1,0 +1,17 @@
+uuid: 43289945-2c4a-45eb-84de-cf3fb094e61f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: EL-ouPEHVH3As8Zm7e-zLkRXVK0TXWIJanGOA5B6g-o
+name: slideshow_1024x340_
+label: 'Slideshow (1024x340)'
+effects:
+  b0fc2e25-72e1-4d3a-b78f-aad6b8ccbd14:
+    uuid: b0fc2e25-72e1-4d3a-b78f-aad6b8ccbd14
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1024
+      height: 340
+      anchor: center-center

@@ -1,0 +1,109 @@
+_core:
+  default_config_hash: g1xKHKD8msGv9RR5tnTxVhqTCkof96Cd4KF4mOLEntI
+report-only:
+  enable: true
+  directives:
+    default-src:
+      base: self
+    connect-src:
+      base: self
+      sources:
+        - 'https://www.google-analytics.com'
+    font-src:
+      base: self
+      sources:
+        - 'https://themes.googleusercontent.com'
+        - 'https://fonts.gstatic.com'
+        - 'https://use.fontawesome.com'
+        - 'https://cdn.jsdelivr.net'
+        - 'data:'
+    frame-src:
+      base: self
+      sources:
+        - 'https://www.youtube.com'
+    img-src:
+      base: self
+      sources:
+        - 'https://translate.google.com'
+        - 'https://www.googletagmanager.com'
+        - 'https://www.google-analytics.com'
+        - 'https://cdn.jsdelivr.net'
+        - 'https://i.ytimg.com'
+        - 'https://www.gstatic.com'
+        - 'https://maps.gstatic.com'
+        - 'https://maps.googleapis.com'
+        - 'data:'
+    manifest-src:
+      base: self
+    script-src:
+      base: self
+      sources:
+        - 'https://www.googletagmanager.com'
+        - 'https://www.google-analytics.com'
+    script-src-attr:
+      base: self
+    script-src-elem:
+      base: self
+      sources:
+        - 'https://www.googletagmanager.com'
+        - 'https://www.google-analytics.com'
+    style-src:
+      base: self
+    style-src-attr:
+      base: self
+      flags:
+        - unsafe-inline
+    style-src-elem:
+      base: self
+    block-all-mixed-content: true
+  reporting:
+    plugin: none
+enforce:
+  enable: false
+  directives:
+    default-src:
+      base: self
+    font-src:
+      base: self
+      sources:
+        - 'https://themes.googleusercontent.com'
+        - 'https://fonts.gstatic.com'
+        - 'https://use.fontawesome.com'
+        - 'https://cdn.jsdelivr.net'
+        - 'data:'
+    frame-src:
+      base: self
+      sources:
+        - 'https://www.youtube.com'
+    img-src:
+      base: self
+      sources:
+        - 'https://cdn.jsdelivr.net'
+        - 'https://i.ytimg.com'
+        - 'https://maps.gstatic.com'
+        - 'https://maps.googleapis.com'
+        - 'data:'
+    script-src:
+      base: self
+      sources:
+        - 'https://www.googletagmanager.com'
+        - 'https://www.google-analytics.com'
+    script-src-elem:
+      base: self
+      sources:
+        - 'https://www.googletagmanager.com'
+        - 'https://www.google-analytics.com'
+    style-src:
+      base: self
+    style-src-attr:
+      base: self
+      flags:
+        - unsafe-inline
+    style-src-elem:
+      base: self
+      sources:
+        - 'https://www.googletagmanager.com'
+        - 'https://www.google-analytics.com'
+    block-all-mixed-content: true
+  reporting:
+    plugin: sitelog

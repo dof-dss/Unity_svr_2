@@ -1,0 +1,17 @@
+uuid: 14d49064-41ad-4339-b67a-d2f6af660f24
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: FNB05w8CtUfNP4a-fEnJyi-9hAfU7dmW4vOxlee2e9I
+name: nigov_card_large_920x280_x2
+label: 'nigov card large 920x280 (x2)'
+effects:
+  b68365e8-663c-438a-a3b8-1fb57cdbde99:
+    uuid: b68365e8-663c-438a-a3b8-1fb57cdbde99
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 960
+      height: 280
+      anchor: center-center
