@@ -131,7 +131,7 @@ sites:
         status: development
         default: false
     cosicani:
-        name: cosica
+        name: 'The Commissioner for Survivors of Institutional Childhood Abuse'
         url: cosica-ni.org
         solr: cosicani
         cron_spec: '10 * * * *'
