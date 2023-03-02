@@ -1,0 +1,493 @@
+menus:
+  -
+    menu_name: main
+    title: Home
+    parent: null
+    uri: 'internal:/'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: und
+    uuid: 6028fd50-f6f8-4f9e-bca7-756e8e41a3ca
+  -
+    menu_name: menu-side-menu
+    title: 'Make an Appeal'
+    parent: null
+    uri: 'https://pacwacportal.icasework.com'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: und
+    uuid: 821a0a0b-ec76-4c2e-a176-e5cd8abf6ff0
+  -
+    menu_name: menu-side-menu
+    title: 'Search Appeals'
+    parent: null
+    uri: 'https://search.pacni.gov.uk/Appeals'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: und
+    uuid: e1ff0928-e8a9-499e-9624-30f29a35d5cf
+  -
+    menu_name: main
+    title: 'Search appeals'
+    parent: null
+    uri: 'internal:/'
+    link_title: null
+    description: null
+    enabled: false
+    expanded: false
+    weight: -48
+    langcode: und
+    uuid: d0672553-3c0a-4b11-be39-bad669af6edc
+  -
+    menu_name: main
+    title: 'New appeals'
+    parent: null
+    uri: 'https://search.pacni.gov.uk/NewAppeals'
+    link_title: null
+    description: null
+    enabled: false
+    expanded: false
+    weight: -41
+    langcode: und
+    uuid: 07ad58b9-9be1-438b-a22c-e33ef964d522
+  -
+    menu_name: menu-side-menu
+    title: 'New appeals'
+    parent: null
+    uri: 'https://search.pacni.gov.uk/NewAppeals'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: false
+    weight: -46
+    langcode: und
+    uuid: edf70c56-26ca-436a-b96e-1f05993d4338
+  -
+    menu_name: menu-side-menu
+    title: 'Recent decisions'
+    parent: null
+    uri: 'https://search.pacni.gov.uk/RecentDecisions'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: false
+    weight: -45
+    langcode: und
+    uuid: 296e7d39-bced-448c-b381-0a3651714bc6
+  -
+    menu_name: main
+    title: 'Belfast City Council'
+    parent: 'menu_link_content:4ab5cd89-ce0e-4972-aecc-b3946600c25d'
+    uri: 'entity:node/96'
+    link_title: ''
+    description: 'Belfast City Council'
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: und
+    uuid: a912bf1a-7f5d-406a-96e7-c7df9a5bcd5a
+  -
+    menu_name: menu-side-menu
+    title: 'Antrim & Newtownabbey'
+    parent: null
+    uri: 'https://www.pacni.gov.uk/antrim-newtownabbey'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: true
+    weight: -50
+    langcode: und
+    uuid: a4100a68-c653-4e14-9f95-c6d24e26e682
+  -
+    menu_name: menu-side-menu
+    title: 'Ards & North Down'
+    parent: null
+    uri: 'https://www.pacni.gov.uk/ards-north-down'
+    link_title: null
+    description: null
+    enabled: false
+    expanded: false
+    weight: -49
+    langcode: und
+    uuid: b13410e9-3652-4448-9d32-c3f583b34b99
+  -
+    menu_name: menu-side-menu
+    title: 'Armagh City, Banbridge & Craigavon'
+    parent: null
+    uri: 'https://www.pacni.gov.uk/armagh-banbridge-craigavon'
+    link_title: null
+    description: null
+    enabled: false
+    expanded: false
+    weight: -48
+    langcode: und
+    uuid: fd762404-b580-4965-99c0-e9e20540e02e
+  -
+    menu_name: menu-side-menu
+    title: 'Belfast City Council'
+    parent: null
+    uri: 'https://www.pacni.gov.uk/LDP/BCC'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: true
+    weight: -47
+    langcode: und
+    uuid: 1f47d69b-9849-4ff8-8ea4-00774e35833e
+  -
+    menu_name: menu-side-menu
+    title: 'Causeway Coast & Glens'
+    parent: null
+    uri: 'https://www.pacni.gov.uk/causeway-coast-glens'
+    link_title: null
+    description: null
+    enabled: false
+    expanded: false
+    weight: -46
+    langcode: und
+    uuid: f70f16c2-48a9-4bd1-95d9-5214925039d1
+  -
+    menu_name: menu-side-menu
+    title: 'Derry City & Strabane'
+    parent: null
+    uri: 'https://www.pacni.gov.uk/derry-city-strabane'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: true
+    weight: -45
+    langcode: und
+    uuid: c5ed6844-2661-4c2c-8a1d-9e21bb24ec43
+  -
+    menu_name: menu-side-menu
+    title: 'Mid & East Antrim'
+    parent: null
+    uri: 'https://www.pacni.gov.uk/mid-east-antrim'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: true
+    weight: -42
+    langcode: und
+    uuid: 5b92cd2d-522e-49c1-be39-ffa2521de6a6
+  -
+    menu_name: menu-side-menu
+    title: 'Mid Ulster'
+    parent: null
+    uri: 'https://www.pacni.gov.uk/mid-ulster'
+    link_title: null
+    description: null
+    enabled: false
+    expanded: false
+    weight: -41
+    langcode: und
+    uuid: 619860a7-57bf-424b-a1a7-b17ca69d14e9
+  -
+    menu_name: menu-side-menu
+    title: 'Newry, Mourne and Down'
+    parent: null
+    uri: 'https://www.pacni.gov.uk/newry-mourne-and-down'
+    link_title: null
+    description: null
+    enabled: false
+    expanded: false
+    weight: -40
+    langcode: und
+    uuid: 8debfd4e-3879-4d39-bfe0-0f0e63f818d7
+  -
+    menu_name: main
+    title: 'Fermanagh & Omagh'
+    parent: 'menu_link_content:4ab5cd89-ce0e-4972-aecc-b3946600c25d'
+    uri: 'entity:node/187'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -47
+    langcode: und
+    uuid: ebdc42d6-60f3-40b8-94a9-fb2aafa0f414
+  -
+    menu_name: main
+    title: 'Antrim & Newtownabbey'
+    parent: 'menu_link_content:4ab5cd89-ce0e-4972-aecc-b3946600c25d'
+    uri: 'entity:node/93'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: und
+    uuid: f4642e10-efb4-4547-8a94-2d6a63e1ec34
+  -
+    menu_name: main
+    title: 'Mid & East Antrim'
+    parent: 'menu_link_content:4ab5cd89-ce0e-4972-aecc-b3946600c25d'
+    uri: 'entity:node/101'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -45
+    langcode: und
+    uuid: 56c269c2-92da-40f4-bdf7-d8e074b4fe3b
+  -
+    menu_name: menu-side-menu
+    title: 'Matters Arising'
+    parent: 'menu_link_content:1f47d69b-9849-4ff8-8ea4-00774e35833e'
+    uri: 'https://www.pacni.gov.uk/matters-arising'
+    link_title: null
+    description: null
+    enabled: false
+    expanded: true
+    weight: 0
+    langcode: und
+    uuid: 5b04eb30-d542-4734-ac12-ad123636eb55
+  -
+    menu_name: menu-side-menu
+    title: 'Lisburn & Castlereagh'
+    parent: null
+    uri: 'https://www.pacni.gov.uk/lisburn-castlereagh'
+    link_title: null
+    description: null
+    enabled: true
+    expanded: true
+    weight: -43
+    langcode: und
+    uuid: 2a1454c1-9a5f-493a-8df4-38926a1f54b2
+  -
+    menu_name: main
+    title: 'Lisburn & Castlereagh'
+    parent: 'menu_link_content:4ab5cd89-ce0e-4972-aecc-b3946600c25d'
+    uri: 'entity:node/100'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: true
+    weight: -46
+    langcode: und
+    uuid: f46680fb-d25d-4f20-b7a7-dd7171cddaa5
+  -
+    menu_name: menu-side-menu
+    title: 'DCS Matters Arising'
+    parent: 'menu_link_content:c5ed6844-2661-4c2c-8a1d-9e21bb24ec43'
+    uri: 'https://www.pacni.gov.uk/dcs-matters-arising'
+    link_title: null
+    description: null
+    enabled: false
+    expanded: true
+    weight: 2
+    langcode: und
+    uuid: a3023e39-8fad-428c-97ec-060623a00fae
+  -
+    menu_name: main
+    title: 'Derry City & Strabane'
+    parent: 'menu_link_content:4ab5cd89-ce0e-4972-aecc-b3946600c25d'
+    uri: 'entity:node/98'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -48
+    langcode: und
+    uuid: a494330b-3d4d-40ff-910e-03a7a1fff8c0
+  -
+    menu_name: main
+    title: 'About us'
+    parent: null
+    uri: 'entity:node/1'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: en
+    uuid: 33649778-54ed-4328-9cfe-b107fc8ef60a
+  -
+    menu_name: main
+    title: 'Our functions'
+    parent: 'menu_link_content:33649778-54ed-4328-9cfe-b107fc8ef60a'
+    uri: 'entity:node/17'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: en
+    uuid: 77bf868e-d8ca-4922-a10f-9cc129b424e1
+  -
+    menu_name: main
+    title: 'Commission meetings'
+    parent: 'menu_link_content:33649778-54ed-4328-9cfe-b107fc8ef60a'
+    uri: 'entity:node/30'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: en
+    uuid: e8b01a64-3ebf-47be-a7a0-d38bacdcd073
+  -
+    menu_name: main
+    title: 'Corporate information'
+    parent: 'menu_link_content:33649778-54ed-4328-9cfe-b107fc8ef60a'
+    uri: 'entity:node/26'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -48
+    langcode: en
+    uuid: 03e85678-a1f6-47f1-b796-0e62ec8720de
+  -
+    menu_name: main
+    title: Appeals
+    parent: null
+    uri: 'entity:node/64'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -46
+    langcode: en
+    uuid: 86e14eeb-64c2-4f1b-b485-22fa2f719af7
+  -
+    menu_name: main
+    title: 'Make an appeal'
+    parent: 'menu_link_content:86e14eeb-64c2-4f1b-b485-22fa2f719af7'
+    uri: 'entity:node/27'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: en
+    uuid: 65e60250-a1a2-4d08-ba26-4542a5cd8940
+  -
+    menu_name: main
+    title: 'Water Appeals'
+    parent: 'menu_link_content:86e14eeb-64c2-4f1b-b485-22fa2f719af7'
+    uri: 'entity:node/24'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: en
+    uuid: 74854153-56ca-449c-937d-d923e60900eb
+  -
+    menu_name: main
+    title: 'Appeals digest'
+    parent: 'menu_link_content:86e14eeb-64c2-4f1b-b485-22fa2f719af7'
+    uri: 'entity:node/29'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -48
+    langcode: en
+    uuid: 54f25db7-a384-47bd-b8c8-3172630f1c95
+  -
+    menu_name: main
+    title: 'New appeals'
+    parent: 'menu_link_content:86e14eeb-64c2-4f1b-b485-22fa2f719af7'
+    uri: 'entity:node/333'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: 0
+    langcode: en
+    uuid: 46140611-b8c7-47fc-abba-d3f97a6528fa
+  -
+    menu_name: main
+    title: 'Local Development Plans'
+    parent: null
+    uri: 'entity:node/6'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -45
+    langcode: en
+    uuid: 4ab5cd89-ce0e-4972-aecc-b3946600c25d
+  -
+    menu_name: main
+    title: 'Public Inquiries and Hearings'
+    parent: null
+    uri: 'entity:node/15'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -44
+    langcode: en
+    uuid: 25e59d23-d8cb-43d7-8fe0-0d34d99ebc82
+  -
+    menu_name: main
+    title: Publications
+    parent: null
+    uri: 'entity:node/25'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -43
+    langcode: en
+    uuid: dd0d919f-b8bc-41db-a52f-123c07aec87c
+  -
+    menu_name: main
+    title: 'Contact us'
+    parent: null
+    uri: 'entity:node/65'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -42
+    langcode: en
+    uuid: 66a925b3-1ae5-4201-b252-8d0f31ab0a81
+  -
+    menu_name: menu-footer-links
+    title: '© Crown Copyright'
+    parent: null
+    uri: 'entity:node/10'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: en
+    uuid: 46b16d5f-4e77-4f75-a459-b8bf600600e8
+  -
+    menu_name: menu-footer-links
+    title: 'Privacy Policy'
+    parent: null
+    uri: 'entity:node/12'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: en
+    uuid: 0223499e-2611-4e87-8454-32c25c29073e
+  -
+    menu_name: menu-footer-links
+    title: 'Terms and Conditions'
+    parent: null
+    uri: 'entity:node/11'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -48
+    langcode: en
+    uuid: 0995c383-116e-4813-8cd5-bfc731214c7a
