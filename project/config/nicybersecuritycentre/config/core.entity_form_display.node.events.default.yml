@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.events.body
     - field.field.node.events.field_event_date
+    - field.field.node.events.field_event_teaser
     - field.field.node.events.field_event_type
     - field.field.node.events.field_location
     - field.field.node.events.field_meta_tags
@@ -26,7 +27,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 11
+    weight: 13
     region: content
     settings:
       rows: 9
@@ -46,26 +47,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_event_type:
-    type: options_select
-    weight: 16
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_location:
-    type: options_select
-    weight: 15
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_meta_tags:
-    type: metatag_firehose
-    weight: 26
-    region: content
-    settings:
-      sidebar: true
-    third_party_settings: {  }
-  field_organisation_name:
+  field_event_teaser:
     type: string_textfield
     weight: 12
     region: content
@@ -73,15 +55,47 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_event_type:
+    type: options_select
+    weight: 18
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_location:
+    type: options_select
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 19
+    region: content
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+  field_organisation_name:
+    type: string_textfield
+    weight: 14
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_organisation_sector:
     type: options_select
-    weight: 13
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
   field_target_audience:
     type: options_select
-    weight: 14
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  flag:
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }

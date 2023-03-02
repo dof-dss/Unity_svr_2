@@ -24,16 +24,16 @@ $chroma: add-colors((
   grey-lightest:          #f4f4f4,
   grey-medium:            #cdcdcd,
   white:                  #fff,
-  offwhite:               #f2f8ec,
+  offwhite:               #e9f6fa,
   dark-red:               #b63a1b, // 4.53:1 with light-pink
   hc-red:                 #d1431f, // 4.63:1 with white
   light-pink:             #ffdae0, // 4.53:1 with dark-red
 
-  brand-primary:          #653692,
+  brand-primary:          #021b27,
 
-  brand-secondary:        #cbb67c,
+  brand-secondary:        #066aa8,
 
-  brand-tertiary:         #002e62,
+  brand-tertiary:         #2ea4cc,
 ));
 
 // Define color names for functional uses.
@@ -141,7 +141,7 @@ $table-cell-border: color(table-cell-border);
 $table-cell-text: color(table-cell-text);
 
 $footer-background: color(footer-background);
-$footer-border: color(brand-primary);
+$footer-border: color(brand-secondary);
 $footer-text: color(footer-text);
 $footer-headings: color(footer-headings);
 
