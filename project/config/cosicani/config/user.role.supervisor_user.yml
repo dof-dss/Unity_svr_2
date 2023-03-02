@@ -3,11 +3,32 @@ langcode: en
 status: true
 dependencies:
   config:
+    - media.type.audio
+    - media.type.document
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - node.type.basic_page
     - node.type.news
+    - node.type.publication
+    - node.type.webform
+    - workflows.workflow.nics_editorial_workflow
   module:
+    - content_moderation
+    - contextual
+    - file
+    - layout_builder
+    - media
+    - menu_admin_per_menu
+    - moderation_sidebar
     - node
+    - origins_metatag
+    - origins_workflow
     - redirect
+    - scheduled_transitions
     - system
+    - toolbar
+    - whatlinkshere
 _core:
   default_config_hash: cI6O43jts_j67JaySnvjojNUQYYJXQmbWghOsb7iQNY
 id: supervisor_user
@@ -19,29 +40,71 @@ permissions:
   - 'access administration pages'
   - 'access all webform results'
   - 'access ckeditor link'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
   - 'access own webform results'
   - 'access own webform submissions'
+  - 'access toolbar'
   - 'add content to books'
   - 'add media from remote sources'
+  - 'add scheduled transitions node basic_page'
+  - 'add scheduled transitions node news'
+  - 'add scheduled transitions node publication'
+  - 'add scheduled transitions node webform'
   - 'administer book outlines'
+  - 'administer main menu items'
   - 'administer main-menu menu items'
   - 'administer redirects'
+  - 'administer scheduled transitions'
+  - 'audit content'
+  - 'create and edit custom blocks'
+  - 'create audio media'
+  - 'create basic_page content'
+  - 'create document media'
+  - 'create file media'
   - 'create files'
+  - 'create image media'
   - 'create new books'
+  - 'create news content'
+  - 'create publication content'
+  - 'create remote_video media'
+  - 'create webform content'
+  - 'delete all revisions'
   - 'delete all webform submissions'
   - 'delete any audio files'
+  - 'delete any audio media'
+  - 'delete any basic_page content'
   - 'delete any document files'
+  - 'delete any document media'
+  - 'delete any file media'
   - 'delete any image files'
+  - 'delete any image media'
   - 'delete any news content'
   - 'delete any page content'
+  - 'delete any publication content'
   - 'delete any publication_page content'
+  - 'delete any remote_video media'
   - 'delete any video files'
+  - 'delete any webform content'
+  - 'delete basic_page revisions'
+  - 'delete news revisions'
   - 'delete own audio files'
+  - 'delete own audio media'
+  - 'delete own basic_page content'
   - 'delete own document files'
+  - 'delete own document media'
+  - 'delete own file media'
   - 'delete own image files'
+  - 'delete own image media'
+  - 'delete own news content'
+  - 'delete own publication content'
+  - 'delete own remote_video media'
   - 'delete own video files'
   - 'delete own webform submissions'
+  - 'delete publication revisions'
   - 'delete revisions'
+  - 'delete webform revisions'
   - 'download any audio files'
   - 'download any document files'
   - 'download any image files'
@@ -52,12 +115,29 @@ permissions:
   - 'download own video files'
   - 'edit all webform submissions'
   - 'edit any audio files'
+  - 'edit any audio media'
+  - 'edit any basic_page content'
   - 'edit any document files'
+  - 'edit any document media'
+  - 'edit any file media'
   - 'edit any image files'
+  - 'edit any image media'
+  - 'edit any news content'
+  - 'edit any publication content'
+  - 'edit any remote_video media'
   - 'edit any video files'
+  - 'edit basic meta tags'
   - 'edit own audio files'
+  - 'edit own audio media'
+  - 'edit own basic_page content'
   - 'edit own document files'
+  - 'edit own document media'
+  - 'edit own file media'
   - 'edit own image files'
+  - 'edit own image media'
+  - 'edit own news content'
+  - 'edit own publication content'
+  - 'edit own remote_video media'
   - 'edit own video files'
   - 'edit own webform submissions'
   - 'edit webform components'
@@ -66,18 +146,47 @@ permissions:
   - 'moderate content from needs_review to draft'
   - 'moderate content from needs_review to published'
   - 'moderate content from published to needs_review'
+  - 'reschedule scheduled transitions node basic_page'
+  - 'reschedule scheduled transitions node news'
+  - 'reschedule scheduled transitions node publication'
+  - 'revert all revisions'
+  - 'revert basic_page revisions'
+  - 'revert news revisions'
+  - 'revert publication revisions'
   - 'schedule revisions'
   - 'show book reorder tab'
   - 'show core Outline form element'
   - 'show core Outline tab'
   - 'unflag content_audit'
+  - 'use moderation sidebar'
+  - 'use nics_editorial_workflow transition archive'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition publish'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition restore'
+  - 'use nics_editorial_workflow transition restore_to_draft'
+  - 'use nics_editorial_workflow transition submit_for_review'
   - 'use text format filtered_html'
   - 'use text format filtered_html_with_no_images'
   - 'use workbench_media add form'
   - 'use workbench_moderation my drafts tab'
   - 'use workbench_moderation needs review tab'
+  - 'view all scheduled transitions'
   - 'view all unpublished content'
+  - 'view any unpublished content'
+  - 'view basic_page revisions'
+  - 'view content references'
+  - 'view latest version'
   - 'view moderation history'
   - 'view moderation messages'
+  - 'view news revisions'
   - 'view own files'
+  - 'view own unpublished media'
+  - 'view publication revisions'
+  - 'view scheduled transitions node basic_page'
+  - 'view scheduled transitions node news'
+  - 'view scheduled transitions node publication'
+  - 'view scheduled transitions node webform'
   - 'view the administration theme'
+  - 'view webform revisions'
