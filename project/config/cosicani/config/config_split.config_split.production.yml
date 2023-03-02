@@ -1,0 +1,17 @@
+uuid: 90658ac6-5fc1-4aab-b69e-14c7fb7828c7
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: production
+description: ''
+weight: 0
+folder: ../project/config/cosicani/production
+module:
+  fastly: 0
+theme: {  }
+blacklist:
+  - fastly.settings
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
