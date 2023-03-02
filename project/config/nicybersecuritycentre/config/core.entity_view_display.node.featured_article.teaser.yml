@@ -21,7 +21,7 @@ content:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: unity_3_col_images
+      view_mode: card_small
       link: false
     third_party_settings: {  }
     weight: 0
@@ -41,3 +41,4 @@ hidden:
   field_published_date: true
   langcode: true
   links: true
+  search_api_excerpt: true

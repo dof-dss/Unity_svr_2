@@ -1,17 +1,18 @@
-uuid: 20ebe237-d6e7-4f9a-be2d-c76fe9c7b32c
+uuid: 8440af7b-0808-4c8d-8ab2-8c19c98d6a45
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime_range
     - node
-id: node.field_event_date
-field_name: field_event_date
+id: node.field_event_teaser
+field_name: field_event_teaser
 entity_type: node
-type: daterange
+type: string
 settings:
-  datetime_type: datetime
-module: datetime_range
+  max_length: 250
+  case_sensitive: false
+  is_ascii: false
+module: core
 locked: false
 cardinality: 1
 translatable: true
