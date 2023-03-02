@@ -9,6 +9,7 @@ weight: 0
 folder: ../project/config/cosicani/local
 module:
   clone_nodes: 0
+  cosicani_migrations: 0
   dblog: 0
   easy_install: 0
   migrate: 0
