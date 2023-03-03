@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.events.body
     - field.field.node.events.field_event_date
+    - field.field.node.events.field_event_teaser
     - field.field.node.events.field_event_type
     - field.field.node.events.field_location
     - field.field.node.events.field_meta_tags
@@ -33,13 +34,14 @@ content:
     label: inline
     settings:
       timezone_override: ''
-      format_type: unity_date
+      format_type: events_date_format
       separator: '-'
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   content_moderation_control: true
+  field_event_teaser: true
   field_event_type: true
   field_location: true
   field_meta_tags: true

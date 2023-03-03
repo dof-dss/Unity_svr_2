@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.events.body
     - field.field.node.events.field_event_date
+    - field.field.node.events.field_event_teaser
     - field.field.node.events.field_event_type
     - field.field.node.events.field_location
     - field.field.node.events.field_meta_tags
@@ -27,20 +28,12 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 101
-    region: content
-  content_moderation_control:
-    settings: {  }
-    third_party_settings: {  }
-    weight: -20
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  content_moderation_control: true
   field_event_date: true
+  field_event_teaser: true
   field_event_type: true
   field_location: true
   field_meta_tags: true
@@ -48,4 +41,5 @@ hidden:
   field_organisation_sector: true
   field_target_audience: true
   langcode: true
+  links: true
   search_api_excerpt: true

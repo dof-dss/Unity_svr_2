@@ -13,14 +13,9 @@ entity_type: node
 bundle: events
 label: 'Event date(s)'
 description: 'Please enter the date(s) of the event.'
-required: true
+required: false
 translatable: false
-default_value:
-  -
-    default_date_type: now
-    default_date: now
-    default_end_date_type: now
-    default_end_date: now
+default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: daterange
