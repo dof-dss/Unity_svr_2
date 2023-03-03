@@ -6,9 +6,12 @@
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
 #header {
-  background-image: url("http://pacni.gov.uk.lndo.site/sites/pacni/themes/pacni_theme/images/header_bg.jpg");
-  background-repeat: no-repeat;
-  background-position: top right;
+  background: resolve('header_bg.jpg') no-repeat top right;
+}
+
+#main-menu .menu .menu-item .active, #main-menu .menu .menu-item .active + .menu-main_sub .title a {
+  background: none;
+  border-bottom: none;
 }
 
 .region-slideshow {
@@ -43,7 +46,6 @@
 #bottom_wrapper .upper-row {
   display: flex;
   flex-wrap: wrap;
-
 
   .column:nth-child(1),
   .column:nth-child(2),
@@ -103,5 +105,3 @@
 #footer .column li {
     display: inline-block;
 }
-
-
