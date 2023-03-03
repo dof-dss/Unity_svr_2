@@ -1,0 +1,21 @@
+uuid: 3ac58c0d-40a6-4974-b0e0-0f0400fede3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_question
+    - paragraphs.paragraphs_type.faq_accordion
+_core:
+  default_config_hash: jEnq1bXLuZ5q9TkiIdTZGq8f95aRtC4R9Hw25TT8UKg
+id: paragraph.faq_accordion.field_question
+field_name: field_question
+entity_type: paragraph
+bundle: faq_accordion
+label: Question
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

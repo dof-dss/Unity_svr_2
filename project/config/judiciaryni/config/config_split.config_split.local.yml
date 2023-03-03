@@ -1,0 +1,24 @@
+uuid: d50888db-debc-492e-9d08-bd7034cfd64b
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: local
+description: 'Local development split. Enables debugging and development modules'
+weight: 0
+folder: ../project/config/judiciaryni/local
+module:
+  clone_nodes: 0
+  dblog: 0
+  easy_install: 0
+  migrate: 0
+  migrate_drupal: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  migrate_upgrade: 0
+  views_ui: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

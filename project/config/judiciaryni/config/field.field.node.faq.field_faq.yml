@@ -1,0 +1,36 @@
+uuid: e7efc7fd-b91b-4bbd-94c1-b0c7a9cffff9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faq
+    - node.type.faq
+    - paragraphs.paragraphs_type.faq_accordion
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: 5O7FmAjd9YohoNXgOfyOB2kfR25IWO7vJ7L7qYSTafA
+id: node.faq.field_faq
+field_name: field_faq
+entity_type: node
+bundle: faq
+label: FAQ
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      faq_accordion: faq_accordion
+    negate: 0
+    target_bundles_drag_drop:
+      faq_accordion:
+        weight: 3
+        enabled: true
+      map:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

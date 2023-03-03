@@ -1,0 +1,27 @@
+uuid: 4edf28fe-fe5b-460a-9769-b035791b6258
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.nigov_landscape_med_450x300_x1
+    - image.style.nigov_landscape_med_900x600_x2
+    - image.style.unity_3_col_desktop
+    - image.style.unity_3_col_desktop_retina
+_core:
+  default_config_hash: 5pmHaP-NUvrlYt5TWmg50mvV8y9AbXEVVxXcgdQ9aM4
+id: unity_3_col_images
+label: 'Unity 3 col images'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - nigov_landscape_med_450x300_x1
+        - nigov_landscape_med_900x600_x2
+        - unity_3_col_desktop
+        - unity_3_col_desktop_retina
+breakpoint_group: responsive_image
+fallback_image_style: unity_3_col_desktop

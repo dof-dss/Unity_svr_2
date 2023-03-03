@@ -1,0 +1,17 @@
+uuid: f7ae07b3-d419-4857-a0f9-70dc6be99315
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: FvTDbH_weo2UN2N0ujqiufWfiqjblAVqT0xzzhgyLBE
+name: nigov_float_x2
+label: 'nigov float (x2)'
+effects:
+  5f0b0658-3d21-415f-9a58-ec524f75cc08:
+    uuid: 5f0b0658-3d21-415f-9a58-ec524f75cc08
+    id: image_scale
+    weight: 1
+    data:
+      width: 600
+      height: null
+      upscale: true
