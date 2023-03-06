@@ -7,6 +7,7 @@
 
 #header {
   background: resolve('header_bg.jpg') no-repeat top right;
+  margin: 5px auto 0.1rem;
 }
 
 #main-menu .menu .menu-item .active, #main-menu .menu .menu-item .active + .menu-main_sub .title a {
