@@ -91,7 +91,7 @@
   #content .facet-summary {
     margin-bottom: 2rem;
   }
-  
+
   .search-result {
     border: 1px solid #d3d7d9;
     padding: 0 1.5rem 1.5rem;
@@ -232,10 +232,24 @@
 }
 
 #header_wrapper {
-  background: $brand-secondary;
+  background: $brand-secondary resolve('hex-pattern.svg') no-repeat -75px top;
   padding: 1rem 0 1rem;
-  background-size: cover;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: -95px;
+    top: 113px;
+    background: resolve('hex-pattern.svg') no-repeat;
+    transform: rotate(330deg);
+    width: 204px;
+    height: 251px;
+  }
 }
+
+//.header-banner-image {
+//  background: resolve('hex-pattern.svg') no-repeat right 60px;
+//}
 
 #content #block-views-block-featured-article-featured-home .content article .group-left a {
   margin: 0;
