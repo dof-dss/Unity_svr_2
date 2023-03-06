@@ -232,24 +232,24 @@
 }
 
 #header_wrapper {
-  background: $brand-secondary resolve('hex-pattern.svg') no-repeat -75px top;
   padding: 1rem 0 1rem;
+  background: $brand-secondary;
 
-  &:after {
-    content: "";
-    position: absolute;
-    right: -95px;
-    top: 113px;
-    background: resolve('hex-pattern.svg') no-repeat;
-    transform: rotate(330deg);
-    width: 204px;
-    height: 251px;
+  @media screen and (min-width: 1300px) {
+    background: $brand-secondary resolve('hex-pattern.svg') no-repeat -75px top;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: -95px;
+      top: 113px;
+      background: resolve('hex-pattern.svg') no-repeat;
+      transform: rotate(330deg);
+      width: 204px;
+      height: 251px;
+    }
   }
 }
-
-//.header-banner-image {
-//  background: resolve('hex-pattern.svg') no-repeat right 60px;
-//}
 
 #content #block-views-block-featured-article-featured-home .content article .group-left a {
   margin: 0;
