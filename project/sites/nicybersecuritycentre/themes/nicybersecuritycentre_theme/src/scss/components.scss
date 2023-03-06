@@ -72,8 +72,13 @@
     }
   }
 
-  .media-image[data-picture-mapping="card_small"] {
+  .media-image[data-picture-mapping="card_small"],
+  .media-image[data-picture-mapping="inline_xl"] {
     margin: 0;
+
+    figure img {
+      display: inline-block;
+    }
 
     figcaption {
       display: none;
