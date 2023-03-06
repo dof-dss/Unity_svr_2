@@ -20,20 +20,21 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
   field_group:
     group_additional_content_details:
       children:
         - field_teaser
         - field_meta_tags
+      label: 'Additional content details'
       parent_name: ''
+      region: content
       weight: 3
       format_type: html_element
-      region: content
       format_settings:
-        id: ''
         classes: field-collection
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -41,7 +42,6 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: 'Additional content details'
 _core:
   default_config_hash: ElksGJzjUxwYGlvHiX7g8ocPamDh8hURTB7lEmD_WIM
 id: node.news.diff
@@ -50,45 +50,45 @@ bundle: news
 mode: diff
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_meta_tags:
     type: metatag_empty_formatter
-    weight: 8
-    region: content
     label: inline
     settings: {  }
     third_party_settings: {  }
+    weight: 8
+    region: content
   field_photo:
     type: entity_reference_entity_view
-    weight: 1
-    region: content
     label: hidden
     settings:
       view_mode: landscape_float
       link: false
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_published_date:
-    weight: 0
+    type: datetime_default
     label: inline
     settings:
       timezone_override: ''
       format_type: unity_date
     third_party_settings: {  }
-    type: datetime_default
+    weight: 0
     region: content
   field_teaser:
     type: string
-    weight: 7
-    region: content
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 7
+    region: content
 hidden:
   content_moderation_control: true
   field_summary: true

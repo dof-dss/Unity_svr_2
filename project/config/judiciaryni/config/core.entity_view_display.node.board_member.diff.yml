@@ -15,8 +15,8 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 _core:
   default_config_hash: lzYabRcW7CpzD0E2QsUGKRrqMJoaEmAbYlZ_sYt9p0I
 id: node.board_member.diff
@@ -25,28 +25,28 @@ bundle: board_member
 mode: diff
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_member_image:
     type: entity_reference_entity_view
-    weight: 1
     label: hidden
     settings:
       view_mode: portrait_float
       link: false
     third_party_settings: {  }
+    weight: 1
     region: content
   field_member_role:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
 hidden:
   content_moderation_control: true

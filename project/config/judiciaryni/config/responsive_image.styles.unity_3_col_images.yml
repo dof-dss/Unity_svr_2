@@ -13,8 +13,6 @@ id: unity_3_col_images
 label: 'Unity 3 col images'
 image_style_mappings:
   -
-    breakpoint_id: responsive_image.viewport_sizing
-    multiplier: 1x
     image_mapping_type: sizes
     image_mapping:
       sizes: 100vw
@@ -23,5 +21,7 @@ image_style_mappings:
         - nigov_landscape_med_900x600_x2
         - unity_3_col_desktop
         - unity_3_col_desktop_retina
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
 breakpoint_group: responsive_image
 fallback_image_style: unity_3_col_desktop

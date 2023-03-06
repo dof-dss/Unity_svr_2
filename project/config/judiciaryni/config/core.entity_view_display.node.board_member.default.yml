@@ -19,28 +19,28 @@ bundle: board_member
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_member_image:
     type: entity_reference_entity_view
-    weight: 1
     label: hidden
     settings:
       view_mode: portrait_float
       link: false
     third_party_settings: {  }
+    weight: 1
     region: content
   field_member_role:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
 hidden:
   content_moderation_control: true

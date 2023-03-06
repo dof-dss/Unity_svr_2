@@ -15,19 +15,20 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
   field_group:
     group_additional_content_details:
       children:
         - field_meta_tags
+      label: 'Additional content details'
       parent_name: ''
+      region: content
       weight: 1
       format_type: html_element
-      region: content
       format_settings:
-        id: ''
         classes: field-collection
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -35,7 +36,6 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: 'Additional content details'
 _core:
   default_config_hash: 3Gbw8OfL0aqjlYChr-Ta_d4CvMnX_029ufTFZsdYaM0
 id: node.contact.diff
@@ -44,19 +44,19 @@ bundle: contact
 mode: diff
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 0
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
   field_meta_tags:
     type: metatag_empty_formatter
-    weight: 3
-    region: content
     label: inline
     settings: {  }
     third_party_settings: {  }
+    weight: 3
+    region: content
 hidden:
   content_moderation_control: true
   langcode: true

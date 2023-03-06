@@ -29,57 +29,57 @@ bundle: consultation
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 3
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: content
   field_attachment:
-    weight: 4
+    type: html_list_formatter
     label: hidden
     settings:
       list_type: ul
       list_classes: ''
       display_item_link: false
     third_party_settings: {  }
-    type: html_list_formatter
+    weight: 4
     region: content
   field_consultation_dates:
-    weight: 1
+    type: daterange_default
     label: inline
     settings:
       timezone_override: ''
       format_type: unity_date
       separator: '-'
     third_party_settings: {  }
-    type: daterange_default
+    weight: 1
     region: content
   field_email_address:
-    weight: 6
+    type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 6
     region: content
   field_postal:
-    weight: 7
+    type: address_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: address_default
+    weight: 7
     region: content
   field_published_date:
-    weight: 0
+    type: datetime_default
     label: inline
     settings:
       timezone_override: ''
       format_type: unity_date
     third_party_settings: {  }
-    type: datetime_default
+    weight: 0
     region: content
   field_respond_online:
-    weight: 5
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -88,14 +88,14 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 5
     region: content
   field_summary:
-    weight: 2
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 2
     region: content
 hidden:
   content_moderation_control: true

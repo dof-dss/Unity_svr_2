@@ -11,8 +11,8 @@ dependencies:
     - layout_builder
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 _core:
   default_config_hash: peU9aUTP0pJ1UCdZWQMv685MidbkZH1ilC0oiiLHKwc
 id: media.document.embed
@@ -22,12 +22,12 @@ mode: embed
 content:
   field_media_file:
     type: file_default
-    weight: 0
-    region: content
     label: visually_hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   created: true
   langcode: true

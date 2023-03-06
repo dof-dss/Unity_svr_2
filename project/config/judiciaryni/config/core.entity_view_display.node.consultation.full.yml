@@ -24,8 +24,8 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 _core:
   default_config_hash: eGR3FGdO63VsnhWo-JwBk3k3zH2AJEeBLC3wOP18Mqk
 id: node.consultation.full
@@ -34,56 +34,56 @@ bundle: consultation
 mode: full
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 3
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: content
   field_attachment:
-    weight: 4
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: embed
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 4
     region: content
   field_consultation_dates:
-    weight: 1
+    type: daterange_default
     label: hidden
     settings:
       timezone_override: ''
       format_type: unity_date
       separator: '-'
     third_party_settings: {  }
-    type: daterange_default
+    weight: 1
     region: content
   field_email_address:
-    weight: 6
+    type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 6
     region: content
   field_postal:
-    weight: 7
+    type: address_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: address_default
+    weight: 7
     region: content
   field_published_date:
-    weight: 0
+    type: datetime_default
     label: inline
     settings:
       timezone_override: ''
       format_type: unity_date
     third_party_settings: {  }
-    type: datetime_default
+    weight: 0
     region: content
   field_respond_online:
-    weight: 5
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -92,14 +92,14 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 5
     region: content
   field_summary:
-    weight: 2
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 2
     region: content
 hidden:
   content_moderation_control: true

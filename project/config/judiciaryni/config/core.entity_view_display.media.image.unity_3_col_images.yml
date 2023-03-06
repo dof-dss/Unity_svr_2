@@ -13,8 +13,8 @@ dependencies:
     - responsive_image
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 _core:
   default_config_hash: 4Ai1EoX1HS4Xlv_-3NJ3lANlA2-FqK-Kzy20ZBYE1no
 id: media.image.unity_3_col_images
@@ -23,12 +23,12 @@ bundle: image
 mode: unity_3_col_images
 content:
   field_media_image:
+    type: responsive_image
     label: visually_hidden
     settings:
       responsive_image_style: unity_3_col_images
       image_link: ''
     third_party_settings: {  }
-    type: responsive_image
     weight: 1
     region: content
 hidden:

@@ -13,8 +13,8 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: true
     enabled: true
+    allow_custom: true
     sections:
       -
         layout_id: layout_onecol
@@ -25,26 +25,36 @@ third_party_settings:
             uuid: a1f5f634-0794-4cfe-8c5b-6c201f13c215
             region: content
             configuration:
+              id: 'extra_field_block:node:layout_page:links'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'extra_field_block:node:layout_page:links'
             weight: 0
             additional: {  }
           c40ed4b6-0cb6-4594-b112-190dae492a81:
             uuid: c40ed4b6-0cb6-4594-b112-190dae492a81
             region: content
             configuration:
+              id: 'field_block:node:layout_page:body'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:layout_page:body'
               formatter:
-                label: hidden
                 type: text_default
+                label: hidden
                 settings: {  }
                 third_party_settings: {  }
             weight: 1
+            additional: {  }
+          ce42528d-024c-43ef-9b59-5c2dd1dfc044:
+            uuid: ce42528d-024c-43ef-9b59-5c2dd1dfc044
+            region: content
+            configuration:
+              id: 'extra_field_block:node:layout_page:content_moderation_control'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 2
             additional: {  }
         third_party_settings: {  }
 _core:
@@ -55,16 +65,21 @@ bundle: layout_page
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 101
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 101
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   langcode: true
