@@ -1,0 +1,23 @@
+uuid: cbde6747-f359-47b6-9a07-b1978ae27da9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_judicial_tier
+    - node.type.judicial_member
+id: node.judicial_member.field_judicial_tier
+field_name: field_judicial_tier
+entity_type: node
+bundle: judicial_member
+label: 'Judicial tier'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    sort:
+      field: _none
+field_type: entity_reference

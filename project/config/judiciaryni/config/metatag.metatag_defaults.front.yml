@@ -1,0 +1,22 @@
+uuid: 099f5a88-6011-4afa-a145-18b62422148f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: EjXso0TWyY4yF9-AQYnajGBfgCNHxnS8nzmnP1dsqM8
+id: front
+label: 'Front page'
+tags:
+  canonical_url: '[site:url]'
+  description: 'Welcome to the home page of the [site:name].'
+  shortlink: '[site:url]'
+  title: '[site:name]'
+  og_description: 'Welcome to the home page of the [site:name].'
+  og_site_name: '[site:name]'
+  og_title: '[site:name]'
+  og_type: Website
+  og_url: '[site:url]'
+  twitter_cards_description: 'Welcome to the home page of the [site:name].'
+  twitter_cards_page_url: '[site:url]'
+  twitter_cards_title: '[site:name]'
+  twitter_cards_type: summary

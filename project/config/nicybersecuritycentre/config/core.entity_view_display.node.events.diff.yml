@@ -72,6 +72,14 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_event_teaser:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
   field_event_type:
     type: list_default
     label: inline

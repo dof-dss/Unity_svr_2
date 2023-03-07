@@ -71,6 +71,8 @@
       <div class="top_left">
         {{ page.header }}
       </div>
+      <div class="top_right">
+      </div>
       <div{{ hero_attributes.addClass(hero_classes).setAttribute('id', 'headerHero') }}>
         {{ page.search }}
       </div>
@@ -183,6 +185,7 @@
     {% if page.bottom_widget_1 or page.bottom_widget_2 or page.bottom_widget_3 or page.bottom_widget_4 or page.bottom_widget_5 %}
       <div id="bottom_wrapper" class="footer_block bottom_widget">
         <div id="bottom-area" class="footer-area container-wrap clearfix">
+          <div class="upper-row">
           {% if page.bottom_widget_1 %}
             <div class="column">
               {{ page.bottom_widget_1 }}
@@ -198,6 +201,8 @@
               {{ page.bottom_widget_3 }}
             </div>
           {% endif %}
+          </div>
+          <div class="bottom-row">
           {% if page.bottom_widget_4 %}
             <div class="column">
               {{ page.bottom_widget_4 }}
@@ -208,6 +213,7 @@
               {{ page.bottom_widget_5 }}
             </div>
           {% endif %}
+          </div>
         </div>
       </div>
     {% endif %}

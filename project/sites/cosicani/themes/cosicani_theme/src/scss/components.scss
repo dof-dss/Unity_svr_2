@@ -1,0 +1,111 @@
+/*
+ * @file
+ * Defines the components for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+#header {
+  @media screen and (min-width: $tab) {
+    margin-bottom: 5rem;
+  }
+}
+
+.front {
+  .front-banner {
+    max-width: 1024px;
+    margin: 0 auto;
+    border-top: solid 5px;
+    border-image: linear-gradient(to right, teal 33%, red 33%, red 66%, yellow 33%) 5
+  }
+}
+
+#main-menu {
+  background: $white;
+  .menu-link,
+  .menu .active,
+  .menu-item.open .menu-toggle-btn {
+    color: $black;
+    @include adjust-font-size-to(16px);
+  }
+
+  .menu
+  .menu-item
+  .active {
+    border-bottom-color: $brand-secondary;
+  }
+
+  .menu-link {
+    &:hover,
+    &:focus {
+      background: $brand-primary;
+      color: $white;
+    }
+  }
+  .menu-main_sub
+  .menu-item
+  span.active {
+    @include adjust-font-size-to(14px);
+    border-bottom-color: $brand-secondary;
+    padding: 1rem;
+  }
+
+  .menu-main_sub {
+    background: $brand-primary;
+
+    .menu-item {
+      .active {
+        background: $brand-secondary;
+        color: $white;
+      }
+
+      a {
+        &:hover,
+        &:focus {
+          color: $white;
+          background: $brand-secondary;
+        }
+      }
+    }
+  }
+}
+
+
+#top-area {
+  margin: 1% auto;
+
+  p {
+    color: $white;
+    text-align: left;
+    padding: 3%;
+  }
+
+  .block {
+    height: 19rem;
+  }
+}
+.region-top-first {
+  background: resolve('home-block-1-bg.png') no-repeat 100%;
+}
+.region-top-second {
+  background: resolve('home-block-2-bg.png') no-repeat 100%;
+}
+.region-top-third{
+  background: resolve('home-block-3-bg.png') no-repeat 100%;
+}
+.region-top-fourth {
+  background: resolve('home-block-4-bg.png') no-repeat 100%;
+}
+.region-top-fifth {
+  background: resolve('home-block-5-bg.png') no-repeat 100%;
+}
+.region-top-sixth {
+  background: resolve('home-block-6-bg.png') no-repeat 100%;
+}
+
+#home-block-1, #home-block-3, #home-block-5 {
+  background: #22353b;
+}
+#home-block-2, #home-block-4, #home-block-6 {
+  background: #5c7a84;
+}

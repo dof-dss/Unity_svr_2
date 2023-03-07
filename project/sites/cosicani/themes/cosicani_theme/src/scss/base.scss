@@ -1,0 +1,21 @@
+/*
+ * @file
+ * Helper partial to outline the order partials should be loaded in this section - used for reference & in the style guide.
+ */
+
+// Base
+//
+// Base rules are the defaults. They are almost exclusively single element selectors but it could include attribute
+// selectors, pseudo-class selectors, child selectors or sibling selectors. Essentially, a base style says that wherever
+// this element is on the page, it should look like this.
+//
+// Component classes can override these styles, but if no class applies a style to an HTML element, the styles will
+// outlined in this section of the guide should be the ones rendered.
+//
+// Weight: -10
+//
+// Style guide: base
+
+// Ensure any custom fonts get loaded first to minimize front-end performance impact.
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/1_base/index';

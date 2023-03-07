@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d088dcd47b82b798bfb75c2b69c6ac67",
+    "content-hash": "c3ece03a0b8af2b618da84e9f9126b3f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5293,6 +5293,50 @@
             }
         },
         {
+            "name": "drupal/file_delete_ui",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/file_delete_ui.git",
+                "reference": "1.0.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/file_delete_ui-1.0.0-beta2.zip",
+                "reference": "1.0.0-beta2",
+                "shasum": "76e04136bda06294ed40b266b47dafce4cbf7a85"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-beta2",
+                    "datestamp": "1673897599",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "douggreen",
+                    "homepage": "https://www.drupal.org/user/29191"
+                }
+            ],
+            "description": "Add capability for admins to delete files",
+            "homepage": "https://www.drupal.org/project/file_delete_ui",
+            "support": {
+                "source": "https://git.drupalcode.org/project/file_delete_ui"
+            }
+        },
+        {
             "name": "drupal/filelog",
             "version": "2.1.1",
             "source": {
@@ -6378,6 +6422,53 @@
             }
         },
         {
+            "name": "drupal/media_file_delete",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/media_file_delete.git",
+                "reference": "1.3.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_file_delete-1.3.0.zip",
+                "reference": "1.3.0",
+                "shasum": "a3772a9c4b96d9f0c93eb3ebcac2f4041db93f1d"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ~9.0 || ~10.0"
+            },
+            "require-dev": {
+                "drupal/entity_usage": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.3.0",
+                    "datestamp": "1669241949",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                }
+            ],
+            "description": "Provides content editors the ability to delete associated files when deleting media items",
+            "homepage": "https://www.drupal.org/project/media_file_delete",
+            "support": {
+                "source": "https://git.drupalcode.org/project/media_file_delete"
+            }
+        },
+        {
             "name": "drupal/media_library_edit",
             "version": "3.0.2",
             "source": {
@@ -6983,50 +7074,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/oembed_providers",
                 "issues": "https://www.drupal.org/project/issues/oembed_providers"
-            }
-        },
-        {
-            "name": "drupal/optional_end_date",
-            "version": "1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/optional_end_date.git",
-                "reference": "8.x-1.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/optional_end_date-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "daeb9e517209175b216d95730f7d8d75094793fd"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9 || ^10"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.3",
-                    "datestamp": "1659599633",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Birk",
-                    "homepage": "https://www.drupal.org/user/1033026"
-                }
-            ],
-            "description": "Make the end date in a Date range field optional.",
-            "homepage": "https://www.drupal.org/project/optional_end_date",
-            "support": {
-                "source": "https://git.drupalcode.org/project/optional_end_date"
             }
         },
         {
@@ -8167,17 +8214,17 @@
         },
         {
             "name": "drupal/smart_date",
-            "version": "3.7.1",
+            "version": "3.7.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/smart_date.git",
-                "reference": "3.7.1"
+                "reference": "3.7.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/smart_date-3.7.1.zip",
-                "reference": "3.7.1",
-                "shasum": "bfaf091bf5a95592d2b852709743794cf26d7c8b"
+                "url": "https://ftp.drupal.org/files/projects/smart_date-3.7.2.zip",
+                "reference": "3.7.2",
+                "shasum": "4dc2040d94688369cff3c8b1062c1991fe685963"
             },
             "require": {
                 "drupal/core": "^9 || ^10",
@@ -8190,8 +8237,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.7.1",
-                    "datestamp": "1676757515",
+                    "version": "3.7.2",
+                    "datestamp": "1677784501",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -20981,6 +21028,7 @@
         "drupal/config_readonly": 10,
         "drupal/date_facet_drilldown": 20,
         "drupal/facets_pretty_paths": 10,
+        "drupal/file_delete_ui": 10,
         "drupal/flag": 10,
         "drupal/inline_entity_form": 5,
         "drupal/search_api_location": 15,
