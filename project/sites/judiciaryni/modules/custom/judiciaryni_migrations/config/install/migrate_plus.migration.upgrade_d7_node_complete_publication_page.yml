@@ -128,7 +128,7 @@ process:
           from_format: 'Y-m-d H:i:s'
           to_format: Y-m-d
           source: value
-  field_pub_type:
+  field_publication_type:
     -
       plugin: sub_process
       source: field_pub_type
@@ -150,7 +150,7 @@ process:
 destination:
   plugin: 'entity_complete:node'
   translations: true
-  default_bundle: publication_page
+  default_bundle: publication
 migration_dependencies:
   required:
     - upgrade_d7_user

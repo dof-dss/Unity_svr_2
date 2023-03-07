@@ -1,0 +1,49 @@
+uuid: 39776550-c09d-4860-8166-92dc971014bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.judicial_member.body
+    - field.field.node.judicial_member.field_date_appointed
+    - field.field.node.judicial_member.field_first_name
+    - field.field.node.judicial_member.field_full_title
+    - field.field.node.judicial_member.field_judicial_status
+    - field.field.node.judicial_member.field_judicial_tier
+    - field.field.node.judicial_member.field_meta_tags
+    - field.field.node.judicial_member.field_prefix_title
+    - field.field.node.judicial_member.field_sex_of_member
+    - field.field.node.judicial_member.field_surname
+    - node.type.judicial_member
+  module:
+    - text
+    - user
+id: node.judicial_member.teaser
+targetEntityType: node
+bundle: judicial_member
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_date_appointed: true
+  field_first_name: true
+  field_full_title: true
+  field_judicial_status: true
+  field_judicial_tier: true
+  field_meta_tags: true
+  field_prefix_title: true
+  field_sex_of_member: true
+  field_surname: true
+  langcode: true

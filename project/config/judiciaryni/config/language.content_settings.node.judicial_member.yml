@@ -1,0 +1,11 @@
+uuid: 9724aa22-35a0-4ccb-930c-860befff31e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.judicial_member
+id: node.judicial_member
+target_entity_type_id: node
+target_bundle: judicial_member
+default_langcode: site_default
+language_alterable: false

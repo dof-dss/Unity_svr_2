@@ -1,0 +1,11 @@
+uuid: bb80b414-c0cb-463a-8176-f0a9e115f42b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.judicial_decision_publication_ty
+id: taxonomy_term.judicial_decision_publication_ty
+target_entity_type_id: taxonomy_term
+target_bundle: judicial_decision_publication_ty
+default_langcode: site_default
+language_alterable: false

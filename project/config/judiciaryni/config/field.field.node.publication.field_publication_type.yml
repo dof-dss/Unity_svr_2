@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_publication_type
     - node.type.publication
-    - taxonomy.vocabulary.publications_topics
+    - taxonomy.vocabulary.judiciary_publication_types
 _core:
   default_config_hash: 14NqevawhWXgH65cBjkur-vAx00JJGor75I4qW8N8pY
 id: node.publication.field_publication_type
@@ -22,7 +22,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      publications_topics: publications_topics
+      judiciary_publication_types: judiciary_publication_types
     sort:
       field: name
       direction: asc
