@@ -1,0 +1,8 @@
+uuid: b47cb765-4d6f-4752-bc04-6cd79e03f84b
+langcode: en
+status: true
+dependencies: {  }
+name: 'judiciary publication types'
+vid: judiciary_publication_types
+description: 'List of types of publications published on the judiciary website'
+weight: 0

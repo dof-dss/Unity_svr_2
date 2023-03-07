@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
+langcode: en
+uuid: 04d66f31-2cd4-4d8c-9408-2107ccb017f2
+name: 'Judiciary NI'
+mail: eddwebdev@finance-ni.gov.uk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+frontpage_title: 'Welcome to Judiciary NI'
+frontpage_show_title: 0

@@ -1,0 +1,21 @@
+uuid: c1fd7eaf-3267-4575-91b4-fb97f914e82c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sex_of_member
+    - node.type.judicial_member
+  module:
+    - options
+id: node.judicial_member.field_sex_of_member
+field_name: field_sex_of_member
+entity_type: node
+bundle: judicial_member
+label: Sex
+description: 'Select the sex of this member of the Judiciary - this has implications for the form of address'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
