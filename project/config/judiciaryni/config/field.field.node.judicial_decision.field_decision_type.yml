@@ -1,0 +1,29 @@
+uuid: 955630bd-8adb-4d3d-9593-a06a5093f9bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_decision_type
+    - node.type.judicial_decision
+    - taxonomy.vocabulary.judiciary_decision_types
+id: node.judicial_decision.field_decision_type
+field_name: field_decision_type
+entity_type: node
+bundle: judicial_decision
+label: 'Decision keywords'
+description: "Select terms from this list only when a judgment is to form part of the sentencing guidelines section of the site.  Direction on how the decision is to be categorised should be sought from the Judicial Studies Board.\r\nTo add a keyword, select from the dropdown(s) to give it the appropriate category, and click Add.  A decision can have multiple keywords associated with it. "
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      judiciary_decision_types: judiciary_decision_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

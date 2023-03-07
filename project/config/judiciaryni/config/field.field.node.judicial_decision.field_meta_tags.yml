@@ -1,0 +1,21 @@
+uuid: ca210051-d2e1-40ed-9764-486b1b48b548
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.judicial_decision
+  module:
+    - metatag
+id: node.judicial_decision.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: judicial_decision
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

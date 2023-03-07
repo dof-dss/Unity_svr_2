@@ -17,7 +17,7 @@ provider: null
 plugin: 'facet_block:event_date'
 settings:
   id: 'facet_block:event_date'
-  label: 'Event date'
+  label: 'Event start date'
   label_display: visible
   provider: facets
   block_id: eventdate
