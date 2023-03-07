@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.events.field_meta_tags
     - field.field.node.events.field_organisation_name
     - field.field.node.events.field_organisation_sector
+    - field.field.node.events.field_start_time
     - field.field.node.events.field_target_audience
     - node.type.events
   module:
@@ -39,6 +40,7 @@ hidden:
   field_meta_tags: true
   field_organisation_name: true
   field_organisation_sector: true
+  field_start_time: true
   field_target_audience: true
   langcode: true
   links: true
