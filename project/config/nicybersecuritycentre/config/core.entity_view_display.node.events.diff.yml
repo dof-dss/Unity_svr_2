@@ -12,10 +12,10 @@ dependencies:
     - field.field.node.events.field_meta_tags
     - field.field.node.events.field_organisation_name
     - field.field.node.events.field_organisation_sector
+    - field.field.node.events.field_start_time
     - field.field.node.events.field_target_audience
     - node.type.events
   module:
-    - datetime_range
     - field_group
     - layout_builder
     - metatag
@@ -63,16 +63,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
-    region: content
-  field_event_date:
-    type: daterange_default
-    label: hidden
-    settings:
-      timezone_override: ''
-      format_type: unity_date
-      separator: '-'
-    third_party_settings: {  }
-    weight: 0
     region: content
   field_event_teaser:
     type: string
@@ -129,6 +119,8 @@ content:
     region: content
 hidden:
   content_moderation_control: true
+  field_event_date: true
+  field_start_time: true
   langcode: true
   links: true
   search_api_excerpt: true

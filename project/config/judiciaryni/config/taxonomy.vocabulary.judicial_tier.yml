@@ -1,0 +1,8 @@
+uuid: d43959d6-be0c-40ba-b385-a022df041e26
+langcode: en
+status: true
+dependencies: {  }
+name: 'Judicial tier'
+vid: judicial_tier
+description: 'List of Judicial tiers'
+weight: 0

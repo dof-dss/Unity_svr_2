@@ -11,11 +11,13 @@ dependencies:
     - field.field.node.events.field_meta_tags
     - field.field.node.events.field_organisation_name
     - field.field.node.events.field_organisation_sector
+    - field.field.node.events.field_start_time
     - field.field.node.events.field_target_audience
     - node.type.events
   module:
-    - datetime_range
+    - smart_date
     - text
+    - timefield
     - user
 id: node.events.default
 targetEntityType: node
@@ -30,14 +32,35 @@ content:
     weight: 1
     region: content
   field_event_date:
-    type: daterange_default
+    type: smartdate_custom
     label: inline
     settings:
-      timezone_override: ''
-      format_type: events_date_format
-      separator: '-'
+      separator: ' - '
+      date_format: 'd F Y'
+      custom_date_format: ''
+      timezone: ''
+      join: ', '
+      time_format: 'g:ia'
+      time_hour_format: 'g:ia'
+      allday_label: ''
+      date_first: '1'
+      ampm_reduce: '1'
+      site_time_toggle: '1'
     third_party_settings: {  }
-    weight: 0
+    weight: 2
+    region: content
+  field_start_time:
+    type: timefield_default_formatter
+    label: hidden
+    settings:
+      display_format:
+        hour: g
+        minute: i
+        separator: ':'
+        period: a
+        periodSeparator: ''
+    third_party_settings: {  }
+    weight: 3
     region: content
 hidden:
   content_moderation_control: true
