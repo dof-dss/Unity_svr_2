@@ -1,0 +1,21 @@
+uuid: f394e5ce-c7c2-410c-b4be-03430d6108f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prefix_title
+    - node.type.judicial_member
+  module:
+    - options
+id: node.judicial_member.field_prefix_title
+field_name: field_prefix_title
+entity_type: node
+bundle: judicial_member
+label: Title
+description: 'Select the title for this member of the Judiciary.  This is used to programmatically generate the titles for member of Judiciary e.g The Honourable <b>Mrs</b> Justice ..., The Right Honourable <b>Sir</b> ...'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

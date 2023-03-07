@@ -1,0 +1,18 @@
+uuid: 30a6f1c8-bb66-4b82-893d-bceb204a4a1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.judicial_decision
+id: node.judicial_decision.title
+field_name: title
+entity_type: node
+bundle: judicial_decision
+label: 'Neutral Citation / Identifier'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

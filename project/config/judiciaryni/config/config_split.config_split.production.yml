@@ -1,0 +1,15 @@
+uuid: cf219d4e-cd9a-476f-8fe2-236136bab715
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: production
+description: 'Used for the production site only.'
+weight: 0
+folder: ../project/config/judiciaryni/production
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

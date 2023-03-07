@@ -1,0 +1,105 @@
+uuid: 9415a06f-5c12-42dd-83ba-d73f355fa601
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.judicial_decision.field_attachment
+    - field.field.node.judicial_decision.field_cross_reference
+    - field.field.node.judicial_decision.field_decision_issues
+    - field.field.node.judicial_decision.field_decision_pub_type
+    - field.field.node.judicial_decision.field_decision_title
+    - field.field.node.judicial_decision.field_decision_type
+    - field.field.node.judicial_decision.field_description
+    - field.field.node.judicial_decision.field_judiciary
+    - field.field.node.judicial_decision.field_meta_tags
+    - field.field.node.judicial_decision.field_publication_date
+    - node.type.judicial_decision
+  module:
+    - link
+    - metatag
+    - user
+id: node.judicial_decision.default
+targetEntityType: node
+bundle: judicial_decision
+mode: default
+content:
+  field_attachment:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_cross_reference:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_decision_issues:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_decision_pub_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_decision_title:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_decision_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_judiciary:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_publication_date: true
+  langcode: true

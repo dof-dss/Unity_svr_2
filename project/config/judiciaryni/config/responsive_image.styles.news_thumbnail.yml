@@ -1,0 +1,23 @@
+uuid: b9578f3d-b283-42f3-81f1-5d49602753b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.nigov_landscape_thumbnail_150x100_x1
+    - image.style.nigov_landscape_thumbnail_300x200_x2
+_core:
+  default_config_hash: 5JtM0S8_PcmlVGaLhouZgPyQxOoPYrFMSzLIHV2P1ms
+id: news_thumbnail
+label: 'News thumbnail'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - nigov_landscape_thumbnail_150x100_x1
+        - nigov_landscape_thumbnail_300x200_x2
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: nigov_landscape_thumbnail_150x100_x1
