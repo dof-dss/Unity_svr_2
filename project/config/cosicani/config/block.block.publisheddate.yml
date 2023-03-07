@@ -1,0 +1,28 @@
+uuid: 18b4be2f-c7aa-40c7-9568-2476750f27de
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.published_date
+  module:
+    - facets
+    - system
+  theme:
+    - cosicani_theme
+id: publisheddate
+theme: cosicani_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'facet_block:published_date'
+settings:
+  id: 'facet_block:published_date'
+  label: 'Published Date'
+  label_display: visible
+  provider: facets
+  block_id: publisheddate
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/news\r\n/news/date/*"

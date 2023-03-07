@@ -24,12 +24,11 @@ third_party_settings:
   field_group:
     group_additional_content_details:
       children:
-        - field_teaser
         - field_meta_tags
       label: 'Additional content details'
       parent_name: ''
       region: content
-      weight: 3
+      weight: 4
       format_type: html_element
       format_settings:
         classes: field-collection
@@ -53,7 +52,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_meta_tags:
     type: metatag_empty_formatter
@@ -69,7 +68,7 @@ content:
       view_mode: landscape_float
       link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_published_date:
     type: datetime_default
@@ -86,9 +85,10 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 7
+    weight: 1
     region: content
 hidden:
   content_moderation_control: true
   langcode: true
   links: true
+  search_api_excerpt: true
