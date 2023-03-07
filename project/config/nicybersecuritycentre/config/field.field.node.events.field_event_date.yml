@@ -13,7 +13,7 @@ entity_type: node
 bundle: events
 label: 'Event date(s)'
 description: ''
-required: false
+required: true
 translatable: false
 default_value:
   -
