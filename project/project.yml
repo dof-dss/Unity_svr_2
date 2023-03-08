@@ -139,3 +139,12 @@ sites:
         database: cosicani
         status: development
         default: false
+    judiciaryni:
+        name: 'Judiciary NI'
+        url: judiciaryni
+        solr: judiciaryni
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/judiciaryni ; drush core-cron'
+        database: judiciaryni
+        status: development
+        default: false

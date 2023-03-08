@@ -11,15 +11,35 @@ dependencies:
     - field.field.node.events.field_meta_tags
     - field.field.node.events.field_organisation_name
     - field.field.node.events.field_organisation_sector
+    - field.field.node.events.field_start_time
     - field.field.node.events.field_target_audience
     - node.type.events
     - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
-    - datetime_range
+    - field_group
     - metatag
     - path
+    - smart_date
     - text
+    - timefield
+third_party_settings:
+  field_group:
+    group_event_date_s_and_time:
+      children:
+        - field_event_date
+        - field_start_time
+      label: 'Event date(s) and time'
+      region: content
+      parent_name: ''
+      weight: 12
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+        required_fields: true
 id: node.events.default
 targetEntityType: node
 bundle: events
@@ -42,14 +62,25 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_event_date:
-    type: daterange_default
-    weight: 10
+    type: smartdate_only
+    weight: 20
     region: content
-    settings: {  }
+    settings:
+      separator: to
+      hide_date: 0
+      modal: false
+      default_duration: 60
+      default_duration_increments: |-
+        30
+        60|1 hour
+        90
+        120|2 hours
+        custom
+      show_extra: false
     third_party_settings: {  }
   field_event_teaser:
     type: string_textfield
-    weight: 12
+    weight: 11
     region: content
     settings:
       size: 60
@@ -88,6 +119,31 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_start_time:
+    type: timefield_standard_widget
+    weight: 21
+    region: content
+    settings:
+      separator: ':'
+      showPeriod: '1'
+      periodSeparator: ''
+      am_text: AM
+      pm_text: PM
+      closeButtonText: Done
+      nowButtonText: Now
+      deselectButtonText: Deselect
+      myPosition: 'left top'
+      atPosition: 'left bottom'
+      disable_plugin: 0
+      showLeadingZero: 0
+      showCloseButton: 0
+      showNowButton: 0
+      showDeselectButton: 0
+      showMinutesLeadingZero: true
+      showHours: true
+      showMinutes: true
+      minute_interval: 5
+    third_party_settings: {  }
   field_target_audience:
     type: options_select
     weight: 16
@@ -95,7 +151,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   flag:
-    weight: 11
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
