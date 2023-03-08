@@ -2,7 +2,10 @@ uuid: f98566b7-ef45-4967-b972-fff1da827afc
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.basic_html
   module:
+    - filter
     - media
     - node
     - system

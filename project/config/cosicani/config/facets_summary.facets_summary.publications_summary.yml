@@ -1,0 +1,20 @@
+uuid: 33df8254-88c6-4ec0-bf5e-8b6c3daa8d76
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.publication
+    - views.view.publications_search
+  module:
+    - search_api
+id: publications_summary
+name: 'Publications Summary'
+facet_source_id: 'search_api:views_page__publications_search__publication_search_page'
+processor_configs: {  }
+facets:
+  published_date_pub:
+    checked: true
+    label: 'Published Date'
+    separator: ', '
+    show_count: false
+    weight: 0
