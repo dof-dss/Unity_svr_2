@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_decision_type
     - node.type.judicial_decision
-    - taxonomy.vocabulary.judicial_decision_publication_ty
+    - taxonomy.vocabulary.judiciary_decision_types
 id: node.judicial_decision.field_decision_type
 field_name: field_decision_type
 entity_type: node
@@ -20,10 +20,10 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      judicial_decision_publication_ty: judicial_decision_publication_ty
+      judiciary_decision_types: judiciary_decision_types
     sort:
       field: name
       direction: asc
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: judicial_decision_publication_ty
 field_type: entity_reference
