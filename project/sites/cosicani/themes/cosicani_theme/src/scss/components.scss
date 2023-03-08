@@ -5,6 +5,17 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
+.top_left #logo {
+  img {
+    height: 9rem;
+  }
+  @media screen and (min-width: $tab) {
+    img {
+      height: 11rem;
+    }
+  }
+}
+
 #header {
   @media screen and (min-width: $tab) {
     margin-bottom: 5rem;
@@ -73,6 +84,10 @@
 
 #top-area {
   margin: 1% auto;
+  @media screen and (min-width: $tab) {
+    display: flex;
+    justify-content: space-evenly;
+  }
 
   p {
     color: $white;
