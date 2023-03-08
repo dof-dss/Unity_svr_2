@@ -1,0 +1,30 @@
+uuid: e1fd7f63-ae42-4ad4-bd78-c24e4e9c824b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:1f3b201d-0146-4db4-9b7b-3f18e7ae09fb'
+  module:
+    - block_content
+    - system
+  theme:
+    - cosicani_theme
+id: homepageblock2
+theme: cosicani_theme
+region: top_second
+weight: -6
+provider: null
+plugin: 'block_content:1f3b201d-0146-4db4-9b7b-3f18e7ae09fb'
+settings:
+  id: 'block_content:1f3b201d-0146-4db4-9b7b-3f18e7ae09fb'
+  label: 'Homepage block 2'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

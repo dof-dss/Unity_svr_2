@@ -14,7 +14,6 @@ dependencies:
     - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
-    - entity_browser
     - media
     - menu_admin_per_menu
     - moderation_sidebar
