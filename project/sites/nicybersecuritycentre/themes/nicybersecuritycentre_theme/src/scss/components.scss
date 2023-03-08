@@ -231,23 +231,20 @@
   }
 }
 
+body:not(.front) {
+  #header_wrapper {
+    padding-bottom: 3rem;
+  }
+}
+
 #header_wrapper {
   padding: 1rem 0 1rem;
-  background: $brand-secondary;
+  background-color: $brand-secondary;
 
   @media screen and (min-width: 1300px) {
-    background: $brand-secondary resolve('hex-pattern.svg') no-repeat -75px top;
-
-    &:after {
-      content: "";
-      position: absolute;
-      right: -95px;
-      top: 113px;
-      background: resolve('hex-pattern.svg') no-repeat;
-      transform: rotate(330deg);
-      width: 204px;
-      height: 251px;
-    }
+    background-image: resolve('hex-pattern.svg'), resolve('hex-pattern-right.svg');
+    background-position: -75px top, right 60px;
+    background-repeat: no-repeat, no-repeat;
   }
 }
 

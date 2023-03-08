@@ -1,0 +1,28 @@
+uuid: a3dd0e74-4c36-4955-8233-28a4a040022a
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.published_date_pub
+  module:
+    - facets
+    - system
+  theme:
+    - cosicani_theme
+id: publisheddate_2
+theme: cosicani_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'facet_block:published_date_pub'
+settings:
+  id: 'facet_block:published_date_pub'
+  label: 'Published date'
+  label_display: visible
+  provider: facets
+  block_id: publisheddate_2
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/publications\r\n/publications/date/*"

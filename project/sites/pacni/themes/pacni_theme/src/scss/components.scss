@@ -7,18 +7,39 @@
 
 #header {
   background: resolve('header_bg.jpg') no-repeat top right;
+  margin: .5rem auto .1rem;
+}
+
+.container-wrap {
+  position: relative;
+  padding-top: .1rem;
+}
+
+#block-makeanappealblock {
+  position: absolute;
+  top: 0;
+  background: $brand-tertiary;
+  width: 33.33%;
+  margin-top: .1rem;
+  padding-left: .8rem;
+
+  .content div {
+
+    h2 {
+    color: #fff;
+      font-size: 1.8rem;
+      margin: 2.15rem 0 1.8rem;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
 }
 
 #main-menu .menu .menu-item .active, #main-menu .menu .menu-item .active + .menu-main_sub .title a {
   background: none;
   border-bottom: none;
-}
-
-.region-slideshow {
-  max-width: 1024px;
-  margin: 0 auto;
-  margin-top: 0px;
-  overflow: hidden;
 }
 
 .region-bottom-widget-1,
@@ -38,7 +59,6 @@
 
     .btn {
       margin: 0 0 2.4rem;
-      background: $brand-primary;
     }
   }
 }
@@ -83,10 +103,6 @@
 
 .region-bottom-widget-5 {
   padding: 1rem 2rem;
-
-  .btn {
-    background: $brand-primary;
-  }
 
   h2 {
     margin: 1.5rem 0 1.8rem;
