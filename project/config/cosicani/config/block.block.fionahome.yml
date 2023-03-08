@@ -1,0 +1,30 @@
+uuid: 54ce0dba-8425-44ab-90e2-797017d3761d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:bb0a7025-fab6-4dc8-b25d-05b255df7b5c'
+  module:
+    - block_content
+    - system
+  theme:
+    - cosicani_theme
+id: fionahome
+theme: cosicani_theme
+region: bottom_widget_1
+weight: 0
+provider: null
+plugin: 'block_content:bb0a7025-fab6-4dc8-b25d-05b255df7b5c'
+settings:
+  id: 'block_content:bb0a7025-fab6-4dc8-b25d-05b255df7b5c'
+  label: 'Fiona home '
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
