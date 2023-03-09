@@ -1,0 +1,16 @@
+features:
+  node_user_picture: 1
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: 1
+logo:
+  use_default: 1
+favicon:
+  use_default: 1
+basic_page_structure: 0
+twitter_profile_url: 'https://twitter.com/judiciaryni'
+facebook_profile_url: ''
+linkedin_profile_url: ''
+pinterest_profile_url: ''
+youtube_profile_url: ''
+instagram_profile_url: ''
