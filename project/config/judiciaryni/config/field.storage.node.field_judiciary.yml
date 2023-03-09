@@ -1,0 +1,19 @@
+uuid: e388957a-4973-4a5f-bd7f-827bb7fc62a9
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_judiciary
+field_name: field_judiciary
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 5
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

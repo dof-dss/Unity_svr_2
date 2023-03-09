@@ -11,7 +11,7 @@ dependencies:
 id: newappealsblock
 theme: pacni_theme
 region: bottom_widget_2
-weight: -5
+weight: -8
 provider: null
 plugin: 'block_content:ccbe8521-e2a7-44d0-b653-5510d99e2ba9'
 settings:

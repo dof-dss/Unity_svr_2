@@ -1,0 +1,19 @@
+uuid: a6552891-d3d4-495c-892a-2a4fabcc0783
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_full_title
+    - node.type.judicial_member
+id: node.judicial_member.field_full_title
+field_name: field_full_title
+entity_type: node
+bundle: judicial_member
+label: 'Full title'
+description: 'This is the full formal title which the Judge should be addressed by e.g. The Right Honourable Sir Declan Morgan, Lord Chief Justice of Northern Ireland'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

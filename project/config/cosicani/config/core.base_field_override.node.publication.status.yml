@@ -1,0 +1,24 @@
+uuid: 3e809499-65b1-4912-9763-d8aa4049b003
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.publication
+_core:
+  default_config_hash: 1HLk4vmREHFzbl4xVRha0kyCmXxeDsq80xH4fvdF1vI
+id: node.publication.status
+field_name: status
+entity_type: node
+bundle: publication
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

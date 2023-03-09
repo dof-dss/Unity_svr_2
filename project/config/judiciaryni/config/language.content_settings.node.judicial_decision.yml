@@ -1,0 +1,11 @@
+uuid: 9ef07b88-f745-4b19-8c05-1b4ac7c6d09e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.judicial_decision
+id: node.judicial_decision
+target_entity_type_id: node
+target_bundle: judicial_decision
+default_langcode: site_default
+language_alterable: false

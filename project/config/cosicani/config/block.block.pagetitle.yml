@@ -1,0 +1,24 @@
+uuid: 129ef008-ff01-493b-8a86-d52e96581959
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cosicani_theme
+id: pagetitle
+theme: cosicani_theme
+region: content
+weight: -1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "<front>\r\n/search\r\n/news\r\n/news/date/*\r\n/node/*/revisions/view/*\r\n/publications\r\n/publications/date/*"

@@ -1,0 +1,8 @@
+uuid: 4279103d-11e2-43cf-a6e1-a626fa3f5ec0
+langcode: en
+status: true
+dependencies: {  }
+id: events_date_format
+label: 'Events date format'
+locked: false
+pattern: 'd F Y - H:i'

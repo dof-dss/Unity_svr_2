@@ -4,3 +4,120 @@
  */
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+#header {
+  background: resolve('header_bg.jpg') no-repeat top right;
+  margin: .5rem auto .1rem;
+}
+
+.container-wrap {
+  position: relative;
+  padding-top: .1rem;
+}
+
+#block-makeanappealblock {
+  position: absolute;
+  top: 0;
+  background: $brand-tertiary;
+  width: 33.33%;
+  margin-top: .1rem;
+  padding-left: .8rem;
+
+  .content div {
+
+    h2 {
+    color: #fff;
+      font-size: 1.8rem;
+      margin: 2.15rem 0 1.8rem;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+}
+
+#main-menu .menu .menu-item .active, #main-menu .menu .menu-item .active + .menu-main_sub .title a {
+  background: none;
+  border-bottom: none;
+}
+
+.region-bottom-widget-1,
+.region-bottom-widget-2,
+.region-bottom-widget-3,
+.region-bottom-widget-4 {
+  background: $grey-lightest;
+}
+
+.region-bottom-widget-1,
+.region-bottom-widget-2,
+.region-bottom-widget-3 {
+
+  .content p {
+    text-align: center;
+    margin: 0 0 2.4rem;
+
+    .btn {
+      margin: 0 0 2.4rem;
+    }
+  }
+}
+
+#bottom_wrapper .upper-row {
+  display: flex;
+  flex-wrap: wrap;
+
+  .column:nth-child(1),
+  .column:nth-child(2),
+  .column:nth-child(3) {
+    flex: 1 0 calc(33.33% - 2rem - 20px);
+
+    .column {
+      flex: 1;
+    }
+
+    h2 {
+      font-size: 2.1rem;
+      line-height: 2.7rem;
+      text-align: center;
+    }
+  }
+}
+
+#bottom_wrapper .bottom-row {
+  display: flex;
+
+  h2 {
+    font-size: 2.1rem;
+    line-height: 2.7rem;
+  }
+
+  .column:nth-child(1) {
+    width: 37%;
+  }
+}
+
+.region-bottom-widget-4 {
+  padding: 1rem 2rem;
+}
+
+.region-bottom-widget-5 {
+  padding: 1rem 2rem;
+
+  h2 {
+    margin: 1.5rem 0 1.8rem;
+  }
+}
+
+.footer-area .column:last-child {
+    float: none;
+    width: unset;
+}
+
+.footer-area .column {
+  padding: 0;
+}
+
+#footer .column li {
+    display: inline-block;
+}
