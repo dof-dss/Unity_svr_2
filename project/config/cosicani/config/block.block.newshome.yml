@@ -1,0 +1,30 @@
+uuid: 4463e752-8b0e-4dad-bcec-69ba0b216de6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:2702617b-edbe-4dd1-a3cc-c458dd62cea1'
+  module:
+    - block_content
+    - system
+  theme:
+    - cosicani_theme
+id: newshome
+theme: cosicani_theme
+region: bottom_widget_2
+weight: 0
+provider: null
+plugin: 'block_content:2702617b-edbe-4dd1-a3cc-c458dd62cea1'
+settings:
+  id: 'block_content:2702617b-edbe-4dd1-a3cc-c458dd62cea1'
+  label: 'News home'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

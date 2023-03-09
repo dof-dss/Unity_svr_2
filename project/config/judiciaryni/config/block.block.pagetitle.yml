@@ -1,0 +1,18 @@
+uuid: 5cba5ef1-09f4-461d-b9e2-c5c853173e8a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - judiciaryni_theme
+id: pagetitle
+theme: judiciaryni_theme
+region: content
+weight: -1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

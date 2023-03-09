@@ -1,38 +1,33 @@
 blocks:
   -
-    info: 'Homepage Application'
+    info: 'Homepage Troubles info block'
     langcode: en
-    uuid: 35cd7b6a-cb9c-4988-9dee-24be3f5cb306
-    bundle: link_block
+    uuid: 131f6977-0feb-41d5-8ab2-2b864c3d176c
+    bundle: basic
     revision_id: null
     rev_id_current: null
     fields:
       body:
         -
-          value: "<p><img alt=\"making an application\" data-delta=\"4\" data-fid=\"20\" data-media-element=\"1\" height=\"140\" src=\"https://www.victimspaymentsboard.org.uk/sites/victimspayments/files/media-files/making-an-application.png\" width=\"220\" /></p>\r\n\r\n<p>Making an application</p>\r\n"
-          summary: ''
-          format: full_html
-      field_link:
-        -
-          uri: 'internal:/node/36'
-          title: ''
-          options: {  }
+          value: '<p>The Victims’ Payments Board was established in February 2021. The Board is headed by a President appointed by the Lord Chief Justice, and will consist of a number of members including legal, medical and ordinary members. The purpose of the Board is to determine applications under the Troubles Permanent Disablement Payment Scheme (also referred to as the Victims’ Payments Scheme). Members will also have responsibility as members of the Victims’ Payments Board to assist the President with corporate governance responsibilities such as policy development, financial and risk management.&nbsp;</p><p><a class="btn" href="/node/9">Read more</a></p><p>We are currently experiencing delays in answering calls to the VPB contact number. We appreciate your patience in this matter. Please be advised, you can also contact us by emailing <a href="mailto:vpb@justice-ni.gov.uk">vpb@justice-ni.gov.uk</a></p><p>Applicants to the Scheme are reminded that it is not necessary to seek additional information from Health Trusts, GPs, Police, PRONI, etc in support of their application – this is because the Victims’ Payments Board has arrangements in place to formally request this information, as required. We will however require the basic details requested on the application form to include incident date, location and description.</p><p class="info-notice">When submitting an application to the Scheme, applicants should only include supporting information they currently hold.</p>'
+          summary: null
+          format: filtered_html
   -
-    info: 'Homepage Guidance'
+    info: 'Homepage Contact us'
     langcode: en
-    uuid: 2534d391-4cfd-45b0-a985-c4161d419e70
+    uuid: 6d009f83-80b5-463b-906b-c34997329338
     bundle: link_block
     revision_id: null
     rev_id_current: null
     fields:
       body:
         -
-          value: "<p><img alt=\"Guidance for applicants\" data-delta=\"4\" data-fid=\"19\" data-media-element=\"1\" src=\"https://www.victimspaymentsboard.org.uk/sites/victimspayments/files/media-files/guidance-applicants.png\" /></p>\r\n\r\n<p>Guidance to applicants</p>\r\n"
+          value: "<p><img alt=\"Contact us\" data-delta=\"4\" data-fid=\"22\" data-media-element=\"1\" src=\"https://www.victimspaymentsboard.org.uk/sites/victimspayments/files/media-files/contact-us.png\" /></p>\r\n\r\n<p>Contact us</p>\r\n"
           summary: ''
           format: full_html
       field_link:
         -
-          uri: 'internal:/node/19'
+          uri: 'entity:node/34'
           title: ''
           options: {  }
   -
@@ -54,36 +49,41 @@ blocks:
           title: ''
           options: {  }
   -
-    info: 'Homepage Contact us'
+    info: 'Homepage Guidance'
     langcode: en
-    uuid: 6d009f83-80b5-463b-906b-c34997329338
+    uuid: 2534d391-4cfd-45b0-a985-c4161d419e70
     bundle: link_block
     revision_id: null
     rev_id_current: null
     fields:
       body:
         -
-          value: "<p><img alt=\"Contact us\" data-delta=\"4\" data-fid=\"22\" data-media-element=\"1\" src=\"https://www.victimspaymentsboard.org.uk/sites/victimspayments/files/media-files/contact-us.png\" /></p>\r\n\r\n<p>Contact us</p>\r\n"
+          value: "<p><img alt=\"Guidance for applicants\" data-delta=\"4\" data-fid=\"19\" data-media-element=\"1\" src=\"https://www.victimspaymentsboard.org.uk/sites/victimspayments/files/media-files/guidance-applicants.png\" /></p>\r\n\r\n<p>Guidance to applicants</p>\r\n"
           summary: ''
           format: full_html
       field_link:
         -
-          uri: 'entity:node/34'
+          uri: 'internal:/node/19'
           title: ''
           options: {  }
   -
-    info: 'Homepage Troubles info block'
+    info: 'Homepage Application'
     langcode: en
-    uuid: 131f6977-0feb-41d5-8ab2-2b864c3d176c
-    bundle: basic
+    uuid: 35cd7b6a-cb9c-4988-9dee-24be3f5cb306
+    bundle: link_block
     revision_id: null
     rev_id_current: null
     fields:
       body:
         -
-          value: '<p>The Victims’ Payments Board was established in February 2021. The Board is headed by a President appointed by the Lord Chief Justice, and will consist of a number of members including legal, medical and ordinary members. The purpose of the Board is to determine applications under the Troubles Permanent Disablement Payment Scheme (also referred to as the Victims’ Payments Scheme). Members will also have responsibility as members of the Victims’ Payments Board to assist the President with corporate governance responsibilities such as policy development, financial and risk management.&nbsp;</p><p><a class="btn" href="/node/9">Read more</a></p><p>We are currently experiencing delays in answering calls to the VPB contact number. We appreciate your patience in this matter. Please be advised, you can also contact us by emailing <a href="mailto:vpb@justice-ni.gov.uk">vpb@justice-ni.gov.uk</a></p><p>Applicants to the Scheme are reminded that it is not necessary to seek additional information from Health Trusts, GPs, Police, PRONI, etc in support of their application – this is because the Victims’ Payments Board has arrangements in place to formally request this information, as required. We will however require the basic details requested on the application form to include incident date, location and description.</p><p class="info-notice">When submitting an application to the Scheme, applicants should only include supporting information they currently hold.</p>'
-          summary: null
-          format: filtered_html
+          value: "<p><img alt=\"making an application\" data-delta=\"4\" data-fid=\"20\" data-media-element=\"1\" height=\"140\" src=\"https://www.victimspaymentsboard.org.uk/sites/victimspayments/files/media-files/making-an-application.png\" width=\"220\" /></p>\r\n\r\n<p>Making an application</p>\r\n"
+          summary: ''
+          format: full_html
+      field_link:
+        -
+          uri: 'internal:/node/36'
+          title: ''
+          options: {  }
 menus:
   -
     menu_name: main
@@ -219,18 +219,6 @@ menus:
     uuid: 2a49280d-698d-4286-9e17-647b5d0d1c31
   -
     menu_name: main
-    title: FAQ
-    parent: null
-    uri: 'entity:node/69'
-    link_title: ''
-    description: null
-    enabled: true
-    expanded: false
-    weight: -44
-    langcode: en
-    uuid: 50e6b826-53b2-4fa8-9f06-5ed9789bbe6d
-  -
-    menu_name: main
     title: Publications
     parent: null
     uri: 'internal:/Publications'
@@ -241,3 +229,15 @@ menus:
     weight: -46
     langcode: en
     uuid: 060ace61-ab8a-431d-a338-ffeb16806c8c
+  -
+    menu_name: main
+    title: FAQ
+    parent: null
+    uri: 'entity:node/73'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -44
+    langcode: en
+    uuid: 9a645bfc-90a7-44f7-9905-69ab6cdd873e

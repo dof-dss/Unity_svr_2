@@ -154,17 +154,21 @@
     padding: 2%;
   }
 
-  .footer-area {
-    display: flex;
+  .container-wrap {
+    display: block;
+  }
 
-    .column {
-      width: auto;
+    .footer-area {
+      display: flex;
 
-      h2 {
-        margin: 2.6rem 0 1.8rem;
+      .column {
+        width: auto;
+
+        h2 {
+          margin: 2.6rem 0 1.8rem;
+        }
       }
     }
-  }
 
   .footer-menu li {
     padding-left: 0;

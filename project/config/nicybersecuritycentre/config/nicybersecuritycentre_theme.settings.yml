@@ -4,7 +4,7 @@ features:
   comment_user_verification: true
   favicon: 1
 logo:
-  use_default: 0
+  use_default: 1
   path: sites/nicybersecuritycentre/themes/nicybersecuritycentre_theme/images/logo.png
 favicon:
   use_default: 1

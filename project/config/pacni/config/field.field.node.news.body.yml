@@ -6,7 +6,12 @@ dependencies:
     - field.storage.node.body
     - node.type.news
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - basic_html
 _core:
   default_config_hash: u1pxGrNXR4V2q0lHTM0AuVdnbyTLitNAlxGCLqWujyg
 id: node.news.body
@@ -16,7 +21,7 @@ bundle: news
 label: Body
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

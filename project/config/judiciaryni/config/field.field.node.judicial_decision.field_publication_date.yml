@@ -1,0 +1,21 @@
+uuid: e3d72d83-08a6-4609-a90d-afa4aa8cd0c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_date
+    - node.type.judicial_decision
+  module:
+    - datetime
+id: node.judicial_decision.field_publication_date
+field_name: field_publication_date
+entity_type: node
+bundle: judicial_decision
+label: Date
+description: 'Please select the published date for this decision / direction, or accept the default value of today.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

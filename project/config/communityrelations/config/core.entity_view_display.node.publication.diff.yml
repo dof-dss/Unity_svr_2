@@ -26,10 +26,12 @@ third_party_settings:
     group_additional_content_details:
       children:
         - field_publication_type
+        - field_publication_date
+        - field_photo
       label: 'Additional content details'
       parent_name: ''
-      region: content
-      weight: 4
+      region: hidden
+      weight: 11
       format_type: html_element
       format_settings:
         classes: field-collection
@@ -53,7 +55,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 3
     region: content
   field_attachment:
     type: entity_reference_entity_view
@@ -62,7 +64,7 @@ content:
       view_mode: embed
       link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 4
     region: content
   field_photo:
     type: entity_reference_entity_view
@@ -80,7 +82,7 @@ content:
       timezone_override: ''
       format_type: html_year
     third_party_settings: {  }
-    weight: 3
+    weight: 1
     region: content
   field_publication_type:
     type: entity_reference_label
@@ -88,7 +90,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 8
+    weight: 0
     region: content
 hidden:
   content_moderation_control: true

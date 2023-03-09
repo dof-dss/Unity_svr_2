@@ -24,6 +24,8 @@ db:
             - nicybersecuritycentredb
             - ppsnidb
             - pacnidb
+            - cosicanidb
+            - judiciarynidb
         endpoints:
             mentalhealthchampionni:
                 default_schema: mentalhealthchampionnidb
@@ -81,6 +83,14 @@ db:
                 default_schema: pacnidb
                 privileges:
                     pacnidb: admin
+            cosicani:
+                default_schema: cosicanidb
+                privileges:
+                    cosicanidb: admin
+            judiciaryni:
+                default_schema: judiciarynidb
+                privileges:
+                    judiciarynidb: admin
 solr:
     type: 'solr:7.7'
     disk: 1024
@@ -114,6 +124,10 @@ solr:
                 conf_dir: !archive solr_config/
             pacni_index:
                 conf_dir: !archive solr_config/
+            cosicani_index:
+                conf_dir: !archive solr_config/
+            judiciaryni_index:
+                conf_dir: !archive solr_config/
         endpoints:
             mentalhealthchampionni:
                 core: mentalhealthchampionni_index
@@ -143,5 +157,9 @@ solr:
                 core: ppsni_index
             pacni:
                 core: pacni_index
+            cosicani:
+                core: cosicani_index
+            judiciaryni:
+                core: judiciaryni_index
 redis:
     type: 'redis:6.0'

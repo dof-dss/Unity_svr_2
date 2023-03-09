@@ -12,7 +12,7 @@ field_name: field_teaser
 entity_type: node
 bundle: news
 label: Teaser
-description: 'Enter some short teaser text for this news item. This can be displayed on the site home page.'
+description: 'Enter some short teaser text for this news item. This will be used to link to this page on other pages on this site.'
 required: true
 translatable: false
 default_value: {  }

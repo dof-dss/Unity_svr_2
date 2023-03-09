@@ -1,4 +1,4 @@
-uuid: e8876f98-3f82-4a3b-aade-b9e29a6c0a68
+uuid: cd52d2f6-b586-4b45-8aa3-2fcc741a036b
 langcode: en
 status: true
 dependencies: {  }
@@ -81,12 +81,11 @@ process:
           migration: upgrade_d7_taxonomy_vocabulary
           source: vid
   settings:
-    0:
-      plugin: d7_field_instance_settings
-      source:
-        - settings
-        - widget
-        - field_definition
+    plugin: d7_field_instance_settings
+    source:
+      - settings
+      - widget
+      - field_definition
     inline_entity_form:
       plugin: inline_entity_form_field_instance_settings
   default_value_function:

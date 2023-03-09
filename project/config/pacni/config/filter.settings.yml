@@ -1,4 +1,4 @@
 _core:
   default_config_hash: f9dIU_kDEmtUJjXcRxCe8VNJV_UjMhmIsz4uHoQiG8c
-fallback_format: basic_html
+fallback_format: plain_text
 always_show_fallback_choice: false

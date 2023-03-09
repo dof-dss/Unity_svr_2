@@ -1,0 +1,29 @@
+uuid: d3e9247b-053f-4132-915e-255b215e38aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachment
+    - media.type.document
+    - node.type.judicial_decision
+id: node.judicial_decision.field_attachment
+field_name: field_attachment
+entity_type: node
+bundle: judicial_decision
+label: Documents
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

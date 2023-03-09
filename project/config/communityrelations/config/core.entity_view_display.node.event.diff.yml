@@ -29,7 +29,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 3
     region: content
   field_crc_event_date:
     type: daterange_default
@@ -39,7 +39,7 @@ content:
       format_type: unity_date
       separator: '-'
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_photo:
     type: entity_reference_entity_view
@@ -50,10 +50,17 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
+  field_teaser:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   content_moderation_control: true
   field_meta_tags: true
-  field_teaser: true
   langcode: true
   links: true
   search_api_excerpt: true

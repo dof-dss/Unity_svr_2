@@ -47,6 +47,7 @@ module:
   field_group_migrate: 0
   field_ui: 0
   file: 0
+  file_delete_ui: 0
   filelog: 0
   filter: 0
   flag: 0
@@ -72,6 +73,7 @@ module:
   link_fix_absolute_urls: 0
   linkit: 0
   media: 0
+  media_file_delete: 0
   media_library: 0
   media_library_edit: 0
   menu_breadcrumb: 0
