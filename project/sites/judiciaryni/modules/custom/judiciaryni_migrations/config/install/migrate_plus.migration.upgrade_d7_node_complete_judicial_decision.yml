@@ -86,10 +86,23 @@ process:
           from_format: 'Y-m-d H:i:s'
           to_format: Y-m-d
           source: value
-  field_publication_type:
+  field_decision_pub_type:
     -
-      plugin: get
+      plugin: static_map
       source: field_publication_type
+      default_value: null
+      map:
+        care_decision: 106
+        charity_decision: 107
+        judgment: 108
+        lands_decision: 109
+        lcj_direction: 110
+        lst_ruling: 111
+        nivt_decision: 112
+        practice_decision: 113
+        summary: 114
+        tpt_decision: 115
+        nihs_decision: 116
   field_judiciary:
     -
       plugin: get
@@ -112,7 +125,7 @@ process:
     -
       plugin: get
       source: field_description
-  field_file_attachment:
+  field_attachment:
     -
       plugin: sub_process
       source: field_file_attachment
