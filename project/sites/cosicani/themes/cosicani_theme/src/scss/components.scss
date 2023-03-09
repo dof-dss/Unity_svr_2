@@ -81,6 +81,24 @@
   }
 }
 
+.front #content #top-area a {
+  border-bottom: none;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $link
+  }
+}
+
+.front #content #bottom-area a {
+  border-bottom: none;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $link
+  }
+}
+
 
 #top-area {
   margin: 1% auto;
@@ -93,6 +111,7 @@
     color: $white;
     text-align: left;
     padding: 3%;
+    width: 70%;
   }
 
   .block {
@@ -141,5 +160,104 @@
   p {
     @include adjust-font-size-to(21px);
   }
+}
+
+#top-area {
+  .block-homepage-block {
+
+    a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      column-gap: 2rem;
+      border-bottom: none;
+
+      &:focus,
+      &:hover {
+        border: solid #0e6bb3 2px;
+      }
+    }
+
+    .content {
+      position: relative;
+      padding-right: 2rem;
+      flex: auto;
+      margin-left: 1rem;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 3rem;
+        right: 0.4rem;
+        width: 3rem;
+        height: 3rem;
+        background-image: resolve('arrow_forward_white.svg');
+        background-position: center center;
+        background-size: 2.4rem auto;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:hover .content:after,
+    &:focus .content:after {
+      background-color: $white;
+      background-image: resolve('arrow_forward_black.svg');
+
+    }
+  }
+}
+
+#bottom-area {
+  .block-homepage-block {
+
+    a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      column-gap: 2rem;
+      border-bottom: none;
+
+      &:focus,
+      &:hover {
+        border: solid #0e6bb3 2px;
+      }
+    }
+
+    .content {
+      position: relative;
+      padding-right: 2rem;
+      flex: auto;
+      margin-left: 1rem;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 27rem;
+        right: 0.4rem;
+        width: 3rem;
+        height: 3rem;
+        background-image: resolve('arrow_forward_black.svg');
+        background-position: center center;
+        background-size: 2.4rem auto;
+        background-repeat: no-repeat;
+        @media screen and (max-width: 980px) {
+          position: static;
+        }
+      }
+    }
+
+    &:hover .content:after,
+    &:focus .content:after {
+      background-color: $black;
+      background-image: resolve('arrow_forward_white.svg');
+    }
+  }
+}
+
+#footer {
+  border-top: solid 5px;
+  border-image: linear-gradient(to right, teal 33%, red 33%, red 66%, yellow 33%) 5
 }
 
