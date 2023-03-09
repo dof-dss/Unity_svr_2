@@ -101,14 +101,14 @@
 'https://cosica-ni.org/':
     type: redirect
     to: 'https://www.cosica-ni.org/'
-'https://www.judiciaryni/':
+'https://www.judiciaryni.uk/':
     type: upstream
     upstream: 'unity_svr_2:http'
     cache:
         enabled: 'false'
-'https://judiciaryni/':
+'https://judiciaryni.uk/':
     type: redirect
-    to: 'https://www.judiciaryni/'
+    to: 'https://www.judiciaryni.uk/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_2:http'
