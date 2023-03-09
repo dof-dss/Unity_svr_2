@@ -1,0 +1,21 @@
+uuid: ae1d7673-9542-4c72-835b-ba51c565a0de
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_standard
+    - field.storage.block_content.field_teaser
+_core:
+  default_config_hash: F5wEXTmuP-j5dhutpoO_yxvzoG4CpxtHRofq88xEsYQ
+id: block_content.card_standard.field_teaser
+field_name: field_teaser
+entity_type: block_content
+bundle: card_standard
+label: Teaser
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
