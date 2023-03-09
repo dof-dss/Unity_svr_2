@@ -98,6 +98,11 @@
   .block {
     height: 19rem;
   }
+    @media screen and (max-width: 1153px) {
+      .column:last-child {
+        margin-right: 1rem;
+    }
+  }
 }
 .region-top-first {
   background: resolve('home-block-1-bg.png') no-repeat 100%;
@@ -124,3 +129,17 @@
 #home-block-2, #home-block-4, #home-block-6 {
   background: #5c7a84;
 }
+
+.front #bottom-area {
+  .column {
+    text-align: left;
+    padding: 1rem 2.5rem;
+    background: $grey-light;
+    margin: 1rem;
+  }
+
+  p {
+    @include adjust-font-size-to(21px);
+  }
+}
+
