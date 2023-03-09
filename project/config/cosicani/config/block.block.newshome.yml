@@ -1,9 +1,9 @@
-uuid: 4463e752-8b0e-4dad-bcec-69ba0b216de6
+uuid: bba8a6ac-bd0e-4f02-b235-444fb5413ca8
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic_block:2702617b-edbe-4dd1-a3cc-c458dd62cea1'
+    - 'block_content:link_block:c8ae560a-9bc6-4ec4-9fa9-c9dc1b3b493b'
   module:
     - block_content
     - system
@@ -14,9 +14,9 @@ theme: cosicani_theme
 region: bottom_widget_2
 weight: 0
 provider: null
-plugin: 'block_content:2702617b-edbe-4dd1-a3cc-c458dd62cea1'
+plugin: 'block_content:c8ae560a-9bc6-4ec4-9fa9-c9dc1b3b493b'
 settings:
-  id: 'block_content:2702617b-edbe-4dd1-a3cc-c458dd62cea1'
+  id: 'block_content:c8ae560a-9bc6-4ec4-9fa9-c9dc1b3b493b'
   label: 'News home'
   label_display: '0'
   provider: block_content
