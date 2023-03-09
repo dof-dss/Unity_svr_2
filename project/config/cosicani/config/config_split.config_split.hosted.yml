@@ -1,0 +1,15 @@
+uuid: a695825e-dc19-4130-a0ff-11a296cee39d
+langcode: en
+status: true
+dependencies: {  }
+id: hosted
+label: hosted
+description: ''
+weight: 0
+folder: ../project/config/cosicani/hosted
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

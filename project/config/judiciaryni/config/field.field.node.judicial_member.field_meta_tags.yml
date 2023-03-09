@@ -1,0 +1,21 @@
+uuid: 90e52e32-a7f4-4399-a7be-bfa2da4aeb57
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.judicial_member
+  module:
+    - metatag
+id: node.judicial_member.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: judicial_member
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

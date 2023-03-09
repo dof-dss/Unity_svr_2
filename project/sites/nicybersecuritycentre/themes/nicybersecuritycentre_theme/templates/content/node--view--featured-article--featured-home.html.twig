@@ -67,17 +67,16 @@
  */
 #}
 
-<article>
-  <div class="group-left">
-    <a href="{{ url }}">{{ content.field_photo }}</a>
+<article class="block-link">
+  <a href="{{ url }}">
+  <div class="block-link__image">
+    {{ content.field_photo }}
   </div>
-  <div class="group-right">
+  <div class="block-link__body">
   <h2>
-    <a href="{{ url }}">{{ node.label }}</a>
+    {{ node.label }}
   </h2>
-  {{ content | without('field_photo') }}
-  <div class="view-footer">
-    <a class="btn" href="{{ url }}">Read more<span class="visually-hidden">about {{ node.label }}</span></a>
+  {{ content.field_teaser }}
   </div>
-  </div>
+  </a>
 </article>

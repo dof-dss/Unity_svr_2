@@ -36,7 +36,7 @@ content:
       view_mode: embed
       link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_photo:
     type: entity_reference_entity_view
@@ -45,7 +45,7 @@ content:
       view_mode: landscape_float
       link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 3
     region: content
   field_publication_date:
     type: datetime_default
@@ -54,12 +54,19 @@ content:
       timezone_override: ''
       format_type: html_year
     third_party_settings: {  }
+    weight: 1
+    region: content
+  field_publication_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   content_moderation_control: true
   field_meta_tags: true
-  field_publication_type: true
   field_summary: true
   langcode: true
   links: true

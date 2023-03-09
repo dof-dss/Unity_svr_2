@@ -10,8 +10,8 @@ dependencies:
     - sentencereview_theme
 id: footermenu
 theme: sentencereview_theme
-region: footer_first
-weight: 0
+region: footer
+weight: -5
 provider: null
 plugin: 'system_menu_block:menu-footer-menu'
 settings:

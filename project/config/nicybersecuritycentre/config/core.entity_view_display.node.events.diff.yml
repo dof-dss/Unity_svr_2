@@ -6,15 +6,16 @@ dependencies:
     - core.entity_view_mode.node.diff
     - field.field.node.events.body
     - field.field.node.events.field_event_date
+    - field.field.node.events.field_event_teaser
     - field.field.node.events.field_event_type
     - field.field.node.events.field_location
     - field.field.node.events.field_meta_tags
     - field.field.node.events.field_organisation_name
     - field.field.node.events.field_organisation_sector
+    - field.field.node.events.field_start_time
     - field.field.node.events.field_target_audience
     - node.type.events
   module:
-    - datetime_range
     - field_group
     - layout_builder
     - metatag
@@ -28,6 +29,7 @@ third_party_settings:
   field_group:
     group_additional_content_details:
       children:
+        - field_event_teaser
         - field_event_type
         - field_organisation_name
         - field_location
@@ -62,13 +64,11 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_event_date:
-    type: daterange_default
-    label: hidden
+  field_event_teaser:
+    type: string
+    label: inline
     settings:
-      timezone_override: ''
-      format_type: unity_date
-      separator: '-'
+      link_to_entity: false
     third_party_settings: {  }
     weight: 0
     region: content
@@ -77,21 +77,21 @@ content:
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 1
     region: content
   field_location:
     type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    weight: 3
     region: content
   field_meta_tags:
     type: metatag_empty_formatter
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 9
+    weight: 6
     region: content
   field_organisation_name:
     type: string
@@ -99,7 +99,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 5
+    weight: 2
     region: content
   field_organisation_sector:
     type: entity_reference_label
@@ -107,7 +107,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 7
+    weight: 4
     region: content
   field_target_audience:
     type: entity_reference_label
@@ -115,10 +115,12 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 8
+    weight: 5
     region: content
 hidden:
   content_moderation_control: true
+  field_event_date: true
+  field_start_time: true
   langcode: true
   links: true
   search_api_excerpt: true

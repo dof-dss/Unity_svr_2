@@ -20,3 +20,8 @@
 /bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-ircommission" "/app/log/ircommission/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
 /bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-nijac" "/app/log/nijac/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
 /bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-nicybersecuritycentre" "/app/log/nicybersecuritycentre/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
+/bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-cvocni" "/app/log/cvocni/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
+/bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-ppsni" "/app/log/ppsni/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
+/bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-sentencereview" "/app/log/sentencereview/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
+/bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-communityrelations" "/app/log/communityrelations/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
+/bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-judiciaryni" "/app/log/judiciaryni/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"

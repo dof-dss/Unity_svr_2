@@ -2,13 +2,13 @@ _core:
   default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
 langcode: en
 uuid: a9526ead-559e-4920-9f06-0ae86b26bd04
-name: 'Victims Payments Board'
+name: 'Victims'' Payments Board'
 mail: victimspaymentsboard@test.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node/68
+  front: /node/74
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

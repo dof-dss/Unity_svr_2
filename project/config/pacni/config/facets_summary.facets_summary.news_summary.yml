@@ -1,0 +1,25 @@
+uuid: b73f626b-7844-41a7-b132-410e0fecb6b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.news
+    - views.view.news_search
+  module:
+    - search_api
+id: news_summary
+name: 'News summary'
+facet_source_id: 'search_api:views_page__news_search__news_search_page'
+processor_configs:
+  hide_when_not_rendered:
+    processor_id: hide_when_not_rendered
+    weights:
+      build: '45'
+    settings: {  }
+facets:
+  published_date:
+    checked: true
+    label: 'Published date'
+    separator: ', '
+    show_count: false
+    weight: 0

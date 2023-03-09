@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b9ef1d20b5a695669b04890b8424ce2",
+    "content-hash": "6a90edcd46557189252b69e8bda1cdca",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1944,16 +1944,16 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_modules.git",
-                "reference": "5bc51e685ec29da4799ba4f1912e2e14c2f3373a"
+                "reference": "89597c1fb6eac11858ccb8c962803fb8d781222c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/5bc51e685ec29da4799ba4f1912e2e14c2f3373a",
-                "reference": "5bc51e685ec29da4799ba4f1912e2e14c2f3373a",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/89597c1fb6eac11858ccb8c962803fb8d781222c",
+                "reference": "89597c1fb6eac11858ccb8c962803fb8d781222c",
                 "shasum": ""
             },
             "require": {
@@ -1967,22 +1967,22 @@
             "description": "Custom modules available to all Unity sites.",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/1.2.3"
+                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/1.2.4"
             },
-            "time": "2023-02-16T14:08:47+00:00"
+            "time": "2023-03-08T10:50:23+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_profile",
-            "version": "1.1.0",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_profile.git",
-                "reference": "d0f535038f6a624ff68cfe61fbc49f880a7bebcd"
+                "reference": "5f52a1ce0e7f66db3caffdad4b58e3c81ef184f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/d0f535038f6a624ff68cfe61fbc49f880a7bebcd",
-                "reference": "d0f535038f6a624ff68cfe61fbc49f880a7bebcd",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/5f52a1ce0e7f66db3caffdad4b58e3c81ef184f0",
+                "reference": "5f52a1ce0e7f66db3caffdad4b58e3c81ef184f0",
                 "shasum": ""
             },
             "require": {
@@ -1996,22 +1996,22 @@
             "description": "Custom install profile used by all Unity sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_profile/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/1.1.0"
+                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/1.1.2"
             },
-            "time": "2023-02-08T11:15:12+00:00"
+            "time": "2023-03-08T11:32:44+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_theme",
-            "version": "v0.1.71",
+            "version": "v0.1.72",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_theme.git",
-                "reference": "c7622f08df0012ccd920a656654dc92e9602aff9"
+                "reference": "839782a3838a938181975416afa94d3c2074683b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/c7622f08df0012ccd920a656654dc92e9602aff9",
-                "reference": "c7622f08df0012ccd920a656654dc92e9602aff9",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/839782a3838a938181975416afa94d3c2074683b",
+                "reference": "839782a3838a938181975416afa94d3c2074683b",
                 "shasum": ""
             },
             "require": {
@@ -2035,9 +2035,9 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v0.1.71"
+                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v0.1.72"
             },
-            "time": "2023-02-21T11:26:05+00:00"
+            "time": "2023-03-07T16:02:41+00:00"
         },
         {
             "name": "drupal/address",
@@ -5293,6 +5293,50 @@
             }
         },
         {
+            "name": "drupal/file_delete_ui",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/file_delete_ui.git",
+                "reference": "1.0.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/file_delete_ui-1.0.0-beta2.zip",
+                "reference": "1.0.0-beta2",
+                "shasum": "76e04136bda06294ed40b266b47dafce4cbf7a85"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-beta2",
+                    "datestamp": "1673897599",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "douggreen",
+                    "homepage": "https://www.drupal.org/user/29191"
+                }
+            ],
+            "description": "Add capability for admins to delete files",
+            "homepage": "https://www.drupal.org/project/file_delete_ui",
+            "support": {
+                "source": "https://git.drupalcode.org/project/file_delete_ui"
+            }
+        },
+        {
             "name": "drupal/filelog",
             "version": "2.1.1",
             "source": {
@@ -6375,6 +6419,53 @@
             "homepage": "https://www.drupal.org/project/media_entity_browser",
             "support": {
                 "source": "https://git.drupalcode.org/project/media_entity_browser"
+            }
+        },
+        {
+            "name": "drupal/media_file_delete",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/media_file_delete.git",
+                "reference": "1.3.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_file_delete-1.3.0.zip",
+                "reference": "1.3.0",
+                "shasum": "a3772a9c4b96d9f0c93eb3ebcac2f4041db93f1d"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ~9.0 || ~10.0"
+            },
+            "require-dev": {
+                "drupal/entity_usage": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.3.0",
+                    "datestamp": "1669241949",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                }
+            ],
+            "description": "Provides content editors the ability to delete associated files when deleting media items",
+            "homepage": "https://www.drupal.org/project/media_file_delete",
+            "support": {
+                "source": "https://git.drupalcode.org/project/media_file_delete"
             }
         },
         {
@@ -7904,6 +7995,57 @@
             }
         },
         {
+            "name": "drupal/shs",
+            "version": "2.0.0-rc3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/shs.git",
+                "reference": "2.0.0-rc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/shs-2.0.0-rc3.zip",
+                "reference": "2.0.0-rc3",
+                "shasum": "2ae30536905343332c4778fa6d59386cf4f9632f"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/chosen": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-rc3",
+                    "datestamp": "1646804408",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "jhedstrom",
+                    "homepage": "https://www.drupal.org/user/208732"
+                },
+                {
+                    "name": "stBorchert",
+                    "homepage": "https://www.drupal.org/user/36942"
+                }
+            ],
+            "description": "Creates a simple hierarchical select widget for taxonomy fields.",
+            "homepage": "https://www.drupal.org/project/shs",
+            "support": {
+                "source": "https://git.drupalcode.org/project/shs"
+            }
+        },
+        {
             "name": "drupal/simple_sitemap",
             "version": "3.10.0",
             "source": {
@@ -8119,6 +8261,69 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/slick_views",
                 "issues": "https://drupal.org/project/issues/slick_views"
+            }
+        },
+        {
+            "name": "drupal/smart_date",
+            "version": "3.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/smart_date.git",
+                "reference": "3.7.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/smart_date-3.7.2.zip",
+                "reference": "3.7.2",
+                "shasum": "4dc2040d94688369cff3c8b1062c1991fe685963"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10",
+                "php": ">=8.0",
+                "simshaun/recurr": "^4"
+            },
+            "suggest": {
+                "drupal/multiple_fields_remove_button": "Provides a button for editors to remove unwanted rows."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.7.2",
+                    "datestamp": "1677784501",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mandclu",
+                    "homepage": "https://www.drupal.org/user/52136"
+                },
+                {
+                    "name": "stefan.korn",
+                    "homepage": "https://www.drupal.org/user/1942204"
+                }
+            ],
+            "description": "Adds app-like date and recurring date functionality.",
+            "homepage": "https://www.drupal.org/project/smart_date",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/smart_date",
+                "issues": "https://www.drupal.org/project/issues/smart_date",
+                "documentation": "https://www.drupal.org/docs/contributed-modules/smart-date"
             }
         },
         {
@@ -8385,6 +8590,61 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/telephone_plus",
                 "issues": "https://www.drupal.org/project/issues/telephone_plus"
+            }
+        },
+        {
+            "name": "drupal/timefield",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/timefield.git",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/timefield-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "97f7eda5d253c1dbb13eddbea3c0be181bfb413c"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "suggest": {
+                "fgelinas/timepicker": "Required to use drupal/timefield. jQuery UI Timepicker a jQuery UI time picker plugin build to match with other official jQuery UI widgets. Based on the existing date picker, it will blend nicely with your form and use your selected jQuery UI theme. The plugin is very easy to integrate in your form for you time (hours / minutes) inputs."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1643914532",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "awm",
+                    "homepage": "https://www.drupal.org/user/1059398"
+                },
+                {
+                    "name": "keen-on.digital",
+                    "homepage": "https://www.drupal.org/user/3675657"
+                },
+                {
+                    "name": "wesnick",
+                    "homepage": "https://www.drupal.org/user/511834"
+                }
+            ],
+            "description": "Implements a time field (HH:MM), with optional to time and weekly repeat value.",
+            "homepage": "http://drupal.org/project/timefield",
+            "support": {
+                "source": "https://git.drupalcode.org/project/timefield"
             }
         },
         {
@@ -11882,6 +12142,64 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "simshaun/recurr",
+            "version": "v4.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/simshaun/recurr.git",
+                "reference": "08b0b46879f598cd11dd42b4c1a9c221a0562749"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/simshaun/recurr/zipball/08b0b46879f598cd11dd42b4c1a9c221a0562749",
+                "reference": "08b0b46879f598cd11dd42b4c1a9c221a0562749",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/collections": "~1.3",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Recurr\\": "src/Recurr/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shaun Simmons",
+                    "email": "shaun@shaun.pub",
+                    "homepage": "https://shaun.pub"
+                }
+            ],
+            "description": "PHP library for working with recurrence rules",
+            "homepage": "https://github.com/simshaun/recurr",
+            "keywords": [
+                "dates",
+                "events",
+                "recurrence",
+                "recurring",
+                "rrule"
+            ],
+            "support": {
+                "issues": "https://github.com/simshaun/recurr/issues",
+                "source": "https://github.com/simshaun/recurr/tree/v4.0.5"
+            },
+            "time": "2021-03-25T23:00:49+00:00"
         },
         {
             "name": "solarium/solarium",
@@ -20761,9 +21079,11 @@
         "drupal/config_readonly": 10,
         "drupal/date_facet_drilldown": 20,
         "drupal/facets_pretty_paths": 10,
+        "drupal/file_delete_ui": 10,
         "drupal/flag": 10,
         "drupal/inline_entity_form": 5,
         "drupal/search_api_location": 15,
+        "drupal/shs": 5,
         "drupal/telephone_plus": 20,
         "drupal/ultimate_cron": 15,
         "previousnext/phpunit-finder": 15

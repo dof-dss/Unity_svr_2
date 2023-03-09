@@ -1,0 +1,31 @@
+uuid: 3bb7b73b-4ff2-4ced-9414-13d44a8d6c5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.nigov_float_x1
+    - image.style.nigov_float_x2
+    - image.style.nigov_full_1240_x2
+    - image.style.nigov_full_450_x1
+    - image.style.nigov_full_620_x1
+    - image.style.nigov_full_900_x2
+_core:
+  default_config_hash: 9NFNAG1Bi1l7jJwuY3no8DmE7h6fMdkWqfVbDkODxRg
+id: inline
+label: 'Inline float'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - nigov_float_x1
+        - nigov_float_x2
+        - nigov_full_1240_x2
+        - nigov_full_450_x1
+        - nigov_full_620_x1
+        - nigov_full_900_x2
+breakpoint_group: responsive_image
+fallback_image_style: nigov_float_x1

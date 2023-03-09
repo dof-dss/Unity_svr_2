@@ -1,0 +1,23 @@
+uuid: 88a4b5fa-2c42-443c-b3e9-e62b6e130065
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_file_language
+  module:
+    - file
+    - options
+id: file.document.field_file_language
+field_name: field_file_language
+entity_type: file
+bundle: document
+label: 'File language'
+description: 'Please choose the language for this file.'
+required: true
+translatable: false
+default_value:
+  -
+    value: en
+default_value_callback: ''
+settings: {  }
+field_type: list_string
