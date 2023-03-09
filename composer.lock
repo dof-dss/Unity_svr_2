@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c3ece03a0b8af2b618da84e9f9126b3f",
+    "content-hash": "6a90edcd46557189252b69e8bda1cdca",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1944,16 +1944,16 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_modules.git",
-                "reference": "5bc51e685ec29da4799ba4f1912e2e14c2f3373a"
+                "reference": "89597c1fb6eac11858ccb8c962803fb8d781222c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/5bc51e685ec29da4799ba4f1912e2e14c2f3373a",
-                "reference": "5bc51e685ec29da4799ba4f1912e2e14c2f3373a",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/89597c1fb6eac11858ccb8c962803fb8d781222c",
+                "reference": "89597c1fb6eac11858ccb8c962803fb8d781222c",
                 "shasum": ""
             },
             "require": {
@@ -1967,22 +1967,22 @@
             "description": "Custom modules available to all Unity sites.",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/1.2.3"
+                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/1.2.4"
             },
-            "time": "2023-02-16T14:08:47+00:00"
+            "time": "2023-03-08T10:50:23+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_profile",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_profile.git",
-                "reference": "339ce83fb9888e9a87949e12c0c4f8467de7cb58"
+                "reference": "5f52a1ce0e7f66db3caffdad4b58e3c81ef184f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/339ce83fb9888e9a87949e12c0c4f8467de7cb58",
-                "reference": "339ce83fb9888e9a87949e12c0c4f8467de7cb58",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/5f52a1ce0e7f66db3caffdad4b58e3c81ef184f0",
+                "reference": "5f52a1ce0e7f66db3caffdad4b58e3c81ef184f0",
                 "shasum": ""
             },
             "require": {
@@ -1996,22 +1996,22 @@
             "description": "Custom install profile used by all Unity sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_profile/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/1.1.1"
+                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/1.1.2"
             },
-            "time": "2023-02-28T11:53:30+00:00"
+            "time": "2023-03-08T11:32:44+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_theme",
-            "version": "v0.1.71",
+            "version": "v0.1.72",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_theme.git",
-                "reference": "c7622f08df0012ccd920a656654dc92e9602aff9"
+                "reference": "839782a3838a938181975416afa94d3c2074683b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/c7622f08df0012ccd920a656654dc92e9602aff9",
-                "reference": "c7622f08df0012ccd920a656654dc92e9602aff9",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/839782a3838a938181975416afa94d3c2074683b",
+                "reference": "839782a3838a938181975416afa94d3c2074683b",
                 "shasum": ""
             },
             "require": {
@@ -2035,9 +2035,9 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v0.1.71"
+                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v0.1.72"
             },
-            "time": "2023-02-21T11:26:05+00:00"
+            "time": "2023-03-07T16:02:41+00:00"
         },
         {
             "name": "drupal/address",
@@ -7992,6 +7992,57 @@
             "support": {
                 "source": "http://git.drupal.org/project/search_api_spellcheck.git",
                 "issues": "https://www.drupal.org/project/issues/search_api_spellcheck"
+            }
+        },
+        {
+            "name": "drupal/shs",
+            "version": "2.0.0-rc3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/shs.git",
+                "reference": "2.0.0-rc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/shs-2.0.0-rc3.zip",
+                "reference": "2.0.0-rc3",
+                "shasum": "2ae30536905343332c4778fa6d59386cf4f9632f"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/chosen": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-rc3",
+                    "datestamp": "1646804408",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "jhedstrom",
+                    "homepage": "https://www.drupal.org/user/208732"
+                },
+                {
+                    "name": "stBorchert",
+                    "homepage": "https://www.drupal.org/user/36942"
+                }
+            ],
+            "description": "Creates a simple hierarchical select widget for taxonomy fields.",
+            "homepage": "https://www.drupal.org/project/shs",
+            "support": {
+                "source": "https://git.drupalcode.org/project/shs"
             }
         },
         {
@@ -21032,6 +21083,7 @@
         "drupal/flag": 10,
         "drupal/inline_entity_form": 5,
         "drupal/search_api_location": 15,
+        "drupal/shs": 5,
         "drupal/telephone_plus": 20,
         "drupal/ultimate_cron": 15,
         "previousnext/phpunit-finder": 15
