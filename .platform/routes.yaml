@@ -45,14 +45,6 @@
 'https://hiaredressni.uk/':
     type: redirect
     to: 'https://www.hiaredressni.uk/'
-'https://www.nijac.gov.uk/':
-    type: upstream
-    upstream: 'unity_svr_2:http'
-    cache:
-        enabled: 'false'
-'https://nijac.gov.uk/':
-    type: redirect
-    to: 'https://www.nijac.gov.uk/'
 'https://www.community-relations.org.uk/':
     type: upstream
     upstream: 'unity_svr_2:http'
