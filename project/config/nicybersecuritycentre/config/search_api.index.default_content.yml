@@ -5,13 +5,20 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_description
+    - field.storage.node.field_event_date
+    - field.storage.node.field_event_type
+    - field.storage.node.field_organisation_name
+    - field.storage.node.field_organisation_sector
     - field.storage.node.field_published_date
+    - field.storage.node.field_target_audience
     - field.storage.node.field_teaser
+    - field.storage.node.field_event_teaser
     - search_api.server.solr_default
   module:
     - search_api_solr
     - node
     - user
+    - taxonomy
     - search_api
 third_party_settings:
   search_api_solr:
@@ -59,6 +66,16 @@ name: 'Default content'
 description: ''
 read_only: false
 field_settings:
+  audience_name:
+    label: 'Target audience » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_target_audience:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_target_audience
+      module:
+        - taxonomy
   body:
     label: Body
     datasource_id: 'entity:node'
@@ -84,6 +101,38 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_description
+  field_event_date:
+    label: 'Event date(s)'
+    datasource_id: 'entity:node'
+    property_path: field_event_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_event_date
+  field_event_teaser:
+    label: Teaser
+    datasource_id: 'entity:node'
+    property_path: field_event_teaser
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_event_teaser
+  field_event_type:
+    label: 'Event type'
+    datasource_id: 'entity:node'
+    property_path: field_event_type
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_event_type
+  field_organisation_name:
+    label: 'Organisation name'
+    datasource_id: 'entity:node'
+    property_path: field_organisation_name
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_organisation_name
   field_published_date:
     label: 'Publication date'
     datasource_id: 'entity:node'
@@ -117,6 +166,16 @@ field_settings:
       module:
         - node
         - user
+  sector_name:
+    label: 'Organisation sector » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_organisation_sector:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_organisation_sector
+      module:
+        - taxonomy
   spelling:
     label: Spelling
     property_path: aggregated_field
