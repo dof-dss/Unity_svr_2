@@ -17,7 +17,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_complement:
     type: number_integer
@@ -26,7 +26,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
 hidden:
   langcode: true
