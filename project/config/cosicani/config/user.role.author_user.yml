@@ -9,6 +9,8 @@ dependencies:
     - media.type.image
     - media.type.remote_video
     - node.type.basic_page
+    - node.type.feature
+    - node.type.landing_page
     - node.type.news
     - node.type.publication
     - node.type.webform
@@ -38,9 +40,11 @@ permissions:
   - 'create audio media'
   - 'create basic_page content'
   - 'create document media'
+  - 'create feature content'
   - 'create file media'
   - 'create files'
   - 'create image media'
+  - 'create landing_page content'
   - 'create news content'
   - 'create publication content'
   - 'create remote_video media'
@@ -48,8 +52,10 @@ permissions:
   - 'delete own audio media'
   - 'delete own basic_page content'
   - 'delete own document media'
+  - 'delete own feature content'
   - 'delete own file media'
   - 'delete own image media'
+  - 'delete own landing_page content'
   - 'delete own news content'
   - 'delete own publication content'
   - 'delete own remote_video media'
@@ -62,6 +68,8 @@ permissions:
   - 'download own image files'
   - 'download own video files'
   - 'edit any basic_page content'
+  - 'edit any feature content'
+  - 'edit any landing_page content'
   - 'edit any news content'
   - 'edit any publication content'
   - 'edit own audio files'
@@ -69,9 +77,11 @@ permissions:
   - 'edit own basic_page content'
   - 'edit own document files'
   - 'edit own document media'
+  - 'edit own feature content'
   - 'edit own file media'
   - 'edit own image files'
   - 'edit own image media'
+  - 'edit own landing_page content'
   - 'edit own news content'
   - 'edit own publication content'
   - 'edit own remote_video media'
@@ -79,6 +89,8 @@ permissions:
   - 'moderate content from draft to needs_review'
   - 'moderate content from needs_review to draft'
   - 'revert basic_page revisions'
+  - 'revert feature revisions'
+  - 'revert landing_page revisions'
   - 'revert news revisions'
   - 'revert publication revisions'
   - 'use moderation sidebar'
@@ -93,6 +105,8 @@ permissions:
   - 'view all unpublished content'
   - 'view any unpublished content'
   - 'view basic_page revisions'
+  - 'view feature revisions'
+  - 'view landing_page revisions'
   - 'view latest version'
   - 'view news revisions'
   - 'view own files'

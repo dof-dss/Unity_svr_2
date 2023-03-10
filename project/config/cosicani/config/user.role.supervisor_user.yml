@@ -9,6 +9,8 @@ dependencies:
     - media.type.image
     - media.type.remote_video
     - node.type.basic_page
+    - node.type.feature
+    - node.type.landing_page
     - node.type.news
     - node.type.publication
     - node.type.webform
@@ -24,6 +26,7 @@ dependencies:
     - node
     - origins_metatag
     - origins_workflow
+    - path
     - redirect
     - scheduled_transitions
     - system
@@ -49,6 +52,7 @@ permissions:
   - 'add content to books'
   - 'add media from remote sources'
   - 'add scheduled transitions node basic_page'
+  - 'add scheduled transitions node feature'
   - 'add scheduled transitions node news'
   - 'add scheduled transitions node publication'
   - 'add scheduled transitions node webform'
@@ -62,13 +66,16 @@ permissions:
   - 'create audio media'
   - 'create basic_page content'
   - 'create document media'
+  - 'create feature content'
   - 'create file media'
   - 'create files'
   - 'create image media'
+  - 'create landing_page content'
   - 'create new books'
   - 'create news content'
   - 'create publication content'
   - 'create remote_video media'
+  - 'create url aliases'
   - 'create webform content'
   - 'delete all revisions'
   - 'delete all webform submissions'
@@ -77,9 +84,11 @@ permissions:
   - 'delete any basic_page content'
   - 'delete any document files'
   - 'delete any document media'
+  - 'delete any feature content'
   - 'delete any file media'
   - 'delete any image files'
   - 'delete any image media'
+  - 'delete any landing_page content'
   - 'delete any news content'
   - 'delete any page content'
   - 'delete any publication content'
@@ -88,15 +97,19 @@ permissions:
   - 'delete any video files'
   - 'delete any webform content'
   - 'delete basic_page revisions'
+  - 'delete feature revisions'
+  - 'delete landing_page revisions'
   - 'delete news revisions'
   - 'delete own audio files'
   - 'delete own audio media'
   - 'delete own basic_page content'
   - 'delete own document files'
   - 'delete own document media'
+  - 'delete own feature content'
   - 'delete own file media'
   - 'delete own image files'
   - 'delete own image media'
+  - 'delete own landing_page content'
   - 'delete own news content'
   - 'delete own publication content'
   - 'delete own remote_video media'
@@ -119,9 +132,11 @@ permissions:
   - 'edit any basic_page content'
   - 'edit any document files'
   - 'edit any document media'
+  - 'edit any feature content'
   - 'edit any file media'
   - 'edit any image files'
   - 'edit any image media'
+  - 'edit any landing_page content'
   - 'edit any news content'
   - 'edit any publication content'
   - 'edit any remote_video media'
@@ -132,9 +147,11 @@ permissions:
   - 'edit own basic_page content'
   - 'edit own document files'
   - 'edit own document media'
+  - 'edit own feature content'
   - 'edit own file media'
   - 'edit own image files'
   - 'edit own image media'
+  - 'edit own landing_page content'
   - 'edit own news content'
   - 'edit own publication content'
   - 'edit own remote_video media'
@@ -147,10 +164,13 @@ permissions:
   - 'moderate content from needs_review to published'
   - 'moderate content from published to needs_review'
   - 'reschedule scheduled transitions node basic_page'
+  - 'reschedule scheduled transitions node feature'
   - 'reschedule scheduled transitions node news'
   - 'reschedule scheduled transitions node publication'
   - 'revert all revisions'
   - 'revert basic_page revisions'
+  - 'revert feature revisions'
+  - 'revert landing_page revisions'
   - 'revert news revisions'
   - 'revert publication revisions'
   - 'schedule revisions'
@@ -177,6 +197,8 @@ permissions:
   - 'view any unpublished content'
   - 'view basic_page revisions'
   - 'view content references'
+  - 'view feature revisions'
+  - 'view landing_page revisions'
   - 'view latest version'
   - 'view moderation history'
   - 'view moderation messages'
@@ -185,6 +207,7 @@ permissions:
   - 'view own unpublished media'
   - 'view publication revisions'
   - 'view scheduled transitions node basic_page'
+  - 'view scheduled transitions node feature'
   - 'view scheduled transitions node news'
   - 'view scheduled transitions node publication'
   - 'view scheduled transitions node webform'
