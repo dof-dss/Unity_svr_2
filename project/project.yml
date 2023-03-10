@@ -56,7 +56,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/victimspaymentsboard ; drush core-cron'
         database: victimspaymentsboard
-        status: development
+        status: production
         default: false
     hiaredressni:
         name: 'HIA Redress Board'
