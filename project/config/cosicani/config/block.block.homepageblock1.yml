@@ -12,7 +12,7 @@ dependencies:
 id: homepageblock1
 theme: cosicani_theme
 region: top_first
-weight: 0
+weight: -11
 provider: null
 plugin: 'block_content:792c6603-83bd-4ac0-8d05-93187853ccba'
 settings:
