@@ -1,0 +1,32 @@
+uuid: ae21117c-1e16-40d9-b936-4cc461c9dc6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.judicial_tier.field_complement
+    - taxonomy.vocabulary.judicial_tier
+  module:
+    - text
+id: taxonomy_term.judicial_tier.default
+targetEntityType: taxonomy_term
+bundle: judicial_tier
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_complement:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
