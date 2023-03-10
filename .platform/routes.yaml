@@ -29,14 +29,6 @@
 'https://nicertoffice.org.uk/':
     type: redirect
     to: 'https://www.nicertoffice.org.uk/'
-'https://www.victimspaymentsboard.org.uk/':
-    type: upstream
-    upstream: 'unity_svr_2:http'
-    cache:
-        enabled: 'false'
-'https://victimspaymentsboard.org.uk/':
-    type: redirect
-    to: 'https://www.victimspaymentsboard.org.uk/'
 'https://www.hiaredressni.uk/':
     type: upstream
     upstream: 'unity_svr_2:http'
@@ -61,14 +53,6 @@
 'https://sentencereview.org.uk/':
     type: redirect
     to: 'https://www.sentencereview.org.uk/'
-'https://www.nicybersecuritycentre.gov.uk/':
-    type: upstream
-    upstream: 'unity_svr_2:http'
-    cache:
-        enabled: 'false'
-'https://nicybersecuritycentre.gov.uk/':
-    type: redirect
-    to: 'https://www.nicybersecuritycentre.gov.uk/'
 'https://www.ppsni.gov.uk/':
     type: upstream
     upstream: 'unity_svr_2:http'
