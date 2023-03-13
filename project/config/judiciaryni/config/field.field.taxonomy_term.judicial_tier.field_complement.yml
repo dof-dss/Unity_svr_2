@@ -1,0 +1,23 @@
+uuid: 77e7b641-9dfc-4682-8ae9-fa5d18ca9a6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_complement
+    - taxonomy.vocabulary.judicial_tier
+id: taxonomy_term.judicial_tier.field_complement
+field_name: field_complement
+entity_type: taxonomy_term
+bundle: judicial_tier
+label: Complement
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
