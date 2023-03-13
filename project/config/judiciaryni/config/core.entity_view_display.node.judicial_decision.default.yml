@@ -15,8 +15,7 @@ dependencies:
     - field.field.node.judicial_decision.field_publication_date
     - node.type.judicial_decision
   module:
-    - link
-    - metatag
+    - datetime
     - user
 id: node.judicial_decision.default
 targetEntityType: node
@@ -24,82 +23,51 @@ bundle: judicial_decision
 mode: default
 content:
   field_attachment:
-    type: entity_reference_label
-    label: above
+    type: entity_reference_entity_view
+    label: inline
     settings:
-      link: true
+      view_mode: embed
+      link: false
     third_party_settings: {  }
-    weight: 105
-    region: content
-  field_cross_reference:
-    type: link
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    weight: 108
+    weight: 4
     region: content
   field_decision_issues:
     type: basic_string
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 104
-    region: content
-  field_decision_pub_type:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 101
+    weight: 3
     region: content
   field_decision_title:
     type: basic_string
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 103
-    region: content
-  field_decision_type:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 106
-    region: content
-  field_description:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 107
+    weight: 0
     region: content
   field_judiciary:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    weight: 102
+    weight: 2
     region: content
-  field_meta_tags:
-    type: metatag_empty_formatter
-    label: above
-    settings: {  }
+  field_publication_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: unity_date
     third_party_settings: {  }
-    weight: 109
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
-  field_publication_date: true
+  content_moderation_control: true
+  field_cross_reference: true
+  field_decision_pub_type: true
+  field_decision_type: true
+  field_description: true
+  field_meta_tags: true
   langcode: true
+  links: true
