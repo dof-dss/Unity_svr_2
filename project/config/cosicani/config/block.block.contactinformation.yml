@@ -1,0 +1,25 @@
+uuid: 5e725c37-8691-48ab-8142-b0193123e8a6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:8519facf-802d-4d0c-806e-40b59f973f78'
+  module:
+    - block_content
+  theme:
+    - cosicani_theme
+id: contactinformation
+theme: cosicani_theme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:8519facf-802d-4d0c-806e-40b59f973f78'
+settings:
+  id: 'block_content:8519facf-802d-4d0c-806e-40b59f973f78'
+  label: 'Contact Information'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

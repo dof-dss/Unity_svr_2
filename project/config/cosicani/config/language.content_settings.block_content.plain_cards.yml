@@ -1,0 +1,13 @@
+uuid: ad1053b2-adc5-4be9-b521-a45dd56c66d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.plain_cards
+_core:
+  default_config_hash: afM5-Am7DAuKVMRWJzvcvXGr7tA-2U81ZrLGA6XSiq4
+id: block_content.plain_cards
+target_entity_type_id: block_content
+target_bundle: plain_cards
+default_langcode: site_default
+language_alterable: false

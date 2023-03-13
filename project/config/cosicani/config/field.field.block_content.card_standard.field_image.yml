@@ -1,0 +1,31 @@
+uuid: 9bc96761-afe1-441d-ab5b-e1eb282bab8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_standard
+    - field.storage.block_content.field_image
+    - media.type.image
+_core:
+  default_config_hash: UiyJcvfDgcCozMW3IVPFbnmqsE9Qcamf9SR5jgh2t9o
+id: block_content.card_standard.field_image
+field_name: field_image
+entity_type: block_content
+bundle: card_standard
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

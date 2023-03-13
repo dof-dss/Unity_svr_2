@@ -1,0 +1,12 @@
+uuid: fb7e59f6-ce79-444f-b734-cb8483cd322a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2FncWW4MKx-CxU6UpW2z7t0YTWljkh7dDtBVHNnuNZs
+id: accordion_section
+label: 'Accordion section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

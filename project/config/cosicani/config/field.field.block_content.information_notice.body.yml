@@ -1,0 +1,32 @@
+uuid: fa8f7378-5f5b-4b85-9acf-c88947915336
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.information_notice
+    - field.storage.block_content.body
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: full_html
+    basic_html_publications: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: YWB_Kz6gN_FKeuCJKgajGfTq5ogc3c_8fP6xLwwToSs
+id: block_content.information_notice.body
+field_name: body
+entity_type: block_content
+bundle: information_notice
+label: Body
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

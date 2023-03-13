@@ -1,9 +1,9 @@
-uuid: ab4a2575-2c32-4016-b308-28fdc96614b4
+uuid: f18db3fd-bc98-4693-adb3-243d7f136ad8
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic_block:34f852c1-c910-4874-8244-4369b565c5bb'
+    - 'block_content:link_block:2ac00549-ab3a-4dab-b24b-eb8d65bf0766'
   module:
     - block_content
     - system
@@ -12,11 +12,11 @@ dependencies:
 id: homepageblock5
 theme: cosicani_theme
 region: top_fifth
-weight: -5
+weight: 0
 provider: null
-plugin: 'block_content:34f852c1-c910-4874-8244-4369b565c5bb'
+plugin: 'block_content:2ac00549-ab3a-4dab-b24b-eb8d65bf0766'
 settings:
-  id: 'block_content:34f852c1-c910-4874-8244-4369b565c5bb'
+  id: 'block_content:2ac00549-ab3a-4dab-b24b-eb8d65bf0766'
   label: 'Homepage block 5'
   label_display: '0'
   provider: block_content

@@ -1,0 +1,10 @@
+uuid: 8101e050-20c4-4e6d-95a2-a2dff2c2625c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: WSk1p1eohJeTUwtav4mbHjVJr3HD3HixgZGaSEWqDlo
+id: card_standard
+label: 'Card - standard'
+revision: 1
+description: ''

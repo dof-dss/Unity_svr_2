@@ -95,6 +95,7 @@ module:
   responsive_image: 0
   scheduled_transitions: 0
   search: 0
+  shs: 0
   simplei: 0
   structure_sync: 0
   system: 0
@@ -110,7 +111,6 @@ module:
   unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0
-  update: 0
   user: 0
   views_custom_cache_tag: 0
   webform: 0
@@ -133,4 +133,5 @@ theme:
   stable: 0
   adminimal_theme: 0
   nicsdru_unity_theme: 0
+  judiciaryni_theme: 0
 profile: nicsdru_unity_profile

@@ -16,9 +16,29 @@ dependencies:
     - node.type.judicial_decision
   module:
     - content_moderation
+    - datetime
+    - field_group
     - link
     - metatag
     - path
+    - shs
+third_party_settings:
+  field_group:
+    group_guidelines:
+      children:
+        - field_decision_type
+        - field_description
+      label: 'JSB Guidelines'
+      region: content
+      parent_name: ''
+      weight: 16
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+        required_fields: true
 id: node.judicial_decision.default
 targetEntityType: node
 bundle: judicial_decision
@@ -26,13 +46,13 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_attachment:
     type: entity_reference_autocomplete
-    weight: 125
+    weight: 15
     region: content
     settings:
       match_operator: CONTAINS
@@ -42,7 +62,7 @@ content:
     third_party_settings: {  }
   field_cross_reference:
     type: link_default
-    weight: 128
+    weight: 17
     region: content
     settings:
       placeholder_url: ''
@@ -50,108 +70,106 @@ content:
     third_party_settings: {  }
   field_decision_issues:
     type: string_textarea
-    weight: 124
+    weight: 14
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
   field_decision_pub_type:
-    type: entity_reference_autocomplete
-    weight: 121
+    type: options_select
+    weight: 11
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_decision_title:
     type: string_textarea
-    weight: 123
+    weight: 13
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
   field_decision_type:
-    type: entity_reference_autocomplete
-    weight: 126
+    type: options_shs
+    weight: 15
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      display_node_count: false
+      create_new_items: false
+      create_new_levels: false
+      force_deepest: false
     third_party_settings: {  }
   field_description:
     type: string_textarea
-    weight: 127
+    weight: 16
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
   field_judiciary:
-    type: entity_reference_autocomplete
-    weight: 122
+    type: options_select
+    weight: 12
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_meta_tags:
     type: metatag_firehose
-    weight: 129
+    weight: 18
     region: content
     settings:
       sidebar: true
     third_party_settings: {  }
+  field_publication_date:
+    type: datetime_default
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 2
+    weight: 1
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
-    weight: 100
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 15
+    weight: 4
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 120
+    weight: 9
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 16
+    weight: 5
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
@@ -159,7 +177,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 2
     region: content
     settings:
       match_operator: CONTAINS
@@ -168,9 +186,8 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_publication_date: true
+hidden: {  }

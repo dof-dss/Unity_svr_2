@@ -29,14 +29,6 @@
 'https://nicertoffice.org.uk/':
     type: redirect
     to: 'https://www.nicertoffice.org.uk/'
-'https://www.victimspaymentsboard.org.uk/':
-    type: upstream
-    upstream: 'unity_svr_2:http'
-    cache:
-        enabled: 'false'
-'https://victimspaymentsboard.org.uk/':
-    type: redirect
-    to: 'https://www.victimspaymentsboard.org.uk/'
 'https://www.hiaredressni.uk/':
     type: upstream
     upstream: 'unity_svr_2:http'
@@ -45,14 +37,6 @@
 'https://hiaredressni.uk/':
     type: redirect
     to: 'https://www.hiaredressni.uk/'
-'https://www.nijac.gov.uk/':
-    type: upstream
-    upstream: 'unity_svr_2:http'
-    cache:
-        enabled: 'false'
-'https://nijac.gov.uk/':
-    type: redirect
-    to: 'https://www.nijac.gov.uk/'
 'https://www.community-relations.org.uk/':
     type: upstream
     upstream: 'unity_svr_2:http'
@@ -69,14 +53,6 @@
 'https://sentencereview.org.uk/':
     type: redirect
     to: 'https://www.sentencereview.org.uk/'
-'https://www.nicybersecuritycentre.gov.uk/':
-    type: upstream
-    upstream: 'unity_svr_2:http'
-    cache:
-        enabled: 'false'
-'https://nicybersecuritycentre.gov.uk/':
-    type: redirect
-    to: 'https://www.nicybersecuritycentre.gov.uk/'
 'https://www.ppsni.gov.uk/':
     type: upstream
     upstream: 'unity_svr_2:http'
@@ -101,14 +77,14 @@
 'https://cosica-ni.org/':
     type: redirect
     to: 'https://www.cosica-ni.org/'
-'https://www.judiciaryni/':
+'https://www.judiciaryni.uk/':
     type: upstream
     upstream: 'unity_svr_2:http'
     cache:
         enabled: 'false'
-'https://judiciaryni/':
+'https://judiciaryni.uk/':
     type: redirect
-    to: 'https://www.judiciaryni/'
+    to: 'https://www.judiciaryni.uk/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_2:http'

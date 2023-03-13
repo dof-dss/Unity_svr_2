@@ -3,11 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.judicial_decision
-    - node.type.judicial_member
+    - filter.format.basic_html
   module:
+    - filter
+    - media
     - node
-    - path
     - pathauto
     - system
 _core:
@@ -18,31 +18,25 @@ weight: 1
 is_admin: false
 permissions:
   - 'access administration menu'
-  - 'access administration pages'
   - 'access content'
   - 'access media browser'
   - 'access workbench'
   - 'check out documents'
-  - 'create judicial_decision content'
-  - 'create judicial_member content'
   - 'create publication_page content'
-  - 'create url aliases'
   - 'delete own publication_page content'
   - 'diff view changes'
-  - 'edit any judicial_decision content'
-  - 'edit any judicial_member content'
   - 'edit any publication_page content'
-  - 'edit own judicial_decision content'
-  - 'edit own judicial_member content'
   - 'edit own publication_page content'
   - 'notify of path changes'
   - 'revert revisions'
   - 'use media wysiwyg'
+  - 'use text format basic_html'
   - 'use text format filtered_html'
   - 'use text format filtered_html_with_no_images'
+  - 'view all revisions'
   - 'view files'
+  - 'view media'
   - 'view moderation history'
   - 'view moderation messages'
   - 'view own unpublished content'
   - 'view revisions'
-  - 'view the administration theme'
