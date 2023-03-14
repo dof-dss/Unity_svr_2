@@ -82,6 +82,21 @@ process:
     -
       plugin: get
       source: body
+    -
+      plugin: media_wysiwyg_filter
+    -
+      plugin: filter_absolute_links
+      replace_urls:
+        http://www.ppsni.gov.uk
+        https://www.ppsni.gov.uk
+    -
+      plugin: site_files_filter
+      from_ref: sites/ppsni/files
+      to_ref: files/ppsni
+    -
+      plugin: site_files_filter
+      from_ref: sites/www.ppsni.gov.uk/files
+      to_ref: files/ppsni
   body/0/format:
     -
       plugin: static_map
