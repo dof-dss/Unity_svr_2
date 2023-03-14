@@ -23,6 +23,11 @@ targetEntityType: node
 bundle: judicial_decision
 mode: default
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_attachment:
     type: entity_reference_label
     label: above
