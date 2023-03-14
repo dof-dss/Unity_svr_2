@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.body
     - search_api.index.publications
-    - system.menu.main
   module:
     - search_api
     - text
@@ -273,7 +272,7 @@ display:
         metatag_display_extender: {  }
       path: publications
       menu:
-        type: normal
+        type: none
         title: Publications
         description: ''
         weight: -45
