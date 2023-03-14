@@ -1,0 +1,10 @@
+uuid: fabf5398-0fa8-4116-be14-392e36b37143
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.svg_image
+label: 'SVG image'
+targetEntityType: media
+cache: true
