@@ -11,7 +11,7 @@ entity_type: node
 bundle: judicial_decision
 label: 'Decision title'
 description: 'Enter the formal title for the case in this decision, R v Bloggs etc'
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
