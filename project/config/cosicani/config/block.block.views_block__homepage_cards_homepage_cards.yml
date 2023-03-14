@@ -1,0 +1,29 @@
+uuid: db1bd7d8-f9d1-404f-9baa-861c3e6adaf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.homepage_cards
+  module:
+    - system
+    - views
+  theme:
+    - cosicani_theme
+id: views_block__homepage_cards_homepage_cards
+theme: cosicani_theme
+region: front_welcome
+weight: 0
+provider: null
+plugin: 'views_block:homepage_cards-homepage_cards'
+settings:
+  id: 'views_block:homepage_cards-homepage_cards'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
