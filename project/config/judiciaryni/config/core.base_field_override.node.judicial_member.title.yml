@@ -1,0 +1,18 @@
+uuid: 73934657-a3fc-43c1-810f-c76ad7d3ca0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.judicial_member
+id: node.judicial_member.title
+field_name: title
+entity_type: node
+bundle: judicial_member
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

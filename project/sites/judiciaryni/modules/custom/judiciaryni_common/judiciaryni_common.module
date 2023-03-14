@@ -1,0 +1,100 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\node\NodeInterface;
+use Drupal\Component\Utility\Xss;
+
+/**
+ * Implements hook_form_alter().
+ */
+function judiciaryni_common_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+if ($form_id == 'node_judicial_member_form' || 'node_judicial_member_edit_form') {
+  $form['title']['#disabled'] = 'disabled';
+  $form['title']['widget'][0]['value']['#description'] = t('You cannot edit this field. It is created automatically using the Name of Judge and Judicial Tier.');
+
+}
+
+  if ($form_id == 'node_judicial_member_form') {
+    array_unshift($form['actions']['submit']['#submit'], 'judiciaryni_common_member_page_form_submit');
+  }
+}
+
+function judiciaryni_common_member_page_form_submit(&$form, FormStateInterface $form_state) {
+  $page_title = $form_state->getValue('title');
+  $judgeName = $form_state->getValue('field_surname');
+  $judgeSex = $form_state->getValue('field_sex_of_member');
+  $titleKey = $form_state->getValue('field_prefix_title');
+  $judgeTitle = $form_state->getValue('field_prefix_title');
+  $tierTID = $form_state->getValue('field_judicial_tier');
+  $shorttitle = $judgeTitle[0]['value'] . ' ' . $judgeName[0]['value'];
+
+  if ($tierTID[0]['target_id'] !== NULL) {
+    $tier = Term::load($tierTID[0]['target_id']);
+    $tierName = $tier->getName();
+
+    if ($judgeName[0]['value'] == 'Vacant') {
+      $shorttitle = $judgeName[0]['value'] . ' ' . $tierName;
+    }
+    elseif ($tierName == 'Lord Chief Justice') {
+      $shorttitle = $judgeName[0]['value'] . ' LCJ';
+    }
+    elseif ($tierName == 'Lady Chief Justice') {
+      $shorttitle = $judgeName[0]['value'] . ' LCJ';
+    }
+    elseif ($tierName == 'Justice of Appeal' && $judgeSex[0]['value'] == 'male') {
+      $shorttitle = $judgeName[0]['value'] . ' LJ';
+    }
+    elseif ($tierName == 'Justice of Appeal' && $judgeSex[0]['value'] !== 'male') {
+      $shorttitle = $judgeName[0]['value'] . ' LJ';
+    }
+    elseif ($tierName == 'High Court Judge' && $judgeSex[0]['value'] == 'male') {
+      $shorttitle = $judgeName[0]['value'] . ' J';
+    }
+    elseif ($tierName == 'High Court Judge' && $judgeSex[0]['value'] !== 'male') {
+      $shorttitle = $judgeName[0]['value'] . ' J';
+    }
+    elseif ($tierName == 'County Court Judge' && $judgeSex[0]['value'] == 'male') {
+      $shorttitle = 'His Honour Judge ' . $judgeName[0]['value'];
+    }
+    elseif ($tierName == 'County Court Judge' && $judgeSex[0]['value'] !== 'male') {
+      $shorttitle = 'Her Honour Judge ' . $judgeName[0]['value'];
+    }
+    elseif ($tierName == 'Recorder of Belfast' or $tierName == 'Recorder of Londonderry') {
+      $hes = 'His';
+      if ($judgeSex[0]['value'] !== 'male') {
+        $hes = 'Her';
+      }
+      $shorttitle = "$hes Honour Judge $judgeName[0]['value']";
+    }
+    elseif ($tierName == 'Master of the High Court') {
+      $shorttitle = 'Master ' . $judgeName[0]['value'];
+    }
+    elseif ($tierName == 'District Judge') {
+      $shorttitle = "District Judge $judgeName[0]['value']";
+    }
+    elseif ($tierName == "District Judge (Magistrates’ Courts)") {
+      $shorttitle = "District Judge (MC) $judgeName[0]['value']";
+    }
+    elseif ($tierName == "Presiding District Judge (Magistrates’ Courts)") {
+      $shorttitle = "District Judge (MC) $judgeName[0]['value']";
+    }
+  }
+
+  //$page_title[0]['value'] = $shorttitle;
+  $form_state->setValue('title', ['0' => ['value' => $shorttitle]]);
+  //$form['title']['widget'][0]['value']['#default_value'] = $shorttitle;
+}
+
+/**
+ * Implements hook_entity_presave().
+ */
+function judiciaryni_common_entity_presave(EntityInterface $entity) {
+  $x = 1;
+  // This will fire when nodes are created or edited.
+  if ($entity instanceof NodeInterface && $entity->bundle() === 'judicial_member') {
+    $title = Xss::filter($entity->get('title')->value);
+    $entity->setTitle($title);
+  }
+}
