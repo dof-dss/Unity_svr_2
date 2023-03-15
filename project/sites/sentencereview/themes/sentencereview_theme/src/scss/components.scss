@@ -5,6 +5,12 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
+#headerHero {
+  @media screen and (max-width: $tab) {
+    background: $brand-secondary;
+  }
+}
+
 #main-menu {
   .menu {
     .menu-item {
@@ -31,6 +37,7 @@
         background: $menu-item-hover;
         border-bottom-color: $brand-primary;
         color: #fff;
+        padding-right: 1rem;
       }
     }
   }

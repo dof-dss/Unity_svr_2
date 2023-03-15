@@ -1,0 +1,23 @@
+uuid: ec32f9cd-1366-4b00-b770-d87cf398d828
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - entity_reference_revisions
+    - paragraphs
+_core:
+  default_config_hash: RI8wLBfkaGScLelxV-_pgnYoWCUtNPvIg8rLK0w6HjM
+id: block_content.field_plain_cards
+field_name: field_plain_cards
+entity_type: block_content
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

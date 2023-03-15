@@ -15,7 +15,6 @@ dependencies:
     - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
-    - entity_browser
     - media
     - menu_admin_per_menu
     - moderation_sidebar
@@ -35,7 +34,6 @@ permissions:
   - 'access content overview'
   - 'access location_browser entity browser pages'
   - 'access media overview'
-  - 'access site reports'
   - 'access toolbar'
   - 'add media from remote sources'
   - 'administer main menu items'

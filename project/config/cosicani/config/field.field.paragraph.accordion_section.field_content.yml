@@ -1,0 +1,30 @@
+uuid: eb15d1ee-344d-4877-8c0f-c34df3ab3b08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.accordion_section
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: full_html
+    basic_html_publications: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: D-w3A9ImwXbQ9wBhFVvW31RvIk6aiVcE-XQY2kQnESc
+id: paragraph.accordion_section.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: accordion_section
+label: Content
+description: 'Content for this accordion section.  The content in an accordion section is "collapsed" until the section title is clicked to expand it.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

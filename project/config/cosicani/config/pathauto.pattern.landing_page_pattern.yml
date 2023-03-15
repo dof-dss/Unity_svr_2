@@ -1,0 +1,24 @@
+uuid: 74882a7d-82ff-4b54-a91f-86aada740855
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: xYRW-Bjo2CT9dxN9aA8Vrc68IwQAIxAZsjzMcwSFgcA
+id: landing_page_pattern
+label: 'Landing page pattern'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  5dac2e19-58a3-40ca-9b4c-82810af94692:
+    id: node_type
+    negate: false
+    uuid: 5dac2e19-58a3-40ca-9b4c-82810af94692
+    context_mapping:
+      node: node
+    bundles:
+      landing_page: landing_page
+selection_logic: and
+weight: -5
+relationships: {  }

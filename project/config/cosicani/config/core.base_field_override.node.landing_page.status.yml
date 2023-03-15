@@ -1,0 +1,24 @@
+uuid: 2937c949-b6a6-4333-8ef0-e5e7271fb25d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.landing_page
+_core:
+  default_config_hash: ewmZbuO4KgD36Ka7QA-8tJ9jktJH-jQbTNMrkHfuQRc
+id: node.landing_page.status
+field_name: status
+entity_type: node
+bundle: landing_page
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
