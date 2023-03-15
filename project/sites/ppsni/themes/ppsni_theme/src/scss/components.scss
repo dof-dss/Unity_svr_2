@@ -7,15 +7,14 @@
 
 #main-menu {
   background: $white;
+
   .menu-link,
   .menu .active {
     color: $brand-primary;
     @include adjust-font-size-to(16px);
   }
 
-  .menu
-  .menu-item
-  .active {
+  .menu .menu-item .active {
     border-bottom-color: $brand-primary;
   }
 
@@ -26,9 +25,8 @@
       color: $white;
     }
   }
-  .menu-main_sub
-  .menu-item
-  span.active {
+
+  .menu-main_sub .menu-item span.active {
     @include adjust-font-size-to(14px);
     border-bottom-color: $brand-secondary;
     padding: 1rem;
@@ -72,22 +70,6 @@
   }
 }
 
-.front {
-  #slick-views-slideshow-slideshow-1-slider {
-    .slide__caption {
-      @include breakpoint($tab) {
-        background: rgba(0, 0, 0, 0.6);
-        font-size: 2rem;
-        padding: 1rem 1rem 1rem 1rem;
-      }
-
-      .slide__caption {
-        font-size: 2rem;
-        padding: 1rem 1rem 1rem 1rem;
-      }
-    }
-  }
-}
 .front #top-area {
   border-bottom: 9px solid $brand-secondary;
 
@@ -103,13 +85,14 @@
       padding: 1rem 0 2rem;
       line-height: 1.5;
       color: $black;
-  }
-}
-      h3 {
-        @include adjust-font-size-to(18px);
-        margin: 0;
     }
   }
+
+  h3 {
+    @include adjust-font-size-to(18px);
+    margin: 0;
+  }
+}
 
 #topics-home {
   h2 {
@@ -119,6 +102,7 @@
       padding: 2%;
     }
   }
+
   h3 {
     margin: 1.6rem 0 1.8rem;
   }
@@ -158,17 +142,17 @@
     display: block;
   }
 
-    .footer-area {
-      display: flex;
+  .footer-area {
+    display: flex;
 
-      .column {
-        width: auto;
+    .column {
+      width: auto;
 
-        h2 {
-          margin: 2.6rem 0 1.8rem;
-        }
+      h2 {
+        margin: 2.6rem 0 1.8rem;
       }
     }
+  }
 
   .footer-menu li {
     padding-left: 0;
@@ -189,6 +173,7 @@
     }
   }
 }
+
 .node-type-webform {
   @include breakpoint($tab) {
     .content-sidebar-wrap {
@@ -220,6 +205,36 @@
 
     &:focus {
       border-color: $black;
+    }
+  }
+}
+
+.sidebar-second-layout {
+  .rel-menu--latest-news {
+    margin-bottom: 2rem;
+
+    ul {
+      margin-bottom: 1rem;
+
+      li {
+        padding: 0 0 .6rem 1rem;
+        list-style: none;
+        margin: 0 0 .2rem;
+        position: relative;
+
+        &::before {
+          content: "-";
+          left: 0;
+          position: absolute;
+          top: 0;
+        }
+
+        .date-published {
+          display: block;
+          font-size: 1.4rem;
+          line-height: 1.8rem;
+        }
+      }
     }
   }
 }
