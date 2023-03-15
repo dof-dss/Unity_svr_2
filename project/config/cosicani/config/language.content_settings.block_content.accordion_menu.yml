@@ -1,0 +1,13 @@
+uuid: a698400f-0c5a-4e65-8932-a1eff67dc41d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.accordion_menu
+_core:
+  default_config_hash: pUL0HnI7TJKcPFmz-h3Zu896EKcPoO5hUY3-ek6nyC0
+id: block_content.accordion_menu
+target_entity_type_id: block_content
+target_bundle: accordion_menu
+default_langcode: site_default
+language_alterable: false

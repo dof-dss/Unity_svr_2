@@ -23,7 +23,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'News Search'
+      title: News
       fields:
         body:
           id: body

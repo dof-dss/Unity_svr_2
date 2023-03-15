@@ -1,0 +1,143 @@
+uuid: 13d1b5f6-af73-4b99-9582-69e10feffe71
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.diff
+    - field.field.node.judicial_decision.field_attachment
+    - field.field.node.judicial_decision.field_cross_reference
+    - field.field.node.judicial_decision.field_decision_issues
+    - field.field.node.judicial_decision.field_decision_pub_type
+    - field.field.node.judicial_decision.field_decision_title
+    - field.field.node.judicial_decision.field_decision_type
+    - field.field.node.judicial_decision.field_description
+    - field.field.node.judicial_decision.field_judiciary
+    - field.field.node.judicial_decision.field_meta_tags
+    - field.field.node.judicial_decision.field_publication_date
+    - node.type.judicial_decision
+  module:
+    - datetime
+    - field_group
+    - layout_builder
+    - link
+    - metatag
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  field_group:
+    group_additional_content_details:
+      children:
+        - field_decision_pub_type
+        - field_cross_reference
+        - field_decision_type
+        - field_description
+        - field_meta_tags
+      label: 'Additional content details'
+      parent_name: ''
+      region: content
+      weight: 5
+      format_type: html_element
+      format_settings:
+        classes: field-collection
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.judicial_decision.diff
+targetEntityType: node
+bundle: judicial_decision
+mode: diff
+content:
+  field_attachment:
+    type: entity_reference_entity_view
+    label: inline
+    settings:
+      view_mode: embed
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_cross_reference:
+    type: link
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_decision_issues:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_decision_pub_type:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_decision_title:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_decision_type:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_description:
+    type: basic_string
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_judiciary:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_publication_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: unity_date
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  content_moderation_control: true
+  langcode: true
+  links: true

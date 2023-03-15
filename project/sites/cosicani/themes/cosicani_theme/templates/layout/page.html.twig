@@ -93,14 +93,9 @@
     </h1>
   {% endif %}
   {% endif %}
-  <div class="front-banner">
-    <img
-      src="sites/cosicani/themes/cosicani_theme/images/cosica-banner.png"
-      alt="">
-  </div>
   {{ page.front_welcome }}
 
-  {% if page.top_first or page.top_second or page.top_third %}
+  {% if page.top_first or page.top_second or page.top_third or page.top_fourth %}
     <div id="top-area" class="clearfix">
       {% if page.top_first %}
         <div id="home-block-1" class="column">
@@ -117,31 +112,14 @@
           {{ page.top_third }}
         </div>
       {% endif %}
-    </div>
-  {% endif %}
-  {% endif %}
-
-  {% if page.top_fourth or page.top_fifth or page.top_sixth %}
-    <div id="top-area" class="clearfix">
       {% if page.top_fourth %}
         <div id="home-block-4" class="column">
           {{ page.top_fourth }}
         </div>
       {% endif %}
-      {% if page.top_fifth %}
-        <div id="home-block-5" class="column">
-          {{ page.top_fifth}}
-        </div>
-      {% endif %}
-      {% if page.top_sixth %}
-        <div id="home-block-6" class="column">
-          {{ page.top_sixth }}
-        </div>
-      {% endif %}
     </div>
   {% endif %}
-
-
+  {% endif %}
   {# If the homepage has a basic page or for every other page apart from the homepage show the basic page structure. #}
   {% if basic_page_structure is not empty or basic_page_structure is empty and not is_front %}
     <div id="container">
@@ -234,7 +212,7 @@
 {% endif %}
 
 <footer id="footer">
-  <div id="footer_wrapper">
+  <div id="footer_wrapper"  class="container-wrap">
     {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth or page.footer %}
       <div id="footer-area" class="footer-area container-wrap clearfix">
         {% if page.footer_first %}

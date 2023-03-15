@@ -1,0 +1,29 @@
+uuid: 3c3d6108-b080-45fe-9253-740859d546ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.video
+    - field.field.block_content.video.field_video
+  module:
+    - media_library
+    - media_library_edit
+_core:
+  default_config_hash: n-TuUQ4tW7OzI-n914MvVh_2CPlJKz-kLWXpP0EfSqo
+id: block_content.video.default
+targetEntityType: block_content
+bundle: video
+mode: default
+content:
+  field_video:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
+hidden:
+  info: true
+  langcode: true

@@ -1,9 +1,9 @@
-uuid: 54ce0dba-8425-44ab-90e2-797017d3761d
+uuid: 358e1af1-c97f-43b7-8409-70dd7ce52e79
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic_block:bb0a7025-fab6-4dc8-b25d-05b255df7b5c'
+    - 'block_content:link_block:7fdc56c3-f5b0-4b89-9d6b-3889e9b4880d'
   module:
     - block_content
     - system
@@ -14,9 +14,9 @@ theme: cosicani_theme
 region: bottom_widget_1
 weight: 0
 provider: null
-plugin: 'block_content:bb0a7025-fab6-4dc8-b25d-05b255df7b5c'
+plugin: 'block_content:7fdc56c3-f5b0-4b89-9d6b-3889e9b4880d'
 settings:
-  id: 'block_content:bb0a7025-fab6-4dc8-b25d-05b255df7b5c'
+  id: 'block_content:7fdc56c3-f5b0-4b89-9d6b-3889e9b4880d'
   label: 'Fiona home '
   label_display: '0'
   provider: block_content

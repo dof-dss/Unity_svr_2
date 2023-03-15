@@ -1,0 +1,211 @@
+uuid: e406a50c-ae9a-45d6-ad6f-3c387d217aaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_page.field_body
+    - field.field.node.landing_page.layout_builder__layout
+    - node.type.landing_page
+  module:
+    - layout_builder
+    - layout_builder_restrictions
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+  layout_builder_restrictions:
+    allowed_block_categories:
+      - 'Chaos Tools'
+      - 'Content fields'
+      - 'Custom block types'
+      - 'Custom blocks'
+      - Devel
+      - Facets
+      - 'Facets summary (Experimental)'
+      - Forms
+      - Geolocation
+      - Help
+      - 'Inline blocks'
+      - 'Lists (Views)'
+      - Menus
+      - Origins
+      - 'Read Only Mode'
+      - System
+      - 'Unity Search Pages'
+      - User
+      - Views
+      - Webform
+      - 'Webform access'
+      - core
+    entity_view_mode_restriction:
+      allowed_layouts:
+        - layout_onecol
+        - teasers_x3
+        - teasers_x2
+      restricted_categories:
+        - 'Unity Search Pages'
+      blacklisted_blocks: {  }
+      whitelisted_blocks:
+        'Chaos Tools': {  }
+        'Content fields': {  }
+        'Custom block types':
+          - accordion_menu
+          - banner_deep
+          - card_contact
+          - card_nested_standard
+          - card_nested_wide
+          - card_standard
+          - card_wide
+          - information_notice
+          - plain_cards
+          - text
+          - video
+          - video_and_caption
+        'Custom blocks': {  }
+        Devel: {  }
+        Facets: {  }
+        'Facets summary (Experimental)': {  }
+        Forms: {  }
+        Geolocation: {  }
+        Help: {  }
+        'Inline blocks':
+          - 'inline_block:accordion_menu'
+          - 'inline_block:banner_deep'
+          - 'inline_block:card_contact'
+          - 'inline_block:card_standard'
+          - 'inline_block:card_wide'
+          - 'inline_block:card_nested_standard'
+          - 'inline_block:card_nested_wide'
+          - 'inline_block:information_notice'
+          - 'inline_block:plain_cards'
+          - 'inline_block:text'
+          - 'inline_block:video'
+          - 'inline_block:video_and_caption'
+        'Lists (Views)': {  }
+        Menus: {  }
+        Origins: {  }
+        'Read Only Mode': {  }
+        System: {  }
+        User: {  }
+        Views: {  }
+        Webform: {  }
+        'Webform access': {  }
+        core: {  }
+    entity_view_mode_restriction_by_region:
+      allowed_layouts:
+        - layout_onecol
+        - teasers_x3
+        - teasers_x2
+      whitelisted_blocks:
+        layout_onecol:
+          all_regions:
+            'Chaos Tools': {  }
+            'Content fields': {  }
+            'Custom block types':
+              - accordion_menu
+              - banner_deep
+              - card_contact
+              - information_notice
+              - plain_cards
+              - text
+              - video_and_caption
+            'Custom blocks': {  }
+            Devel: {  }
+            Facets: {  }
+            'Facets summary (Experimental)': {  }
+            Forms: {  }
+            Geolocation: {  }
+            Help: {  }
+            'Inline blocks':
+              - 'inline_block:accordion_menu'
+              - 'inline_block:banner_deep'
+              - 'inline_block:card_contact'
+              - 'inline_block:information_notice'
+              - 'inline_block:plain_cards'
+              - 'inline_block:text'
+              - 'inline_block:video_and_caption'
+            'Lists (Views)': {  }
+            Menus: {  }
+            Origins: {  }
+            'Read Only Mode': {  }
+            System: {  }
+            User: {  }
+            Views: {  }
+            Webform: {  }
+            'Webform access': {  }
+            core: {  }
+        teasers_x2:
+          all_regions:
+            'Chaos Tools': {  }
+            'Content fields': {  }
+            'Custom block types':
+              - card_contact
+              - card_nested_wide
+              - card_wide
+              - video
+            'Custom blocks': {  }
+            Devel: {  }
+            Facets: {  }
+            'Facets summary (Experimental)': {  }
+            Forms: {  }
+            Geolocation: {  }
+            Help: {  }
+            'Inline blocks':
+              - 'inline_block:card_contact'
+              - 'inline_block:card_wide'
+              - 'inline_block:card_nested_wide'
+              - 'inline_block:video'
+            'Lists (Views)': {  }
+            Menus: {  }
+            Origins: {  }
+            'Read Only Mode': {  }
+            System: {  }
+            User: {  }
+            Views: {  }
+            Webform: {  }
+            'Webform access': {  }
+            core: {  }
+        teasers_x3:
+          all_regions:
+            'Chaos Tools': {  }
+            'Content fields': {  }
+            'Custom block types':
+              - card_contact
+              - card_nested_standard
+              - card_standard
+            'Custom blocks': {  }
+            Devel: {  }
+            Facets: {  }
+            'Facets summary (Experimental)': {  }
+            Forms: {  }
+            Geolocation: {  }
+            Help: {  }
+            'Inline blocks':
+              - 'inline_block:card_contact'
+              - 'inline_block:card_standard'
+              - 'inline_block:card_nested_standard'
+            'Lists (Views)': {  }
+            Menus: {  }
+            Origins: {  }
+            'Read Only Mode': {  }
+            System: {  }
+            User: {  }
+            Views: {  }
+            Webform: {  }
+            'Webform access': {  }
+            core: {  }
+_core:
+  default_config_hash: IgqThvQbw06lmr4GqopYNGRJsETGksWt3rmd8rBGeZA
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content: {  }
+hidden:
+  content_moderation_control: true
+  field_body: true
+  langcode: true
+  layout_builder__layout: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,25 @@
+uuid: 7cf8858e-e537-4863-b75e-43d667bdbfc1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:5f064435-7a44-41bb-9a40-a64d7cb97e59'
+  module:
+    - block_content
+  theme:
+    - cosicani_theme
+id: sociallinks
+theme: cosicani_theme
+region: footer_second
+weight: 0
+provider: null
+plugin: 'block_content:5f064435-7a44-41bb-9a40-a64d7cb97e59'
+settings:
+  id: 'block_content:5f064435-7a44-41bb-9a40-a64d7cb97e59'
+  label: 'Social links'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
