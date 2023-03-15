@@ -18,7 +18,7 @@
 
 #header {
   @media screen and (min-width: $tab) {
-    margin-bottom: 5rem;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -29,11 +29,17 @@
   }
 }
 
+.region-primary-menu {
+  border-top: 1px solid #5c7a84;
+}
+
+.menu_wrapper {
+  border-bottom: solid 5px;
+  border-image: linear-gradient(to right, teal 33%, red 33%, red 66%, yellow 33%) 5;
+}
 
 #main-menu {
   background: $white;
-  border-bottom: solid 5px;
-  border-image: linear-gradient(to right, teal 33%, red 33%, red 66%, yellow 33%) 5;
 
   .menu-link,
   .menu .active,
@@ -66,8 +72,10 @@
     background: $brand-primary;
 
     .menu-item {
+      background: $brand-primary;
+
       .active {
-        background: $brand-secondary;
+        background: $brand-primary;
         color: $white;
       }
 
@@ -125,54 +133,87 @@
   .cards-pack {
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 1em;
+
+    @media screen and (min-width: $phab) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (min-width: $tab) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 
   .card {
     list-style: none;
     text-align: left;
 
+    .card__link::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 3rem;
+      right: 0.5rem;
+      width: 3rem;
+      height: 3rem;
+      //background: no-repeat center / 2.5rem resolve('arrow_forward_white.svg');
+      mask: no-repeat 100% 100% resolve('arrow_forward_white.svg');
+      mask-size: cover;
+      background-color: #fff;
+    }
+
     &.odd .card__link {
-      background: #22353b;
+      background: $brand-primary;
+
+      &::after {
+        background-color: $brand-primary;
+      }
     }
 
     &.even .card__link {
-      background: #5c7a84;
-    }
-  }
+      background: $brand-secondary;
 
-  .media-image {
-    display: block;
-    margin: 0;
-    position: absolute;
-    right: 1.5rem;
-    bottom: 1.5rem;
-    width: 9rem;
-    height: auto;
+      &::after {
+        background-color: $brand-secondary;
+      }
+    }
+
+    .media-image {
+      display: block;
+      margin: 0;
+      position: absolute;
+      right: 1.5rem;
+      bottom: 1.5rem;
+      width: 9rem;
+      height: auto;
+    }
   }
 }
 
-#content .homepage--card-deck .card__link {
-  border-bottom: 0 !important;
-  color: #fff;
-  display: block;
-  height: 100%;
-  min-height: 240px;
-  padding: 3rem 5rem 9rem 1.5rem !important;
-  position: relative;
-  text-decoration: none;
-  @include adjust-font-size-to(21px);
+#content .homepage--card-deck {
+  .card__link {
+    border-bottom: 0 !important;
+    border-left: 5px solid transparent;
+    color: #fff;
+    display: block;
+    height: 100%;
+    min-height: 240px;
+    padding: 3rem 5rem 9rem 1.5rem !important;
+    position: relative;
+    text-decoration: none;
+    @include adjust-font-size-to(21px);
 
-  &::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 3rem;
-    right: 0.5rem;
-    width: 3rem;
-    height: 3rem;
-    background: no-repeat center / 2.5rem resolve('arrow_forward_white.svg');
+    &:hover,
+    &:focus {
+      background: #e7e7e7;
+      color: $brand-primary;
+      border-left-color: $brand-primary;
+    }
+
+    &:focus {
+      outline: 2px solid $brand-primary;
+    }
   }
 }
 
