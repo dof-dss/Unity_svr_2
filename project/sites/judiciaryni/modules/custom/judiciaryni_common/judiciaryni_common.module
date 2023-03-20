@@ -4,13 +4,12 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\taxonomy\Entity\Term;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\node\NodeInterface;
-use Drupal\Component\Utility\Xss;
 
 /**
  * Implements hook_form_alter().
  */
 function judiciaryni_common_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  if ($form_id == 'node_judicial_member_form' || 'node_judicial_member_edit_form') {
+  if ($form_id == 'node_judicial_member_form' || $form_id == 'node_judicial_member_edit_form') {
     $form['title']['#disabled'] = 'disabled';
     $form['title']['widget'][0]['value']['#description'] = t('You cannot edit this field. It is created automatically using the Name of Judge and Judicial Tier.');
 
@@ -24,8 +23,6 @@ function judiciaryni_common_form_alter(&$form, FormStateInterface $form_state, $
 function judiciaryni_common_entity_presave(EntityInterface $entity) {
   // This will fire when nodes are created or edited.
   if ($entity instanceof NodeInterface && $entity->bundle() === 'judicial_member') {
-    $title = Xss::filter($entity->get('title')->value);
-    $entity->setTitle($title);
 
     $judgeName = $entity->get('field_surname')->value;
     $judgeSex = $entity->get('field_sex_of_member')->value;
