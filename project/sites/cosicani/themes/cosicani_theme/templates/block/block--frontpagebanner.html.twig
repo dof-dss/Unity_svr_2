@@ -31,18 +31,18 @@
 #}
 {%
   set classes = [
-  'block',
-  'block-' ~ configuration.provider|clean_class,
-  'block-' ~ plugin_id|clean_class,
-  'block-homepage-block',
-]
+    'homepage--pull-quote',
+  ]
 %}
-<div{{ attributes.addClass(classes) }}>
-  <a href="{{ content.field_link[0]["#url"]|render }}">
+<div{{ attributes.addClass(classes).setAttribute('role', 'presentation') }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
   {% block content %}
-    <div{{ content_attributes.addClass('content') }}>
-        {{ content|without("field_link") }}
+    <div{{ content_attributes.addClass('container-wrap').setAttribute('role', 'presentation') }}>
+      {{ content }}
     </div>
   {% endblock %}
-  </a>
 </div>

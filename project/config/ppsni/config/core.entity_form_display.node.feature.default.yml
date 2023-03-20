@@ -10,6 +10,7 @@ dependencies:
     - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
+    - link
     - media_library
     - media_library_edit
     - path
@@ -26,6 +27,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_link_url:
+    type: link_default
+    weight: 12
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
   field_photo:
     type: media_library_widget
     weight: 11
@@ -34,7 +43,7 @@ content:
       media_types: {  }
     third_party_settings:
       media_library_edit:
-        show_edit: 0
+        show_edit: '1'
   field_teaser:
     type: string_textfield
     weight: 10
@@ -140,5 +149,4 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_link_url: true
+hidden: {  }
