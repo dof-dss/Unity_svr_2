@@ -41,7 +41,7 @@ third_party_settings:
         show_empty_fields: false
         id: ''
         description: ''
-        required_fields: true
+        required_fields: false
 id: node.judicial_decision.default
 targetEntityType: node
 bundle: judicial_decision

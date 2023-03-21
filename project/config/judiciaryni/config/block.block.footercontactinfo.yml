@@ -1,0 +1,25 @@
+uuid: 422a018a-7a15-41f0-9c21-a8d402719389
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:c270c75a-1af1-45c1-83f1-60d3156aaaa6'
+  module:
+    - block_content
+  theme:
+    - judiciaryni_theme
+id: footercontactinfo
+theme: judiciaryni_theme
+region: footer_first
+weight: -6
+provider: null
+plugin: 'block_content:c270c75a-1af1-45c1-83f1-60d3156aaaa6'
+settings:
+  id: 'block_content:c270c75a-1af1-45c1-83f1-60d3156aaaa6'
+  label: 'Footer contact info'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
