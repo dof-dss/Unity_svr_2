@@ -15,7 +15,7 @@ dependencies:
     - field.field.node.judicial_member.field_surname
     - node.type.judicial_member
   module:
-    - metatag
+    - datetime
     - text
     - user
 id: node.judicial_member.default
@@ -28,32 +28,26 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 1
     region: content
-  content_moderation_control:
-    settings: {  }
+  field_date_appointed:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: unity_date
     third_party_settings: {  }
-    weight: -20
-    region: content
-  field_meta_tags:
-    type: metatag_empty_formatter
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 102
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
-  field_date_appointed: true
+  content_moderation_control: true
   field_first_name: true
   field_full_title: true
   field_judicial_status: true
   field_judicial_tier: true
+  field_meta_tags: true
   field_prefix_title: true
   field_sex_of_member: true
   field_surname: true
   langcode: true
+  links: true
