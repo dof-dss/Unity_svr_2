@@ -1,22 +1,22 @@
-uuid: 69374ccb-2bf2-479c-ac4d-dbcb2f09bd38
+uuid: 5a78c3cb-15a9-4977-99be-f73f3ac35ea5
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: board_member_pattern
-label: 'Board member pattern'
+id: core_funded_groups_pattern
+label: 'Core funded groups pattern'
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  c49a0329-0cef-4888-a382-36d53b2012b0:
+  5717df00-d91b-4b67-9369-9eb6b6235bc7:
     id: 'entity_bundle:node'
     negate: false
-    uuid: c49a0329-0cef-4888-a382-36d53b2012b0
+    uuid: 5717df00-d91b-4b67-9369-9eb6b6235bc7
     context_mapping:
       node: node
     bundles:
-      staff_member: staff_member
+      core_funded_groups: core_funded_groups
 selection_logic: and
 weight: -5
 relationships: {  }

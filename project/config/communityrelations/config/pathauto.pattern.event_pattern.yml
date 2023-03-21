@@ -1,22 +1,22 @@
-uuid: 69374ccb-2bf2-479c-ac4d-dbcb2f09bd38
+uuid: 2b43cb60-b3e7-49a1-b6c2-bc2fe9f3682c
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: board_member_pattern
-label: 'Board member pattern'
+id: event_pattern
+label: 'event pattern'
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: 'event/[node:title]'
 selection_criteria:
-  c49a0329-0cef-4888-a382-36d53b2012b0:
+  3042f3b1-3cb1-468a-8d02-6723c642214c:
     id: 'entity_bundle:node'
     negate: false
-    uuid: c49a0329-0cef-4888-a382-36d53b2012b0
+    uuid: 3042f3b1-3cb1-468a-8d02-6723c642214c
     context_mapping:
       node: node
     bundles:
-      staff_member: staff_member
+      event: event
 selection_logic: and
 weight: -5
 relationships: {  }

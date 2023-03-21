@@ -1,22 +1,22 @@
-uuid: 69374ccb-2bf2-479c-ac4d-dbcb2f09bd38
+uuid: 088f76c7-815d-4fd9-86ef-47d5cc935dbb
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: board_member_pattern
-label: 'Board member pattern'
+id: project_profile_pattern
+label: 'Project profile pattern'
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  c49a0329-0cef-4888-a382-36d53b2012b0:
+  47cce905-aba9-456e-b95a-95c44e61c2c8:
     id: 'entity_bundle:node'
     negate: false
-    uuid: c49a0329-0cef-4888-a382-36d53b2012b0
+    uuid: 47cce905-aba9-456e-b95a-95c44e61c2c8
     context_mapping:
       node: node
     bundles:
-      staff_member: staff_member
+      project_profile: project_profile
 selection_logic: and
 weight: -5
 relationships: {  }
