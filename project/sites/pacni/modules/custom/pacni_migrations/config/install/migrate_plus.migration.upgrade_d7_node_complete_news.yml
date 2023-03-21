@@ -124,7 +124,7 @@ process:
         value:
           plugin: format_date
           from_format: 'Y-m-d H:i:s'
-          to_format: 'Y-m-d\TH:i:s'
+          to_format: Y-m-d
           source: value
   field_teaser:
     -
