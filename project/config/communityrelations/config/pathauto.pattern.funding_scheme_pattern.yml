@@ -1,0 +1,22 @@
+uuid: 874b2bac-b8eb-4853-b848-7c53c93a450e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: funding_scheme_pattern
+label: 'Funding scheme pattern'
+type: 'canonical_entities:node'
+pattern: 'funding-scheme/[node:title]'
+selection_criteria:
+  fa7744f6-5dd2-46e4-b7bf-d4a6a3dfa4a1:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: fa7744f6-5dd2-46e4-b7bf-d4a6a3dfa4a1
+    context_mapping:
+      node: node
+    bundles:
+      funding_schemes: funding_schemes
+selection_logic: and
+weight: -5
+relationships: {  }

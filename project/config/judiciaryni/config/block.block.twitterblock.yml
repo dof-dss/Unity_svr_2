@@ -1,0 +1,25 @@
+uuid: 430d8c32-b4b3-45a3-b5b2-a7a9f787e504
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:f3b866e0-c8de-4a55-9f20-076a19ef84c6'
+  module:
+    - block_content
+  theme:
+    - judiciaryni_theme
+id: twitterblock
+theme: judiciaryni_theme
+region: top_third
+weight: 0
+provider: null
+plugin: 'block_content:f3b866e0-c8de-4a55-9f20-076a19ef84c6'
+settings:
+  id: 'block_content:f3b866e0-c8de-4a55-9f20-076a19ef84c6'
+  label: 'Twitter block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -15,7 +15,10 @@ label: 'Date of appointment'
 description: 'Enter the date the Judge was appointed to this position. Please note that the time is indicative and is not the actual time of swearing-in. Its purpose is to order appointments made on this date by seniority.'
 required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    default_date_type: now
+    default_date: now
 default_value_callback: ''
 settings: {  }
 field_type: datetime

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_judicial_tier
     - node.type.judicial_member
+    - taxonomy.vocabulary.judicial_tier
 id: node.judicial_member.field_judicial_tier
 field_name: field_judicial_tier
 entity_type: node
@@ -18,6 +19,11 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
+    target_bundles:
+      judicial_tier: judicial_tier
     sort:
       field: _none
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

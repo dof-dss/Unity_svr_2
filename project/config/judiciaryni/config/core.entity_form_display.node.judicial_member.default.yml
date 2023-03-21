@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.judicial_member.field_sex_of_member
     - field.field.node.judicial_member.field_surname
     - node.type.judicial_member
+    - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
     - datetime
@@ -27,7 +28,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 10
+    weight: 18
     region: content
     settings:
       rows: 9
@@ -43,13 +44,13 @@ content:
     third_party_settings: {  }
   field_date_appointed:
     type: datetime_default
-    weight: 11
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }
   field_first_name:
     type: string_textfield
-    weight: 12
+    weight: 10
     region: content
     settings:
       size: 60
@@ -57,7 +58,7 @@ content:
     third_party_settings: {  }
   field_full_title:
     type: string_textfield
-    weight: 13
+    weight: 14
     region: content
     settings:
       size: 60
@@ -65,43 +66,39 @@ content:
     third_party_settings: {  }
   field_judicial_status:
     type: boolean_checkbox
-    weight: 14
+    weight: 16
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_judicial_tier:
-    type: entity_reference_autocomplete
-    weight: 15
+    type: options_select
+    weight: 12
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_meta_tags:
     type: metatag_firehose
-    weight: 26
+    weight: 19
     region: content
     settings:
       sidebar: true
     third_party_settings: {  }
   field_prefix_title:
     type: options_select
-    weight: 16
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
   field_sex_of_member:
-    type: options_select
-    weight: 17
+    type: options_buttons
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
   field_surname:
     type: string_textfield
-    weight: 18
+    weight: 11
     region: content
     settings:
       size: 60
@@ -149,7 +146,7 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 15
     region: content
     settings:
       size: 60

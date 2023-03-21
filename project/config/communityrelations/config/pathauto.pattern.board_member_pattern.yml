@@ -1,24 +1,22 @@
-uuid: d9faca1d-4501-4265-bf78-ea5e46143288
+uuid: 69374ccb-2bf2-479c-ac4d-dbcb2f09bd38
 langcode: en
 status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: IPBus0EzmucmooeZ0Uit-0IpbgDhfBhvfMgthjcZmRs
 id: board_member_pattern
 label: 'Board member pattern'
 type: 'canonical_entities:node'
-pattern: 'board-members/[node:title]'
+pattern: 'about-us/board/[node:title]'
 selection_criteria:
-  0f8091e9-9c09-436f-8a4a-b194c8a4826f:
-    id: node_type
-    bundles:
-      board_member: board_member
+  ce1749f3-1215-4fe6-bfe4-dd46f60bd18d:
+    id: 'entity_bundle:node'
     negate: false
+    uuid: ce1749f3-1215-4fe6-bfe4-dd46f60bd18d
     context_mapping:
       node: node
-    uuid: 0f8091e9-9c09-436f-8a4a-b194c8a4826f
+    bundles:
+      staff_member: staff_member
 selection_logic: and
 weight: -5
 relationships: {  }

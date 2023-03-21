@@ -36,6 +36,7 @@ module:
   entity_browser_entity_form: 0
   entity_embed: 0
   entity_reference_revisions: 0
+  entityqueue: 0
   facets: 0
   facets_pretty_paths: 0
   field: 0
@@ -56,6 +57,7 @@ module:
   image: 0
   inline_entity_form: 0
   inline_form_errors: 0
+  judiciaryni_common: 0
   language: 0
   layout_builder: 0
   layout_discovery: 0
@@ -85,7 +87,6 @@ module:
   origins_metatag: 0
   origins_qa: 0
   origins_toc: 0
-  origins_unique_title: 0
   page_cache: 0
   path: 0
   path_alias: 0
@@ -97,6 +98,9 @@ module:
   search: 0
   shs: 0
   simplei: 0
+  slick: 0
+  slick_ui: 0
+  slick_views: 0
   structure_sync: 0
   system: 0
   taxonomy: 0
