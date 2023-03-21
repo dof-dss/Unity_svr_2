@@ -1,0 +1,6 @@
+services:
+  communityrelations_breadcrumbs.breadcrumb.board:
+    class: Drupal\communityrelations_breadcrumbs\BoardBreadcrumb
+    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
+    tags:
+      - { name: breadcrumb_builder, priority: 105 }
