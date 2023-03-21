@@ -7,12 +7,12 @@ dependencies:
 id: core_funded_groups_pattern
 label: 'Core funded groups pattern'
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: 'core-funded-groups/[node:title]'
 selection_criteria:
-  5717df00-d91b-4b67-9369-9eb6b6235bc7:
+  ed0a66fd-6320-441e-a13c-1dc3bc4c7cfc:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 5717df00-d91b-4b67-9369-9eb6b6235bc7
+    uuid: ed0a66fd-6320-441e-a13c-1dc3bc4c7cfc
     context_mapping:
       node: node
     bundles:

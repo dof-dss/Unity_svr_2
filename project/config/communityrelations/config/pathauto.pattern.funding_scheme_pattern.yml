@@ -7,12 +7,12 @@ dependencies:
 id: funding_scheme_pattern
 label: 'Funding scheme pattern'
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: 'funding-scheme/[node:title]'
 selection_criteria:
-  fad7f4ad-411a-44bf-b186-5331846b417f:
+  fa7744f6-5dd2-46e4-b7bf-d4a6a3dfa4a1:
     id: 'entity_bundle:node'
     negate: false
-    uuid: fad7f4ad-411a-44bf-b186-5331846b417f
+    uuid: fa7744f6-5dd2-46e4-b7bf-d4a6a3dfa4a1
     context_mapping:
       node: node
     bundles:
