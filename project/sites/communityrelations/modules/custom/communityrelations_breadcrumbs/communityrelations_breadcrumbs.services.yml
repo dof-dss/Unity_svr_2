@@ -4,3 +4,8 @@ services:
     arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
     tags:
       - { name: breadcrumb_builder, priority: 105 }
+  communityrelations_breadcrumbs.breadcrumb.event:
+    class: Drupal\communityrelations_breadcrumbs\EventBreadcrumb
+    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
+    tags:
+      - { name: breadcrumb_builder, priority: 105 }
