@@ -1,8 +1,9 @@
-uuid: 9415a06f-5c12-42dd-83ba-d73f355fa601
+uuid: 3485725e-ff41-4412-b599-e17346d63d31
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_index
     - field.field.node.judicial_decision.field_attachment
     - field.field.node.judicial_decision.field_cross_reference
     - field.field.node.judicial_decision.field_decision_issues
@@ -16,34 +17,23 @@ dependencies:
     - node.type.judicial_decision
   module:
     - datetime
+    - layout_builder
     - user
-id: node.judicial_decision.default
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.judicial_decision.search_index
 targetEntityType: node
 bundle: judicial_decision
-mode: default
+mode: search_index
 content:
-  field_attachment:
-    type: entity_reference_entity_view
-    label: above
-    settings:
-      view_mode: embed
-      link: false
-    third_party_settings: {  }
-    weight: 4
-    region: content
-  field_decision_issues:
-    type: basic_string
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 3
-    region: content
   field_decision_title:
     type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_judiciary:
     type: entity_reference_label
@@ -60,11 +50,13 @@ content:
       timezone_override: ''
       format_type: unity_date
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
 hidden:
   content_moderation_control: true
+  field_attachment: true
   field_cross_reference: true
+  field_decision_issues: true
   field_decision_pub_type: true
   field_decision_type: true
   field_description: true
