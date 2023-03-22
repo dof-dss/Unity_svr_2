@@ -21,9 +21,10 @@ content:
       view_mode: embed
       link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
 hidden:
+  content_moderation_control: true
   field_link: true
   langcode: true
   links: true
