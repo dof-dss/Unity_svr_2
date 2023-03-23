@@ -242,12 +242,17 @@ display:
         - 'user.node_grants:view'
       tags:
         - 'config:search_api.index.decisions_index'
-  judicial_decisions_search:
-    id: judicial_decisions_search
+  judicial_decisions_search_page:
+    id: judicial_decisions_search_page
     display_title: Page
     display_plugin: page
     position: 1
     display_options:
+      cache:
+        type: search_api_tag
+        options: {  }
+      defaults:
+        cache: false
       exposed_block: true
       display_extenders:
         metatag_display_extender: {  }
