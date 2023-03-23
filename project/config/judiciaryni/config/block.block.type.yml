@@ -1,24 +1,28 @@
-uuid: 5cba5ef1-09f4-461d-b9e2-c5c853173e8a
+uuid: 69995ad4-c0da-455f-b69f-6cdb70a61b70
 langcode: en
 status: true
 dependencies:
+  config:
+    - facets.facet.decision_pub_type
   module:
+    - facets
     - system
   theme:
     - judiciaryni_theme
-id: pagetitle
+id: type
 theme: judiciaryni_theme
-region: content
-weight: -1
+region: search_facets
+weight: -6
 provider: null
-plugin: page_title_block
+plugin: 'facet_block:decision_pub_type'
 settings:
-  id: page_title_block
-  label: 'Page title'
-  label_display: '0'
-  provider: core
+  id: 'facet_block:decision_pub_type'
+  label: Type
+  label_display: visible
+  provider: facets
+  block_id: type
 visibility:
   request_path:
     id: request_path
-    negate: true
+    negate: false
     pages: "/judicial-decisions\r\n/judicial-decisions/type/*\r\n/judicial-decisions/judiciary/*\r\n/judicial-decisions/date/*"
