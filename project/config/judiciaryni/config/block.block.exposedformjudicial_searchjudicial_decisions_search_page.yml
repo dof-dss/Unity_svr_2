@@ -1,0 +1,28 @@
+uuid: 99475175-cdff-4e74-a2a4-49446ecbf0ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.judicial_decisions_search
+  module:
+    - system
+    - views
+  theme:
+    - judiciaryni_theme
+id: exposedformjudicial_searchjudicial_decisions_search_page
+theme: judiciaryni_theme
+region: search_facets
+weight: -7
+provider: null
+plugin: 'views_exposed_filter_block:judicial_decisions_search-judicial_decisions_search_page'
+settings:
+  id: 'views_exposed_filter_block:judicial_decisions_search-judicial_decisions_search_page'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/judicial-decisions\r\n/judicial-decisions/type/*\r\n/judicial-decisions/judiciary/*\r\n/judicial-decisions/date/*"

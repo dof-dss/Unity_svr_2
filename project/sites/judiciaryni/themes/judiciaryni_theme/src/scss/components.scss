@@ -110,3 +110,17 @@
 p.published-date {
   font-weight: bold;
 }
+
+.path-judicial-decisions {
+  .search-result {
+    margin-top: 1.4rem;
+
+    h3 {
+      margin-top: 1.2rem;
+    }
+
+    .neutral-citation {
+      padding-right: 3rem;
+    }
+  }
+}
