@@ -1,0 +1,28 @@
+uuid: 7038ea65-a699-41e9-8177-b889b055d713
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.publication_type
+  module:
+    - facets
+    - system
+  theme:
+    - judiciaryni_theme
+id: publicationtype
+theme: judiciaryni_theme
+region: search_facets
+weight: -12
+provider: null
+plugin: 'facet_block:publication_type'
+settings:
+  id: 'facet_block:publication_type'
+  label: Type
+  label_display: visible
+  provider: facets
+  block_id: publicationtype
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/publications\r\n/publications/date/*\r\n/publications/type/*"
