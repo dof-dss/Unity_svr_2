@@ -24,10 +24,7 @@ third_party_settings:
     allow_custom: false
   field_group:
     group_additional_content_details:
-      children:
-        - field_publication_type
-        - field_publication_date
-        - field_photo
+      children: {  }
       label: 'Additional content details'
       parent_name: ''
       region: hidden
@@ -55,7 +52,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_attachment:
     type: entity_reference_entity_view
@@ -73,11 +70,11 @@ content:
       view_mode: portrait_float
       link: false
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_publication_date:
     type: datetime_default
-    label: above
+    label: hidden
     settings:
       timezone_override: ''
       format_type: html_year
