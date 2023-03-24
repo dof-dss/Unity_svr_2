@@ -5,7 +5,7 @@ namespace Drupal\judiciaryni_breadcrumbs;
 /**
  * @file
  * Generates the breadcrumb trail for content including:
- * - Board member
+ * - Judicial Decisions
  *
  * In the format:
  * > Home
