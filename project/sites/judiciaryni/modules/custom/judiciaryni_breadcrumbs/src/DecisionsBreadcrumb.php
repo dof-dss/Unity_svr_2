@@ -9,11 +9,11 @@ namespace Drupal\judiciaryni_breadcrumbs;
  *
  * In the format:
  * > Home
- * > Board
+ * > Judicial Decisions and Directions
  * > current-page-title
  *
  * > <front>
- * > /about-board
+ * > /judicial-decisions
  * > /current-page-title
  */
 use Drupal\Core\Breadcrumb\Breadcrumb;
@@ -106,7 +106,7 @@ class DecisionsBreadcrumb implements BreadcrumbBuilderInterface {
     $title_resolver = $this->titleResolver->getTitle($this->request->getCurrentRequest(), $route_match->getRouteObject());
     if ($this->node) {
       $links[] = Link::createFromRoute(t('Home'), '<front>');
-      $links[] = Link::fromTextandUrl(t('Board'), Url::fromUri('internal:/board-members'));
+      $links[] = Link::fromTextandUrl(t('Judicial Decisions and Directions'), Url::fromRoute('view.judicial_decisions_search.judicial_decisions_search_page'));
       $links[] = Link::createFromRoute($title_resolver, '<none>');
       $breadcrumb->setLinks($links);
     }
