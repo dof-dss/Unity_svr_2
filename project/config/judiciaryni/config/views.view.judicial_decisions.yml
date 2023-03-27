@@ -362,8 +362,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: true
-            text: '<a href="{{ view_node }}">{{ field_decision_title }}</a>'
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -384,9 +384,9 @@ display:
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: true
+            strip_tags: false
             trim: false
-            preserve_tags: '<p> <span> <a>'
+            preserve_tags: ''
             html: false
           element_type: ''
           element_class: ''
