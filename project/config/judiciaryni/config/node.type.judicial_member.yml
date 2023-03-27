@@ -7,9 +7,8 @@ dependencies:
     - origins_toc
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
   origins_toc:
     toc_enable: 0
     toc_title: 'Table of contents'
@@ -23,7 +22,7 @@ third_party_settings:
 name: 'Member of Judiciary page'
 type: judicial_member
 description: ''
-help: ''
+help: 'You cannot edit this field. It is created automatically using the Name of Judge and Judicial Tier.'
 new_revision: true
 preview_mode: 1
 display_submitted: false

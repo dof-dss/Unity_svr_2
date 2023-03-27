@@ -33,9 +33,9 @@
   border-top: 1px solid #5c7a84;
 }
 
-.menu_wrapper {
+.region-primary-menu .menu_wrapper {
   border-bottom: solid 5px;
-  border-image: linear-gradient(to right, teal 33%, red 33%, red 66%, yellow 33%) 5;
+  border-image: linear-gradient(to right,#31b7bc 33%,#e95053 33%,#e95053 66%,#f7a600 33%) 5;
 }
 
 #main-menu {
@@ -157,7 +157,6 @@
       right: 0.5rem;
       width: 3rem;
       height: 3rem;
-      //background: no-repeat center / 2.5rem resolve('arrow_forward_white.svg');
       mask: no-repeat 100% 100% resolve('arrow_forward_white.svg');
       mask-size: cover;
       background-color: #fff;
@@ -216,48 +215,6 @@
     }
   }
 }
-
-//#top-area {
-//  margin: 1% auto;
-//  @media screen and (min-width: $tab) {
-//    display: flex;
-//    justify-content: space-evenly;
-//  }
-//
-//  p {
-//    color: $white;
-//    text-align: left;
-//    padding: 3%;
-//    width: 70%;
-//  }
-//
-//  .block {
-//    height: 19rem;
-//  }
-//    @media screen and (max-width: 1153px) {
-//      .column:last-child {
-//        margin-right: 1rem;
-//    }
-//  }
-//}
-//.region-top-first {
-//  background: resolve('home-block-1-bg.png') no-repeat 100%;
-//}
-//.region-top-second {
-//  background: resolve('home-block-2-bg.png') no-repeat 100%;
-//}
-//.region-top-third{
-//  background: resolve('home-block-3-bg.png') no-repeat 100%;
-//}
-//.region-top-fourth {
-//  background: resolve('home-block-4-bg.png') no-repeat 100%;
-//}
-//.region-top-fifth {
-//  background: resolve('home-block-5-bg.png') no-repeat 100%;
-//}
-//.region-top-sixth {
-//  background: resolve('home-block-6-bg.png') no-repeat 100%;
-//}
 
 #home-block-1, #home-block-3, #home-block-5 {
   background: #22353b;
@@ -320,7 +277,6 @@
     &:focus .content:after {
       background-color: $white;
       background-image: resolve('arrow_forward_black.svg');
-
     }
   }
 }
@@ -375,6 +331,9 @@
 
 #footer {
   border-top: solid 5px;
-  border-image: linear-gradient(to right, teal 33%, red 33%, red 66%, yellow 33%) 5
+  border-image: linear-gradient(to right,#31b7bc 33%,#e95053 33%,#e95053 66%,#f7a600 33%) 5;
 }
 
+.footer-area .column:first-child {
+  padding-left: 0;
+}

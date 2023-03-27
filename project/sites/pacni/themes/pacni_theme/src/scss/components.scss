@@ -152,7 +152,6 @@
     line-height: 2.7rem;
   }
 
-
   .column {
 
     width: 32.7%;
@@ -164,6 +163,14 @@
     @media screen and (max-width: $phab) {
             margin: 1rem;
             width: auto;
+    }
+  }
+
+  .column:last-child {
+    width: 66%;
+
+    @media screen and (max-width: $phab) {
+      width: 100%;
     }
   }
 }
@@ -187,6 +194,15 @@
   h2 {
     margin: 1.5rem 0 1.8rem;
   }
+
+  .item-list ul li .date-published {
+    display: block;
+    margin-bottom: .6rem;
+  }
+}
+
+#block-mainpagecontent .page-content p span time {
+  font-weight: bold;
 }
 
 .footer-area .column:last-child {

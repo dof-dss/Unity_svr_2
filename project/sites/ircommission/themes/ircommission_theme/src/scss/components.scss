@@ -103,6 +103,10 @@
       width: 100%;
       margin-bottom: 2rem;
     }
+
+    @media screen and (max-width: $tab) {
+      margin-bottom: 0;
+    }
   }
 
   .block-views-blockfront-latest-news-home-latest-news {
@@ -140,6 +144,24 @@
         border-top: none;
       }
     }
+  }
+}
+
+#main-menu .hamburger {
+  @media screen and (max-width: $tab) {
+    display: flex;
+  }
+}
+
+#main-menu .hamburger:not([hidden]) ~ .nav-main {
+  @media screen and (max-width: $tab) {
+    display: none;
+  }
+}
+
+#main-menu .hamburger[aria-expanded="true"] ~ .nav-main {
+  @media screen and (max-width: $tab) {
+    display: flex;
   }
 }
 
