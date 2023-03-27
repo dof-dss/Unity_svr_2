@@ -1,0 +1,5 @@
+name: 'Judiciary NI common'
+type: module
+description: 'Judiciary NI common'
+core_version_requirement: 8.x || ^9
+package: 'Custom'

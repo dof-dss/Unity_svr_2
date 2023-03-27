@@ -159,6 +159,12 @@
   }
 }
 
+#main-menu .hamburger[aria-expanded="true"] ~ .nav-main {
+  @media screen and (max-width: $tab) {
+    display: flex;
+  }
+}
+
 #footer {
   font-size: 1.6rem;
 }

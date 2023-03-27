@@ -4,3 +4,123 @@
  */
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+#header {
+  @include breakpoint($tab) {
+    margin: 0 auto;
+    padding: 1% 0;
+  }
+}
+
+#inner_header_wrapper {
+  background: $brand-primary;
+}
+
+#main-menu {
+  .menu-link,
+  .menu .active,
+  .menu-item.open .menu-toggle-btn {
+    color: $brand-primary;
+    @include adjust-font-size-to(16px);
+  }
+
+  .menu-link {
+    &:hover,
+    &:focus {
+      color: $white;
+      background: $brand-primary;
+    }
+  }
+
+  .menu .menu-item .active {
+    border-color: $brand-primary;
+  }
+
+  .menu-main_sub {
+    background: $brand-primary;
+
+    .menu-item {
+      .active {
+        color: $white;
+        border-color: $white;
+      }
+
+      a {
+        &:hover,
+        &:focus {
+          background: $charcoal;
+        }
+      }
+    }
+  }
+}
+
+#slick-views-slideshow-slideshow-1 {
+  margin-bottom: 3.6rem;
+}
+
+#top-area {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .column {
+    float: none;
+
+    @include breakpoint($tab) {
+      flex-basis: 30rem;
+    }
+  }
+
+  h2 {
+    color: $text;
+  }
+
+  .block-views-blockjudicial-decisions-home-recent-judgements {
+    ul {
+      list-style: none;
+
+      li {
+        border-bottom: 1px solid $grey-light;
+        padding-bottom: 1.3rem;
+        margin-bottom: 1.4rem;
+
+        span {
+          display: block;
+          margin-top: .3rem;
+        }
+      }
+    }
+  }
+}
+
+#footer-area {
+  .column {
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+
+    &:last-child {
+      float: none;
+    }
+  }
+}
+
+p.published-date {
+  font-weight: bold;
+}
+
+.path-judicial-decisions {
+  .search-result {
+    margin-top: 1.4rem;
+
+    h3 {
+      margin-top: 1.2rem;
+    }
+
+    .neutral-citation {
+      padding-right: 3rem;
+    }
+  }
+}

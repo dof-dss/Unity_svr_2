@@ -12,9 +12,9 @@ id: node.publication.field_publication_type
 field_name: field_publication_type
 entity_type: node
 bundle: publication
-label: 'Publication type'
+label: 'Type of publication'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
