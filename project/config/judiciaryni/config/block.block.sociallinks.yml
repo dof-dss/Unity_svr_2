@@ -1,0 +1,25 @@
+uuid: 65538fdb-3c6c-4aa2-b59c-56b8ed85d332
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:f3c4ca2d-b419-47d4-9cda-6485da14006f'
+  module:
+    - block_content
+  theme:
+    - judiciaryni_theme
+id: sociallinks
+theme: judiciaryni_theme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:f3c4ca2d-b419-47d4-9cda-6485da14006f'
+settings:
+  id: 'block_content:f3c4ca2d-b419-47d4-9cda-6485da14006f'
+  label: 'Social links'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
