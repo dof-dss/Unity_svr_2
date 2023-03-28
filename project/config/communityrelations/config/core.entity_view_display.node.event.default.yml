@@ -27,10 +27,10 @@ content:
     region: content
   field_event_date:
     type: daterange_default
-    label: above
+    label: inline
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: unity_date
       separator: '-'
     third_party_settings: {  }
     weight: 0
