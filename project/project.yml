@@ -65,7 +65,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/hiaredressni ; drush core-cron'
         database: hiaredressni
-        status: development
+        status: production
         default: false
     cvocni:
         name: 'Commission for victims of crime'
@@ -137,7 +137,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/cosicani ; drush core-cron'
         database: cosicani
-        status: development
+        status: production
         default: false
     judiciaryni:
         name: 'Judiciary NI'

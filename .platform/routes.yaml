@@ -29,14 +29,6 @@
 'https://nicertoffice.org.uk/':
     type: redirect
     to: 'https://www.nicertoffice.org.uk/'
-'https://www.hiaredressni.uk/':
-    type: upstream
-    upstream: 'unity_svr_2:http'
-    cache:
-        enabled: 'false'
-'https://hiaredressni.uk/':
-    type: redirect
-    to: 'https://www.hiaredressni.uk/'
 'https://www.community-relations.org.uk/':
     type: upstream
     upstream: 'unity_svr_2:http'
@@ -69,14 +61,6 @@
 'https://pacni.gov.uk/':
     type: redirect
     to: 'https://www.pacni.gov.uk/'
-'https://www.cosica-ni.org/':
-    type: upstream
-    upstream: 'unity_svr_2:http'
-    cache:
-        enabled: 'false'
-'https://cosica-ni.org/':
-    type: redirect
-    to: 'https://www.cosica-ni.org/'
 'https://www.judiciaryni.uk/':
     type: upstream
     upstream: 'unity_svr_2:http'
