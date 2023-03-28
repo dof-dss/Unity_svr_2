@@ -9,13 +9,35 @@ dependencies:
     - field.field.node.core_funded_groups.field_meta_tags
     - node.type.core_funded_groups
   module:
+    - field_group
     - layout_builder
+    - metatag
     - text
     - user
 third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
+  field_group:
+    group_additional_content_details:
+      children:
+        - field_meta_tags
+      label: 'Additional content details'
+      parent_name: ''
+      region: content
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: field-collection
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 id: node.core_funded_groups.diff
 targetEntityType: node
 bundle: core_funded_groups
@@ -36,9 +58,15 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
 hidden:
   content_moderation_control: true
-  field_meta_tags: true
   langcode: true
   links: true
   search_api_excerpt: true

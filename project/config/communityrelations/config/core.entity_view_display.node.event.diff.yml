@@ -12,13 +12,36 @@ dependencies:
     - node.type.event
   module:
     - datetime_range
+    - field_group
     - layout_builder
+    - metatag
     - text
     - user
 third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
+  field_group:
+    group_ad:
+      children:
+        - field_teaser
+        - field_meta_tags
+      label: 'Additional content details'
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: field-collection
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 id: node.event.diff
 targetEntityType: node
 bundle: event
@@ -41,6 +64,13 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
   field_photo:
     type: entity_reference_entity_view
     label: hidden
@@ -50,10 +80,16 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_teaser:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
 hidden:
   content_moderation_control: true
-  field_meta_tags: true
-  field_teaser: true
   langcode: true
   links: true
   search_api_excerpt: true
