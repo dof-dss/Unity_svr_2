@@ -1,4 +1,4 @@
-uuid: 15b560da-d6a0-4f74-bf7c-f8a386b74f73
+uuid: b8ac9754-ec7b-47eb-a442-f7c821c33f19
 langcode: en
 status: true
 dependencies: {  }
@@ -16,5 +16,5 @@ shared_configuration:
       password: drupal9
       host: database
       port: ''
-      database: crc_legacy
+      database: communityrelations_legacy
       prefix: null

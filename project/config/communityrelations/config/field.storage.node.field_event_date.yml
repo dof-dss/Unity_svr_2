@@ -1,12 +1,12 @@
-uuid: befb194d-4901-4a74-8044-920f5324717d
-langcode: und
+uuid: 2d94241c-e0e0-460f-ab86-e4a2da8e5c38
+langcode: en
 status: true
 dependencies:
   module:
     - datetime_range
     - node
-id: node.field_crc_event_date
-field_name: field_crc_event_date
+id: node.field_event_date
+field_name: field_event_date
 entity_type: node
 type: daterange
 settings:

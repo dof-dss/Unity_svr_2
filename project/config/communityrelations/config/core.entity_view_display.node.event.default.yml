@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
-    - field.field.node.event.field_crc_event_date
+    - field.field.node.event.field_event_date
     - field.field.node.event.field_meta_tags
     - field.field.node.event.field_photo
     - field.field.node.event.field_teaser
@@ -23,17 +23,17 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
-  field_crc_event_date:
+  field_event_date:
     type: daterange_default
     label: above
     settings:
       timezone_override: ''
-      format_type: unity_date
+      format_type: medium
       separator: '-'
     third_party_settings: {  }
-    weight: 2
+    weight: 0
     region: content
   field_photo:
     type: entity_reference_entity_view
@@ -42,7 +42,7 @@ content:
       view_mode: landscape_float
       link: false
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
 hidden:
   content_moderation_control: true
