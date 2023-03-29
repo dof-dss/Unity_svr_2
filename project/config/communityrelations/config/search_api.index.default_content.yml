@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_crc_council_area
-    - field.storage.node.field_crc_event_date
     - field.storage.node.field_deadline_date
     - field.storage.node.field_funding_scheme_type
     - field.storage.node.field_publication_type
@@ -88,14 +87,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_crc_council_area
-  field_crc_event_date:
-    label: 'Event date'
-    datasource_id: 'entity:node'
-    property_path: field_crc_event_date
-    type: date
-    dependencies:
-      config:
-        - field.storage.node.field_crc_event_date
   field_deadline_date:
     label: 'Deadline date'
     datasource_id: 'entity:node'
