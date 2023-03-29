@@ -22,14 +22,9 @@ targetEntityType: node
 bundle: judicial_decision
 mode: default
 content:
-  content_moderation_control:
-    settings: {  }
-    third_party_settings: {  }
-    weight: -20
-    region: content
   field_attachment:
     type: entity_reference_entity_view
-    label: inline
+    label: above
     settings:
       view_mode: embed
       link: false
@@ -54,7 +49,7 @@ content:
     type: entity_reference_label
     label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     weight: 2
     region: content
@@ -76,3 +71,4 @@ hidden:
   field_meta_tags: true
   langcode: true
   links: true
+  search_api_excerpt: true

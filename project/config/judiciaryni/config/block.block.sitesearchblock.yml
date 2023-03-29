@@ -1,0 +1,25 @@
+uuid: d6d75c14-be6d-4cf4-818c-1e91c00c1692
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - unity_search_pages
+  theme:
+    - judiciaryni_theme
+id: sitesearchblock
+theme: judiciaryni_theme
+region: search
+weight: 0
+provider: null
+plugin: site_search_block
+settings:
+  id: site_search_block
+  label: 'Site search block'
+  label_display: '0'
+  provider: unity_search_pages
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /search
