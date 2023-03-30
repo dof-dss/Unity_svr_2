@@ -165,16 +165,24 @@
     &.odd .card__link {
       background: $brand-primary;
 
-      &::after {
-        background-color: $brand-primary;
+      &:hover {
+        background: $brand-primary;
+
+        &::after {
+          background: $brand-primary;
+        }
       }
     }
 
     &.even .card__link {
       background: $brand-secondary;
 
-      &::after {
-        background-color: $brand-secondary;
+      &:hover {
+        background: $brand-secondary;
+
+        &::after {
+          background: $brand-secondary;
+        }
       }
     }
 
