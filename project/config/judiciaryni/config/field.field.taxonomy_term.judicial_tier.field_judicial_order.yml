@@ -1,0 +1,23 @@
+uuid: db57d70c-742b-4903-bfbb-41d8731c0c28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_judicial_order
+    - taxonomy.vocabulary.judicial_tier
+id: taxonomy_term.judicial_tier.field_judicial_order
+field_name: field_judicial_order
+entity_type: taxonomy_term
+bundle: judicial_tier
+label: 'Judicial order'
+description: 'This is the order the taxonomy term (Judicial tier) should be placed on the /judicial-members page'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

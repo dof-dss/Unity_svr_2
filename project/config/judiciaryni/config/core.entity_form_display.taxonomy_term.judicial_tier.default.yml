@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.judicial_tier.field_complement
+    - field.field.taxonomy_term.judicial_tier.field_judicial_order
     - taxonomy.vocabulary.judicial_tier
   module:
     - path
@@ -23,6 +24,13 @@ content:
     third_party_settings: {  }
   field_complement:
     type: number
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_judicial_order:
+    type: number
     weight: 2
     region: content
     settings:
@@ -30,7 +38,7 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 3
+    weight: 4
     region: content
     settings:
       include_locked: true
@@ -45,13 +53,13 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 5
+    weight: 6
     region: content
     settings:
       display_label: true
