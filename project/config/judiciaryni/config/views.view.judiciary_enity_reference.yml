@@ -13,6 +13,7 @@ dependencies:
     - node
     - taxonomy
     - user
+    - views_custom_cache_tag
 id: judiciary_enity_reference
 label: 'Judiciary Enity reference'
 module: views
@@ -114,8 +115,9 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
-        options: {  }
+        type: custom_tag
+        options:
+          custom_tag: 'handy_cache_tags:node:judicial_member'
       empty: {  }
       sorts:
         created:
