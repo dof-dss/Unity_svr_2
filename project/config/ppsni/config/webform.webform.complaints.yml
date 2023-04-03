@@ -49,15 +49,12 @@ elements: |-
     '#type': fieldset
     '#title': 'Contact Us'
     how_would_you_like_us_to_contact_you_:
-      '#type': select
+      '#type': radios
       '#title': 'How would you like us to contact you?'
       '#options':
         Telephone: Telephone
         Email: Email
         Letter: Letter
-      '#empty_option': '- None -'
-      '#empty_value': '- None -'
-      '#js_select': false
     contact_number:
       '#type': tel
       '#title': 'Contact Number'
@@ -110,21 +107,16 @@ elements: |-
     '#counter_type': character
     '#counter_minimum': 6
     '#counter_maximum': 7
-  pps_question_1:
+  which_part_of_the_pps_do_you_wish_to_tell_us_about_:
     '#type': textarea
-    '#title': 'PPS question 1'
-    '#description': 'Which part of the PPS do you wish to tell us about?'
-    '#title_display': none
-    '#description_display': before
-  pps_question_2:
+    '#title': 'Which part of the PPS do you wish to tell us about?'
+  please_tell_us_what_happened:
     '#type': textarea
-    '#title': 'PPS question 2'
-    '#description': 'Please tell us what happened (Please provide as much detail as you can to ensure that your complaint is dealt with appropriately.)'
-    '#title_display': none
-    '#description_display': before
+    '#title': 'Please tell us what happened (Please provide as much detail as you can to ensure that your complaint is dealt with appropriately.)'
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
+    '#submit__label': 'Submit complaint'
 css: ''
 javascript: ''
 settings:
