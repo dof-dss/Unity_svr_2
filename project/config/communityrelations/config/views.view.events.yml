@@ -114,10 +114,10 @@ display:
           custom_tag: 'handy_cache_tags:node:event'
       empty: {  }
       sorts:
-        field_crc_event_date_value:
-          id: field_crc_event_date_value
-          table: node__field_crc_event_date
-          field: field_crc_event_date_value
+        field_event_date_value:
+          id: field_event_date_value
+          table: node__field_event_date
+          field: field_event_date_value
           relationship: none
           group_type: group
           admin_label: ''

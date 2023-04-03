@@ -46,15 +46,59 @@ elements: |-
     '#date_year_range': '1900:2023'
     '#date_year_range_reverse': true
   contact_us:
-    '#type': checkboxes
+    '#type': fieldset
     '#title': 'Contact Us'
-    '#description': 'How would you like to contact us?'
-    '#title_display': before
-    '#description_display': before
-    '#options':
-      Telephone: Telephone
-      Email: Email
-      Letter: Letter
+    how_would_you_like_us_to_contact_you_:
+      '#type': select
+      '#title': 'How would you like us to contact you?'
+      '#options':
+        Telephone: Telephone
+        Email: Email
+        Letter: Letter
+      '#empty_option': '- None -'
+      '#empty_value': '- None -'
+      '#js_select': false
+    contact_number:
+      '#type': tel
+      '#title': 'Contact Number'
+      '#required': true
+      '#pattern': '^[0-9\(\) \+\-]{6,20}$'
+      '#pattern_error': 'Please enter a valid phone number'
+      '#states':
+        visible:
+          ':input[name="how_would_you_like_us_to_contact_you_"]':
+            value: Telephone
+    email_address:
+      '#type': email
+      '#title': 'Email Address'
+      '#required': true
+      '#states':
+        visible:
+          ':input[name="how_would_you_like_us_to_contact_you_"]':
+            value: Email
+    address:
+      '#type': fieldset
+      '#title': Address
+      '#states':
+        visible:
+          ':input[name="how_would_you_like_us_to_contact_you_"]':
+            value: Letter
+      address_line_1:
+        '#type': textfield
+        '#title': 'Address Line 1'
+        '#required': true
+      address_line_2:
+        '#type': textfield
+        '#title': 'Address Line 2'
+      city_town:
+        '#type': textfield
+        '#title': City/Town
+        '#required': true
+      postcode:
+        '#type': textfield
+        '#title': Postcode
+        '#maxlength': 8
+        '#required': true
   pps_case_number:
     '#type': textfield
     '#title': 'PPS case number'

@@ -38,9 +38,7 @@ process:
   field_media_oembed_video:
     - source: uri
       plugin: video_url
-  # Title field.
   field_title: field_title
-  # Transcript field.
   field_transcript: field_transcript
 destination:
   plugin: entity:media

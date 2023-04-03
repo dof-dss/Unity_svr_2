@@ -1,4 +1,4 @@
-uuid: 307f954e-4a17-49e1-8367-d657dc825bf6
+uuid: 18959fb6-2955-41a4-b131-e227625e3893
 langcode: en
 status: true
 dependencies: {  }
@@ -90,12 +90,12 @@ process:
         https://www.community-relations.org.uk
     -
       plugin: site_files_filter
-      from_ref: sites/crc/files
-      to_ref: files/crc
+      from_ref: sites/communityrelations/files
+      to_ref: files/communityrelations
     -
       plugin: site_files_filter
       from_ref: sites/community-relations.org.uk/files
-      to_ref: files/crc
+      to_ref: files/communityrelations
   body/0/format:
     -
       plugin: static_map
@@ -135,7 +135,7 @@ process:
       map:
         NewsRelease: 22
         PressRelease: 23
-  field_crc_teaser:
+  field_teaser:
     -
       plugin: get
       source: field_crc_teaser

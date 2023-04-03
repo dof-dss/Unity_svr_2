@@ -10,7 +10,6 @@ dependencies:
     - media.type.remote_video
     - node.type.basic_page
     - node.type.feature
-    - node.type.landing_page
     - node.type.news
     - node.type.publication
     - node.type.webform
@@ -70,7 +69,6 @@ permissions:
   - 'create file media'
   - 'create files'
   - 'create image media'
-  - 'create landing_page content'
   - 'create new books'
   - 'create news content'
   - 'create publication content'
@@ -88,7 +86,6 @@ permissions:
   - 'delete any file media'
   - 'delete any image files'
   - 'delete any image media'
-  - 'delete any landing_page content'
   - 'delete any news content'
   - 'delete any page content'
   - 'delete any publication content'
@@ -98,7 +95,6 @@ permissions:
   - 'delete any webform content'
   - 'delete basic_page revisions'
   - 'delete feature revisions'
-  - 'delete landing_page revisions'
   - 'delete news revisions'
   - 'delete own audio files'
   - 'delete own audio media'
@@ -109,7 +105,6 @@ permissions:
   - 'delete own file media'
   - 'delete own image files'
   - 'delete own image media'
-  - 'delete own landing_page content'
   - 'delete own news content'
   - 'delete own publication content'
   - 'delete own remote_video media'
@@ -136,7 +131,6 @@ permissions:
   - 'edit any file media'
   - 'edit any image files'
   - 'edit any image media'
-  - 'edit any landing_page content'
   - 'edit any news content'
   - 'edit any publication content'
   - 'edit any remote_video media'
@@ -151,7 +145,6 @@ permissions:
   - 'edit own file media'
   - 'edit own image files'
   - 'edit own image media'
-  - 'edit own landing_page content'
   - 'edit own news content'
   - 'edit own publication content'
   - 'edit own remote_video media'
@@ -170,7 +163,6 @@ permissions:
   - 'revert all revisions'
   - 'revert basic_page revisions'
   - 'revert feature revisions'
-  - 'revert landing_page revisions'
   - 'revert news revisions'
   - 'revert publication revisions'
   - 'schedule revisions'
@@ -198,7 +190,6 @@ permissions:
   - 'view basic_page revisions'
   - 'view content references'
   - 'view feature revisions'
-  - 'view landing_page revisions'
   - 'view latest version'
   - 'view moderation history'
   - 'view moderation messages'
