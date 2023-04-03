@@ -1,24 +1,22 @@
-uuid: 62bc441d-9a94-4710-8a07-069e3a8b7bc1
+uuid: 696cd404-f5fc-402f-bb60-e00942f27a16
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - field.storage.node.field_published_date
-    - field.storage.node.field_teaser
     - field.storage.node.field_publication_type
+    - field.storage.node.field_published_date
     - search_api.server.solr_default
   module:
     - search_api_solr
     - node
-    - user
-    - taxonomy
     - search_api
 third_party_settings:
   search_api_solr:
     finalize: false
     commit_before_finalize: false
     commit_after_finalize: false
+    debug_finalize: false
     highlighter:
       maxAnalyzedChars: 51200
       fragmenter: gap
@@ -55,8 +53,12 @@ third_party_settings:
     multilingual:
       limit_to_content_language: false
       include_language_independent: true
-id: default_content
-name: 'Default content'
+      use_language_undefined_as_fallback_language: false
+      specific_languages:
+        en: '0'
+      use_universal_collation: false
+id: publications
+name: Publications
 description: ''
 read_only: false
 field_settings:
@@ -65,34 +67,25 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: body
     type: text
-    boost: 0.5
     dependencies:
       config:
         - field.storage.node.body
-  created:
-    label: 'Authored on'
+  field_publication_type:
+    label: 'Publication type'
     datasource_id: 'entity:node'
-    property_path: created
-    type: date
+    property_path: field_publication_type
+    type: integer
     dependencies:
-      module:
-        - node
+      config:
+        - field.storage.node.field_publication_type
   field_published_date:
-    label: 'Publication date'
+    label: 'Published date'
     datasource_id: 'entity:node'
     property_path: field_published_date
     type: date
     dependencies:
       config:
         - field.storage.node.field_published_date
-  field_teaser:
-    label: Teaser
-    datasource_id: 'entity:node'
-    property_path: field_teaser
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.field_teaser
   langcode:
     label: Language
     datasource_id: 'entity:node'
@@ -101,25 +94,6 @@ field_settings:
     dependencies:
       module:
         - node
-  name:
-    label: 'Authored by » User » Name'
-    datasource_id: 'entity:node'
-    property_path: 'uid:entity:name'
-    type: string
-    dependencies:
-      module:
-        - node
-        - user
-  publication_type:
-    label: 'Publication type » Taxonomy term » Name'
-    datasource_id: 'entity:node'
-    property_path: 'field_publication_type:entity:name'
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_publication_type
-      module:
-        - taxonomy
   spelling:
     label: Spelling
     property_path: aggregated_field
@@ -128,20 +102,12 @@ field_settings:
       type: union
       fields:
         - 'entity:node/title'
-  status:
-    label: Published
-    datasource_id: 'entity:node'
-    property_path: status
-    type: boolean
-    dependencies:
-      module:
-        - node
   title:
     label: Title
     datasource_id: 'entity:node'
     property_path: title
     type: text
-    boost: !!float 21
+    boost: !!float 3
     dependencies:
       module:
         - node
@@ -155,20 +121,12 @@ field_settings:
       fields:
         - 'entity:node/body'
         - 'entity:node/title'
-  type:
-    label: 'Content type'
-    datasource_id: 'entity:node'
-    property_path: type
-    type: string
-    dependencies:
-      module:
-        - node
 datasource_settings:
   'entity:node':
     bundles:
-      default: true
+      default: false
       selected:
-        - webform
+        - publication
     languages:
       default: true
       selected: {  }
@@ -196,14 +154,10 @@ processor_settings:
     all_fields: true
     fields:
       - body
-      - field_teaser
       - langcode
-      - name
-      - publication_type
       - spelling
       - title
       - title_fulltext
-      - type
     title: false
     alt: true
     tags:
@@ -223,5 +177,5 @@ tracker_settings:
 options:
   cron_limit: 50
   index_directly: true
-  track_changes_in_references: false
+  track_changes_in_references: true
 server: solr_default
