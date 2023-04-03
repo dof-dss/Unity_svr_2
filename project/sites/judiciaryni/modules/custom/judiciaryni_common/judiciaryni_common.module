@@ -68,3 +68,4 @@ function judiciaryni_common_entity_presave(EntityInterface $entity) {
     $entity->setTitle($shorttitle);
   }
 }
+
