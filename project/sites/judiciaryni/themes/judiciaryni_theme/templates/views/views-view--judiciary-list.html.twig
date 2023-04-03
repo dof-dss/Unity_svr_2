@@ -1,0 +1,152 @@
+{#
+/**
+ * @file
+ * Theme override for main view template.
+ *
+ * Available variables:
+ * - attributes: Remaining HTML attributes for the element.
+ * - css_name: A CSS-safe version of the view name.
+ * - css_class: The user-specified classes names, if any.
+ * - header: The optional header.
+ * - footer: The optional footer.
+ * - rows: The results of the view query, if any.
+ * - empty: The content to display if there are no rows.
+ * - pager: The optional pager next/prev links to display.
+ * - exposed: Exposed widget form/info to display.
+ * - feed_icons: Optional feed icons to display.
+ * - more: An optional link to the next page of results.
+ * - title: Title of the view, only used when displaying in the admin preview.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the view title.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the view title.
+ * - attachment_before: An optional attachment view to be displayed before the
+ *   view content.
+ * - attachment_after: An optional attachment view to be displayed after the
+ *   view content.
+ * - dom_id: Unique id for every view being printed to give unique class for
+ *   JavaScript.
+ *
+ * @see template_preprocess_views_view()
+ */
+#}
+{% set classes = [
+  dom_id ? 'js-view-dom-id-' ~ dom_id,
+] %}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title }}
+  {{ title_suffix }}
+
+  {% if header %}
+    <header>
+      {{ header }}
+    </header>
+  {% endif %}
+
+  {{ exposed }}
+  {{ attachment_before }}
+
+  {% if drupal_view_result('judicial_members', 'judiciary_term_id', 103)|length > 0 %}
+    <h3>Lady Chief Justice ({{ drupal_view_result('judicial_members', 'judiciary_term_id', 103)|length }})</h3>
+    {{ drupal_view('judicial_members', 'judiciary_term_id', 103) }}
+  {% endif %}
+
+  {% if drupal_view_result('judicial_members', 'judiciary_term_id', 13)|length > 0 %}
+    <h3>Lord Chief Justice ({{ drupal_view_result('judicial_members', 'judiciary_term_id', 13)|length }})</h3>
+    {{ drupal_view('judicial_members', 'judiciary_term_id', 13) }}
+  {% endif %}
+
+  {% if drupal_view_result('judicial_members', 'judiciary_term_id', 14)|length > 0 %}
+    <h3>Lords Justices of Appeal ({{ drupal_view_result('judicial_members', 'judiciary_term_id', 14)|length }})</h3>
+    {{ drupal_view('judicial_members', 'judiciary_term_id', 14) }}
+  {% endif %}
+
+  {% if drupal_view_result('judicial_members', 'judiciary_term_id', 15)|length > 0 %}
+    <h3>High Court Judges ({{ drupal_view_result('judicial_members', 'judiciary_term_id', 15)|length }})</h3>
+    {{ drupal_view('judicial_members', 'judiciary_term_id', 15) }}
+  {% endif %}
+
+  {% if drupal_view_result('judicial_members', 'judiciary_term_id', '16, 17, 18')|length > 0 %}
+    <h3>County Court Judges ({{ drupal_view_result('judicial_members', 'judiciary_term_id', '16, 17, 18')|length }})</h3>
+    {{ drupal_view('judicial_members', 'judiciary_term_id', '16, 17, 18') }}
+  {% endif %}
+
+  {% if drupal_view_result('judicial_members', 'judiciary_term_id', '21, 22')|length > 0 %}
+    <h3>District Judges (Magistrates’ Courts)
+      ({{ drupal_view_result('judicial_members', 'judiciary_term_id', '21, 22')|length }})</h3>
+    {{ drupal_view('judicial_members', 'judiciary_term_id', '21, 22') }}
+  {% endif %}
+
+  {% if drupal_view_result('judicial_members', 'judiciary_term_id', 19)|length > 0 %}
+    <h3>Masters of the High Court ({{ drupal_view_result('judicial_members', 'judiciary_term_id', 19)|length }})</h3>
+    {{ drupal_view('judicial_members', 'judiciary_term_id', 19) }}
+  {% endif %}
+
+  {% if drupal_view_result('judicial_members', 'judiciary_term_id', 20)|length > 0 %}
+    <h3>District Judges ({{ drupal_view_result('judicial_members', 'judiciary_term_id', 20)|length }})</h3>
+    {{ drupal_view('judicial_members', 'judiciary_term_id', 20) }}
+  {% endif %}
+
+  {% if drupal_view_result('judicial_members', 'judiciary_term_id', 28)|length > 0 %}
+    <h3>Coroners ({{ drupal_view_result('judicial_members', 'judiciary_term_id', 28)|length }}) *</h3>
+    {{ drupal_view('judicial_members', 'judiciary_term_id', 28) }}
+  {% endif %}
+
+  {% if drupal_view_result('judicial_members', 'judiciary_term_id', 24)|length > 0 %}
+    <h3>Chief Social Security and Child Support Commissioner
+      ({{ drupal_view_result('judicial_members', 'judiciary_term_id', 24)|length }})</h3>
+    {{ drupal_view('judicial_members', 'judiciary_term_id', 24) }}
+  {% endif %}
+
+  {% if drupal_view_result('judicial_members', 'judiciary_term_id', 23)|length > 0 %}
+    <h3>Social Security and Child Support Commissioner
+      ({{ drupal_view_result('judicial_members', 'judiciary_term_id', 23)|length }})</h3>
+    {{ drupal_view('judicial_members', 'judiciary_term_id', 23) }}
+  {% endif %}
+
+  {% if drupal_view_result('judicial_members', 'judiciary_term_id', 26)|length > 0 %}
+    <h3>President, Appeals Tribunal ({{ drupal_view_result('judicial_members', 'judiciary_term_id', 26)|length }})</h3>
+    {{ drupal_view('judicial_members', 'judiciary_term_id', 26) }}
+  {% endif %}
+
+  {% if drupal_view_result('judicial_members', 'judiciary_term_id', 25)|length > 0 %}
+    <h3>Legal Member of Appeals Tribunal ({{ drupal_view_result('judicial_members', 'judiciary_term_id', 25)|length }}
+      )</h3>
+    {{ drupal_view('judicial_members', 'judiciary_term_id', 25) }}
+  {% endif %}
+
+  {% if drupal_view_result('judicial_members', 'judiciary_term_id', 27)|length > 0 %}
+    <h3>Lands Tribunal Member ({{ drupal_view_result('judicial_members', 'judiciary_term_id', 27)|length }})</h3>
+    {{ drupal_view('judicial_members', 'judiciary_term_id', 27) }}
+  {% endif %}
+
+  {% if drupal_view_result('judicial_members', 'judiciary_term_id', 89)|length > 0 %}
+    <h3>President, Industrial Tribunals and Fair Employment Tribunal
+      ({{ drupal_view_result('judicial_members', 'judiciary_term_id', 89)|length }})</h3>
+    {{ drupal_view('judicial_members', 'judiciary_term_id', 89) }}
+  {% endif %}
+
+  {% if drupal_view_result('judicial_members', 'judiciary_term_id', 90)|length > 0 %}
+    <h3>Vice-President, Industrial Tribunals and Fair Employment Tribunal
+      ({{ drupal_view_result('judicial_members', 'judiciary_term_id', 90)|length }})</h3>
+    {{ drupal_view('judicial_members', 'judiciary_term_id', 90) }}
+  {% endif %}
+
+  {% if drupal_view_result('judicial_members', 'judiciary_term_id', 91)|length > 0 %}
+    <h3>Employment Judge of the Industrial Tribunals and the Fair Employment Tribunal
+      ({{ drupal_view_result('judicial_members', 'judiciary_term_id', 91)|length }})</h3>
+    {{ drupal_view('judicial_members', 'judiciary_term_id', 91) }}
+  {% endif %}
+
+  {{ attachment_after }}
+  {{ more }}
+
+  {% if footer %}
+    <footer>
+      {{ footer }}
+    </footer>
+  {% endif %}
+
+  {{ feed_icons }}
+</div>
