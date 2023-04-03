@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.judicial_tier.field_complement
-    - field.field.taxonomy_term.judicial_tier.field_judicial_order
     - taxonomy.vocabulary.judicial_tier
   module:
     - text
@@ -28,15 +27,6 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     weight: 0
-    region: content
-  field_judicial_order:
-    type: number_integer
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 2
     region: content
 hidden:
   langcode: true

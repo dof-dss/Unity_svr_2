@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.judicial_tier.field_complement
-    - field.field.taxonomy_term.judicial_tier.field_judicial_order
     - taxonomy.vocabulary.judicial_tier
   module:
     - path
@@ -25,13 +24,6 @@ content:
   field_complement:
     type: number
     weight: 3
-    region: content
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-  field_judicial_order:
-    type: number
-    weight: 2
     region: content
     settings:
       placeholder: ''
