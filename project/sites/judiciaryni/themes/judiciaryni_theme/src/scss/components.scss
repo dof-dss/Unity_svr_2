@@ -124,3 +124,27 @@ p.published-date {
     }
   }
 }
+
+.path-judicial-members {
+  .item-list {
+    ul {
+      li {
+        list-style: none;
+        position: relative;
+        padding-left: 1.2rem;
+
+        &:before {
+          content: '-';
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+
+        span {
+          @include adjust-font-size-to(16px);
+          color: $grey-light;
+        }
+      }
+    }
+  }
+}
