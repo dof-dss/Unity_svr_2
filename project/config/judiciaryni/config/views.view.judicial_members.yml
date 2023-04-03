@@ -16,7 +16,7 @@ dependencies:
 id: judicial_members
 label: 'Judicial members'
 module: views
-description: ''
+description: 'Page view is build by the judiciary by term ID block view in views-view--judiciary-list.html.twig template'
 tag: ''
 base_table: node_field_data
 base_field: nid
