@@ -205,6 +205,15 @@
   font-weight: bold;
 }
 
+.node-type-publication,
+.node-type-news {
+  .content-sidebar-wrap {
+    @include breakpoint($tab) {
+      width: 65%;
+    }
+  }
+}
+
 .footer-area .column:last-child {
     float: none;
     width: unset;
