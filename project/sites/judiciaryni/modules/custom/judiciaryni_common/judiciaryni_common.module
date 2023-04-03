@@ -69,18 +69,3 @@ function judiciaryni_common_entity_presave(EntityInterface $entity) {
   }
 }
 
-/**
- * Implements hook_preprocess_HOOK().
- */
-function judiciaryni_common_preprocess_views_view_list(&$variables) {
-  if ($variables['view']->current_display === 'judiciary_list') {
-    $view_results = count($variables['rows']);
-
-    if (str_contains($variables['title'], 'Coroner')) {
-      $variables['title'] .= ' (' . $view_results . ') *';
-    }
-    else {
-      $variables['title'] .= ' (' . $view_results . ')';
-    }
-  }
-}
