@@ -1,0 +1,72 @@
+blocks:
+  -
+    info: 'Contact Information'
+    langcode: en
+    uuid: 8519facf-802d-4d0c-806e-40b59f973f78
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<address><strong>COSICA NI</strong></address>\r\n\r\n<address>5th Floor South<br />\r\nQueen’s Court<br />\r\n56-66 Upper Queen Street<br />\r\nBelfast<br />\r\nBT1 6FD</address>\r\n\r\n<address>Telephone: &nbsp;028 9054 4985<br />\r\nEmail:&nbsp;<a href=\"mailto:info@cosica-ni.org\">info@cosica-ni.org</a></address>\r\n\r\n<address>Opening Hours: Mon-Fri, 9am to 5pm</address>\r\n"
+          summary: null
+          format: basic_html
+  -
+    info: 'Social links'
+    langcode: en
+    uuid: 5f064435-7a44-41bb-9a40-a64d7cb97e59
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body: {  }
+  -
+    info: 'News home'
+    langcode: en
+    uuid: c8ae560a-9bc6-4ec4-9fa9-c9dc1b3b493b
+    bundle: link_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<drupal-media data-align=\"center\" data-entity-type=\"media\" data-entity-uuid=\"fe2e47ed-836c-415c-ae9d-899aa823e003\"></drupal-media>\r\n\r\n<p>Latest News&nbsp;</p>\r\n"
+          summary: ''
+          format: basic_html
+      field_link:
+        -
+          uri: 'internal:/news'
+          title: ''
+          options: {  }
+  -
+    info: 'Fiona home '
+    langcode: en
+    uuid: 7fdc56c3-f5b0-4b89-9d6b-3889e9b4880d
+    bundle: link_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<drupal-media data-align=\"center\" data-entity-type=\"media\" data-entity-uuid=\"f30c7845-2fb1-45ec-a13a-70f66abef80d\"></drupal-media>\r\n\r\n<p>Fiona Ryan - Commissioner for Survivors of Institutional Childhood Abuse&nbsp;&nbsp;</p>\r\n"
+          summary: ''
+          format: basic_html
+      field_link:
+        -
+          uri: 'entity:node/8'
+          title: ''
+          options: {  }
+  -
+    info: 'Front page banner'
+    langcode: en
+    uuid: 3c45b637-2e62-4764-89a1-5b0546cac950
+    bundle: basic_block
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: '<blockquote>Promoting the interests of victims and survivors of historical institutional childhood abuse</blockquote>'
+          summary: ''
+          format: full_html
