@@ -1,0 +1,50 @@
+uuid: e1f58056-ee47-4dac-8b50-87cf8b363bb8
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_metatag_field_instance_widget_settings_user
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Metatag field instance widget settings of users'
+source:
+  plugin: d7_metatag_field_instance
+  source_module: metatag
+  ignore_map: true
+  constants:
+    field_name: field_metatag
+    form_mode: default
+  entity_type_id: user
+process:
+  bundle:
+    -
+      plugin: get
+      source: bundle
+  entity_type:
+    -
+      plugin: get
+      source: entity_type
+    -
+      plugin: static_map
+      map:
+        field_collection_item: paragraph
+        paragraphs_item: paragraph
+      bypass: true
+  field_name:
+    -
+      plugin: get
+      source: constants/field_name
+  form_mode:
+    -
+      plugin: get
+      source: constants/form_mode
+destination:
+  plugin: component_entity_form_display
+migration_dependencies:
+  required:
+    - upgrade_d7_metatag_field_instance_user
+  optional: {  }
