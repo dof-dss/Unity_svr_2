@@ -1,9 +1,9 @@
-uuid: 37b7c6a9-03c8-47e2-8290-861d84393453
+uuid: bd4deed4-7e53-40cc-b681-ff8c633c719b
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic_block:40ae91c6-6f2a-4285-be94-c3654f3c182f'
+    - 'block_content:basic_block:3c45b637-2e62-4764-89a1-5b0546cac950'
   module:
     - block_content
     - system
@@ -14,9 +14,9 @@ theme: cosicani_theme
 region: slideshow
 weight: 0
 provider: null
-plugin: 'block_content:40ae91c6-6f2a-4285-be94-c3654f3c182f'
+plugin: 'block_content:3c45b637-2e62-4764-89a1-5b0546cac950'
 settings:
-  id: 'block_content:40ae91c6-6f2a-4285-be94-c3654f3c182f'
+  id: 'block_content:3c45b637-2e62-4764-89a1-5b0546cac950'
   label: 'Front page banner'
   label_display: '0'
   provider: block_content
