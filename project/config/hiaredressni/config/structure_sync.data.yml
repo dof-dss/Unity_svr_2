@@ -22,9 +22,9 @@ blocks:
     fields:
       body:
         -
-          value: "<h3><a href=\"/node/5\"><img alt=\"\" data-delta=\"1\" data-fid=\"9\" data-media-element=\"1\" src=\"https://www.hiaredressni.uk.dev-54ta5gq-erekdd7fnk5be.uk-1.platformsh.site/sites/hiaredress/files/media-files/hiaredress-guidance.png\" /><br />\r\nGuidance for applicants</a></h3>\r\n"
+          value: "<h3><a href=\"/node/5\"><img alt=\"\" data-delta=\"1\" data-fid=\"9\" data-media-element=\"1\" src=\"https://www.hiaredressni.uk/files/hiaredressni/media-files/hiaredress-guidance.png\" /><br />\r\nGuidance for applicants</a></h3>\r\n"
           summary: null
-          format: basic_html
+          format: full_html
   -
     info: 'Make an application'
     langcode: en
