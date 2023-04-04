@@ -11,7 +11,13 @@
   }
 }
 
+.region-primary-menu .menu_wrapper {
+  background: #eee;
+}
+
 #main-menu {
+  background: inherit;
+
   .menu {
     .menu-item {
       border-right: 1px solid #fff;
