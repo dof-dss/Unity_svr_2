@@ -1,0 +1,28 @@
+uuid: 46e135be-7df1-4e4d-94dc-e6ff26c49040
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.published_date_publications
+  module:
+    - facets
+    - system
+  theme:
+    - pacni_theme
+id: publisheddate_publications
+theme: pacni_theme
+region: search_facets
+weight: -6
+provider: null
+plugin: 'facet_block:published_date_publications'
+settings:
+  id: 'facet_block:published_date_publications'
+  label: Date
+  label_display: visible
+  provider: facets
+  block_id: publisheddate_publications
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/publications\r\n/publications/date/*\r\n/publications/type/*"
