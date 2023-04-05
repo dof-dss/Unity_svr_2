@@ -16,6 +16,7 @@ dependencies:
     - datetime
     - field_group
     - layout_builder
+    - metatag
     - text
     - user
 third_party_settings:
@@ -26,12 +27,11 @@ third_party_settings:
     group_additional_content_details:
       children:
         - field_publication_type
-        - field_publication_date
-        - field_photo
+        - field_meta_tags
       label: 'Additional content details'
       parent_name: ''
-      region: hidden
-      weight: 11
+      region: content
+      weight: 4
       format_type: html_element
       format_settings:
         classes: field-collection
@@ -55,7 +55,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 1
     region: content
   field_attachment:
     type: entity_reference_entity_view
@@ -64,7 +64,14 @@ content:
       view_mode: embed
       link: false
     third_party_settings: {  }
-    weight: 4
+    weight: 3
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
     region: content
   field_photo:
     type: entity_reference_entity_view
@@ -82,7 +89,7 @@ content:
       timezone_override: ''
       format_type: html_year
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_publication_type:
     type: entity_reference_label
@@ -94,7 +101,6 @@ content:
     region: content
 hidden:
   content_moderation_control: true
-  field_meta_tags: true
   field_summary: true
   langcode: true
   links: true

@@ -1,0 +1,29 @@
+uuid: 92d7ec02-8794-48e9-96e7-0f0ebe1f0aad
+langcode: en
+status: true
+dependencies:
+  module:
+    - unity_events
+title: 'Unity events archiver'
+id: unity_events_cron
+weight: 0
+module: unity_events
+callback: unity_events_cron
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '*/15+@ * * * *'
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

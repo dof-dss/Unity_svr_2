@@ -26,6 +26,8 @@ db:
             - pacnidb
             - cosicanidb
             - judiciarynidb
+            - boundarycommissiondb
+            - industrialcourtdb
         endpoints:
             mentalhealthchampionni:
                 default_schema: mentalhealthchampionnidb
@@ -91,6 +93,14 @@ db:
                 default_schema: judiciarynidb
                 privileges:
                     judiciarynidb: admin
+            boundarycommission:
+                default_schema: boundarycommissiondb
+                privileges:
+                    boundarycommissiondb: admin
+            industrialcourt:
+                default_schema: industrialcourtdb
+                privileges:
+                    industrialcourtdb: admin
 solr:
     type: 'solr:7.7'
     disk: 1024
@@ -128,6 +138,10 @@ solr:
                 conf_dir: !archive solr_config/
             judiciaryni_index:
                 conf_dir: !archive solr_config/
+            boundarycommission_index:
+                conf_dir: !archive solr_config/
+            industrialcourt_index:
+                conf_dir: !archive solr_config/
         endpoints:
             mentalhealthchampionni:
                 core: mentalhealthchampionni_index
@@ -161,5 +175,9 @@ solr:
                 core: cosicani_index
             judiciaryni:
                 core: judiciaryni_index
+            boundarycommission:
+                core: boundarycommission_index
+            industrialcourt:
+                core: industrialcourt_index
 redis:
     type: 'redis:6.0'

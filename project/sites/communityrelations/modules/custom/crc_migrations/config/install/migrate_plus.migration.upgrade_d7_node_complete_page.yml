@@ -1,4 +1,4 @@
-uuid: 1f29bfae-9d8a-43a9-a0c6-a3cf59bf4bc3
+uuid: cc707212-788a-492b-9d35-692f9b932650
 langcode: en
 status: true
 dependencies: {  }
@@ -90,12 +90,12 @@ process:
         https://www.community-relations.org.uk
     -
       plugin: site_files_filter
-      from_ref: sites/crc/files
-      to_ref: files/crc
+      from_ref: sites/communityrelations/files
+      to_ref: files/communityrelations
     -
       plugin: site_files_filter
       from_ref: sites/community-relations.org.uk/files
-      to_ref: files/crc
+      to_ref: files/communityrelations
   body/0/format:
     -
       plugin: static_map

@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
+name: 'The Boundary Commission for Northern Ireland'
+mail: Test@test.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+uuid: f56496ca-0b44-43f8-b307-195cc4bf9183
+frontpage_title: 'Welcome to Drupal site'

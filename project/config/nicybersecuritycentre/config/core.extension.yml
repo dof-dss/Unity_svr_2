@@ -123,6 +123,7 @@ module:
   unity_breadcrumbs: 0
   unity_common: 0
   unity_eu_cookie_compliance: 0
+  unity_events: 0
   unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0
