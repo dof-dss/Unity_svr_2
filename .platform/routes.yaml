@@ -77,6 +77,14 @@
 'https://boundarycommission.org.uk/':
     type: redirect
     to: 'https://www.boundarycommission.org.uk/'
+'https://www.industrialcourt.gov.uk/':
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
+'https://industrialcourt.gov.uk/':
+    type: redirect
+    to: 'https://www.industrialcourt.gov.uk/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_2:http'
