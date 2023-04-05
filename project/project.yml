@@ -156,3 +156,12 @@ sites:
         database: boundarycommission
         status: development
         default: false
+    industrialcourt:
+        name: 'Industrial Court'
+        url: industrialcourt.gov.uk
+        solr: industrialcourt
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/industrialcourt ; drush core-cron'
+        database: industrialcourt
+        status: development
+        default: false
