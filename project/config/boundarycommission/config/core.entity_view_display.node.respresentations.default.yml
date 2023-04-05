@@ -1,0 +1,44 @@
+uuid: 1ed22e1a-2022-46d8-96c7-f394a6fee730
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.respresentations.field_attachment
+    - field.field.node.respresentations.field_representation_stage
+    - field.field.node.respresentations.field_response_type
+    - node.type.respresentations
+  module:
+    - user
+id: node.respresentations.default
+targetEntityType: node
+bundle: respresentations
+mode: default
+content:
+  field_attachment:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_representation_stage:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_response_type:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  links: true

@@ -4,10 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
+    - field.field.node.news.field_archive
     - field.field.node.news.field_meta_tags
     - field.field.node.news.field_photo
     - field.field.node.news.field_published_date
-    - field.field.node.news.field_summary
     - field.field.node.news.field_teaser
     - node.type.news
   module:
@@ -22,34 +22,50 @@ bundle: news
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 4
+    region: content
+  field_archive:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_photo:
-    weight: 1
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: landscape_float
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 3
     region: content
   field_published_date:
-    weight: 0
+    type: datetime_default
     label: above
     settings:
       timezone_override: ''
       format_type: unity_date
     third_party_settings: {  }
-    type: datetime_default
+    weight: 1
+    region: content
+  field_teaser:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
   content_moderation_control: true
   field_meta_tags: true
-  field_summary: true
-  field_teaser: true
   langcode: true
   links: true

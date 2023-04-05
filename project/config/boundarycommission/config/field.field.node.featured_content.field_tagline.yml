@@ -1,0 +1,21 @@
+uuid: 28214d0a-941c-41a5-8309-e10abdef6b27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tagline
+    - node.type.featured_content
+  module:
+    - text
+id: node.featured_content.field_tagline
+field_name: field_tagline
+entity_type: node
+bundle: featured_content
+label: Tagline
+description: 'Add a tagline that will be displayed under the image on the home page.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

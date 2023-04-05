@@ -1,0 +1,20 @@
+uuid: 2560fab3-2ee2-4da5-a192-201a1f63c5fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_representation_stage
+field_name: field_representation_stage
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
