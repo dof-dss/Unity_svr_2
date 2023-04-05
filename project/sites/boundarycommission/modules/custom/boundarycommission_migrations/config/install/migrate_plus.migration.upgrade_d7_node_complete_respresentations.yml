@@ -76,7 +76,7 @@ process:
     -
       plugin: get
       source: comment
-  field_consultation_attachment:
+  field_attachment:
     -
       plugin: sub_process
       source: field_consultation_attachment
@@ -84,14 +84,27 @@ process:
         target_id: fid
         display: display
         description: description
-  field_consultation_response_type:
+  field_response_type:
     -
-      plugin: get
+      plugin: static_map
       source: field_consultation_response_type
+      default_value: null
+      map:
+        individuals: 4
+        organisations: 5
+        petitions: 6
+        political: 7
+        public_hearings: 8
+        phrecord: 9
+        conresponse: 10
   field_representation_stage:
     -
-      plugin: get
+      plugin: static_map
       source: field_representation_stage
+      default_value: null
+      map:
+        pubrecords: 15
+        conresponse: 16
   field_metatag:
     -
       plugin: d7_metatag_entities

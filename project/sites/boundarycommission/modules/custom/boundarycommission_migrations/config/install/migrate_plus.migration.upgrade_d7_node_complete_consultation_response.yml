@@ -78,13 +78,27 @@ process:
       source: comment
   field_consultation_stage:
     -
-      plugin: get
+      plugin: static_map
       source: field_consultation_stage
-  field_consultation_response_type:
+      default_value: null
+      map:
+        initial: 1
+        secondary: 2
+        revised_proposals: 3
+  field_response_type:
     -
-      plugin: get
+      plugin: static_map
       source: field_consultation_response_type
-  field_consultation_attachment:
+      default_value: null
+      map:
+        individuals: 4
+        organisations: 5
+        petitions: 6
+        political: 7
+        public_hearings: 8
+        phrecord: 9
+        conresponse: 10
+  field_attachment:
     -
       plugin: sub_process
       source: field_consultation_attachment

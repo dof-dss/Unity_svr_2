@@ -107,7 +107,7 @@ process:
         filtered_html_with_tokens: basic_html
         restricted_html: basic_html
         plain_text: plain_text
-  field_publication_attachment:
+  field_attachment:
     -
       plugin: sub_process
       source: field_publication_attachment
@@ -117,8 +117,14 @@ process:
         description: description
   field_publication_type:
     -
-      plugin: get
+      plugin: static_map
       source: field_publication_type
+      default_value: null
+      map:
+        2018_review: 11
+        corporate_publications: 12
+        electoral_statistics: 13
+        meetings: 14
   field_published_date:
     -
       plugin: sub_process
