@@ -1,4 +1,4 @@
-uuid: 7ce35dff-5499-4984-82d2-ae582f10c5a4
+uuid: 4bce75a6-5408-4a55-8a99-0b459b66b5c4
 langcode: en
 status: true
 dependencies: {  }
@@ -90,12 +90,12 @@ process:
         https://www.community-relations.org.uk
     -
       plugin: site_files_filter
-      from_ref: sites/crc/files
-      to_ref: files/crc
+      from_ref: sites/communityrelations/files
+      to_ref: files/communityrelations
     -
       plugin: site_files_filter
       from_ref: sites/community-relations.org.uk/files
-      to_ref: files/crc
+      to_ref: files/communityrelations
   body/0/format:
     -
       plugin: static_map
@@ -107,7 +107,7 @@ process:
         filtered_html_with_tokens: basic_html
         restricted_html: basic_html
         plain_text: plain_text
-  field_crc_event_date:
+  field_event_date:
     -
       plugin: sub_process
       source: field_crc_event_date
@@ -122,7 +122,7 @@ process:
           from_format: 'Y-m-d H:i:s'
           to_format: 'Y-m-d\TH:i:s'
           source: value2
-  field_crc_teaser:
+  field_teaser:
     -
       plugin: get
       source: field_crc_teaser

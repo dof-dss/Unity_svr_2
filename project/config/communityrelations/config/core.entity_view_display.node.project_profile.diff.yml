@@ -11,13 +11,35 @@ dependencies:
     - field.field.node.project_profile.field_meta_tags
     - node.type.project_profile
   module:
+    - field_group
     - layout_builder
+    - metatag
     - text
     - user
 third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
+  field_group:
+    group_additional_content_details:
+      children:
+        - field_meta_tags
+      label: 'Additional content details'
+      parent_name: ''
+      region: content
+      weight: 4
+      format_type: html_element
+      format_settings:
+        classes: field-collection
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 id: node.project_profile.diff
 targetEntityType: node
 bundle: project_profile
@@ -28,14 +50,14 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 0
     region: content
   field_crc_contact_details:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_crc_council_area:
     type: entity_reference_label
@@ -43,7 +65,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_crc_t_buc_aim:
     type: entity_reference_label
@@ -53,9 +75,15 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
 hidden:
   content_moderation_control: true
-  field_meta_tags: true
   langcode: true
   links: true
   search_api_excerpt: true

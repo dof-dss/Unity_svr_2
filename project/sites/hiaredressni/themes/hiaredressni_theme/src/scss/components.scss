@@ -161,7 +161,7 @@
   }
 }
 
-.menu_wrapper {
+.region-primary-menu .menu_wrapper {
   @media screen and (min-width: $tab) {
     border-bottom: 1px solid $brand-secondary;
     padding-bottom: 2rem;

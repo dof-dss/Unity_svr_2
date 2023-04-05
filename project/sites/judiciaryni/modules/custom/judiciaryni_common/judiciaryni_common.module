@@ -34,39 +34,24 @@ function judiciaryni_common_entity_presave(EntityInterface $entity) {
       $tier = Term::load($tierTID);
       $tierName = $tier->getName();
 
-      if ($judgeName == 'Vacant') {
+      if ($judgeTitle == 'Vacant') {
         $shorttitle = $judgeName . ' ' . $tierName;
       }
-      elseif ($tierName == 'Lord Chief Justice') {
+      elseif ($tierName == 'Lord Chief Justice' || $tierName == 'Lady Chief Justice') {
         $shorttitle = $judgeName . ' LCJ';
       }
-      elseif ($tierName == 'Lady Chief Justice') {
-        $shorttitle = $judgeName . ' LCJ';
-      }
-      elseif ($tierName == 'Justice of Appeal' && $judgeSex == 'male') {
+      elseif ($tierName == 'Justice of Appeal') {
         $shorttitle = $judgeName . ' LJ';
       }
-      elseif ($tierName == 'Justice of Appeal' && $judgeSex !== 'male') {
-        $shorttitle = $judgeName . ' LJ';
-      }
-      elseif ($tierName == 'High Court Judge' && $judgeSex == 'male') {
+      elseif ($tierName == 'High Court Judge') {
         $shorttitle = $judgeName . ' J';
       }
-      elseif ($tierName == 'High Court Judge' && $judgeSex !== 'male') {
-        $shorttitle = $judgeName . ' J';
-      }
-      elseif ($tierName == 'County Court Judge' && $judgeSex == 'male') {
-        $shorttitle = 'His Honour Judge ' . $judgeName;
-      }
-      elseif ($tierName == 'County Court Judge' && $judgeSex !== 'male') {
-        $shorttitle = 'Her Honour Judge ' . $judgeName;
-      }
-      elseif ($tierName == 'Recorder of Belfast' or $tierName == 'Recorder of Londonderry') {
-        $hes = 'His';
+      elseif ($tierName == 'County Court Judge' || $tierName == 'Recorder of Belfast' || $tierName == 'Recorder of Londonderry') {
+        $sex = 'His ';
         if ($judgeSex !== 'male') {
-          $hes = 'Her';
+          $sex = 'Her ';
         }
-        $shorttitle = $hes . 'Honour Judge ' . $judgeName;
+        $shorttitle = $sex . 'Honour Judge ' . $judgeName;
       }
       elseif ($tierName == 'Master of the High Court') {
         $shorttitle = 'Master ' . $judgeName;
@@ -74,10 +59,7 @@ function judiciaryni_common_entity_presave(EntityInterface $entity) {
       elseif ($tierName == 'District Judge') {
         $shorttitle = 'District Judge ' . $judgeName;
       }
-      elseif ($tierName == "District Judge (Magistrates’ Courts)") {
-        $shorttitle = 'District Judge (MC) ' . $judgeName;
-      }
-      elseif ($tierName == "Presiding District Judge (Magistrates’ Courts)") {
+      elseif ($tierName == 'District Judge (Magistrates’ Courts)' || $tierName == 'Presiding District Judge (Magistrates’ Courts)') {
         $shorttitle = 'District Judge (MC) ' . $judgeName;
       }
 
@@ -86,3 +68,4 @@ function judiciaryni_common_entity_presave(EntityInterface $entity) {
     $entity->setTitle($shorttitle);
   }
 }
+
