@@ -1,0 +1,24 @@
+uuid: d259b24a-e2d5-4d84-9d24-39c10e5cf50c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contact
+_core:
+  default_config_hash: x-hb9sAOe37Bz-4jA5FaE5nbooegNoDe61k-GnoIgAY
+id: node.contact.status
+field_name: status
+entity_type: node
+bundle: contact
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

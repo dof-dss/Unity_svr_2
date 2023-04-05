@@ -1,0 +1,108 @@
+uuid: 0f944f12-d319-443d-b7c2-58119605c1c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.consultation.body
+    - field.field.node.consultation.field_attachment
+    - field.field.node.consultation.field_consultation_dates
+    - field.field.node.consultation.field_email_address
+    - field.field.node.consultation.field_meta_tags
+    - field.field.node.consultation.field_postal
+    - field.field.node.consultation.field_published_date
+    - field.field.node.consultation.field_respond_online
+    - field.field.node.consultation.field_summary
+    - node.type.consultation
+  module:
+    - address
+    - datetime
+    - datetime_range
+    - layout_builder
+    - link
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+_core:
+  default_config_hash: eGR3FGdO63VsnhWo-JwBk3k3zH2AJEeBLC3wOP18Mqk
+id: node.consultation.full
+targetEntityType: node
+bundle: consultation
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_attachment:
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: embed
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_consultation_dates:
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: unity_date
+      separator: '-'
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_email_address:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_postal:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_published_date:
+    weight: 0
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: unity_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_respond_online:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_summary:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  content_moderation_control: true
+  field_meta_tags: true
+  langcode: true
+  links: true

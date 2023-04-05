@@ -1,0 +1,32 @@
+uuid: 6226a1a9-a237-4280-845e-dc0f0bdbc679
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.contact
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: Q06QZKSbW5KkRtfrzX1Xan4rLT-yTbrvCnge3cqG0Ns
+id: node.contact.body
+field_name: body
+entity_type: node
+bundle: contact
+label: Body
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary
