@@ -58,8 +58,8 @@ settings:
             - Maximize
   plugins:
     drupallink:
-      linkit_enabled: false
-      linkit_profile: ''
+      linkit_enabled: true
+      linkit_profile: default
     stylescombo:
       styles: "p.info-notice|Information notice\r\na.btn|Button"
 image_upload:
