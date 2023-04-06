@@ -1,14 +1,12 @@
-uuid: d6501671-a972-446f-b739-b4e86bf0ebdb
+uuid: 217e0a22-c6c3-45f9-9c8a-0b76f8c01f5f
 langcode: und
 status: true
 dependencies:
   module:
     - datetime
     - node
-_core:
-  default_config_hash: 3tpwHAUvVnxhVywjAwQuZh2lWqxhX521AyKeA3eaR14
-id: node.field_published_date
-field_name: field_published_date
+id: node.field_date_of_decision
+field_name: field_date_of_decision
 entity_type: node
 type: datetime
 settings:

@@ -1,0 +1,19 @@
+uuid: 5c1a49cd-71c9-4214-bbb9-79a96e0558a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_union
+    - node.type.decision
+id: node.decision.field_union
+field_name: field_union
+entity_type: node
+bundle: decision
+label: Union
+description: 'Enter the name of the union'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
