@@ -13,14 +13,6 @@
 'https://mentalhealthchampion-ni.org.uk.{default}/':
     type: redirect
     to: 'https://www.mentalhealthchampion-ni.org.uk.{default}/'
-'https://www.ircommission.org/':
-    type: upstream
-    upstream: 'unity_svr_2:http'
-    cache:
-        enabled: 'false'
-'https://ircommission.org/':
-    type: redirect
-    to: 'https://www.ircommission.org/'
 'https://www.nicertoffice.org.uk/':
     type: upstream
     upstream: 'unity_svr_2:http'
@@ -45,14 +37,6 @@
 'https://sentencereview.org.uk/':
     type: redirect
     to: 'https://www.sentencereview.org.uk/'
-'https://www.ppsni.gov.uk/':
-    type: upstream
-    upstream: 'unity_svr_2:http'
-    cache:
-        enabled: 'false'
-'https://ppsni.gov.uk/':
-    type: redirect
-    to: 'https://www.ppsni.gov.uk/'
 'https://www.pacni.gov.uk/':
     type: upstream
     upstream: 'unity_svr_2:http'
