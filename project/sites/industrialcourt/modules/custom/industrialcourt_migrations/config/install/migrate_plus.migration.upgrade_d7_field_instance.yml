@@ -81,13 +81,13 @@ process:
           migration: upgrade_d7_taxonomy_vocabulary
           source: vid
   settings:
-      plugin: d7_field_instance_settings
-      source:
-        - settings
-        - widget
-        - field_definition
-    inline_entity_form:
-      plugin: inline_entity_form_field_instance_settings
+    plugin: d7_field_instance_settings
+    source:
+      - settings
+      - widget
+      - field_definition
+  inline_entity_form:
+    plugin: inline_entity_form_field_instance_settings
   default_value_function:
     -
       plugin: get
