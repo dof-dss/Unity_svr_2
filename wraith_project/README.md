@@ -25,7 +25,7 @@ To run an individual test on one site:
 
 wraith capture configs/imtac_capture.yaml
 
-After running the tests you will be presented with a 'gallery' of screenshots taht show comparisons between the sites.
+After running the tests you will be presented with a 'gallery' of screenshots that show comparisons between the sites.
 Note that a threshold value of 5 has been selected, so if the screenshots differ by more than 5% they will be flagged as
 'failed'.
 
