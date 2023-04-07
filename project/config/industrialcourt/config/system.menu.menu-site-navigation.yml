@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: menu-site-navigation
 label: 'Site Navigation'
-description: 'Used on the right side of pages for site navigation'
+description: 'Page navigation area'
 locked: false

@@ -1,9 +1,9 @@
-uuid: ffd981a5-6146-4578-9faa-921981cba956
+uuid: 1ae4dfc4-e14f-4a3a-852c-a37bcb818263
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.search_index
     - field.field.node.decision.body
     - field.field.node.decision.field_attachments
     - field.field.node.decision.field_date_of_decision
@@ -12,18 +12,22 @@ dependencies:
     - field.field.node.decision.field_union
     - node.type.decision
   module:
+    - layout_builder
     - text
     - user
-id: node.decision.teaser
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.decision.search_index
 targetEntityType: node
 bundle: decision
-mode: teaser
+mode: search_index
 content:
   body:
-    type: text_summary_or_trimmed
+    type: text_default
     label: hidden
-    settings:
-      trim_length: 600
+    settings: {  }
     third_party_settings: {  }
     weight: 101
     region: content
