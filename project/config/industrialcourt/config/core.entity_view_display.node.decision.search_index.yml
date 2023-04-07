@@ -1,0 +1,45 @@
+uuid: 1ae4dfc4-e14f-4a3a-852c-a37bcb818263
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.decision.body
+    - field.field.node.decision.field_attachments
+    - field.field.node.decision.field_date_of_decision
+    - field.field.node.decision.field_employer_name
+    - field.field.node.decision.field_type_of_decision
+    - field.field.node.decision.field_union
+    - node.type.decision
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.decision.search_index
+targetEntityType: node
+bundle: decision
+mode: search_index
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_attachments: true
+  field_date_of_decision: true
+  field_employer_name: true
+  field_type_of_decision: true
+  field_union: true
+  langcode: true

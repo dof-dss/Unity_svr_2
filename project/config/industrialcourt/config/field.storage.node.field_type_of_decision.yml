@@ -1,0 +1,33 @@
+uuid: 83a1ea4c-77b2-4dc7-9d6a-e4704dfe789e
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_type_of_decision
+field_name: field_type_of_decision
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: recognition
+      label: 'Statutory Recognition'
+    -
+      value: derecognition
+      label: 'Statutory Derecognition'
+    -
+      value: unfairpractice
+      label: 'Unfair Practices'
+    -
+      value: informationconsultation
+      label: 'Information and Consultation of Employees Regulations'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

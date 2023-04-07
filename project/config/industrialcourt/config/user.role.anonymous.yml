@@ -2,12 +2,7 @@ uuid: 4a48612e-8aab-4a12-8d63-ff025269dacb
 langcode: en
 status: true
 dependencies:
-  config:
-    - filter.format.restricted_html
   module:
-    - eu_cookie_compliance
-    - filter
-    - media
     - search
     - system
 _core:
@@ -17,9 +12,7 @@ label: 'Anonymous user'
 weight: 0
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
-  - 'display eu cookie compliance popup'
+  - 'diff view changes'
   - 'search content'
-  - 'use text format restricted_html'
-  - 'view media'
+  - 'view files'

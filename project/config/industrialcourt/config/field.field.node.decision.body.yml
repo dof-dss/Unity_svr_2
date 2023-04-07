@@ -1,25 +1,23 @@
-uuid: 1dcda8c3-960e-4a9c-b0d8-71f64e192c9a
+uuid: ee92a727-b19e-453c-b1aa-9b22032681af
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.news
+    - node.type.decision
   module:
     - text
-_core:
-  default_config_hash: u1pxGrNXR4V2q0lHTM0AuVdnbyTLitNAlxGCLqWujyg
-id: node.news.body
+id: node.decision.body
 field_name: body
 entity_type: node
-bundle: news
+bundle: decision
 label: Body
 description: ''
-required: true
-translatable: true
+required: false
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  display_summary: false
+  display_summary: true
   required_summary: false
 field_type: text_with_summary
