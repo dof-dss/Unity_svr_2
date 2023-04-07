@@ -3,8 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.news
+    - node.type.decision
   module:
+    - menu_admin_per_menu
     - node
     - redirect
     - system
@@ -31,7 +32,6 @@ permissions:
   - 'delete any decision content'
   - 'delete any document files'
   - 'delete any image files'
-  - 'delete any news content'
   - 'delete any page content'
   - 'delete any video files'
   - 'delete own audio files'

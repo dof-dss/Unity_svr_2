@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.news
+    - node.type.decision
   module:
     - node
     - path
@@ -23,16 +23,12 @@ permissions:
   - 'access media browser'
   - 'access workbench'
   - 'create decision content'
-  - 'create news content'
   - 'create page content'
   - 'create url aliases'
-  - 'delete own news content'
   - 'delete own page content'
   - 'diff view changes'
-  - 'edit any news content'
   - 'edit any page content'
   - 'edit own decision content'
-  - 'edit own news content'
   - 'edit own page content'
   - 'notify of path changes'
   - 'revert revisions'
