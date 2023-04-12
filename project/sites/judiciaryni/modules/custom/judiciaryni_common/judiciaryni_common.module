@@ -4,6 +4,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\taxonomy\Entity\Term;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\node\NodeInterface;
+use Drupal\views\ViewExecutable;
 
 /**
  * Implements hook_form_alter().
@@ -68,4 +69,3 @@ function judiciaryni_common_entity_presave(EntityInterface $entity) {
     $entity->setTitle($shorttitle);
   }
 }
-

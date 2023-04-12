@@ -466,7 +466,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -531,8 +531,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '{{ field_full_title }} <span>(appointed {{ field_date_appointed }})</span>'
             make_link: false
             path: ''
             absolute: false
