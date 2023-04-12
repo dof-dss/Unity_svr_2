@@ -9,7 +9,7 @@ dependencies:
 id: pagetitle
 theme: judiciaryni_theme
 region: content
-weight: -10
+weight: -13
 provider: null
 plugin: page_title_block
 settings:
@@ -21,4 +21,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "/judicial-decisions\r\n/judicial-decisions/*\r\n/judicial-decisions/type/*\r\n/judicial-decisions/judiciary/*\r\n/judicial-decisions/date/*\r\n/publications\r\n/publications/date/*\r\n/publications/type/*\r\n/search\r\n/search*\r\n/publications/sentencing-guidelines-northern-ireland\r\n/publications/sentencing-guidelines-northern-ireland/*\r\n/publications/sentencing-guidelines-northern-ireland/date/*\r\n"
+    pages: "/judicial-decisions\r\n/judicial-decisions/*\r\n/judicial-decisions/type/*\r\n/judicial-decisions/judiciary/*\r\n/judicial-decisions/date/*\r\n/publications\r\n/publications/date/*\r\n/publications/type/*\r\n/search\r\n/search*\r\n/judiciary-decision-types\r\n/judiciary-decision-types/date/*\r\n/judiciary-decision-types/type/*"

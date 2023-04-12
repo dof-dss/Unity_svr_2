@@ -23,3 +23,9 @@ facets:
     separator: ', '
     show_count: false
     weight: 0
+  decision_keywords_type:
+    checked: true
+    label: 'Decision keywords type'
+    separator: ', '
+    show_count: false
+    weight: 0

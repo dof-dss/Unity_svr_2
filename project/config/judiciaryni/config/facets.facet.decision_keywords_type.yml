@@ -1,4 +1,4 @@
-uuid: f681af3e-355e-4a90-8ed4-6449050ca715
+uuid: 6b594f3b-a532-460e-8d58-b382899864c7
 langcode: en
 status: true
 dependencies:
@@ -10,14 +10,14 @@ dependencies:
     - search_api
 third_party_settings:
   facets_pretty_paths:
-    coder: default_coder
-id: sentence_guidelines_date
-name: Date
+    coder: taxonomy_term_coder
+id: decision_keywords_type
+name: Type
 weight: 0
 min_count: 1
-url_alias: date
+url_alias: type
 facet_source_id: 'search_api:views_page__judicial_decisions_search__sentence_guide_search'
-field_identifier: field_publication_date
+field_identifier: field_decision_type
 query_operator: and
 hard_limit: 50
 exclude: false
@@ -48,25 +48,17 @@ processor_configs:
       sort: 20
     settings:
       sort: ASC
-  date_facet_drilldown:
-    processor_id: date_facet_drilldown
+  display_value_widget_order:
+    processor_id: display_value_widget_order
     weights:
-      build: 1
+      sort: 40
+    settings:
+      sort: ASC
+  translate_entity:
+    processor_id: translate_entity
+    weights:
+      build: 5
     settings: {  }
-  date_item:
-    processor_id: date_item
-    weights:
-      build: 35
-    settings:
-      date_display: actual_date
-      granularity: 6
-      date_format: ''
-  raw_value_widget_order:
-    processor_id: raw_value_widget_order
-    weights:
-      sort: 50
-    settings:
-      sort: DESC
   url_processor_handler:
     processor_id: url_processor_handler
     weights:

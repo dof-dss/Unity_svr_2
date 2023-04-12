@@ -1,0 +1,28 @@
+uuid: 4aff4e43-acd0-4816-bc85-f3e08805f43c
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.decision_keywords_type
+  module:
+    - facets
+    - system
+  theme:
+    - judiciaryni_theme
+id: decisionkeywordstype
+theme: judiciaryni_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'facet_block:decision_keywords_type'
+settings:
+  id: 'facet_block:decision_keywords_type'
+  label: Type
+  label_display: visible
+  provider: facets
+  block_id: decisionkeywordstype
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/judiciary-decision-types\r\n/judiciary-decision-types/date/*\r\n/judiciary-decision-types/type/*\r\n"

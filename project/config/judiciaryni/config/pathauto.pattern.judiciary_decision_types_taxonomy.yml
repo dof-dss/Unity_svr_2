@@ -9,10 +9,10 @@ label: 'Judiciary decision types taxonomy'
 type: 'canonical_entities:taxonomy_term'
 pattern: 'judiciary-decision-types/[term:name]'
 selection_criteria:
-  bc7acf80-2ff0-4974-aef5-661fa92e4ab9:
+  3b12f5ba-d75c-4c6e-a073-2a546d22f6f8:
     id: 'entity_bundle:taxonomy_term'
     negate: false
-    uuid: bc7acf80-2ff0-4974-aef5-661fa92e4ab9
+    uuid: 3b12f5ba-d75c-4c6e-a073-2a546d22f6f8
     context_mapping:
       taxonomy_term: taxonomy_term
     bundles:

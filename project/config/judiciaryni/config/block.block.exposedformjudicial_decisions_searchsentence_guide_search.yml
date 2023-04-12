@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/judiciary-decision-types\r\n/judiciary-decision-types*"
+    pages: "/judiciary-decision-types\r\n/judiciary-decision-types/date/*\r\n/judiciary-decision-types/type/*"
