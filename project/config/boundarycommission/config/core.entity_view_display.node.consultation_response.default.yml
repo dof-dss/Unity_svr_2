@@ -1,0 +1,44 @@
+uuid: 4086b1ca-b7c6-467e-86e1-6d29c0833c6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.consultation_response.field_attachment
+    - field.field.node.consultation_response.field_consultation_stage
+    - field.field.node.consultation_response.field_response_type
+    - node.type.consultation_response
+  module:
+    - user
+id: node.consultation_response.default
+targetEntityType: node
+bundle: consultation_response
+mode: default
+content:
+  field_attachment:
+    type: entity_reference_entity_view
+    label: inline
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_consultation_stage:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_response_type:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  langcode: true
+  links: true

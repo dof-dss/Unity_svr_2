@@ -1,0 +1,27 @@
+uuid: f4a85292-9b87-4fc5-8b33-e624c5aa43fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachments
+    - node.type.decision
+  module:
+    - file
+id: node.decision.field_attachments
+field_name: field_attachments
+entity_type: node
+bundle: decision
+label: Attachments
+description: 'Attach any applications decisions and declarations made in the case using this field'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: decisions
+  file_extensions: 'txt doc docx xls xlsx pdf ppt pptx pps ppsx odt ods odp'
+  max_filesize: 30MB
+  description_field: false
+field_type: file

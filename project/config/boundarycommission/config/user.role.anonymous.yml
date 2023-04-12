@@ -2,24 +2,17 @@ uuid: cea06eff-1b30-420e-b7c8-9be7ae3eac73
 langcode: en
 status: true
 dependencies:
-  config:
-    - filter.format.restricted_html
   module:
-    - eu_cookie_compliance
-    - filter
-    - media
     - search
     - system
 _core:
   default_config_hash: aj6ZXi0r2a2rs9TYsol23lyiTqdAokujUQnBl33OdFA
 id: anonymous
-label: 'Anonymous user'
+label: 'anonymous user'
 weight: 0
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
-  - 'display eu cookie compliance popup'
+  - 'diff view changes'
   - 'search content'
-  - 'use text format restricted_html'
-  - 'view media'
+  - 'view files'

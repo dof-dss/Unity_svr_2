@@ -26,3 +26,4 @@
 /bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-communityrelations" "/app/log/communityrelations/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
 /bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-judiciaryni" "/app/log/judiciaryni/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
 /bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-cosicani" "/app/log/cosicani/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
+/bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-industrialcourt" "/app/log/industrialcourt/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"

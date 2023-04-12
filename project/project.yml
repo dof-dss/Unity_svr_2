@@ -29,7 +29,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/ircommission ; drush core-cron'
         database: ircommission
-        status: development
+        status: production
         default: false
     imtac:
         name: 'The Inclusive Mobility and Transport Advisory Committee'
@@ -119,7 +119,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/ppsni ; drush core-cron'
         database: ppsni
-        status: development
+        status: production
         default: false
     pacni:
         name: 'Planning Appeals Commission'
@@ -154,5 +154,14 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/boundarycommission ; drush core-cron'
         database: boundarycommission
+        status: development
+        default: false
+    industrialcourt:
+        name: 'Industrial Court'
+        url: industrialcourt.gov.uk
+        solr: industrialcourt
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/industrialcourt ; drush core-cron'
+        database: industrialcourt
         status: development
         default: false

@@ -1,0 +1,31 @@
+uuid: 7e050b26-2d20-4848-9f42-1aa78ded43b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - origins_toc
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  origins_toc:
+    toc_enable: 1
+    toc_title: Contents
+    toc_location: '#post-content .page-content'
+    toc_insert: before
+    toc_source_container: '#post-content .page-content'
+    toc_element: h2
+    toc_exclusions: ''
+    toc_screen_depth: '2'
+    toc_debug: 0
+_core:
+  default_config_hash: 6uHmFGAyA8P6J3-ur3GvatxtsSxEpHpRTg61Bz9muzg
+name: 'Basic page'
+type: basic_page
+description: 'Use this content type for basic pages on your site.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

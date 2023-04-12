@@ -25,7 +25,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_attachment:
     type: entity_reference_entity_view
@@ -34,19 +34,11 @@ content:
       view_mode: embed
       link: false
     third_party_settings: {  }
-    weight: 3
-    region: content
-  field_publication_type:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: false
-    third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_published_date:
     type: datetime_default
-    label: inline
+    label: hidden
     settings:
       timezone_override: ''
       format_type: unity_date
@@ -56,6 +48,7 @@ content:
 hidden:
   content_moderation_control: true
   field_meta_tags: true
+  field_publication_type: true
   langcode: true
   links: true
   search_api_excerpt: true
