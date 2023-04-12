@@ -37,8 +37,5 @@
  */
 #}
 {% for item in items %}
-  <span>{{ item.content }}</span>
-  {% if loop.length > 1 and not loop.last %}
-    {{ ', ' }}
-  {% endif %}
+  <p class="decision-issues">{{ item.content }}</p>
 {% endfor %}
