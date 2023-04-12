@@ -1,0 +1,25 @@
+uuid: 34a0ce98-8779-40a0-a454-1d4ff2a8f012
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.decisions_index
+    - views.view.judicial_decisions_search
+  module:
+    - search_api
+id: sentence_summary
+name: 'Sentence summary'
+facet_source_id: 'search_api:views_page__judicial_decisions_search__sentence_guide_search'
+processor_configs:
+  hide_when_not_rendered:
+    processor_id: hide_when_not_rendered
+    weights:
+      build: '45'
+    settings: {  }
+facets:
+  sentence_guidelines_date:
+    checked: true
+    label: Date
+    separator: ', '
+    show_count: false
+    weight: 0

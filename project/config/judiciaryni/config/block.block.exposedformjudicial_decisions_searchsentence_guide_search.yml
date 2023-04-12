@@ -1,0 +1,28 @@
+uuid: eab11cb0-6404-4a34-bbf1-7d01999c6650
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.judicial_decisions_search
+  module:
+    - system
+    - views
+  theme:
+    - judiciaryni_theme
+id: exposedformjudicial_decisions_searchsentence_guide_search
+theme: judiciaryni_theme
+region: search_facets
+weight: -4
+provider: null
+plugin: 'views_exposed_filter_block:judicial_decisions_search-sentence_guide_search'
+settings:
+  id: 'views_exposed_filter_block:judicial_decisions_search-sentence_guide_search'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/judiciary-decision-types\r\n/judiciary-decision-types*"

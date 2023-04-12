@@ -12,7 +12,7 @@ dependencies:
 id: publicationtype
 theme: judiciaryni_theme
 region: search_facets
-weight: -12
+weight: -10
 provider: null
 plugin: 'facet_block:publication_type'
 settings:

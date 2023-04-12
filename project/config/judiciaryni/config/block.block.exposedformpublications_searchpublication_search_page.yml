@@ -12,7 +12,7 @@ dependencies:
 id: exposedformpublications_searchpublication_search_page
 theme: judiciaryni_theme
 region: search_facets
-weight: -14
+weight: -11
 provider: null
 plugin: 'views_exposed_filter_block:publications_search-publication_search_page'
 settings:

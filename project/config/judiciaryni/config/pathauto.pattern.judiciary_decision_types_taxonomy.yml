@@ -1,0 +1,22 @@
+uuid: d40566f6-e392-495e-9e5a-721688dc77d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: judiciary_decision_types_taxonomy
+label: 'Judiciary decision types taxonomy'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'judiciary-decision-types/[term:name]'
+selection_criteria:
+  bc7acf80-2ff0-4974-aef5-661fa92e4ab9:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: bc7acf80-2ff0-4974-aef5-661fa92e4ab9
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      judiciary_decision_types: judiciary_decision_types
+selection_logic: and
+weight: -5
+relationships: {  }

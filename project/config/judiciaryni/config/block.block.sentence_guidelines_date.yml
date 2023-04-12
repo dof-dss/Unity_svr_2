@@ -1,0 +1,28 @@
+uuid: b15716fe-9293-4077-bdf9-6fa5a62ca262
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.sentence_guidelines_date
+  module:
+    - facets
+    - system
+  theme:
+    - judiciaryni_theme
+id: sentence_guidelines_date
+theme: judiciaryni_theme
+region: search_facets
+weight: -3
+provider: null
+plugin: 'facet_block:sentence_guidelines_date'
+settings:
+  id: 'facet_block:sentence_guidelines_date'
+  label: Date
+  label_display: visible
+  provider: facets
+  block_id: sentence_guidelines_date
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/judiciary-decision-types\r\n/judiciary-decision-types*\r\n"

@@ -138,7 +138,10 @@
               {% endif %}
             {% endif %}
 
-            {% if search_page %}
+            {% if search_page  %}
+              {{ drupal_block('page_title_block', wrapper=false) }}
+            {% endif %}
+            {% if sentencing_search  %}
               {{ drupal_block('page_title_block', wrapper=false) }}
             {% endif %}
 
