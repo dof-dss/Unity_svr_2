@@ -54,6 +54,7 @@ module:
   honeypot: 0
   http_cache_control: 0
   image: 0
+  industrialcourt_migrations: 0
   inline_entity_form: 0
   inline_form_errors: 0
   language: 0
@@ -135,4 +136,5 @@ theme:
   stable: 0
   adminimal_theme: 0
   nicsdru_unity_theme: 0
+  industrialcourt_theme: 0
 profile: nicsdru_unity_profile
