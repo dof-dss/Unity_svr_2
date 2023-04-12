@@ -133,7 +133,9 @@ p.published-date {
   padding-right: 3rem;
 }
 
-.path-judicial-members {
+.path-judicial-members,
+#block-views-block-sentencing-guidelines-by-issue,
+#block-views-block-sentencing-guidelines-by-offence {
   .item-list {
     ul {
       li {
@@ -154,5 +156,13 @@ p.published-date {
         }
       }
     }
+  }
+}
+
+#block-views-block-sentencing-guidelines-by-issue,
+#block-views-block-sentencing-guidelines-by-offence {
+  &.block > h2 {
+    @include responsive-typo-map($h2-text);
+    padding: 0;
   }
 }
