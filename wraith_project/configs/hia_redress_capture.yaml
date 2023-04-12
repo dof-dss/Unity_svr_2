@@ -28,7 +28,7 @@ directory: 'shots/hia'
 fuzz: '20%'
 
 # (optional) The maximum acceptable level of difference (in %) between two images before Wraith reports a failure. Default: 0
-threshold: 5
+threshold: 2
 
 # (optional) Specify the template (and generated thumbnail sizes) for the gallery output.
 gallery:
