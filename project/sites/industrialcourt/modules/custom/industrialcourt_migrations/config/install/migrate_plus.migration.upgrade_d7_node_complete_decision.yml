@@ -80,7 +80,7 @@ process:
     -
       plugin: get
       source: body
-  field_attachments:
+  field_attachment:
     -
       plugin: sub_process
       source: field_attachments
@@ -88,7 +88,7 @@ process:
         target_id: fid
         display: display
         description: description
-  field_date_of_decision:
+  field_published_date:
     -
       plugin: sub_process
       source: field_date_of_decision
@@ -102,10 +102,16 @@ process:
     -
       plugin: get
       source: field_employer_name
-  field_type_of_decision:
+  field_decision_type:
     -
-      plugin: get
+      plugin: static_map
       source: field_type_of_decision
+      default_value: null
+      map:
+        recognition: 1
+        derecognition: 2
+        unfairpractice: 3
+        informationconsultation: 4
   field_union:
     -
       plugin: get
