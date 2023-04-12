@@ -9,7 +9,7 @@ dependencies:
     - search_api
 id: sentence_summary
 name: 'Sentence summary'
-facet_source_id: 'search_api:views_page__judicial_decisions_search__sentence_guide_search'
+facet_source_id: 'search_api:views_page__judicial_decisions_search__sentence_guide_search_page'
 processor_configs:
   hide_when_not_rendered:
     processor_id: hide_when_not_rendered
@@ -17,15 +17,15 @@ processor_configs:
       build: '45'
     settings: {  }
 facets:
-  sentence_guidelines_date:
-    checked: true
-    label: Date
-    separator: ', '
-    show_count: false
-    weight: 0
   decision_keywords_type:
     checked: true
     label: 'Decision keywords type'
+    separator: ', '
+    show_count: false
+    weight: 0
+  sentence_date:
+    checked: true
+    label: Date
     separator: ', '
     show_count: false
     weight: 0

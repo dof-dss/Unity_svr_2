@@ -268,8 +268,8 @@ display:
         - 'user.node_grants:view'
       tags:
         - 'config:search_api.index.decisions_index'
-  sentence_guide_search:
-    id: sentence_guide_search
+  sentence_guide_search_page:
+    id: sentence_guide_search_page
     display_title: 'Sentencing guidelines'
     display_plugin: page
     position: 2

@@ -1,26 +1,26 @@
-uuid: b15716fe-9293-4077-bdf9-6fa5a62ca262
+uuid: 139a1aa1-3d4e-4608-a1da-9265568153b8
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.sentence_guidelines_date
+    - facets.facet.sentence_date
   module:
     - facets
     - system
   theme:
     - judiciaryni_theme
-id: sentence_guidelines_date
+id: sentence_date
 theme: judiciaryni_theme
 region: search_facets
-weight: -3
+weight: 0
 provider: null
-plugin: 'facet_block:sentence_guidelines_date'
+plugin: 'facet_block:sentence_date'
 settings:
-  id: 'facet_block:sentence_guidelines_date'
+  id: 'facet_block:sentence_date'
   label: Date
   label_display: visible
   provider: facets
-  block_id: sentence_guidelines_date
+  block_id: sentence_date
 visibility:
   request_path:
     id: request_path

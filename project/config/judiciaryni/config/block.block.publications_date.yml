@@ -12,7 +12,7 @@ dependencies:
 id: publications_date
 theme: judiciaryni_theme
 region: search_facets
-weight: -9
+weight: -11
 provider: null
 plugin: 'facet_block:publication_date_publications'
 settings:

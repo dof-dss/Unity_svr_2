@@ -1,4 +1,4 @@
-uuid: eab11cb0-6404-4a34-bbf1-7d01999c6650
+uuid: 6a528d14-8923-4567-94d3-786e712d42b0
 langcode: en
 status: true
 dependencies:
@@ -9,14 +9,14 @@ dependencies:
     - views
   theme:
     - judiciaryni_theme
-id: exposedformjudicial_decisions_searchsentence_guide_search
+id: exposedformjudicial_decisions_searchsentence_guide_search_page
 theme: judiciaryni_theme
 region: search_facets
-weight: -4
+weight: -6
 provider: null
-plugin: 'views_exposed_filter_block:judicial_decisions_search-sentence_guide_search'
+plugin: 'views_exposed_filter_block:judicial_decisions_search-sentence_guide_search_page'
 settings:
-  id: 'views_exposed_filter_block:judicial_decisions_search-sentence_guide_search'
+  id: 'views_exposed_filter_block:judicial_decisions_search-sentence_guide_search_page'
   label: ''
   label_display: '0'
   provider: views
