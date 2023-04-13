@@ -6,12 +6,16 @@ dependencies:
     - search_api.index.decision
     - views.view.decision_search
   module:
+    - facets_pretty_paths
     - search_api
+third_party_settings:
+  facets_pretty_paths:
+    coder: default_coder
 id: employer_name
 name: 'Employer name'
 weight: 0
 min_count: 1
-url_alias: employer_name
+url_alias: employer
 facet_source_id: 'search_api:views_page__decision_search__decision_search_page'
 field_identifier: field_employer_name
 query_operator: and

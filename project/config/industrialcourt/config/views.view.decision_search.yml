@@ -163,27 +163,24 @@ display:
           exposed: false
       arguments: {  }
       filters:
-        title_fulltext:
-          id: title_fulltext
+        search_api_fulltext:
+          id: search_api_fulltext
           table: search_api_index_decision
-          field: title_fulltext
+          field: search_api_fulltext
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: search_api_text
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
+          plugin_id: search_api_fulltext
+          operator: or
+          value: ''
           group: 1
           exposed: true
           expose:
-            operator_id: title_fulltext_op
+            operator_id: search_api_fulltext_op
             label: 'Search decisions'
             description: ''
             use_operator: false
-            operator: title_fulltext_op
+            operator: search_api_fulltext_op
             operator_limit_selection: false
             operator_list: {  }
             identifier: query_decision
@@ -197,9 +194,9 @@ display:
               author_user: '0'
               supervisor_user: '0'
               qa: '0'
-            min_placeholder: ''
-            max_placeholder: ''
+            expose_fields: false
             placeholder: Keywords
+            searched_fields_id: search_api_fulltext_searched_fields
           is_grouped: false
           group_info:
             label: ''
@@ -212,12 +209,14 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+          parse_mode: terms
+          min_length: 2
+          fields: {  }
       style:
         type: default
         options:
-          grouping: {  }
           row_class: ''
-          default_row_class: true
+          default_row_class: false
           uses_fields: false
       row:
         type: search_api
@@ -255,6 +254,7 @@ display:
     display_options:
       cache:
         type: none
+        options: {  }
       defaults:
         cache: false
       exposed_block: true
