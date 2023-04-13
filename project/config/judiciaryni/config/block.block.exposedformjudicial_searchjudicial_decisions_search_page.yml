@@ -12,7 +12,7 @@ dependencies:
 id: exposedformjudicial_searchjudicial_decisions_search_page
 theme: judiciaryni_theme
 region: search_facets
-weight: -7
+weight: -10
 provider: null
 plugin: 'views_exposed_filter_block:judicial_decisions_search-judicial_decisions_search_page'
 settings:

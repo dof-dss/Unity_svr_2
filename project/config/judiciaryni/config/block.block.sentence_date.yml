@@ -1,28 +1,28 @@
-uuid: 8daee29b-90f8-4823-b97f-72364418c7b3
+uuid: 139a1aa1-3d4e-4608-a1da-9265568153b8
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.date
+    - facets.facet.sentence_date
   module:
     - facets
     - system
   theme:
     - judiciaryni_theme
-id: date
+id: sentence_date
 theme: judiciaryni_theme
 region: search_facets
-weight: -7
+weight: 0
 provider: null
-plugin: 'facet_block:date'
+plugin: 'facet_block:sentence_date'
 settings:
-  id: 'facet_block:date'
+  id: 'facet_block:sentence_date'
   label: Date
   label_display: visible
   provider: facets
-  block_id: date
+  block_id: sentence_date
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/judicial-decisions\r\n/judicial-decisions/type/*\r\n/judicial-decisions/judiciary/*\r\n/judicial-decisions/date/*"
+    pages: "/judiciary-decision-types\r\n/judiciary-decision-types/date/*\r\n/judiciary-decision-types/type/*"
