@@ -1,0 +1,25 @@
+uuid: 9da0f185-5759-41b9-97b5-40766f4ac4ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - unity_search_pages
+  theme:
+    - boundarycommission_theme
+id: sitesearchblock
+theme: boundarycommission_theme
+region: search
+weight: 0
+provider: null
+plugin: site_search_block
+settings:
+  id: site_search_block
+  label: 'Site search block'
+  label_display: '0'
+  provider: unity_search_pages
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/search*'
