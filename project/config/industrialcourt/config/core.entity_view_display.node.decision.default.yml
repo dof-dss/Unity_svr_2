@@ -4,10 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.decision.body
-    - field.field.node.decision.field_attachments
-    - field.field.node.decision.field_date_of_decision
+    - field.field.node.decision.field_attachment
+    - field.field.node.decision.field_decision_type
     - field.field.node.decision.field_employer_name
-    - field.field.node.decision.field_type_of_decision
+    - field.field.node.decision.field_published_date
     - field.field.node.decision.field_union
     - node.type.decision
   module:
@@ -23,17 +23,21 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 0
     region: content
-  links:
-    settings: {  }
+  field_attachment:
+    type: entity_reference_entity_view
+    label: inline
+    settings:
+      view_mode: embed
+      link: false
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
-  field_attachments: true
-  field_date_of_decision: true
+  field_decision_type: true
   field_employer_name: true
-  field_type_of_decision: true
+  field_published_date: true
   field_union: true
   langcode: true
+  links: true
