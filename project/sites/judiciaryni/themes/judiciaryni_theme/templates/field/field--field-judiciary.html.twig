@@ -36,14 +36,6 @@
  * @see template_preprocess_field()
  */
 #}
-{#{% if multiple %}#}
-{#  {% for item in items %}#}
-{#    <span>{{ item.content }}</span>{{ ', '|t }}#}
-{#    {% if loop.last %}#}
-{#      <span>{{ item.content }}</span>#}
-{#    {% endif %}#}
-{#  {% endfor %}#}
-{#{% else %}#}
 {% for item in items %}
   <span>{{ item.content }}</span>
   {% if loop.length > 1 and not loop.last %}

@@ -12,7 +12,7 @@ dependencies:
 id: judicialmemberstext
 theme: judiciaryni_theme
 region: content
-weight: 0
+weight: -9
 provider: null
 plugin: 'block_content:bec5655e-a621-42d5-a612-54ae8aea53d4'
 settings:
