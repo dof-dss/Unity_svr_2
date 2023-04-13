@@ -1,0 +1,29 @@
+uuid: de7a8401-48d8-4eee-9172-e0356aabf741
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.funding_schemes
+  module:
+    - system
+    - views
+  theme:
+    - communityrelations_theme
+id: views_block__funding_schemes_funding_schemes
+theme: communityrelations_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:funding_schemes-funding_schemes'
+settings:
+  id: 'views_block:funding_schemes-funding_schemes'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /funding
