@@ -1,10 +1,10 @@
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
 ignored_config_entities:
-  - 'crc_theme.settings:twitter_profile_url'
-  - 'crc_theme.settings:facebook_profile_url'
-  - 'crc_theme.settings:linkedin_profile_url'
-  - 'crc_theme.settings:pinterest_profile_url'
-  - 'crc_theme.settings:youtube_profile_url'
-  - 'crc_theme.settings:instagram_profile_url'
-  - 'crc_theme.settings:basic_page_structure'
+  - 'communityrelations_theme.settings:twitter_profile_url'
+  - 'communityrelations_theme.settings:facebook_profile_url'
+  - 'communityrelations_theme.settings:linkedin_profile_url'
+  - 'communityrelations_theme.settings:pinterest_profile_url'
+  - 'communityrelations_theme.settings:youtube_profile_url'
+  - 'communityrelations_theme.settings:instagram_profile_url'
+  - 'communityrelations_theme.settings:basic_page_structure'
