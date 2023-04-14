@@ -254,7 +254,7 @@ display:
         type: none
         options: {  }
       cache:
-        type: none
+        type: search_api_tag
         options: {  }
       empty:
         search_api_spellcheck_did_you_mean:
