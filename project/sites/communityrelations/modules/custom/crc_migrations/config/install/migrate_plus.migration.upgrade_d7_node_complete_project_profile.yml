@@ -90,7 +90,7 @@ process:
         https://www.community-relations.org.uk
     -
       plugin: site_files_filter
-      from_ref: sites/communityrelations/files
+      from_ref: sites/crc/files
       to_ref: files/communityrelations
     -
       plugin: site_files_filter
