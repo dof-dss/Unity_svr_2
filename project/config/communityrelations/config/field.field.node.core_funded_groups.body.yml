@@ -6,7 +6,12 @@ dependencies:
     - field.storage.node.body
     - node.type.core_funded_groups
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - basic_html
 id: node.core_funded_groups.body
 field_name: body
 entity_type: node

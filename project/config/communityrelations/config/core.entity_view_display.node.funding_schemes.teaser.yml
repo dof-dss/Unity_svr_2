@@ -10,24 +10,25 @@ dependencies:
     - field.field.node.funding_schemes.field_meta_tags
     - node.type.funding_schemes
   module:
-    - text
+    - datetime
     - user
 id: node.funding_schemes.teaser
 targetEntityType: node
 bundle: funding_schemes
 mode: teaser
 content:
-  body:
-    type: text_summary_or_trimmed
-    label: hidden
+  field_deadline_date:
+    type: datetime_default
+    label: inline
     settings:
-      trim_length: 600
+      timezone_override: ''
+      format_type: unity_date
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
+  body: true
   content_moderation_control: true
-  field_deadline_date: true
   field_funding_scheme_type: true
   field_meta_tags: true
   langcode: true

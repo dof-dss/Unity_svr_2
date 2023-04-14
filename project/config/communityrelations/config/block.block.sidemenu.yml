@@ -31,6 +31,7 @@ visibility:
       node: '@node.node_route_context:node'
     bundles:
       basic_page: basic_page
+      funding_schemes: funding_schemes
   request_path:
     id: request_path
     negate: true
