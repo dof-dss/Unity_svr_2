@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - node.type.basic_page
+    - node.type.consultation_response
+    - node.type.featured_content
     - node.type.news
     - node.type.publication
+    - node.type.respresentations
     - node.type.webform
   module:
     - content_moderation
@@ -97,7 +100,10 @@ type_settings:
   entity_types:
     node:
       - basic_page
+      - consultation_response
+      - featured_content
       - news
       - publication
+      - respresentations
       - webform
   default_moderation_state: draft
