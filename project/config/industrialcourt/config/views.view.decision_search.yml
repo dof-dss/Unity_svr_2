@@ -1,4 +1,4 @@
-uuid: 9daa95cc-b730-4630-90d9-dfe1ec4a6908
+uuid: 7d4c02cf-af64-42bd-9fb5-47bb0e0a44c6
 langcode: en
 status: true
 dependencies:
@@ -133,20 +133,7 @@ display:
       cache:
         type: search_api_tag
         options: {  }
-      empty:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: true
-          content:
-            value: 'There were no results found.'
-            format: basic_html
-          tokenize: false
+      empty: {  }
       sorts:
         field_published_date:
           id: field_published_date
@@ -215,9 +202,9 @@ display:
       style:
         type: default
         options:
+          grouping: {  }
           row_class: ''
           default_row_class: false
-          uses_fields: false
       row:
         type: search_api
         options:
@@ -234,7 +221,8 @@ display:
       relationships: {  }
       header: {  }
       footer: {  }
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -254,7 +242,6 @@ display:
     display_options:
       cache:
         type: none
-        options: {  }
       defaults:
         cache: false
       exposed_block: true
@@ -265,7 +252,7 @@ display:
         type: normal
         title: Decisions
         description: ''
-        weight: -49
+        weight: 0
         expanded: false
         menu_name: main
         parent: ''

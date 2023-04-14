@@ -1,4 +1,4 @@
-uuid: d00e214a-b0b1-4735-8081-5b08a65c1622
+uuid: 3a5e91b2-8e60-4db1-afb4-2f5ba296c84d
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,11 @@ dependencies:
     - search_api.index.decision
     - views.view.decision_search
   module:
+    - facets_pretty_paths
     - search_api
+third_party_settings:
+  facets_pretty_paths:
+    coder: default_coder
 id: union
 name: Union
 weight: 0
