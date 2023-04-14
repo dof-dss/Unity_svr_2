@@ -133,7 +133,20 @@ display:
       cache:
         type: search_api_tag
         options: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: 'There were no results found.'
+            format: basic_html
+          tokenize: false
       sorts:
         field_published_date:
           id: field_published_date
