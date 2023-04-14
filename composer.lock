@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0e47af30e0497638f3fa0bbfd4c9ae2",
+    "content-hash": "ccde1efb8b156d9948a2eee5aa142ec1",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5125,14 +5125,6 @@
             ],
             "authors": [
                 {
-                    "name": "Fastly",
-                    "homepage": "https://www.drupal.org/user/3301349"
-                },
-                {
-                    "name": "Leon Kessler",
-                    "homepage": "https://www.drupal.org/user/595374"
-                },
-                {
                     "name": "balatin",
                     "homepage": "https://www.drupal.org/user/2302070"
                 },
@@ -5161,6 +5153,10 @@
                     "homepage": "https://www.drupal.org/user/3009609"
                 },
                 {
+                    "name": "Fastly",
+                    "homepage": "https://www.drupal.org/user/3301349"
+                },
+                {
                     "name": "jcpitcho",
                     "homepage": "https://www.drupal.org/user/2242312"
                 },
@@ -5171,6 +5167,10 @@
                 {
                     "name": "landing",
                     "homepage": "https://www.drupal.org/user/994222"
+                },
+                {
+                    "name": "Leon Kessler",
+                    "homepage": "https://www.drupal.org/user/595374"
                 },
                 {
                     "name": "philfastly",
