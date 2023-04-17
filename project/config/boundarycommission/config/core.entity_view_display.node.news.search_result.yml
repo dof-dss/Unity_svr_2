@@ -1,8 +1,9 @@
-uuid: cf9b0e74-96bc-48fc-8048-5f89abded7a6
+uuid: b2a35b75-2da4-4f49-ba07-fe05f7db54eb
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_result
     - field.field.node.news.body
     - field.field.node.news.field_archive
     - field.field.node.news.field_meta_tags
@@ -12,61 +13,42 @@ dependencies:
     - node.type.news
   module:
     - datetime
-    - text
+    - layout_builder
     - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
 _core:
   default_config_hash: N-zm1nCnhgYwXANGav75TCg-_kvNUUbT--KKS8PLKgM
-id: node.news.default
+id: node.news.search_result
 targetEntityType: node
 bundle: news
-mode: default
+mode: search_result
 content:
-  body:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 4
-    region: content
-  field_archive:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  field_photo:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: landscape_float
-      link: false
-    third_party_settings: {  }
-    weight: 3
-    region: content
   field_published_date:
     type: datetime_default
-    label: above
+    label: hidden
     settings:
       timezone_override: ''
       format_type: unity_date
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_teaser:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
 hidden:
+  body: true
   content_moderation_control: true
+  field_archive: true
   field_meta_tags: true
+  field_photo: true
   langcode: true
   links: true
   search_api_excerpt: true
