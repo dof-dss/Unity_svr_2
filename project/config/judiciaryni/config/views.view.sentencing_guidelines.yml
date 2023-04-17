@@ -7,6 +7,7 @@ dependencies:
   module:
     - taxonomy
     - user
+    - views_custom_cache_tag
 id: sentencing_guidelines
 label: 'Sentencing guidelines'
 module: views
@@ -174,8 +175,9 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
-        options: {  }
+        type: custom_tag
+        options:
+          custom_tag: 'handy_cache_tags:taxonomy_term:judiciary_decision_types'
       empty: {  }
       sorts:
         name:
