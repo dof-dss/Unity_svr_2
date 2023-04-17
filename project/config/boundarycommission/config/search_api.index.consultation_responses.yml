@@ -1,11 +1,11 @@
-uuid: ab6d5075-cf72-43dd-99ab-76887adbd401
+uuid: 04cb08ff-af2c-4f4f-8d1d-63feb4b3d880
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.body
-    - field.storage.node.field_publication_type
-    - field.storage.node.field_published_date
+    - field.storage.node.field_attachment
+    - field.storage.node.field_consultation_stage
+    - field.storage.node.field_response_type
     - search_api.server.solr_default
   module:
     - search_api_solr
@@ -52,44 +52,35 @@ third_party_settings:
     multilingual:
       limit_to_content_language: false
       include_language_independent: true
-id: publication
-name: Publication
+id: consultation_responses
+name: 'Consultation Responses'
 description: ''
 read_only: false
 field_settings:
-  body:
-    label: Body
+  field_attachment:
+    label: Attachment
     datasource_id: 'entity:node'
-    property_path: body
-    type: text
+    property_path: field_attachment
+    type: integer
     dependencies:
       config:
-        - field.storage.node.body
-  field_publication_type:
-    label: Type
+        - field.storage.node.field_attachment
+  field_consultation_stage:
+    label: 'Consultation Stage'
     datasource_id: 'entity:node'
-    property_path: field_publication_type
-    type: text
-    boost: !!float 2
+    property_path: field_consultation_stage
+    type: integer
     dependencies:
       config:
-        - field.storage.node.field_publication_type
-  field_published_date:
-    label: 'Date published'
+        - field.storage.node.field_consultation_stage
+  field_response_type:
+    label: 'Consultation Response Type'
     datasource_id: 'entity:node'
-    property_path: field_published_date
-    type: date
+    property_path: field_response_type
+    type: integer
     dependencies:
       config:
-        - field.storage.node.field_published_date
-  langcode:
-    label: Language
-    datasource_id: 'entity:node'
-    property_path: langcode
-    type: string
-    dependencies:
-      module:
-        - node
+        - field.storage.node.field_response_type
   title:
     label: Title
     datasource_id: 'entity:node'
@@ -104,7 +95,7 @@ datasource_settings:
     bundles:
       default: false
       selected:
-        - publication
+        - consultation_response
     languages:
       default: true
       selected: {  }
@@ -130,9 +121,6 @@ processor_settings:
       preprocess_query: -15
     all_fields: true
     fields:
-      - body
-      - field_publication_type
-      - langcode
       - title
     title: false
     alt: true
