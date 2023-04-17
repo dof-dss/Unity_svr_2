@@ -1,4 +1,4 @@
-uuid: 9daa95cc-b730-4630-90d9-dfe1ec4a6908
+uuid: 7d4c02cf-af64-42bd-9fb5-47bb0e0a44c6
 langcode: en
 status: true
 dependencies:
@@ -215,9 +215,9 @@ display:
       style:
         type: default
         options:
+          grouping: {  }
           row_class: ''
           default_row_class: false
-          uses_fields: false
       row:
         type: search_api
         options:
@@ -234,7 +234,8 @@ display:
       relationships: {  }
       header: {  }
       footer: {  }
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -254,7 +255,6 @@ display:
     display_options:
       cache:
         type: none
-        options: {  }
       defaults:
         cache: false
       exposed_block: true
@@ -265,7 +265,7 @@ display:
         type: normal
         title: Decisions
         description: ''
-        weight: -49
+        weight: 0
         expanded: false
         menu_name: main
         parent: ''
