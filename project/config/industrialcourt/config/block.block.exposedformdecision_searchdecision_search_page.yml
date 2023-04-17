@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/decision\r\n/decision/date/*"
+    pages: "/decision\r\n/decision/date/*\r\n/decision/type/*\r\n/decision/employer/*\r\n/decision/union/*\r\n"
