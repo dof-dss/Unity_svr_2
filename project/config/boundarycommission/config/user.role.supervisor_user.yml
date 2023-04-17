@@ -88,4 +88,3 @@ permissions:
   - 'view moderation history'
   - 'view moderation messages'
   - 'view own files'
-  - 'view the administration theme'
