@@ -24,13 +24,13 @@ mode: teaser
 content:
   field_published_date:
     type: datetime_default
-    weight: 0
-    region: content
     label: hidden
     settings:
       timezone_override: ''
       format_type: unity_date
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   body: true
   content_moderation_control: true
@@ -41,3 +41,4 @@ hidden:
   field_summary: true
   langcode: true
   links: true
+  search_api_excerpt: true
