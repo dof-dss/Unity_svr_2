@@ -1,0 +1,25 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_form_alter().
+ */
+function nicybersecuritycentre_common_form_node_form_alter(&$form, FormStateInterface $form_state) {
+  if ($form['#form_id'] === 'node_events_form' || $form['#form_id'] == 'node_events_edit_form') {
+    // Add a custom form validation for events content type.
+    $form['#validate'][] = 'nicybersecuritycentre_common_node_form_validate';
+  }
+}
+
+function nicybersecuritycentre_common_node_form_validate($form, FormStateInterface $form_state) {
+  $node = $form_state->getFormObject()->getEntity();
+  $start_time = $form_state->getValue('field_start_time')[0]['value'];
+  $end_time = $form_state->getValue('field_start_time')[0]['value2'];
+  if ($node->getType() === 'events') {
+    // Don't let the end time be before the start time.
+    if ($end_time <= $start_time) {
+      $form_state->setErrorByName('field_start_time][0][value2', t('End time cannot be before the start time.'));
+    }
+  }
+}
