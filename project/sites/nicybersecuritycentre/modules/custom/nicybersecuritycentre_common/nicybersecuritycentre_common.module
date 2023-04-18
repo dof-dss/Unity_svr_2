@@ -12,6 +12,11 @@ function nicybersecuritycentre_common_form_node_form_alter(&$form, FormStateInte
   }
 }
 
+/**
+ * Validate handler for the events form timefield.
+ *
+ * @see nicybersecuritycentre_common_form_node_form_alter()
+ */
 function nicybersecuritycentre_common_node_form_validate($form, FormStateInterface $form_state) {
   $node = $form_state->getFormObject()->getEntity();
   $start_time = $form_state->getValue('field_start_time')[0]['value'];
