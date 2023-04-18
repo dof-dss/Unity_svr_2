@@ -7,6 +7,7 @@ dependencies:
   module:
     - taxonomy
     - user
+    - views_custom_cache_tag
 id: sentencing_guidelines
 label: 'Sentencing guidelines'
 module: views
@@ -103,13 +104,13 @@ display:
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: '{{ name }}-{{ tid }}'
             make_link: true
-            path: '/judiciary-decision-types/type/{{ name }}-{{ tid }}'
+            path: '/judiciary-decision-types/type/{{ name|render|striptags|trim|lower|replace({'' '' : ''-'', '','' : '''' }) }}-{{ tid }}'
             absolute: false
             external: false
-            replace_spaces: false
-            path_case: none
+            replace_spaces: true
+            path_case: lower
             trim_whitespace: false
             alt: ''
             rel: ''
@@ -174,8 +175,9 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
-        options: {  }
+        type: custom_tag
+        options:
+          custom_tag: 'handy_cache_tags:taxonomy_term:judiciary_decision_types'
       empty: {  }
       sorts:
         name:
