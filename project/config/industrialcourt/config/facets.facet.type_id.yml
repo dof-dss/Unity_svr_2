@@ -1,4 +1,4 @@
-uuid: 7f57693f-2f0d-4a28-8d42-1ed1190e4312
+uuid: b4482683-756b-4fc4-bd3a-422ecf9680b4
 langcode: en
 status: true
 dependencies:
@@ -10,14 +10,14 @@ dependencies:
     - search_api
 third_party_settings:
   facets_pretty_paths:
-    coder: default_coder
-id: decision_date
-name: Date
+    coder: taxonomy_term_coder
+id: type_id
+name: Type
 weight: 0
 min_count: 1
-url_alias: date
+url_alias: type
 facet_source_id: 'search_api:views_page__decision_search__decision_search_page'
-field_identifier: field_published_date
+field_identifier: field_decision_type
 query_operator: and
 hard_limit: 0
 exclude: false
@@ -48,25 +48,17 @@ processor_configs:
       sort: 20
     settings:
       sort: ASC
-  date_facet_drilldown:
-    processor_id: date_facet_drilldown
+  display_value_widget_order:
+    processor_id: display_value_widget_order
     weights:
-      build: 1
+      sort: 40
+    settings:
+      sort: ASC
+  translate_entity:
+    processor_id: translate_entity
+    weights:
+      build: 5
     settings: {  }
-  date_item:
-    processor_id: date_item
-    weights:
-      build: 35
-    settings:
-      date_display: actual_date
-      granularity: 6
-      date_format: ''
-  raw_value_widget_order:
-    processor_id: raw_value_widget_order
-    weights:
-      sort: 50
-    settings:
-      sort: DESC
   url_processor_handler:
     processor_id: url_processor_handler
     weights:

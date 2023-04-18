@@ -45,4 +45,3 @@ permissions:
   - 'use workbench_moderation needs review tab'
   - 'view all unpublished content'
   - 'view own files'
-  - 'view the administration theme'

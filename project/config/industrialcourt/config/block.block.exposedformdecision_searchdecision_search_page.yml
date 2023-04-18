@@ -1,4 +1,4 @@
-uuid: 593ee792-aabf-42d4-8607-7a080f3c325f
+uuid: 60f54c09-a866-4d34-b9c8-ef3aa32953fb
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: exposedformdecision_searchdecision_search_page
 theme: industrialcourt_theme
 region: search_facets
-weight: -5
+weight: -4
 provider: null
 plugin: 'views_exposed_filter_block:decision_search-decision_search_page'
 settings:
@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/decision\r\n/decision/date/*\r\n/decision/employer/*\r\n/decision/type/*\r\n/decision/union/*"
+    pages: "/decision\r\n/decision/date/*\r\n/decision/type/*\r\n/decision/employer/*\r\n/decision/union/*\r\n"

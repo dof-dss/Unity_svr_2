@@ -1,4 +1,4 @@
-uuid: 2558d81a-94d6-4001-9983-cff7680b15cf
+uuid: ddad9897-f5c4-41a8-9d43-a51347bf19f3
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: employername
 theme: industrialcourt_theme
 region: search_facets
-weight: -2
+weight: -1
 provider: null
 plugin: 'facet_block:employer_name'
 settings:
@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/decision\r\n/decision/date/*\r\n/decision/employer/*\r\n/decision/type/*\r\n/decision/union/*"
+    pages: "/decision\r\n/decision/date/*\r\n/decision/type/*\r\n/decision/employer/*\r\n/decision/union/*"
