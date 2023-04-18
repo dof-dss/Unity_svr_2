@@ -104,13 +104,13 @@ display:
           exclude: false
           alter:
             alter_text: false
-            text: ''
+            text: '{{ name }}-{{ tid }}'
             make_link: true
-            path: '/judiciary-decision-types/type/{{ name }}-{{ tid }}'
+            path: '/judiciary-decision-types/type/{{ name|render|striptags|trim|lower|replace({'' '' : ''-'', '','' : '''' }) }}-{{ tid }}'
             absolute: false
             external: false
-            replace_spaces: false
-            path_case: none
+            replace_spaces: true
+            path_case: lower
             trim_whitespace: false
             alt: ''
             rel: ''
