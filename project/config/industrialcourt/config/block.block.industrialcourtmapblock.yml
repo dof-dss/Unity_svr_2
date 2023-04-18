@@ -1,0 +1,30 @@
+uuid: 72a582de-4e1c-4a29-9ff6-6c561cf755d7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:map:9068fd64-933b-4fe3-bbd1-300fd7b35a73'
+  module:
+    - block_content
+    - system
+  theme:
+    - industrialcourt_theme
+id: industrialcourtmapblock
+theme: industrialcourt_theme
+region: content
+weight: -4
+provider: null
+plugin: 'block_content:9068fd64-933b-4fe3-bbd1-300fd7b35a73'
+settings:
+  id: 'block_content:9068fd64-933b-4fe3-bbd1-300fd7b35a73'
+  label: 'Industrial court map block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /contact-us
