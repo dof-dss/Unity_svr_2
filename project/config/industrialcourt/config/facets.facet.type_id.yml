@@ -1,4 +1,4 @@
-uuid: 9890c414-2385-4322-9366-375c68c564cc
+uuid: b4482683-756b-4fc4-bd3a-422ecf9680b4
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,12 @@ dependencies:
     - search_api.index.decision
     - views.view.decision_search
   module:
+    - facets_pretty_paths
     - search_api
-id: decision_type
+third_party_settings:
+  facets_pretty_paths:
+    coder: taxonomy_term_coder
+id: type_id
 name: Type
 weight: 0
 min_count: 1
@@ -44,20 +48,17 @@ processor_configs:
       sort: 20
     settings:
       sort: ASC
-  date_item:
-    processor_id: date_item
+  display_value_widget_order:
+    processor_id: display_value_widget_order
     weights:
-      build: 35
+      sort: 40
     settings:
-      date_display: actual_date
-      granularity: 6
-      date_format: ''
-  raw_value_widget_order:
-    processor_id: raw_value_widget_order
+      sort: ASC
+  translate_entity:
+    processor_id: translate_entity
     weights:
-      sort: 50
-    settings:
-      sort: DESC
+      build: 5
+    settings: {  }
   url_processor_handler:
     processor_id: url_processor_handler
     weights:

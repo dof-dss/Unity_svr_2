@@ -1,4 +1,4 @@
-uuid: 89eddb08-eb65-4607-925a-a4b97713c421
+uuid: 7f57693f-2f0d-4a28-8d42-1ed1190e4312
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,11 @@ dependencies:
     - search_api.index.decision
     - views.view.decision_search
   module:
+    - facets_pretty_paths
     - search_api
+third_party_settings:
+  facets_pretty_paths:
+    coder: default_coder
 id: decision_date
 name: Date
 weight: 0
@@ -44,6 +48,11 @@ processor_configs:
       sort: 20
     settings:
       sort: ASC
+  date_facet_drilldown:
+    processor_id: date_facet_drilldown
+    weights:
+      build: 1
+    settings: {  }
   date_item:
     processor_id: date_item
     weights:

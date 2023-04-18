@@ -1,4 +1,4 @@
-uuid: a057fa37-bd64-4a21-9cde-ab9e51b9c983
+uuid: ab500668-80e0-4029-a476-b73666cfdff3
 langcode: en
 status: true
 dependencies:
@@ -23,7 +23,7 @@ facets:
     separator: ', '
     show_count: false
     weight: 0
-  decision_type:
+  type_id:
     checked: true
     label: Type
     separator: ', '

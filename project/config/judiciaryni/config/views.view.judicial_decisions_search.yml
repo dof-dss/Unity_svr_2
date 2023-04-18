@@ -275,8 +275,6 @@ display:
     position: 2
     display_options:
       title: 'Sentencing guidelines'
-      cache:
-        type: none
       arguments: {  }
       style:
         type: default
@@ -291,7 +289,7 @@ display:
             'entity:node':
               judicial_decision: sentence_guide
       defaults:
-        cache: false
+        cache: true
         title: false
         style: false
         row: false
