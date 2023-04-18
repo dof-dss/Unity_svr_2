@@ -302,7 +302,7 @@ jobs:
       #          fi
       #        fi
       #      done
-  # Checks to ensure that   Unity Base has not been polluted with project files.
+  # Checks to ensure that Unity Base has not been polluted with project files.
   unity_base_checks:
     <<: *docker_image
     steps:
