@@ -4,3 +4,10 @@
  */
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/2_layout/index';
+
+#footer-area .column {
+  width: 95%;
+  @include breakpoint($tab) {
+    width: 100%;
+  }
+}

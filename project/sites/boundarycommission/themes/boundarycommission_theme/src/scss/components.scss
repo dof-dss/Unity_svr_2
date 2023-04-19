@@ -114,3 +114,49 @@
     margin: 0;
   }
 }
+
+#bottom-area {
+  @include breakpoint($tab) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+  }
+
+  .column {
+    width: auto;
+    float: none;
+
+    @include breakpoint($tab) {
+      flex-basis: 46%;
+    }
+  }
+}
+
+#footer {
+  .container-wrap {
+    display: block;
+  }
+
+  @include breakpoint($tab) {
+    padding: 2%;
+  }
+
+  .footer-menu li {
+    @include adjust-font-size-to(16px);
+    padding-left: 0;
+    list-style-type: none;
+    @include breakpoint($mob) {
+      display: inline-block;
+      padding: 0 .8rem 0 0;
+      line-height: 1.8rem;
+      margin-right: .5rem;
+    }
+
+    a {
+      @media screen and (min-width: $mob) {
+        display: block;
+      }
+    }
+  }
+}
