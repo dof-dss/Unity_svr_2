@@ -9,7 +9,7 @@ dependencies:
 id: pagetitle
 theme: industrialcourt_theme
 region: content
-weight: -1
+weight: -6
 provider: null
 plugin: page_title_block
 settings:

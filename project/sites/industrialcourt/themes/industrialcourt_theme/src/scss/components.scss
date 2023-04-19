@@ -4,3 +4,34 @@
  */
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+.region.region-header {
+  display: flex;
+}
+
+.brand-left {
+  flex: 1;
+}
+
+.brand-right {
+  flex: 3;
+}
+
+#site-title #site-description {
+  color: $brand-secondary;
+}
+
+#main-menu .menu .menu-item .active, #main-menu .menu .menu-item .active + .menu-main_sub .title a
+{
+  border-bottom-color: $brand-secondary;
+}
+
+.footer-area .column:last-child {
+  float: none;
+  width: unset;
+}
+
+#footer .column li {
+  display: inline-block;
+  border-bottom-style: none;
+}

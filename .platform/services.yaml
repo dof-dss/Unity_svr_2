@@ -7,7 +7,7 @@
 #############################################################################
 db:
     type: 'mariadb:10.4'
-    disk: 7200
+    disk: 14336
     configuration:
         schemas:
             - mentalhealthchampionnidb
@@ -103,7 +103,7 @@ db:
                     industrialcourtdb: admin
 solr:
     type: 'solr:7.7'
-    disk: 1024
+    disk: 2048
     configuration:
         cores:
             mentalhealthchampionni_index:
