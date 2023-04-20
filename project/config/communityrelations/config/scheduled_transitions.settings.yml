@@ -18,6 +18,9 @@ bundles:
     bundle: event
   -
     entity_type: node
+    bundle: featured_list
+  -
+    entity_type: node
     bundle: funding_schemes
   -
     entity_type: node
