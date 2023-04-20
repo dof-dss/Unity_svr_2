@@ -12,7 +12,7 @@ dependencies:
 id: type
 theme: industrialcourt_theme
 region: search_facets
-weight: -2
+weight: -4
 provider: null
 plugin: 'facet_block:type_id'
 settings:
