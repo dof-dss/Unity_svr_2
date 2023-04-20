@@ -1,0 +1,30 @@
+uuid: 63bc7fad-1d86-42ed-9834-207a071b05da
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:map:3030f42e-8410-4e83-9dfd-368e573a1def'
+  module:
+    - block_content
+    - system
+  theme:
+    - boundarycommission_theme
+id: map
+theme: boundarycommission_theme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:3030f42e-8410-4e83-9dfd-368e573a1def'
+settings:
+  id: 'block_content:3030f42e-8410-4e83-9dfd-368e573a1def'
+  label: Map
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /contact-us
