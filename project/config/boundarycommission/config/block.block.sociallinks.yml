@@ -1,0 +1,25 @@
+uuid: 191aa288-44f9-4645-9731-afc7b403ee2b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:b6a703fd-211c-4fc0-bff6-828afc8c567a'
+  module:
+    - block_content
+  theme:
+    - boundarycommission_theme
+id: sociallinks
+theme: boundarycommission_theme
+region: footer_second
+weight: 0
+provider: null
+plugin: 'block_content:b6a703fd-211c-4fc0-bff6-828afc8c567a'
+settings:
+  id: 'block_content:b6a703fd-211c-4fc0-bff6-828afc8c567a'
+  label: 'Social links'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

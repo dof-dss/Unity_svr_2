@@ -1,0 +1,30 @@
+uuid: 8663fb7f-4eea-4fef-badb-81846ab34f11
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:6adf4b53-2086-4fef-81f4-7549d1650872'
+  module:
+    - block_content
+    - system
+  theme:
+    - boundarycommission_theme
+id: aboutus
+theme: boundarycommission_theme
+region: top_third
+weight: 0
+provider: null
+plugin: 'block_content:6adf4b53-2086-4fef-81f4-7549d1650872'
+settings:
+  id: 'block_content:6adf4b53-2086-4fef-81f4-7549d1650872'
+  label: 'About Us'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
