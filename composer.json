@@ -212,7 +212,8 @@
                 "Prevent leftover fields from causing errors like 'Call to a member function getLabel() after enabling layout_builder'": "https://www.drupal.org/files/issues/2020-01-20/2985882-53.patch",
                 "Render blocks in preview page": "https://www.drupal.org/files/issues/2019-10-03/3085364_2.patch",
                 "Provide options to sanitize filenames (transliterate, lowercase, replace whitespace, etc)": "https://www.drupal.org/files/issues/2021-07-26/2492171-311.patch",
-                "Provide link to latest revision of moderated entity": "https://www.drupal.org/files/issues/2021-11-29/2906455-34.patch"
+                "Provide link to latest revision of moderated entity": "https://www.drupal.org/files/issues/2021-11-29/2906455-34.patch",
+                "User enable email exception": "https://www.drupal.org/files/issues/2023-04-19/user_email_exception-3355151-1.patch"
             },
             "drupal/easy_install": {
                 "Handle missing core version": "https://www.drupal.org/files/issues/2019-12-19/easy_install_core_version-3101883-0.patch",
