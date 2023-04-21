@@ -1,0 +1,23 @@
+uuid: 4a1de70b-22a9-4f7b-8023-a053271d5b3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.nigov_card_large_460x140_x1
+    - image.style.nigov_card_large_920x280_x2
+_core:
+  default_config_hash: cOETHD5DD-awnNCytgo2Oy-oZOI2UZRBjM7w-Vg1Li4
+id: card_large
+label: 'Card large'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - nigov_card_large_460x140_x1
+        - nigov_card_large_920x280_x2
+breakpoint_group: responsive_image
+fallback_image_style: nigov_card_large_460x140_x1
