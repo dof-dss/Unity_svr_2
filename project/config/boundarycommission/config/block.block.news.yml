@@ -1,0 +1,30 @@
+uuid: 5606f3f0-746d-4ddd-abdf-fcb10fecde16
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:29fa8a40-edb4-4241-a371-4cddeac49117'
+  module:
+    - block_content
+    - system
+  theme:
+    - boundarycommission_theme
+id: news
+theme: boundarycommission_theme
+region: top_second
+weight: 0
+provider: null
+plugin: 'block_content:29fa8a40-edb4-4241-a371-4cddeac49117'
+settings:
+  id: 'block_content:29fa8a40-edb4-4241-a371-4cddeac49117'
+  label: News
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

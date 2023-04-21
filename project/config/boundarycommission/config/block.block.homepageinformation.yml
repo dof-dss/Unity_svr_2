@@ -1,0 +1,30 @@
+uuid: 4f0cef44-5fb8-4348-8d08-4d143a3bb38f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:884a631b-c029-4ac8-b27f-c654882aae71'
+  module:
+    - block_content
+    - system
+  theme:
+    - boundarycommission_theme
+id: homepageinformation
+theme: boundarycommission_theme
+region: front_welcome
+weight: 0
+provider: null
+plugin: 'block_content:884a631b-c029-4ac8-b27f-c654882aae71'
+settings:
+  id: 'block_content:884a631b-c029-4ac8-b27f-c654882aae71'
+  label: 'Homepage information'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
