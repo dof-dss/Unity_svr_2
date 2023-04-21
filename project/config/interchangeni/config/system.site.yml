@@ -1,5 +1,7 @@
 _core:
   default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
+langcode: en
+uuid: bc83bb4c-a3cf-4757-926b-6e653365a977
 name: 'Interchange NI'
 mail: eddwebdev@finance-ni.gov.uk
 slogan: ''
@@ -9,7 +11,6 @@ page:
   front: /node
 admin_compact_mode: false
 weight_select_max: 100
-langcode: en
 default_langcode: en
-uuid: bc83bb4c-a3cf-4757-926b-6e653365a977
-frontpage_title: 'Welcome to Drupal site'
+frontpage_title: 'Welcome to Interchange NI'
+frontpage_show_title: 0
