@@ -1,0 +1,41 @@
+uuid: 376bac97-a480-4017-810e-b13a93fec2b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.news_queue
+  module:
+    - entityqueue
+id: entity_subqueue.news_queue.default
+targetEntityType: entity_subqueue
+bundle: news_queue
+mode: default
+content:
+  items:
+    type: entityqueue_dragtable
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: '60'
+      placeholder: ''
+      link_to_entity: false
+      link_to_edit_form: true
+      match_limit: 10
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
