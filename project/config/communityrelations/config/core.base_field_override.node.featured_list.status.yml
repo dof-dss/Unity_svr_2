@@ -1,0 +1,22 @@
+uuid: b0b620d7-2aaa-4369-a590-c01639868008
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.featured_list
+id: node.featured_list.status
+field_name: status
+entity_type: node
+bundle: featured_list
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

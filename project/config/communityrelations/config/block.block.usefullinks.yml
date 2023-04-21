@@ -11,7 +11,7 @@ dependencies:
 id: usefullinks
 theme: communityrelations_theme
 region: footer_second
-weight: -12
+weight: -13
 provider: null
 plugin: 'block_content:2358a373-7783-40a1-a73f-5462e15260d0'
 settings:
