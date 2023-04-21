@@ -1,0 +1,31 @@
+uuid: 287aae44-b9a6-48c6-ad1b-8c10b3e014b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.news_queue
+id: entity_subqueue.news_queue.default
+targetEntityType: entity_subqueue
+bundle: news_queue
+mode: default
+content:
+  items:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -10
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
