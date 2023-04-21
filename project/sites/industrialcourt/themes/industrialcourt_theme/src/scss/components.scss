@@ -15,6 +15,28 @@
 
 .brand-right {
   flex: 3;
+
+  @media screen and (max-width: $tab) {
+    display: none;
+  }
+}
+
+#main-menu .hamburger {
+  @media screen and (max-width: $tab) {
+    display: flex;
+  }
+}
+
+#main-menu .hamburger:not([hidden]) ~ .nav-main {
+  @media screen and (max-width: $tab) {
+    display: none;
+  }
+}
+
+#main-menu .hamburger[aria-expanded="true"] ~ .nav-main {
+  @media screen and (max-width: $tab) {
+    display: flex;
+  }
 }
 
 #site-title #site-description {
@@ -24,6 +46,27 @@
 #main-menu .menu .menu-item .active, #main-menu .menu .menu-item .active + .menu-main_sub .title a
 {
   border-bottom-color: $brand-secondary;
+}
+
+#content #search-facets {
+  @media screen and (max-width: $lap) {
+    padding: 0;
+  }
+}
+
+#edit-your-details,
+#edit-your-feedback {
+
+  legend {
+    @media screen and (max-width: $lap) {
+      max-width: 65rem;
+    }
+  }
+}
+
+#edit-queries-or-comments {
+  max-width: 65rem;
+  width: 100%;
 }
 
 .footer-area .column:last-child {
