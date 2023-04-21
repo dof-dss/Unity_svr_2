@@ -1,28 +1,28 @@
-uuid: 7dbf020d-9db9-4202-8b33-b562de7012f1
+uuid: 8de8de33-204a-4d92-a0b9-61d858abec64
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.decision_date
+    - facets.facet.published_date
   module:
     - facets
     - system
   theme:
     - industrialcourt_theme
-id: date
+id: publisheddate
 theme: industrialcourt_theme
 region: search_facets
-weight: -5
+weight: -1
 provider: null
-plugin: 'facet_block:decision_date'
+plugin: 'facet_block:published_date'
 settings:
-  id: 'facet_block:decision_date'
+  id: 'facet_block:published_date'
   label: Date
   label_display: visible
   provider: facets
-  block_id: date
+  block_id: publisheddate
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/decision\r\n/decision/date/*\r\n/decision/type/*\r\n/decision/employer/*\r\n/decision/union/*"
+    pages: "/publications\r\n/publications/date/*\r\n/publications/type/*"

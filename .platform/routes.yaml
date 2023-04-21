@@ -69,6 +69,14 @@
 'https://industrialcourt.gov.uk/':
     type: redirect
     to: 'https://www.industrialcourt.gov.uk/'
+'https://www.interchangeni.org.uk/':
+    type: upstream
+    upstream: 'unity_svr_2:http'
+    cache:
+        enabled: 'false'
+'https://interchangeni.org.uk/':
+    type: redirect
+    to: 'https://www.interchangeni.org.uk/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_2:http'
