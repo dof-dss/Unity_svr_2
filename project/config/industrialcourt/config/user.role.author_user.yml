@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.basic_html
     - media.type.audio
     - media.type.document
     - media.type.file
@@ -14,6 +15,7 @@ dependencies:
     - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
+    - filter
     - media
     - menu_admin_per_menu
     - moderation_sidebar
@@ -86,6 +88,7 @@ permissions:
   - 'use nics_editorial_workflow transition draft_of_published'
   - 'use nics_editorial_workflow transition reject'
   - 'use nics_editorial_workflow transition submit_for_review'
+  - 'use text format basic_html'
   - 'use text format filtered_html'
   - 'use text format filtered_html_with_no_images'
   - 'use workbench_moderation my drafts tab'
