@@ -12,7 +12,7 @@ dependencies:
 id: exposedformdecision_searchdecision_search_page
 theme: industrialcourt_theme
 region: search_facets
-weight: -6
+weight: -7
 provider: null
 plugin: 'views_exposed_filter_block:decision_search-decision_search_page'
 settings:

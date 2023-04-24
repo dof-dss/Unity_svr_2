@@ -12,7 +12,7 @@ dependencies:
 id: employername
 theme: industrialcourt_theme
 region: search_facets
-weight: -3
+weight: -4
 provider: null
 plugin: 'facet_block:employer_name'
 settings:
