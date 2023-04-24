@@ -1,0 +1,34 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\node\NodeInterface;
+use Drupal\views\ViewExecutable;
+
+/**
+ * Implements hook_form_alter().
+ */
+function interchangeni_common_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'node_manager_form' || $form_id == 'node_manager_edit_form') {
+    $form['title']['#disabled'] = 'disabled';
+    $form['title']['widget'][0]['value']['#description'] = t('You cannot edit this field. It is created automatically using the Name of Judge and Judicial Tier.');
+
+  }
+}
+
+
+/**
+ * Implements hook_entity_presave().
+ */
+function interchangeni_common_entity_presave(EntityInterface $entity) {
+  // This will fire when nodes are created or edited.
+  if ($entity instanceof NodeInterface && $entity->bundle() === 'manager') {
+
+    $first_name = $entity->get('field_first_name')->value;
+    $last_name = $entity->get('field_last_name')->value;
+    $node_title = $first_name . ' ' . $last_name;
+
+    $entity->setTitle($node_title);
+  }
+}
