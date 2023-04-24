@@ -112,6 +112,12 @@
   .featured-item-row {
     display: flex;
     justify-content: space-evenly;
+
+    @media screen and (max-width: $lap) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
   }
 
   .featured-item-column {
