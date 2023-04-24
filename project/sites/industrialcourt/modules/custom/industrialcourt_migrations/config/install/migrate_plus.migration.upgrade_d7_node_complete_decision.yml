@@ -80,6 +80,16 @@ process:
     -
       plugin: get
       source: body
+  body/0/format:
+    - plugin: static_map
+      bypass: true
+      source: body/0/format
+      map:
+        filtered_html: basic_html
+        filtered_html_with_no_images: basic_html
+        filtered_html_with_tokens: basic_html
+        restricted_html: basic_html
+        plain_text: plain_text
   field_attachment:
     -
       plugin: sub_process
