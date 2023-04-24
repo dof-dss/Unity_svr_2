@@ -1,0 +1,28 @@
+uuid: ca9743cd-6d63-4291-b49c-3e0273086a00
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.publications_search
+  module:
+    - system
+    - views
+  theme:
+    - industrialcourt_theme
+id: exposedformpublications_searchpublication_search_page
+theme: industrialcourt_theme
+region: search_facets
+weight: -2
+provider: null
+plugin: 'views_exposed_filter_block:publications_search-publication_search_page'
+settings:
+  id: 'views_exposed_filter_block:publications_search-publication_search_page'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/publications\r\n/publications/date/*\r\n/publications/type/*"

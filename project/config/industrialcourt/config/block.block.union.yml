@@ -12,7 +12,7 @@ dependencies:
 id: union
 theme: industrialcourt_theme
 region: search_facets
-weight: -2
+weight: -3
 provider: null
 plugin: 'facet_block:union'
 settings:
