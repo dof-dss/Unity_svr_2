@@ -1,0 +1,78 @@
+uuid: 5eb79ec0-483b-42a2-b34c-d9d2bf44edcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.manager.field_first_name
+    - field.field.node.manager.field_last_name
+    - field.field.node.manager.field_manager_email
+    - field.field.node.manager.field_manager_organisation
+    - field.field.node.manager.field_meta_tags
+    - field.field.node.manager.field_telephone
+    - node.type.manager
+  module:
+    - metatag
+    - user
+id: node.manager.default
+targetEntityType: node
+bundle: manager
+mode: default
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_first_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_last_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_manager_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_manager_organisation:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_telephone:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

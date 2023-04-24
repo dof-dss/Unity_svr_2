@@ -1,29 +1,54 @@
-uuid: f236fbe7-c3e6-4545-8b9f-9c01edea9d41
+uuid: 509af186-cda3-429c-b7c1-9bc1bd6aa53f
 langcode: en
 status: true
 dependencies:
   config:
     - node.type.faq
   module:
+    - block
     - node
+    - path
+    - pathauto
     - redirect
     - system
-_core:
-  default_config_hash: cI6O43jts_j67JaySnvjojNUQYYJXQmbWghOsb7iQNY
-id: supervisor_user
-label: 'supervisor user'
-weight: 3
+id: admin_user
+label: 'admin user'
+weight: 6
 is_admin: null
 permissions:
   - 'access administration menu'
   - 'access administration pages'
   - 'access ckeditor link'
+  - 'access content overview'
+  - 'access library reports'
+  - 'access printer-friendly version'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access user profiles'
   - 'add content to books'
   - 'add media from remote sources'
+  - 'administer actions'
+  - 'administer blocks'
   - 'administer book outlines'
+  - 'administer content types'
+  - 'administer login destination settings'
   - 'administer main-menu menu items'
+  - 'administer media browser'
+  - 'administer modules'
   - 'administer nivo slider'
+  - 'administer nodes'
+  - 'administer pathauto'
+  - 'administer permissions'
   - 'administer redirects'
+  - 'administer site configuration'
+  - 'administer software updates'
+  - 'administer themes'
+  - 'administer url aliases'
+  - 'administer users'
+  - 'administer workbench'
+  - 'administer workbench moderation'
+  - 'block IP addresses'
+  - 'bypass node access'
   - 'create faq content'
   - 'create files'
   - 'create manager content'
@@ -33,11 +58,21 @@ permissions:
   - 'create page content'
   - 'delete any audio files'
   - 'delete any document files'
+  - 'delete any faq content'
   - 'delete any image files'
+  - 'delete any manager content'
+  - 'delete any opportunity content'
+  - 'delete any organisation content'
+  - 'delete any page content'
   - 'delete any video files'
   - 'delete own audio files'
   - 'delete own document files'
+  - 'delete own faq content'
   - 'delete own image files'
+  - 'delete own manager content'
+  - 'delete own opportunity content'
+  - 'delete own organisation content'
+  - 'delete own page content'
   - 'delete own video files'
   - 'delete revisions'
   - 'download any audio files'
@@ -67,6 +102,7 @@ permissions:
   - 'edit own page content'
   - 'edit own video files'
   - 'flag content_audit'
+  - 'flush caches'
   - 'moderate content from draft to needs_review'
   - 'moderate content from needs_review to draft'
   - 'moderate content from needs_review to published'
@@ -77,12 +113,13 @@ permissions:
   - 'show core Outline tab'
   - 'unflag content_audit'
   - 'use text format filtered_html'
+  - 'use text format filtered_html_enhanced_no_media'
   - 'use text format filtered_html_with_no_images'
+  - 'use text format filtered_html_with_tokens'
   - 'use workbench_media add form'
   - 'use workbench_moderation my drafts tab'
   - 'use workbench_moderation needs review tab'
   - 'view all unpublished content'
-  - 'view moderation history'
-  - 'view moderation messages'
   - 'view own files'
+  - 'view own private files'
   - 'view the administration theme'

@@ -1,0 +1,29 @@
+uuid: 188fc0bd-7c5b-48bf-8235-c74401c54a25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nics_cover_note
+    - media.type.document
+    - node.type.opportunity
+id: node.opportunity.field_nics_cover_note
+field_name: field_nics_cover_note
+entity_type: node
+bundle: opportunity
+label: 'NICS cover note'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
