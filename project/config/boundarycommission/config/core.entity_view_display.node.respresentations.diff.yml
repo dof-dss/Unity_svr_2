@@ -1,13 +1,13 @@
-uuid: 45040251-1f57-4264-932b-72f48c82118e
+uuid: 171c0644-4c8c-4c7b-b4df-5796ab5fd9ae
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.diff
-    - field.field.node.consultation_response.field_attachment
-    - field.field.node.consultation_response.field_consultation_stage
-    - field.field.node.consultation_response.field_response_type
-    - node.type.consultation_response
+    - field.field.node.respresentations.field_attachment
+    - field.field.node.respresentations.field_representation_stage
+    - field.field.node.respresentations.field_response_type
+    - node.type.respresentations
   module:
     - field_group
     - layout_builder
@@ -36,21 +36,20 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-id: node.consultation_response.diff
+id: node.respresentations.diff
 targetEntityType: node
-bundle: consultation_response
+bundle: respresentations
 mode: diff
 content:
   field_attachment:
-    type: entity_reference_entity_view
+    type: entity_reference_label
     label: above
     settings:
-      view_mode: default
       link: true
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
-  field_consultation_stage:
+  field_representation_stage:
     type: entity_reference_label
     label: above
     settings:
