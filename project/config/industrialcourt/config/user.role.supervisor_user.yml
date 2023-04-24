@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.basic_html
     - media.type.audio
     - media.type.document
     - media.type.file
@@ -15,6 +16,7 @@ dependencies:
   module:
     - content_moderation
     - file
+    - filter
     - media
     - menu_admin_per_menu
     - moderation_sidebar
@@ -152,6 +154,7 @@ permissions:
   - 'use nics_editorial_workflow transition restore'
   - 'use nics_editorial_workflow transition restore_to_draft'
   - 'use nics_editorial_workflow transition submit_for_review'
+  - 'use text format basic_html'
   - 'use text format filtered_html'
   - 'use text format filtered_html_with_no_images'
   - 'use workbench_media add form'
