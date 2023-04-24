@@ -1,0 +1,25 @@
+uuid: b48ed35a-b8b4-4ed7-bc51-039b453b7672
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-footer-links
+  module:
+    - system
+  theme:
+    - industrialcourt_theme
+id: footerlinks
+theme: industrialcourt_theme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-footer-links'
+settings:
+  id: 'system_menu_block:menu-footer-links'
+  label: 'Footer links'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

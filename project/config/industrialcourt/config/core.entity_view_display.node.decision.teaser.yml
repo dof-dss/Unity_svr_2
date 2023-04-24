@@ -1,0 +1,41 @@
+uuid: ffd981a5-6146-4578-9faa-921981cba956
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.decision.body
+    - field.field.node.decision.field_attachment
+    - field.field.node.decision.field_decision_type
+    - field.field.node.decision.field_employer_name
+    - field.field.node.decision.field_published_date
+    - field.field.node.decision.field_union
+    - node.type.decision
+  module:
+    - text
+    - user
+id: node.decision.teaser
+targetEntityType: node
+bundle: decision
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_attachment: true
+  field_decision_type: true
+  field_employer_name: true
+  field_published_date: true
+  field_union: true
+  langcode: true

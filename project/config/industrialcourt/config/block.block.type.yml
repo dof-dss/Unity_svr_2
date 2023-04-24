@@ -1,0 +1,28 @@
+uuid: eeae9884-140c-4b2d-b48e-598cd9a8d9b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.type_id
+  module:
+    - facets
+    - system
+  theme:
+    - industrialcourt_theme
+id: type
+theme: industrialcourt_theme
+region: search_facets
+weight: -4
+provider: null
+plugin: 'facet_block:type_id'
+settings:
+  id: 'facet_block:type_id'
+  label: Type
+  label_display: visible
+  provider: facets
+  block_id: type
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/decision\r\n/decision/date/*\r\n/decision/type/*\r\n/decision/employer/*\r\n/decision/union/*"

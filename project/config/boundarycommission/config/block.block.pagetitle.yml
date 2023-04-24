@@ -1,0 +1,24 @@
+uuid: db5729d6-f980-4f79-89be-a68b42cbf2b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - boundarycommission_theme
+id: pagetitle
+theme: boundarycommission_theme
+region: content
+weight: -1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "<front>\r\n/search\r\n/news\r\n/news/date/*\r\n/node/*/revisions/view/*\r\n/publications\r\n/publications/date/*\r\n/publications/type/*\r\n/representations-received\r\n/representations-received/type/*\r\n/representations-received/stage/*"

@@ -1,0 +1,12 @@
+uuid: 355acd3f-e495-4ed6-9b66-72c60e3d048c
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__consultations_search__consultations_search_page
+name: 'search_api:views_page__consultations_search__consultations_search_page'
+filter_key: ''
+url_processor: facets_pretty_paths
+breadcrumb:
+  active: true
+  before: false
+  group: false

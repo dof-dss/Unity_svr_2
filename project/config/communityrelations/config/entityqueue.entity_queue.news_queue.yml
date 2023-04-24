@@ -1,0 +1,29 @@
+uuid: 2931de72-a16e-45e2-8d85-9f852975a441
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: news_queue
+label: 'News queue'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      news: news
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+    auto_entityqueue:
+      auto_add: 0
+      insert_front: 0
+queue_settings:
+  min_size: 3
+  max_size: 3
+  act_as_queue: false
+  reverse: false

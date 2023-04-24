@@ -1,0 +1,12 @@
+uuid: d4e9c83f-e207-4385-813a-80f8c129782b
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__consultation_response_search__representations_received
+name: 'search_api:views_page__consultation_response_search__representations_received'
+filter_key: ''
+url_processor: facets_pretty_paths
+breadcrumb:
+  active: true
+  before: false
+  group: false

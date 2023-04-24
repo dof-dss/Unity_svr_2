@@ -87,8 +87,8 @@
         "drupal/console": "^1.9",
         "drupal/content_lock": "^2.2",
         "drupal/cookie_content_blocker": "^2.0",
-        "drupal/core-composer-scaffold": "9.4.*",
-        "drupal/core-recommended": "9.4.*",
+        "drupal/core-composer-scaffold": "9.5.*",
+        "drupal/core-recommended": "9.5.*",
         "drupal/csp": "^1.15",
         "drupal/date_facet_drilldown": "2.x-dev",
         "drupal/diff": "^1.0",
@@ -213,7 +213,7 @@
                 "Render blocks in preview page": "https://www.drupal.org/files/issues/2019-10-03/3085364_2.patch",
                 "Provide options to sanitize filenames (transliterate, lowercase, replace whitespace, etc)": "https://www.drupal.org/files/issues/2021-07-26/2492171-311.patch",
                 "Provide link to latest revision of moderated entity": "https://www.drupal.org/files/issues/2021-11-29/2906455-34.patch",
-                "Remove aria-required attribute if required attribute is set": "https://www.drupal.org/files/issues/2021-11-23/3096790-20.patch"
+                "User enable email exception": "https://www.drupal.org/files/issues/2023-04-19/user_email_exception-3355151-1.patch"
             },
             "drupal/easy_install": {
                 "Handle missing core version": "https://www.drupal.org/files/issues/2019-12-19/easy_install_core_version-3101883-0.patch",

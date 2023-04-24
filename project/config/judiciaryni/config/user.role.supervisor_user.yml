@@ -15,6 +15,7 @@ dependencies:
     - node.type.publication
     - workflows.workflow.nics_editorial_workflow
   module:
+    - book
     - content_moderation
     - contextual
     - file

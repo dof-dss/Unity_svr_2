@@ -1,0 +1,12 @@
+uuid: 2f17c72f-5c4a-4d34-a011-31e1e46eee6e
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__decision_search__decision_search_page
+name: 'search_api:views_page__decision_search__decision_search_page'
+filter_key: ''
+url_processor: facets_pretty_paths
+breadcrumb:
+  active: true
+  before: false
+  group: false
