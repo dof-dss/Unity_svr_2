@@ -1,0 +1,31 @@
+uuid: be376dc3-aaeb-4809-aebc-bdb1b362ff44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachment
+    - media.type.document
+    - media.type.file
+    - node.type.consultation_response
+id: node.consultation_response.field_attachment
+field_name: field_attachment
+entity_type: node
+bundle: consultation_response
+label: Attachment
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+      file: file
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: document
+field_type: entity_reference

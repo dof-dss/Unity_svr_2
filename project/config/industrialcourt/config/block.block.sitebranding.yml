@@ -1,0 +1,23 @@
+uuid: 49e2ea5d-4070-4c36-be40-6aad05b82e0e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - industrialcourt_theme
+id: sitebranding
+theme: industrialcourt_theme
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

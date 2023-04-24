@@ -11,6 +11,6 @@ features:
   favicon: true
   node_user_picture: true
 logo:
-  path: ''
+  path: sites/boundarycommission/themes/boundarycommission_theme/logo.png
   url: ''
-  use_default: true
+  use_default: false

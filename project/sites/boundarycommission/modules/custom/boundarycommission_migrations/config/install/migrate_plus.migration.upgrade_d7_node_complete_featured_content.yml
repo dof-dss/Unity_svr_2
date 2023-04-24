@@ -76,7 +76,7 @@ process:
     -
       plugin: get
       source: comment
-  field_featured_content_link:
+  field_link:
     -
       plugin: get
       source: field_featured_content_link

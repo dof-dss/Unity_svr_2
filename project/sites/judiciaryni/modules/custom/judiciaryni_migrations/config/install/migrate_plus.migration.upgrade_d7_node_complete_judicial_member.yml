@@ -87,9 +87,14 @@ process:
 
       replace_urls:
         http://www.judiciaryni.uk
+        http://judiciaryni.uk
         https://www.judiciaryni.uk
+        https://judiciaryni.uk
         http://www.judiciary-ni.gov.uk
         https://www.judiciary-ni.gov.uk
+        http://test-judiciary.nigov.net
+        https://test-judiciary.nigov.net
+
     -
       plugin: site_files_filter
       from_ref: sites/judiciary/files

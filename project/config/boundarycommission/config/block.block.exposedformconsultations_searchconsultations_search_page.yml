@@ -1,0 +1,28 @@
+uuid: f4f53fdd-0c0d-414f-b003-fe156d9c3cfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.consultations_search
+  module:
+    - system
+    - views
+  theme:
+    - boundarycommission_theme
+id: exposedformconsultations_searchconsultations_search_page
+theme: boundarycommission_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:consultations_search-consultations_search_page'
+settings:
+  id: 'views_exposed_filter_block:consultations_search-consultations_search_page'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/representations-received\r\n/representations-received/type/*\r\n/representations-received/stage/*"

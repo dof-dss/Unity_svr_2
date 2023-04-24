@@ -1,0 +1,12 @@
+uuid: 21f1c920-1fc8-42ec-9bb8-d3756213e697
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: hiN1aSgulAlDjkXN_9TLKAFNjY_98GI7Ww46ljmM7bo
+id: media.unity_3_col_images
+label: 'Unity 3 col images'
+targetEntityType: media
+cache: true

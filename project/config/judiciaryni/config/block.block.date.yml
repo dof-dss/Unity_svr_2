@@ -12,7 +12,7 @@ dependencies:
 id: date
 theme: judiciaryni_theme
 region: search_facets
-weight: 0
+weight: -7
 provider: null
 plugin: 'facet_block:date'
 settings:

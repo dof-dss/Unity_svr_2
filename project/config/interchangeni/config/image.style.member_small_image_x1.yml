@@ -1,0 +1,17 @@
+uuid: 5fa7db5a-65ae-4d21-8012-275fd5fb395a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vjiruZR835QUF1dn5ym399zb7rDu_XDjohEfM7n4eVA
+name: member_small_image_x1
+label: 'Member small image (100 x 133)'
+effects:
+  e2447d37-902e-4c0c-acf5-89ceaae94251:
+    uuid: e2447d37-902e-4c0c-acf5-89ceaae94251
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 100
+      height: 133
+      anchor: center-center

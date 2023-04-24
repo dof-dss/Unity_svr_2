@@ -8,7 +8,6 @@ dependencies:
     - filter
     - media
     - node
-    - search
     - system
 _core:
   default_config_hash: zLyQwFO06-pj9Gj5UZMWuk_aAuAOSC8YqFEHItUk-Tc
@@ -17,13 +16,24 @@ label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'access comments'
+  - 'access administration menu'
   - 'access content'
-  - 'access shortcuts'
-  - 'post comments'
-  - 'search content'
-  - 'skip comment approval'
+  - 'access media browser'
+  - 'access workbench'
+  - 'create page content'
+  - 'delete own page content'
+  - 'diff view changes'
+  - 'edit any page content'
+  - 'edit own page content'
+  - 'revert revisions'
+  - 'use media wysiwyg'
   - 'use text format basic_html'
+  - 'use text format filtered_html'
+  - 'use text format filtered_html_with_no_images'
   - 'view all revisions'
+  - 'view files'
   - 'view media'
+  - 'view moderation history'
+  - 'view moderation messages'
   - 'view own unpublished content'
+  - 'view revisions'

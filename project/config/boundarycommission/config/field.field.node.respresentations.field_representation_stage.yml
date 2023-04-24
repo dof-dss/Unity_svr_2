@@ -1,0 +1,29 @@
+uuid: b1ecc593-5f02-478e-bd8e-74bed43ccb3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_representation_stage
+    - node.type.respresentations
+    - taxonomy.vocabulary.representation_stage
+id: node.respresentations.field_representation_stage
+field_name: field_representation_stage
+entity_type: node
+bundle: respresentations
+label: 'Representation Stage'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      representation_stage: representation_stage
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

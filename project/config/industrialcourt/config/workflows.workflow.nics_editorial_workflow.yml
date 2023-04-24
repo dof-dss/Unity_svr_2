@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - node.type.basic_page
-    - node.type.news
     - node.type.publication
     - node.type.webform
   module:
@@ -97,7 +96,6 @@ type_settings:
   entity_types:
     node:
       - basic_page
-      - news
       - publication
       - webform
   default_moderation_state: draft

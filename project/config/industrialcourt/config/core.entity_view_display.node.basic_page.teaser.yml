@@ -19,24 +19,20 @@ bundle: basic_page
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
-    region: content
-  content_moderation_control:
-    weight: -20
-    settings: {  }
-    third_party_settings: {  }
+    weight: 1
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
+  content_moderation_control: true
   field_meta_tags: true
   field_next_audit_due: true
   langcode: true

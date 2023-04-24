@@ -1,0 +1,82 @@
+uuid: 1aedf81e-2a9c-44ee-9a1c-82613fdf123b
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_url_alias
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'URL aliases'
+source:
+  plugin: d7_url_alias
+  constants:
+    slash: /
+process:
+  id:
+    -
+      plugin: get
+      source: pid
+  _path:
+    -
+      plugin: concat
+      source:
+        - constants/slash
+        - source
+  alias:
+    -
+      plugin: concat
+      source:
+        - constants/slash
+        - alias
+  node_translation:
+    -
+      plugin: explode
+      source: source
+      delimiter: /
+    -
+      plugin: extract
+      default: INVALID_NID
+      index:
+        - 1
+    -
+      plugin: migration_lookup
+      migration:
+        - upgrade_d7_node_complete_decision
+        - upgrade_d7_node_complete_news
+        - upgrade_d7_node_complete_page
+        - upgrade_d7_node_complete_webform
+    -
+      plugin: node_complete_node_translation_lookup
+  langcode:
+    -
+      plugin: null_coalesce
+      source:
+        - '@node_translation/1'
+        - language
+  path:
+    -
+      plugin: path_set_translated
+      source:
+        - '@_path'
+        - '@node_translation'
+  field_metatag:
+    -
+      plugin: d7_metatag_entities
+      source: pseudo_metatag_entities
+destination:
+  plugin: 'entity:path_alias'
+migration_dependencies:
+  required: {  }
+  optional:
+    - upgrade_d7_node_complete_decision
+    - upgrade_d7_node_complete_news
+    - upgrade_d7_node_complete_page
+    - upgrade_d7_node_complete_webform
+    - upgrade_d7_node_complete_decision
+    - upgrade_d7_node_complete_news
+    - upgrade_d7_node_complete_page
+    - upgrade_d7_node_complete_webform

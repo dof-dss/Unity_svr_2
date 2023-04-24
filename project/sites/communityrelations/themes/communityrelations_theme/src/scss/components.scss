@@ -147,7 +147,7 @@
   .board__body {
     position: relative;
     padding-right: 2rem;
-    flex: auto;
+    flex: 1;
     margin-left: 1rem;
 
     &:after {
@@ -204,7 +204,7 @@
   .board__body {
     position: relative;
     padding-right: 2rem;
-    flex: auto;
+    flex: 1;
     margin-left: 1rem;
 
     &:after {
@@ -262,7 +262,7 @@
   .board__body {
     position: relative;
     padding-right: 2rem;
-    flex: auto;
+    flex: 1;
     margin-left: 1rem;
 
     &:after {
@@ -322,7 +322,7 @@
   .board__body {
     position: relative;
     padding-right: 2rem;
-    flex: auto;
+    flex: 1;
     margin-left: 1rem;
 
     &:after {
@@ -456,6 +456,15 @@
 #twitter-home {
   h2, a {
     color: $white;
+  }
+}
+
+#content #twitter-home .twitter-link {
+  color: white;
+  border-bottom: 1px solid $white;
+
+  &:hover {
+    border-bottom: 1px solid $black;
   }
 }
 

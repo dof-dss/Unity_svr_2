@@ -110,6 +110,8 @@
   }
 
   .block-views-blockfront-latest-news-home-latest-news {
+    width: 100%;
+
     h3 {
       @include responsive-typo-map($normal-text);
       font-weight: normal;

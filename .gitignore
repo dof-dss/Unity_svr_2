@@ -56,3 +56,7 @@ web/sites/default/redis.services.yml
 
 # Ignore local logs
 log
+
+# Ignore Wraith screenshots
+/wraith_project/shots
+/wraith_project/output.txt

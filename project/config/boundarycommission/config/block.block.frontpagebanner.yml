@@ -1,0 +1,30 @@
+uuid: e57efed0-6c53-4e31-b23b-2d6c17916733
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:15b55800-aab3-47f2-b57a-6824374d853a'
+  module:
+    - block_content
+    - system
+  theme:
+    - boundarycommission_theme
+id: frontpagebanner
+theme: boundarycommission_theme
+region: slideshow
+weight: 0
+provider: null
+plugin: 'block_content:15b55800-aab3-47f2-b57a-6824374d853a'
+settings:
+  id: 'block_content:15b55800-aab3-47f2-b57a-6824374d853a'
+  label: 'Frontpage banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

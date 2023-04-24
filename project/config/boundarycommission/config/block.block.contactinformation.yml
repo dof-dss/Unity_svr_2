@@ -1,0 +1,25 @@
+uuid: 8010f069-0b84-4a33-8b38-319b44c4bd0b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:e8393aa3-c868-4d44-8f46-4f60aa59fb48'
+  module:
+    - block_content
+  theme:
+    - boundarycommission_theme
+id: contactinformation
+theme: boundarycommission_theme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:e8393aa3-c868-4d44-8f46-4f60aa59fb48'
+settings:
+  id: 'block_content:e8393aa3-c868-4d44-8f46-4f60aa59fb48'
+  label: 'Contact Information'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
