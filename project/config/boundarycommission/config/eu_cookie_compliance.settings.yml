@@ -83,3 +83,4 @@ close_button_enabled: false
 dependencies:
   config:
     - filter.format.basic_html
+
