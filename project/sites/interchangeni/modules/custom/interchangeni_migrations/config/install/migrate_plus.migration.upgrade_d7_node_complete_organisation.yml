@@ -123,10 +123,8 @@ process:
         height: height
   field_website:
     -
-      plugin: sub_process
+      plugin: d7_url
       source: field_website
-      process:
-        value: field_url
   field_metatag:
     -
       plugin: d7_metatag_entities
