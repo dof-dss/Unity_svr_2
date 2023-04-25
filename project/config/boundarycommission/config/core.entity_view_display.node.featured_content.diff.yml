@@ -1,20 +1,47 @@
-uuid: 63ff0fcf-fe6d-45ab-87f1-9b4d406c73dd
+uuid: ce170f47-c712-451e-9d6e-acede93c67a4
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.diff
     - field.field.node.featured_content.field_link
     - field.field.node.featured_content.field_photo
     - field.field.node.featured_content.field_tagline
     - node.type.featured_content
   module:
+    - field_group
+    - layout_builder
     - link
     - text
     - user
-id: node.featured_content.default
+third_party_settings:
+  field_group:
+    group_additional_content_details:
+      children:
+        - links
+      label: 'Additional content details'
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: field-collection
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.featured_content.diff
 targetEntityType: node
 bundle: featured_content
-mode: default
+mode: diff
 content:
   field_link:
     type: link
@@ -44,8 +71,12 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
 hidden:
   content_moderation_control: true
   langcode: true
-  links: true
   search_api_excerpt: true

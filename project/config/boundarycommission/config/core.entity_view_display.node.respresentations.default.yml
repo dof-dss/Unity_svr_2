@@ -14,16 +14,15 @@ targetEntityType: node
 bundle: respresentations
 mode: default
 content:
-  field_attachment:
-    type: entity_reference_entity_view
+  field_representation_stage:
+    type: entity_reference_label
     label: above
     settings:
-      view_mode: default
       link: true
     third_party_settings: {  }
-    weight: 2
+    weight: 0
     region: content
-  field_representation_stage:
+  field_response_type:
     type: entity_reference_label
     label: above
     settings:
@@ -31,14 +30,9 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_response_type:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 0
-    region: content
 hidden:
+  content_moderation_control: true
+  field_attachment: true
   langcode: true
   links: true
+  search_api_excerpt: true

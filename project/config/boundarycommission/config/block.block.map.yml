@@ -12,7 +12,7 @@ dependencies:
 id: map
 theme: boundarycommission_theme
 region: content
-weight: 0
+weight: -8
 provider: null
 plugin: 'block_content:3030f42e-8410-4e83-9dfd-368e573a1def'
 settings:
