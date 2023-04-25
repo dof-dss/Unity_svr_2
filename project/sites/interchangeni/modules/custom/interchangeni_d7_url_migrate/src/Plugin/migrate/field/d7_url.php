@@ -7,7 +7,7 @@ use Drupal\migrate_drupal\Annotation\MigrateField;
 use Drupal\migrate_drupal\Plugin\migrate\field\FieldPluginBase;
 
 /**
- * MigrateField Plugin for Drupal 6 and 7 email fields.
+ * MigrateField Plugin for Drupal 7 URL field to Drupal 9 email field.
  *
  * @MigrateField(
  *   id = "d7_url",
