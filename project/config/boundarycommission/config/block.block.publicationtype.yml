@@ -12,7 +12,7 @@ dependencies:
 id: publicationtype
 theme: boundarycommission_theme
 region: search_facets
-weight: -1
+weight: -6
 provider: null
 plugin: 'facet_block:publication_type'
 settings:
