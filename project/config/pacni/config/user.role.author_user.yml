@@ -9,6 +9,7 @@ dependencies:
     - media.type.image
     - media.type.remote_video
     - node.type.basic_page
+    - node.type.feature
     - node.type.news
     - node.type.publication
     - workflows.workflow.nics_editorial_workflow
@@ -38,6 +39,7 @@ permissions:
   - 'create audio media'
   - 'create basic_page content'
   - 'create document media'
+  - 'create feature content'
   - 'create file media'
   - 'create files'
   - 'create image media'
@@ -49,6 +51,7 @@ permissions:
   - 'delete own audio media'
   - 'delete own basic_page content'
   - 'delete own document media'
+  - 'delete own feature content'
   - 'delete own file media'
   - 'delete own image media'
   - 'delete own news content'
@@ -64,6 +67,7 @@ permissions:
   - 'download own image files'
   - 'download own video files'
   - 'edit any basic_page content'
+  - 'edit any feature content'
   - 'edit any news content'
   - 'edit any page content'
   - 'edit any publication content'
@@ -72,6 +76,7 @@ permissions:
   - 'edit own basic_page content'
   - 'edit own document files'
   - 'edit own document media'
+  - 'edit own feature content'
   - 'edit own file media'
   - 'edit own image files'
   - 'edit own image media'
@@ -83,6 +88,7 @@ permissions:
   - 'moderate content from draft to needs_review'
   - 'moderate content from needs_review to draft'
   - 'revert basic_page revisions'
+  - 'revert feature revisions'
   - 'revert news revisions'
   - 'revert page revisions'
   - 'revert publication revisions'
@@ -98,6 +104,7 @@ permissions:
   - 'view all unpublished content'
   - 'view any unpublished content'
   - 'view basic_page revisions'
+  - 'view feature revisions'
   - 'view latest version'
   - 'view news revisions'
   - 'view own files'
