@@ -304,7 +304,7 @@ handlers:
     handler_id: email
     label: Email
     notes: ''
-    status: true
+    status: false
     conditions: {  }
     weight: 0
     settings:
@@ -341,7 +341,7 @@ handlers:
     handler_id: email_1
     label: Email
     notes: ''
-    status: false
+    status: true
     conditions: {  }
     weight: 0
     settings:
