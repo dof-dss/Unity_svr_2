@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fcd1fa661d8df2c187256ef9dc732da9",
+    "content-hash": "6094db57a945d69eb5d76558d783d793",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2303,16 +2303,16 @@
             ],
             "authors": [
                 {
-                    "name": "arshadcn",
-                    "homepage": "https://www.drupal.org/user/571032"
-                },
-                {
                     "name": "mlanth",
                     "homepage": "https://www.drupal.org/user/2843651"
                 },
                 {
                     "name": "paboden",
                     "homepage": "https://www.drupal.org/user/329794"
+                },
+                {
+                    "name": "shadcn",
+                    "homepage": "https://www.drupal.org/user/571032"
                 }
             ],
             "description": "Automatically adds entities to entityqueues.",
