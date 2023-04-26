@@ -3,10 +3,28 @@ langcode: en
 status: true
 dependencies:
   config:
+    - media.type.audio
+    - media.type.document
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - node.type.basic_page
     - node.type.consultation_response
+    - node.type.featured_content
+    - node.type.news
+    - node.type.publication
+    - node.type.respresentations
+    - node.type.webform
+    - workflows.workflow.nics_editorial_workflow
   module:
+    - content_moderation
+    - media
+    - menu_admin_per_menu
+    - moderation_sidebar
     - node
+    - path
     - system
+    - toolbar
 _core:
   default_config_hash: AyMCT1boGFkm3MNXLyv6ZV7yMdWLY-U3WQLhzDDkWGE
 id: author_user
@@ -17,12 +35,36 @@ permissions:
   - 'access administration menu'
   - 'access administration pages'
   - 'access ckeditor link'
+  - 'access content overview'
+  - 'access toolbar'
   - 'add media from remote sources'
+  - 'administer main menu items'
   - 'administer main-menu menu items'
+  - 'create audio media'
+  - 'create basic_page content'
   - 'create consultation_response content'
+  - 'create document media'
+  - 'create featured_content content'
+  - 'create file media'
   - 'create files'
+  - 'create image media'
+  - 'create news content'
+  - 'create publication content'
   - 'create publication_page content'
+  - 'create remote_video media'
+  - 'create respresentations content'
+  - 'create url aliases'
+  - 'delete own audio media'
+  - 'delete own basic_page content'
   - 'delete own consultation_response content'
+  - 'delete own document media'
+  - 'delete own featured_content content'
+  - 'delete own file media'
+  - 'delete own image media'
+  - 'delete own news content'
+  - 'delete own publication content'
+  - 'delete own remote_video media'
+  - 'delete own respresentations content'
   - 'download any audio files'
   - 'download any document files'
   - 'download any image files'
@@ -31,17 +73,54 @@ permissions:
   - 'download own document files'
   - 'download own image files'
   - 'download own video files'
+  - 'edit any basic_page content'
   - 'edit any consultation_response content'
+  - 'edit any featured_content content'
+  - 'edit any news content'
+  - 'edit any publication content'
+  - 'edit any respresentations content'
   - 'edit own audio files'
+  - 'edit own audio media'
+  - 'edit own basic_page content'
   - 'edit own consultation_response content'
   - 'edit own document files'
+  - 'edit own document media'
+  - 'edit own featured_content content'
+  - 'edit own file media'
   - 'edit own image files'
+  - 'edit own image media'
+  - 'edit own news content'
+  - 'edit own publication content'
+  - 'edit own remote_video media'
+  - 'edit own respresentations content'
   - 'edit own video files'
   - 'moderate content from draft to needs_review'
   - 'moderate content from needs_review to draft'
+  - 'revert basic_page revisions'
+  - 'revert consultation_response revisions'
+  - 'revert featured_content revisions'
+  - 'revert news revisions'
+  - 'revert publication revisions'
+  - 'revert respresentations revisions'
+  - 'use moderation sidebar'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition submit_for_review'
   - 'use text format filtered_html'
   - 'use text format filtered_html_with_no_images'
   - 'use workbench_moderation my drafts tab'
   - 'use workbench_moderation needs review tab'
   - 'view all unpublished content'
+  - 'view any unpublished content'
+  - 'view basic_page revisions'
+  - 'view consultation_response revisions'
+  - 'view featured_content revisions'
+  - 'view latest version'
+  - 'view news revisions'
   - 'view own files'
+  - 'view own unpublished media'
+  - 'view publication revisions'
+  - 'view respresentations revisions'
+  - 'view the administration theme'
+  - 'view webform revisions'
