@@ -160,7 +160,7 @@
         "drupal/views_contextual_filters_or": "^1.1",
         "drupal/views_custom_cache_tag": "^1.1",
         "drupal/webform": "^6.0",
-        "drupal/whatlinkshere": "^2.0",
+        "drupal/whatlinkshere": "^2.1",
         "drush/drush": "^10.3",
         "geocoder-php/google-maps-provider": "^4.6",
         "harvesthq/chosen": "^1.8",
