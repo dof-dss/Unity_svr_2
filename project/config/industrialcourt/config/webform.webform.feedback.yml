@@ -227,7 +227,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: webdev@finance-ni.gov.uk
+      to_mail: enquiries@industrialcourt.gov.uk
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
