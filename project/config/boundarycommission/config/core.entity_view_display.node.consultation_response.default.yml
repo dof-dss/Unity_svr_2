@@ -25,17 +25,17 @@ content:
     region: content
   field_consultation_stage:
     type: entity_reference_label
-    label: inline
+    label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     weight: 0
     region: content
   field_response_type:
     type: entity_reference_label
-    label: inline
+    label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     weight: 1
     region: content
