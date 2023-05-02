@@ -1,0 +1,20 @@
+uuid: 38f7ab54-6db7-4e8a-b00d-b49e12049cf2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - interchangeni_theme
+id: mainpagecontent
+theme: interchangeni_theme
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
