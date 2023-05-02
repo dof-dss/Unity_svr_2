@@ -12,7 +12,7 @@ dependencies:
 id: homepageinformation
 theme: boundarycommission_theme
 region: front_welcome
-weight: 0
+weight: -10
 provider: null
 plugin: 'block_content:884a631b-c029-4ac8-b27f-c654882aae71'
 settings:

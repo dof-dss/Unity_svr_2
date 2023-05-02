@@ -12,7 +12,7 @@ dependencies:
 id: date
 theme: industrialcourt_theme
 region: search_facets
-weight: -5
+weight: -6
 provider: null
 plugin: 'facet_block:decision_date'
 settings:

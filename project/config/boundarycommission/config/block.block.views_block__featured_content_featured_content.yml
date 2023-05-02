@@ -1,0 +1,29 @@
+uuid: 876bad8d-841d-478f-ab07-62b36e895abe
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.featured_content
+  module:
+    - system
+    - views
+  theme:
+    - boundarycommission_theme
+id: views_block__featured_content_featured_content
+theme: boundarycommission_theme
+region: front_welcome
+weight: -9
+provider: null
+plugin: 'views_block:featured_content-featured_content'
+settings:
+  id: 'views_block:featured_content-featured_content'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
