@@ -1,0 +1,29 @@
+uuid: 8591a6d7-5a5e-47fb-b188-3b0f2a75a73e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_manager
+    - node.type.manager
+    - node.type.opportunity
+id: node.opportunity.field_manager
+field_name: field_manager
+entity_type: node
+bundle: opportunity
+label: Manager
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      manager: manager
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

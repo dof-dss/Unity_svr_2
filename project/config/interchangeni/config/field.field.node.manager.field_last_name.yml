@@ -1,0 +1,19 @@
+uuid: c4f122cb-3ef1-4295-8700-9d9c0a919920
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_last_name
+    - node.type.manager
+id: node.manager.field_last_name
+field_name: field_last_name
+entity_type: node
+bundle: manager
+label: Surname
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
