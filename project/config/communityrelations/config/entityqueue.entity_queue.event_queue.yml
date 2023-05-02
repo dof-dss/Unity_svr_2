@@ -1,0 +1,29 @@
+uuid: c8c3fc81-b494-40f9-ad3d-5e7afe716cb2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: event_queue
+label: 'Event queue'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      event: event
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+    auto_entityqueue:
+      auto_add: 0
+      insert_front: 0
+queue_settings:
+  min_size: 3
+  max_size: 3
+  act_as_queue: false
+  reverse: false

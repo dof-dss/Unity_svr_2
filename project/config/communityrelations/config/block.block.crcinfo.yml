@@ -11,7 +11,7 @@ dependencies:
 id: crcinfo
 theme: communityrelations_theme
 region: footer_first
-weight: -12
+weight: -13
 provider: null
 plugin: 'block_content:a68f15c8-0d07-4df5-83cd-875ce3e9c60e'
 settings:

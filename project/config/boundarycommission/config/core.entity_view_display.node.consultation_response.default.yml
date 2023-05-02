@@ -15,28 +15,29 @@ bundle: consultation_response
 mode: default
 content:
   field_attachment:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     label: above
     settings:
-      link: true
+      view_mode: embed
+      link: false
     third_party_settings: {  }
     weight: 2
     region: content
   field_consultation_stage:
     type: entity_reference_label
-    label: inline
+    label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_response_type:
     type: entity_reference_label
-    label: inline
+    label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
 hidden:
   content_moderation_control: true

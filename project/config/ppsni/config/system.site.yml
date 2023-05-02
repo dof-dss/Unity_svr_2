@@ -2,7 +2,7 @@ _core:
   default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
 langcode: en
 uuid: bb61a33e-a669-4339-89fc-99bc57c8995a
-name: 'Public Prosecution Service NI'
+name: 'Public Prosecution Service for Northern Ireland'
 mail: info@ppsni.gov.uk
 slogan: ''
 page:
@@ -12,5 +12,5 @@ page:
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
-frontpage_title: 'Public Prosecution Service NI'
+frontpage_title: 'Public Prosecution Service for Northern Ireland | Independent, Fair, Effective'
 frontpage_show_title: 0

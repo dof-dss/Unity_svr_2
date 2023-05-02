@@ -9,12 +9,32 @@ dependencies:
     - field.field.node.consultation_response.field_response_type
     - node.type.consultation_response
   module:
+    - field_group
     - layout_builder
     - user
 third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
+  field_group:
+    group_additional_content_details:
+      children: {  }
+      label: 'Additional content details'
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: field-collection
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 id: node.consultation_response.diff
 targetEntityType: node
 bundle: consultation_response
@@ -22,29 +42,35 @@ mode: diff
 content:
   field_attachment:
     type: entity_reference_entity_view
-    label: inline
+    label: above
     settings:
-      view_mode: default
-      link: true
+      view_mode: embed
+      link: false
     third_party_settings: {  }
     weight: 2
     region: content
   field_consultation_stage:
     type: entity_reference_label
-    label: inline
+    label: above
     settings:
       link: true
     third_party_settings: {  }
-    weight: 4
+    weight: 0
     region: content
   field_response_type:
     type: entity_reference_label
-    label: inline
+    label: above
     settings:
       link: true
     third_party_settings: {  }
-    weight: 3
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
     region: content
 hidden:
+  content_moderation_control: true
   langcode: true
-  links: true
+  search_api_excerpt: true
