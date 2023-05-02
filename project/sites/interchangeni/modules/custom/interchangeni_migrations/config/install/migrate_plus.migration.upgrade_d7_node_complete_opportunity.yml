@@ -131,7 +131,7 @@ process:
     -
       plugin: get
       source: field_manager_organisation
-  field_ni_cs_cover_note:
+  field_nics_cover_note:
     -
       plugin: sub_process
       source: field_nics_cover_note

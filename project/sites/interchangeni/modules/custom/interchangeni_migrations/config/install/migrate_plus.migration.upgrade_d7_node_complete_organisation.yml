@@ -123,7 +123,7 @@ process:
         height: height
   field_website:
     -
-      plugin: d7_url
+      plugin: url_to_link
       source: field_website
   field_metatag:
     -
