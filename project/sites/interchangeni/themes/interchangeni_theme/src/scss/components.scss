@@ -1,0 +1,25 @@
+/*
+ * @file
+ * Defines the components for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+#main-menu {
+  .menu-link {
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-bottom: 5px solid $brand-secondary;
+    }
+  }
+
+  .menu {
+    .menu-item {
+      .active,
+      .active + .menu-main_sub .title a {
+        border-bottom: 5px solid $brand-secondary;
+      }
+    }
+  }
+}

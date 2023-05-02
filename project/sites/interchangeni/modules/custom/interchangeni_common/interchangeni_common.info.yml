@@ -1,0 +1,5 @@
+name: 'Interchange NI common'
+type: module
+description: 'Interchange NI common'
+core_version_requirement: 8.x || ^9
+package: 'Custom'
