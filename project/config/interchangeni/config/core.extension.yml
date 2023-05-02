@@ -77,7 +77,6 @@ module:
   metatag_verification: 0
   metatag_views: 0
   migrate_absolute_links: 0
-  migrate_url2link: 0
   moderation_sidebar: 0
   mysql: 0
   node: 0
@@ -139,4 +138,5 @@ theme:
   stable: 0
   adminimal_theme: 0
   nicsdru_unity_theme: 0
+  interchangeni_theme: 0
 profile: nicsdru_unity_profile
