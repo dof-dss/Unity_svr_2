@@ -64,7 +64,7 @@ content:
     weight: 7
     region: content
   field_manager_email:
-    type: basic_string
+    type: email_mailto
     label: inline
     settings: {  }
     third_party_settings: {  }

@@ -18,7 +18,7 @@ bundle: manager
 mode: default
 content:
   field_manager_email:
-    type: basic_string
+    type: email_mailto
     label: inline
     settings: {  }
     third_party_settings: {  }
