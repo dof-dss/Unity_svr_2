@@ -18,7 +18,7 @@ plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
   label: 'In this section'
-  label_display: '0'
+  label_display: visible
   provider: system
   level: 1
   depth: 0
