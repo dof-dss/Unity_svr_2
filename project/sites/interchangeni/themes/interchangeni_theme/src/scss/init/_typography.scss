@@ -22,7 +22,8 @@ $h6-font-size: 1.6 * $base-font-size;
 $p-font-size: 1.6 * $base-font-size;
 
 $normal-text: (
-  null: (16px, null, 0 0 2.4rem)
+  null: (16px, 1.5, 1em 0 1.5em),
+  lg: 18px,
 );
 
 $h1-text: (
