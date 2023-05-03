@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - node.type.faq
+    - node.type.manager
+    - node.type.opportunity
+    - node.type.organisation
   module:
     - block
     - node
