@@ -6,6 +6,7 @@ core_version_requirement: ^8.8 || ^9
 
 libraries:
   - interchangeni_theme/site-styling
+  - nicsdru_unity_theme/accordions
 
 libraries-override:
   nicsdru_unity_theme/unity-global-styling:
