@@ -10,8 +10,8 @@ field_name: field_telephone
 entity_type: node
 bundle: manager
 label: Telephone
-description: ''
-required: false
+description: 'Enter a contact number for this manager.'
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
