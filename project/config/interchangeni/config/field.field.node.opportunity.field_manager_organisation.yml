@@ -11,7 +11,7 @@ field_name: field_manager_organisation
 entity_type: node
 bundle: opportunity
 label: Organisation
-description: ''
+description: 'Choose an organisation for this opportunity.'
 required: false
 translatable: true
 default_value: {  }

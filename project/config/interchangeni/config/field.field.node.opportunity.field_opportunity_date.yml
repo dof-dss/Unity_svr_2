@@ -13,7 +13,7 @@ entity_type: node
 bundle: opportunity
 label: 'Start and end date'
 description: ''
-required: false
+required: true
 translatable: true
 default_value:
   -

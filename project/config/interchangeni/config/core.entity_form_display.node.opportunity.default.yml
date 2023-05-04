@@ -18,6 +18,7 @@ dependencies:
     - content_moderation
     - datetime_range
     - media_library
+    - media_library_edit
     - metatag
     - path
 id: node.opportunity.default
@@ -33,72 +34,74 @@ content:
     third_party_settings: {  }
   field_candidate_proforma:
     type: media_library_widget
-    weight: 38
+    weight: 18
     region: content
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
   field_hosting_proforma:
     type: media_library_widget
-    weight: 34
+    weight: 14
     region: content
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
   field_manager:
-    type: entity_reference_autocomplete
-    weight: 41
+    type: options_select
+    weight: 12
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_manager_organisation:
-    type: entity_reference_autocomplete
-    weight: 40
+    type: options_select
+    weight: 11
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_managers_cover_note:
     type: media_library_widget
-    weight: 37
+    weight: 17
     region: content
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
   field_meta_tags:
     type: metatag_firehose
-    weight: 33
+    weight: 10
     region: content
     settings:
       sidebar: true
     third_party_settings: {  }
   field_nics_cover_note:
     type: media_library_widget
-    weight: 35
+    weight: 15
     region: content
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
   field_opportunity_date:
     type: daterange_default
-    weight: 39
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
   field_partners_cover_note:
     type: media_library_widget
-    weight: 36
+    weight: 16
     region: content
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
   langcode:
     type: language_select
     weight: 1
