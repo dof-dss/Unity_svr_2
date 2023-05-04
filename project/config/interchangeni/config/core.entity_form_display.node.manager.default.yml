@@ -28,7 +28,7 @@ content:
     third_party_settings: {  }
   field_first_name:
     type: string_textfield
-    weight: 28
+    weight: 11
     region: content
     settings:
       size: 60
@@ -36,7 +36,7 @@ content:
     third_party_settings: {  }
   field_last_name:
     type: string_textfield
-    weight: 29
+    weight: 12
     region: content
     settings:
       size: 60
@@ -44,32 +44,28 @@ content:
     third_party_settings: {  }
   field_manager_email:
     type: email_default
-    weight: 31
+    weight: 14
     region: content
     settings:
       placeholder: ''
       size: 60
     third_party_settings: {  }
   field_manager_organisation:
-    type: entity_reference_autocomplete
-    weight: 27
+    type: options_select
+    weight: 13
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_meta_tags:
     type: metatag_firehose
-    weight: 26
+    weight: 10
     region: content
     settings:
       sidebar: true
     third_party_settings: {  }
   field_telephone:
     type: string_textfield
-    weight: 30
+    weight: 15
     region: content
     settings:
       size: 60
