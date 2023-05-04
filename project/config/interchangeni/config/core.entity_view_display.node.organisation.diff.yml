@@ -11,8 +11,10 @@ dependencies:
     - field.field.node.organisation.field_website
     - node.type.organisation
   module:
+    - field_group
     - layout_builder
     - link
+    - metatag
     - options
     - text
     - user
@@ -20,6 +22,26 @@ third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
+  field_group:
+    group_a:
+      children:
+        - field_meta_tags
+      label: 'Additional content details'
+      parent_name: ''
+      region: content
+      weight: 4
+      format_type: html_element
+      format_settings:
+        classes: field-collection
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 id: node.organisation.diff
 targetEntityType: node
 bundle: organisation
@@ -31,6 +53,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 3
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
     region: content
   field_organisation_type:
     type: list_default
@@ -62,6 +91,5 @@ content:
     region: content
 hidden:
   content_moderation_control: true
-  field_meta_tags: true
   langcode: true
   links: true
