@@ -90,7 +90,7 @@
         "drupal/core-composer-scaffold": "9.5.*",
         "drupal/core-recommended": "9.5.*",
         "drupal/csp": "^1.15",
-        "drupal/date_facet_drilldown": "2.x-dev",
+        "drupal/date_facet_drilldown": "3.x-dev@dev",
         "drupal/diff": "^1.0",
         "drupal/draggableviews": "^2.0",
         "drupal/embed": "^1.6",
@@ -98,8 +98,8 @@
         "drupal/entity_embed": "^1.0",
         "drupal/entityqueue": "^1.2",
         "drupal/eu_cookie_compliance": "^1.8",
-        "drupal/facets": "1.8.0",
-        "drupal/facets_pretty_paths": "^1.0@beta",
+        "drupal/facets": "^2.0",
+        "drupal/facets_pretty_paths": "^1.4",
         "drupal/faqfield": "^7.0",
         "drupal/fastly": "^3.9",
         "drupal/field_group": "^3.0",
@@ -218,6 +218,9 @@
             "drupal/easy_install": {
                 "Handle missing core version": "https://www.drupal.org/files/issues/2019-12-19/easy_install_core_version-3101883-0.patch",
                 "non-existent service entity.manager": "https://www.drupal.org/files/issues/2020-12-08/3162621-4.patch"
+            },
+            "drupal/facets_pretty_paths": {
+                "facet pretty paths doubling up": "https://www.drupal.org/files/issues/2023-01-12/url_duplication-3254600-45.patch"
             },
             "drupal/fastly": {
                 "Allow disabling of logging": "https://git.drupalcode.org/project/fastly/-/merge_requests/6.patch"
