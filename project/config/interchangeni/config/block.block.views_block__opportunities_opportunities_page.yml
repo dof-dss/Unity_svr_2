@@ -1,0 +1,29 @@
+uuid: fbff45a5-3d1d-491e-9cd3-324863652c90
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.opportunities
+  module:
+    - system
+    - views
+  theme:
+    - interchangeni_theme
+id: views_block__opportunities_opportunities_page
+theme: interchangeni_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:opportunities-opportunities_page'
+settings:
+  id: 'views_block:opportunities-opportunities_page'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /opportunities
