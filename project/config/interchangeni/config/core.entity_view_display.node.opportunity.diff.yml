@@ -1,8 +1,9 @@
-uuid: 82e4c9c8-65b0-4a29-9d0c-4c570357e56a
+uuid: 513b5bc8-1076-4db5-ae91-86c05373cf56
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.diff
     - field.field.node.opportunity.field_candidate_proforma
     - field.field.node.opportunity.field_hosting_proforma
     - field.field.node.opportunity.field_manager
@@ -15,11 +16,39 @@ dependencies:
     - node.type.opportunity
   module:
     - datetime_range
+    - field_group
+    - layout_builder
+    - metatag
     - user
-id: node.opportunity.default
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  field_group:
+    group_a:
+      children:
+        - field_manager_organisation
+        - field_meta_tags
+      label: 'Additional content details'
+      parent_name: ''
+      region: content
+      weight: 7
+      format_type: html_element
+      format_settings:
+        classes: field-collection
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.opportunity.diff
 targetEntityType: node
 bundle: opportunity
-mode: default
+mode: diff
 content:
   field_candidate_proforma:
     type: entity_reference_entity_view
@@ -47,6 +76,14 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_manager_organisation:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
   field_managers_cover_note:
     type: entity_reference_entity_view
     label: hidden
@@ -55,6 +92,13 @@ content:
       link: false
     third_party_settings: {  }
     weight: 5
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
     region: content
   field_nics_cover_note:
     type: entity_reference_entity_view
@@ -86,7 +130,5 @@ content:
     region: content
 hidden:
   content_moderation_control: true
-  field_manager_organisation: true
-  field_meta_tags: true
   langcode: true
   links: true
