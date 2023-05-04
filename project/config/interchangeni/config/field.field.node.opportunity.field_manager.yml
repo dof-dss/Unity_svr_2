@@ -11,8 +11,8 @@ field_name: field_manager
 entity_type: node
 bundle: opportunity
 label: Manager
-description: ''
-required: false
+description: 'Choose a manager for this opportunity.'
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
