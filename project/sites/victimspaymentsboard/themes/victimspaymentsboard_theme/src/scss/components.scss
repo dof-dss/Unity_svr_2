@@ -122,6 +122,12 @@ h1 {
   }
 }
 
+.node-type-publication-page {
+  .published-date {
+    font-weight: bold;
+  }
+}
+
 #footer {
   @include breakpoint($tab) {
     padding: 2%;
