@@ -1,0 +1,22 @@
+uuid: 56a58f62-af2a-4045-909d-e5769153c3fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: opportunity_pattern
+label: 'Opportunity pattern'
+type: 'canonical_entities:node'
+pattern: '/opportunities/[node:field_manager:entity:field_manager_organisation]/[node:title]'
+selection_criteria:
+  1623a8a7-5783-48ff-8f0a-6a5429c260d1:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 1623a8a7-5783-48ff-8f0a-6a5429c260d1
+    context_mapping:
+      node: node
+    bundles:
+      opportunity: opportunity
+selection_logic: and
+weight: -5
+relationships: {  }
