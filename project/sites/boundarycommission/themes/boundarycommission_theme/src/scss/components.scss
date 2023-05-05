@@ -167,6 +167,21 @@
   }
 }
 
+.path-publication-archive {
+  h2.title {
+    @include adjust-font-size-to(21px);
+  }
+  .published-date {
+    margin: 0;
+  }
+}
+
+.path-news-archive {
+  h2.title {
+    @include adjust-font-size-to(21px);
+  }
+}
+
 #bottom-area {
   @include breakpoint($tab) {
     display: flex;

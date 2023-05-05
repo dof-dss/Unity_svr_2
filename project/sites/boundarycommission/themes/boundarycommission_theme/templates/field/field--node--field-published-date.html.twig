@@ -51,7 +51,7 @@
     </p>
 {% else %}
     <p{{ attributes }}>
-      <span{{ title_attributes.addClass(title_classes) }}>{{ label }}: </span>
+      <span>{{ 'Published: '|t }}</span>
       {% for item in items %}
         <span{{ item.attributes }}>{{ item.content }}</span>
       {% endfor %}
