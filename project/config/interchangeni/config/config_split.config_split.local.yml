@@ -14,10 +14,12 @@ module:
   easy_install: 0
   interchangeni_migrations: 0
   migrate: 0
+  migrate_absolute_links: 0
   migrate_drupal: 0
   migrate_plus: 0
   migrate_tools: 0
   migrate_upgrade: 0
+  unity_file_migrations: 0
   views_ui: 0
 theme: {  }
 blacklist: {  }
