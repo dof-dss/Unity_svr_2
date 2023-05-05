@@ -36,9 +36,15 @@
  * @see template_preprocess_field()
  */
 #}
-<p>
-  <span>{{ 'Manager: '|t }}</span>
   {% for item in items %}
-    <span>{{ item.content }}</span>
+    {% if item.content.end_date['#attributes'].datetime|date('U') > 'now'|date('U') %}
+    <p>
+      <span>{{ 'Date added: ' }}</span><span>{{ item.content.start_date }}</span>
+      <span>{{ 'Closing date: ' }}</span><span>{{ item.content.end_date }}</span>
+    </p>
+  {% else %}
+    <p class="opportunity-closed">
+      <span>{{ 'Closed: ' }}</span><span>{{ item.content.end_date }}</span>
+    </p>
+    {% endif %}
   {% endfor %}
-</p>
