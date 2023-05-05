@@ -140,7 +140,7 @@
         "drupal/search_api": "^1.26",
         "drupal/search_api_autocomplete": "^1.4",
         "drupal/search_api_location": "^1.0@alpha",
-        "drupal/search_api_solr": "4.1.12",
+        "drupal/search_api_solr": "^4.2",
         "drupal/search_api_spellcheck": "^4.0",
         "drupal/shs": "^2.0@RC",
         "drupal/simplei": "^1.1",
@@ -209,7 +209,6 @@
                 "Cientside validation errors revert to being output as a label in webform wizard pages with ajax enabled": "https://www.drupal.org/files/issues/2021-02-24/3110890-reroll-for-3.0.x.patch"
             },
             "drupal/core": {
-                "Prevent leftover fields from causing errors like 'Call to a member function getLabel() after enabling layout_builder'": "https://www.drupal.org/files/issues/2020-01-20/2985882-53.patch",
                 "Render blocks in preview page": "https://www.drupal.org/files/issues/2019-10-03/3085364_2.patch",
                 "Provide options to sanitize filenames (transliterate, lowercase, replace whitespace, etc)": "https://www.drupal.org/files/issues/2021-07-26/2492171-311.patch",
                 "Provide link to latest revision of moderated entity": "https://www.drupal.org/files/issues/2021-11-29/2906455-34.patch",
