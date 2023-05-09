@@ -76,7 +76,6 @@ module:
   metatag_twitter_cards: 0
   metatag_verification: 0
   metatag_views: 0
-  migrate_absolute_links: 0
   moderation_sidebar: 0
   mysql: 0
   node: 0
@@ -114,7 +113,6 @@ module:
   ultimate_cron: 0
   unity_common: 0
   unity_eu_cookie_compliance: 0
-  unity_file_migrations: 0
   unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0
