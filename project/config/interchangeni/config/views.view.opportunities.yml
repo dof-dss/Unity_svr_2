@@ -350,8 +350,8 @@ display:
           row_class: ''
           default_row_class: false
           type: ul
-          wrapper_class: opportunity-list
-          class: ''
+          wrapper_class: ''
+          class: opportunity-list
       row:
         type: fields
         options:
