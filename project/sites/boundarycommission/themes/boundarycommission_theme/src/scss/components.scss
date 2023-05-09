@@ -41,13 +41,13 @@
     .menu-item {
       .active {
         background: $brand-secondary;
-        color: $black;
+        color: $white;
       }
 
       a {
         &:hover,
         &:focus {
-          color: $black;
+          color: $white;
           background: $brand-secondary;
         }
       }
@@ -164,6 +164,21 @@
     .media-image {
       margin: 0;
     }
+  }
+}
+
+.path-publication-archive {
+  h2.title {
+    @include adjust-font-size-to(21px);
+  }
+  .published-date {
+    margin: 0;
+  }
+}
+
+.path-news-archive {
+  h2.title {
+    @include adjust-font-size-to(21px);
   }
 }
 
