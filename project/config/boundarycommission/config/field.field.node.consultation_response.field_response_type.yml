@@ -10,7 +10,7 @@ id: node.consultation_response.field_response_type
 field_name: field_response_type
 entity_type: node
 bundle: consultation_response
-label: 'Consultation Response Type'
+label: 'Response Type'
 description: ''
 required: false
 translatable: false

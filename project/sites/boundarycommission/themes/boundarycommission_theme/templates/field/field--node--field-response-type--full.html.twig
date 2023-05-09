@@ -36,7 +36,6 @@
  * @see template_preprocess_field()
  */
 #}
-{% set attributes = attributes.addClass('published-date') %}
 {%
   set title_classes = [
   label_display == 'visually_hidden' ? 'visually-hidden',
@@ -51,7 +50,7 @@
     </p>
 {% else %}
     <p{{ attributes }}>
-      <span>{{ 'Published:'|t }}</span>
+      <span{{ title_attributes.addClass(title_classes) }}>{{ label }}: </span>
       {% for item in items %}
         <span{{ item.attributes }}>{{ item.content }}</span>
       {% endfor %}

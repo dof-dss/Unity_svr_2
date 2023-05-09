@@ -10,7 +10,7 @@ id: node.consultation_response.field_consultation_stage
 field_name: field_consultation_stage
 entity_type: node
 bundle: consultation_response
-label: 'Consultation Stage'
+label: Stage
 description: ''
 required: false
 translatable: false
