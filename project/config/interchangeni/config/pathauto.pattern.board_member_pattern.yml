@@ -13,12 +13,12 @@ pattern: 'board-members/[node:title]'
 selection_criteria:
   0f8091e9-9c09-436f-8a4a-b194c8a4826f:
     id: node_type
-    bundles:
-      board_member: board_member
     negate: false
+    uuid: 0f8091e9-9c09-436f-8a4a-b194c8a4826f
     context_mapping:
       node: node
-    uuid: 0f8091e9-9c09-436f-8a4a-b194c8a4826f
+    bundles:
+      board_member: board_member
 selection_logic: and
 weight: -5
 relationships: {  }
