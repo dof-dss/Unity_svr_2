@@ -24,8 +24,23 @@
   }
 }
 
-span.opportunity-closed {
+.main-content {
+  .block > h2 {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+.opportunity-closed {
   color: $hc-red;
+}
+
+.managers-list {
+  li {
+    span {
+      display: block;
+    }
+  }
 }
 
 #block-aboutinterchange {
