@@ -1,0 +1,10 @@
+uuid: 4b209e3a-d971-4f37-b3e9-a3436820523f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Gwz8hrs1QN0Okrhsi6BAtHsoP9abgs2XRHZJ5j-cvJA
+id: map
+label: Map
+revision: 0
+description: 'Custom block type designed to contain a map to be embedded anywhere on the site.'

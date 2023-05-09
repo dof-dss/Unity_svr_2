@@ -12,7 +12,7 @@ dependencies:
 id: views_block__managers_by_organisation_managers_by_organisation
 theme: interchangeni_theme
 region: content
-weight: -2
+weight: -5
 provider: null
 plugin: 'views_block:managers_by_organisation-managers_by_organisation'
 settings:
