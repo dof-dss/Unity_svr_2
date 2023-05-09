@@ -11,19 +11,16 @@ label: 'Basic page pattern'
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  1c138d06-12b7-4ff5-b6ad-2a28718ad244:
-    id: node_type
-    bundles:
-      basic_page: basic_page
-      contact: contact
-      faq: faq
-      link: link
-      profile: profile
-      webform: webform
+  6ddfe4a9-6905-45f1-a824-7bd6193da0e8:
+    id: 'entity_bundle:node'
     negate: false
+    uuid: 6ddfe4a9-6905-45f1-a824-7bd6193da0e8
     context_mapping:
       node: node
-    uuid: 1c138d06-12b7-4ff5-b6ad-2a28718ad244
+    bundles:
+      basic_page: basic_page
+      faq: faq
+      webform: webform
 selection_logic: and
 weight: -5
 relationships: {  }

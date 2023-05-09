@@ -15,11 +15,11 @@ entity_type: node
 bundle: feature
 label: Link
 description: 'The URL to where a user should go for more on this feature item.'
-required: true
+required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  link_type: 17
   title: 0
+  link_type: 17
 field_type: link
