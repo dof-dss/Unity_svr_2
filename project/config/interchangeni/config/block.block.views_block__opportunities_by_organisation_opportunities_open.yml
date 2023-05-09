@@ -12,7 +12,7 @@ dependencies:
 id: views_block__opportunities_by_organisation_opportunities_open
 theme: interchangeni_theme
 region: content
-weight: -1
+weight: -4
 provider: null
 plugin: 'views_block:opportunities_by_organisation-opportunities_open'
 settings:

@@ -6,7 +6,6 @@ dependencies:
     - node
     - path
     - pathauto
-    - search
     - system
 _core:
   default_config_hash: zLyQwFO06-pj9Gj5UZMWuk_aAuAOSC8YqFEHItUk-Tc
@@ -25,7 +24,6 @@ permissions:
   - 'download any document files'
   - 'notify of path changes'
   - 'revert revisions'
-  - 'search content'
   - 'use media wysiwyg'
   - 'use text format filtered_html'
   - 'use text format filtered_html_with_no_images'
