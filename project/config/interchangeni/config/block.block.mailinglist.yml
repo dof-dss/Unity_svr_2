@@ -1,0 +1,25 @@
+uuid: e8408a2c-73c3-4ca7-b6cc-6cafcf3785de
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:0ec12500-2690-4bed-9c58-ec8b326d66b5'
+  module:
+    - block_content
+  theme:
+    - interchangeni_theme
+id: mailinglist
+theme: interchangeni_theme
+region: footer_second
+weight: 0
+provider: null
+plugin: 'block_content:0ec12500-2690-4bed-9c58-ec8b326d66b5'
+settings:
+  id: 'block_content:0ec12500-2690-4bed-9c58-ec8b326d66b5'
+  label: 'Mailing list'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

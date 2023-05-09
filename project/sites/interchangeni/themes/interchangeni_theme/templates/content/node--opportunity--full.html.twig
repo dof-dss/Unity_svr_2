@@ -81,7 +81,6 @@
   {% endif %}
   {{ content.field_opportunity_date }}
   {{ content.field_manager }}
-  {# {{ kint(content.field_hosting_proforma) }} #}
   {% if content.field_hosting_proforma['#object'] is defined or content.field_nics_cover_note['#object'] is defined or content.field_partners_cover_note['#object'] is defined or content.field_managers_cover_note['#object'] is defined or content.field_candidate_proforma['#object'] is defined %}
     <div{{ attributes.addClass('content-field--label-inline').setAttribute('role', 'presentation') }}>
       <h2 class="content-field__label">{{ 'Documents'|t }}</h2>

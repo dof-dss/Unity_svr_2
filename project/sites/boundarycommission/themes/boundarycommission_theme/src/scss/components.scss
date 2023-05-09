@@ -61,12 +61,25 @@
 
   .container-wrap {
     padding: 9.4rem 0;
+
+    @media screen and (max-width: $max-grid-width) {
+      padding: 6.4rem 2rem;
+    }
+    @media screen and (max-width: $mob) {
+      padding: 5rem 2rem;
+    }
   }
 
   blockquote {
     @include adjust-font-size-to(30px);
     font-weight: bold;
-    max-width: 45rem;
+    max-width: 60%;
+    @media screen and (max-width: $tab) {
+      @include adjust-font-size-to(26px);
+    }
+    @media screen and (max-width: $mob) {
+      @include adjust-font-size-to(22px);
+    }
 
     p {
       color: $white;
@@ -100,9 +113,13 @@
       display: flex;
       line-height: 3rem;
       width: 100%;
+      padding: 1%;
+      @media screen and (max-width: $tab) {
+        @include adjust-font-size-to(18px);
+      }
 
       .btn {
-        width: 26rem;
+        width: 28rem;
       }
     }
   }

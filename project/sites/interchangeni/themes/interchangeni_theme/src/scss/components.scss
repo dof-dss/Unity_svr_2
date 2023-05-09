@@ -42,3 +42,75 @@
     }
   }
 }
+
+#block-aboutinterchange {
+  &.block > h2 {
+    text-transform: uppercase;
+
+    @media screen and (max-width: $mob) {
+      @include adjust-font-size-to(24px);
+    }
+  }
+
+  p {
+    @include breakpoint($tab) {
+      @include adjust-font-size-to(24px);
+      line-height: 3rem;
+    }
+  }
+}
+
+#footer {
+  .block > h2 {
+    @include adjust-font-size-to(24px);
+    line-height: 3rem;
+    color: $text;
+    text-transform: uppercase;
+  }
+
+  #footer-area {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+
+    .column {
+      float: none;
+      flex-basis: 100%;
+      padding: 0;
+
+
+      @media screen and (max-width: $tab) {
+        margin: 0 0 2rem 0;
+      }
+
+      @include breakpoint($tab) {
+        flex-basis: 32.5rem;
+
+        &:nth-child(2) {
+          flex-basis: 24rem;
+        }
+
+        &:last-child {
+          flex-basis: 35.5rem;
+        }
+      }
+
+      ul {
+        list-style: disc;
+        margin-left: 2.4rem;
+
+        li {
+          display: list-item;
+          padding: 0;
+          border: none;
+        }
+      }
+    }
+  }
+
+  .footer_credit {
+    @include breakpoint($tab) {
+      margin-top: 6rem;
+    }
+  }
+}
