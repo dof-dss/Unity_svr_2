@@ -1,8 +1,9 @@
-uuid: 5eb79ec0-483b-42a2-b34c-d9d2bf44edcf
+uuid: 8fa5312d-b55f-45f8-a7c9-625f418f96cb
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_index
     - field.field.node.manager.field_first_name
     - field.field.node.manager.field_last_name
     - field.field.node.manager.field_manager_email
@@ -11,11 +12,16 @@ dependencies:
     - field.field.node.manager.field_telephone
     - node.type.manager
   module:
+    - layout_builder
     - user
-id: node.manager.default
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.manager.search_index
 targetEntityType: node
 bundle: manager
-mode: default
+mode: search_index
 content:
   field_manager_email:
     type: email_mailto

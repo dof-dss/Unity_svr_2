@@ -1,21 +1,21 @@
-uuid: 1714c36a-237b-41a3-a7a5-714a31ebee85
+uuid: 065d49af-b68f-4ecf-8373-8196c225bd46
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic_block:a231c19b-d933-42d4-ba0a-718d1e2cb2f4'
+    - 'block_content:basic_block:6f0bfa42-8626-431d-a132-96574566687d'
   module:
     - block_content
   theme:
     - interchangeni_theme
-id: footercontactus
+id: footercontactinfo
 theme: interchangeni_theme
 region: footer_third
 weight: 0
 provider: null
-plugin: 'block_content:a231c19b-d933-42d4-ba0a-718d1e2cb2f4'
+plugin: 'block_content:6f0bfa42-8626-431d-a132-96574566687d'
 settings:
-  id: 'block_content:a231c19b-d933-42d4-ba0a-718d1e2cb2f4'
+  id: 'block_content:6f0bfa42-8626-431d-a132-96574566687d'
   label: 'Contact us'
   label_display: visible
   provider: block_content

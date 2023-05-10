@@ -1,9 +1,9 @@
-uuid: fe94d3d7-6e3d-4601-9aba-6aa2556d983f
+uuid: 9d521ab7-c4fa-4273-b71c-4984a0fa118f
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic_block:67ac0730-a3f0-41b5-adab-86d347100de9'
+    - 'block_content:basic_block:3543a514-2292-4f39-a216-9925eb9b9b75'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: interchangeni_theme
 region: front_welcome
 weight: 0
 provider: null
-plugin: 'block_content:67ac0730-a3f0-41b5-adab-86d347100de9'
+plugin: 'block_content:3543a514-2292-4f39-a216-9925eb9b9b75'
 settings:
-  id: 'block_content:67ac0730-a3f0-41b5-adab-86d347100de9'
+  id: 'block_content:3543a514-2292-4f39-a216-9925eb9b9b75'
   label: 'About Interchange'
   label_display: visible
   provider: block_content

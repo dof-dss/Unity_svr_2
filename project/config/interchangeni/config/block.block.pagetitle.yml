@@ -2,6 +2,8 @@ uuid: 2e14ffb5-bfab-4339-aa9b-2369f5640ccd
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - interchangeni_theme
 id: pagetitle
@@ -15,4 +17,8 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/members\r\n/members/type/*"
