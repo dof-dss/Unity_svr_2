@@ -2,10 +2,7 @@ uuid: 2bfec574-8a9f-4980-9bb7-022b2ef02a7b
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:map:204a6629-8349-4018-9f48-856af1a2b314'
   module:
-    - block_content
     - system
   theme:
     - interchangeni_theme
