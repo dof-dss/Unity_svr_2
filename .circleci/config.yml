@@ -257,6 +257,16 @@ jobs:
             fi
             done
       - run:
+          name: Run any outstanding updates
+          command: |
+            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
+            do
+              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
+              if [[ -n $result ]]; then
+                result2=$(platform drush "updb -l ${site} -y" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Fastly (fastly)" || true) )
+            fi
+            done
+      - run:
           name: Clear cache before config import
           command: |
             for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
