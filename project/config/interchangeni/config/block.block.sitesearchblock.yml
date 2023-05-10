@@ -1,0 +1,25 @@
+uuid: 0285a1a8-8029-44c8-9bd0-b6076e322e71
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - unity_search_pages
+  theme:
+    - interchangeni_theme
+id: sitesearchblock
+theme: interchangeni_theme
+region: search
+weight: 0
+provider: null
+plugin: site_search_block
+settings:
+  id: site_search_block
+  label: 'Site search block'
+  label_display: '0'
+  provider: unity_search_pages
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /search

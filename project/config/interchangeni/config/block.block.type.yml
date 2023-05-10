@@ -1,0 +1,29 @@
+uuid: 202e3746-aff1-429a-800a-ddb70a5a72ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.organisation_type
+  module:
+    - facets
+    - system
+  theme:
+    - interchangeni_theme
+id: type
+theme: interchangeni_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'facet_block:organisation_type'
+settings:
+  id: 'facet_block:organisation_type'
+  label: Type
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: type
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/members\r\n/members/type/*"

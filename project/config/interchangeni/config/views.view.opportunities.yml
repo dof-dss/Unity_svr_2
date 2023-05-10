@@ -1659,7 +1659,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: text
-          empty: false
+          empty: true
           content:
             value: '<a href="/opportunities-archive">Closed opportunities</a>'
             format: basic_html

@@ -25,6 +25,7 @@ module:
   cookie_content_blocker: 0
   csp: 0
   ctools: 0
+  date_facet_drilldown: 0
   datetime: 0
   datetime_range: 0
   diff: 0
@@ -39,6 +40,7 @@ module:
   entityqueue: 0
   facets: 0
   facets_pretty_paths: 0
+  facets_summary: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -98,7 +100,11 @@ module:
   redis: 0
   responsive_image: 0
   scheduled_transitions: 0
-  search: 0
+  search_api: 0
+  search_api_location: 0
+  search_api_location_views: 0
+  search_api_solr: 0
+  search_api_spellcheck: 0
   simplei: 0
   slick: 0
   slick_ui: 0
@@ -112,12 +118,14 @@ module:
   toolbar: 0
   twig_tweak: 0
   ultimate_cron: 0
+  unity_breadcrumbs: 0
   unity_common: 0
   unity_eu_cookie_compliance: 0
   unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0
   unity_map_block: 0
+  unity_search_pages: 0
   update: 0
   user: 0
   views_custom_cache_tag: 0
