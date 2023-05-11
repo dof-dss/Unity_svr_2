@@ -243,6 +243,16 @@ jobs:
             platform sync data -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH -y
           when: on_fail
       - run:
+          name: Run any outstanding updates
+          command: |
+            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
+            do
+              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
+              if [[ -n $result ]]; then
+                result2=$(platform drush "updb -l ${site} -y" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Fastly (fastly)" || true) )
+            fi
+            done
+      - run:
           name: Turn off fastly module to allow for cleaner config import
           command: |
             for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
@@ -254,16 +264,6 @@ jobs:
                   echo "***** Uninstall Fastly - ${site} *****"
                   platform drush "pmu fastly -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
                 fi
-            fi
-            done
-      - run:
-          name: Run any outstanding updates
-          command: |
-            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
-            do
-              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
-              if [[ -n $result ]]; then
-                result2=$(platform drush "updb -l ${site} -y" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Fastly (fastly)" || true) )
             fi
             done
       - run:
