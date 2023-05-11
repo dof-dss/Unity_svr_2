@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - media
     - system
 _core:
   default_config_hash: aj6ZXi0r2a2rs9TYsol23lyiTqdAokujUQnBl33OdFA
@@ -15,3 +16,4 @@ permissions:
   - 'diff view changes'
   - 'download any document files'
   - 'view files'
+  - 'view media'
