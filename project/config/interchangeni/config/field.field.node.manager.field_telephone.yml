@@ -1,0 +1,19 @@
+uuid: c715870b-d78c-44d7-9424-9a76a80f3c71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telephone
+    - node.type.manager
+id: node.manager.field_telephone
+field_name: field_telephone
+entity_type: node
+bundle: manager
+label: Telephone
+description: 'Enter a contact number for this manager.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: f341a7e7-03af-47d0-bcb5-4db38a6c107f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organisation_type
+    - node.type.organisation
+  module:
+    - options
+id: node.organisation.field_organisation_type
+field_name: field_organisation_type
+entity_type: node
+bundle: organisation
+label: Type
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

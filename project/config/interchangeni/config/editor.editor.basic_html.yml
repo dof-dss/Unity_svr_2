@@ -31,7 +31,7 @@ settings:
         -
           name: Linking
           items:
-            - Linkit
+            - DrupalLink
             - DrupalUnlink
         -
           name: Lists
@@ -42,7 +42,6 @@ settings:
           name: Media
           items:
             - DrupalMediaLibrary
-            - map
         -
           name: Tasks
           items:
@@ -58,6 +57,9 @@ settings:
             - SpecialChar
             - Maximize
   plugins:
+    drupallink:
+      linkit_enabled: true
+      linkit_profile: default
     stylescombo:
       styles: "p.info-notice|Information notice\r\na.btn|Button"
 image_upload:

@@ -1,0 +1,33 @@
+uuid: 7d24b733-f838-4c49-bf0a-d68354532e1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.managers_by_organisation
+  module:
+    - node
+    - views
+  theme:
+    - interchangeni_theme
+id: views_block__managers_by_organisation_managers_by_organisation
+theme: interchangeni_theme
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:managers_by_organisation-managers_by_organisation'
+settings:
+  id: 'views_block:managers_by_organisation-managers_by_organisation'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      organisation: organisation

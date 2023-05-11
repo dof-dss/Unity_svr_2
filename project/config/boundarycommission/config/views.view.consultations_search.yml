@@ -3,7 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_attachment
+    - field.storage.node.field_consultation_stage
+    - field.storage.node.field_response_type
     - search_api.index.consultation_responses
   module:
     - search_api
@@ -23,17 +24,85 @@ display:
     display_options:
       title: Consultations
       fields:
-        field_attachment:
-          id: field_attachment
+        title:
+          id: title
           table: search_api_index_consultation_responses
-          field: field_attachment
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: null
-          entity_field: null
           plugin_id: search_api_field
           label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: h3
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+        field_response_type:
+          id: field_response_type
+          table: search_api_index_consultation_responses
+          field: field_response_type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: Type
           exclude: false
           alter:
             alter_text: false
@@ -76,7 +145,8 @@ display:
           hide_alter_empty: true
           click_sort_column: target_id
           type: entity_reference_label
-          settings: {  }
+          settings:
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -94,7 +164,106 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
-            display_methods: {  }
+            display_methods:
+              consultation_response_type:
+                display_method: label
+              consultation_stage:
+                display_method: label
+              publication_type:
+                display_method: label
+              publications_topics:
+                display_method: label
+              representation_stage:
+                display_method: label
+              site_topics:
+                display_method: label
+              tags:
+                display_method: label
+        field_consultation_stage:
+          id: field_consultation_stage
+          table: search_api_index_consultation_responses
+          field: field_consultation_stage
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: Stage
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              consultation_response_type:
+                display_method: label
+              consultation_stage:
+                display_method: label
+              publication_type:
+                display_method: label
+              publications_topics:
+                display_method: label
+              representation_stage:
+                display_method: label
+              site_topics:
+                display_method: label
+              tags:
+                display_method: label
       pager:
         type: full
         options:
@@ -201,11 +370,12 @@ display:
       style:
         type: default
       row:
-        type: search_api
+        type: fields
         options:
-          view_modes:
-            'entity:node':
-              consultation_response: search_result
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
       query:
         type: search_api_query
         options:
@@ -226,7 +396,8 @@ display:
         - url.query_args
         - 'user.node_grants:view'
       tags:
-        - 'config:field.storage.node.field_attachment'
+        - 'config:field.storage.node.field_consultation_stage'
+        - 'config:field.storage.node.field_response_type'
         - 'config:search_api.index.consultation_responses'
   consultations_search_page:
     id: consultations_search_page
@@ -252,5 +423,6 @@ display:
         - url.query_args
         - 'user.node_grants:view'
       tags:
-        - 'config:field.storage.node.field_attachment'
+        - 'config:field.storage.node.field_consultation_stage'
+        - 'config:field.storage.node.field_response_type'
         - 'config:search_api.index.consultation_responses'

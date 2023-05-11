@@ -1,0 +1,50 @@
+uuid: 5eb79ec0-483b-42a2-b34c-d9d2bf44edcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.manager.field_first_name
+    - field.field.node.manager.field_last_name
+    - field.field.node.manager.field_manager_email
+    - field.field.node.manager.field_manager_organisation
+    - field.field.node.manager.field_meta_tags
+    - field.field.node.manager.field_telephone
+    - node.type.manager
+  module:
+    - user
+id: node.manager.default
+targetEntityType: node
+bundle: manager
+mode: default
+content:
+  field_manager_email:
+    type: email_mailto
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_manager_organisation:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_telephone:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  content_moderation_control: true
+  field_first_name: true
+  field_last_name: true
+  field_meta_tags: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

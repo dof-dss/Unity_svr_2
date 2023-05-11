@@ -1,0 +1,25 @@
+uuid: 9d521ab7-c4fa-4273-b71c-4984a0fa118f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:3543a514-2292-4f39-a216-9925eb9b9b75'
+  module:
+    - block_content
+  theme:
+    - interchangeni_theme
+id: aboutinterchange
+theme: interchangeni_theme
+region: front_welcome
+weight: 0
+provider: null
+plugin: 'block_content:3543a514-2292-4f39-a216-9925eb9b9b75'
+settings:
+  id: 'block_content:3543a514-2292-4f39-a216-9925eb9b9b75'
+  label: 'About Interchange'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

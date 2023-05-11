@@ -12,7 +12,7 @@ dependencies:
 id: stage
 theme: boundarycommission_theme
 region: search_facets
-weight: 0
+weight: -3
 provider: null
 plugin: 'facet_block:stage'
 settings:

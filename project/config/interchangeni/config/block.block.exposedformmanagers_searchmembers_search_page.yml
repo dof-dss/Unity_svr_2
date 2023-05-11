@@ -1,0 +1,28 @@
+uuid: e20bcc84-a0e6-4ec2-98e2-60befe05c300
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.managers_search
+  module:
+    - system
+    - views
+  theme:
+    - interchangeni_theme
+id: exposedformmanagers_searchmembers_search_page
+theme: interchangeni_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:managers_search-members_search_page'
+settings:
+  id: 'views_exposed_filter_block:managers_search-members_search_page'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/members\r\n/members/type/*"

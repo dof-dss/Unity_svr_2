@@ -6,6 +6,9 @@ dependencies:
     - node.type.basic_page
     - node.type.faq
     - node.type.feature
+    - node.type.manager
+    - node.type.opportunity
+    - node.type.organisation
     - node.type.webform
   module:
     - content_moderation
@@ -99,5 +102,8 @@ type_settings:
       - basic_page
       - faq
       - feature
+      - manager
+      - opportunity
+      - organisation
       - webform
   default_moderation_state: draft

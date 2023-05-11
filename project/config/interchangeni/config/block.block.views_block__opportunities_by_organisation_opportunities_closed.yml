@@ -1,0 +1,33 @@
+uuid: 6ec9336f-1575-454d-9363-20a19cc4e9d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.opportunities_by_organisation
+  module:
+    - node
+    - views
+  theme:
+    - interchangeni_theme
+id: views_block__opportunities_by_organisation_opportunities_closed
+theme: interchangeni_theme
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:opportunities_by_organisation-opportunities_closed'
+settings:
+  id: 'views_block:opportunities_by_organisation-opportunities_closed'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      organisation: organisation

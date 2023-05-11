@@ -98,11 +98,7 @@ elements: |-
         '#required': true
   pps_case_number:
     '#type': textfield
-    '#title': 'PPS case number'
-    '#description': |-
-      <br />
-      PPS case reference number (6/7 digits)
-    '#title_display': none
+    '#title': 'PPS case reference number (6/7 digits)'
     '#description_display': before
     '#counter_type': character
     '#counter_minimum': 6
@@ -304,7 +300,7 @@ handlers:
     handler_id: email
     label: Email
     notes: ''
-    status: true
+    status: false
     conditions: {  }
     weight: 0
     settings:
@@ -341,7 +337,7 @@ handlers:
     handler_id: email_1
     label: Email
     notes: ''
-    status: false
+    status: true
     conditions: {  }
     weight: 0
     settings:

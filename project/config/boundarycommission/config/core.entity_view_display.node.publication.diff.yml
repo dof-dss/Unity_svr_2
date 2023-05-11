@@ -25,11 +25,12 @@ third_party_settings:
   field_group:
     group_additional_content_details:
       children:
+        - field_archive
         - field_meta_tags
       label: 'Additional content details'
       parent_name: ''
       region: content
-      weight: 5
+      weight: 4
       format_type: html_element
       format_settings:
         classes: field-collection
@@ -53,7 +54,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 0
     region: content
   field_archive:
     type: boolean
@@ -72,14 +73,14 @@ content:
       view_mode: embed
       link: false
     third_party_settings: {  }
-    weight: 4
+    weight: 3
     region: content
   field_meta_tags:
     type: metatag_empty_formatter
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_publication_type:
     type: entity_reference_label
@@ -102,3 +103,4 @@ hidden:
   content_moderation_control: true
   langcode: true
   links: true
+  search_api_excerpt: true
