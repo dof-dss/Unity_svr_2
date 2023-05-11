@@ -55,7 +55,7 @@ hosting services.
 ## Legal matters
 
 Know your rights when using Drupal by reading Drupal core's
-[license](/core/LICENSE.txt).  
+[license](/core/LICENSE.txt).
 
 Learn about the [Drupal trademark and logo policy here][trademark].
 
