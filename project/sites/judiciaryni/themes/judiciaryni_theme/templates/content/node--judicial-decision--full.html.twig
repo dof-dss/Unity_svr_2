@@ -84,7 +84,10 @@
   {% apply spaceless %}
   <p>
     <span>
-      {{ 'Delivered '|t }}{{ content.field_publication_date }}{{ ','|t }}{{ content.field_judiciary }}{{ ' (delivering the judgment of the court)'|t }}
+      {{ 'Delivered '|t }}{{ content.field_publication_date }}
+      {%  if content.field_judiciary['#object'] is defined %}
+      {{ ','|t }}{{ content.field_judiciary }}{{ ' (delivering the judgment of the court)'|t }}
+      {% endif %}
     </span>
   </p>
   {% endapply %}

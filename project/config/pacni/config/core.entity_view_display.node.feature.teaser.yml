@@ -1,6 +1,6 @@
 uuid: f1ebca79-613f-432f-924b-a5363491636c
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
@@ -15,6 +15,11 @@ targetEntityType: node
 bundle: feature
 mode: teaser
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }

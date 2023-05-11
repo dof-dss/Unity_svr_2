@@ -1,0 +1,24 @@
+uuid: fa973d03-6943-4f14-b63e-3ed76aa719d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.opportunities
+  module:
+    - views
+  theme:
+    - interchangeni_theme
+id: views_block__opportunities_opportunities_home
+theme: interchangeni_theme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'views_block:opportunities-opportunities_home'
+settings:
+  id: 'views_block:opportunities-opportunities_home'
+  label: 'Current Opportunities'
+  label_display: visible
+  provider: views
+  views_label: 'Current Opportunities'
+  items_per_page: none
+visibility: {  }

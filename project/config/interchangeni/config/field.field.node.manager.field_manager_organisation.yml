@@ -1,0 +1,29 @@
+uuid: d6bb90e6-cd26-4080-a9ef-38ba48193ee7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_manager_organisation
+    - node.type.manager
+    - node.type.organisation
+id: node.manager.field_manager_organisation
+field_name: field_manager_organisation
+entity_type: node
+bundle: manager
+label: Organisation
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      organisation: organisation
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

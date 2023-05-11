@@ -13,12 +13,20 @@
 
 #headerHero {
   margin-top: 6rem;
+  background: $white;
+  @media screen and (max-width: 766px) {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: #6d0d96;
+  }
+
+  .region-search input[type='text']{
+    border: 1px solid $black;
+  }
 }
 
-.region-primary-menu .menu_wrapper {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: #6d0d96;
+.menu_wrapper #main-menu .hamburger > span {
+  background: #6d0d96;
 }
 
 .region-front-welcome {

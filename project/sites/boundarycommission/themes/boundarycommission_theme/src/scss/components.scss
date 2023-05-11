@@ -41,13 +41,13 @@
     .menu-item {
       .active {
         background: $brand-secondary;
-        color: $black;
+        color: $white;
       }
 
       a {
         &:hover,
         &:focus {
-          color: $black;
+          color: $white;
           background: $brand-secondary;
         }
       }
@@ -61,12 +61,25 @@
 
   .container-wrap {
     padding: 9.4rem 0;
+
+    @media screen and (max-width: $max-grid-width) {
+      padding: 6.4rem 2rem;
+    }
+    @media screen and (max-width: $mob) {
+      padding: 5rem 2rem;
+    }
   }
 
   blockquote {
     @include adjust-font-size-to(30px);
     font-weight: bold;
-    max-width: 45rem;
+    max-width: 60%;
+    @media screen and (max-width: $tab) {
+      @include adjust-font-size-to(26px);
+    }
+    @media screen and (max-width: $mob) {
+      @include adjust-font-size-to(22px);
+    }
 
     p {
       color: $white;
@@ -81,37 +94,91 @@
 }
 
 .region-front-welcome {
-  border-bottom: solid $brand-primary 2px;
+  #block-homepageinformation {
+    border-bottom: solid $brand-primary 2px;
+    margin-bottom: 7%;
+  }
 
-  p {
-    font-size: 2.1rem;
-    text-align: left;
-    display: flex;
-    line-height: 3rem;
-    width: 100%;
+  .block {
+    h2 {
+      text-align: left;
+      padding: 0px 10px 0px 10px;
+      margin: 1.6rem 0 0.8rem;
+      color: $brand-primary;
+    }
 
-    .btn {
-      width: 26rem;
+    p {
+      @include adjust-font-size-to(21px);
+      text-align: left;
+      display: flex;
+      line-height: 3rem;
+      width: 100%;
+      padding: 1%;
+      @media screen and (max-width: $tab) {
+        @include adjust-font-size-to(18px);
+      }
+
+      .btn {
+        width: 28rem;
+      }
     }
   }
 }
 
-#top-area {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 2rem;
+.homepage-featured {
+  .featured-item-row {
+    display: flex;
+    justify-content: space-evenly;
 
-  .column {
-    max-width: 28rem;
-    border: solid 2px $brand-primary;
-
-    .content {
-      padding: 0;
+    @media screen and (max-width: $lap) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
     }
   }
 
-  .media-image {
+  .featured-item-column {
+    margin: 0px 10px 0px 10px;
+    padding-bottom: 3rem;
+    border: solid 2px $brand-primary;
+
+    p {
+      @include adjust-font-size-to(18px);
+      padding: 0px 10px 0px 10px;
+      color: $brand-secondary
+    }
+
+    .field-link {
+      text-align: left;
+      padding: 0px 10px 0px 10px;
+
+      &:after {
+        content: resolve('arrow-right.svg');
+        display: inline-block;
+        position: absolute;
+        width: 2rem;
+        padding: 0 5px;
+      }
+    }
+
+    .media-image {
+      margin: 0;
+    }
+  }
+}
+
+.path-publication-archive {
+  h2.title {
+    @include adjust-font-size-to(21px);
+  }
+  .published-date {
     margin: 0;
+  }
+}
+
+.path-news-archive {
+  h2.title {
+    @include adjust-font-size-to(21px);
   }
 }
 

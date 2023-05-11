@@ -1,0 +1,25 @@
+uuid: 065d49af-b68f-4ecf-8373-8196c225bd46
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:6f0bfa42-8626-431d-a132-96574566687d'
+  module:
+    - block_content
+  theme:
+    - interchangeni_theme
+id: footercontactinfo
+theme: interchangeni_theme
+region: footer_third
+weight: 0
+provider: null
+plugin: 'block_content:6f0bfa42-8626-431d-a132-96574566687d'
+settings:
+  id: 'block_content:6f0bfa42-8626-431d-a132-96574566687d'
+  label: 'Contact us'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

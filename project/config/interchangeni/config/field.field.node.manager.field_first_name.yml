@@ -1,0 +1,19 @@
+uuid: 9b50208b-7bac-47b8-921f-e25c331d7b26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_first_name
+    - node.type.manager
+id: node.manager.field_first_name
+field_name: field_first_name
+entity_type: node
+bundle: manager
+label: 'First name'
+description: 'Enter a first name for this manager, this field is used for searching and sorting.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

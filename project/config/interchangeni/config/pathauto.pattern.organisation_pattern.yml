@@ -1,0 +1,22 @@
+uuid: 48afe048-6734-4c59-9784-77b375d7e12c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: organisation_pattern
+label: 'Organisation pattern'
+type: 'canonical_entities:node'
+pattern: '/members/[node:title]'
+selection_criteria:
+  8cb6d6c4-1c90-49ab-a125-1ffd52dc40f2:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 8cb6d6c4-1c90-49ab-a125-1ffd52dc40f2
+    context_mapping:
+      node: node
+    bundles:
+      organisation: organisation
+selection_logic: and
+weight: -5
+relationships: {  }
