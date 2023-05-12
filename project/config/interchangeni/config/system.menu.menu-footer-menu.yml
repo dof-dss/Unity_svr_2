@@ -1,8 +1,0 @@
-uuid: 8aa09006-cc9a-4c40-9855-7b0df88b1e91
-langcode: en
-status: true
-dependencies: {  }
-id: menu-footer-menu
-label: 'Footer menu'
-description: ''
-locked: false
