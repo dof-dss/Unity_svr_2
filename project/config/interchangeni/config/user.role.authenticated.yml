@@ -2,9 +2,12 @@ uuid: 53e5c883-7f56-4c9b-a67e-4467dcc7fe2d
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.basic_html
   module:
+    - filter
+    - media
     - node
-    - path
     - pathauto
     - system
 _core:
@@ -15,21 +18,20 @@ weight: 1
 is_admin: false
 permissions:
   - 'access administration menu'
-  - 'access administration pages'
   - 'access content'
   - 'access media browser'
   - 'access workbench'
-  - 'create url aliases'
   - 'diff view changes'
   - 'download any document files'
   - 'notify of path changes'
   - 'revert revisions'
   - 'use media wysiwyg'
+  - 'use text format basic_html'
   - 'use text format filtered_html'
   - 'use text format filtered_html_with_no_images'
   - 'view files'
+  - 'view media'
   - 'view moderation history'
   - 'view moderation messages'
   - 'view own unpublished content'
   - 'view revisions'
-  - 'view the administration theme'
