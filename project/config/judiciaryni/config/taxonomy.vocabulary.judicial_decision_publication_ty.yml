@@ -1,8 +1,0 @@
-uuid: adb326bc-99b2-490c-a5ae-7420989a3884
-langcode: en
-status: true
-dependencies: {  }
-name: 'Judicial decision publication types'
-vid: judicial_decision_publication_ty
-description: ''
-weight: 0
