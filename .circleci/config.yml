@@ -203,7 +203,7 @@ jobs:
             [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
             [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
             nvm install v15.14.0
-            for site in `ls -l ~/project/project/sites | grep ^d | awk '{print $9}'`
+            for site in `ls -l ~/project/project/sites | grep ^d | grep -v interchangeni | awk '{print $9}'`
             do
               if [[ -d ~/project/project/sites/${site}/themes/${site}_theme ]]; then
                 echo "*** Building theme for ${site} ***"
@@ -245,7 +245,7 @@ jobs:
       - run:
           name: Run any outstanding updates
           command: |
-            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
+            for site in `ls -l ~/project/project/sites | grep ^d | grep -v interchangeni | awk '!/default/{print $9}'`
             do
               result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
               if [[ -n $result ]]; then
@@ -255,7 +255,7 @@ jobs:
       - run:
           name: Turn off fastly module to allow for cleaner config import
           command: |
-            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
+            for site in `ls -l ~/project/project/sites | grep ^d | grep -v interchangeni | awk '!/default/{print $9}'`
             do
               result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
               if [[ -n $result ]]; then
@@ -269,7 +269,7 @@ jobs:
       - run:
           name: Clear cache before config import
           command: |
-            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
+            for site in `ls -l ~/project/project/sites | grep ^d | grep -v interchangeni | awk '!/default/{print $9}'`
             do
               result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
               if [[ -n $result ]]; then
@@ -280,7 +280,7 @@ jobs:
       - run:
           name: Refresh configuration as our db will contain active prod config after sync operation
           command: |
-            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
+            for site in `ls -l ~/project/project/sites | grep ^d | grep -v interchangeni | awk '!/default/{print $9}'`
             do
               result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
               if [[ -n $result ]]; then
