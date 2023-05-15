@@ -1,8 +1,0 @@
-uuid: 54ee45ee-4244-4153-9075-9715a504dac5
-langcode: en
-status: true
-dependencies: {  }
-name: 'judiciary decision types'
-vid: judiciary_decision_types
-description: 'List of types of decisions published on the judiciary website'
-weight: 0

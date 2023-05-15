@@ -121,15 +121,6 @@ sites:
         database: ppsni
         status: production
         default: false
-    pacni:
-        name: 'Planning Appeals Commission'
-        url: pacni.gov.uk
-        solr: pacni
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/pacni ; drush core-cron'
-        database: pacni
-        status: development
-        default: false
     cosicani:
         name: 'The Commissioner for Survivors of Institutional Childhood Abuse'
         url: cosica-ni.org
@@ -138,39 +129,4 @@ sites:
         cron_cmd: 'cd web/sites/cosicani ; drush core-cron'
         database: cosicani
         status: production
-        default: false
-    judiciaryni:
-        name: 'Judiciary NI'
-        url: judiciaryni.uk
-        solr: judiciaryni
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/judiciaryni ; drush core-cron'
-        database: judiciaryni
-        status: development
-    boundarycommission:
-        name: 'Boundary Commission'
-        url: boundarycommission.org.uk
-        solr: boundarycommission
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/boundarycommission ; drush core-cron'
-        database: boundarycommission
-        status: development
-        default: false
-    industrialcourt:
-        name: 'Industrial Court'
-        url: industrialcourt.gov.uk
-        solr: industrialcourt
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/industrialcourt ; drush core-cron'
-        database: industrialcourt
-        status: development
-        default: false
-    interchangeni:
-        name: 'Interchange NI'
-        url: interchangeni.org.uk
-        solr: interchangeni
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/interchangeni ; drush core-cron'
-        database: interchangeni
-        status: development
         default: false

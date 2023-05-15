@@ -1,8 +1,0 @@
-uuid: 0fc753c0-d0e0-44c3-a227-a11ebde73c5c
-langcode: en
-status: true
-dependencies: {  }
-name: 'Decision types'
-vid: decision_types
-description: 'Decision types for use with the Decision content type'
-weight: 0

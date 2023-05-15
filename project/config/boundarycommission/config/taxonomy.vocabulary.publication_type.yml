@@ -1,8 +1,0 @@
-uuid: 74bd751d-eb70-4d90-9d6f-31809df75b2f
-langcode: en
-status: true
-dependencies: {  }
-name: 'Publication Type'
-vid: publication_type
-description: ''
-weight: 0
