@@ -92,7 +92,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/communityrelations ; drush core-cron'
         database: communityrelations
-        status: development
+        status: production
         default: false
     sentencereview:
         name: 'Sentence Review Commissioners'
