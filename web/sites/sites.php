@@ -114,6 +114,9 @@ if (getenv('LANDO')) {
     elseif ($site_id == 'infolibrarynics') {
       $sites['info.library.nics.gov.uk.lndo.site'] = $site_id;
     }
+    elseif ($site_id == 'pressclippingsnics') {
+      $sites['pressclippings.nics.gov.uk.lndo.site'] = $site_id;
+    }
     else {
       $sites[$site['url'] . '.lndo.site'] = $site_id;
     }
