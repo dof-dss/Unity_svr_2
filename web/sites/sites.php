@@ -33,8 +33,9 @@
  * The URL, https://www.drupal.org:8080/mysite/test/, could be a symbolic link
  * or an Apache Alias directive that points to the Drupal root containing
  * index.php. An alias could also be created for a subdomain. See the
- * @link https://www.drupal.org/documentation/install online Drupal installation guide @endlink
- * for more information on setting up domains, subdomains, and subdirectories.
+ * @link https://www.drupal.org/documentation/install online Drupal
+ *   installation guide @endlink for more information on setting up domains,
+ *   subdomains, and subdirectories.
  *
  * The following examples look for a site configuration in sites/example.com:
  * @code
@@ -84,14 +85,19 @@ if (!empty(getenv('PLATFORM_BRANCH'))) {
       // At this point, host may be in either of these two forms:
       //  - www.fiscalcommissionni.org
       //  - hatecrimereviewni.org.uk.master-7rqtwti-6tlkpwbr6tndk.uk-1.platformsh.site
-      $newhost = str_replace('www.','',$host);
-      $subdomain = substr($newhost, 0, strpos($newhost, '.'));
-      // Check for domain names that contain dashes and strip them out.
-      // (This ensures that sites like mentalhealthchampion-ni.org.uk may be
-      // served from sites/mentalhealthchampionni rather than
-      // sites/mentalhealthchampion-ni)
-      $subdomain = str_replace('-','',$subdomain);
-      $sites[$host] = $subdomain;
+      $newhost = str_replace('www.', '', $host);
+      if (str_contains($newhost, 'info.library.nics.gov.uk')) {
+        $sites[$host] = 'infolibrarynics';
+      }
+      else {
+        $subdomain = substr($newhost, 0, strpos($newhost, '.'));
+        // Check for domain names that contain dashes and strip them out.
+        // (This ensures that sites like mentalhealthchampion-ni.org.uk may be
+        // served from sites/mentalhealthchampionni rather than
+        // sites/mentalhealthchampion-ni)
+        $subdomain = str_replace('-', '', $subdomain);
+        $sites[$host] = $subdomain;
+      }
     }
   }
 }
@@ -104,7 +110,11 @@ if (getenv('LANDO')) {
     if ($site_id == 'mentalhealthchampionni') {
       // Special case for URL that contains a '-'
       $sites['mentalhealthchampion-ni.org.uk.lndo.site'] = $site_id;
-    } else {
+    }
+    elseif ($site_id == 'infolibrarynics') {
+      $sites['info.library.nics.gov.uk.lndo.site'] = $site_id;
+    }
+    else {
       $sites[$site['url'] . '.lndo.site'] = $site_id;
     }
   }
