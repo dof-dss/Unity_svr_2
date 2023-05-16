@@ -17130,16 +17130,16 @@
         },
         {
             "name": "dof-dss/maestro-core",
-            "version": "1.0.1",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/maestro-core.git",
-                "reference": "df3ed392519a151dc87073ce68939b1a7d41ce05"
+                "reference": "3701b144d3660ebb6835ea671ed2e360049f6438"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/maestro-core/zipball/df3ed392519a151dc87073ce68939b1a7d41ce05",
-                "reference": "df3ed392519a151dc87073ce68939b1a7d41ce05",
+                "url": "https://api.github.com/repos/dof-dss/maestro-core/zipball/3701b144d3660ebb6835ea671ed2e360049f6438",
+                "reference": "3701b144d3660ebb6835ea671ed2e360049f6438",
                 "shasum": ""
             },
             "type": "library",
@@ -17161,9 +17161,9 @@
             "description": "Maestro core composition project",
             "support": {
                 "issues": "https://github.com/dof-dss/maestro-core/issues",
-                "source": "https://github.com/dof-dss/maestro-core/tree/1.0.1"
+                "source": "https://github.com/dof-dss/maestro-core/tree/1.0.3"
             },
-            "time": "2022-12-16T14:29:11+00:00"
+            "time": "2023-05-16T08:17:37+00:00"
         },
         {
             "name": "dof-dss/maestro-hosting",
@@ -17207,16 +17207,16 @@
         },
         {
             "name": "dof-dss/maestro-shell",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/maestro-shell.git",
-                "reference": "2873912882215ee87440789b1c36b903ceb7f004"
+                "reference": "55e9603196361a224c92f9d33e222ae2d43360af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/maestro-shell/zipball/2873912882215ee87440789b1c36b903ceb7f004",
-                "reference": "2873912882215ee87440789b1c36b903ceb7f004",
+                "url": "https://api.github.com/repos/dof-dss/maestro-shell/zipball/55e9603196361a224c92f9d33e222ae2d43360af",
+                "reference": "55e9603196361a224c92f9d33e222ae2d43360af",
                 "shasum": ""
             },
             "require": {
@@ -17259,9 +17259,9 @@
             "description": "Shell for working with Maestro projects.",
             "support": {
                 "issues": "https://github.com/dof-dss/maestro-shell/issues",
-                "source": "https://github.com/dof-dss/maestro-shell/tree/1.0.3"
+                "source": "https://github.com/dof-dss/maestro-shell/tree/1.0.4"
             },
-            "time": "2023-05-15T16:38:14+00:00"
+            "time": "2023-05-16T08:20:34+00:00"
         },
         {
             "name": "drupal/coder",
