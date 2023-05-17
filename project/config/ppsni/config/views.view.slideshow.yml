@@ -110,8 +110,8 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '{{ field_link_url }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -172,9 +172,9 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<a href ={{ field_link_url }}>{{ field_photo }}</a>\r\n{% if field_teaser is not empty %}\r\n  <div class=\"views-field views-field-field-teaser\">\r\n    <div class=\"field-content slide__caption\">\r\n      <a href=\"{{ field_link_url }}\">{{ field_teaser }}</a>\r\n    </div>\r\n  </div>\r\n{% endif %}"
+            text: "{% if field_link_url is not empty %}\r\n<a href ={{ field_link_url }}>\r\n{% endif %}\r\n{{ field_photo }}\r\n{% if field_link_url is not empty %}\r\n</a>\r\n{% endif %}\r\n{% if field_teaser is not empty %}\r\n  <div class=\"views-field views-field-field-teaser\">\r\n    <div class=\"field-content slide__caption\">\r\n      {{ field_teaser }}\r\n    </div>\r\n  </div>\r\n{% endif %}"
             make_link: false
-            path: ''
+            path: '{{ field_link_url }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -245,7 +245,7 @@ display:
       cache:
         type: custom_tag
         options:
-          custom_tag: "handy_cache_tags:node:feature\r\nentity_subqueue:slideshow"
+          custom_tag: "node_list:feature\r\nentity_subqueue:slideshow"
       empty: {  }
       sorts:
         entityqueue_relationship_in_queue:

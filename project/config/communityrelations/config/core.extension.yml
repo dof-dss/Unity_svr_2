@@ -43,7 +43,6 @@ module:
   facets: 0
   facets_pretty_paths: 0
   facets_summary: 0
-  fastly: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -58,6 +57,7 @@ module:
   geolocation: 0
   geolocation_google_maps: 0
   geolocation_google_static_maps: 0
+  google_tag: 0
   handy_cache_tags: 0
   help: 0
   history: 0

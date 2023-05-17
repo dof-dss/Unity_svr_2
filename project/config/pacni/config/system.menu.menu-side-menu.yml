@@ -1,8 +1,0 @@
-uuid: b53a8612-284d-4ba7-86e0-8529d1a609f1
-langcode: en
-status: true
-dependencies: {  }
-id: menu-side-menu
-label: 'Side menu'
-description: ''
-locked: false

@@ -1,8 +1,0 @@
-uuid: 38e08b85-45bd-49f9-93f0-dc7869f00a7c
-langcode: en
-status: true
-dependencies: {  }
-id: menu-footer-menu
-label: 'Footer menu'
-description: 'Adds links to the footer'
-locked: false
