@@ -117,7 +117,7 @@ display:
       cache:
         type: custom_tag
         options:
-          custom_tag: ''
+          custom_tag: "handy_cache_tags:node:featured_list\r\nentity_subqueue:featured_links"
       empty: {  }
       sorts:
         entityqueue_relationship:

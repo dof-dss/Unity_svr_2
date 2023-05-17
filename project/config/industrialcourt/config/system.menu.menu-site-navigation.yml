@@ -1,8 +1,0 @@
-uuid: 974fd10e-43d5-4c2e-9164-548098f65778
-langcode: en
-status: true
-dependencies: {  }
-id: menu-site-navigation
-label: 'Site Navigation'
-description: 'Page navigation area'
-locked: false
