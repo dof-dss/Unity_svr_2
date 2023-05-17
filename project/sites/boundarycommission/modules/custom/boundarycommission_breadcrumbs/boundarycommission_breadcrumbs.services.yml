@@ -1,6 +1,0 @@
-services:
-  boundarycommission_breadcrumbs.breadcrumb.Consultation:
-    class: Drupal\boundarycommission_breadcrumbs\ConsultationResponseBreadcrumb
-    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
-    tags:
-      - { name: breadcrumb_builder, priority: 105 }

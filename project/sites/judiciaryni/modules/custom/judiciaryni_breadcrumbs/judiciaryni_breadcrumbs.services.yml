@@ -1,6 +1,0 @@
-services:
-  judiciaryni_breadcrumbs.breadcrumb.decisions:
-    class: Drupal\judiciaryni_breadcrumbs\DecisionsBreadcrumb
-    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
-    tags:
-      - { name: breadcrumb_builder, priority: 105 }

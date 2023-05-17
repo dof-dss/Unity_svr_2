@@ -99,7 +99,7 @@ display:
       cache:
         type: custom_tag
         options:
-          custom_tag: 'handy_cache_tags:node:news'
+          custom_tag: "handy_cache_tags:node:news\r\nentity_subqueue:news_queue"
       empty: {  }
       sorts:
         entityqueue_relationship:
