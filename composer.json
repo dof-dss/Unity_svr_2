@@ -159,7 +159,7 @@
         "drupal/ultimate_cron": "^2.0@alpha",
         "drupal/views_contextual_filters_or": "^1.1",
         "drupal/views_custom_cache_tag": "^1.1",
-        "drupal/webform": "^6.0",
+        "drupal/webform": "^6.2@beta",
         "drupal/whatlinkshere": "^2.1",
         "drush/drush": "^10.3",
         "geocoder-php/google-maps-provider": "^4.6",
