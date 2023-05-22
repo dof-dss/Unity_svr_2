@@ -228,7 +228,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: webdev@finance-ni.gov.uk
+      to_mail: info@nicertoffice.org.uk
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }

@@ -47,7 +47,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/nicertoffice ; drush core-cron'
         database: nicertoffice
-        status: development
+        status: production
         default: false
     victimspaymentsboard:
         name: 'Victims Payments Board'
