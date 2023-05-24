@@ -8,144 +8,145 @@
 name: unity_svr_2
 type: 'php:8.1'
 dependencies:
-  php:
-    composer/composer: ^2
+    php:
+        composer/composer: ^2
 runtime:
-  extensions:
-    - apcu
-    - redis
+    extensions:
+        - apcu
+        - redis
 disk: 30720
 mounts:
-  /web/files:
-    source: local
-    source_path: files
-  /tmp:
-    source: local
-    source_path: tmp
-  /private:
-    source: local
-    source_path: private
-  /.drush:
-    source: local
-    source_path: drush
-  /drush-backups:
-    source: local
-    source_path: drush-backups
-  /.console:
-    source: local
-    source_path: console
-  /log:
-    source: local
-    source_path: log
+    /web/files:
+        source: local
+        source_path: files
+    /tmp:
+        source: local
+        source_path: tmp
+    /private:
+        source: local
+        source_path: private
+    /.drush:
+        source: local
+        source_path: drush
+    /drush-backups:
+        source: local
+        source_path: drush-backups
+    /.console:
+        source: local
+        source_path: console
+    /log:
+        source: local
+        source_path: log
 build:
-  flavor: composer
+    flavor: composer
 hooks:
-  build: "set -e\necho \"Update robots.txt with Unity customisations\"\ncp -f web/robots_unity.txt web/robots.txt\n"
-  post_deploy: "set -e\n\n# Save the Fastly service value and overwrite with a dummy one in order to break\n# the connection to Fastly, otherwise any cache clear of any site will purge the\n# entire Fastly cache - we don't want this to happen as we'd like Fastly to continue\n# serving the sites to anonymous users during a release.\necho \"***** Breaking connection to Fastly ******\"\ntemp=$FASTLY_API_SERVICE\nexport FASTLY_API_SERVICE=dummyservice\n\n# For each multi site - run db-updates and import config.\nfor site in mentalhealthchampionni publicappointmentsni ircommission imtac nicertoffice victimspaymentsboard hiaredressni cvocni nijac communityrelations sentencereview nicybersecuritycentre ppsni cosicani\ndo\n  result=$(drush -l $site st | grep \"Drupal bootstrap : Successful\" | awk {'print $4'})\n  if [ \"$result\" = \"Successful\" ]; then\n    echo \"****** $site deployment ******\"\n    cd /app/web/sites/$site\n    # Disable Fastly logging\n    drush -l $site disable-fastly-logging\n    # Readonlymode module should be installed on all sites,\n    # but we'll just make sure.\n    drush en readonlymode -l $site -y\n    # Set site to readonly just in case editors are logged on.\n    drush -l $site cset readonlymode.settings enabled 1 -y\n    drush -l $site -y cache-rebuild\n    drush -l $site -y updatedb\n    drush -l $site -y config-import\n    drush -l $site import-all-if-installed safe\n    if [ \"$PLATFORM_ENVIRONMENT_TYPE\" = production ]; then\n      # Disable QA logons\n      drush -l $site bulk_update_qa_accounts disable\n    else\n      # Enable QA logons\n      drush -l $site bulk_update_qa_accounts enable\n    fi\n    # Turn off readonly mode.\n    drush -l $site cset readonlymode.settings enabled 0 -y\n  else\n    echo \"****** Skipping $site as there is no database ******\"\n    echo \"\"\n  fi\ndone\n\n# Reconnect to Fastly\necho \"***** Reinstate connection to Fastly ******\"\nexport FASTLY_API_SERVICE=$temp\n\n# For each multi site - clear cache (including Fastly cache)\nfor site in mentalhealthchampionni publicappointmentsni ircommission imtac nicertoffice victimspaymentsboard hiaredressni cvocni nijac communityrelations sentencereview nicybersecuritycentre ppsni cosicani\ndo\n  result=$(drush -l $site st | grep \"Drupal bootstrap : Successful\" | awk {'print $4'})\n  if [ \"$result\" = \"Successful\" ]; then\n    echo \"****** $site cache clear ******\"\n    cd /app/web/sites/$site\n    drush -l $site -y cache-rebuild\n    # Enable Fastly logging\n    drush -l $site enable-fastly-logging\n  fi\ndone\n"
+    build: "set -e\necho \"Update robots.txt with Unity customisations\"\ncp -f web/robots_unity.txt web/robots.txt\n"
+    post_deploy: "set -e\n\n# Save the Fastly service value and overwrite with a dummy one in order to break\n# the connection to Fastly, otherwise any cache clear of any site will purge the\n# entire Fastly cache - we don't want this to happen as we'd like Fastly to continue\n# serving the sites to anonymous users during a release.\necho \"***** Breaking connection to Fastly ******\"\ntemp=$FASTLY_API_SERVICE\nexport FASTLY_API_SERVICE=dummyservice\n\n# For each multi site - run db-updates and import config.\nfor site in mentalhealthchampionni publicappointmentsni ircommission imtac nicertoffice victimspaymentsboard hiaredressni cvocni nijac communityrelations sentencereview nicybersecuritycentre ppsni cosicani\ndo\n  result=$(drush -l $site st | grep \"Drupal bootstrap : Successful\" | awk {'print $4'})\n  if [ \"$result\" = \"Successful\" ]; then\n    echo \"****** $site deployment ******\"\n    cd /app/web/sites/$site\n    # Disable Fastly logging\n    drush -l $site disable-fastly-logging\n    # Readonlymode module should be installed on all sites,\n    # but we'll just make sure.\n    drush en readonlymode -l $site -y\n    # Set site to readonly just in case editors are logged on.\n    drush -l $site cset readonlymode.settings enabled 1 -y\n    drush -l $site -y cache-rebuild\n    drush -l $site -y updatedb\n    drush -l $site -y config-import\n    drush -l $site import-all-if-installed safe\n    if [ \"$PLATFORM_ENVIRONMENT_TYPE\" = production ]; then\n      # Disable QA logons\n      drush -l $site bulk_update_qa_accounts disable\n    else\n      # Enable QA logons\n      drush -l $site bulk_update_qa_accounts enable\n    fi\n    # Turn off readonly mode.\n    drush -l $site cset readonlymode.settings enabled 0 -y\n  else\n    echo \"****** Skipping $site as there is no database ******\"\n    echo \"\"\n  fi\ndone\n\n# Reconnect to Fastly\necho \"***** Reinstate connection to Fastly ******\"\nexport FASTLY_API_SERVICE=$temp\n\n# For each multi site - clear cache (including Fastly cache)\nfor site in mentalhealthchampionni publicappointmentsni ircommission imtac nicertoffice victimspaymentsboard hiaredressni cvocni nijac communityrelations sentencereview nicybersecuritycentre ppsni cosicani\ndo\n  result=$(drush -l $site st | grep \"Drupal bootstrap : Successful\" | awk {'print $4'})\n  if [ \"$result\" = \"Successful\" ]; then\n    echo \"****** $site cache clear ******\"\n    cd /app/web/sites/$site\n    drush -l $site -y cache-rebuild\n    # Enable Fastly logging\n    drush -l $site enable-fastly-logging\n  fi\ndone\n"
 web:
-  locations:
-    /:
-      root: web
-      expires: 5m
-      passthru: /index.php
-      allow: false
-      rules:
-        '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$':
-          allow: true
-        ^/robots\.txt$:
-          allow: true
-        ^/sitemap\.xml$:
-          allow: true
-        ^\/sites\/.+\/themes\/.+\/images\/favicons\/.+\.webmanifest$:
-          allow: true
-          expires: 2w
-        ^/sites/sites\.php$:
-          scripts: false
-        '^/sites/[^/]+/settings.*?\.php$':
-          scripts: false
-    /files:
-      allow: true
-      expires: 1d
-      passthru: /index.php
-      root: web/files
-      scripts: false
-      rules:
-        ^/sites/default/files/(css|js):
-          expires: 2w
+    locations:
+        /:
+            root: web
+            expires: 5m
+            passthru: /index.php
+            allow: false
+            rules:
+                '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$':
+                    allow: true
+                ^/robots\.txt$:
+                    allow: true
+                ^/sitemap\.xml$:
+                    allow: true
+                ^\/sites\/.+\/themes\/.+\/images\/favicons\/.+\.webmanifest$:
+                    allow: true
+                    expires: 2w
+                ^/sites/sites\.php$:
+                    scripts: false
+                '^/sites/[^/]+/settings.*?\.php$':
+                    scripts: false
+        /files:
+            allow: true
+            expires: 1d
+            passthru: /index.php
+            root: web/files
+            scripts: false
+            rules:
+                ^/sites/default/files/(css|js):
+                    expires: 2w
 relationships:
-  mentalhealthchampionni: 'db:mentalhealthchampionni'
-  mentalhealthchampionni_solr: 'solr:mentalhealthchampionni'
-  publicappointmentsni: 'db:publicappointmentsni'
-  publicappointmentsni_solr: 'solr:publicappointmentsni'
-  ircommission: 'db:ircommission'
-  ircommission_solr: 'solr:ircommission'
-  imtac: 'db:imtac'
-  imtac_solr: 'solr:imtac'
-  nicertoffice: 'db:nicertoffice'
-  nicertoffice_solr: 'solr:nicertoffice'
-  victimspaymentsboard: 'db:victimspaymentsboard'
-  victimspaymentsboard_solr: 'solr:victimspaymentsboard'
-  hiaredressni: 'db:hiaredressni'
-  hiaredressni_solr: 'solr:hiaredressni'
-  cvocni: 'db:cvocni'
-  cvocni_solr: 'solr:cvocni'
-  nijac: 'db:nijac'
-  nijac_solr: 'solr:nijac'
-  communityrelations: 'db:communityrelations'
-  communityrelations_solr: 'solr:communityrelations'
-  sentencereview: 'db:sentencereview'
-  sentencereview_solr: 'solr:sentencereview'
-  nicybersecuritycentre: 'db:nicybersecuritycentre'
-  nicybersecuritycentre_solr: 'solr:nicybersecuritycentre'
-  ppsni: 'db:ppsni'
-  ppsni_solr: 'solr:ppsni'
-  cosicani: 'db:cosicani'
-  cosicani_solr: 'solr:cosicani'
+    redis: 'redis:redis'
+    mentalhealthchampionni: 'db:mentalhealthchampionni'
+    mentalhealthchampionni_solr: 'solr:mentalhealthchampionni'
+    publicappointmentsni: 'db:publicappointmentsni'
+    publicappointmentsni_solr: 'solr:publicappointmentsni'
+    ircommission: 'db:ircommission'
+    ircommission_solr: 'solr:ircommission'
+    imtac: 'db:imtac'
+    imtac_solr: 'solr:imtac'
+    nicertoffice: 'db:nicertoffice'
+    nicertoffice_solr: 'solr:nicertoffice'
+    victimspaymentsboard: 'db:victimspaymentsboard'
+    victimspaymentsboard_solr: 'solr:victimspaymentsboard'
+    hiaredressni: 'db:hiaredressni'
+    hiaredressni_solr: 'solr:hiaredressni'
+    cvocni: 'db:cvocni'
+    cvocni_solr: 'solr:cvocni'
+    nijac: 'db:nijac'
+    nijac_solr: 'solr:nijac'
+    communityrelations: 'db:communityrelations'
+    communityrelations_solr: 'solr:communityrelations'
+    sentencereview: 'db:sentencereview'
+    sentencereview_solr: 'solr:sentencereview'
+    nicybersecuritycentre: 'db:nicybersecuritycentre'
+    nicybersecuritycentre_solr: 'solr:nicybersecuritycentre'
+    ppsni: 'db:ppsni'
+    ppsni_solr: 'solr:ppsni'
+    cosicani: 'db:cosicani'
+    cosicani_solr: 'solr:cosicani'
 crons:
-  mentalhealthchampionni:
-    spec: '10 * * * *'
-    cmd: 'cd web/sites/mentalhealthchampionni ; drush core-cron'
-  logging:
-    spec: '*/5 * * * *'
-    commands:
-      start: '/bin/bash /app/cronjob.sh'
-    shutdown_timeout: 290
-  publicappointmentsni:
-    spec: '10 * * * *'
-    cmd: 'cd web/sites/publicappointmentsni ; drush core-cron'
-  ircommission:
-    spec: '10 * * * *'
-    cmd: 'cd web/sites/ircommission ; drush core-cron'
-  imtac:
-    spec: '10 * * * *'
-    cmd: 'cd web/sites/imtac ; drush core-cron'
-  nicertoffice:
-    spec: '10 * * * *'
-    cmd: 'cd web/sites/nicertoffice ; drush core-cron'
-  victimspaymentsboard:
-    spec: '10 * * * *'
-    cmd: 'cd web/sites/victimspaymentsboard ; drush core-cron'
-  hiaredressni:
-    spec: '10 * * * *'
-    cmd: 'cd web/sites/hiaredressni ; drush core-cron'
-  cvocni:
-    spec: '10 * * * *'
-    cmd: 'cd web/sites/cvocni ; drush core-cron'
-  nijac:
-    spec: '10 * * * *'
-    cmd: 'cd web/sites/nijac ; drush core-cron'
-  communityrelations:
-    spec: '10 * * * *'
-    cmd: 'cd web/sites/communityrelations ; drush core-cron'
-  sentencereview:
-    spec: '10 * * * *'
-    cmd: 'cd web/sites/sentencereview ; drush core-cron'
-  nicybersecuritycentre:
-    spec: '10 * * * *'
-    cmd: 'cd web/sites/nicybersecuritycentre ; drush core-cron'
-  ppsni:
-    spec: '10 * * * *'
-    cmd: 'cd web/sites/ppsni ; drush core-cron'
-  cosicani:
-    spec: '10 * * * *'
-    cmd: 'cd web/sites/cosicani ; drush core-cron'
+    mentalhealthchampionni:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/mentalhealthchampionni ; drush core-cron'
+    logging:
+        spec: '*/5 * * * *'
+        commands:
+            start: '/bin/bash /app/cronjob.sh'
+        shutdown_timeout: 290
+    publicappointmentsni:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/publicappointmentsni ; drush core-cron'
+    ircommission:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/ircommission ; drush core-cron'
+    imtac:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/imtac ; drush core-cron'
+    nicertoffice:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/nicertoffice ; drush core-cron'
+    victimspaymentsboard:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/victimspaymentsboard ; drush core-cron'
+    hiaredressni:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/hiaredressni ; drush core-cron'
+    cvocni:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/cvocni ; drush core-cron'
+    nijac:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/nijac ; drush core-cron'
+    communityrelations:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/communityrelations ; drush core-cron'
+    sentencereview:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/sentencereview ; drush core-cron'
+    nicybersecuritycentre:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/nicybersecuritycentre ; drush core-cron'
+    ppsni:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/ppsni ; drush core-cron'
+    cosicani:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/cosicani ; drush core-cron'
