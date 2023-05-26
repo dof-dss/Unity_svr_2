@@ -1,50 +1,69 @@
-uuid: 71131a11-3925-4ba4-b908-5f7a91b47464
+uuid: 9cdfe228-1daa-4b07-9105-2b9339d100b8
 langcode: en
 status: open
-dependencies:
-  enforced:
-    module:
-      - webform
-_core:
-  default_config_hash: CJr5U2B4if_Ff1SZfnNp_csPKwXIynmbUlBC-SmSOAE
+dependencies: {  }
 weight: 0
 open: null
 close: null
-uid: null
+uid: 11
 template: false
 archive: false
-id: contact
-title: 'Contact Us'
-description: 'Basic email contact webform.'
+id: feedback_form
+title: 'Feedback form'
+description: ''
 category: ''
 elements: |-
-  your_details:
+  markup_top:
+    '#type': webform_markup
+    '#markup': 'Thank you for taking the time to answer the questions below. This will help us improve what we do.'
+  feedback:
     '#type': fieldset
-    '#title': 'Your details'
-    name:
-      '#type': textfield
-      '#title': Name
-      '#required': true
-    email:
-      '#type': email
-      '#title': Email
-      '#required': true
-    message:
+    '#title': Feedback
+    did_you_contact_us_as_a_:
+      '#type': webform_checkboxes_other
+      '#title': 'Did you contact us as a:'
+      '#options':
+        'Victim & survivor': 'Victim & survivor'
+        'Family member': 'Family member'
+        Professional: Professional
+      '#other__option_label': 'Other (Please specify)'
+      '#other__placeholder': 'Please specify'
+    why_did_you_contact_us_:
+      '#type': webform_checkboxes_other
+      '#title': 'Why did you contact us?'
+      '#options':
+        'General information': 'General information'
+        Services: Services
+        'Redress financial compensation': 'Redress financial compensation'
+        Records: Records
+        'Reporting historical abuse': 'Reporting historical abuse'
+      '#other__option_label': 'Other (Please specify)'
+      '#other__placeholder': 'Please specify'
+    how_did_you_want_us_to_help:
       '#type': textarea
-      '#title': Comments
-      '#minlength': 1
-      '#maxlength': 750
-      '#placeholder': 'Plain text only, 750 characters maximum.'
-      '#required': true
-      '#counter_type': character
-      '#counter_minimum': 1
-      '#counter_maximum': 750
-      '#counter_maximum_message': '750 Characters maximum.'
-      '#test': 'Please ignore this email.'
+      '#title': 'How did you want us to help?'
+    were_you_happy_with_the_service_that_you_received:
+      '#type': select
+      '#title': 'Were you happy with the service that you received?'
+      '#options': yes_no
+    are_there_any_other_comments_you_would_like_to_make:
+      '#type': textarea
+      '#title': 'Are there any other comments you would like to make:'
+      '#states':
+        visible:
+          ':input[name="were_you_happy_with_the_service_that_you_received"]':
+            filled: true
+    we_would_like_to_include_short_anonymised_examples_of_our_work_i:
+      '#type': select
+      '#title': 'We would like to include short, anonymised examples of our work in our reports or online. Do you give us permission to include the comments you have made on this form?'
+      '#options': yes_no
+  markup:
+    '#type': webform_markup
+    '#markup': 'Thank you for taking the time to provide your comments.'
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
-    '#submit__label': 'Send feedback'
+    '#submit__label': 'Submit feedback'
 css: ''
 javascript: ''
 settings:
@@ -129,7 +148,7 @@ settings:
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
-  wizard_toggle: false
+  wizard_toggle: true
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
   preview: 0
@@ -147,10 +166,10 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: url_message
-  confirmation_url: '<front>'
+  confirmation_type: page
+  confirmation_url: ''
   confirmation_title: ''
-  confirmation_message: 'Your message has been sent.'
+  confirmation_message: 'Thank you for your submission.'
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -227,9 +246,9 @@ access:
     users: {  }
     permissions: {  }
 handlers:
-  email_1:
+  email:
     id: email
-    handler_id: email_1
+    handler_id: email
     label: Email
     notes: ''
     status: true
@@ -251,8 +270,8 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: 'Feedback form submission from: Contact us'
-      body: "Submitted on [webform_submission:created]<br />\r\nSubmitted values are:<br />\r\n[webform_submission:values]"
+      subject: _default
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
