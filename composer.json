@@ -90,7 +90,7 @@
         "drupal/core-composer-scaffold": "9.5.*",
         "drupal/core-recommended": "9.5.*",
         "drupal/csp": "^1.15",
-        "drupal/date_facet_drilldown": "3.x-dev@dev",
+        "drupal/date_facet_drilldown": "4.x-dev@dev",
         "drupal/diff": "^1.0",
         "drupal/draggableviews": "^2.0",
         "drupal/embed": "^1.6",
