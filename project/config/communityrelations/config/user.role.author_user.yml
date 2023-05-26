@@ -61,7 +61,6 @@ permissions:
   - 'create remote_video media'
   - 'create staff_member content'
   - 'create url aliases'
-  - 'delete any featured_list content'
   - 'delete own audio media'
   - 'delete own basic_page content'
   - 'delete own core_funded_groups content'
