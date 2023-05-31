@@ -16,47 +16,46 @@ elements: |-
   markup_top:
     '#type': webform_markup
     '#markup': 'Thank you for taking the time to answer the questions below. This will help us improve what we do.'
-  feedback:
-    '#type': fieldset
-    '#title': Feedback
-    did_you_contact_us_as_a_:
-      '#type': webform_checkboxes_other
-      '#title': 'Did you contact us as a:'
-      '#options':
-        'Victim & survivor': 'Victim & survivor'
-        'Family member': 'Family member'
-        Professional: Professional
-      '#other__option_label': 'Other (Please specify)'
-      '#other__placeholder': 'Please specify'
-    why_did_you_contact_us_:
-      '#type': webform_checkboxes_other
-      '#title': 'Why did you contact us?'
-      '#options':
-        'General information': 'General information'
-        Services: Services
-        'Redress financial compensation': 'Redress financial compensation'
-        Records: Records
-        'Reporting historical abuse': 'Reporting historical abuse'
-      '#other__option_label': 'Other (Please specify)'
-      '#other__placeholder': 'Please specify'
-    how_did_you_want_us_to_help:
-      '#type': textarea
-      '#title': 'How did you want us to help?'
-    were_you_happy_with_the_service_that_you_received:
-      '#type': select
-      '#title': 'Were you happy with the service that you received?'
-      '#options': yes_no
-    are_there_any_other_comments_you_would_like_to_make:
-      '#type': textarea
-      '#title': 'Are there any other comments you would like to make:'
-      '#states':
-        visible:
-          ':input[name="were_you_happy_with_the_service_that_you_received"]':
-            filled: true
-    we_would_like_to_include_short_anonymised_examples_of_our_work_i:
-      '#type': select
-      '#title': 'We would like to include short, anonymised examples of our work in our reports or online. Do you give us permission to include the comments you have made on this form?'
-      '#options': yes_no
+  did_you_contact_us_as_a_:
+    '#type': webform_checkboxes_other
+    '#title': 'Did you contact us as a:'
+    '#options':
+      'Victim & survivor': 'Victim & survivor'
+      'Family member': 'Family member'
+      Professional: Professional
+    '#other__option_label': 'Other (Please specify)'
+    '#other__placeholder': 'Please specify'
+  why_did_you_contact_us_:
+    '#type': webform_checkboxes_other
+    '#title': 'Why did you contact us?'
+    '#options':
+      'General information': 'General information'
+      Services: Services
+      'Redress financial compensation': 'Redress financial compensation'
+      Records: Records
+      'Reporting historical abuse': 'Reporting historical abuse'
+    '#other__option_label': 'Other (Please specify)'
+    '#other__placeholder': 'Please specify'
+  how_did_you_want_us_to_help:
+    '#type': textarea
+    '#title': 'How did you want us to help?'
+  were_you_happy_with_the_service_that_you_received:
+    '#type': select
+    '#title': 'Were you happy with the service that you received?'
+    '#options': yes_no
+    '#empty_option': 'Please select'
+  are_there_any_other_comments_you_would_like_to_make:
+    '#type': textarea
+    '#title': 'Are there any other comments you would like to make:'
+    '#states':
+      visible:
+        ':input[name="were_you_happy_with_the_service_that_you_received"]':
+          filled: true
+  we_would_like_to_include_short_anonymised_examples_of_our_work_i:
+    '#type': select
+    '#title': 'We would like to include short, anonymised examples of our work in our reports or online. Do you give us permission to include the comments you have made on this form?'
+    '#options': yes_no
+    '#empty_option': 'Please select'
   markup:
     '#type': webform_markup
     '#markup': 'Thank you for taking the time to provide your comments.'
