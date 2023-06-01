@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b767b0ef8319f8f09016a5a4c7a6d202",
+    "content-hash": "1eb6d90fe9038ce6ed1015bcd7042861",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1875,16 +1875,16 @@
         },
         {
             "name": "dof-dss/nicsdru_origins_modules",
-            "version": "2.0.5",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_origins_modules.git",
-                "reference": "32a690bf0454cd35f644ccf0e2eb528529581218"
+                "reference": "5abc08991797c06546a2d2f146abd5df567eceb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/32a690bf0454cd35f644ccf0e2eb528529581218",
-                "reference": "32a690bf0454cd35f644ccf0e2eb528529581218",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/5abc08991797c06546a2d2f146abd5df567eceb7",
+                "reference": "5abc08991797c06546a2d2f146abd5df567eceb7",
                 "shasum": ""
             },
             "require": {
@@ -1898,9 +1898,9 @@
             "description": "Generic modules for DOF-DSS Drupal sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_origins_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/2.0.5"
+                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/2.0.6"
             },
-            "time": "2023-05-16T10:20:30+00:00"
+            "time": "2023-06-01T13:27:13+00:00"
         },
         {
             "name": "dof-dss/nicsdru_origins_profile",
@@ -4119,11 +4119,11 @@
         },
         {
             "name": "drupal/date_facet_drilldown",
-            "version": "dev-3.x",
+            "version": "dev-4.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/date_facet_drilldown.git",
-                "reference": "73a9614bdb9aa6cc6412e77a9c1b317a9351be62"
+                "reference": "628b6cac1e04aad8c503b2335264d04c91154b79"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -4131,11 +4131,11 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-3.x": "3.x-dev"
+                    "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.x-dev",
-                    "datestamp": "1683125228",
+                    "version": "8.x-4.x-dev",
+                    "datestamp": "1685098571",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
