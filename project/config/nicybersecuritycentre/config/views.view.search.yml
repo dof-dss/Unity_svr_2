@@ -579,7 +579,7 @@ display:
           offset: 0
           items_per_page: 5
       cache:
-        type: none
+        type: search_api_tag
         options: {  }
       filters:
         search_api_fulltext:
@@ -641,7 +641,8 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender: {  }
     cache_metadata:
       max-age: -1
       contexts:
