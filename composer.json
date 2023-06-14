@@ -167,6 +167,7 @@
         "kenwheeler/slick": "^1.8",
         "oomphinc/composer-installers-extender": "^2.0",
         "platformsh/config-reader": "^2.4",
+        "symfony/http-client": "^5.4",
         "vlucas/phpdotenv": "^2.4"
     },
     "require-dev": {
@@ -199,7 +200,8 @@
             "drupal/console-extend-plugin": true,
             "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
-            "oomphinc/composer-installers-extender": true
+            "oomphinc/composer-installers-extender": true,
+            "php-http/discovery": true
         }
     },
     "extra": {
