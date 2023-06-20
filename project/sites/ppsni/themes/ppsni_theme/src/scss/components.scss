@@ -272,6 +272,10 @@
         @media screen and (max-width: $tab) {
           flex-direction: column;
         }
+
+        .slide__caption {
+          text-decoration: underline;
+        }
       }
     }
   }
