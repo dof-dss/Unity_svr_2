@@ -54,7 +54,7 @@ cookie_name: ''
 exclude_uid_1: true
 better_support_for_screen_readers: true
 method: opt_in
-disabled_javascripts: 'public://google_tag/nicybersecuritycentre/google_tag.script.js'
+disabled_javascripts: 'public://google_tag/nicyber/google_tag.script.js'
 automatic_cookies_removal: true
 allowed_cookies: ''
 consent_storage_method: do_not_store
