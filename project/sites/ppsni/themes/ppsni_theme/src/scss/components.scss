@@ -261,6 +261,10 @@
           text-decoration: underline;
           cursor: pointer;
         }
+
+        img {
+          filter: grayscale(100%);
+        }
       }
     }
 
@@ -272,6 +276,10 @@
         @media screen and (max-width: $tab) {
           flex-direction: column;
         }
+
+        img {
+            filter: grayscale(100%);
+          }
 
         .slide__caption {
           text-decoration: underline;
