@@ -172,7 +172,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{% if field_link_url is not empty %}\r\n{% endif %}\r\n{{ field_photo }}\r\n{% if field_link_url is not empty %}\r\n{% endif %}\r\n{% if field_teaser is not empty %}\r\n  <div class=\"views-field views-field-field-teaser\">\r\n    <div class=\"field-content slide__caption\">\r\n      {{ field_teaser }}\r\n    </div>\r\n  </div>\r\n{% endif %}"
+            text: "{{ field_photo }}\r\n{% if field_teaser is not empty %}\r\n  <div class=\"views-field views-field-field-teaser\">\r\n    <div class=\"field-content slide__caption\">\r\n      {{ field_teaser }}\r\n    </div>\r\n  </div>\r\n{% endif %}"
             make_link: true
             path: '{{ field_link_url }}'
             absolute: false
