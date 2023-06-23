@@ -110,7 +110,7 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: true
+            make_link: false
             path: '{{ field_link_url }}'
             absolute: false
             external: false
@@ -134,14 +134,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: '0'
           element_class: slide__caption
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -172,8 +172,8 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{% if field_link_url is not empty %}\r\n<a href ={{ field_link_url }}>\r\n{% endif %}\r\n{{ field_photo }}\r\n{% if field_link_url is not empty %}\r\n</a>\r\n{% endif %}\r\n{% if field_teaser is not empty %}\r\n  <div class=\"views-field views-field-field-teaser\">\r\n    <div class=\"field-content slide__caption\">\r\n      {{ field_teaser }}\r\n    </div>\r\n  </div>\r\n{% endif %}"
-            make_link: false
+            text: "{% if field_link_url is not empty %}\r\n{% endif %}\r\n{{ field_photo }}\r\n{% if field_link_url is not empty %}\r\n{% endif %}\r\n{% if field_teaser is not empty %}\r\n  <div class=\"views-field views-field-field-teaser\">\r\n    <div class=\"field-content slide__caption\">\r\n      {{ field_teaser }}\r\n    </div>\r\n  </div>\r\n{% endif %}"
+            make_link: true
             path: '{{ field_link_url }}'
             absolute: false
             external: false
@@ -182,7 +182,7 @@ display:
             trim_whitespace: false
             alt: ''
             rel: ''
-            link_class: ''
+            link_class: slider_link
             prefix: ''
             suffix: ''
             target: ''
