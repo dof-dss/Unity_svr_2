@@ -17,7 +17,7 @@ matchers:
     settings:
       bundles: {  }
       group_by_bundle: true
-      include_unpublished: false
+      include_unpublished: true
       substitution_type: canonical
       metadata: ''
       limit: 100
