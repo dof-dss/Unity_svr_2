@@ -89,6 +89,9 @@ if (!empty(getenv('PLATFORM_BRANCH'))) {
       if (str_contains($newhost, 'info.library.nics.gov.uk')) {
         $sites[$host] = 'infolibrarynics';
       }
+      elseif (str_contains($newhost, 'pressclippings.nics.gov.uk')) {
+        $sites[$host] = 'pressclippingsnics';
+      }
       else {
         $subdomain = substr($newhost, 0, strpos($newhost, '.'));
         // Check for domain names that contain dashes and strip them out.
