@@ -254,7 +254,8 @@ display:
     position: 1
     display_options:
       cache:
-        type: none
+        type: search_api_tag
+        options: {  }
       defaults:
         cache: false
       exposed_block: true
@@ -271,7 +272,7 @@ display:
         parent: ''
         context: '0'
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -279,5 +280,6 @@ display:
         - url.query_args
         - 'user.node_grants:view'
       tags:
+        - 'config:facets.facet.date_published_article'
         - 'config:field.storage.node.body'
         - 'config:search_api.index.featured_article'

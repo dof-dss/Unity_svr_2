@@ -19,7 +19,7 @@ matchers:
       group_by_bundle: true
       substitution_type: canonical
       limit: 100
-      include_unpublished: false
+      include_unpublished: true
       result_description: ''
     weight: 0
   d070f34b-f610-4f69-89ac-e39556edf8ef:
