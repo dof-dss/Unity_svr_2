@@ -19,7 +19,7 @@ matchers:
       group_by_bundle: true
       substitution_type: canonical
       limit: 100
-      include_unpublished: false
+      include_unpublished: true
     weight: 0
   7827f5b9-4db1-40c1-a791-2309a33c87ee:
     id: email

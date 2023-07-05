@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - entityqueue.entity_queue.slideshow
+    - field.storage.node.field_link_url
     - field.storage.node.field_photo
     - field.storage.node.field_teaser
   module:
     - entityqueue
+    - link
     - node
     - slick_views
     - user
@@ -28,84 +30,19 @@ display:
     display_options:
       title: Slideshow
       fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        field_link_url:
+          id: field_link_url
+          table: node__field_link_url
+          field: field_link_url
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: title
           plugin_id: field
           label: ''
           exclude: true
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: false
-            ellipsis: false
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_photo:
-          id: field_photo
-          table: node__field_photo
-          field: field_photo
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: '<a href="{{ nothing }}">{{ field_photo }}</a>'
             make_link: false
             path: ''
             absolute: false
@@ -142,11 +79,15 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_entity_view
+          click_sort_column: uri
+          type: link
           settings:
-            view_mode: slide
-          group_column: target_id
+            trim_length: null
+            url_only: true
+            url_plain: true
+            rel: '0'
+            target: '0'
+          group_column: ''
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -165,7 +106,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -200,7 +141,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -210,6 +151,69 @@ display:
           settings:
             link_to_entity: false
           group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_photo:
+          id: field_photo
+          table: node__field_photo
+          field: field_photo
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "{{ field_photo }}\r\n{% if field_teaser is not empty %}\r\n  <div class=\"views-field views-field-field-teaser\">\r\n    <div class=\"field-content slide__caption\">\r\n      {{ field_teaser }}\r\n    </div>\r\n  </div>\r\n{% endif %}"
+            make_link: true
+            path: '{{ field_link_url }}'
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: slider_link
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: '0'
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_entity_view
+          settings:
+            view_mode: slide
+          group_column: target_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -393,6 +397,7 @@ display:
         - user.permissions
       tags:
         - 'config:entityqueue.entity_queue.slideshow'
+        - 'config:field.storage.node.field_link_url'
         - 'config:field.storage.node.field_photo'
         - 'config:field.storage.node.field_teaser'
         - entity_field_info
@@ -414,6 +419,7 @@ display:
         - user.permissions
       tags:
         - 'config:entityqueue.entity_queue.slideshow'
+        - 'config:field.storage.node.field_link_url'
         - 'config:field.storage.node.field_photo'
         - 'config:field.storage.node.field_teaser'
         - entity_field_info
