@@ -1,4 +1,4 @@
-uuid: 30cd0566-cf38-412a-8e43-47a4951dc567
+uuid: 321e3e19-069b-43a7-8f08-786802114dbc
 langcode: en
 status: true
 dependencies:
@@ -11,8 +11,8 @@ dependencies:
     - node
     - user
     - views_custom_cache_tag
-id: funding_schemes
-label: 'Funding Schemes'
+id: closed_funding_schemes
+label: 'Closed Funding Schemes'
 module: views
 description: ''
 tag: ''
@@ -25,7 +25,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Funding Schemes'
+      title: 'Closed Funding Schemes'
       fields:
         title:
           id: title
@@ -168,7 +168,7 @@ display:
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
+          expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
@@ -191,6 +191,20 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
+        field_deadline_date_value:
+          id: field_deadline_date_value
+          table: node__field_deadline_date
+          field: field_deadline_date_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: datetime
           order: DESC
           expose:
             label: ''
@@ -232,7 +246,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: datetime
-          operator: '>'
+          operator: '<'
           value:
             min: ''
             max: ''
@@ -274,7 +288,7 @@ display:
         options:
           row_class: ''
           default_row_class: false
-          uses_fields: true
+          uses_fields: false
       row:
         type: 'entity:node'
         options:
@@ -291,9 +305,9 @@ display:
       relationships: {  }
       use_more: true
       use_more_always: true
-      use_more_text: 'Closed Funding Schemes'
+      use_more_text: 'Open Funding Schemes'
       link_display: custom_url
-      link_url: /closed-funding-schemes
+      link_url: /funding
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -306,13 +320,12 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_deadline_date'
-  funding_schemes:
-    id: funding_schemes
+  closed_funding_schemes:
+    id: closed_funding_schemes
     display_title: Block
     display_plugin: block
-    position: 1
+    position: 2
     display_options:
-      exposed_block: true
       display_extenders:
         metatag_display_extender: {  }
     cache_metadata:
