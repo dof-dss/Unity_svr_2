@@ -78,7 +78,7 @@
     "build": "npm-run-all --parallel build-*",
     "build-css": "npm-run-all --parallel css-lint* scss-prod --sequential css-post",
     "_build-js": "npm run js",
-    "build-img": "npm run imgmin",
+    "_build-img": "npm run imgmin",
     "lint": "npm-run-all --parallel css-lint js-lint"
   },
   "config": {

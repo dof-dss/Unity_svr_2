@@ -1,22 +1,22 @@
-uuid: 86936fab-1f8b-4775-95a4-ece5a8af7c46
+uuid: 40ae3e15-9dee-478a-b238-94904e958a40
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.board_members
+    - views.view.closed_funding_schemes
   module:
     - system
     - views
   theme:
     - communityrelations_theme
-id: views_block__board_members_board_members_block
+id: views_block__closed_funding_schemes_closed_funding_schemes
 theme: communityrelations_theme
 region: content
-weight: -11
+weight: -7
 provider: null
-plugin: 'views_block:board_members-board_members_block'
+plugin: 'views_block:closed_funding_schemes-closed_funding_schemes'
 settings:
-  id: 'views_block:board_members-board_members_block'
+  id: 'views_block:closed_funding_schemes-closed_funding_schemes'
   label: ''
   label_display: '0'
   provider: views
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /board-members
+    pages: /closed-funding-schemes
