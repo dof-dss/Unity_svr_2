@@ -254,26 +254,26 @@ display:
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: false
-            trim: true
-            preserve_tags: ''
+            strip_tags: true
+            trim: false
+            preserve_tags: '<p>'
             html: false
-          element_type: p
+          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: false
+          element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: format
+          click_sort_column: summary
           type: text_trimmed
           settings:
-            trim_length: 300
+            trim_length: 200
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -284,7 +284,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          field_rendering: false
+          field_rendering: true
           fallback_handler: search_api
           fallback_options:
             link_to_item: false
