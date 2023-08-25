@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.basic_html
     - media.type.audio
     - media.type.document
     - media.type.file
@@ -22,6 +23,8 @@ dependencies:
     - entity_browser
     - entityqueue
     - file
+    - file_delete_ui
+    - filter
     - media
     - menu_admin_per_menu
     - moderation_sidebar
@@ -119,6 +122,7 @@ permissions:
   - 'delete any external_link content'
   - 'delete any faq content'
   - 'delete any feature content'
+  - 'delete any file'
   - 'delete any file media'
   - 'delete any gallery content'
   - 'delete any image files'
