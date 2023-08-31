@@ -11,6 +11,7 @@ wraith capture configs/ircommission_capture.yaml >> output.txt
 wraith capture configs/ppsni_capture.yaml >> output.txt
 wraith capture configs/nicertoffice_capture.yaml >> output.txt
 wraith capture configs/src_capture.yaml >> output.txt
+wraith capture configs/crc_capture.yaml >> output.txt
 grep -A3 'failed' output.txt
 echo '************'
 grep gallery output.txt
