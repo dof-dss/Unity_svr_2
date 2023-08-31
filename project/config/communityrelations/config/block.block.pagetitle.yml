@@ -9,7 +9,7 @@ dependencies:
 id: pagetitle
 theme: communityrelations_theme
 region: content
-weight: -6
+weight: -13
 provider: null
 plugin: page_title_block
 settings:

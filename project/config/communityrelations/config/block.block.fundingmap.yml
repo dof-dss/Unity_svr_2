@@ -12,7 +12,7 @@ dependencies:
 id: fundingmap
 theme: communityrelations_theme
 region: content
-weight: 0
+weight: -10
 provider: null
 plugin: 'block_content:0640f73c-379c-49c9-b23d-a2f7f76250b9'
 settings:

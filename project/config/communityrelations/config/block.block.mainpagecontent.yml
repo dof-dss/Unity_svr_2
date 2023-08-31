@@ -9,7 +9,7 @@ dependencies:
 id: mainpagecontent
 theme: communityrelations_theme
 region: content
-weight: -5
+weight: -12
 provider: null
 plugin: system_main_block
 settings:

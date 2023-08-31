@@ -12,7 +12,7 @@ dependencies:
 id: views_block__funding_schemes_funding_schemes
 theme: communityrelations_theme
 region: content
-weight: 0
+weight: -8
 provider: null
 plugin: 'views_block:funding_schemes-funding_schemes'
 settings:
