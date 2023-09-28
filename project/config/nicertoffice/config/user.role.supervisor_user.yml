@@ -21,6 +21,7 @@ dependencies:
     - entity_browser
     - entityqueue
     - file
+    - file_delete_ui
     - filter
     - media
     - menu_admin_per_menu
@@ -90,6 +91,7 @@ permissions:
   - 'delete any document media'
   - 'delete any faq content'
   - 'delete any feature content'
+  - 'delete any file'
   - 'delete any file media'
   - 'delete any image files'
   - 'delete any image media'
