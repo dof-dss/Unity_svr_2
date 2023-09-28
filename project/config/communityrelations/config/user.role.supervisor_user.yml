@@ -22,6 +22,7 @@ dependencies:
     - content_moderation
     - entityqueue
     - file
+    - file_delete_ui
     - layout_builder
     - media
     - menu_admin_per_menu
@@ -97,6 +98,7 @@ permissions:
   - 'delete any document media'
   - 'delete any event content'
   - 'delete any featured_list content'
+  - 'delete any file'
   - 'delete any file media'
   - 'delete any funding_schemes content'
   - 'delete any image files'

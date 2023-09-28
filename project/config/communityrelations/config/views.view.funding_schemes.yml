@@ -324,3 +324,29 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_deadline_date'
+  funding_schemes_homepage:
+    id: funding_schemes_homepage
+    display_title: Block
+    display_plugin: block
+    position: 2
+    display_options:
+      title: 'Funding home'
+      defaults:
+        title: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+      use_more: false
+      use_more_always: true
+      use_more_text: 'Closed Funding Schemes'
+      display_extenders:
+        metatag_display_extender: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_deadline_date'
