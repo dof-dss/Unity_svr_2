@@ -216,7 +216,9 @@
                 "Provide options to sanitize filenames (transliterate, lowercase, replace whitespace, etc)": "https://www.drupal.org/files/issues/2021-07-26/2492171-311.patch",
                 "Provide link to latest revision of moderated entity": "https://www.drupal.org/files/issues/2021-11-29/2906455-34.patch",
                 "User enable email exception": "https://www.drupal.org/files/issues/2023-05-19/user_email_exception-3355151-3.patch",
-                "Expand menu_tree field sizes": "https://www.drupal.org/files/issues/2022-10-11/3106205-36.patch"
+                "Expand menu_tree field sizes": "https://www.drupal.org/files/issues/2022-10-11/3106205-36.patch",
+                "Typeerror when adding page to book": "https://www.drupal.org/files/issues/2023-10-02/book_typeerror-3391035-1.patch",
+                "Inconsistent behaviour when adding a page to a book": "https://www.drupal.org/files/issues/2023-10-02/book_page_addition_bugfix-3391049-1.patch"
             },
             "drupal/easy_install": {
                 "Handle missing core version": "https://www.drupal.org/files/issues/2019-12-19/easy_install_core_version-3101883-0.patch",
