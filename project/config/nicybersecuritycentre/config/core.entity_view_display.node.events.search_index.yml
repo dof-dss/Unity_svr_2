@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.search_index
     - field.field.node.events.body
+    - field.field.node.events.field_banner
     - field.field.node.events.field_event_date
     - field.field.node.events.field_event_teaser
     - field.field.node.events.field_event_type
@@ -71,6 +72,7 @@ content:
 hidden:
   body: true
   content_moderation_control: true
+  field_banner: true
   field_event_type: true
   field_location: true
   field_meta_tags: true

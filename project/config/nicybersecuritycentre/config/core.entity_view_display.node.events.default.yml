@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.events.body
+    - field.field.node.events.field_banner
     - field.field.node.events.field_event_date
     - field.field.node.events.field_event_teaser
     - field.field.node.events.field_event_type
@@ -30,6 +31,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_banner:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: banner_thin
+      link: false
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_event_date:
     type: smartdate_custom
