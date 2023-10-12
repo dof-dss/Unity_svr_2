@@ -480,3 +480,17 @@ body:not(.front) {
     }
   }
 }
+
+.event-banner {
+  max-width: $max-grid-width;
+  margin: 0 auto;
+
+  .media-image[data-picture-mapping="thin_banner"] {
+    margin-bottom: 0;
+
+    figcaption {
+      display: none;
+    }
+
+  }
+}
