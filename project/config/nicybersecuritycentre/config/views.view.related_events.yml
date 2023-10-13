@@ -8,6 +8,7 @@ dependencies:
   module:
     - node
     - user
+    - views_custom_cache_tag
 id: related_events
 label: 'Related events'
 module: views
@@ -65,10 +66,10 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -107,8 +108,9 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
-        options: {  }
+        type: custom_tag
+        options:
+          custom_tag: 'node_list:events'
       empty: {  }
       sorts:
         created:
@@ -368,6 +370,11 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 20
       arguments:
         nid:
           id: nid
@@ -405,7 +412,26 @@ display:
           validate_options: {  }
           break_phrase: false
           not: false
+      style:
+        type: html_list
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+          type: ul
+          wrapper_class: item-list
+          class: ''
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       defaults:
+        pager: false
+        style: false
+        row: false
         relationships: false
         arguments: false
       relationships:
