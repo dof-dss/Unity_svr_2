@@ -1,0 +1,33 @@
+uuid: cfb6811e-0661-4998-b394-f1791e5b0c92
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.related_events
+  module:
+    - node
+    - views
+  theme:
+    - nicybersecuritycentre_theme
+id: views_block__related_events_related_events
+theme: nicybersecuritycentre_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:related_events-related_events'
+settings:
+  id: 'views_block:related_events-related_events'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      events: events
