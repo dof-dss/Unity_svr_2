@@ -14,3 +14,23 @@ function nicybersecuritycentre_theme_theme_suggestions_page_alter(array &$sugges
     $suggestions[] = 'page__' . $content_type;
   }
 }
+
+/**
+ * Implements template_preprocess_page().
+ * Show the parent banner image the header of each child page.
+ * This variable is used in page--events.html.twig.
+ */
+function nicybersecuritycentre_theme_preprocess_page(&$variables) {
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    if ($content_type === 'events') {
+      $variables['page']['is_child_event'] = FALSE;
+      // Determine if this is a child event.
+      $child_event = $node->field_related_events->entity;
+      // If it is a child event set the variable to true.
+      if (isset($variables['node']) && !empty($child_event)) {
+        $variables['page']['is_child_event'] = TRUE;
+      }
+    }
+  }
+}
