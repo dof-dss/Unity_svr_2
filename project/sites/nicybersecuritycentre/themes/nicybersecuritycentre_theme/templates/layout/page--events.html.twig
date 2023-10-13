@@ -53,6 +53,8 @@
  * - basic_page_structure: There is a checkbox in the theme settings UI
  *   to check if a basic page is used in the homepage structure. This template
  *   is set up for a homepage that doesn't use a basic page in it's structure.
+ * - is_child_event: Comes from nicybersecuritycentre_theme.theme file and is used
+ *   to determine if the event has a parent or not.
  *
  * @see template_preprocess_page()
  * @see html.html.twig
@@ -95,7 +97,7 @@
       {{ drupal_config('system.site', 'frontpage_title') }}
     </h1>
   {% endif %}
-  {% endif %}
+{% endif %}
   {{ page.front_welcome }}
 
   {% if page.top_first or page.top_second or page.top_third %}
@@ -122,7 +124,7 @@
       </div>
     </div>
   {% endif %}
-  {% endif %}
+{% endif %}
 
   {# If the homepage has a basic page or for every other page apart from the homepage show the basic page structure. #}
   {% if basic_page_structure is not empty or basic_page_structure is empty and not is_front %}
@@ -131,8 +133,10 @@
         {{ page.breadcrumb }}
       {% endif %}
       <div class="event-banner">
-        {% if node.field_banner %}
+        {% if node.field_banner is not empty %}
       {{ node.field_banner|view }}
+        {% elseif page.is_child_event %}
+        {{ drupal_view('related_events', 'parent_banner_image') }}
         {% endif %}
       </div>
       <div class="container-wrap">
