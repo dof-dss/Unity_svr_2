@@ -168,7 +168,7 @@ tooling:
           > Rebuild all site themes\n
           lando rebuild-unity-site-themes\n
           > Rebuild single site theme\n
-            lando rebuild-unity-site-themes octf\n
+            lando rebuild-unity-site-themes --site-names octf\n
           > Rebuild site themes specified - comma separated\n
-          lando rebuild-unity-site-themes octf,pbni"
+          lando rebuild-unity-site-themes --site-names octf,pbni"
     cmd: "/app/build-themes.sh"

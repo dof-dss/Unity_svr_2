@@ -205,7 +205,7 @@ jobs:
             [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
             nvm install v15.14.0
             cd $PROJECT_ROOT
-            ./build-themes.sh $PROJECT_ROOT/project/sites
+            ./build-themes.sh --sites-dir $PROJECT_ROOT/project/sites
 
             # Push to fixed, non-integrating build branch. GitHub webhook integration will propagate this
             # to platform.sh for later steps to use.
