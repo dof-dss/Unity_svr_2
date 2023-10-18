@@ -12,7 +12,7 @@ dependencies:
 id: views_block__related_events_related_events
 theme: nicybersecuritycentre_theme
 region: content
-weight: 0
+weight: -11
 provider: null
 plugin: 'views_block:related_events-related_events'
 settings:
