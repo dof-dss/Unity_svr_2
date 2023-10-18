@@ -133,9 +133,9 @@
         {{ page.breadcrumb }}
       {% endif %}
       <div class="event-banner">
-        {% if node.field_banner is not empty %}
+        {% if node.field_banner %}
       {{ node.field_banner|view }}
-        {% elseif page.is_child_event %}
+        {% elseif page.is_child_event  %}
         {{ drupal_view('related_events', 'parent_banner_image') }}
         {% endif %}
       </div>
