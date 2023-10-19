@@ -67,13 +67,10 @@
  * @see template_preprocess_node()
  */
 #}
-{% set title = {{ drupal_block('page_title_block', wrapper=false) }} %}
-{% set name = 'Events' %}
 <article class="event-content">
   <div class="event-left">
     {{ drupal_block('page_title_block', wrapper=false) }}
     {{ content.body }}
-    {{ (title ~ name) }}
     {% if drupal_view_result('related_events', 'related_events_list')|length > 0 %}
       {{ drupal_view('related_events', 'related_events_list') }}
     {% endif %}
