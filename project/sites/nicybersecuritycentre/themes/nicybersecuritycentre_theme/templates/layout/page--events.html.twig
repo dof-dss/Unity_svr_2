@@ -132,11 +132,13 @@
       {% if not is_front %}
         {{ page.breadcrumb }}
       {% endif %}
-      <div class="event-banner">
         {% if node.field_banner is not empty %}
+      <div class="event-banner">
       {{ node.field_banner|view }}
         {% elseif page.is_child_event %}
+        <div class="event-banner">
         {{ drupal_view('related_events', 'parent_banner_image') }}
+        </div>
         {% endif %}
       </div>
       <div class="container-wrap">

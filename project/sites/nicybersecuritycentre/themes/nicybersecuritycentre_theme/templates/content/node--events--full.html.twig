@@ -67,36 +67,47 @@
  * @see template_preprocess_node()
  */
 #}
+{% set title = {{ drupal_block('page_title_block', wrapper=false) }} %}
+{% set name = 'Events' %}
 <article class="event-content">
   <div class="event-left">
     {{ drupal_block('page_title_block', wrapper=false) }}
-  {{ content.body }}
+    {{ content.body }}
+    {{ (title ~ name) }}
+    {% if drupal_view_result('related_events', 'related_events_list')|length > 0 %}
+      {{ drupal_view('related_events', 'related_events_list') }}
+    {% endif %}
   </div>
   <div class="event-right">
     <div class="event-info">
       <h2>Event Information</h2>
-    <p>
-      {% apply spaceless %}
-    <p>
-      <i class="fas fa-calendar-alt fa-3x" aria-hidden="true"></i>
-      <span>{{ content.field_event_date }}
+      <p>
+        {% apply spaceless %}
+      <p>
+        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+        <span>{{ content.field_event_date }}</span>
+      </p>
 
-        {% if content.field_start_time['#items'].value %}
+      {% if content.field_start_time['#items'].value %}
+        <p>
+          <i class="fas fa-clock" aria-hidden="true"></i>
+          <span>
+          <span>{{ 'Time'|t }}</span>
           <span>{{ content.field_start_time['#items'].value }}
             {% if content.field_start_time['#items'].value2 %}
-              {{ '-'|t }} {{ content.field_start_time['#items'].value2 }}
+            {{ '-'|t }} {{ content.field_start_time['#items'].value2 }}
           </span>
-            {% endif %}
-        </span>
+          </span>
+          {% endif %}
         </p>
-        {% endif %}
-    {% endapply %}
-    <p>
-      <i class="fas fa-map-marker-alt fa-3x" aria-hidden="true"></i>
-      <span>{{ content.field_event_teaser }}</span>
-    </p>
-    </p>
+      {% endif %}
+      {% endapply %}
+      <p>
+        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+        <span>{{ content.field_location }}</span>
+      </p>
+      </p>
     </div>
-    <p><a href="#" class="btn">Register your event</a></p>
+    <p><a href="/event-registration" class="btn">Register your event</a></p>
   </div>
 </article>

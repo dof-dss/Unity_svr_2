@@ -574,6 +574,36 @@ div.event-info {
 
   .fas {
     padding-right: 2rem;
-    width: 5.8rem;
+    width: 6rem;
+  }
+
+  .fa-calendar-alt {
+    font-size: 5rem;
+  }
+
+  .fa-clock {
+    font-size: 4.8rem;
+  }
+
+  .fa-map-marker-alt {
+    font-size: 5.8rem;
+  }
+}
+
+.accordion-row {
+  border-bottom: 1px solid $link;
+  padding-bottom: 1rem;
+
+  &:last-child {
+    border: none;
+  }
+
+  h3 {
+    @include responsive-typo-map($normal-text);
+  }
+
+  h3,
+  p {
+    margin-bottom: 0;
   }
 }
