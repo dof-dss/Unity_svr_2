@@ -1,5 +1,5 @@
 name: 'Nicybersecuritycentre common'
 type: module
 description: 'Nicybersecuritycentre common'
-core_version_requirement: 8.x || ^9
+core_version_requirement: 8.x || ^9 || ^10
 package: 'Custom'
