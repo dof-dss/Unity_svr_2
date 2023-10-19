@@ -72,6 +72,7 @@
     {{ drupal_block('page_title_block', wrapper=false) }}
     {{ content.body }}
     {% if drupal_view_result('related_events', 'related_events_list')|length > 0 %}
+      <h2>{{ node.label ~ ' Events'|t }}</h2>
       {{ drupal_view('related_events', 'related_events_list') }}
     {% endif %}
   </div>
