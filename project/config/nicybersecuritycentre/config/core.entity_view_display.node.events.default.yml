@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.events.body
+    - field.field.node.events.field_banner
     - field.field.node.events.field_event_date
     - field.field.node.events.field_event_teaser
     - field.field.node.events.field_event_type
@@ -11,10 +12,12 @@ dependencies:
     - field.field.node.events.field_meta_tags
     - field.field.node.events.field_organisation_name
     - field.field.node.events.field_organisation_sector
+    - field.field.node.events.field_related_events
     - field.field.node.events.field_start_time
     - field.field.node.events.field_target_audience
     - node.type.events
   module:
+    - options
     - smart_date
     - text
     - timefield
@@ -30,6 +33,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_banner:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: banner_thin
+      link: false
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_event_date:
     type: smartdate_custom
@@ -49,6 +61,22 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
+  field_location:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_related_events:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
   field_start_time:
     type: timefield_default_formatter
     label: hidden
@@ -66,7 +94,6 @@ hidden:
   content_moderation_control: true
   field_event_teaser: true
   field_event_type: true
-  field_location: true
   field_meta_tags: true
   field_organisation_name: true
   field_organisation_sector: true

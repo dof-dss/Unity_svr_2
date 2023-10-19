@@ -23,6 +23,9 @@ function nicybersecuritycentre_common_node_form_validate($form, FormStateInterfa
   $end_time = $form_state->getValue('field_start_time')[0]['value2'];
   if ($node->getType() === 'events') {
     // Don't let the end time be before the start time.
+    if (empty($end_time)) {
+      return;
+    }
     if ($end_time <= $start_time) {
       $form_state->setErrorByName('field_start_time][0][value2', t('End time cannot be before the start time.'));
     }
