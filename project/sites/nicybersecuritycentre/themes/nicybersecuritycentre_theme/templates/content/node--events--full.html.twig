@@ -90,11 +90,11 @@
         <p>
           <i class="fas fa-clock" aria-hidden="true"></i>
           <span>
-          <span>{{ 'Time'|t }}</span>
-          <span>{{ content.field_start_time['#items'].value }}
-            {% if content.field_start_time['#items'].value2 %}
-            {{ '-'|t }} {{ content.field_start_time['#items'].value2 }}
-          </span>
+            <span>{{ 'Time'|t }}</span>
+            <span>{{ content.field_start_time['#items'].value }}
+              {% if content.field_start_time['#items'].value2 %}
+              {{ '-'|t }} {{ content.field_start_time['#items'].value2 }}
+            </span>
           </span>
           {% endif %}
         </p>
