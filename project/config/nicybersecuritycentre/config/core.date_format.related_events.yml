@@ -1,0 +1,8 @@
+uuid: 183958f6-167c-493c-9313-972813dcf2bc
+langcode: en
+status: true
+dependencies: {  }
+id: related_events
+label: 'Related events'
+locked: false
+pattern: 'l d F Y'
