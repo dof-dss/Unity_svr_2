@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.webform_default
   module:
+    - file
     - filter
     - media
     - node
@@ -18,32 +20,12 @@ label: 'authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'access administration menu'
   - 'access content'
-  - 'access media browser'
-  - 'access workbench'
-  - 'create page content'
-  - 'create staff_member content'
-  - 'delete own page content'
-  - 'delete own staff_member content'
-  - 'diff view changes'
-  - 'edit any page content'
-  - 'edit any staff_member content'
-  - 'edit own page content'
-  - 'edit own staff_member content'
-  - 'flag independent_assessor_biographies'
+  - 'delete own files'
   - 'notify of path changes'
-  - 'revert revisions'
-  - 'unflag independent_assessor_biographies'
-  - 'use media wysiwyg'
   - 'use search_api_autocomplete for publications_search'
   - 'use text format basic_html'
-  - 'use text format filtered_html'
-  - 'use text format filtered_html_with_no_images'
+  - 'use text format webform_default'
   - 'view all revisions'
-  - 'view files'
   - 'view media'
-  - 'view moderation history'
-  - 'view moderation messages'
   - 'view own unpublished content'
-  - 'view revisions'
