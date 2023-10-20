@@ -1,38 +1,35 @@
-uuid: f42b3454-0af7-409a-a11c-0e8a07d5bd8d
+uuid: c617b94b-e4b8-4c0a-87f1-e5ebb7653c6c
 langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.full_html
+    - filter.format.webform_default
   module:
     - ckeditor5
-format: full_html
+format: webform_default
 editor: ckeditor5
 settings:
   toolbar:
     items:
+      - heading
+      - '|'
       - bold
       - italic
-      - blockQuote
+      - subscript
       - superscript
-      - removeFormat
       - '|'
-      - heading
-      - insertTable
+      - specialCharacters
+      - '|'
+      - numberedList
+      - bulletedList
       - '|'
       - link
       - '|'
-      - bulletedList
-      - numberedList
+      - indent
+      - outdent
       - '|'
-      - drupalMedia
+      - blockQuote
       - '|'
-      - undo
-      - redo
-      - '|'
-      - importWord
-      - specialCharacters
-      - fullScreen
       - sourceEditing
   plugins:
     ckeditor5_heading:
@@ -47,9 +44,4 @@ settings:
       startIndex: true
     ckeditor5_sourceEditing:
       allowed_tags: {  }
-    linkit_extension:
-      linkit_enabled: true
-      linkit_profile: default
-    media_media:
-      allow_view_mode_override: false
 image_upload: {  }
