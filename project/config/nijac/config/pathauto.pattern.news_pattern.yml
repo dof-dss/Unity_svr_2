@@ -12,7 +12,7 @@ type: 'canonical_entities:node'
 pattern: 'news/[node:title]'
 selection_criteria:
   730dc286-2381-4b1f-97a0-3b82415ed47e:
-    id: node_type
+    id: 'entity_bundle:node'
     bundles:
       news: news
     negate: false
