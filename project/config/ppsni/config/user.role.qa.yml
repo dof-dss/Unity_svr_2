@@ -1,11 +1,14 @@
 uuid: 4de76af7-8204-488b-9117-df1fd6e23d0a
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - file
 _core:
   default_config_hash: o_YCYlJ4mK-6cT4SRvQsKL37Mj9pmDpJdcj4yfunEFk
 id: qa
 label: 'Quality Assurance'
 weight: 6
 is_admin: null
-permissions: {  }
+permissions:
+  - 'delete own files'
