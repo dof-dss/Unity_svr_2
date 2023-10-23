@@ -40,3 +40,4 @@ hidden:
   field_meta_tags: true
   field_next_audit_due: true
   langcode: true
+  search_api_excerpt: true
