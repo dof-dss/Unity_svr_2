@@ -25,6 +25,21 @@
                     "composer/installers": "^2.0"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "dinbror/blazy",
+                "version": "1.8.2",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/dinbror/blazy/archive/1.8.2.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "^1.2.0"
+                }
+            }
         }
     ],
     "require": {
@@ -40,12 +55,11 @@
         "drupal/adminimal_theme": "^1.7",
         "drupal/allowed_formats": "^2.0",
         "drupal/auto_entityqueue": "^2.1",
-        "drupal/blazy": "2.16.0",
+        "drupal/blazy": "^2.21",
         "drupal/block_content_permissions": "^1.11",
         "drupal/block_field": "^1.0@RC",
         "drupal/block_list_override": "^1.0",
         "drupal/block_visibility_groups": "^2.0",
-        "drupal/chosen": "^4.0",
         "drupal/ckeditor": "^1.0",
         "drupal/ckeditor5_allowed_html": "^1.0@dev",
         "drupal/ckeditor5_premium_features": "^1.2",
