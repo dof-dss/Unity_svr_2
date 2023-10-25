@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.article_full
     - core.entity_view_mode.media.embed
     - core.entity_view_mode.media.landscape_float
     - core.entity_view_mode.media.landscape_float_xp
@@ -99,7 +100,7 @@ filters:
     status: true
     weight: -44
     settings:
-      default_view_mode: embed
+      default_view_mode: article_full
       allowed_view_modes:
         embed: embed
         landscape_float: landscape_float
