@@ -55,7 +55,7 @@
         "drupal/adminimal_theme": "^1.7",
         "drupal/allowed_formats": "^2.0",
         "drupal/auto_entityqueue": "^2.1",
-        "drupal/blazy": "^2.21",
+        "drupal/blazy": "2.16.0",
         "drupal/block_content_permissions": "^1.11",
         "drupal/block_field": "^1.0@RC",
         "drupal/block_list_override": "^1.0",
