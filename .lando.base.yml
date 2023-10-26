@@ -164,5 +164,11 @@ tooling:
     user: root
   rebuild-unity-site-themes:
     service: appserver
-    description: Re-builds the Unity themes for each site.
+    description: "Re-builds the Unity themes for each sites. Examples:\n\n
+      > Rebuild all site themes\n
+      lando rebuild-unity-site-themes\n
+      > Rebuild single site theme\n
+      lando rebuild-unity-site-themes --site-names octf\n
+      > Rebuild site themes specified - comma separated\n
+      lando rebuild-unity-site-themes --site-names octf,pbni"
     cmd: "/app/build-themes.sh"

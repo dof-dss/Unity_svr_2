@@ -96,9 +96,9 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: ''
-  page_confirm_path: ''
-  page_theme_name: ''
+  page_submit_path: /event-registration
+  page_confirm_path: /event-registration-success
+  page_theme_name: nicybersecuritycentre_theme
   form_title: both
   form_submit_once: false
   form_open_message: ''

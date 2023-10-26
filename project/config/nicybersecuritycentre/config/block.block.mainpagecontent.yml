@@ -9,7 +9,7 @@ dependencies:
 id: mainpagecontent
 theme: nicybersecuritycentre_theme
 region: content
-weight: 0
+weight: -12
 provider: null
 plugin: system_main_block
 settings:

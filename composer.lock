@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "939658c39cf015972f7d0357bdaed8b7",
+    "content-hash": "cbcbc1d3b85ad61da19590205dcbffe6",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2238,6 +2238,10 @@
                 {
                     "name": "realityloop",
                     "homepage": "https://www.drupal.org/user/139189"
+                },
+                {
+                    "name": "rjjakes",
+                    "homepage": "https://www.drupal.org/user/3457245"
                 }
             ],
             "description": "Drupal administration theme with modern minimalist design.",
@@ -2615,6 +2619,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "heddn",
+                    "homepage": "https://www.drupal.org/user/1463982"
+                },
                 {
                     "name": "KarenS",
                     "homepage": "https://www.drupal.org/user/45874"
@@ -3659,6 +3667,14 @@
                     "name": "Marc Janson",
                     "homepage": "https://www.drupal.org/u/scorpid",
                     "role": "Developer"
+                },
+                {
+                    "name": "Steven Buteneers",
+                    "homepage": "https://www.drupal.org/user/3301055"
+                },
+                {
+                    "name": "Dannyjanse",
+                    "homepage": "https://www.drupal.org/user/3774093"
                 }
             ],
             "description": "Prevent loading of content with a privacy impact until consent is given. This module needs a separate cookie consent manager.",
@@ -5008,6 +5024,10 @@
                 {
                     "name": "All contributors",
                     "homepage": "https://www.drupal.org/node/2625160/committers"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
                 },
                 {
                     "name": "StryKaizer",
@@ -7310,6 +7330,10 @@
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
+                    "name": "Kristen Pol",
+                    "homepage": "https://www.drupal.org/user/8389"
+                },
+                {
                     "name": "pifagor",
                     "homepage": "https://www.drupal.org/user/2375692"
                 }
@@ -8560,8 +8584,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.1+1-dev",
-                    "datestamp": "1604520609",
+                    "version": "8.x-1.2+1-dev",
+                    "datestamp": "1691006121",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -17147,16 +17171,16 @@
         },
         {
             "name": "dof-dss/maestro-hosting",
-            "version": "1.0.6",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/maestro-hosting.git",
-                "reference": "94435f699ed4f7a43ceac9e9542761855b94f21f"
+                "reference": "b1818f4b486535bf0df3a2dde53f87bb44ade80e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/maestro-hosting/zipball/94435f699ed4f7a43ceac9e9542761855b94f21f",
-                "reference": "94435f699ed4f7a43ceac9e9542761855b94f21f",
+                "url": "https://api.github.com/repos/dof-dss/maestro-hosting/zipball/b1818f4b486535bf0df3a2dde53f87bb44ade80e",
+                "reference": "b1818f4b486535bf0df3a2dde53f87bb44ade80e",
                 "shasum": ""
             },
             "require": {
@@ -17181,22 +17205,22 @@
             "description": "Maestro hosting resources",
             "support": {
                 "issues": "https://github.com/dof-dss/maestro-hosting/issues",
-                "source": "https://github.com/dof-dss/maestro-hosting/tree/1.0.6"
+                "source": "https://github.com/dof-dss/maestro-hosting/tree/1.0.9"
             },
-            "time": "2023-05-23T09:11:52+00:00"
+            "time": "2023-10-04T10:22:48+00:00"
         },
         {
             "name": "dof-dss/maestro-shell",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/maestro-shell.git",
-                "reference": "55e9603196361a224c92f9d33e222ae2d43360af"
+                "reference": "03ac225f708b9869d21ff349c01703f79c111126"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/maestro-shell/zipball/55e9603196361a224c92f9d33e222ae2d43360af",
-                "reference": "55e9603196361a224c92f9d33e222ae2d43360af",
+                "url": "https://api.github.com/repos/dof-dss/maestro-shell/zipball/03ac225f708b9869d21ff349c01703f79c111126",
+                "reference": "03ac225f708b9869d21ff349c01703f79c111126",
                 "shasum": ""
             },
             "require": {
@@ -17239,9 +17263,9 @@
             "description": "Shell for working with Maestro projects.",
             "support": {
                 "issues": "https://github.com/dof-dss/maestro-shell/issues",
-                "source": "https://github.com/dof-dss/maestro-shell/tree/1.0.4"
+                "source": "https://github.com/dof-dss/maestro-shell/tree/1.0.5"
             },
-            "time": "2023-05-16T08:20:34+00:00"
+            "time": "2023-10-04T13:07:42+00:00"
         },
         {
             "name": "drupal/coder",
