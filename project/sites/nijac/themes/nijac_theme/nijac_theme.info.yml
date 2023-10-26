@@ -2,7 +2,7 @@ name: nijac Theme
 type: theme
 description: 'Base theme for Drupal 8 sites'
 package: NICS
-core_version_requirement: ^8.8 || ^9
+core_version_requirement: ^8.8 || ^9 || ^10
 
 libraries:
   - nijac_theme/site-styling

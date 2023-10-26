@@ -12,7 +12,7 @@ type: 'canonical_entities:node'
 pattern: 'consultations/[node:title]'
 selection_criteria:
   3b57b096-f604-463f-bd3a-d13aa23f2905:
-    id: node_type
+    id: 'entity_bundle:node'
     bundles:
       consultation: consultation
     negate: false
