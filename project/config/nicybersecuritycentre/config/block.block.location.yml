@@ -1,4 +1,4 @@
-uuid: 2f9d2416-6e7d-4bcc-b851-7040e0ab51c9
+uuid: 08190847-86f9-4047-b120-d98dd1208b9c
 langcode: en
 status: true
 dependencies:
@@ -20,6 +20,7 @@ settings:
   label: Location
   label_display: visible
   provider: facets
+  context_mapping: {  }
   block_id: location
 visibility:
   request_path:
