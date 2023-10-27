@@ -7,9 +7,9 @@ dependencies:
     - field.field.node.events.body
     - field.field.node.events.field_banner
     - field.field.node.events.field_event_date
+    - field.field.node.events.field_event_location
     - field.field.node.events.field_event_teaser
     - field.field.node.events.field_event_type
-    - field.field.node.events.field_location
     - field.field.node.events.field_meta_tags
     - field.field.node.events.field_organisation_name
     - field.field.node.events.field_organisation_sector
@@ -22,7 +22,9 @@ dependencies:
     - layout_builder
     - metatag
     - options
+    - smart_date
     - text
+    - timefield
     - user
 third_party_settings:
   layout_builder:
@@ -34,7 +36,6 @@ third_party_settings:
         - field_event_teaser
         - field_event_type
         - field_organisation_name
-        - field_location
         - field_organisation_sector
         - field_target_audience
         - field_related_events
@@ -42,7 +43,7 @@ third_party_settings:
       label: 'Additional content details'
       parent_name: ''
       region: content
-      weight: 2
+      weight: 5
       format_type: html_element
       format_settings:
         classes: field-collection
@@ -76,34 +77,49 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_event_date:
+    type: smartdate_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+      format: default
+      force_chronological: false
+      add_classes: false
+      time_wrapper: true
+      localize: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_event_location:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_event_teaser:
     type: string
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
+    weight: 7
     region: content
   field_event_type:
     type: list_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 1
-    region: content
-  field_location:
-    type: list_default
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    weight: 3
+    weight: 8
     region: content
   field_meta_tags:
     type: metatag_empty_formatter
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 7
+    weight: 13
     region: content
   field_organisation_name:
     type: string
@@ -111,7 +127,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
+    weight: 9
     region: content
   field_organisation_sector:
     type: entity_reference_label
@@ -119,7 +135,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 4
+    weight: 10
     region: content
   field_related_events:
     type: entity_reference_label
@@ -127,7 +143,20 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 6
+    weight: 12
+    region: content
+  field_start_time:
+    type: timefield_default_formatter
+    label: hidden
+    settings:
+      display_format:
+        hour: g
+        minute: i
+        separator: ':'
+        period: a
+        periodSeparator: ''
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_target_audience:
     type: entity_reference_label
@@ -135,12 +164,10 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 5
+    weight: 11
     region: content
 hidden:
   content_moderation_control: true
-  field_event_date: true
-  field_start_time: true
   langcode: true
   links: true
   search_api_excerpt: true
