@@ -1,6 +1,9 @@
 <?php
 
+use Drupal\Core\Cache\Cache;
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\NodeInterface;
 
 /**
  * Implements hook_form_FORM_ID_form_alter().
@@ -28,6 +31,23 @@ function nicybersecuritycentre_common_node_form_validate($form, FormStateInterfa
     }
     if ($end_time <= $start_time) {
       $form_state->setErrorByName('field_start_time][0][value2', t('End time cannot be before the start time.'));
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_presave().
+ */
+function nicybersecuritycentre_common_entity_presave(EntityInterface $entity) {
+  // This will fire when nodes are created or edited.
+  if ($entity instanceof NodeInterface && $entity->bundle() === 'events') {
+    // Get the parent node ID.
+    $related_event_nid = $entity->get('field_related_events')->target_id;
+
+    // Invalidate the cache on the parent node when a child node is saved.
+    if (!empty($related_event_nid)) {
+      $tags = ['node:' . $related_event_nid];
+      Cache::invalidateTags($tags);
     }
   }
 }
