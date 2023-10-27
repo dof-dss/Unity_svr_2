@@ -4,15 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.events.body
-    - field.field.node.events.field_banner
     - field.field.node.events.field_event_date
-    - field.field.node.events.field_event_location
     - field.field.node.events.field_event_teaser
     - field.field.node.events.field_event_type
+    - field.field.node.events.field_location
     - field.field.node.events.field_meta_tags
     - field.field.node.events.field_organisation_name
     - field.field.node.events.field_organisation_sector
-    - field.field.node.events.field_related_events
     - field.field.node.events.field_start_time
     - field.field.node.events.field_target_audience
     - node.type.events
@@ -33,15 +31,6 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_banner:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: banner_thin
-      link: false
-    third_party_settings: {  }
-    weight: 0
-    region: content
   field_event_date:
     type: smartdate_custom
     label: inline
@@ -57,25 +46,17 @@ content:
       date_first: '1'
       ampm_reduce: '1'
       site_time_toggle: '1'
+      tooltip:
+        date_format: ''
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
     third_party_settings: {  }
     weight: 2
-    region: content
-  field_event_location:
-    type: entity_reference_label
-    label: hidden
-    settings:
-      link: false
-    third_party_settings: {  }
-    weight: 4
-    region: content
-  field_related_events:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: default
-      link: true
-    third_party_settings: {  }
-    weight: 5
     region: content
   field_start_time:
     type: timefield_default_formatter
@@ -94,6 +75,7 @@ hidden:
   content_moderation_control: true
   field_event_teaser: true
   field_event_type: true
+  field_location: true
   field_meta_tags: true
   field_organisation_name: true
   field_organisation_sector: true
