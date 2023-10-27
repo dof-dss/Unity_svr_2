@@ -1,4 +1,4 @@
-uuid: 873e4d46-d0a5-4588-b47d-e109bebf040c
+uuid: 440d1ab9-1d08-4efb-81d4-f0e2689132cd
 langcode: en
 status: true
 dependencies:
@@ -27,6 +27,9 @@ settings:
       - numberedList
       - '|'
       - drupalMedia
+      - '|'
+      - undo
+      - redo
       - '|'
       - importWord
       - specialCharacters

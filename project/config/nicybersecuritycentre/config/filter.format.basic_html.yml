@@ -71,7 +71,7 @@ filters:
     id: entity_embed
     provider: entity_embed
     status: true
-    weight: -46
+    weight: -45
     settings: {  }
   filter_autop:
     id: filter_autop
@@ -121,7 +121,7 @@ filters:
     id: media_embed
     provider: media
     status: true
-    weight: -45
+    weight: -46
     settings:
       default_view_mode: article_full
       allowed_view_modes:
@@ -137,13 +137,13 @@ filters:
     id: noreferrer
     provider: noreferrer
     status: true
-    weight: -49
+    weight: -48
     settings: {  }
   origins_media_cookie_content_blocker_embed_filter:
     id: origins_media_cookie_content_blocker_embed_filter
     provider: origins_common
     status: false
-    weight: -48
+    weight: -47
     settings:
       replacement_text: 'Click here to view the video content'
   token_filter:
@@ -156,14 +156,14 @@ filters:
   filter_image_lazy_load:
     id: filter_image_lazy_load
     provider: filter
-    status: false
+    status: true
     weight: -43
     settings: {  }
   filter_allowed:
     id: filter_allowed
     provider: ckeditor5_allowed_html
     status: true
-    weight: -47
+    weight: -49
     settings:
       allowed_html: '<a class href hreflang data-entity-type data-entity-uuid data-entity-substitution> <em> <strong> <cite> <blockquote cite> <code> <ul class type> <ol class start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <p class translate> <br> <span> <img src alt height width data-* typeof> <sup> <table class> <caption> <tbody> <thead> <tfoot> <th scope> <td> <tr> <drupal-entity data-entity-type data-entity-uuid data-entity-substitution data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button alt title class> <picture data-* alt title class> <source srcset media type> <address> <drupal-media data-entity-type data-entity-id data-entity-uuid data-entity-substitution data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button data-view-mode alt title class>'
       filter_html_help: '0'
