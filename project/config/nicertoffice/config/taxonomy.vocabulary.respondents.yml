@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: Respondents
 vid: respondents
-description: 'A list of trade unions and employers'' associations whose activities are covered by the Certification Officer.'
+description: "A list of trade unions and employers' associations whose activities are covered by the Certification Officer."
 weight: 0

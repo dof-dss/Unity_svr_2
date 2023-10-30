@@ -27,6 +27,8 @@ content:
     settings:
       responsive_image_style: portrait_float_expandable
       image_link: ''
+      image_loading:
+        attribute: eager
     third_party_settings: {  }
     type: responsive_image
     weight: 0

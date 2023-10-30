@@ -16,6 +16,11 @@ targetEntityType: node
 bundle: faq
 mode: teaser
 content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -25,3 +30,4 @@ hidden:
   field_faq: true
   field_meta_tags: true
   langcode: true
+  search_api_excerpt: true

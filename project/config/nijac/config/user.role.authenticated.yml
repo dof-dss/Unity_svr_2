@@ -2,7 +2,12 @@ uuid: c0bfa32d-947d-4858-9990-92e0c826aee2
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.webform_default
   module:
+    - file
+    - filter
     - media
     - node
     - system
@@ -13,12 +18,10 @@ label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
-  - 'access shortcuts'
-  - 'post comments'
-  - 'skip comment approval'
+  - 'delete own files'
   - 'use text format basic_html'
+  - 'use text format webform_default'
   - 'view all revisions'
   - 'view media'
   - 'view own unpublished content'

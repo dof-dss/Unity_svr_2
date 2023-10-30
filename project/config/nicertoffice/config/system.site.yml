@@ -2,7 +2,7 @@ _core:
   default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
 langcode: en
 uuid: f4339a51-13d2-4f2e-ab62-6339830ef77f
-name: 'Northern Ireland Certification Officer for Trade Unions and Employers'' Associations'
+name: "Northern Ireland Certification Officer for Trade Unions and Employers' Associations"
 mail: info@nicertoffice.org.uk
 slogan: ''
 page:
@@ -12,5 +12,5 @@ page:
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
-frontpage_title: 'Welcome to Northern Ireland Certification Officer for Trade Unions and Employers'' Associations'
+frontpage_title: "Welcome to Northern Ireland Certification Officer for Trade Unions and Employers' Associations"
 frontpage_show_title: 0

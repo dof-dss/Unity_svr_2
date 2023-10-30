@@ -1,8 +1,0 @@
-uuid: e72521d6-0d0e-4aef-80bf-9f01a40175f8
-langcode: en
-status: true
-dependencies: {  }
-id: related_events_time_date
-label: 'Related events time date'
-locked: false
-pattern: 'g:ia - d F Y'

@@ -1,9 +1,12 @@
 uuid: aadd795f-8b44-4d00-94b1-3987931c6e5c
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - file
 id: qa
 label: 'Quality Assurance'
 weight: 4
 is_admin: null
-permissions: {  }
+permissions:
+  - 'delete own files'

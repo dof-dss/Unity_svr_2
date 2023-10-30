@@ -53,6 +53,7 @@ third_party_settings:
       include_language_independent: true
       specific_languages: {  }
       use_language_undefined_as_fallback_language: false
+      use_universal_collation: false
 id: decision
 name: Decision
 description: ''
@@ -128,7 +129,7 @@ field_settings:
     label: 'Title fulltext'
     property_path: aggregated_field
     type: text
-    boost: !!float 13
+    boost: 13.0
     configuration:
       type: union
       fields:
