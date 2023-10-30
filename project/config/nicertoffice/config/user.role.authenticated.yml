@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.webform_default
   module:
+    - file
     - filter
     - media
     - node
@@ -17,19 +19,11 @@ label: 'authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'access administration menu'
   - 'access content'
-  - 'access media browser'
-  - 'access workbench'
-  - 'diff view changes'
+  - 'delete own files'
   - 'notify of path changes'
-  - 'revert revisions'
-  - 'use media wysiwyg'
   - 'use text format basic_html'
-  - 'use text format filtered_html'
-  - 'use text format filtered_html_with_no_images'
+  - 'use text format webform_default'
   - 'view all revisions'
-  - 'view files'
   - 'view media'
   - 'view own unpublished content'
-  - 'view revisions'

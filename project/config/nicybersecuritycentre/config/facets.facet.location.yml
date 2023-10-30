@@ -1,4 +1,4 @@
-uuid: 4c928198-00dd-4bc5-982b-7194ed752512
+uuid: fc079f7c-632e-4191-ba0a-286cce7998be
 langcode: en
 status: true
 dependencies:
@@ -10,19 +10,24 @@ dependencies:
     - search_api
 third_party_settings:
   facets_pretty_paths:
-    coder: default_coder
+    coder: taxonomy_term_coder
 id: location
 name: Location
 weight: 0
 min_count: 1
+missing: false
+missing_label: others
 url_alias: location
 facet_source_id: 'search_api:views_page__events_search__events_search_page'
-field_identifier: field_location
+field_identifier: field_event_location
 query_operator: and
 hard_limit: 50
 exclude: false
 use_hierarchy: false
 keep_hierarchy_parents_active: false
+hierarchy:
+  type: taxonomy
+  config: {  }
 expand_hierarchy: false
 enable_parent_when_child_gets_disabled: true
 widget:
@@ -54,8 +59,13 @@ processor_configs:
       sort: 40
     settings:
       sort: ASC
-  list_item:
-    processor_id: list_item
+  hierarchy_processor:
+    processor_id: hierarchy_processor
+    weights:
+      build: 100
+    settings: {  }
+  translate_entity:
+    processor_id: translate_entity
     weights:
       build: 5
     settings: {  }

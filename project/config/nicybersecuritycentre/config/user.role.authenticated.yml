@@ -2,7 +2,11 @@ uuid: ae0b2f1f-d7aa-4ace-976a-5560a7b28cc3
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.webform_default
   module:
+    - file
+    - filter
     - media
     - node
     - pathauto
@@ -14,24 +18,10 @@ label: 'authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'access administration menu'
   - 'access content'
-  - 'access media browser'
-  - 'access workbench'
-  - 'create page content'
-  - 'delete own page content'
-  - 'diff view changes'
-  - 'edit any page content'
-  - 'edit own page content'
+  - 'delete own files'
   - 'notify of path changes'
-  - 'revert revisions'
-  - 'use media wysiwyg'
-  - 'use text format filtered_html'
-  - 'use text format filtered_html_with_no_images'
+  - 'use text format webform_default'
   - 'view all revisions'
-  - 'view files'
   - 'view media'
-  - 'view moderation history'
-  - 'view moderation messages'
   - 'view own unpublished content'
-  - 'view revisions'

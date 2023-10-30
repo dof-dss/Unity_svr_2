@@ -60,6 +60,8 @@ third_party_settings:
     multilingual:
       limit_to_content_language: false
       include_language_independent: true
+      use_language_undefined_as_fallback_language: false
+      use_universal_collation: false
 id: default_content
 name: 'Default content'
 description: ''
@@ -117,7 +119,7 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: field_teaser
     type: text
-    boost: !!float 2
+    boost: 2.0
     dependencies:
       config:
         - field.storage.node.field_teaser
@@ -169,7 +171,7 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: title
     type: text
-    boost: !!float 13
+    boost: 13.0
     dependencies:
       module:
         - node
@@ -177,7 +179,7 @@ field_settings:
     label: 'Title fulltext'
     property_path: aggregated_field
     type: text
-    boost: !!float 13
+    boost: 13.0
     configuration:
       type: union
       fields:

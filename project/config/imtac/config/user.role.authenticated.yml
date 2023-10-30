@@ -2,8 +2,12 @@ uuid: 6341fc63-4a21-4be2-accc-b85d9b153de8
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.webform_default
   module:
     - contact
+    - file
+    - filter
     - media
     - node
     - system
@@ -16,6 +20,8 @@ is_admin: false
 permissions:
   - 'access content'
   - 'access site-wide contact form'
+  - 'delete own files'
+  - 'use text format webform_default'
   - 'view all revisions'
   - 'view media'
   - 'view own unpublished content'

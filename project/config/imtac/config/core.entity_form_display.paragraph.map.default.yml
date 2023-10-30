@@ -149,7 +149,7 @@ content:
           marker_opacity:
             weight: -1
             settings:
-              opacity: !!float 1
+              opacity: 1.0
             enabled: false
           geolocation_google_maps_control_directions:
             weight: 0

@@ -30,3 +30,4 @@ hidden:
   field_next_audit_due: true
   langcode: true
   links: true
+  search_api_excerpt: true

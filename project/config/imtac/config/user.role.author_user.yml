@@ -16,6 +16,7 @@ dependencies:
   module:
     - content_moderation
     - entity_browser
+    - file
     - media
     - menu_admin_per_menu
     - moderation_sidebar
@@ -50,6 +51,7 @@ permissions:
   - 'delete own document media'
   - 'delete own feature content'
   - 'delete own file media'
+  - 'delete own files'
   - 'delete own image media'
   - 'delete own news content'
   - 'delete own page content'

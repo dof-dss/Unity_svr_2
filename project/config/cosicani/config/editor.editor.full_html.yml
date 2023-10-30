@@ -1,75 +1,52 @@
-uuid: 62b1a511-d607-4ba0-9bae-bbd45fae912a
+uuid: 6a9731aa-5f59-46ea-9ba2-ee28cf96c53b
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.full_html
   module:
-    - ckeditor
-_core:
-  default_config_hash: kmvRxbwKE0FRWCwWZeyskrdtewzUb1HbZ9eERJDwBwE
+    - ckeditor5
 format: full_html
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - Blockquote
-            - Superscript
-            - '-'
-            - RemoveFormat
-        -
-          name: 'Block Formatting'
-          items:
-            - Format
-            - Styles
-            - Table
-        -
-          name: Linking
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - DrupalMediaLibrary
-            - map
-        -
-          name: Tasks
-          items:
-            - Undo
-            - Redo
-        -
-          name: Tools
-          items:
-            - Cut
-            - Copy
-            - PasteText
-            - PasteFromWord
-            - SpecialChar
-            - Maximize
-            - Source
+    items:
+      - bold
+      - italic
+      - blockQuote
+      - superscript
+      - removeFormat
+      - '|'
+      - heading
+      - insertTable
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - undo
+      - redo
+      - '|'
+      - drupalMedia
+      - '|'
+      - importWord
+      - specialCharacters
+      - fullScreen
   plugins:
-    drupallink:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_list:
+      reversed: true
+      startIndex: true
+    linkit_extension:
       linkit_enabled: true
       linkit_profile: default
-    stylescombo:
-      styles: ''
-image_upload:
-  status: true
-  scheme: public
-  directory: inline-images
-  max_size: ''
-  max_dimensions:
-    width: null
-    height: null
+    media_media:
+      allow_view_mode_override: false
+image_upload: {  }

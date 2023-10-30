@@ -4,29 +4,29 @@
       <str name="field">spellcheck_en</str>
       <str name="classname">solr.DirectSolrSpellChecker</str>
       <str name="distanceMeasure">internal</str>
-      <str name="accuracy">0.01</str>
+      <str name="accuracy">0.5</str>
       <str name="maxEdits">2</str>
-      <str name="minPrefix">3</str>
-      <str name="maxInspections">10</str>
-      <str name="minQueryLength">3</str>
-      <str name="maxQueryFrequency">0.1</str>
-      <str name="thresholdTokenFrequency">.0001</str>
-      <str name="onlyMorePopular">false</str>
+      <str name="minPrefix">1</str>
+      <str name="maxInspections">5</str>
+      <str name="minQueryLength">4</str>
+      <str name="maxQueryFrequency">0.01</str>
+      <str name="thresholdTokenFrequency">.01</str>
+      <str name="onlyMorePopular">true</str>
     </lst>
-
+  
     <lst name="spellchecker">
       <str name="name">und</str>
       <str name="field">spellcheck_und</str>
       <str name="classname">solr.DirectSolrSpellChecker</str>
       <str name="distanceMeasure">internal</str>
-      <str name="accuracy">0.01</str>
+      <str name="accuracy">0.5</str>
       <str name="maxEdits">2</str>
-      <str name="minPrefix">3</str>
-      <str name="maxInspections">10</str>
-      <str name="minQueryLength">3</str>
-      <str name="maxQueryFrequency">0.1</str>
-      <str name="thresholdTokenFrequency">.0001</str>
-      <str name="onlyMorePopular">false</str>
+      <str name="minPrefix">1</str>
+      <str name="maxInspections">5</str>
+      <str name="minQueryLength">4</str>
+      <str name="maxQueryFrequency">0.01</str>
+      <str name="thresholdTokenFrequency">.01</str>
+      <str name="onlyMorePopular">true</str>
     </lst>
   </searchComponent>
 <searchComponent name="suggest" class="solr.SuggestComponent">
@@ -40,7 +40,7 @@
       <str name="buildOnCommit">true</str>
       <str name="buildOnStartup">false</str>
     </lst>
-
+  
     <lst name="suggester">
       <str name="name">und</str>
       <str name="lookupImpl">AnalyzingInfixLookupFactory</str>
@@ -71,20 +71,6 @@
     <str>terms</str>
     <str>spellcheck</str>
     <str>suggest</str>
-  </arr>
-</requestHandler>
-
-<!--
-  Elevator
-  7.0.0
--->
-<requestHandler name="/elevate" class="solr.SearchHandler" startup="lazy">
-  <lst name="defaults">
-    <str name="echoParams">explicit</str>
-    <str name="df">id</str>
-  </lst>
-  <arr name="last-components">
-    <str>elevator</str>
   </arr>
 </requestHandler>
 
@@ -126,7 +112,7 @@
     <str name="echoParams">explicit</str>
     <str name="omitHeader">true</str>
     <str name="timeAllowed">${solr.selectSearchHandler.timeAllowed:-1}</str>
-    <str name="spellcheck">true</str>
+    <str name="spellcheck">false</str>
   </lst>
   <arr name="last-components">
     <str>spellcheck</str>
@@ -142,7 +128,6 @@
   <lst name="defaults">
     <str name="df">id</str>
     <str name="spellcheck.dictionary">und</str>
-    <str name="spellcheck.dictionary">wordbreak</str>
     <str name="spellcheck">on</str>
     <str name="spellcheck.onlyMorePopular">false</str>
     <str name="spellcheck.extendedResults">false</str>

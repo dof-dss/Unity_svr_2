@@ -14,6 +14,7 @@ dependencies:
     - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
+    - file
     - media
     - menu_admin_per_menu
     - moderation_sidebar
@@ -30,7 +31,6 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content overview'
-  - 'access location_browser entity browser pages'
   - 'access toolbar'
   - 'administer main menu items'
   - 'create audio media'
@@ -45,6 +45,7 @@ permissions:
   - 'delete own audio media'
   - 'delete own document media'
   - 'delete own file media'
+  - 'delete own files'
   - 'delete own image media'
   - 'delete own news content'
   - 'delete own page content'

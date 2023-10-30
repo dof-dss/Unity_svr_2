@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: hosted
 label: hosted
-description: 'Use for any sites that are ''hosted'' and not running locally, whether development, QA or production.'
+description: "Use for any sites that are 'hosted' and not running locally, whether development, QA or production."
 weight: 0
 folder: ../project/config/nijac/hosted
 module: {  }
