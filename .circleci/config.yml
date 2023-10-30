@@ -249,7 +249,7 @@ jobs:
             do
               result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
               if [[ -n $result ]]; then
-                result2=$(platform drush "pml -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Fastly (fastly)" || true) )
+                result2=$(platform drush "pml --status=enabled -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Fastly (fastly)" || true) )
                 if [[ -n $result2 ]]; then
                   echo "***** Uninstall Fastly - ${site} *****"
                   platform drush "pmu fastly -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
@@ -332,6 +332,9 @@ workflows:
       - deprecated_code:
           requires:
             - build
+      #- check_illegal_updates:
+      #    requires:
+      #      - build
 
   # A nightly build of the project, using all dof-dss packages at HEAD from development branch.
   nightly-edge-build:
