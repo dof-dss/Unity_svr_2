@@ -87,6 +87,15 @@
 }
 
 .path-events {
+  .content-sidebar-wrap {
+    @media screen and (max-width: $lap){
+      padding: 0 1rem;
+    }
+  }
+
+  .search-page .sidebar-first-layout {
+    padding-left: 0;
+  }
 
   #content .facet-summary {
     margin-bottom: 2rem;
@@ -484,6 +493,10 @@ body:not(.front) {
 .node-type-events {
   .content-sidebar-wrap {
     width: 100%;
+
+    @media screen and (max-width: $lap){
+      padding: 0 1rem;
+    }
   }
 }
 
