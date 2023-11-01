@@ -150,7 +150,7 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: inline
-  confirmation_url: '<front>'
+  confirmation_url: ''
   confirmation_title: ''
   confirmation_message: '<p>Your feedback has been sent. Thank you</p>'
   confirmation_attributes: {  }
