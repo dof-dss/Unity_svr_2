@@ -332,9 +332,9 @@ workflows:
       - deprecated_code:
           requires:
             - build
-      #- check_illegal_updates:
-      #    requires:
-      #      - build
+      - check_illegal_updates:
+          requires:
+            - build
 
   # A nightly build of the project, using all dof-dss packages at HEAD from development branch.
   nightly-edge-build:
