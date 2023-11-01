@@ -69,7 +69,7 @@ commands:
       - run:
           name: Switch dof-dss packages to HEAD on development branch
           command: |
-            composer require dof-dss/nicsdru_unity_theme:dev-10-dev \
+            composer require dof-dss/nicsdru_unity_theme:dev-10.x-dev \
               dof-dss/nicsdru_origins_modules:dev-10.x-dev \
                 dof-dss/nicsdru_unity_modules:dev-10.x-dev
   install_psh_cli:
