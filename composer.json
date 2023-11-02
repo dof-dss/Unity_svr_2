@@ -305,5 +305,10 @@
         "mglaman/drupal-check": "^1.4",
         "previousnext/phpunit-finder": "^2.0",
         "slevomat/coding-standard": "^8.13"
+    },
+    "scripts": {
+        "post-package-update": [
+            "Maestro\\Shell\\Events\\ComposerEventListener::postPackageUpdate"
+        ]
     }
 }
