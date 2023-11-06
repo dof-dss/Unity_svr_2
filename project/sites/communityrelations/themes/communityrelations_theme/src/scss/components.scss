@@ -5,19 +5,18 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
-#header {
-  @media screen and (min-width: $tab) {
-  margin-bottom: 5rem;
-}
-  }
+.top_left {
+  margin: 1rem 0 1rem;
 
-.top_left #logo {
-  img {
-    height: 10rem;
-  }
-     @media screen and (min-width: $tab) {
+  #logo {
+    img {
+      height: 11rem;
+    }
+
+    @media screen and (min-width: $tab) {
       img {
         height: 14rem;
+      }
     }
   }
 }
