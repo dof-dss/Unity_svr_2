@@ -7,9 +7,8 @@ dependencies:
     - origins_toc
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
   origins_toc:
     toc_enable: 0
     toc_title: 'Table of contents'
