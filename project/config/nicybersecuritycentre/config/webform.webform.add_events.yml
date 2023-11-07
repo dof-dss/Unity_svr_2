@@ -230,7 +230,7 @@ settings:
   confirmation_type: page
   confirmation_url: ''
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: '<p>Thank you for your submission.</p>'
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -318,15 +318,15 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: _default
+      to_mail: info@nicybersecuritycentre.gov.uk
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: _default
+      from_mail: '[webform_submission:values:email:raw]'
       from_options: {  }
-      from_name: _default
+      from_name: '[webform_submission:values:organisation_name:raw]'
       reply_to: ''
       return_path: ''
       sender_mail: ''
