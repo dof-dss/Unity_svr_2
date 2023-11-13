@@ -194,6 +194,9 @@
                 "Handle missing core version": "https://www.drupal.org/files/issues/2019-12-19/easy_install_core_version-3101883-0.patch",
                 "non-existent service entity.manager": "https://www.drupal.org/files/issues/2020-12-08/3162621-4.patch"
             },
+            "drupal/entityqueue": {
+                "Allow unique records only": "https://www.drupal.org/files/issues/2021-02-07/entity_queue_unique_records-1240856-3197148.patch"
+            },
             "drupal/facets": {
                 "Pass facet object onto child items": "https://www.drupal.org/files/issues/2019-11-13/child_item-3094143-2.patch"
             },
