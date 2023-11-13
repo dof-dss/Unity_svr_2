@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c55083d8e3054bac8f853f3220c7452",
+    "content-hash": "e95395d9c39b6cf99daae1050f63680a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1966,6 +1966,10 @@
                 {
                     "name": "paboden",
                     "homepage": "https://www.drupal.org/user/329794"
+                },
+                {
+                    "name": "pbonnefoi",
+                    "homepage": "https://www.drupal.org/user/1319492"
                 },
                 {
                     "name": "shadcn",
@@ -8913,6 +8917,10 @@
                     "name": "Johan Gant",
                     "homepage": "https://www.drupal.org/u/johangant",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "omahm",
+                    "homepage": "https://www.drupal.org/user/540058"
                 }
             ],
             "description": "Provides a report of what node entities link to the currently viewed node.",
