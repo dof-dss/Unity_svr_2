@@ -20,9 +20,6 @@ settings:
     -
       value: hybrid
       label: Hybrid
-    -
-      value: od
-      label: 'On Demand'
   allowed_values_function: ''
 module: options
 locked: false
