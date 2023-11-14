@@ -92,6 +92,7 @@
         "drupal/file_delete_ui": "^1.0@beta",
         "drupal/filelog": "^2.1",
         "drupal/flag": "^4.0@beta",
+        "drupal/flood_control": "^2.3",
         "drupal/geocoder": "^4.9",
         "drupal/geolocation": "^3.12",
         "drupal/google_tag": "^2.0",
