@@ -45,7 +45,9 @@ elements: |-
         '#required': true
     strategy_pillar:
       '#type': checkboxes
-      '#title': 'Please select the National Cyber Strategy Pillar that your event will cover'
+      '#title': 'Please select the National Cyber Strategy Pillar that your event aligns with'
+      '#description': '<p>Choose 1 or both of the options.</p>'
+      '#description_display': before
       '#options':
         'Pillar 1 – Cyber Ecosystem': 'Pillar 1 – Cyber Ecosystem'
         'Pillar 2 – Cyber Resilience': 'Pillar 2 – Cyber Resilience'
@@ -66,15 +68,22 @@ elements: |-
     estimated_audience_number:
       '#type': number
       '#title': 'Estimated audience number'
+    event_open_closed:
+      '#type': select
+      '#title': 'Is the Event open/closed?'
+      '#options':
+        Open: Open
+        Closed: Closed
+      '#required': true
     is_there_an_event_website_we_can_share:
       '#type': url
       '#title': 'Is there an event website we can share?'
     is_there_a_booking_link_for_the_event:
       '#type': url
-      '#title': 'Is there a booking link for the event?'
+      '#title': 'Please provide link to register for event if applicable?'
     venue_details:
       '#type': fieldset
-      '#title': 'Venue details'
+      '#title': 'For in person event add event venue details'
       venue_name:
         '#type': textfield
         '#title': 'Venue name'
