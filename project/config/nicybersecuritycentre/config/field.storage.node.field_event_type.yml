@@ -12,17 +12,14 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: hybrid
-      label: Hybrid
-    -
       value: person
       label: 'In person'
     -
-      value: od
-      label: 'On Demand'
-    -
       value: virtual
       label: Virtual
+    -
+      value: hybrid
+      label: Hybrid
   allowed_values_function: ''
 module: options
 locked: false
