@@ -12,6 +12,7 @@ default_docker_image: &docker_image
         PHP_INI_MEMORY_LIMIT: -1
         PHP_INI_MAX_EXECUTION_TIME: 60
         PHP_INI_MAX_INPUT_TIME: 60
+        EDGE_BUILD_BRANCH: "edge"
         CPPFLAGS: "-DPNG_ARM_NEON_OPT=0"
 
 # Re-usable commands.
