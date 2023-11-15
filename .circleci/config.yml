@@ -304,6 +304,21 @@ jobs:
 
 workflows:
   version: 2
+  build-test-deploy:
+    jobs:
+      - build
+      - unity_base_checks:
+          requires:
+            - build
+      - coding_standards:
+          requires:
+            - build
+      - deprecated_code:
+          requires:
+            - build
+      - check_illegal_updates:
+          requires:
+            - build
   nightly-edge-build:
     jobs:
       - sync_data
