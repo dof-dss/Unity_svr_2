@@ -321,4 +321,5 @@ workflows:
 #            - build
   nightly-edge-build:
     jobs:
+      - edge_build
       - sync_data
