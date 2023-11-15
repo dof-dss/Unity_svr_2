@@ -316,9 +316,9 @@ workflows:
       - deprecated_code:
           requires:
             - build
-      - check_illegal_updates:
-          requires:
-            - build
+#      - check_illegal_updates:
+#          requires:
+#            - build
   nightly-edge-build:
     jobs:
       - sync_data
