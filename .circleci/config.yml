@@ -12,13 +12,8 @@ default_docker_image: &docker_image
         PHP_INI_MEMORY_LIMIT: -1
         PHP_INI_MAX_EXECUTION_TIME: 60
         PHP_INI_MAX_INPUT_TIME: 60
-        # git variables to avoid empty committer identity errors
-        EMAIL: "circleci@localhost"
-        GIT_COMMITTER_NAME: "Circle CI"
-        GIT_AUTHOR_NAME: "Circle CI"
-        EDGE_BUILD_BRANCH: "edge"
         CPPFLAGS: "-DPNG_ARM_NEON_OPT=0"
-        NODE_VERSION: 15.14.0
+
 # Re-usable commands.
 commands:
   checkout_code:
@@ -64,7 +59,8 @@ commands:
           command: |
             composer require dof-dss/nicsdru_unity_theme:dev-10.x-dev \
               dof-dss/nicsdru_origins_modules:dev-10.x-dev \
-                dof-dss/nicsdru_unity_modules:dev-10.x-dev
+              dof-dss/nicsdru_unity_modules:dev-10.x-dev \
+              dof-dss/nicsdru_unity_profile:dev-10.x-dev
   install_psh_cli:
     description: "Install the Platform.sh CLI tool"
     steps:
@@ -162,27 +158,28 @@ jobs:
       GIT_AUTHOR_NAME: "Circle CI"
       EDGE_BUILD_BRANCH: "edge"
       PLATFORM_REGION: "uk-1.platform.sh"
+      CPPFLAGS: "-DPNG_ARM_NEON_OPT=0"
+      NODE_VERSION: 14.21.3
     steps:
       - hosts_keyscan
       - checkout_code
       - run:
           name: Add OS and PHP extensions
           command: |
-            curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
             touch ~/.bashrc
             curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
             sudo apt update --allow-releaseinfo-change
-            sudo apt install libjpeg-dev make python g++ dh-autoreconf -y
+            sudo apt install libjpeg-dev make python3 g++ dh-autoreconf -y
       - install_psh_cli
-      - run:
-          name: Switch to edge branch
-          command: git checkout -b $EDGE_BUILD_BRANCH
-      - composer_tasks__edge_packages
-      - run:
-          name: Push composer package updates back to GitHub
-          command: |
-            git add composer.*
-            git commit -m "Set dof-dss packages to HEAD development for build"
+      #      - run:
+      #          name: Switch to edge branch
+      #          command: git checkout -b $EDGE_BUILD_BRANCH
+      #      - composer_tasks__edge_packages
+      #      - run:
+      #          name: Push composer package updates back to GitHub
+      #          command: |
+      #            git add composer.*
+      #            git commit -m "Set dof-dss packages to HEAD development for build"
       - run:
           name: Rebuild site themes
           command: |
@@ -191,12 +188,12 @@ jobs:
             [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
             cd $PROJECT_ROOT
             ./build-themes.sh --sites-dir $PROJECT_ROOT/project/sites
-            # Push to fixed, non-integrating build branch. GitHub webhook integration will propagate this
-            # to platform.sh for later steps to use.
-            cd $PROJECT_ROOT
-            git add *.css
-            git commit -m "Theme rebuild"
-            git push -f origin $EDGE_BUILD_BRANCH
+  #            # Push to fixed, non-integrating build branch. GitHub webhook integration will propagate this
+  #            # to platform.sh for later steps to use.
+  #            cd $PROJECT_ROOT
+  #            git add *.css
+  #            git commit -m "Theme rebuild"
+  #            git push -f origin $EDGE_BUILD_BRANCH
 
   # Separate task to allow us to sync data on PSH environments, without pauses in other jobs.
   sync_data:
@@ -219,7 +216,7 @@ jobs:
       - run:
           name: Run any outstanding updates
           command: |
-            for site in `ls -l ~/project/project/sites | grep ^d | grep -v interchangeni | awk '!/default/{print $9}'`
+            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
             do
               result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
               if [[ -n $result ]]; then
@@ -229,7 +226,7 @@ jobs:
       - run:
           name: Turn off fastly module to allow for cleaner config import
           command: |
-            for site in `ls -l ~/project/project/sites | grep ^d | grep -v interchangeni | awk '!/default/{print $9}'`
+            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
             do
               result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
               if [[ -n $result ]]; then
@@ -243,7 +240,7 @@ jobs:
       - run:
           name: Clear cache before config import
           command: |
-            for site in `ls -l ~/project/project/sites | grep ^d | grep -v interchangeni | awk '!/default/{print $9}'`
+            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
             do
               result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
               if [[ -n $result ]]; then
@@ -254,7 +251,7 @@ jobs:
       - run:
           name: Refresh configuration as our db will contain active prod config after sync operation
           command: |
-            for site in `ls -l ~/project/project/sites | grep ^d | grep -v interchangeni | awk '!/default/{print $9}'`
+            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
             do
               result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
               if [[ -n $result ]]; then
@@ -266,26 +263,6 @@ jobs:
                 platform drush "bulk_update_qa_accounts enable -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
               fi
             done
-      #- run:
-      #    name: Purge and rebuild Solr indexes
-      #    command: |
-      #      for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
-      #      do
-      #        result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
-      #        if [[ -n $result ]]; then
-      #          result2=$(platform drush "pml --status=enabled -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "solr" || true) )
-      #          if [[ -n $result2 ]]; then
-      #            echo "***** Purge Solr index for - ${site} *****"
-      #            platform ssh -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH \
-      #              "curl http://${site}_solr.internal:8080/solr/${site}_index/update --data '<delete><query>*:*</query></delete>' -H 'Content-type:text/xml; charset=utf-8' \
-      #                && curl http://${site}_solr.internal:8080/solr/${site}_index/update --data '<commit/>' -H 'Content-type:text/xml; charset=utf-8'"
-      #            echo "***** Rebuild the Solr index for - ${site} *****"
-      #            platform drush "sapi-c -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
-      #            platform drush "sapi-r -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
-      #            platform drush "sapi-i -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
-      #          fi
-      #        fi
-      #      done
   # Checks to ensure that Unity Base has not been polluted with project files.
   unity_base_checks:
     <<: *docker_image
@@ -319,6 +296,8 @@ workflows:
 #      - check_illegal_updates:
 #          requires:
 #            - build
+
+  # A nightly build of the project, using all dof-dss packages at HEAD from development branch.
   nightly-edge-build:
     jobs:
       - edge_build
