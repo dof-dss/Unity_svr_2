@@ -171,15 +171,15 @@ jobs:
             sudo apt update --allow-releaseinfo-change
             sudo apt install libjpeg-dev make python3 g++ dh-autoreconf -y
       - install_psh_cli
-      #      - run:
-      #          name: Switch to edge branch
-      #          command: git checkout -b $EDGE_BUILD_BRANCH
-      #      - composer_tasks__edge_packages
-      #      - run:
-      #          name: Push composer package updates back to GitHub
-      #          command: |
-      #            git add composer.*
-      #            git commit -m "Set dof-dss packages to HEAD development for build"
+      - run:
+          name: Switch to edge branch
+          command: git checkout -b $EDGE_BUILD_BRANCH
+      - composer_tasks__edge_packages
+      - run:
+          name: Push composer package updates back to GitHub
+          command: |
+            git add composer.*
+            git commit -m "Set dof-dss packages to HEAD development for build"
       - run:
           name: Rebuild site themes
           command: |
@@ -188,12 +188,12 @@ jobs:
             [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
             cd $PROJECT_ROOT
             ./build-themes.sh --sites-dir $PROJECT_ROOT/project/sites
-  #            # Push to fixed, non-integrating build branch. GitHub webhook integration will propagate this
-  #            # to platform.sh for later steps to use.
-  #            cd $PROJECT_ROOT
-  #            git add *.css
-  #            git commit -m "Theme rebuild"
-  #            git push -f origin $EDGE_BUILD_BRANCH
+            # Push to fixed, non-integrating build branch. GitHub webhook integration will propagate this
+            # to platform.sh for later steps to use.
+            cd $PROJECT_ROOT
+            git add *.css
+            git commit -m "Theme rebuild"
+            git push -f origin $EDGE_BUILD_BRANCH
 
   # Separate task to allow us to sync data on PSH environments, without pauses in other jobs.
   sync_data:
