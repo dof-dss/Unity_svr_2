@@ -22,7 +22,7 @@ third_party_settings:
     enabled: false
     allow_custom: false
   field_group:
-    group_ad:
+    group_additional_detailsd:
       children:
         - field_teaser
         - field_meta_tags
