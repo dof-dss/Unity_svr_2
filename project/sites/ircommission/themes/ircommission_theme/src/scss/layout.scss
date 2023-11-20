@@ -11,40 +11,6 @@
   }
 }
 
-#footer {
-  .container-wrap {
-    display: block;
-  }
-
-  #footer_wrapper {
-    @media screen and (max-width: $tab) {
-      padding: 2rem;
-    }
-
-    .footer-menu {
-      margin: 2% auto;
-
-      li {
-        padding-left: 0;
-        line-height: 2.4rem;
-        display: block;
-
-        @include breakpoint($tab) {
-          display: inline-block;
-          padding: 0 .8rem 0 0;
-          line-height: 1.8rem;
-          margin-right: .5rem;
-        }
-
-        a {
-          margin: 0;
-        }
-      }
-    }
-  }
-}
-
-
 .path-news,
 .path-publications {
   .search-page {
