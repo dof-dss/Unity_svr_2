@@ -441,7 +441,7 @@ body:not(.front) {
       padding-left: 0;
       font-size: 1.4rem;
 
-      @include breakpoint($tab) {
+      @include breakpoint($mob) {
         display: inline-block;
         padding: 0 .8rem 0 0;
         line-height: 1.8rem;

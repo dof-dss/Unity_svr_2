@@ -183,7 +183,7 @@
       font-size: 1.4rem;
       display: block;
 
-      @include breakpoint($tab) {
+      @include breakpoint($mob) {
         display: inline-block;
         padding: 0 .8rem 0 0;
         line-height: 1.8rem;
