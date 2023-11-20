@@ -440,7 +440,6 @@ body:not(.front) {
     li {
       padding-left: 0;
       font-size: 1.4rem;
-      display: block;
 
       @include breakpoint($mob) {
         display: inline-block;
