@@ -227,6 +227,63 @@
   }
 }
 
+.latest-funding {
+  a {
+    //background: $grey-light;
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+    color: $white;
+
+    &:focus,
+    &:hover {
+      border: solid #0e6bb3 2px;
+    }
+
+    h3 {
+      @include adjust-font-size-to(20px);
+      text-align: left;
+    }
+  }
+
+  .board-title {
+    position: relative;
+    padding-right: 2rem;
+    margin-top: 0;
+  }
+
+  .board-title,
+  .field-teaser {
+    color: $white;
+  }
+
+  .board__body {
+    position: relative;
+    padding-right: 2rem;
+    flex: 1;
+    margin-left: 1rem;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 4.5rem;
+      right: 0.4rem;
+      width: 3rem;
+      height: 3rem;
+      background-image: resolve('arrow_forward_white.svg');
+      background-position: center center;
+      background-size: 2.4rem auto;
+      background-repeat: no-repeat;
+    }
+  }
+  &:hover .board__body:after,
+  &:focus .board__body:after {
+    background-color: $charcoal;
+    background-image: resolve('arrow_forward_white.svg');
+  }
+}
+
 .latest-news-bottom {
   padding-bottom: 2rem;
 
@@ -345,7 +402,8 @@
   }
 }
 
-#content #block-views-block-latest-news-home-latest-news a {
+#content #block-views-block-latest-news-home-latest-news a,
+#content #block-views-block-funding-schemes-funding-schemes-homepage a {
   padding: 1rem;
   margin: 0;
   border: none;
@@ -359,6 +417,16 @@
   &:focus {
     outline: 2px solid $black;
     outline-offset: -2px;
+  }
+}
+
+#content #block-views-block-funding-schemes-funding-schemes-homepage a {
+  padding: 1rem 1rem 2rem 1rem;
+
+  &:hover,
+  &:focus {
+    border: none;
+    background: #355f00;
   }
 }
 
@@ -411,6 +479,12 @@
   &:focus {
     outline: 2px solid $black;
     outline-offset: -2px;
+  }
+}
+
+#block-subscribe {
+  p {
+    padding-top: 1rem;
   }
 }
 
