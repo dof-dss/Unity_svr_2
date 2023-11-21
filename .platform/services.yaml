@@ -81,8 +81,8 @@ db:
                 default_schema: cosicanidb
                 privileges:
                     cosicanidb: admin
-solr:
-    type: 'solr:7.7'
+solr_8_11:
+    type: 'solr:8.11'
     disk: 1024
     configuration:
         cores:
