@@ -130,7 +130,7 @@
         "drupal/search_api": "^1.26",
         "drupal/search_api_autocomplete": "^1.4",
         "drupal/search_api_location": "^1.0@alpha",
-        "drupal/search_api_solr": "4.2.12",
+        "drupal/search_api_solr": "4.3.0",
         "drupal/search_api_spellcheck": "^4.0",
         "drupal/seven": "^1.0",
         "drupal/shs": "^2.0@RC",
