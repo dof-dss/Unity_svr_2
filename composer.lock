@@ -16763,16 +16763,16 @@
         },
         {
             "name": "dof-dss/maestro-hosting",
-            "version": "1.0.10",
+            "version": "1.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/maestro-hosting.git",
-                "reference": "2457055f3b29d440d4659342d8cddbda61321b72"
+                "reference": "5d5a8ea052885a4a7e46222421b7a7ecf2383fb8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/maestro-hosting/zipball/2457055f3b29d440d4659342d8cddbda61321b72",
-                "reference": "2457055f3b29d440d4659342d8cddbda61321b72",
+                "url": "https://api.github.com/repos/dof-dss/maestro-hosting/zipball/5d5a8ea052885a4a7e46222421b7a7ecf2383fb8",
+                "reference": "5d5a8ea052885a4a7e46222421b7a7ecf2383fb8",
                 "shasum": ""
             },
             "require": {
@@ -16797,9 +16797,9 @@
             "description": "Maestro hosting resources",
             "support": {
                 "issues": "https://github.com/dof-dss/maestro-hosting/issues",
-                "source": "https://github.com/dof-dss/maestro-hosting/tree/1.0.10"
+                "source": "https://github.com/dof-dss/maestro-hosting/tree/1.0.11"
             },
-            "time": "2023-11-21T10:23:22+00:00"
+            "time": "2023-11-22T13:55:07+00:00"
         },
         {
             "name": "dof-dss/maestro-shell",
