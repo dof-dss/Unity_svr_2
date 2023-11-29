@@ -1527,16 +1527,16 @@
         },
         {
             "name": "dof-dss/nicsdru_origins_modules",
-            "version": "10.1.3",
+            "version": "10.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_origins_modules.git",
-                "reference": "9d39a20d1eb2c142ba55003fbe848b0f3dd20693"
+                "reference": "8ece719bcd482261ce0b65d6d739369af2f96a63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/9d39a20d1eb2c142ba55003fbe848b0f3dd20693",
-                "reference": "9d39a20d1eb2c142ba55003fbe848b0f3dd20693",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/8ece719bcd482261ce0b65d6d739369af2f96a63",
+                "reference": "8ece719bcd482261ce0b65d6d739369af2f96a63",
                 "shasum": ""
             },
             "require": {
@@ -1551,22 +1551,22 @@
             "description": "Generic modules for DOF-DSS Drupal sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_origins_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/10.1.3"
+                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/10.1.5"
             },
-            "time": "2023-10-17T13:28:43+00:00"
+            "time": "2023-11-27T10:32:49+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
-            "version": "10.1.4",
+            "version": "10.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_modules.git",
-                "reference": "e56bfa53042a233658f50faaca24a114c453a524"
+                "reference": "714e9c50b9e3a3272be8b7cb8600fd4cdb84d3e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/e56bfa53042a233658f50faaca24a114c453a524",
-                "reference": "e56bfa53042a233658f50faaca24a114c453a524",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/714e9c50b9e3a3272be8b7cb8600fd4cdb84d3e0",
+                "reference": "714e9c50b9e3a3272be8b7cb8600fd4cdb84d3e0",
                 "shasum": ""
             },
             "require": {
@@ -1580,9 +1580,9 @@
             "description": "Custom modules available to all Unity sites.",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/10.1.4"
+                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/10.1.5"
             },
-            "time": "2023-10-24T15:48:05+00:00"
+            "time": "2023-11-27T10:26:30+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_profile",
@@ -1615,16 +1615,16 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_theme",
-            "version": "10.1.2",
+            "version": "v10.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_theme.git",
-                "reference": "ad455e555aca9629e8b3805aebac91b31c2d61c4"
+                "reference": "561a7595544ff5a0fc0f4cf1eabba2e85fb27157"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/ad455e555aca9629e8b3805aebac91b31c2d61c4",
-                "reference": "ad455e555aca9629e8b3805aebac91b31c2d61c4",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/561a7595544ff5a0fc0f4cf1eabba2e85fb27157",
+                "reference": "561a7595544ff5a0fc0f4cf1eabba2e85fb27157",
                 "shasum": ""
             },
             "require": {
@@ -1648,9 +1648,9 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/10.1.2"
+                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v10.1.4"
             },
-            "time": "2023-10-17T13:29:40+00:00"
+            "time": "2023-11-27T10:21:37+00:00"
         },
         {
             "name": "drupal/address",
