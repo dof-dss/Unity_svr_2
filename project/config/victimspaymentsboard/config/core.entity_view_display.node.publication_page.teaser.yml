@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.publication_page.body
+    - field.field.node.publication_page.field_meta_tags
     - field.field.node.publication_page.field_publication_attachment
     - field.field.node.publication_page.field_publication_date
     - node.type.publication_page
@@ -35,6 +36,7 @@ content:
     region: content
 hidden:
   content_moderation_control: true
+  field_meta_tags: true
   field_publication_attachment: true
   langcode: true
   links: true
