@@ -4,13 +4,16 @@ status: true
 dependencies:
   config:
     - field.field.node.publication_page.body
+    - field.field.node.publication_page.field_meta_tags
     - field.field.node.publication_page.field_publication_attachment
     - field.field.node.publication_page.field_publication_date
     - node.type.publication_page
+    - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
     - datetime
     - media_library
+    - metatag
     - path
     - text
 id: node.publication_page.default
@@ -33,6 +36,14 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 123
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   field_publication_attachment:
     type: media_library_widget

@@ -1,8 +1,9 @@
-uuid: 5f66752b-f209-4e14-a3ee-97ab59291b9f
+uuid: 635f618d-badb-4581-b016-faac13ce527d
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.diff
     - field.field.node.publication_page.body
     - field.field.node.publication_page.field_meta_tags
     - field.field.node.publication_page.field_publication_attachment
@@ -10,12 +11,39 @@ dependencies:
     - node.type.publication_page
   module:
     - datetime
+    - field_group
+    - layout_builder
+    - metatag
     - text
     - user
-id: node.publication_page.default
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  field_group:
+    group_additional_content_details:
+      children:
+        - field_meta_tags
+      label: 'Additional content details'
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: field-collection
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.publication_page.diff
 targetEntityType: node
 bundle: publication_page
-mode: default
+mode: diff
 content:
   body:
     type: text_default
@@ -23,6 +51,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
     region: content
   field_publication_attachment:
     type: entity_reference_entity_view
@@ -44,7 +79,6 @@ content:
     region: content
 hidden:
   content_moderation_control: true
-  field_meta_tags: true
   langcode: true
   links: true
   search_api_excerpt: true
