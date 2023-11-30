@@ -9,12 +9,12 @@ namespace Drupal\publicappointmentsni_breadcrumbs;
  *
  * In the format:
  * > Home
- * > Board
+ * > Independent Assessor Biographies
  * > current-page-title
  *
  * > <front>
  * > /about-board
- * > /current-page-title
+ * > /independent-assessor-biographies
  */
 use Drupal\Core\Breadcrumb\Breadcrumb;
 use Drupal\Core\Breadcrumb\BreadcrumbBuilderInterface;
