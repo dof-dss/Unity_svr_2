@@ -18,7 +18,7 @@ third_party_settings:
     enabled: false
     allow_custom: false
   field_group:
-    group_a:
+    group_additional_content_details:
       children:
         - field_meta_tags
       label: 'Additional content details'

@@ -5,12 +5,6 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/2_layout/index';
 
-#inner_header_wrapper {
-  @include breakpoint($tab) {
-    margin-bottom: 5rem;
-  }
-}
-
 #headerHero {
   margin-top: 6rem;
   background: $white;

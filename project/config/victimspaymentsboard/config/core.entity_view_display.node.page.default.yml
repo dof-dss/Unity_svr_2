@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_enable_toc
+    - field.field.node.page.field_meta_tags
+    - field.field.node.page.field_next_audit_due
     - node.type.page
   module:
     - text
@@ -21,13 +23,11 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
 hidden:
   content_moderation_control: true
   field_enable_toc: true
+  field_meta_tags: true
+  field_next_audit_due: true
   langcode: true
+  links: true
   search_api_excerpt: true

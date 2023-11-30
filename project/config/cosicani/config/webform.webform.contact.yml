@@ -149,12 +149,12 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: url_message
-  confirmation_url: '<front>'
+  confirmation_type: inline
+  confirmation_url: ''
   confirmation_title: ''
-  confirmation_message: 'Your message has been sent.'
+  confirmation_message: '<p>Your feedback has been sent. Thank you</p>'
   confirmation_attributes: {  }
-  confirmation_back: true
+  confirmation_back: false
   confirmation_back_label: ''
   confirmation_back_attributes: {  }
   confirmation_exclude_query: false

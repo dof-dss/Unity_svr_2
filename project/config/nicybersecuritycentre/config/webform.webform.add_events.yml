@@ -20,73 +20,118 @@ elements: |-
       '#type': textfield
       '#title': 'Event name'
       '#required': true
-    start_date:
-      '#type': date
-      '#title': 'Start date'
+    event_start_and_end_dates:
+      '#type': fieldset
+      '#title': 'Event dates and times'
+      start_date:
+        '#type': date
+        '#title': 'Start date'
+        '#required': true
+        '#default_value': now
+      end_date:
+        '#type': date
+        '#title': 'End date'
+        '#default_value': now
+        '#required': true
+      start_time:
+        '#type': webform_time
+        '#title': 'Start time'
+        '#default_value': now
+        '#required': true
+      end_time:
+        '#type': webform_time
+        '#title': 'End time'
+        '#default_value': now
+        '#required': true
+    strategy_pillar:
+      '#type': checkboxes
+      '#title': 'Please select the National Cyber Strategy Pillar that your event aligns with'
+      '#description': '<p>Choose 1 or both of the options.</p>'
+      '#description_display': before
+      '#options':
+        'Pillar 1 – Cyber Ecosystem': 'Pillar 1 – Cyber Ecosystem'
+        'Pillar 2 – Cyber Resilience': 'Pillar 2 – Cyber Resilience'
       '#required': true
-      '#default_value': now
-    markup:
-      '#type': webform_markup
-      '#markup': 'If the event lasts more than a day please add an end date.'
-    end_date:
-      '#type': date
-      '#title': 'End date'
-      '#default_value': now
     event_description:
       '#type': textarea
       '#title': 'Event description'
-      '#required': true
-    organisation_name:
-      '#type': textfield
-      '#title': 'Organisation name'
-      '#required': true
-    organisation_sector:
-      '#type': select
-      '#title': 'Organisation sector'
-      '#options':
-        Education: Education
-        'Further education': 'Further education'
-        Law: Law
-        'Private sector': 'Private sector'
-        'Public sector': 'Public sector'
-        'Voluntary sector': 'Voluntary sector'
-        Public: Public
-        SME: SME
-        Other: Other
-      '#required': true
-    target_audience:
-      '#type': select
-      '#title': 'Target audience'
-      '#options':
-        Banking: Banking
-        Education: Education
-        Law: Law
-        'Central government': 'Central government'
-        'Local government': 'Local government'
-        Retail: Retail
-        Other: Other
-      '#required': true
-    location:
-      '#type': select
-      '#title': Location
-      '#options':
-        Belfast: Belfast
-        'Co. Antrim': 'Co. Antrim'
-        'Co. Armagh': 'Co. Armagh'
-        'Co. Down': 'Co. Down'
-        'Co. Fermanagh': 'Co. Fermanagh'
-        'Co. Londonderry': 'Co. Londonderry'
-        'Co. Tyrone': 'Co. Tyrone'
-        Virtual: Virtual
+      '#description': '<p><span style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);color:rgb(36, 36, 36);display:inline !important;float:none;font-family:Calibri, sans-serif;font-size:14.6667px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">Please provide us with a brief description as you wish it to be displayed on the website.</span></p>'
       '#required': true
     event_type:
       '#type': select
       '#title': 'Event type'
       '#options':
         'In person': 'In person'
-        'On demand': 'On demand'
+        Hybrid: Hybrid
         Virtual: Virtual
       '#required': true
+    estimated_audience_number:
+      '#type': number
+      '#title': 'Estimated audience number'
+    event_open_closed:
+      '#type': select
+      '#title': 'Is the Event open/closed?'
+      '#options':
+        Open: Open
+        Closed: Closed
+      '#required': true
+    is_there_an_event_website_we_can_share:
+      '#type': url
+      '#title': 'Is there an event website we can share?'
+    is_there_a_booking_link_for_the_event:
+      '#type': url
+      '#title': 'Please provide link to register for event if applicable?'
+    venue_details:
+      '#type': fieldset
+      '#title': 'For in person event add event venue details'
+      venue_name:
+        '#type': textfield
+        '#title': 'Venue name'
+      venue_address:
+        '#type': webform_address
+        '#title': 'Venue address'
+        '#address__title': 'Address line 1'
+        '#address_2__title': 'Address line 2'
+        '#state_province__title': County
+        '#state_province__type': textfield
+        '#postal_code__title': 'Postal Code'
+        '#country__access': false
+      venue_details_html:
+        '#type': webform_markup
+        '#markup': '<p><span style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);color:rgb(36, 36, 36);display:inline !important;float:none;font-family:Calibri, sans-serif;font-size:14.6667px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">NB: If the venue name &amp; address fields are left blank then we will assume this is an Online event.</span></p>'
+    target_audience:
+      '#type': webform_checkboxes_other
+      '#title': 'Which audience category is your event or activity aimed at (please tick all that apply)?'
+      '#options':
+        Business: Business
+        Education: Education
+        'General Public': 'General Public'
+        'Public Sector': 'Public Sector'
+        'Charity & Volunteer': 'Charity & Volunteer'
+        Technical: Technical
+      '#other__option_label': Other
+      '#other__placeholder': 'Please enter other'
+      '#required': true
+    first_and_last_name_of_the_requestor:
+      '#type': textfield
+      '#title': 'First and last name of the requestor'
+      '#required': true
+    organisation_name:
+      '#type': textfield
+      '#title': 'Organisation name of requestor'
+      '#required': true
+    email:
+      '#type': email
+      '#title': Email
+      '#required': true
+    event_contact_consent:
+      '#type': checkbox
+      '#title': 'By completing this form you consent to us contacting you in relation to your event'
+      '#required': true
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': 'Submit new event'
 css: ''
 javascript: ''
 settings:
@@ -95,10 +140,10 @@ settings:
   ajax_progress_type: ''
   ajax_effect: ''
   ajax_speed: null
-  page: true
-  page_submit_path: /event-registration
-  page_confirm_path: /event-registration-success
-  page_theme_name: nicybersecuritycentre_theme
+  page: false
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
   form_title: both
   form_submit_once: false
   form_open_message: ''
@@ -194,7 +239,7 @@ settings:
   confirmation_type: page
   confirmation_url: ''
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: '<p>Thank you for your submission.</p>'
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -282,15 +327,15 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: _default
+      to_mail: info@nicybersecuritycentre.gov.uk
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: _default
+      from_mail: '[webform_submission:values:email:raw]'
       from_options: {  }
-      from_name: _default
+      from_name: '[webform_submission:values:organisation_name:raw]'
       reply_to: ''
       return_path: ''
       sender_mail: ''

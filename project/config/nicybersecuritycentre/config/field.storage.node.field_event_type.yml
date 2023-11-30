@@ -18,8 +18,8 @@ settings:
       value: virtual
       label: Virtual
     -
-      value: od
-      label: 'On Demand'
+      value: hybrid
+      label: Hybrid
   allowed_values_function: ''
 module: options
 locked: false
