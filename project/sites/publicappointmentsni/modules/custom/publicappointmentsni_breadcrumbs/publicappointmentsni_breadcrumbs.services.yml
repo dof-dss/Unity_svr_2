@@ -1,0 +1,6 @@
+services:
+  publicappointmentsni_breadcrumbs.breadcrumb.board:
+    class: Drupal\publicappointmentsni_breadcrumbs\BoardBreadcrumb
+    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
+    tags:
+      - { name: breadcrumb_builder, priority: 105 }
