@@ -63,7 +63,6 @@
         "drupal/ckeditor": "^1.0",
         "drupal/ckeditor5_allowed_html": "^1.0@dev",
         "drupal/ckeditor5_premium_features": "^1.2",
-        "drupal/classy": "^1.0",
         "drupal/clientside_validation": "^4.0",
         "drupal/clone_nodes": "^1.2@dev",
         "drupal/config_filter": "^1.10",
