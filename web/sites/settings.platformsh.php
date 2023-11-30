@@ -141,7 +141,8 @@ if ($platformsh->hasRelationship('redis') && !\Drupal\Core\Installer\InstallerKe
   // as the cache tag checksum. Alternatively, copy the contents of that file
   // to your project-specific services.yml file, modify as appropriate, and
   // remove this line.
-  $settings['container_yamls'][] = 'modules/contrib/redis/example.services.yml';
+  //$settings['container_yamls'][] = 'modules/contrib/redis/example.services.yml';
+  $settings['container_yamls'][] = 'sites/redis.services.yml';
 
   // Allow the services to work before the Redis module itself is enabled.
   $settings['container_yamls'][] = 'modules/contrib/redis/redis.services.yml';

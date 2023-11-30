@@ -107,3 +107,9 @@
     }
   }
 }
+
+#footer .footer-menu li {
+  @media screen and (min-width: $mob){
+    display: inline-block;
+  }
+}

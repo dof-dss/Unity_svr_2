@@ -87,6 +87,15 @@
 }
 
 .path-events {
+  .content-sidebar-wrap {
+    @media screen and (max-width: $lap){
+      padding: 0 1rem;
+    }
+  }
+
+  .search-page .sidebar-first-layout {
+    padding-left: 0;
+  }
 
   #content .facet-summary {
     margin-bottom: 2rem;
@@ -431,9 +440,8 @@ body:not(.front) {
     li {
       padding-left: 0;
       font-size: 1.4rem;
-      display: block;
 
-      @include breakpoint($tab) {
+      @include breakpoint($mob) {
         display: inline-block;
         padding: 0 .8rem 0 0;
         line-height: 1.8rem;
@@ -484,6 +492,10 @@ body:not(.front) {
 .node-type-events {
   .content-sidebar-wrap {
     width: 100%;
+
+    @media screen and (max-width: $lap){
+      padding: 0 1rem;
+    }
   }
 }
 

@@ -10,13 +10,35 @@ dependencies:
     - field.field.node.board_member.field_meta_tags
     - node.type.board_member
   module:
+    - field_group
     - layout_builder
+    - metatag
     - text
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
+  field_group:
+    group_additional_content_details:
+      children:
+        - field_meta_tags
+      label: 'Additional content details'
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: field-collection
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 _core:
   default_config_hash: lzYabRcW7CpzD0E2QsUGKRrqMJoaEmAbYlZ_sYt9p0I
 id: node.board_member.diff
@@ -25,32 +47,38 @@ bundle: board_member
 mode: diff
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_member_image:
     type: entity_reference_entity_view
-    weight: 1
     label: hidden
     settings:
       view_mode: portrait_float
       link: false
     third_party_settings: {  }
+    weight: 1
     region: content
   field_member_role:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
     region: content
 hidden:
   content_moderation_control: true
-  field_meta_tags: true
   langcode: true
   links: true
   search_api_excerpt: true

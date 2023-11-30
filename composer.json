@@ -92,6 +92,7 @@
         "drupal/file_delete_ui": "^1.0@beta",
         "drupal/filelog": "^2.1",
         "drupal/flag": "^4.0@beta",
+        "drupal/flood_control": "^2.3",
         "drupal/geocoder": "^4.9",
         "drupal/geolocation": "^3.12",
         "drupal/google_tag": "^2.0",
@@ -129,7 +130,7 @@
         "drupal/search_api": "^1.26",
         "drupal/search_api_autocomplete": "^1.4",
         "drupal/search_api_location": "^1.0@alpha",
-        "drupal/search_api_solr": "4.2.12",
+        "drupal/search_api_solr": "4.3.0",
         "drupal/search_api_spellcheck": "^4.0",
         "drupal/seven": "^1.0",
         "drupal/shs": "^2.0@RC",
@@ -193,6 +194,9 @@
             "drupal/easy_install": {
                 "Handle missing core version": "https://www.drupal.org/files/issues/2019-12-19/easy_install_core_version-3101883-0.patch",
                 "non-existent service entity.manager": "https://www.drupal.org/files/issues/2020-12-08/3162621-4.patch"
+            },
+            "drupal/entityqueue": {
+                "Allow unique records only": "https://www.drupal.org/files/issues/2021-02-07/entity_queue_unique_records-1240856-3197148.patch"
             },
             "drupal/facets": {
                 "Pass facet object onto child items": "https://www.drupal.org/files/issues/2019-11-13/child_item-3094143-2.patch"
@@ -292,7 +296,7 @@
     },
     "require-dev": {
         "dof-dss/maestro-hosting": "^1.0",
-        "dof-dss/maestro-shell": "^10.1",
+        "dof-dss/maestro-shell": "^1.0",
         "drupal/coder": "^8.3",
         "drupal/core-dev": "^10.1",
         "drupal/devel": "^5.1",
@@ -305,5 +309,10 @@
         "mglaman/drupal-check": "^1.4",
         "previousnext/phpunit-finder": "^2.0",
         "slevomat/coding-standard": "^8.13"
+    },
+    "scripts": {
+        "post-package-update": [
+            "Maestro\\Shell\\Events\\ComposerEventListener::postPackageUpdate"
+        ]
     }
 }
