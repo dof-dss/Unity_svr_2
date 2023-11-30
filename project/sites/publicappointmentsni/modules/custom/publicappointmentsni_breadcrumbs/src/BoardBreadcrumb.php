@@ -13,8 +13,8 @@ namespace Drupal\publicappointmentsni_breadcrumbs;
  * > current-page-title
  *
  * > <front>
- * > /about-board
  * > /independent-assessor-biographies
+ * > /current-page-title
  */
 use Drupal\Core\Breadcrumb\Breadcrumb;
 use Drupal\Core\Breadcrumb\BreadcrumbBuilderInterface;
