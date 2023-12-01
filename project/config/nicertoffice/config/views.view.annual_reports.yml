@@ -246,7 +246,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<a href="/documents/type/annual-reports-1" class="btn">View reports</a>'
+            value: '<p><a href="/documents/type/annual-reports-1" class="btn">View reports</a></p>'
             format: full_html
           tokenize: false
       display_extenders: {  }
