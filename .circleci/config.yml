@@ -12,7 +12,11 @@ default_docker_image: &docker_image
         PHP_INI_MEMORY_LIMIT: -1
         PHP_INI_MAX_EXECUTION_TIME: 60
         PHP_INI_MAX_INPUT_TIME: 60
-        CPPFLAGS: "-DPNG_ARM_NEON_OPT=0"
+        # git variables to avoid empty committer identity errors
+        EMAIL: "circleci@localhost"
+        GIT_COMMITTER_NAME: "Circle CI"
+        GIT_AUTHOR_NAME: "Circle CI"
+        EDGE_BUILD_BRANCH: "edge"
 
 # Re-usable commands.
 commands:
@@ -104,6 +108,7 @@ jobs:
             CHECK_DIRS="${CHECK_DIRS} ${PROJECT_ROOT}/web/modules/custom"
             CHECK_DIRS="${CHECK_DIRS} ${PROJECT_ROOT}/web/modules/origins"
             CHECK_DIRS="${CHECK_DIRS} ${PROJECT_ROOT}/web/themes/custom"
+            CHECK_DIRS="${CHECK_DIRS} ${PROJECT_ROOT}/web/themes/origins"
             CHECK_DIRS="${CHECK_DIRS} ${PROJECT_ROOT}/web/profiles/unity"
             CHECK_DIRS="${CHECK_DIRS} ${PROJECT_ROOT}/web/profiles/origins"
             ~/project/phpcs.sh ${PROJECT_ROOT} $CHECK_DIRS
@@ -263,6 +268,7 @@ jobs:
                 platform drush "bulk_update_qa_accounts enable -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
               fi
             done
+
   # Checks to ensure that Unity Base has not been polluted with project files.
   unity_base_checks:
     <<: *docker_image
@@ -281,52 +287,9 @@ jobs:
 
 workflows:
   version: 2
-  build-test-deploy:
-    jobs:
-      - build
-      - unity_base_checks:
-          requires:
-            - build
-      - coding_standards:
-          requires:
-            - build
-      - deprecated_code:
-          requires:
-            - build
-      - check_illegal_updates:
-          requires:
-            - build
-
-  # A nightly build of the project, using all dof-dss packages at HEAD from development branch.
   nightly-edge-build:
-    when:
-      and:
-        - not:
-          equal: [ "https://github.com/dof-dss/unity_base", << pipeline.project.git_url >> ]
-    triggers:
-      - schedule:
-          # At 00:30 Monday to Friday
-          cron: "30 0 * * 1-5"
-          filters:
-            branches:
-              only:
-                - development
     jobs:
       - edge_build
-
-  # A nightly deploy or re-deploy of the edge site after the git branch has been created in nightly-edge-build.
-  nightly-edge-build-post-build-tasks:
-    when:
-      and:
-        - not:
-          equal: [ "https://github.com/dof-dss/unity_base", << pipeline.project.git_url >> ]
-    triggers:
-      - schedule:
-          # At 01:23 Monday to Friday
-          cron: "55 1 * * 1-5"
-          filters:
-            branches:
-              only:
-                - edge
-    jobs:
-      - sync_data
+      - sync_data:
+          requires:
+            - edge_build
