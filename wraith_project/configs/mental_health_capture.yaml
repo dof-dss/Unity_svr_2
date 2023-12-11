@@ -16,7 +16,7 @@ paths:
   contact:  /contact-us
   news:   /news/mental-health-champion-responds-people-presenting-emergency-departments-mental-health-and
   publication:  /publications/key-issues-impacting-children-and-young-peoples-mental-health-and-wellbeing-northern
-  
+
 # (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
 screen_widths:
   - 1200x3000
