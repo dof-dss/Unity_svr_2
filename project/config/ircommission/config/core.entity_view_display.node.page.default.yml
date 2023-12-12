@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_enable_toc
     - field.field.node.page.field_metatag
+    - field.field.node.page.field_next_audit_due
     - node.type.page
   module:
     - text
@@ -24,8 +24,8 @@ content:
     region: content
 hidden:
   content_moderation_control: true
-  field_enable_toc: true
   field_metatag: true
+  field_next_audit_due: true
   langcode: true
   links: true
   search_api_excerpt: true

@@ -1,13 +1,16 @@
-uuid: 1c728c32-db3b-4e5f-98ac-4f6735994aa6
+uuid: 3549db36-a137-42ce-b5c2-b25e59aaa18d
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.diff
-    - field.field.node.page.body
-    - field.field.node.page.field_metatag
-    - field.field.node.page.field_next_audit_due
-    - node.type.page
+    - field.field.node.publication_page.body
+    - field.field.node.publication_page.field_attachment
+    - field.field.node.publication_page.field_meta_tags
+    - field.field.node.publication_page.field_publication_date
+    - field.field.node.publication_page.field_publication_type
+    - field.field.node.publication_page.field_topic
+    - node.type.publication_page
   module:
     - datetime
     - field_group
@@ -22,12 +25,13 @@ third_party_settings:
   field_group:
     group_additional_content_details:
       children:
-        - field_metatag
-        - field_next_audit_due
+        - field_publication_type
+        - field_topic
+        - field_meta_tags
       label: 'Additional content details'
       parent_name: ''
       region: content
-      weight: 1
+      weight: 3
       format_type: html_element
       format_settings:
         classes: field-collection
@@ -40,9 +44,9 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-id: node.page.diff
+id: node.publication_page.diff
 targetEntityType: node
-bundle: page
+bundle: publication_page
 mode: diff
 content:
   body:
@@ -50,23 +54,48 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
-  field_metatag:
+  field_attachment:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: embed
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_meta_tags:
     type: metatag_empty_formatter
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 7
     region: content
-  field_next_audit_due:
+  field_publication_date:
     type: datetime_default
     label: inline
     settings:
       timezone_override: ''
       format_type: unity_date
     third_party_settings: {  }
-    weight: 4
+    weight: 0
+    region: content
+  field_publication_type:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_topic:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 6
     region: content
 hidden:
   content_moderation_control: true

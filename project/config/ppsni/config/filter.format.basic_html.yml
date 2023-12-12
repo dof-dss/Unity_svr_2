@@ -186,12 +186,6 @@ filters:
       thumbnail_effect: ''
       thumbnail_position: ''
       override: false
-  filter_image_lazy_load:
-    id: filter_image_lazy_load
-    provider: filter
-    status: false
-    weight: -43
-    settings: {  }
   filter_allowed:
     id: filter_allowed
     provider: ckeditor5_allowed_html
@@ -206,4 +200,10 @@ filters:
     provider: ckeditor5_premium_features
     status: false
     weight: -42
+    settings: {  }
+  filter_image_lazy_load:
+    id: filter_image_lazy_load
+    provider: filter
+    status: false
+    weight: -43
     settings: {  }

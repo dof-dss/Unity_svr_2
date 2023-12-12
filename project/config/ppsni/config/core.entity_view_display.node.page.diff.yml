@@ -1,11 +1,11 @@
-uuid: 1c728c32-db3b-4e5f-98ac-4f6735994aa6
+uuid: 3ac89d26-aedb-4617-aaaf-001dbeb20755
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.diff
     - field.field.node.page.body
-    - field.field.node.page.field_metatag
+    - field.field.node.page.field_meta_tags
     - field.field.node.page.field_next_audit_due
     - node.type.page
   module:
@@ -22,12 +22,12 @@ third_party_settings:
   field_group:
     group_additional_content_details:
       children:
-        - field_metatag
+        - field_meta_tags
         - field_next_audit_due
       label: 'Additional content details'
       parent_name: ''
       region: content
-      weight: 1
+      weight: 2
       format_type: html_element
       format_settings:
         classes: field-collection
@@ -52,12 +52,12 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_metatag:
+  field_meta_tags:
     type: metatag_empty_formatter
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 1
     region: content
   field_next_audit_due:
     type: datetime_default
@@ -66,7 +66,7 @@ content:
       timezone_override: ''
       format_type: unity_date
     third_party_settings: {  }
-    weight: 4
+    weight: 2
     region: content
 hidden:
   content_moderation_control: true

@@ -1,11 +1,11 @@
-uuid: 1c728c32-db3b-4e5f-98ac-4f6735994aa6
+uuid: b690d4d6-e6ed-4621-9942-9bcd76a57d63
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.diff
     - field.field.node.page.body
-    - field.field.node.page.field_metatag
+    - field.field.node.page.field_meta_tags
     - field.field.node.page.field_next_audit_due
     - node.type.page
   module:
@@ -22,7 +22,7 @@ third_party_settings:
   field_group:
     group_additional_content_details:
       children:
-        - field_metatag
+        - field_meta_tags
         - field_next_audit_due
       label: 'Additional content details'
       parent_name: ''
@@ -52,7 +52,7 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_metatag:
+  field_meta_tags:
     type: metatag_empty_formatter
     label: inline
     settings: {  }
