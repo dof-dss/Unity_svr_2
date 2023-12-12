@@ -171,12 +171,6 @@ filters:
       thumbnail_effect: ''
       thumbnail_position: ''
       override: false
-  filter_image_lazy_load:
-    id: filter_image_lazy_load
-    provider: filter
-    status: false
-    weight: -37
-    settings: {  }
   blazy_filter:
     id: blazy_filter
     provider: blazy
@@ -200,3 +194,9 @@ filters:
       allowed_html: '<br> <p> <h2> <h3> <h4> <h5> <h6> <strong> <em> <sup> <blockquote> <a href> <ul> <ol start> <li> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption> <drupal-media data-entity-type data-entity-uuid alt>'
       filter_html_help: '0'
       filter_html_nofollow: '0'
+  filter_image_lazy_load:
+    id: filter_image_lazy_load
+    provider: filter
+    status: false
+    weight: -37
+    settings: {  }
