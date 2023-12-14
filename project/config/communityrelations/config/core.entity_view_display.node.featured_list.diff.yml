@@ -1,29 +1,22 @@
-uuid: 1c728c32-db3b-4e5f-98ac-4f6735994aa6
+uuid: af667b21-0c67-4d5b-b178-9dfe8841468f
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.diff
-    - field.field.node.page.body
-    - field.field.node.page.field_metatag
-    - field.field.node.page.field_next_audit_due
-    - node.type.page
+    - field.field.node.featured_list.field_link
+    - field.field.node.featured_list.field_meta_tags
+    - node.type.featured_list
   module:
-    - datetime
     - field_group
-    - layout_builder
+    - link
     - metatag
-    - text
     - user
 third_party_settings:
-  layout_builder:
-    enabled: false
-    allow_custom: false
   field_group:
     group_additional_content_details:
       children:
-        - field_metatag
-        - field_next_audit_due
+        - field_meta_tags
       label: 'Additional content details'
       parent_name: ''
       region: content
@@ -40,33 +33,29 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-id: node.page.diff
+id: node.featured_list.diff
 targetEntityType: node
-bundle: page
+bundle: featured_list
 mode: diff
 content:
-  body:
-    type: text_default
+  field_link:
+    type: link
     label: hidden
-    settings: {  }
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
     third_party_settings: {  }
     weight: 0
     region: content
-  field_metatag:
+  field_meta_tags:
     type: metatag_empty_formatter
-    label: inline
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 3
-    region: content
-  field_next_audit_due:
-    type: datetime_default
-    label: inline
-    settings:
-      timezone_override: ''
-      format_type: unity_date
-    third_party_settings: {  }
-    weight: 4
     region: content
 hidden:
   content_moderation_control: true
