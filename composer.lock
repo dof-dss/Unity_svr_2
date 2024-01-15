@@ -1527,16 +1527,16 @@
         },
         {
             "name": "dof-dss/nicsdru_origins_modules",
-            "version": "10.2.0",
+            "version": "10.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_origins_modules.git",
-                "reference": "e134dcf3888742b54740fb04c45cacc91f96fc66"
+                "reference": "8e428aeec4917c3d19bd9e528f4cbb0e36c550bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/e134dcf3888742b54740fb04c45cacc91f96fc66",
-                "reference": "e134dcf3888742b54740fb04c45cacc91f96fc66",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/8e428aeec4917c3d19bd9e528f4cbb0e36c550bb",
+                "reference": "8e428aeec4917c3d19bd9e528f4cbb0e36c550bb",
                 "shasum": ""
             },
             "require": {
@@ -1551,9 +1551,9 @@
             "description": "Generic modules for DOF-DSS Drupal sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_origins_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/10.2.0"
+                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/10.2.1"
             },
-            "time": "2024-01-12T15:34:24+00:00"
+            "time": "2024-01-15T13:57:42+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
