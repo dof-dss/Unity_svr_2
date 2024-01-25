@@ -46,7 +46,7 @@
         "composer-runtime-api": "*",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
-        "dof-dss/nicsdru_origins_modules": "^10.1",
+        "dof-dss/nicsdru_origins_modules": "^10.2",
         "dof-dss/nicsdru_unity_modules": "^10.1",
         "dof-dss/nicsdru_unity_profile": "^10.1",
         "dof-dss/nicsdru_unity_theme": "^10.1",
@@ -189,7 +189,8 @@
                 "User enable email exception": "https://www.drupal.org/files/issues/2023-05-19/user_email_exception-3355151-3.patch",
                 "Expand menu_tree field sizes": "https://www.drupal.org/files/issues/2022-10-11/3106205-36.patch",
                 "Fix TypeError when adding book page": "https://www.drupal.org/files/issues/2023-10-02/book_typeerror-3391063-1.patch",
-                "Allow authors without manage book privleges permission to save unpublished versions of published nodes": "https://www.drupal.org/files/issues/2022-12-14/2918537-92.patch"
+                "Allow authors without manage book privleges permission to save unpublished versions of published nodes": "https://www.drupal.org/files/issues/2022-12-14/2918537-92.patch",
+                "Fix getSetting() error on translated migrations": "https://www.drupal.org/files/issues/2018-07-08/2984460-3.patch"
             },
             "drupal/easy_install": {
                 "Handle missing core version": "https://www.drupal.org/files/issues/2019-12-19/easy_install_core_version-3101883-0.patch",
@@ -296,7 +297,7 @@
     },
     "require-dev": {
         "dof-dss/maestro-hosting": "^1.0",
-        "dof-dss/maestro-shell": "^1.0",
+        "dof-dss/maestro-shell": "^10.1",
         "drupal/coder": "^8.3",
         "drupal/core-dev": "^10.1",
         "drupal/devel": "^5.1",
