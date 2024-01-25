@@ -1,6 +1,8 @@
 # (required) The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'
 browser: "phantomjs"
 
+snap_file: javascript/snap.js
+
 # (required) The domains to take screenshots of.
 domains:
   current:  "https://www.imtac.org.uk/"
@@ -12,11 +14,12 @@ paths:
   about:    /about-imtac
   accessibility:     /accessibility
   contact:  /contact-us
+  news: /news/bolder-vision-belfast-reimagining-our-city-centre-consultation-1
+  publication:  /comments-consultation-northern-irelands-2030-2040-emissions-reduction-targets-first-three-carbon
 
 # (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
 screen_widths:
-  - 500x2000
-  - 1400x2000
+  - 1200x3000
 
 # (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
 before_capture: 'javascript/wait--phantom.js'
