@@ -1,6 +1,8 @@
 # (required) The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'
 browser: "phantomjs"
 
+snap_file: javascript/snap.js
+
 # (required) The domains to take screenshots of.
 domains:
   current:  "https://www.community-relations.org.uk/"
@@ -12,11 +14,15 @@ paths:
   about:    /about-us
   engagement:     /engagement-0
   shared-space:  /shared-space
+  event: /events/micro-community-investment-fund-now-open-grant-ps2k
+  funding-scheme: /funding-scheme/core-funding-scheme
+  news: /news-centre/jahswill-emmanuel-bem-honoured-points-light-award
+  project-profile: /project-profile/river-hope
+  publication: /publications/verification-officer-applicant-pack
 
 # (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
 screen_widths:
-  - 500x2000
-  - 1400x2000
+  - 1200x3000
 
 # (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
 before_capture: 'javascript/wait--phantom.js'

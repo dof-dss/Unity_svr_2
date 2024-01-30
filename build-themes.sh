@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+source ~/.bashrc
 echo "Starting unity theme update"
 
 # Defaults

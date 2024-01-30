@@ -4,12 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_enable_toc
     - field.field.node.page.field_metatag
+    - field.field.node.page.field_next_audit_due
     - node.type.page
     - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
+    - datetime
     - metatag
     - path
     - text
@@ -40,6 +41,12 @@ content:
     region: content
     settings:
       sidebar: true
+    third_party_settings: {  }
+  field_next_audit_due:
+    type: datetime_default
+    weight: 26
+    region: content
+    settings: {  }
     third_party_settings: {  }
   flag:
     weight: 5
@@ -109,5 +116,4 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_enable_toc: true
+hidden: {  }

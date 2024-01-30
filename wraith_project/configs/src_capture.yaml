@@ -1,6 +1,8 @@
 # (required) The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'
 browser: "phantomjs"
 
+snap_file: javascript/snap.js
+
 # (required) The domains to take screenshots of.
 domains:
   current:  "https://www.sentencereview.org.uk/"
@@ -12,11 +14,11 @@ paths:
   about:    /about-sentence-review-commissioners-0
   legislative-framework:     /legislative-framework
   contact:  /contact-us
+  publication:  /publications/src-2018-19-annual-report
 
 # (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
 screen_widths:
-  - 500x2000
-  - 1400x2000
+  - 1200x3000
 
 # (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
 before_capture: 'javascript/wait--phantom.js'

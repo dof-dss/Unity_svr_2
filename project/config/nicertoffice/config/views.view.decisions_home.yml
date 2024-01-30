@@ -447,7 +447,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<a href="/decisions" class="btn">View all decisions</a>'
+            value: '<p><a href="/decision" class="btn">View all decisions</a></p>'
             format: full_html
           tokenize: false
       display_extenders: {  }

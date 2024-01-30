@@ -1,0 +1,64 @@
+uuid: af667b21-0c67-4d5b-b178-9dfe8841468f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.diff
+    - field.field.node.featured_list.field_link
+    - field.field.node.featured_list.field_meta_tags
+    - node.type.featured_list
+  module:
+    - field_group
+    - link
+    - metatag
+    - user
+third_party_settings:
+  field_group:
+    group_additional_content_details:
+      children:
+        - field_meta_tags
+      label: 'Additional content details'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: field-collection
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.featured_list.diff
+targetEntityType: node
+bundle: featured_list
+mode: diff
+content:
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  content_moderation_control: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
