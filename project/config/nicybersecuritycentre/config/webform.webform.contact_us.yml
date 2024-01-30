@@ -229,15 +229,52 @@ handlers:
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: '[webform_submission:values:email:raw]'
+      from_mail: noreply@email.nicybersecuritycentre.gov.uk
       from_options: {  }
-      from_name: '[webform_submission:values:name:raw]'
-      reply_to: ''
+      from_name: ''
+      reply_to: '[webform_submission:values:email:raw]'
       return_path: ''
       sender_mail: ''
       sender_name: ''
       subject: 'Feedback form submission from: Contact us'
-      body: "Submitted on [webform_submission:created]<br />\r\nSubmitted values are:<br />\r\n[webform_submission:values]"
+      body: '<p>Submitted on [webform_submission:created]<br>Submitted values are:<br>[webform_submission:values]</p>'
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email:
+    id: email
+    handler_id: email
+    label: Email
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: ld-ee14c59d9c@learndmarc.com
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: noreply@email.nicybersecuritycentre.gov.uk
+      from_options: {  }
+      from_name: ''
+      reply_to: '[webform_submission:values:email:raw]'
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Feedback form submission from: Contact us'
+      body: '<p>Submitted on [webform_submission:created]<br>Submitted values are:<br>[webform_submission:values]</p>'
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
