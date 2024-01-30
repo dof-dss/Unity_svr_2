@@ -4,10 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.featured_list.field_link
+    - field.field.node.featured_list.field_meta_tags
     - node.type.featured_list
+    - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
     - link
+    - metatag
     - path
 id: node.featured_list.default
 targetEntityType: node
@@ -27,6 +30,14 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 122
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   langcode:
     type: language_select

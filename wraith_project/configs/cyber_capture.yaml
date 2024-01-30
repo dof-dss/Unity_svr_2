@@ -1,6 +1,8 @@
 # (required) The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'
 browser: "phantomjs"
 
+snap_file: javascript/snap.js
+
 # (required) The domains to take screenshots of.
 domains:
   current:  "https://www.nicybersecuritycentre.gov.uk/"
@@ -12,11 +14,13 @@ paths:
   about:    /about-us-0
   cyber-threats:     /cyber-threats
   contact:  /contact-us
+  event:  /events/protect-your-small-business-against-cyber-threats
+  news: /articles/cyberni-week-2024-4th-10th-march
+  publication: /publications/allstate-cyber-safety-kids
 
 # (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
 screen_widths:
-  - 500x2000
-  - 1400x2000
+  - 1200x3000
 
 # (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
 before_capture: 'javascript/wait--phantom.js'

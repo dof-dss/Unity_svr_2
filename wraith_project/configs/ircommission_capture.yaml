@@ -1,6 +1,8 @@
 # (required) The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'
 browser: "phantomjs"
 
+snap_file: javascript/snap.js
+
 # (required) The domains to take screenshots of.
 domains:
   current:  "https://www.ircommission.org/"
@@ -9,14 +11,15 @@ domains:
 # (required) The paths to capture. All paths should exist for both of the domains specified above.
 paths:
   home:     /
-  about-us:    /about-us
+  about-irc:    /about-irc
   commissioners:     /commissioners
   contact:  /contact-us
+  news: /news/irc-sixth-report-published-5-december-2023
+  publication:  /publications/strategic-direction-and-business-plan-2023-24
 
 # (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
 screen_widths:
-  - 500x2000
-  - 1400x2000
+  - 1200x3000
 
 # (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
 before_capture: 'javascript/wait--phantom.js'
