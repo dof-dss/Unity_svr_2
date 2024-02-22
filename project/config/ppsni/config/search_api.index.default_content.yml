@@ -7,7 +7,6 @@ dependencies:
     - field.storage.node.field_publication_date
     - field.storage.node.field_publication_type
     - field.storage.node.field_published_date
-    - field.storage.node.field_teaser
     - field.storage.node.field_topic
     - search_api.server.solr_default
   module:
@@ -19,6 +18,7 @@ third_party_settings:
     finalize: false
     commit_before_finalize: false
     commit_after_finalize: false
+    debug_finalize: false
     highlighter:
       maxAnalyzedChars: 51200
       fragmenter: gap
@@ -56,6 +56,8 @@ third_party_settings:
       limit_to_content_language: false
       include_language_independent: true
       use_language_undefined_as_fallback_language: false
+      specific_languages:
+        en: '0'
       use_universal_collation: false
 id: default_content
 name: 'Default Content'
@@ -103,14 +105,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_published_date
-  field_teaser:
-    label: Teaser
-    datasource_id: 'entity:node'
-    property_path: field_teaser
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.field_teaser
   field_topic:
     label: Topic
     datasource_id: 'entity:node'
@@ -157,6 +151,7 @@ datasource_settings:
     bundles:
       default: true
       selected:
+        - feature
         - webform
     languages:
       default: true
@@ -164,6 +159,8 @@ datasource_settings:
 processor_settings:
   add_url: {  }
   aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  custom_value: {  }
   entity_status: {  }
   entity_type: {  }
   highlight:
@@ -184,7 +181,6 @@ processor_settings:
     all_fields: true
     fields:
       - body
-      - field_teaser
       - langcode
       - title
       - type
