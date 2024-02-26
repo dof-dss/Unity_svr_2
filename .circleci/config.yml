@@ -293,55 +293,9 @@ jobs:
 
 workflows:
   version: 2
-  build-test-deploy:
-    jobs:
-      - build
-      - unity_base_checks:
-          requires:
-            - build
-      - coding_standards:
-          requires:
-            - build
-      - deprecated_code:
-          requires:
-            - build
-      - disallowed_functions:
-          requires:
-            - build
-      - check_illegal_updates:
-          requires:
-            - build
-
-  # A nightly build of the project, using all dof-dss packages at HEAD from development branch.
   nightly-edge-build:
-    when:
-      and:
-        - not:
-          equal: [ "https://github.com/dof-dss/unity_base", << pipeline.project.git_url >> ]
-    triggers:
-      - schedule:
-          # At 00:30 Monday to Friday
-          cron: "30 0 * * 1-5"
-          filters:
-            branches:
-              only:
-                - development
     jobs:
       - edge_build
-
-  # A nightly deploy or re-deploy of the edge site after the git branch has been created in nightly-edge-build.
-  nightly-edge-build-post-build-tasks:
-    when:
-      and:
-        - not:
-          equal: [ "https://github.com/dof-dss/unity_base", << pipeline.project.git_url >> ]
-    triggers:
-      - schedule:
-          # At 01:23 Monday to Friday
-          cron: "55 1 * * 1-5"
-          filters:
-            branches:
-              only:
-                - edge
-    jobs:
-      - sync_data
+      - sync_data:
+          requires:
+            - edge_build
