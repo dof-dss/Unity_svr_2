@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.news.field_news_type
     - field.field.node.news.field_photo
     - field.field.node.news.field_published_date
-    - field.field.node.news.field_teaser
     - node.type.news
   module:
     - layout_builder
@@ -33,14 +32,6 @@ content:
       link: false
     third_party_settings: {  }
     weight: 0
-    region: content
-  field_teaser:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 1
     region: content
 hidden:
   body: true
