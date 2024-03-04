@@ -1799,10 +1799,6 @@
             }
         },
         {
-            "require": {
-                "drupal/core": "^9.3 || ^10",
-                "drupal/seven": "~1.0"
-            },
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
