@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b4df90eb7d57daba82716ea91a1b566d",
+    "content-hash": "6ca9d7e2ffa63c3f92796a3f51aad6d7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5276,10 +5276,6 @@
                     "homepage": "https://www.drupal.org/user/99340"
                 },
                 {
-                    "name": "dww",
-                    "homepage": "https://www.drupal.org/user/46549"
-                },
-                {
                     "name": "geek-merlin",
                     "homepage": "https://www.drupal.org/user/229048"
                 },
@@ -8658,6 +8654,10 @@
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
+                    "name": "Dane Powell",
+                    "homepage": "https://www.drupal.org/user/339326"
+                },
+                {
                     "name": "gielfeldt",
                     "homepage": "https://www.drupal.org/user/366993"
                 },
@@ -9466,7 +9466,7 @@
                 "http geocoder"
             ],
             "support": {
-                "source": "https://github.com/geocoder-php/php-common-http/tree/master"
+                "source": "https://github.com/geocoder-php/php-common-http/tree/4.6.0"
             },
             "time": "2023-07-31T20:07:24+00:00"
         },
