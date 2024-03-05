@@ -680,10 +680,9 @@ display:
           custom_date_format: ''
           timezone: ''
       pager:
-        type: some
+        type: none
         options:
           offset: 0
-          items_per_page: 20
       arguments:
         nid:
           id: nid
@@ -789,7 +788,9 @@ display:
           required: true
       display_description: ''
       display_extenders:
-        metatag_display_extender: {  }
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       block_hide_empty: false
     cache_metadata:
       max-age: -1
