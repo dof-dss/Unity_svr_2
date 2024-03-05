@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.news.field_news_type
     - field.field.node.news.field_photo
     - field.field.node.news.field_published_date
-    - field.field.node.news.field_teaser
     - node.type.news
   module:
     - user
@@ -36,7 +35,6 @@ hidden:
   field_news_type: true
   field_photo: true
   field_published_date: true
-  field_teaser: true
   langcode: true
   links: true
   search_api_excerpt: true

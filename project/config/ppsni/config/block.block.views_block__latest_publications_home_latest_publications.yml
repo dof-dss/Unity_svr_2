@@ -1,0 +1,29 @@
+uuid: 22c738c0-ab2d-4ed6-991d-bfcbf40b6976
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_publications
+  module:
+    - system
+    - views
+  theme:
+    - ppsni_theme
+id: views_block__latest_publications_home_latest_publications
+theme: ppsni_theme
+region: top_second
+weight: 0
+provider: null
+plugin: 'views_block:latest_publications-home_latest_publications'
+settings:
+  id: 'views_block:latest_publications-home_latest_publications'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
