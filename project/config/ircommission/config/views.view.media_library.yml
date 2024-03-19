@@ -172,7 +172,7 @@ display:
           entity_field: thumbnail
           plugin_id: field
       pager:
-        type: full
+        type: mini
         options:
           offset: 0
           items_per_page: 24
@@ -181,8 +181,6 @@ display:
           tags:
             next: ››
             previous: ‹‹
-            first: '« First'
-            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -191,7 +189,6 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -536,39 +533,28 @@ display:
         - user.permissions
       tags:
         - 'config:core.entity_view_display.media.audio.default'
-        - 'config:core.entity_view_display.media.audio.embed'
         - 'config:core.entity_view_display.media.audio.media_library'
         - 'config:core.entity_view_display.media.document.default'
         - 'config:core.entity_view_display.media.document.embed'
         - 'config:core.entity_view_display.media.document.media_library'
         - 'config:core.entity_view_display.media.file.default'
-        - 'config:core.entity_view_display.media.file.embed'
         - 'config:core.entity_view_display.media.file.media_library'
-        - 'config:core.entity_view_display.media.image.article_float'
-        - 'config:core.entity_view_display.media.image.article_float_expandable'
-        - 'config:core.entity_view_display.media.image.article_full'
-        - 'config:core.entity_view_display.media.image.article_full_expandable'
-        - 'config:core.entity_view_display.media.image.banner_deep'
-        - 'config:core.entity_view_display.media.image.banner_thin'
-        - 'config:core.entity_view_display.media.image.card_large'
-        - 'config:core.entity_view_display.media.image.card_small'
         - 'config:core.entity_view_display.media.image.default'
         - 'config:core.entity_view_display.media.image.embed'
-        - 'config:core.entity_view_display.media.image.feature_card'
-        - 'config:core.entity_view_display.media.image.landing_full'
         - 'config:core.entity_view_display.media.image.landscape_float'
         - 'config:core.entity_view_display.media.image.landscape_float_xp'
         - 'config:core.entity_view_display.media.image.landscape_full'
         - 'config:core.entity_view_display.media.image.landscape_full_xp'
         - 'config:core.entity_view_display.media.image.media_library'
-        - 'config:core.entity_view_display.media.image.news_thumbnail'
+        - 'config:core.entity_view_display.media.image.member_small_image'
         - 'config:core.entity_view_display.media.image.portrait_float'
         - 'config:core.entity_view_display.media.image.portrait_float_xp'
         - 'config:core.entity_view_display.media.image.portrait_full'
+        - 'config:core.entity_view_display.media.image.preview'
         - 'config:core.entity_view_display.media.image.slide'
         - 'config:core.entity_view_display.media.image.unity_3_col_images'
+        - 'config:core.entity_view_display.media.image.uregni_logo'
         - 'config:core.entity_view_display.media.remote_video.default'
-        - 'config:core.entity_view_display.media.remote_video.embed'
         - 'config:core.entity_view_display.media.remote_video.media_library'
   default_page:
     id: default_page
@@ -1688,10 +1674,7 @@ display:
           view_mode: media_library
       defaults:
         fields: false
-      display_extenders:
-        metatag_display_extender:
-          metatags: {  }
-          tokenize: false
+      display_extenders: {  }
       path: admin/content/media-grid
     cache_metadata:
       max-age: 0
@@ -1705,39 +1688,28 @@ display:
         - user.permissions
       tags:
         - 'config:core.entity_view_display.media.audio.default'
-        - 'config:core.entity_view_display.media.audio.embed'
         - 'config:core.entity_view_display.media.audio.media_library'
         - 'config:core.entity_view_display.media.document.default'
         - 'config:core.entity_view_display.media.document.embed'
         - 'config:core.entity_view_display.media.document.media_library'
         - 'config:core.entity_view_display.media.file.default'
-        - 'config:core.entity_view_display.media.file.embed'
         - 'config:core.entity_view_display.media.file.media_library'
-        - 'config:core.entity_view_display.media.image.article_float'
-        - 'config:core.entity_view_display.media.image.article_float_expandable'
-        - 'config:core.entity_view_display.media.image.article_full'
-        - 'config:core.entity_view_display.media.image.article_full_expandable'
-        - 'config:core.entity_view_display.media.image.banner_deep'
-        - 'config:core.entity_view_display.media.image.banner_thin'
-        - 'config:core.entity_view_display.media.image.card_large'
-        - 'config:core.entity_view_display.media.image.card_small'
         - 'config:core.entity_view_display.media.image.default'
         - 'config:core.entity_view_display.media.image.embed'
-        - 'config:core.entity_view_display.media.image.feature_card'
-        - 'config:core.entity_view_display.media.image.landing_full'
         - 'config:core.entity_view_display.media.image.landscape_float'
         - 'config:core.entity_view_display.media.image.landscape_float_xp'
         - 'config:core.entity_view_display.media.image.landscape_full'
         - 'config:core.entity_view_display.media.image.landscape_full_xp'
         - 'config:core.entity_view_display.media.image.media_library'
-        - 'config:core.entity_view_display.media.image.news_thumbnail'
+        - 'config:core.entity_view_display.media.image.member_small_image'
         - 'config:core.entity_view_display.media.image.portrait_float'
         - 'config:core.entity_view_display.media.image.portrait_float_xp'
         - 'config:core.entity_view_display.media.image.portrait_full'
+        - 'config:core.entity_view_display.media.image.preview'
         - 'config:core.entity_view_display.media.image.slide'
         - 'config:core.entity_view_display.media.image.unity_3_col_images'
+        - 'config:core.entity_view_display.media.image.uregni_logo'
         - 'config:core.entity_view_display.media.remote_video.default'
-        - 'config:core.entity_view_display.media.remote_video.embed'
         - 'config:core.entity_view_display.media.remote_video.media_library'
   widget:
     id: widget
@@ -2067,39 +2039,28 @@ display:
         - user.permissions
       tags:
         - 'config:core.entity_view_display.media.audio.default'
-        - 'config:core.entity_view_display.media.audio.embed'
         - 'config:core.entity_view_display.media.audio.media_library'
         - 'config:core.entity_view_display.media.document.default'
         - 'config:core.entity_view_display.media.document.embed'
         - 'config:core.entity_view_display.media.document.media_library'
         - 'config:core.entity_view_display.media.file.default'
-        - 'config:core.entity_view_display.media.file.embed'
         - 'config:core.entity_view_display.media.file.media_library'
-        - 'config:core.entity_view_display.media.image.article_float'
-        - 'config:core.entity_view_display.media.image.article_float_expandable'
-        - 'config:core.entity_view_display.media.image.article_full'
-        - 'config:core.entity_view_display.media.image.article_full_expandable'
-        - 'config:core.entity_view_display.media.image.banner_deep'
-        - 'config:core.entity_view_display.media.image.banner_thin'
-        - 'config:core.entity_view_display.media.image.card_large'
-        - 'config:core.entity_view_display.media.image.card_small'
         - 'config:core.entity_view_display.media.image.default'
         - 'config:core.entity_view_display.media.image.embed'
-        - 'config:core.entity_view_display.media.image.feature_card'
-        - 'config:core.entity_view_display.media.image.landing_full'
         - 'config:core.entity_view_display.media.image.landscape_float'
         - 'config:core.entity_view_display.media.image.landscape_float_xp'
         - 'config:core.entity_view_display.media.image.landscape_full'
         - 'config:core.entity_view_display.media.image.landscape_full_xp'
         - 'config:core.entity_view_display.media.image.media_library'
-        - 'config:core.entity_view_display.media.image.news_thumbnail'
+        - 'config:core.entity_view_display.media.image.member_small_image'
         - 'config:core.entity_view_display.media.image.portrait_float'
         - 'config:core.entity_view_display.media.image.portrait_float_xp'
         - 'config:core.entity_view_display.media.image.portrait_full'
+        - 'config:core.entity_view_display.media.image.preview'
         - 'config:core.entity_view_display.media.image.slide'
         - 'config:core.entity_view_display.media.image.unity_3_col_images'
+        - 'config:core.entity_view_display.media.image.uregni_logo'
         - 'config:core.entity_view_display.media.remote_video.default'
-        - 'config:core.entity_view_display.media.remote_video.embed'
         - 'config:core.entity_view_display.media.remote_video.media_library'
   widget_table:
     id: widget_table
