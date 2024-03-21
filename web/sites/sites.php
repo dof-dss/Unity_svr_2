@@ -92,6 +92,9 @@ if (!empty(getenv('PLATFORM_BRANCH'))) {
       elseif (str_contains($newhost, 'pressclippings.nics.gov.uk')) {
         $sites[$host] = 'pressclippingsnics';
       }
+      elseif (str_contains($newhost, 'independentpanel.truthrecoveryni.co.uk')) {
+        $sites[$host] = 'independentpaneltruthrecoveryni';
+      }
       else {
         $subdomain = substr($newhost, 0, strpos($newhost, '.'));
         // Check for domain names that contain dashes and strip them out.
@@ -119,6 +122,9 @@ if (getenv('LANDO')) {
     }
     elseif ($site_id == 'pressclippingsnics') {
       $sites['pressclippings.nics.gov.uk.lndo.site'] = $site_id;
+    }
+    elseif ($site_id == 'independentpaneltruthrecoveryni') {
+      $sites['independentpanel.truthrecoveryni.co.uk.lndo.site'] = $site_id;
     }
     else {
       $sites[$site['url'] . '.lndo.site'] = $site_id;
