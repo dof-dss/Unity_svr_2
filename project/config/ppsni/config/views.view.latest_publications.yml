@@ -25,7 +25,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Latest publications'
+      title: 'Latest Publications'
       fields:
         title:
           id: title
