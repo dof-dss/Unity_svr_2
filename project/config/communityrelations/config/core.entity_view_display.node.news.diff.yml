@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.news.field_news_type
     - field.field.node.news.field_photo
     - field.field.node.news.field_published_date
-    - field.field.node.news.field_teaser
     - node.type.news
   module:
     - datetime
@@ -89,14 +88,6 @@ content:
       format_type: unity_date
     third_party_settings: {  }
     weight: 0
-    region: content
-  field_teaser:
-    type: string
-    label: inline
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 7
     region: content
 hidden:
   content_moderation_control: true
