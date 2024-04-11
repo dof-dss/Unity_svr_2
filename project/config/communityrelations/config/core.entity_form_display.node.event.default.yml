@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.event.field_event_date
     - field.field.node.event.field_meta_tags
     - field.field.node.event.field_photo
-    - field.field.node.event.field_teaser
     - node.type.event
     - workflows.workflow.nics_editorial_workflow
   module:
@@ -66,14 +65,6 @@ content:
     third_party_settings:
       media_library_edit:
         show_edit: '1'
-  field_teaser:
-    type: string_textfield
-    weight: 2
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   langcode:
     type: language_select
     weight: 5
