@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.event.field_event_date
     - field.field.node.event.field_meta_tags
     - field.field.node.event.field_photo
-    - field.field.node.event.field_teaser
     - node.type.event
   module:
     - datetime_range
@@ -47,7 +46,6 @@ content:
 hidden:
   content_moderation_control: true
   field_meta_tags: true
-  field_teaser: true
   langcode: true
   links: true
   search_api_excerpt: true

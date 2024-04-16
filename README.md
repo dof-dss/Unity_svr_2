@@ -1,23 +1,19 @@
-# Maestro Unity base
+# Unity Svr 2 (kamkoebtv74zm) 
 
-This repository contains Drupal core along with contrib and shared custom modules or themes for Unity sites. It is never
-deployed direct to a hosting environment and instead is used to create 'server specific' forks.
-
-When a core or contrib update is required for Unity sites it is first performed against this repository, pushed to
-Github and then each 'server instance' fork will pull from this upstream source. It is imperative that any
-changes to the files within this repository are not altered directly on the server instance fork as any future pulls
-could possibly overwrite those changes.
-
-## Structure
-
-```
-└── .circleci/ (Circle CI configuration and supporting files)
-├── scripts (Drupal scripts)
-├── web (Drupal public web directory)
-├── .env.sample (Example environment file)
-├── drushmulti.sh (Drush for multisite instances)
-```
-
-## Licence
-Unless stated otherwise, the codebase is released under [the MIT License](http://www.opensource.org/licenses/mit-license.php). This covers both the codebase and any sample code in the documentation.
-# maestro-drupal-unity
+ | Site  | ID | URL | Status | Default |
+| --- | --- | --- | --- | --- | 
+| Mental Health Champion for Northern Ireland | mentalhealthchampionni | mentalhealthchampion-ni.org.uk | ![#e8f5e9](https://placehold.co/140x30/c8e6c9/1b5e20.png?text=Production&font=source-sans-pro) | ![#e8f5e9](https://placehold.co/80x30/c8e6c9/1b5e20.png?text=Yes&font=source-sans-pro) | 
+| The Commissioner for Public Appointments for Northern Ireland | publicappointmentsni | publicappointmentsni.org | ![#e8f5e9](https://placehold.co/140x30/c8e6c9/1b5e20.png?text=Production&font=source-sans-pro) |   | 
+| Independent Reporting Commission | ircommission | ircommission.org | ![#e8f5e9](https://placehold.co/140x30/c8e6c9/1b5e20.png?text=Production&font=source-sans-pro) |   | 
+| The Inclusive Mobility and Transport Advisory Committee | imtac | imtac.org.uk | ![#e8f5e9](https://placehold.co/140x30/c8e6c9/1b5e20.png?text=Production&font=source-sans-pro) |   | 
+| Northern Ireland Certification Officer for Trade Unions and Employers' Associations | nicertoffice | nicertoffice.org.uk | ![#e8f5e9](https://placehold.co/140x30/c8e6c9/1b5e20.png?text=Production&font=source-sans-pro) |   | 
+| Victims Payments Board | victimspaymentsboard | victimspaymentsboard.org.uk | ![#e8f5e9](https://placehold.co/140x30/c8e6c9/1b5e20.png?text=Production&font=source-sans-pro) |   | 
+| HIA Redress Board | hiaredressni | hiaredressni.uk | ![#e8f5e9](https://placehold.co/140x30/c8e6c9/1b5e20.png?text=Production&font=source-sans-pro) |   | 
+| Commission for victims of crime | cvocni | cvocni.org | ![#e8f5e9](https://placehold.co/140x30/c8e6c9/1b5e20.png?text=Production&font=source-sans-pro) |   | 
+| Northern Ireland Judicial Appointments Commission | nijac | nijac.gov.uk | ![#e8f5e9](https://placehold.co/140x30/c8e6c9/1b5e20.png?text=Production&font=source-sans-pro) |   | 
+| Community Relations Council | communityrelations | community-relations.org.uk | ![#e8f5e9](https://placehold.co/140x30/c8e6c9/1b5e20.png?text=Production&font=source-sans-pro) |   | 
+| Sentence Review Commissioners | sentencereview | sentencereview.org.uk | ![#fff3e0](https://placehold.co/140x30/ffe0b2/e65100.png?text=Development&font=source-sans-pro) |   | 
+| NI Cyber Security Centre | nicybersecuritycentre | nicybersecuritycentre.gov.uk | ![#e8f5e9](https://placehold.co/140x30/c8e6c9/1b5e20.png?text=Production&font=source-sans-pro) |   | 
+| Public Prosecution Service | ppsni | ppsni.gov.uk | ![#e8f5e9](https://placehold.co/140x30/c8e6c9/1b5e20.png?text=Production&font=source-sans-pro) |   | 
+| The Commissioner for Survivors of Institutional Childhood Abuse | cosicani | cosica-ni.org | ![#e8f5e9](https://placehold.co/140x30/c8e6c9/1b5e20.png?text=Production&font=source-sans-pro) |   | 
+Last updated: 16/04/2024 10:07

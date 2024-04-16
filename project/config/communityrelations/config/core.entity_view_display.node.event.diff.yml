@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.event.field_event_date
     - field.field.node.event.field_meta_tags
     - field.field.node.event.field_photo
-    - field.field.node.event.field_teaser
     - node.type.event
   module:
     - datetime_range
@@ -79,14 +78,6 @@ content:
       link: false
     third_party_settings: {  }
     weight: 1
-    region: content
-  field_teaser:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 6
     region: content
 hidden:
   content_moderation_control: true
