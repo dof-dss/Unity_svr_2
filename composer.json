@@ -60,24 +60,25 @@
         "drupal/block_list_override": "^1.0",
         "drupal/block_visibility_groups": "^2.0",
         "drupal/ckeditor": "^1.0",
-        "drupal/ckeditor5_allowed_html": "^1.0@dev",
+        "drupal/ckeditor5_allowed_html": "1.2.x-dev@dev",
         "drupal/ckeditor5_premium_features": "^1.2",
         "drupal/clientside_validation": "^4.0",
         "drupal/clone_nodes": "^1.2@dev",
         "drupal/config_filter": "^1.10",
-        "drupal/config_ignore": "^2.4",
+        "drupal/config_ignore": "^3.2",
         "drupal/config_readonly": "^1.0@beta",
         "drupal/config_split": "^1.9",
         "drupal/config_update": "^2.0@alpha",
         "drupal/content_lock": "^2.3",
         "drupal/cookie_content_blocker": "^2.2",
-        "drupal/core-composer-scaffold": "^10.1",
-        "drupal/core-project-message": "^10.1",
-        "drupal/core-recommended": "^10.1",
+        "drupal/core-composer-scaffold": "^10.2",
+        "drupal/core-project-message": "^10.2",
+        "drupal/core-recommended": "^10.2",
         "drupal/csp": "^1.20",
         "drupal/date_facet_drilldown": "^5.0@dev",
         "drupal/diff": "^1.1",
         "drupal/draggableviews": "^2.1",
+        "drupal/dynamic_entity_reference": "^3.2",
         "drupal/entity_browser": "^2.9",
         "drupal/entity_embed": "^1.4",
         "drupal/entity_reference_revisions": "^1.10",
@@ -97,7 +98,7 @@
         "drupal/handy_cache_tags": "^1.4",
         "drupal/honeypot": "^2.1",
         "drupal/http_cache_control": "^2.1",
-        "drupal/inline_entity_form": "^2.0@RC",
+        "drupal/inline_entity_form": "^3.0@RC",
         "drupal/jquery_ui_accordion": "^2.0",
         "drupal/layout_builder_modal": "^1.2",
         "drupal/layout_builder_restrictions": "^2.19",
@@ -151,7 +152,7 @@
         "drupal/views_custom_cache_tag": "^1.3",
         "drupal/webform": "^6.2@beta",
         "drupal/whatlinkshere": "^2.1",
-        "drush/drush": "^11",
+        "drush/drush": "^12.5",
         "geocoder-php/google-maps-provider": "^4.7",
         "harvesthq/chosen": "^1.8",
         "kenwheeler/slick": "^1.8",
@@ -182,6 +183,12 @@
     },
     "extra": {
         "patches": {
+            "drupal/auto_entityqueue": {
+                "Entityquery - add access control check": "https://www.drupal.org/files/issues/2023-10-25/3366202-7-accessCheck-auto-entity-queue.patch"
+            },
+            "drupal/content_lock": {
+                "fix 10.2 $time deprecation message": "https://www.drupal.org/files/issues/2023-05-22/3343964-5.patch"
+            },
             "drupal/clientside_validation": {
                 "core/jquery.once is required": "https://www.drupal.org/files/issues/2021-02-23/3200022-01.patch"
             },
@@ -209,6 +216,9 @@
             "drupal/fastly": {
                 "Allow disabling of logging": "https://git.drupalcode.org/project/fastly/-/merge_requests/6.patch"
             },
+            "drupal/filelog": {
+                "Avoid circular reference": "https://www.drupal.org/files/issues/2024-01-25/filelog_with_tests.patch"
+            },
             "drupal/hms_field": {
                 "Drupal 9 compatability": "https://www.drupal.org/files/issues/2020-06-06/hms_field.1.x-dev.rector.patch"
             },
@@ -225,6 +235,12 @@
             },
             "drupal/scheduled_transitions": {
                 "No scheduled revisions appear for migrated nodes": "https://www.drupal.org/files/issues/2021-11-01/scheduled_transitions_base_language_3091006_2x.patch"
+            },
+            "drupal/slick": {
+                "PHP 8.2 compatibility": "https://git.drupalcode.org/issue/slick-3373261/-/commit/4035fef4eb48df2a2859d6c2785357d6071f9e72.patch"
+            },
+            "drupal/ultimate_cron": {
+                "Fix $last_ran deprecation error": "https://www.drupal.org/files/issues/2023-04-03/3351276-4.patch"
             },
             "drupal/readonlymode": {
                 "Fatal typerror fix": "https://www.drupal.org/files/issues/2020-12-23/readonlymode-string_not_array-3115119-9.patch"
