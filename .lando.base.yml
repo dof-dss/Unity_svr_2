@@ -3,7 +3,7 @@ recipe: drupal9
 config:
   webroot: web
   database: mariadb
-  php: '8.1'
+  php: '8.2'
   composer_version: '2.5.8'
   config:
     php: .lando/config/php.ini
@@ -15,18 +15,9 @@ env_file:
 services:
   appserver:
     scanner: false
-    overrides:
-      environment:
-        # Set node compilation flag to allow arm64 and x86 chipset compilation.
-        CPPFLAGS: "-DPNG_ARM_NEON_OPT=0"
-        # node version set here will be used by the nvm installer script.
-        NODE_VERSION: 14.21.3
     xdebug: debug
     build_as_root:
       - /app/.lando/scripts/appserver_build.sh
-    run:
-      - touch ~/.bashrc
-      - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
   database:
     build_as_root:
       - "sh /app/.lando/scripts/create_databases.sh"
@@ -40,6 +31,12 @@ services:
     portforward: true
     hogfrom:
       - appserver
+  node:
+    type: 'node:14'
+    overrides:
+      environment:
+        # Set node compilation flag to allow arm64 and x86 chipset compilation.
+        CPPFLAGS: "-DPNG_ARM_NEON_OPT=0"
 tooling:
   drupal:
     cmd: "/app/vendor/bin/drupal --root=/app/web"
@@ -54,11 +51,11 @@ tooling:
     cmd: "rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && /etc/init.d/apache2 reload"
     user: root
   npm:
-    service: appserver
-    cmd: /usr/bin/npm
+    service: node
+  node:
+    service: node
   yarn:
-    service: appserver
-    cmd: yarn
+    service: node
   'nightwatch [site] [test]':
     service: appserver
     description: "Run Nightwatch.js functional tests.\n\n
