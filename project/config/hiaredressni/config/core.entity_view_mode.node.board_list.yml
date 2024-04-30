@@ -6,5 +6,6 @@ dependencies:
     - node
 id: node.board_list
 label: board_list
+description: ''
 targetEntityType: node
 cache: true

@@ -6,5 +6,6 @@ dependencies:
     - media
 id: media.member_small_image
 label: 'Member small image'
+description: ''
 targetEntityType: media
 cache: true

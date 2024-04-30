@@ -8,5 +8,6 @@ _core:
   default_config_hash: 19qMNh1skJRUBIfjgvS3btWng7iBRpV7icOdUgG5huQ
 id: media.card_small
 label: 'Card small'
+description: ''
 targetEntityType: media
 cache: true

@@ -8,5 +8,6 @@ _core:
   default_config_hash: hiN1aSgulAlDjkXN_9TLKAFNjY_98GI7Ww46ljmM7bo
 id: media.unity_3_col_images
 label: 'Unity 3 col images'
+description: ''
 targetEntityType: media
 cache: true
