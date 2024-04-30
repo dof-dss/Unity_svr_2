@@ -6,5 +6,6 @@ dependencies:
     - node
 id: node.home_latest
 label: 'Home latest'
+description: ''
 targetEntityType: node
 cache: true
