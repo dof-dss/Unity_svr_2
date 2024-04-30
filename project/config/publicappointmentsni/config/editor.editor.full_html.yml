@@ -17,6 +17,7 @@ settings:
       - superscript
       - removeFormat
       - '|'
+      - style
       - heading
       - insertTable
       - '|'
@@ -43,10 +44,20 @@ settings:
         - heading5
         - heading6
     ckeditor5_list:
-      reversed: true
-      startIndex: true
+      properties:
+        reversed: true
+        startIndex: true
+      multiBlock: true
     ckeditor5_sourceEditing:
       allowed_tags: {  }
+    ckeditor5_style:
+      styles:
+        -
+          label: 'Information notice'
+          element: '<p class="info-notice">'
+        -
+          label: Button
+          element: '<a class="btn">'
     linkit_extension:
       linkit_enabled: true
       linkit_profile: default
