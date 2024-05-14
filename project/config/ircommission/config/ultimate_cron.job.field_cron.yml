@@ -6,7 +6,7 @@ dependencies:
     - field
 title: 'Purges deleted Field API data'
 id: field_cron
-weight: 0
+weight: -1
 module: field
 callback: field_cron
 scheduler:
