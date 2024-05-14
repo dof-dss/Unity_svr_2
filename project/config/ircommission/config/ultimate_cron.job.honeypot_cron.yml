@@ -6,7 +6,7 @@ dependencies:
     - honeypot
 title: 'Default cron handler'
 id: honeypot_cron
-weight: 0
+weight: -4
 module: honeypot
 callback: honeypot_cron
 scheduler:

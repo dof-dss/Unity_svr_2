@@ -6,7 +6,7 @@ dependencies:
     - update
 title: 'Update indexes'
 id: update_cron
-weight: 0
+weight: 5
 module: update
 callback: update_cron
 scheduler:
