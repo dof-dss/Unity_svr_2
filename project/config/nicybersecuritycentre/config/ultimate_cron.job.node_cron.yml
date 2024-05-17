@@ -6,7 +6,7 @@ dependencies:
     - node
 title: 'Updates search rankings for nodes'
 id: node_cron
-weight: 0
+weight: 4
 module: node
 callback: node_cron
 scheduler:

@@ -6,12 +6,25 @@ dependencies:
     - file
 title: 'Deletes temporary files'
 id: file_cron
-weight: 0
+weight: -1
 module: file
 callback: file_cron
 scheduler:
-  id: simple
+  id: crontab
+  configuration:
+    rules:
+      - '5 4 * * *'
+    catch_up: 0
 launcher:
   id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
 logger:
   id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

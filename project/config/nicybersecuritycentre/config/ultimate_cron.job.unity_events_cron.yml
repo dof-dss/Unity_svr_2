@@ -6,7 +6,7 @@ dependencies:
     - unity_events
 title: 'Unity events archiver'
 id: unity_events_cron
-weight: 0
+weight: 3
 module: unity_events
 callback: unity_events_cron
 scheduler:

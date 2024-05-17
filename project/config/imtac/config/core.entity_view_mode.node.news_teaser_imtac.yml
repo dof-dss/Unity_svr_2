@@ -6,5 +6,6 @@ dependencies:
     - node
 id: node.news_teaser_imtac
 label: news_teaser_imtac
+description: ''
 targetEntityType: node
 cache: true

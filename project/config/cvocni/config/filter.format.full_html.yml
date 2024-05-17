@@ -30,24 +30,33 @@ name: 'Full HTML'
 format: full_html
 weight: 2
 filters:
-  filter_align:
-    id: filter_align
-    provider: filter
+  blazy_filter:
+    id: blazy_filter
+    provider: blazy
     status: false
-    weight: -37
-    settings: {  }
-  filter_caption:
-    id: filter_caption
-    provider: filter
+    weight: -31
+    settings:
+      media_switch: ''
+      hybrid_style: ''
+      box_style: ''
+      box_caption: ''
+      filter_tags:
+        img: img
+        iframe: iframe
+      use_data_uri: '0'
+  ckeditor5_premium_features_collaboration_filter:
+    id: ckeditor5_premium_features_collaboration_filter
+    provider: ckeditor5_premium_features
     status: false
-    weight: -36
+    weight: -40
     settings: {  }
-  filter_htmlcorrector:
-    id: filter_htmlcorrector
-    provider: filter
+  cookie_content_blocker_filter:
+    id: cookie_content_blocker_filter
+    provider: cookie_content_blocker
     status: false
-    weight: -34
-    settings: {  }
+    weight: -42
+    settings:
+      disable_xss: '1'
   editor_file_reference:
     id: editor_file_reference
     provider: editor
@@ -60,11 +69,32 @@ filters:
     status: true
     weight: -43
     settings: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: false
+    weight: -37
+    settings: {  }
+  filter_allowed:
+    id: filter_allowed
+    provider: ckeditor5_allowed_html
+    status: true
+    weight: -49
+    settings:
+      allowed_html: '<a class href hreflang data-entity-type data-entity-uuid data-entity-substitution> <em> <strong> <cite> <blockquote cite> <code> <ul class type> <ol class start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <p class translate> <br> <span> <img src alt height width data-* typeof> <sup> <table class> <caption> <tbody> <thead> <tfoot> <th scope> <td> <tr> <drupal-entity data-entity-type data-entity-uuid data-entity-substitution data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button alt title class> <picture data-* alt title class> <source srcset media type> <address> <drupal-media data-entity-type data-entity-id data-entity-uuid data-entity-substitution data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button data-view-mode alt title class>'
+      filter_html_help: '0'
+      filter_html_nofollow: '0'
   filter_autop:
     id: filter_autop
     provider: filter
     status: false
     weight: -38
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: false
+    weight: -36
     settings: {  }
   filter_html:
     id: filter_html
@@ -72,7 +102,7 @@ filters:
     status: false
     weight: -50
     settings:
-      allowed_html: ''
+      allowed_html: '<p class="info-notice"> <a class="btn">'
       filter_html_help: false
       filter_html_nofollow: false
   filter_html_escape:
@@ -87,6 +117,18 @@ filters:
     status: false
     weight: -35
     settings: {  }
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: false
+    weight: -34
+    settings: {  }
+  filter_image_lazy_load:
+    id: filter_image_lazy_load
+    provider: filter
+    status: false
+    weight: -41
+    settings: {  }
   filter_url:
     id: filter_url
     provider: filter
@@ -94,6 +136,13 @@ filters:
     weight: -48
     settings:
       filter_url_length: 72
+  linkit:
+    id: linkit
+    provider: linkit
+    status: false
+    weight: -32
+    settings:
+      title: true
   media_embed:
     id: media_embed
     provider: media
@@ -120,13 +169,6 @@ filters:
     status: true
     weight: -47
     settings: {  }
-  token_filter:
-    id: token_filter
-    provider: token_filter
-    status: true
-    weight: -45
-    settings:
-      replace_empty: '1'
   origins_media_cookie_content_blocker_embed_filter:
     id: origins_media_cookie_content_blocker_embed_filter
     provider: origins_common
@@ -134,52 +176,10 @@ filters:
     weight: -46
     settings:
       replacement_text: 'Click here to view the video content'
-  blazy_filter:
-    id: blazy_filter
-    provider: blazy
-    status: false
-    weight: -31
-    settings:
-      media_switch: ''
-      hybrid_style: ''
-      box_style: ''
-      box_caption: ''
-      filter_tags:
-        img: img
-        iframe: iframe
-      use_data_uri: '0'
-  cookie_content_blocker_filter:
-    id: cookie_content_blocker_filter
-    provider: cookie_content_blocker
-    status: false
-    weight: -42
-    settings:
-      disable_xss: '1'
-  linkit:
-    id: linkit
-    provider: linkit
-    status: false
-    weight: -32
-    settings:
-      title: true
-  filter_image_lazy_load:
-    id: filter_image_lazy_load
-    provider: filter
-    status: false
-    weight: -41
-    settings: {  }
-  filter_allowed:
-    id: filter_allowed
-    provider: ckeditor5_allowed_html
+  token_filter:
+    id: token_filter
+    provider: token_filter
     status: true
-    weight: -49
+    weight: -45
     settings:
-      allowed_html: '<a class href hreflang data-entity-type data-entity-uuid data-entity-substitution> <em> <strong> <cite> <blockquote cite> <code> <ul class type> <ol class start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <p class translate> <br> <span> <img src alt height width data-* typeof> <sup> <table class> <caption> <tbody> <thead> <tfoot> <th scope> <td> <tr> <drupal-entity data-entity-type data-entity-uuid data-entity-substitution data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button alt title class> <picture data-* alt title class> <source srcset media type> <address> <drupal-media data-entity-type data-entity-id data-entity-uuid data-entity-substitution data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button data-view-mode alt title class>'
-      filter_html_help: '0'
-      filter_html_nofollow: '0'
-  ckeditor5_premium_features_collaboration_filter:
-    id: ckeditor5_premium_features_collaboration_filter
-    provider: ckeditor5_premium_features
-    status: false
-    weight: -40
-    settings: {  }
+      replace_empty: '1'
