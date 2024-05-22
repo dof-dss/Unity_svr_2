@@ -8,5 +8,6 @@ _core:
   default_config_hash: 6WRwWG7tqHaz5AOyNbueQABixUrDYXRf9k2KJBRV5ZI
 id: media.landscape_float
 label: 'Landscape float'
+description: ''
 targetEntityType: media
 cache: true

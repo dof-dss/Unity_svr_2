@@ -1,0 +1,25 @@
+uuid: 0954c4b7-d9c5-4ff3-af16-0492824740ad
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:f2f06ae0-254c-409d-bd1b-dcb82d5b0737'
+  module:
+    - block_content
+  theme:
+    - cvocni_theme
+id: subscribe
+theme: cvocni_theme
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:f2f06ae0-254c-409d-bd1b-dcb82d5b0737'
+settings:
+  id: 'block_content:f2f06ae0-254c-409d-bd1b-dcb82d5b0737'
+  label: Subscribe
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
