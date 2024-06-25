@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "968f6498592c7a3cef5fa565b334f609",
+    "content-hash": "ea7afc49aeb8c9a84db95b82c53c5957",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1526,16 +1526,16 @@
         },
         {
             "name": "dof-dss/nicsdru_origins_modules",
-            "version": "10.3.5",
+            "version": "10.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_origins_modules.git",
-                "reference": "02a9d602329e2fd75a96cc039414346cc71e26b9"
+                "reference": "f81e01fa981740aecd459c1fbeb16c4a63698f41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/02a9d602329e2fd75a96cc039414346cc71e26b9",
-                "reference": "02a9d602329e2fd75a96cc039414346cc71e26b9",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/f81e01fa981740aecd459c1fbeb16c4a63698f41",
+                "reference": "f81e01fa981740aecd459c1fbeb16c4a63698f41",
                 "shasum": ""
             },
             "require": {
@@ -1550,9 +1550,9 @@
             "description": "Generic modules for DOF-DSS Drupal sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_origins_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/10.3.5"
+                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/10.3.6"
             },
-            "time": "2024-04-04T09:31:37+00:00"
+            "time": "2024-05-28T14:42:52+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
@@ -17396,12 +17396,12 @@
             "version": "v5.2.13",
             "source": {
                 "type": "git",
-                "url": "https://github.com/justinrainbow/json-schema.git",
+                "url": "https://github.com/jsonrainbow/json-schema.git",
                 "reference": "fbbe7e5d79f618997bc3332a6f49246036c45793"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/fbbe7e5d79f618997bc3332a6f49246036c45793",
+                "url": "https://api.github.com/repos/jsonrainbow/json-schema/zipball/fbbe7e5d79f618997bc3332a6f49246036c45793",
                 "reference": "fbbe7e5d79f618997bc3332a6f49246036c45793",
                 "shasum": ""
             },
