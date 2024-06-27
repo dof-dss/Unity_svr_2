@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea7afc49aeb8c9a84db95b82c53c5957",
+    "content-hash": "9e974938e1ce26770d67b91ed4fc378b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -8683,17 +8683,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "6.2.0-rc2",
+            "version": "6.2.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "6.2.0-rc2"
+                "reference": "6.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-6.2.0-rc2.zip",
-                "reference": "6.2.0-rc2",
-                "shasum": "2f6c6b693dc4af73c81d2290b4e82a669f0aa2dc"
+                "url": "https://ftp.drupal.org/files/projects/webform-6.2.3.zip",
+                "reference": "6.2.3",
+                "shasum": "b23b2746643ef11ee764ac420a02e2162d727930"
             },
             "require": {
                 "drupal/core": "^9.4 || ^10",
@@ -8742,11 +8742,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "6.2.0-rc2",
-                    "datestamp": "1697463934",
+                    "version": "6.2.3",
+                    "datestamp": "1719431562",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "drush": {
@@ -21786,7 +21786,6 @@
         "drupal/shs": 5,
         "drupal/timefield_d10": 20,
         "drupal/ultimate_cron": 15,
-        "drupal/webform": 10,
         "drupal/easy_install_d10": 20
     },
     "prefer-stable": true,
