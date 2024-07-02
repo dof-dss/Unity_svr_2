@@ -1,0 +1,23 @@
+uuid: 787dfee3-fcc9-4c1c-a2cd-fdfe25a02ff2
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - telephone_plus
+_core:
+  default_config_hash: 7gXQXzo1umqZDk_8caC6J0XSw9jsNbBGSQHi0HZVmuM
+id: block_content.field_telephone
+field_name: field_telephone
+entity_type: block_content
+type: telephone_plus_field
+settings:
+  title_enabled: 1
+  supplementary_enabled: 1
+module: telephone_plus
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

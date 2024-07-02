@@ -1,0 +1,37 @@
+uuid: 05f228d4-43c2-4164-b039-ae662297f0d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.accordion_menu
+    - field.field.block_content.accordion_menu.field_accordion_sections
+  module:
+    - paragraphs
+_core:
+  default_config_hash: MqZaKON1pC595klOBw-95dhKMl3m1VuJVz4I_aCCcJY
+id: block_content.accordion_menu.default
+targetEntityType: block_content
+bundle: accordion_menu
+mode: default
+content:
+  field_accordion_sections:
+    type: entity_reference_paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: accordion_section
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden:
+  info: true
