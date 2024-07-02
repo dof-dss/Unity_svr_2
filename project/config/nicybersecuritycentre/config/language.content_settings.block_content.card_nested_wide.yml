@@ -1,0 +1,13 @@
+uuid: 0e084eab-ddb4-415b-93c8-18ca6e6098b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_nested_wide
+_core:
+  default_config_hash: g3tJZxXM1_5a08ycIbTlVgJCxa2Kw8OmY0O6m_YRQPw
+id: block_content.card_nested_wide
+target_entity_type_id: block_content
+target_bundle: card_nested_wide
+default_langcode: site_default
+language_alterable: false

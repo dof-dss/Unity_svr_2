@@ -1,0 +1,31 @@
+uuid: 8de763e0-2b1d-4a77-8ad5-c97e48322cce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.landing_page
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    basic_html_publications: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: rwJhiW5BdiIi-LoZiOkBPV7Q1Qp-CyZIDht2Q_F4BEE
+id: node.landing_page.field_body
+field_name: field_body
+entity_type: node
+bundle: landing_page
+label: Body
+description: 'This optional field may contain text that can be positioned on the page when managing the layout.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

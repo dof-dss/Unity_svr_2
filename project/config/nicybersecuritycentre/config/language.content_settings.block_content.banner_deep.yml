@@ -1,0 +1,13 @@
+uuid: 1e562192-4bd4-4fad-8b07-e8aba14a74e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_deep
+_core:
+  default_config_hash: 139TlbPXMwLu3AmX-FbLA4R2MrTxACOGIu_vBM3Hqt0
+id: block_content.banner_deep
+target_entity_type_id: block_content
+target_bundle: banner_deep
+default_langcode: site_default
+language_alterable: false

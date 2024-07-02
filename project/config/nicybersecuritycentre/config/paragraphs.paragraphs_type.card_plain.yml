@@ -1,0 +1,12 @@
+uuid: 083bda99-a2f7-4968-ae42-b2d88e748c1b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hB7ndQiGBrx-gwN761nPYKb4WhXe2tRyC37sf0hsndo
+id: card_plain
+label: 'Card - plain'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

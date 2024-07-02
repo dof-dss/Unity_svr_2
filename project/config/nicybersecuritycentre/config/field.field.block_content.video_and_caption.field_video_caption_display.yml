@@ -1,0 +1,23 @@
+uuid: b85d0ad3-a7b5-4528-a7c5-b62ff1b45009
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.video_and_caption
+    - field.storage.block_content.field_video_caption_display
+  module:
+    - options
+_core:
+  default_config_hash: JznNG9NXKtZcVl1DDHNmKCjZf0ITYn81sw9jsxLqZpg
+id: block_content.video_and_caption.field_video_caption_display
+field_name: field_video_caption_display
+entity_type: block_content
+bundle: video_and_caption
+label: 'Video caption display'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

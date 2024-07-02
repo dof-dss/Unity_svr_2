@@ -1,0 +1,10 @@
+uuid: c9190984-739d-4639-80c2-5ff61cc72442
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: paD8yTwVDdq5GdS-a-K29x6Gn2bmN-nAng9y0wuq_JU
+id: video
+label: Video
+revision: 1
+description: ''

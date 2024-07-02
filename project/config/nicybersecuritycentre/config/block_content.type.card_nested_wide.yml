@@ -1,0 +1,10 @@
+uuid: 61ae1f76-5ad3-48b0-817e-f450544ddedb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Mg53LmhIDN-gPLXpISno-14VSJPu86DDUPc-PZDs3z8
+id: card_nested_wide
+label: 'Card nested - wide'
+revision: 1
+description: 'Provides a block with nested block elements.'
