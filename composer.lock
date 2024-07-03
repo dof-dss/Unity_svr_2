@@ -16699,16 +16699,16 @@
         },
         {
             "name": "dof-dss/maestro-hosting",
-            "version": "1.0.26",
+            "version": "1.0.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/maestro-hosting.git",
-                "reference": "6c48e0c2d555e8f825495094553899ce8ddebf9a"
+                "reference": "43d270feca002732eb54ea1d54803bb139023359"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/maestro-hosting/zipball/6c48e0c2d555e8f825495094553899ce8ddebf9a",
-                "reference": "6c48e0c2d555e8f825495094553899ce8ddebf9a",
+                "url": "https://api.github.com/repos/dof-dss/maestro-hosting/zipball/43d270feca002732eb54ea1d54803bb139023359",
+                "reference": "43d270feca002732eb54ea1d54803bb139023359",
                 "shasum": ""
             },
             "require": {
@@ -16733,22 +16733,22 @@
             "description": "Maestro hosting resources",
             "support": {
                 "issues": "https://github.com/dof-dss/maestro-hosting/issues",
-                "source": "https://github.com/dof-dss/maestro-hosting/tree/1.0.26"
+                "source": "https://github.com/dof-dss/maestro-hosting/tree/1.0.29"
             },
-            "time": "2024-04-25T14:07:06+00:00"
+            "time": "2024-07-03T14:13:29+00:00"
         },
         {
             "name": "dof-dss/maestro-shell",
-            "version": "10.1.1",
+            "version": "10.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/maestro-shell.git",
-                "reference": "3e5aae4af31f3aaa72615a60bdf0f75e483e42ba"
+                "reference": "e89f2c12d7744e92b44a920c0c0a5a8f3d1138df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/maestro-shell/zipball/3e5aae4af31f3aaa72615a60bdf0f75e483e42ba",
-                "reference": "3e5aae4af31f3aaa72615a60bdf0f75e483e42ba",
+                "url": "https://api.github.com/repos/dof-dss/maestro-shell/zipball/e89f2c12d7744e92b44a920c0c0a5a8f3d1138df",
+                "reference": "e89f2c12d7744e92b44a920c0c0a5a8f3d1138df",
                 "shasum": ""
             },
             "require": {
@@ -16758,15 +16758,15 @@
                 "romaricdrigon/metayaml": "dev-master",
                 "stecman/symfony-console-completion": "^0.12",
                 "symfony/cache": "^6.3",
-                "symfony/config": "^6.0",
-                "symfony/console": "^6.0",
-                "symfony/dependency-injection": "^6.0",
-                "symfony/event-dispatcher": "^6.0",
-                "symfony/filesystem": "^6.0",
-                "symfony/finder": "^6.0",
+                "symfony/config": "^6.3",
+                "symfony/console": "^6.3",
+                "symfony/dependency-injection": "^6.3",
+                "symfony/event-dispatcher": "^6.3",
+                "symfony/filesystem": "^6.3",
+                "symfony/finder": "^6.3",
                 "symfony/http-client": "^5.4",
-                "symfony/process": "^6.0",
-                "symfony/yaml": "^6.0",
+                "symfony/process": "^6.3",
+                "symfony/yaml": "^6.3",
                 "webflo/drupal-finder": "^1.2"
             },
             "suggest": {
@@ -16791,9 +16791,9 @@
             "description": "Shell for working with Maestro projects.",
             "support": {
                 "issues": "https://github.com/dof-dss/maestro-shell/issues",
-                "source": "https://github.com/dof-dss/maestro-shell/tree/10.1.1"
+                "source": "https://github.com/dof-dss/maestro-shell/tree/10.1.2"
             },
-            "time": "2023-11-15T15:57:04+00:00"
+            "time": "2024-03-20T16:06:13+00:00"
         },
         {
             "name": "drupal/coder",
