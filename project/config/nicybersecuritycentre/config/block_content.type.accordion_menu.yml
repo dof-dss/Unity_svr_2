@@ -1,0 +1,10 @@
+uuid: afb4bcd9-fc1a-4483-abe7-fc22b63cca9e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: mjvmWwRLRBL0zD9dVXuj1gUfx8QAz-W5aSGFw0KTY0A
+id: accordion_menu
+label: 'Accordion menu'
+revision: 1
+description: ''
