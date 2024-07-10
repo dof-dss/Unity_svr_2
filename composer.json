@@ -211,7 +211,8 @@
             },
             "drupal/facets": {
                 "Pass facet object onto child items": "https://www.drupal.org/files/issues/2019-11-13/child_item-3094143-2.patch",
-                "Fix to deprecated function $transliterateDisplayValue": "https://www.drupal.org/files/issues/2024-02-21/facets-php82-3406085-18.patch"
+                "Fix to deprecated function $transliterateDisplayValue": "https://www.drupal.org/files/issues/2024-02-21/facets-php82-3406085-18.patch",
+                "Fatal errors on config import": "https://www.drupal.org/files/issues/2023-10-20/3395567.patch"
             },
             "drupal/facets_pretty_paths": {
                 "facet pretty paths doubling up": "https://www.drupal.org/files/issues/2023-01-12/url_duplication-3254600-45.patch"
