@@ -1,0 +1,25 @@
+uuid: 71af4817-d94c-4ae4-a557-d37e33ddb442
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_standard
+    - field.storage.block_content.field_title_link
+  module:
+    - link
+_core:
+  default_config_hash: 7pLB-So9rCRBkyit2lEoXmc5QNObR9BkxfRiJSbZi9c
+id: block_content.card_standard.field_title_link
+field_name: field_title_link
+entity_type: block_content
+bundle: card_standard
+label: 'Title link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link
