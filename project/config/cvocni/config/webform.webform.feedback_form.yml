@@ -70,7 +70,12 @@ elements: |-
     motivated_by_prejudice:
       '#type': radios
       '#title': 'Was the crime a hate crime? (motivated by prejudice against your religion, sexual orientation, race or disability)'
-      '#options': yes_no
+      '#options':
+        'No': 'No'
+        'Yes – motivated by prejudice against religion': 'Yes – motivated by prejudice against religion'
+        'Yes – motivated by prejudice against sexual orientation': 'Yes – motivated by prejudice against sexual orientation'
+        'Yes – motivated by racial prejudice': 'Yes – motivated by racial prejudice'
+        'Yes – motivated by prejudice against your disability': 'Yes – motivated by prejudice against your disability'
     brief_description_of_the_incident:
       '#type': textarea
       '#title': 'Brief description of the incident – Please provide a short description of the incident/crime'
