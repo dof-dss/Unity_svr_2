@@ -13,36 +13,51 @@ title: 'Feedback form'
 description: ''
 categories: {  }
 elements: |-
+  please_provide_your_name_and_telephone_number:
+    '#type': fieldset
+    '#title': 'Please provide your contact details'
+    name:
+      '#type': textfield
+      '#title': Name
+      '#required': true
+    telephone_number:
+      '#type': tel
+      '#title': 'Contact number'
+      '#required': true
+      '#pattern': '^[0-9\(\) \+\-]{6,20}$'
+      '#pattern_error': 'Please enter a valid phone number'
+    email:
+      '#type': email
+      '#title': 'Email address'
+      '#required': true
   about_the_crime:
     '#type': fieldset
     '#title': 'About the crime'
     crime_type:
-      '#type': select
-      '#title': 'Crime type'
-      '#options':
-        Burglary: Burglary
-        'Criminal damage': 'Criminal damage'
-        Cyber-crime: Cyber-crime
-        Drugs: Drugs
-        Murder: Murder/Manslaughter
-        Rape: Rape
-        Robbery: Robbery
-        'Sexual Offenses': 'Sexual Offenses'
-        Stalking: Stalking
-        'Threats to kill': 'Threats to kill'
-        'Violence(with injury)': 'Violence(with injury)'
-        'Violence(without injury)': 'Violence(without injury)'
-        Other: Other
+      '#type': webform_entity_select
+      '#title': 'Crime Type'
+      '#target_type': taxonomy_term
+      '#selection_handler': 'default:taxonomy_term'
+      '#selection_settings':
+        target_bundles:
+          crime_types: crime_types
+        sort:
+          field: name
+          direction: asc
     please_specify:
       '#type': textarea
       '#title': 'Please specify'
       '#states':
         visible:
           ':input[name="crime_type"]':
-            value: Other
+            value: '26'
     incident_date:
       '#type': date
-      '#title': 'Incident date'
+      '#title': 'Incident date (if you cannot remember the exact date, please provide approximate date)'
+      '#default_value': now
+    case_closed_date:
+      '#type': date
+      '#title': 'Date case closed (if you cannot remember the exact date, please provide approximate date)'
       '#default_value': now
     was_the_crime_reported_to_the_police_:
       '#type': radios
@@ -56,15 +71,60 @@ elements: |-
       '#type': radios
       '#title': 'Was the crime a hate crime? (motivated by prejudice against your religion, sexual orientation, race or disability)'
       '#options': yes_no
+    brief_description_of_the_incident:
+      '#type': textarea
+      '#title': 'Brief description of the incident – Please provide a short description of the incident/crime'
   experience:
     '#type': fieldset
-    '#title': Experience
-    outline_your_experience_as_a_victim:
+    '#title': 'Experience with the criminal justice system - In this section we want to hear about your experiences, both positive and negative with the different agencies in the criminal justice system. Please do not feel obliged to share anything you are uncomfortable with our team knowing or details that may identify you or others.'
+    experience_with_the_police:
       '#type': textarea
-      '#title': 'Please outline your experience as a victim. Please do not feel obliged to share anything you are uncomfortable with our team knowing or details that may identify you or others.'
-    number_one_thing_you_would_change:
+      '#title': 'Experience with the Police – if your crime was reported to the police, please give us a brief description of your experience with them and whether you were satisfied with how they acted'
+    experience_with_the_public_prosecution_service:
       '#type': textarea
-      '#title': 'What is the number one thing you would change if you could about the criminal justice system?'
+      '#title': 'Experience with the Public Prosecution Service – if applicable please give us a brief description of your experience with the PPS and whether you were satisfied with how they acted.'
+    experience_at_court:
+      '#type': textarea
+      '#title': 'Experience at Court – if applicable please give us a brief description of your experience with the Courts and whether you were satisfied with how they acted'
+    experience_with_defence_lawyers:
+      '#type': textarea
+      '#title': 'Experience with defence lawyers - if applicable please give us a brief description of your experience with defence lawyers and whether you were satisfied with how they acted'
+    experience_with_the_judiciary:
+      '#type': textarea
+      '#title': 'Experience with the Judiciary – if applicable please give us a brief description of your experience with the judges involved and whether you were satisfied with how they acted.'
+    non_criminal_justice_system_agencies:
+      '#type': textarea
+      '#title': 'Non-criminal justice system agencies – Did you engage with any other agencies or organisations, e.g. the health service as a result of the incident/crime? If yes please provide a brief description of your experience and how it impacted on you.'
+    victim_support_agencies:
+      '#type': textarea
+      '#title': 'Did you engage with any victim support agencies? If yes please provide a brief description of your experience and how it impacted on you.'
+    have_you_made_a_complaint_about_any_of_the_agencies:
+      '#type': select
+      '#title': 'Have you made a complaint about any of the Criminal Justice Agencies about your experience? Please select the agencies you made a complaint against'
+      '#options':
+        Police: Police
+        'Public Prosecution Service': 'Public Prosecution Service'
+        'Northern Ireland Courts and Tribunals Service': 'Northern Ireland Courts and Tribunals Service'
+        'The Judiciary': 'The Judiciary'
+        'Probation Board': 'Probation Board'
+        'Prison Service': 'Prison Service'
+        Other: Other
+    please_specify_complaint:
+      '#type': textarea
+      '#title': 'Please specify'
+      '#states':
+        visible:
+          ':input[name="have_you_made_a_complaint_about_any_of_the_agencies"]':
+            value: Other
+    complaint_handled:
+      '#type': textarea
+      '#title': 'If you did make a complaint how was it handled?'
+    anything_else_about_your_experience:
+      '#type': textarea
+      '#title': 'Is there anything else about your experience you think the Commissioner should know about?'
+    anything_else_you_think_could_be_done:
+      '#type': textarea
+      '#title': 'Is there anything else you think could be done to improve the experience of victims of crime in Northern Ireland?'
   contact:
     '#type': fieldset
     '#title': Contact
@@ -74,29 +134,19 @@ elements: |-
       '#options': yes_no
     contact_you_about_your_experience:
       '#type': radios
-      '#title': 'Would you like us to contact you about your experience?'
+      '#title': 'Are you interested in being involved in any future research or media interest regarding the experience of victims of crime? If so, please advise us of your preferred email or phone contact for us to hold on record.'
       '#options': yes_no
-    please_provide_your_name_and_telephone_number:
-      '#type': fieldset
-      '#title': 'Please provide your contact details'
+    preferred_contact:
+      '#type': radios
+      '#title': 'Preferred contact'
+      '#options':
+        Phone: Phone
+        Text: Text
+        Email: Email
       '#states':
         visible:
           ':input[name="contact_you_about_your_experience"]':
             value: 'Yes'
-      name:
-        '#type': textfield
-        '#title': Name
-        '#required': true
-      telephone_number:
-        '#type': tel
-        '#title': 'Telephone number'
-        '#pattern': '^[0-9\(\) \+\-]{6,20}$'
-        '#pattern_error': 'Please enter a valid phone number'
-        '#required': true
-      email:
-        '#type': email
-        '#title': 'Email address'
-        '#required': true
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
