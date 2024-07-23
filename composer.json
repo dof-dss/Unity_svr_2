@@ -53,6 +53,7 @@
         "drupal/address": "^1.12",
         "drupal/admin_toolbar": "^3.4",
         "drupal/allowed_formats": "^2.0",
+        "drupal/antibot": "^2.0",
         "drupal/auto_entityqueue": "^2.1",
         "drupal/blazy": "2.16.0",
         "drupal/block_content_permissions": "^1.11",
