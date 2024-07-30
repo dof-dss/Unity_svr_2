@@ -13,23 +13,6 @@ title: 'Feedback form'
 description: ''
 categories: {  }
 elements: |-
-  please_provide_your_name_and_telephone_number:
-    '#type': fieldset
-    '#title': 'Please provide your contact details'
-    name:
-      '#type': textfield
-      '#title': Name
-      '#required': true
-    telephone_number:
-      '#type': tel
-      '#title': 'Contact number'
-      '#required': true
-      '#pattern': '^[0-9\(\) \+\-]{6,20}$'
-      '#pattern_error': 'Please enter a valid phone number'
-    email:
-      '#type': email
-      '#title': 'Email address'
-      '#required': true
   about_the_crime:
     '#type': fieldset
     '#title': 'About the crime'
@@ -104,7 +87,7 @@ elements: |-
       '#type': textarea
       '#title': 'Did you engage with any victim support agencies? If yes please provide a brief description of your experience and how it impacted on you.'
     have_you_made_a_complaint_about_any_of_the_agencies:
-      '#type': select
+      '#type': checkboxes
       '#title': 'Have you made a complaint about any of the Criminal Justice Agencies about your experience? Please select the agencies you made a complaint against'
       '#options':
         Police: Police
@@ -119,20 +102,34 @@ elements: |-
       '#title': 'Please specify'
       '#states':
         visible:
-          ':input[name="have_you_made_a_complaint_about_any_of_the_agencies"]':
-            value: Other
+          ':input[name="have_you_made_a_complaint_about_any_of_the_agencies[Other]"]':
+            checked: true
     complaint_handled:
       '#type': textarea
       '#title': 'If you did make a complaint how was it handled?'
-    anything_else_about_your_experience:
-      '#type': textarea
-      '#title': 'Is there anything else about your experience you think the Commissioner should know about?'
     anything_else_you_think_could_be_done:
       '#type': textarea
       '#title': 'Is there anything else you think could be done to improve the experience of victims of crime in Northern Ireland?'
   contact:
     '#type': fieldset
     '#title': Contact
+    please_provide_your_name_and_telephone_number:
+      '#type': fieldset
+      '#title': 'Please provide your contact details'
+      name:
+        '#type': textfield
+        '#title': Name
+        '#required': true
+      telephone_number:
+        '#type': tel
+        '#title': 'Contact number'
+        '#required': true
+        '#pattern': '^[0-9\(\) \+\-]{6,20}$'
+        '#pattern_error': 'Please enter a valid phone number'
+      email:
+        '#type': email
+        '#title': 'Email address'
+        '#required': true
     consent_to_anonymised_quotes:
       '#type': radios
       '#title': 'Do you consent to anonymised quotes from your experience being used in any literature or messaging produced by our office? '
