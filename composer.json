@@ -129,6 +129,7 @@
         "drupal/schema_metatag": "^3.0",
         "drupal/search_api": "^1.26",
         "drupal/search_api_autocomplete": "^1.4",
+        "drupal/search_api_glossary": "^4.2",
         "drupal/search_api_location": "^1.0@alpha",
         "drupal/search_api_solr": "4.3.0",
         "drupal/search_api_spellcheck": "^4.0",
