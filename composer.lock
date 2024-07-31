@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64d247392ff23324323a9d22c80a88c5",
+    "content-hash": "9c04aa7ab4ab1a9ccbab25fbe9d6e2e6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7399,6 +7399,61 @@
                 "source": "http://git.drupal.org/project/search_api_autocomplete.git",
                 "issues": "https://www.drupal.org/project/issues/search_api_autocomplete",
                 "irc": "irc://irc.freenode.org/drupal-search-api"
+            }
+        },
+        {
+            "name": "drupal/search_api_glossary",
+            "version": "4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/search_api_glossary.git",
+                "reference": "8.x-4.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_api_glossary-8.x-4.2.zip",
+                "reference": "8.x-4.2",
+                "shasum": "242e6c1385f7e6fcd716e8d8ebe6177088d6ae4d"
+            },
+            "require": {
+                "drupal/core": ">=8",
+                "drupal/facets": "*",
+                "drupal/search_api": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-4.2",
+                    "datestamp": "1690495212",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "dakku",
+                    "homepage": "https://www.drupal.org/user/151868",
+                    "email": "dakku@example.com"
+                },
+                {
+                    "name": "dakku",
+                    "homepage": "https://www.drupal.org/user/97634"
+                },
+                {
+                    "name": "Kristen Pol",
+                    "homepage": "https://www.drupal.org/user/8389"
+                }
+            ],
+            "description": "Creates a glossary fields (A B C ...) based on node titles and user names",
+            "homepage": "https://www.drupal.org/project/search_api_glossary",
+            "support": {
+                "source": "https://git.drupalcode.org/project/search_api_glossary"
             }
         },
         {
