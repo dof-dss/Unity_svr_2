@@ -151,7 +151,7 @@ elements: |-
             value: 'Yes'
     are_you_content_for_cvocni_to_contact_you:
       '#type': radios
-      '#title': 'Are you content for CVOCNI to contact you regarding the submission?'
+      '#title': 'Are you content for CVOCNI to contact you regarding this submission?'
       '#options':
         'Yes': 'Yes'
         'No': 'No'
