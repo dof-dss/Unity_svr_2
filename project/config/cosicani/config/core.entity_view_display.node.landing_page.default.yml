@@ -1,5 +1,4 @@
 uuid: e406a50c-ae9a-45d6-ad6f-3c387d217aaf
-langcode: en
 status: true
 dependencies:
   config:
@@ -21,6 +20,7 @@ third_party_settings:
       - 'Custom block types'
       - 'Custom blocks'
       - Devel
+      - 'EU Cookie Compliance'
       - Facets
       - 'Facets summary (Experimental)'
       - Forms
@@ -43,7 +43,54 @@ third_party_settings:
         - layout_onecol
         - teasers_x3
         - teasers_x2
+      denylisted_blocks: {  }
+      allowlisted_blocks:
+        'Chaos Tools': {  }
+        'Content fields': {  }
+        'Custom block types':
+          - accordion_menu
+          - banner_deep
+          - card_contact
+          - card_nested_standard
+          - card_nested_wide
+          - card_standard
+          - card_wide
+          - information_notice
+          - plain_cards
+          - text
+          - video
+          - video_and_caption
+        'Custom blocks': {  }
+        Devel: {  }
+        Facets: {  }
+        'Facets summary (Experimental)': {  }
+        Forms: {  }
+        Geolocation: {  }
+        Help: {  }
+        'Inline blocks':
+          - 'inline_block:accordion_menu'
+          - 'inline_block:banner_deep'
+          - 'inline_block:card_contact'
+          - 'inline_block:card_standard'
+          - 'inline_block:card_wide'
+          - 'inline_block:card_nested_standard'
+          - 'inline_block:card_nested_wide'
+          - 'inline_block:information_notice'
+          - 'inline_block:plain_cards'
+          - 'inline_block:text'
+          - 'inline_block:video'
+          - 'inline_block:video_and_caption'
+        'Lists (Views)': {  }
+        Menus: {  }
+        System: {  }
+        User: {  }
+        Webform: {  }
+        'Webform access': {  }
+        core: {  }
       restricted_categories:
+        - 'EU Cookie Compliance'
+        - Origins
+        - 'Read Only Mode'
         - 'Unity Search Pages'
       blacklisted_blocks: {  }
       whitelisted_blocks:
@@ -195,8 +242,6 @@ third_party_settings:
             Webform: {  }
             'Webform access': {  }
             core: {  }
-_core:
-  default_config_hash: IgqThvQbw06lmr4GqopYNGRJsETGksWt3rmd8rBGeZA
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page

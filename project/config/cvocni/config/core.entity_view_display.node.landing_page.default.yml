@@ -1,5 +1,4 @@
 uuid: d94c1c3f-4816-4f15-8604-0e9bf28ee689
-langcode: en
 status: true
 dependencies:
   config:
@@ -9,51 +8,18 @@ dependencies:
   module:
     - layout_builder
     - layout_builder_restrictions
-    - layout_discovery
-    - text
     - user
 third_party_settings:
   layout_builder:
     enabled: true
     allow_custom: true
-    sections:
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
-          35ce90f9-4de6-4900-92bd-d3e533a25c63:
-            uuid: 35ce90f9-4de6-4900-92bd-d3e533a25c63
-            region: content
-            configuration:
-              id: 'extra_field_block:node:landing_page:links'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            weight: 0
-            additional: {  }
-          0cc65122-0c4f-4f97-af35-969e455cb442:
-            uuid: 0cc65122-0c4f-4f97-af35-969e455cb442
-            region: content
-            configuration:
-              id: 'field_block:node:landing_page:field_body'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: text_default
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-            weight: 1
-            additional: {  }
-        third_party_settings: {  }
   layout_builder_restrictions:
     allowed_block_categories:
       - 'Chaos Tools'
       - 'Content fields'
       - 'Custom block types'
       - 'Custom blocks'
+      - Devel
       - 'EU Cookie Compliance'
       - Facets
       - 'Facets summary (Experimental)'
@@ -63,6 +29,7 @@ third_party_settings:
       - 'Inline blocks'
       - 'Lists (Views)'
       - Menus
+      - Origins
       - 'Read Only Mode'
       - System
       - 'Unity Search Pages'
@@ -77,32 +44,213 @@ third_party_settings:
         - teasers_x3
         - teasers_x2
       denylisted_blocks: {  }
-      allowlisted_blocks: {  }
+      allowlisted_blocks:
+        'Chaos Tools': {  }
+        'Content fields': {  }
+        'Custom block types':
+          - accordion_menu
+          - banner_deep
+          - card_contact
+          - card_nested_standard
+          - card_nested_wide
+          - card_standard
+          - card_wide
+          - information_notice
+          - plain_cards
+          - text
+          - video
+          - video_and_caption
+        'Custom blocks': {  }
+        Devel: {  }
+        Facets: {  }
+        'Facets summary (Experimental)': {  }
+        Forms: {  }
+        Geolocation: {  }
+        Help: {  }
+        'Inline blocks':
+          - 'inline_block:accordion_menu'
+          - 'inline_block:banner_deep'
+          - 'inline_block:card_contact'
+          - 'inline_block:card_standard'
+          - 'inline_block:card_wide'
+          - 'inline_block:card_nested_standard'
+          - 'inline_block:card_nested_wide'
+          - 'inline_block:information_notice'
+          - 'inline_block:plain_cards'
+          - 'inline_block:text'
+          - 'inline_block:video'
+          - 'inline_block:video_and_caption'
+        'Lists (Views)': {  }
+        Menus: {  }
+        System: {  }
+        User: {  }
+        Webform: {  }
+        'Webform access': {  }
+        core: {  }
       restricted_categories:
         - 'EU Cookie Compliance'
+        - Origins
+        - 'Read Only Mode'
+        - 'Unity Search Pages'
+      blacklisted_blocks: {  }
+      whitelisted_blocks:
+        'Chaos Tools': {  }
+        'Content fields': {  }
+        'Custom block types':
+          - accordion_menu
+          - banner_deep
+          - card_contact
+          - card_nested_standard
+          - card_nested_wide
+          - card_standard
+          - card_wide
+          - information_notice
+          - plain_cards
+          - text
+          - video
+          - video_and_caption
+        'Custom blocks': {  }
+        Devel: {  }
+        Facets: {  }
+        'Facets summary (Experimental)': {  }
+        Forms: {  }
+        Geolocation: {  }
+        Help: {  }
+        'Inline blocks':
+          - 'inline_block:accordion_menu'
+          - 'inline_block:banner_deep'
+          - 'inline_block:card_contact'
+          - 'inline_block:card_standard'
+          - 'inline_block:card_wide'
+          - 'inline_block:card_nested_standard'
+          - 'inline_block:card_nested_wide'
+          - 'inline_block:information_notice'
+          - 'inline_block:plain_cards'
+          - 'inline_block:text'
+          - 'inline_block:video'
+          - 'inline_block:video_and_caption'
+        'Lists (Views)': {  }
+        Menus: {  }
+        Origins: {  }
+        'Read Only Mode': {  }
+        System: {  }
+        User: {  }
+        Views: {  }
+        Webform: {  }
+        'Webform access': {  }
+        core: {  }
     entity_view_mode_restriction_by_region:
       allowed_layouts:
         - layout_onecol
         - teasers_x3
         - teasers_x2
+      whitelisted_blocks:
+        layout_onecol:
+          all_regions:
+            'Chaos Tools': {  }
+            'Content fields': {  }
+            'Custom block types':
+              - accordion_menu
+              - banner_deep
+              - card_contact
+              - information_notice
+              - plain_cards
+              - text
+              - video_and_caption
+            'Custom blocks': {  }
+            Devel: {  }
+            Facets: {  }
+            'Facets summary (Experimental)': {  }
+            Forms: {  }
+            Geolocation: {  }
+            Help: {  }
+            'Inline blocks':
+              - 'inline_block:accordion_menu'
+              - 'inline_block:banner_deep'
+              - 'inline_block:card_contact'
+              - 'inline_block:information_notice'
+              - 'inline_block:plain_cards'
+              - 'inline_block:text'
+              - 'inline_block:video_and_caption'
+            'Lists (Views)': {  }
+            Menus: {  }
+            Origins: {  }
+            'Read Only Mode': {  }
+            System: {  }
+            User: {  }
+            Views: {  }
+            Webform: {  }
+            'Webform access': {  }
+            core: {  }
+        teasers_x2:
+          all_regions:
+            'Chaos Tools': {  }
+            'Content fields': {  }
+            'Custom block types':
+              - card_contact
+              - card_nested_wide
+              - card_wide
+              - video
+            'Custom blocks': {  }
+            Devel: {  }
+            Facets: {  }
+            'Facets summary (Experimental)': {  }
+            Forms: {  }
+            Geolocation: {  }
+            Help: {  }
+            'Inline blocks':
+              - 'inline_block:card_contact'
+              - 'inline_block:card_wide'
+              - 'inline_block:card_nested_wide'
+              - 'inline_block:video'
+            'Lists (Views)': {  }
+            Menus: {  }
+            Origins: {  }
+            'Read Only Mode': {  }
+            System: {  }
+            User: {  }
+            Views: {  }
+            Webform: {  }
+            'Webform access': {  }
+            core: {  }
+        teasers_x3:
+          all_regions:
+            'Chaos Tools': {  }
+            'Content fields': {  }
+            'Custom block types':
+              - card_contact
+              - card_nested_standard
+              - card_standard
+            'Custom blocks': {  }
+            Devel: {  }
+            Facets: {  }
+            'Facets summary (Experimental)': {  }
+            Forms: {  }
+            Geolocation: {  }
+            Help: {  }
+            'Inline blocks':
+              - 'inline_block:card_contact'
+              - 'inline_block:card_standard'
+              - 'inline_block:card_nested_standard'
+            'Lists (Views)': {  }
+            Menus: {  }
+            Origins: {  }
+            'Read Only Mode': {  }
+            System: {  }
+            User: {  }
+            Views: {  }
+            Webform: {  }
+            'Webform access': {  }
+            core: {  }
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page
 mode: default
-content:
-  field_body:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 101
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
+content: {  }
 hidden:
+  content_moderation_control: true
+  field_body: true
   langcode: true
   layout_builder__layout: true
+  links: true
   search_api_excerpt: true
