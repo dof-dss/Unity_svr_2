@@ -93,6 +93,7 @@ third_party_settings:
         - Origins
         - 'Read Only Mode'
         - 'Unity Search Pages'
+        - Views
       blacklisted_blocks: {  }
       whitelisted_blocks:
         'Chaos Tools': {  }
