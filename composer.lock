@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d9815839005acbf41ed4806c0655a6e",
+    "content-hash": "cd0f037c5a01631ab9ae9e891c6a7ad4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1705,16 +1705,16 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
-            "version": "10.1.14",
+            "version": "10.1.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_modules.git",
-                "reference": "6bd3a9cb0540474913a70a905b11265d86cbe42c"
+                "reference": "427bf7f193efe67be65e6d234809a41138274066"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/6bd3a9cb0540474913a70a905b11265d86cbe42c",
-                "reference": "6bd3a9cb0540474913a70a905b11265d86cbe42c",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/427bf7f193efe67be65e6d234809a41138274066",
+                "reference": "427bf7f193efe67be65e6d234809a41138274066",
                 "shasum": ""
             },
             "require": {
@@ -1728,9 +1728,9 @@
             "description": "Custom modules available to all Unity sites.",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/10.1.14"
+                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/10.1.15"
             },
-            "time": "2024-08-02T10:31:51+00:00"
+            "time": "2024-08-12T11:43:42+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_profile",
@@ -4112,11 +4112,11 @@
             ],
             "authors": [
                 {
-                    "name": "Berdir",
+                    "name": "berdir",
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
-                    "name": "Dave Reid",
+                    "name": "dave reid",
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
