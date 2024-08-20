@@ -72,10 +72,11 @@
         "drupal/config_update": "^2.0@alpha",
         "drupal/content_lock": "^2.3",
         "drupal/cookie_content_blocker": "^2.2",
-        "drupal/core-composer-scaffold": "^10.2",
-        "drupal/core-project-message": "^10.2",
-        "drupal/core-recommended": "^10.2",
+        "drupal/core-composer-scaffold": "^10.3",
+        "drupal/core-project-message": "^10.3",
+        "drupal/core-recommended": "^10.3",
         "drupal/csp": "^1.20",
+        "drupal/ctools": "^4.1",
         "drupal/date_facet_drilldown": "^5.0@dev",
         "drupal/diff": "^1.1",
         "drupal/draggableviews": "^2.1",
@@ -123,7 +124,7 @@
         "drupal/readonlymode": "^1.2",
         "drupal/redirect": "^1.8",
         "drupal/redis": "^1.7",
-        "drupal/scheduled_transitions": "^2.3",
+        "drupal/scheduled_transitions": "^2.5",
         "drupal/scheduler": "^2.0",
         "drupal/scheduler_content_moderation_integration": "^2.0@beta",
         "drupal/schema_metatag": "^3.0",
@@ -146,9 +147,9 @@
         "drupal/telephone_plus": "^9.1",
         "drupal/timefield_d10": "1.0.x-dev@dev",
         "drupal/token": "^1.12",
-        "drupal/token_filter": "^2.0",
+        "drupal/token_filter": "^2.2",
         "drupal/twig_field_value": "^2.0",
-        "drupal/twig_tweak": "^3.2",
+        "drupal/twig_tweak": "^3.4",
         "drupal/ultimate_cron": "^2.0@alpha",
         "drupal/views_contextual_filters_or": "^1.4",
         "drupal/views_custom_cache_tag": "^1.3",
@@ -194,6 +195,9 @@
             "drupal/clientside_validation": {
                 "core/jquery.once is required": "https://www.drupal.org/files/issues/2021-02-23/3200022-01.patch"
             },
+            "drupal/ckeditor5_premium_features": {
+                "fix console error plugin not loaded": "https://git.drupalcode.org/project/ckeditor5_premium_features/-/merge_requests/6.diff"
+            },
             "drupal/core": {
                 "Render blocks in preview page": "https://www.drupal.org/files/issues/2019-10-03/3085364_2.patch",
                 "User enable email exception": "https://www.drupal.org/files/issues/2023-05-19/user_email_exception-3355151-3.patch",
@@ -202,7 +206,9 @@
                 "Allow authors without manage book privleges permission to save unpublished versions of published nodes": "https://www.drupal.org/files/issues/2022-12-14/2918537-92.patch",
                 "Fix getSetting() error on translated migrations": "https://www.drupal.org/files/issues/2018-07-08/2984460-3.patch",
                 "Fix for reference error on unpublished nodes on Entity Queue": "https://www.drupal.org/files/issues/2024-04-16/2845144-95.patch",
-                "Menu revision langcode bug fix": "https://www.drupal.org/files/issues/2024-05-13/menu_revision_langcode-3446877.patch"
+                "Menu revision langcode bug fix": "https://www.drupal.org/files/issues/2024-05-13/menu_revision_langcode-3446877.patch",
+                "Fix to $form.ajaxSubmit is not a function": "https://git.drupalcode.org/project/drupal/-/merge_requests/6052.diff",
+                "Contextual links patch": "https://www.drupal.org/files/issues/2024-06-30/contextual_links_disappear_intermittently_leading_to_console_errors-3458067-8_0.patch"
             },
             "drupal/easy_install": {
                 "Handle missing core version": "https://www.drupal.org/files/issues/2019-12-19/easy_install_core_version-3101883-0.patch",
@@ -241,9 +247,6 @@
                 "Add URL Redirects tab to taxonomy term edit form": "https://www.drupal.org/files/issues/2021-03-26/redirect_provide_redirect_tab_on_taxonomy_terms_3205896.patch",
                 "URL redirects listing only displays operations": "https://www.drupal.org/files/issues/2019-04-05/redirects_list_builder-3031125-9-d8.patch",
                 "Fix ajax error when creating redirects": "https://www.drupal.org/files/issues/2020-12-14/validation-issue-3057250-29.patch"
-            },
-            "drupal/scheduled_transitions": {
-                "No scheduled revisions appear for migrated nodes": "https://www.drupal.org/files/issues/2021-11-01/scheduled_transitions_base_language_3091006_2x.patch"
             },
             "drupal/slick": {
                 "PHP 8.2 compatibility": "https://git.drupalcode.org/issue/slick-3373261/-/commit/4035fef4eb48df2a2859d6c2785357d6071f9e72.patch"
@@ -325,7 +328,7 @@
         "dof-dss/maestro-hosting": "^1.0",
         "dof-dss/maestro-shell": "^10.1",
         "drupal/coder": "^8.3",
-        "drupal/core-dev": "^10.1",
+        "drupal/core-dev": "^10.3",
         "drupal/devel": "^5.1",
         "drupal/easy_install_d10": "^10.0@dev",
         "drupal/migrate_plus": "^6.0",
