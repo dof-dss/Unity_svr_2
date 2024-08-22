@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d131d6f21bb35284a60d0f1d035341e5",
+    "content-hash": "9c61c4ad0b54dcbe750b4bfa3db07a74",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1675,16 +1675,16 @@
         },
         {
             "name": "dof-dss/nicsdru_origins_modules",
-            "version": "10.3.9",
+            "version": "10.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_origins_modules.git",
-                "reference": "77c841da01f3415a4c42f12ac48ac42767284eeb"
+                "reference": "6e438fd21a9c2aa9f821fc1de62a59c0eb25cda4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/77c841da01f3415a4c42f12ac48ac42767284eeb",
-                "reference": "77c841da01f3415a4c42f12ac48ac42767284eeb",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/6e438fd21a9c2aa9f821fc1de62a59c0eb25cda4",
+                "reference": "6e438fd21a9c2aa9f821fc1de62a59c0eb25cda4",
                 "shasum": ""
             },
             "require": {
@@ -1699,9 +1699,9 @@
             "description": "Generic modules for DOF-DSS Drupal sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_origins_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/10.3.9"
+                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/10.4.0"
             },
-            "time": "2024-07-09T09:35:25+00:00"
+            "time": "2024-08-21T11:21:24+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
