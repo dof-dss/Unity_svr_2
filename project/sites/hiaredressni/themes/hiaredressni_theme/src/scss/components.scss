@@ -26,6 +26,10 @@
       justify-content: center;
       flex-direction: column;
     }
+
+    .media-image[data-picture-mapping="inline"] > img {
+      float: none
+    }
   }
 
   .container-wrap {
@@ -51,6 +55,38 @@
   .column h3 {
     font-weight: normal;
     font-size: 1.8rem;
+    margin-top: 0;
+    color: $link;
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+    text-decoration-thickness: .1rem;
+  }
+}
+
+#content #top-area .block a {
+  border: none;
+  padding: 1rem 0;
+  margin: 0;
+  display: block;
+
+  &:hover,
+  &:focus {
+    background: $grey-lightest;
+
+    h3 {
+      text-decoration-color: $black;
+      text-decoration-thickness: 2px;
+    }
+  }
+
+  &:focus {
+    outline: 2px solid $black;
+  }
+}
+
+#block-keydocuments {
+  .media-image {
+    margin-bottom: 1.2em;
   }
 }
 
