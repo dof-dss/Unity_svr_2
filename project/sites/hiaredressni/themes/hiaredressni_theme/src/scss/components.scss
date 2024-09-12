@@ -28,7 +28,8 @@
     }
 
     .media-image[data-picture-mapping="inline"] > img {
-      float: none
+      float: none;
+      margin-left: 0;
     }
   }
 
