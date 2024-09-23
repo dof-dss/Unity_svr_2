@@ -112,7 +112,7 @@
         "drupal/menu_admin_per_menu": "^1.5",
         "drupal/menu_breadcrumb": "^2.0@alpha",
         "drupal/metatag": "^2.0",
-        "drupal/migrate_absolute_links": "4.0.x-dev@dev",
+        "drupal/migrate_absolute_links": "^5.0@dev",
         "drupal/migrate_upgrade": "^4.0",
         "drupal/moderation_sidebar": "^1.7",
         "drupal/node_edit_protection": "^1.1",
