@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c10dcbff024ba292d82b2803d7ff493",
+    "content-hash": "70bdbad9f2a90644ddfaa45f614095d7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6387,11 +6387,11 @@
         },
         {
             "name": "drupal/migrate_absolute_links",
-            "version": "dev-4.0.x",
+            "version": "dev-5.0.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/migrate_absolute_links.git",
-                "reference": "4cf09168102bb17032defe58ee049f01ea7b96a2"
+                "reference": "bb752f1e4cfe275808f3bdc741e7d34abed1ecc4"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10"
@@ -6399,11 +6399,11 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-4.0.x": "4.0.x-dev"
+                    "dev-5.0.x": "5.0.x-dev"
                 },
                 "drupal": {
-                    "version": "4.0.x-dev",
-                    "datestamp": "1691058031",
+                    "version": "5.0.x-dev",
+                    "datestamp": "1720619511",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -22237,7 +22237,6 @@
         "drupal/inline_entity_form": 5,
         "drupal/media_entity_browser": 15,
         "drupal/menu_breadcrumb": 15,
-        "drupal/migrate_absolute_links": 20,
         "drupal/scheduler_content_moderation_integration": 10,
         "drupal/search_api_location": 15,
         "drupal/shs": 5,
