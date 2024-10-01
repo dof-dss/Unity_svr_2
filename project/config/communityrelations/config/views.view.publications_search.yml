@@ -169,6 +169,7 @@ display:
         type: full
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 20
           total_pages: null
           id: 0
@@ -317,22 +318,23 @@ display:
       tags:
         - 'config:field.storage.node.field_publication_date'
         - 'config:search_api.index.publications'
+        - 'search_api_list:publications'
   publication_search_page:
     id: publication_search_page
     display_title: Page
     display_plugin: page
     position: 1
     display_options:
-      cache:
-        type: none
       defaults:
-        cache: false
+        cache: true
       exposed_block: true
       display_extenders:
-        metatag_display_extender: {  }
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       path: publications
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -340,5 +342,8 @@ display:
         - url.query_args
         - 'user.node_grants:view'
       tags:
+        - 'config:facets.facet.publication_type'
+        - 'config:facets.facet.published_d'
         - 'config:field.storage.node.field_publication_date'
         - 'config:search_api.index.publications'
+        - 'search_api_list:publications'
