@@ -1,0 +1,85 @@
+<?php
+
+use Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException;
+use Drupal\Component\Plugin\Exception\PluginNotFoundException;
+use Drupal\Core\Entity\EntityStorageException;
+use Drupal\node\NodeInterface;
+
+/**
+ * Migrate Events field_start_time > field_event_date.
+ * Copied and modified from https://atendesigngroup.com/articles/programmatically-copy-field-data-drupal-8.
+ */
+
+/**
+ * Implementations of hook_update_N().
+ */
+function nicybersecuritycentre_common_update_9001(&$sandbox) {
+  nicybersecuritycentre_common_copy_field_values($sandbox, 'events', 'field_start_time', 'field_event_date');
+}
+
+
+/**
+ * Copies the value from one field to another empty field.
+ *
+ * @param array $sandbox
+ * The batch operation sandbox.
+ * @param string $bundle
+ * The node bundle.
+ * @param string $source_field
+ * The source field name.
+ * @param string $dest_field
+ * The destination field.
+ * @param int $nodes_per_batch
+ * The amount of nodes to update at a given time.
+ * @throws InvalidPluginDefinitionException
+ * @throws PluginNotFoundException
+ * @throws EntityStorageException
+ */
+function nicybersecuritycentre_common_copy_field_values(array &$sandbox, string $bundle, string $source_field, string $dest_field, int $nodes_per_batch = 20): void
+{
+  $storage = \Drupal::entityTypeManager()->getStorage('node');
+  // Initialize some variables during the first pass through.
+  if (!isset($sandbox['total'])) {
+    $query = $storage->getQuery()
+      ->condition('type', $bundle)
+      ->accessCheck(FALSE)
+      ->exists($source_field)
+      ->accessCheck(FALSE);
+
+    $nids = $query->execute();
+
+    $sandbox['total'] = count($nids);
+    $sandbox['ids'] = array_chunk($nids, $nodes_per_batch);
+    $sandbox['current'] = 0;
+  }
+
+  if ($sandbox['total'] == 0) {
+    $sandbox['#finished'] = 1;
+    return;
+  }
+
+  $nids = array_shift($sandbox['ids']);
+  $nodes = $storage->loadMultiple($nids);
+
+  /* @var $node NodeInterface $node */
+  foreach ($nodes as $node) {
+    // Get the times from the old start time field. These are a timestamp.
+    $old_start_time = $node->get($source_field)->getValue()[0]['value'];
+    $old_end_time = $node->get($source_field)->getValue()[0]['value2'];
+    // Get the vale of the event date field. Currently this has no time set. This is a timestamp also.
+    $start_date = $node->get($dest_field)->getValue()[0]['value'];
+    $end_date = $node->get($dest_field)->getValue()[0]['end_value'];
+    // Add the 2 timestamp values together to populate the event date field with the time from the start time field.
+    $new_start_date = $old_start_time + $start_date;
+    // The new end time is set 1min before 12 so adding 60secs to the new value to balance this out.
+    $new_end_date = $old_end_time + $end_date + 60;
+    // Set the new values.
+    $node->$dest_field->value = $new_start_date;
+    $node->$dest_field->end_value = $new_end_date;
+    $node->save();
+    $sandbox['current']++;
+  }
+
+  $sandbox['#finished'] = min(($sandbox['current'] / $sandbox['total']), 1);
+}
+
