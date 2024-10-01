@@ -139,7 +139,7 @@
         "drupal/simplei": "^2.1",
         "drupal/slick": "2.9.0",
         "drupal/slick_views": "2.7.0",
-        "drupal/smart_date": "^4.0",
+        "drupal/smart_date": "^4.1",
         "drupal/stable": "^2.0",
         "drupal/structure_sync": "^2.0",
         "drupal/taxonomy_access_fix": "^4.0",
