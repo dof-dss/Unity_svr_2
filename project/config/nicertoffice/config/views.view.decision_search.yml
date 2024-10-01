@@ -103,6 +103,7 @@ display:
         type: full
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 20
           total_pages: null
           id: 0
@@ -247,19 +248,20 @@ display:
         - 'user.node_grants:view'
       tags:
         - 'config:search_api.index.decision'
+        - 'search_api_list:decision'
   decision_search_page:
     id: decision_search_page
     display_title: Page
     display_plugin: page
     position: 1
     display_options:
-      cache:
-        type: none
       defaults:
-        cache: false
+        cache: true
       exposed_block: true
       display_extenders:
-        metatag_display_extender: {  }
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       path: decision
       menu:
         type: normal
@@ -271,7 +273,7 @@ display:
         parent: ''
         context: '0'
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -279,4 +281,7 @@ display:
         - url.query_args
         - 'user.node_grants:view'
       tags:
+        - 'config:facets.facet.decision_date'
+        - 'config:facets.facet.respondent_id'
         - 'config:search_api.index.decision'
+        - 'search_api_list:decision'
