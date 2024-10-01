@@ -10,7 +10,6 @@ use Drupal\node\NodeInterface;
  */
 function nicybersecuritycentre_common_form_node_form_alter(&$form, FormStateInterface $form_state) {
   if ($form['#form_id'] === 'node_events_form' || $form['#form_id'] === 'node_events_edit_form') {
-    $x = 1;
     $form['field_event_date']['widget'][0]['duration']['#access'] = FALSE;
     // Add a custom form validation for events content type.
     $form['#validate'][] = 'nicybersecuritycentre_common_node_form_validate';
