@@ -83,17 +83,24 @@
         {% apply spaceless %}
       <p>
         <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-        <span>{{ content.field_event_date }}</span>
+        <span>
+            <span>{{ 'When'|t }}</span>
+        <span>{{ content.field_event_date.0.start.date.value }}
+          {% if content.field_event_date.0.start.date.value < content.field_event_date.0.end.date.value %}
+            {{ ' - '|t }}{{ content.field_event_date.0.end.date.value }}
+          {% endif %}
+        </span>
+        </span>
       </p>
 
-      {% if content.field_start_time['#items'].value %}
+      {% if content.field_event_date.0.start.time.value %}
         <p>
           <i class="fas fa-clock" aria-hidden="true"></i>
           <span>
             <span>{{ 'Time'|t }}</span>
-            <span>{{ content.field_start_time['#items'].value }}
-              {% if content.field_start_time['#items'].value2 %}
-              {{ '-'|t }} {{ content.field_start_time['#items'].value2 }}
+            <span>{{ content.field_event_date.0.start.time.value }}
+              {% if content.field_event_date.0.end.time.value %}
+              {{ '-'|t }} {{ content.field_event_date.0.end.time.value }}
             </span>
           </span>
           {% endif %}
