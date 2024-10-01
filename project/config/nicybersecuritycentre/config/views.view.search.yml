@@ -100,6 +100,7 @@ display:
         type: mini
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 20
           total_pages: null
           id: 0
@@ -128,7 +129,7 @@ display:
         type: none
         options: {  }
       cache:
-        type: none
+        type: search_api_tag
         options: {  }
       empty: {  }
       sorts:
@@ -228,6 +229,7 @@ display:
         - 'user.node_grants:view'
       tags:
         - 'config:search_api.index.default_content'
+        - 'search_api_list:default_content'
   search_page:
     id: search_page
     display_title: Page
@@ -433,6 +435,7 @@ display:
         type: full
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 20
           total_pages: null
           id: 0
@@ -483,7 +486,9 @@ display:
         filters: true
         filter_groups: true
       display_extenders:
-        metatag_display_extender: {  }
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       path: search
     cache_metadata:
       max-age: -1
@@ -496,6 +501,7 @@ display:
       tags:
         - 'config:field.storage.node.field_published_date'
         - 'config:search_api.index.default_content'
+        - 'search_api_list:default_content'
   site_search:
     id: site_search
     display_title: 'Embed: Site search'
@@ -652,3 +658,4 @@ display:
         - 'user.node_grants:view'
       tags:
         - 'config:search_api.index.default_content'
+        - 'search_api_list:default_content'
