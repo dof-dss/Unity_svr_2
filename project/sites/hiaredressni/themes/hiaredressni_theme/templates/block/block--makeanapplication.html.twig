@@ -29,11 +29,24 @@
  * @ingroup themeable
  */
 #}
-<div class="content twitter-block block">
+{%
+  set classes = [
+  'block',
+  'block-' ~ configuration.provider|clean_class,
+  'block-' ~ plugin_id|clean_class,
+]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
   {% if label %}
     <h2{{ title_attributes }}>{{ label }}</h2>
   {% endif %}
-
-  <p>{{ 'Please log into your Twitter account to see latest tweets.'|t }}</p>
-  <a class="twitter-link btn" href="https://twitter.com/MHC_NI">Follow us</a>
+  {{ title_suffix }}
+  {% block content %}
+    <div{{ content_attributes.addClass('content') }}>
+      <a href="/node/6">
+        {{ content }}
+      </a>
+    </div>
+  {% endblock %}
 </div>

@@ -28,33 +28,18 @@ a.btn {
   .container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding: 0;
+    @media screen and (max-width: $tab) {
+      flex-direction: column;
+    }
   }
 
   .column {
     background: $white;
     padding: 2rem;
-    flex-basis: 100%;
-    margin: 1rem 0 1rem;
 
     @media screen and (max-width: $tab) {
       margin: 1rem;
-    }
-
-    &:first-child {
-      @include breakpoint($tab) {
-        flex-basis: 32%;
-      }
-    }
-
-    &:last-child {
-      margin-right: 1rem;
-
-      @include breakpoint($tab) {
-        margin-right: 0;
-        flex-basis: 66%;
-      }
     }
   }
 }
