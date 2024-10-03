@@ -626,3 +626,7 @@ div.event-info {
     }
   }
 }
+
+.smartdate--widget .form-type--select label {
+  display: none !important;
+}
