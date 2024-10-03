@@ -43,6 +43,16 @@ $settings['config_readonly_whitelist_patterns'] = [
   'system.site',
 ];
 
+/**
+ * State caching.
+ *
+ * State caching uses the cache collector pattern to cache all requested keys
+ * from the state API in a single cache entry, which can greatly reduce the
+ * amount of database queries. However, some sites may use state with a
+ * lot of dynamic keys which could result in a very large cache.
+ */
+$settings['state_cache'] = TRUE;
+
 // Detect site id as $subsite_id from sites/site_id/settings.php.
 if (!empty($subsite_id)) {
   // Convert it to uppercase as that's our format for ENV vars
