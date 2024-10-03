@@ -12,7 +12,7 @@ field_name: field_event_date
 entity_type: node
 bundle: events
 label: 'Event date(s)'
-description: 'Please use the date picker for start and end dates of the event. Please use the time fields as start and end times of the event. If the event is more than 1 day then add a start and end time as a daily range as this is how it will be displayed to the user. '
+description: "Please use the date picker for start and end dates of the event. Please use the time fields as start and end times of the event. If the event is more than 1 day then add a start and end time as a daily range as this is how it will be displayed to the user. \r\nIf the event is an all day event and no times should be displayed then check the All day event checkbox."
 required: false
 translatable: false
 default_value:

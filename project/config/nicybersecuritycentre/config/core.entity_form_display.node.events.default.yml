@@ -86,7 +86,7 @@ content:
         custom
       show_extra: false
       hide_date: false
-      allday: false
+      allday: true
       remove_seconds: false
     third_party_settings: {  }
   field_event_location:
