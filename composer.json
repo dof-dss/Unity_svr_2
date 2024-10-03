@@ -44,6 +44,7 @@
     ],
     "require": {
         "composer-runtime-api": "*",
+        "caxy/php-htmldiff": "^0.1.15",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
         "dof-dss/nicsdru_origins_modules": "^10.4",
@@ -156,6 +157,7 @@
         "drupal/webform": "^6.2",
         "drupal/whatlinkshere": "^2.1",
         "drush/drush": "^12.5",
+        "ezyang/htmlpurifier": "^4.17",
         "geocoder-php/google-maps-provider": "^4.7",
         "harvesthq/chosen": "^1.8",
         "kenwheeler/slick": "^1.8",
