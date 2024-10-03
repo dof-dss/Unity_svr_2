@@ -88,7 +88,7 @@
         "drupal/entityqueue": "^1.6",
         "drupal/eu_cookie_compliance": "^1.24",
         "drupal/facets": "^2.0",
-        "drupal/facets_pretty_paths": "^1.4",
+        "drupal/facets_pretty_paths": "2.0.2",
         "drupal/fastly": "^4.0",
         "drupal/field_group": "^3.4",
         "drupal/file_delete_ui": "^1.0@beta",
@@ -129,11 +129,11 @@
         "drupal/scheduler": "^2.0",
         "drupal/scheduler_content_moderation_integration": "^2.0@beta",
         "drupal/schema_metatag": "^3.0",
-        "drupal/search_api": "^1.26",
+        "drupal/search_api": "1.35.0",
         "drupal/search_api_autocomplete": "^1.4",
         "drupal/search_api_glossary": "^4.2",
         "drupal/search_api_location": "^1.0@alpha",
-        "drupal/search_api_solr": "4.3.0",
+        "drupal/search_api_solr": "4.3.5",
         "drupal/search_api_spellcheck": "^4.0",
         "drupal/seven": "^1.0",
         "drupal/shs": "^2.0@RC",
@@ -164,6 +164,7 @@
         "oomphinc/composer-installers-extender": "^2.0",
         "php-http/message-factory": "^1.1",
         "platformsh/config-reader": "^2.4",
+        "solarium/solarium": "^6.3",
         "symfony/http-client": "^5.4",
         "vlucas/phpdotenv": "^5.5"
     },
@@ -223,12 +224,7 @@
                 "Allow unique records only": "https://www.drupal.org/files/issues/2021-02-07/entity_queue_unique_records-1240856-3197148.patch"
             },
             "drupal/facets": {
-                "Pass facet object onto child items": "https://www.drupal.org/files/issues/2019-11-13/child_item-3094143-2.patch",
-                "Fix to deprecated function $transliterateDisplayValue": "https://www.drupal.org/files/issues/2024-02-21/facets-php82-3406085-18.patch",
-                "Fatal errors on config import": "https://www.drupal.org/files/issues/2023-10-20/3395567.patch"
-            },
-            "drupal/facets_pretty_paths": {
-                "facet pretty paths doubling up": "https://www.drupal.org/files/issues/2023-01-12/url_duplication-3254600-45.patch"
+                "Incompatibilities between facets_pretty_paths and facets 2.0": "https://www.drupal.org/files/issues/2022-03-09/facet_summary_reset-3268360-3.patch"
             },
             "drupal/fastly": {
                 "Allow disabling of logging": "https://git.drupalcode.org/project/fastly/-/merge_requests/6.patch"
