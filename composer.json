@@ -78,7 +78,7 @@
         "drupal/core-recommended": "^10.3",
         "drupal/csp": "^1.20",
         "drupal/ctools": "^4.1",
-        "drupal/date_facet_drilldown": "^5.0@dev",
+        "drupal/date_facet_drilldown": "^7.0@dev",
         "drupal/diff": "^1.1",
         "drupal/draggableviews": "^2.1",
         "drupal/dynamic_entity_reference": "^3.2",

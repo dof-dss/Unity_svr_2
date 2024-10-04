@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "837e9be584b5676a7a0d4cc0e4bee36d",
+    "content-hash": "11091081f8e26b35c596807006df9989",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3656,11 +3656,11 @@
         },
         {
             "name": "drupal/date_facet_drilldown",
-            "version": "dev-5.x",
+            "version": "dev-7.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/date_facet_drilldown.git",
-                "reference": "727320bcc53239dbe615b4a86d13d25ed0585125"
+                "reference": "b4cef2dada7cb6d81a84a654c7f84193dbd3afc9"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10"
@@ -3668,11 +3668,11 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-5.x": "5.x-dev"
+                    "dev-7.x": "7.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.x-dev",
-                    "datestamp": "1688987471",
+                    "version": "8.x-7.x-dev",
+                    "datestamp": "1728039386",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -3685,7 +3685,7 @@
             ],
             "authors": [
                 {
-                    "name": "DuttonMa",
+                    "name": "duttonma",
                     "homepage": "https://www.drupal.org/user/2250396"
                 },
                 {
@@ -22232,7 +22232,6 @@
         "drupal/clone_nodes": 20,
         "drupal/config_readonly": 10,
         "drupal/config_update": 15,
-        "drupal/date_facet_drilldown": 20,
         "drupal/file_delete_ui": 10,
         "drupal/flag": 10,
         "drupal/inline_entity_form": 5,
