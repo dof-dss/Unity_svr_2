@@ -253,7 +253,7 @@
             },
             "drupal/smart_date":{
                 "Hide duration field": "https://www.drupal.org/files/issues/2024-10-07/3379263-fix.patch",
-                "Fix multiple error messages": "https://www.drupal.org/files/issues/2024-10-07/3477741-fix.patch"
+                "Fix multiple error messages": "https://www.drupal.org/files/issues/2024-10-07/3477741-duration-fix.patch"
             },
             "drupal/ultimate_cron": {
                 "Fix $last_ran deprecation error": "https://www.drupal.org/files/issues/2023-04-03/3351276-4.patch"
