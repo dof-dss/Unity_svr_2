@@ -252,8 +252,8 @@
                 "PHP 8.2 compatibility": "https://git.drupalcode.org/issue/slick-3373261/-/commit/4035fef4eb48df2a2859d6c2785357d6071f9e72.patch"
             },
             "drupal/smart_date":{
-                "Hide duration field": "https://www.drupal.org/files/issues/2024-10-07/3379263-fix.patch",
-                "Fix multiple error messages": "https://www.drupal.org/files/issues/2024-10-07/3477741-duration-fix.patch"
+                "Hide duration field": "https://www.drupal.org/files/issues/2024-10-07/3379263-duration-fix.patch",
+                "Fix multiple error messages": "https://www.drupal.org/files/issues/2024-10-07/3477741-fix.patch"
             },
             "drupal/ultimate_cron": {
                 "Fix $last_ran deprecation error": "https://www.drupal.org/files/issues/2023-04-03/3351276-4.patch"
