@@ -139,7 +139,7 @@
         "drupal/simplei": "^2.1",
         "drupal/slick": "2.9.0",
         "drupal/slick_views": "2.7.0",
-        "drupal/smart_date": "^4.0",
+        "drupal/smart_date": "^4.1",
         "drupal/stable": "^2.0",
         "drupal/structure_sync": "^2.0",
         "drupal/taxonomy_access_fix": "^4.0",
@@ -250,6 +250,10 @@
             },
             "drupal/slick": {
                 "PHP 8.2 compatibility": "https://git.drupalcode.org/issue/slick-3373261/-/commit/4035fef4eb48df2a2859d6c2785357d6071f9e72.patch"
+            },
+            "drupal/smart_date":{
+                "Hide duration field": "https://www.drupal.org/files/issues/2024-10-07/3379263-duration-fix.patch",
+                "Fix multiple error messages": "https://www.drupal.org/files/issues/2024-10-07/3477741-fix.patch"
             },
             "drupal/ultimate_cron": {
                 "Fix $last_ran deprecation error": "https://www.drupal.org/files/issues/2023-04-03/3351276-4.patch"

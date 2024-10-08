@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70bdbad9f2a90644ddfaa45f614095d7",
+    "content-hash": "6c9c852c2d8b57f9a16802bd16eee38f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -8122,22 +8122,25 @@
         },
         {
             "name": "drupal/smart_date",
-            "version": "4.0.3",
+            "version": "4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/smart_date.git",
-                "reference": "4.0.3"
+                "reference": "4.1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/smart_date-4.0.3.zip",
-                "reference": "4.0.3",
-                "shasum": "9f8fd56690eae5b5ae7231ab17641fa1d57ec261"
+                "url": "https://ftp.drupal.org/files/projects/smart_date-4.1.6.zip",
+                "reference": "4.1.6",
+                "shasum": "930c2dadc2ff9f798bb165125c7f18f63869ad6e"
             },
             "require": {
-                "drupal/core": "^9 || ^10",
-                "php": ">=8.0",
+                "drupal/core": "^9 || ^10 || ^11",
+                "php": ">=8.1",
                 "simshaun/recurr": "^5"
+            },
+            "require-dev": {
+                "drush/drush": "*"
             },
             "suggest": {
                 "drupal/multiple_fields_remove_button": "Provides a button for editors to remove unwanted rows."
@@ -8145,8 +8148,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.3",
-                    "datestamp": "1689755800",
+                    "version": "4.1.6",
+                    "datestamp": "1725628698",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -22237,6 +22240,7 @@
         "drupal/inline_entity_form": 5,
         "drupal/media_entity_browser": 15,
         "drupal/menu_breadcrumb": 15,
+        "drupal/migrate_absolute_links": 20,
         "drupal/scheduler_content_moderation_integration": 10,
         "drupal/search_api_location": 15,
         "drupal/shs": 5,

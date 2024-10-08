@@ -6,5 +6,5 @@ _core:
   default_config_hash: mjvmWwRLRBL0zD9dVXuj1gUfx8QAz-W5aSGFw0KTY0A
 id: accordion_menu
 label: 'Accordion menu'
-revision: 1
+revision: true
 description: ''
