@@ -47,7 +47,7 @@
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
         "dof-dss/nicsdru_origins_modules": "^10.4",
-        "dof-dss/nicsdru_unity_modules": "^10.1",
+        "dof-dss/nicsdru_unity_modules": "^10.4",
         "dof-dss/nicsdru_unity_profile": "^10.1",
         "dof-dss/nicsdru_unity_theme": "^10.1",
         "drupal/address": "^1.12",
