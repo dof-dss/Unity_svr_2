@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b755c822dbcdbce492efdc869ec804b2",
+    "content-hash": "6c9c852c2d8b57f9a16802bd16eee38f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1705,7 +1705,7 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
-            "version": "10.4.1",
+            "version": "10.1.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_modules.git",
@@ -1728,7 +1728,7 @@
             "description": "Custom modules available to all Unity sites.",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/10.4.1"
+                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/10.1.18"
             },
             "time": "2024-10-09T11:25:18+00:00"
         },
