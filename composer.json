@@ -156,6 +156,7 @@
         "drupal/webform": "^6.2",
         "drupal/whatlinkshere": "^2.1",
         "drush/drush": "^12.5",
+        "ezyang/htmlpurifier": "^4.17",
         "geocoder-php/google-maps-provider": "^4.7",
         "harvesthq/chosen": "^1.8",
         "kenwheeler/slick": "^1.8",
