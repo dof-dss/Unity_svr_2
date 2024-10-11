@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c9c852c2d8b57f9a16802bd16eee38f",
+    "content-hash": "9e836f579038e25374cd83397b6a71d1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1705,16 +1705,16 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
-            "version": "10.1.17",
+            "version": "10.1.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_modules.git",
-                "reference": "74c2fe94329ab4c76a983f24e170bbf778be24aa"
+                "reference": "877687239b03c55840c3409c527a53dce7be5397"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/74c2fe94329ab4c76a983f24e170bbf778be24aa",
-                "reference": "74c2fe94329ab4c76a983f24e170bbf778be24aa",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/877687239b03c55840c3409c527a53dce7be5397",
+                "reference": "877687239b03c55840c3409c527a53dce7be5397",
                 "shasum": ""
             },
             "require": {
@@ -1728,22 +1728,22 @@
             "description": "Custom modules available to all Unity sites.",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/10.1.17"
+                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/10.1.18"
             },
-            "time": "2024-08-28T12:38:50+00:00"
+            "time": "2024-10-09T11:25:18+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_profile",
-            "version": "10.1.4",
+            "version": "10.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_profile.git",
-                "reference": "2e2000c459ff5bfc164f1d87490f718a772b8470"
+                "reference": "bd589de5a764904a9e20a73ccbb1224d8161262e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/2e2000c459ff5bfc164f1d87490f718a772b8470",
-                "reference": "2e2000c459ff5bfc164f1d87490f718a772b8470",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/bd589de5a764904a9e20a73ccbb1224d8161262e",
+                "reference": "bd589de5a764904a9e20a73ccbb1224d8161262e",
                 "shasum": ""
             },
             "require": {
@@ -1757,22 +1757,22 @@
             "description": "Custom install profile used by all Unity sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_profile/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/10.1.4"
+                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/10.1.5"
             },
-            "time": "2024-07-09T09:35:10+00:00"
+            "time": "2024-10-09T11:25:39+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_theme",
-            "version": "10.1.16",
+            "version": "10.1.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_theme.git",
-                "reference": "f0137e603cd7d927c8953e69e5ce42946913ad4b"
+                "reference": "d8e2c021c33a8a506bd8fe0e551a23d7f31471f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/f0137e603cd7d927c8953e69e5ce42946913ad4b",
-                "reference": "f0137e603cd7d927c8953e69e5ce42946913ad4b",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/d8e2c021c33a8a506bd8fe0e551a23d7f31471f0",
+                "reference": "d8e2c021c33a8a506bd8fe0e551a23d7f31471f0",
                 "shasum": ""
             },
             "require": {
@@ -1796,9 +1796,9 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/10.1.16"
+                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/10.1.17"
             },
-            "time": "2024-07-10T13:34:56+00:00"
+            "time": "2024-10-09T11:24:47+00:00"
         },
         {
             "name": "drupal/address",
@@ -4425,28 +4425,28 @@
         },
         {
             "name": "drupal/facets",
-            "version": "2.0.6",
+            "version": "2.0.9",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/facets.git",
-                "reference": "2.0.6"
+                "reference": "2.0.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/facets-2.0.6.zip",
-                "reference": "2.0.6",
-                "shasum": "e984e6ce69026c20d2049d4ec53748e67c5e70de"
+                "url": "https://ftp.drupal.org/files/projects/facets-2.0.9.zip",
+                "reference": "2.0.9",
+                "shasum": "54512df3448c2464ef2bee7eefa825115562c9d5"
             },
             "require": {
-                "drupal/core": "^9.3 || ^10.0"
+                "drupal/core": "^10 || ^11"
             },
             "conflict": {
-                "drupal/search_api": "<1.14"
+                "drupal/search_api": "<1.30"
             },
             "require-dev": {
-                "drupal/jquery_ui_slider": "~2.0",
-                "drupal/jquery_ui_touch_punch": "~1.1",
-                "drupal/search_api": "^1.28||1.x-dev"
+                "drupal/jquery_ui_slider": "^2.1",
+                "drupal/jquery_ui_touch_punch": "^1.1",
+                "drupal/search_api": "1.x-dev"
             },
             "suggest": {
                 "drupal/jquery_ui_slider": "Required for the 'Facets Range Widget' module to work",
@@ -4455,8 +4455,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.6",
-                    "datestamp": "1671207897",
+                    "version": "2.0.9",
+                    "datestamp": "1728492418",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4481,18 +4481,18 @@
                     "homepage": "https://www.drupal.org/user/124705"
                 },
                 {
-                    "name": "Nick_vh",
+                    "name": "nick_vh",
                     "homepage": "https://www.drupal.org/user/122682"
                 },
                 {
-                    "name": "StryKaizer",
+                    "name": "strykaizer",
                     "homepage": "https://www.drupal.org/user/462700"
                 }
             ],
             "description": "The Facet module allows site builders to easily create and manage faceted search interfaces.",
             "homepage": "https://www.drupal.org/project/facets",
             "support": {
-                "source": "git://git.drupal.org/project/facets.git",
+                "source": "https://git.drupalcode.org/project/facets",
                 "issues": "https://www.drupal.org/project/issues/facets",
                 "irc": "irc://irc.freenode.org/drupal-search-api"
             }
@@ -17100,16 +17100,16 @@
         },
         {
             "name": "dof-dss/maestro-hosting",
-            "version": "1.0.29",
+            "version": "1.0.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/maestro-hosting.git",
-                "reference": "43d270feca002732eb54ea1d54803bb139023359"
+                "reference": "574c21ec3326826f5bb9925863bee5da810a63dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/maestro-hosting/zipball/43d270feca002732eb54ea1d54803bb139023359",
-                "reference": "43d270feca002732eb54ea1d54803bb139023359",
+                "url": "https://api.github.com/repos/dof-dss/maestro-hosting/zipball/574c21ec3326826f5bb9925863bee5da810a63dc",
+                "reference": "574c21ec3326826f5bb9925863bee5da810a63dc",
                 "shasum": ""
             },
             "require": {
@@ -17134,9 +17134,9 @@
             "description": "Maestro hosting resources",
             "support": {
                 "issues": "https://github.com/dof-dss/maestro-hosting/issues",
-                "source": "https://github.com/dof-dss/maestro-hosting/tree/1.0.29"
+                "source": "https://github.com/dof-dss/maestro-hosting/tree/1.0.31"
             },
-            "time": "2024-07-03T14:13:29+00:00"
+            "time": "2024-10-11T09:04:11+00:00"
         },
         {
             "name": "dof-dss/maestro-shell",
