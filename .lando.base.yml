@@ -3,7 +3,7 @@ recipe: drupal9
 config:
   webroot: web
   database: mariadb
-  php: '8.2'
+  php: '8.3'
   composer_version: '2.5.8'
   config:
     php: .lando/config/php.ini
