@@ -22,8 +22,8 @@ third_party_settings:
     toc_debug: 0
 name: Events
 type: events
-description: ''
-help: ''
+description: null
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

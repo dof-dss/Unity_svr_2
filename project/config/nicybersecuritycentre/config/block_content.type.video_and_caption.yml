@@ -6,5 +6,5 @@ _core:
   default_config_hash: YsHjzgGms0cW21s7D42IbKNJLgl7K-mdIf_auEH8OCE
 id: video_and_caption
 label: 'Video and caption'
-revision: 1
+revision: true
 description: ''

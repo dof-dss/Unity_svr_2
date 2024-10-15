@@ -72,12 +72,10 @@ content:
       media_types: {  }
     third_party_settings: {  }
   field_event_date:
-    type: smartdate_only
+    type: smartdate_default
     weight: 20
     region: content
     settings:
-      separator: to
-      hide_date: 0
       modal: false
       default_duration: 60
       default_duration_increments: |-
@@ -87,6 +85,9 @@ content:
         120|2 hours
         custom
       show_extra: false
+      hide_date: false
+      allday: true
+      remove_seconds: false
     third_party_settings: {  }
   field_event_location:
     type: options_select
@@ -114,6 +115,7 @@ content:
     region: content
     settings:
       sidebar: true
+      use_details: true
     third_party_settings: {  }
   field_organisation_name:
     type: string_textfield
