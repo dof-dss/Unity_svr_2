@@ -8,11 +8,12 @@ id: global
 label: Global
 tags:
   canonical_url: '[current-page:url:absolute]'
-  shortlink: '[current-page:url:unaliased]'
-  title: '[current-page:title] | [site:name]'
+  google_site_verification: 6e96RP9sjKXQjL6djeWFC-J91nGex9sqW8rlX0-eV9o
   og_site_name: '[site:name]'
   og_title: '[current-page:title]'
   og_type: Article
   og_url: '[current-page:url:absolute]'
+  shortlink: '[current-page:url:unaliased]'
+  title: '[current-page:title] | [site:name]'
   twitter_cards_title: '[current-page:title]'
   twitter_cards_type: summary
