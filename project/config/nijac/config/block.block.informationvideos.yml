@@ -1,0 +1,25 @@
+uuid: 09405ba2-b5e3-4abf-bbe2-bdcad42ae807
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:14bc2af3-f38e-4acd-ae49-a99b2e800ad9'
+  module:
+    - block_content
+  theme:
+    - nijac_theme
+id: informationvideos
+theme: nijac_theme
+region: bottom_widget_2
+weight: 0
+provider: null
+plugin: 'block_content:14bc2af3-f38e-4acd-ae49-a99b2e800ad9'
+settings:
+  id: 'block_content:14bc2af3-f38e-4acd-ae49-a99b2e800ad9'
+  label: 'Information Videos'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

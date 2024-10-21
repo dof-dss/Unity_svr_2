@@ -1,0 +1,25 @@
+uuid: 38e76324-d40c-4b0d-9717-0f65ed8c39f3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:69563eb8-d32a-48e3-b886-20c2915c7492'
+  module:
+    - block_content
+  theme:
+    - nijac_theme
+id: frontpagebanner
+theme: nijac_theme
+region: front_welcome
+weight: 0
+provider: null
+plugin: 'block_content:69563eb8-d32a-48e3-b886-20c2915c7492'
+settings:
+  id: 'block_content:69563eb8-d32a-48e3-b886-20c2915c7492'
+  label: 'Frontpage banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
