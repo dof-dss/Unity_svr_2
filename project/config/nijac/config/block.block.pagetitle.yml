@@ -9,7 +9,7 @@ dependencies:
 id: pagetitle
 theme: nijac_theme
 region: content
-weight: -14
+weight: -15
 provider: null
 plugin: page_title_block
 settings:

@@ -10,8 +10,8 @@ dependencies:
     - nijac_theme
 id: howtoapply
 theme: nijac_theme
-region: bottom_widget_2
-weight: 0
+region: top_second
+weight: -14
 provider: null
 plugin: 'block_content:f0d07858-065a-4c0d-937e-ab5c10159fa5'
 settings:
