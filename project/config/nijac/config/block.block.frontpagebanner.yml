@@ -1,9 +1,9 @@
-uuid: 38e76324-d40c-4b0d-9717-0f65ed8c39f3
+uuid: 7e2bfae8-3a2f-4696-a36e-5a4d825261ca
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic_block:69563eb8-d32a-48e3-b886-20c2915c7492'
+    - 'block_content:basic_block:2ca77c62-5308-4d87-8c77-77c7ccf89ccf'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: nijac_theme
 region: front_welcome
 weight: 0
 provider: null
-plugin: 'block_content:69563eb8-d32a-48e3-b886-20c2915c7492'
+plugin: 'block_content:2ca77c62-5308-4d87-8c77-77c7ccf89ccf'
 settings:
-  id: 'block_content:69563eb8-d32a-48e3-b886-20c2915c7492'
+  id: 'block_content:2ca77c62-5308-4d87-8c77-77c7ccf89ccf'
   label: 'Frontpage banner'
   label_display: '0'
   provider: block_content
