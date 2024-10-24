@@ -146,7 +146,6 @@
         "drupal/taxonomy_access_fix": "^4.0",
         "drupal/taxonomy_manager": "^2.0",
         "drupal/telephone_plus": "^9.1",
-        "drupal/timefield_d10": "1.0.x-dev@dev",
         "drupal/token": "^1.12",
         "drupal/token_filter": "^2.2",
         "drupal/twig_field_value": "^2.0",
