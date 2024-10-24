@@ -12,7 +12,7 @@ dependencies:
 id: nijacmaplocation
 theme: nijac_theme
 region: content
-weight: -11
+weight: -12
 provider: null
 plugin: 'block_content:2b976082-72a9-4887-a42d-136a5638e1d8'
 settings:

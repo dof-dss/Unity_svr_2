@@ -10,8 +10,8 @@ dependencies:
     - nijac_theme
 id: views_block__latest_news_home_latest_news
 theme: nijac_theme
-region: top_second
-weight: 0
+region: bottom_widget_1
+weight: -14
 provider: null
 plugin: 'views_block:latest_news-home_latest_news'
 settings:

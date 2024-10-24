@@ -10,8 +10,8 @@ dependencies:
     - nijac_theme
 id: forthcomingopportunities
 theme: nijac_theme
-region: bottom_widget_2
-weight: 0
+region: top_second
+weight: -15
 provider: null
 plugin: 'block_content:854d0218-4c4c-417c-8eea-c85153570f3b'
 settings:
