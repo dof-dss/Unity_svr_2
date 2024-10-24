@@ -18,7 +18,6 @@ dependencies:
   module:
     - smart_date
     - text
-    - timefield
     - user
 id: node.events.default
 targetEntityType: node

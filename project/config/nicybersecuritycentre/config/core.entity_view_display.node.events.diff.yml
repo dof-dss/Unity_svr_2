@@ -23,7 +23,6 @@ dependencies:
     - options
     - smart_date
     - text
-    - timefield
     - user
 third_party_settings:
   layout_builder:

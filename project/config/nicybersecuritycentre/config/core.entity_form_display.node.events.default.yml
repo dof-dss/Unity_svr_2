@@ -13,7 +13,6 @@ dependencies:
     - field.field.node.events.field_organisation_name
     - field.field.node.events.field_organisation_sector
     - field.field.node.events.field_related_events
-    - field.field.node.events.field_start_time
     - field.field.node.events.field_target_audience
     - node.type.events
     - workflows.workflow.nics_editorial_workflow
@@ -25,7 +24,6 @@ dependencies:
     - path
     - smart_date
     - text
-    - timefield
 third_party_settings:
   field_group:
     group_event_date_s_and_time:
@@ -140,31 +138,6 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  field_start_time:
-    type: timefield_standard_widget
-    weight: 21
-    region: content
-    settings:
-      separator: ':'
-      showPeriod: '1'
-      periodSeparator: ''
-      am_text: AM
-      pm_text: PM
-      closeButtonText: Done
-      nowButtonText: Now
-      deselectButtonText: Deselect
-      myPosition: 'left top'
-      atPosition: 'left bottom'
-      disable_plugin: 0
-      showLeadingZero: 0
-      showCloseButton: 0
-      showNowButton: 0
-      showDeselectButton: 0
-      showMinutesLeadingZero: true
-      showHours: true
-      showMinutes: true
-      minute_interval: 5
     third_party_settings: {  }
   field_target_audience:
     type: options_select

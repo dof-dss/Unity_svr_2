@@ -19,7 +19,6 @@ dependencies:
   module:
     - layout_builder
     - smart_date
-    - timefield
     - user
 third_party_settings:
   layout_builder:

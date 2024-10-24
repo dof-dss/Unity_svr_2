@@ -130,6 +130,7 @@ module:
   telephone: 0
   telephone_plus: 0
   text: 0
+  timefield: 0
   token: 0
   token_filter: 0
   toolbar: 0
