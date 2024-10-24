@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a075af1bdfcd7cfe17bd40bd6c371d15",
+    "content-hash": "2e232f877c54de739a9e9dba82a21bf9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -8505,50 +8505,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/telephone_plus",
                 "issues": "https://www.drupal.org/project/issues/telephone_plus"
-            }
-        },
-        {
-            "name": "drupal/timefield_d10",
-            "version": "dev-1.0.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/timefield_d10.git",
-                "reference": "b2995d80c6d3a2eb0cd5f3655e3ea68af7823a92"
-            },
-            "require": {
-                "drupal/core": "^8.7.7 || ^9 || ^10"
-            },
-            "suggest": {
-                "fgelinas/timepicker": "Required to use drupal/timefield. jQuery UI Timepicker a jQuery UI time picker plugin build to match with other official jQuery UI widgets. Based on the existing date picker, it will blend nicely with your form and use your selected jQuery UI theme. The plugin is very easy to integrate in your form for you time (hours / minutes) inputs."
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.0.x": "1.0.x-dev"
-                },
-                "drupal": {
-                    "version": "1.0.x-dev",
-                    "datestamp": "1692282877",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "DuttonMa",
-                    "homepage": "https://www.drupal.org/user/2250396"
-                }
-            ],
-            "description": "Implements a time field (HH:MM), with optional to time and weekly repeat value.",
-            "homepage": "http://drupal.org/project/timefield",
-            "support": {
-                "source": "https://git.drupalcode.org/project/timefield_d10"
             }
         },
         {
@@ -22244,7 +22200,6 @@
         "drupal/scheduler_content_moderation_integration": 10,
         "drupal/search_api_location": 15,
         "drupal/shs": 5,
-        "drupal/timefield_d10": 20,
         "drupal/ultimate_cron": 15,
         "drupal/easy_install_d10": 20
     },
