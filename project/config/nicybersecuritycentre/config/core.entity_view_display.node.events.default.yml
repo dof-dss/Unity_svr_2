@@ -13,7 +13,6 @@ dependencies:
     - field.field.node.events.field_organisation_name
     - field.field.node.events.field_organisation_sector
     - field.field.node.events.field_related_events
-    - field.field.node.events.field_start_time
     - field.field.node.events.field_target_audience
     - node.type.events
   module:
@@ -85,19 +84,6 @@ content:
       link: true
     third_party_settings: {  }
     weight: 5
-    region: content
-  field_start_time:
-    type: timefield_default_formatter
-    label: hidden
-    settings:
-      display_format:
-        hour: g
-        minute: i
-        separator: ':'
-        period: a
-        periodSeparator: ''
-    third_party_settings: {  }
-    weight: 3
     region: content
 hidden:
   content_moderation_control: true
