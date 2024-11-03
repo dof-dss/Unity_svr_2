@@ -132,4 +132,13 @@ if (getenv('LANDO')) {
   }
 }
 
+// Running in DDev locally, include appropriate sites file.
+if (getenv('IS_DDEV_PROJECT')) {
+  $project = Yaml::parseFile('/var/www/html/project/project.yml');
+
+  foreach ($project['sites'] as $site_id => $site) {
+    $sites[$site_id . '.ddev.site'] = $site_id;
+  }
+}
+
 return $sites;

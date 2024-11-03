@@ -5,8 +5,8 @@ services:
     class: 'Maestro\Hosting\Provider\PlatformSH'
     tags:
       - { name: maestro.hosting }
-  hosting.lando:
-    class: 'Maestro\Hosting\Provider\Lando'
+  hosting.ddev:
+    class: 'Maestro\Hosting\Provider\DDev'
     tags:
       - { name: maestro.hosting }
   hosting.common:

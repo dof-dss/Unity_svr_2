@@ -1,0 +1,58 @@
+#############################################################################
+###                           --== IMPORTANT ==--                         ###
+#############################################################################
+# If you require changes to this file you must edit the file within the     #
+# original repository.Any changes here will be overwritten when the project #
+# is built.                                                                 #
+#############################################################################
+auth_command:
+    command: |
+        set -eu -o pipefail
+        if [ -z "${PLATFORMSH_CLI_TOKEN:-}" ]; then echo "Please make sure you have set PLATFORMSH_CLI_TOKEN." && exit 1; fi
+        if [ -z "${PLATFORM_PROJECT:-}" ]; then echo "Please make sure you have set PLATFORM_PROJECT." && exit 1; fi
+        if [ -z "${PLATFORM_ENVIRONMENT:-}" ]; then echo "Please make sure you have set PLATFORM_ENVIRONMENT." && exit 1; fi
+db_pull_command:
+    command: |
+        # set -x                                      # You can enable bash debugging output by uncommenting.
+        set -eu -o pipefail
+        export PLATFORMSH_CLI_NO_INTERACTION=1
+        ls /var/www/html/.ddev >/dev/null             # This just refreshes stale NFS if possible.
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=mentalhealthchampionni --gzip --file=/var/www/html/.ddev/.downloads/db_mentalhealthchampionni.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=publicappointmentsni --gzip --file=/var/www/html/.ddev/.downloads/db_publicappointmentsni.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=ircommission --gzip --file=/var/www/html/.ddev/.downloads/db_ircommission.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=imtac --gzip --file=/var/www/html/.ddev/.downloads/db_imtac.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=nicertoffice --gzip --file=/var/www/html/.ddev/.downloads/db_nicertoffice.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=victimspaymentsboard --gzip --file=/var/www/html/.ddev/.downloads/db_victimspaymentsboard.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=hiaredressni --gzip --file=/var/www/html/.ddev/.downloads/db_hiaredressni.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=cvocni --gzip --file=/var/www/html/.ddev/.downloads/db_cvocni.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=nijac --gzip --file=/var/www/html/.ddev/.downloads/db_nijac.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=communityrelations --gzip --file=/var/www/html/.ddev/.downloads/db_communityrelations.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=sentencereview --gzip --file=/var/www/html/.ddev/.downloads/db_sentencereview.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=nicybersecuritycentre --gzip --file=/var/www/html/.ddev/.downloads/db_nicybersecuritycentre.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=ppsni --gzip --file=/var/www/html/.ddev/.downloads/db_ppsni.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=cosicani --gzip --file=/var/www/html/.ddev/.downloads/db_cosicani.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+db_import_command:
+    command: |
+        set -eu -o pipefail
+        # set -x                                      # You can enable bash debugging output by uncommenting.
+        gzip -dc .ddev/.downloads/db_mentalhealthchampionni.sql.gz | ddev import-db --database=mentalhealthchampionni --skip-hooks 
+        gzip -dc .ddev/.downloads/db_publicappointmentsni.sql.gz | ddev import-db --database=publicappointmentsni --skip-hooks 
+        gzip -dc .ddev/.downloads/db_ircommission.sql.gz | ddev import-db --database=ircommission --skip-hooks 
+        gzip -dc .ddev/.downloads/db_imtac.sql.gz | ddev import-db --database=imtac --skip-hooks 
+        gzip -dc .ddev/.downloads/db_nicertoffice.sql.gz | ddev import-db --database=nicertoffice --skip-hooks 
+        gzip -dc .ddev/.downloads/db_victimspaymentsboard.sql.gz | ddev import-db --database=victimspaymentsboard --skip-hooks 
+        gzip -dc .ddev/.downloads/db_hiaredressni.sql.gz | ddev import-db --database=hiaredressni --skip-hooks 
+        gzip -dc .ddev/.downloads/db_cvocni.sql.gz | ddev import-db --database=cvocni --skip-hooks 
+        gzip -dc .ddev/.downloads/db_nijac.sql.gz | ddev import-db --database=nijac --skip-hooks 
+        gzip -dc .ddev/.downloads/db_communityrelations.sql.gz | ddev import-db --database=communityrelations --skip-hooks 
+        gzip -dc .ddev/.downloads/db_sentencereview.sql.gz | ddev import-db --database=sentencereview --skip-hooks 
+        gzip -dc .ddev/.downloads/db_nicybersecuritycentre.sql.gz | ddev import-db --database=nicybersecuritycentre --skip-hooks 
+        gzip -dc .ddev/.downloads/db_ppsni.sql.gz | ddev import-db --database=ppsni --skip-hooks 
+        gzip -dc .ddev/.downloads/db_cosicani.sql.gz | ddev import-db --database=cosicani --skip-hooks 
+    service: host
+files_pull_command:
+    command: |
+        echo "Files will not be pulled due to filesize."
+files_import_command:
+    command: |
+        echo "Files will not be imported due to filesize."

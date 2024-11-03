@@ -113,6 +113,10 @@ if (getenv('LANDO') && file_exists($app_root . '/sites/settings.lando.php')) {
   include $app_root . '/sites/settings.lando.php';
 }
 
+if (getenv('IS_DDEV_PROJECT') && file_exists($app_root . '/sites/default/settings.ddev.php')) {
+  include $app_root . '/sites/default/settings.ddev.php';
+}
+
 // Configure file paths.
 if (!isset($settings['file_public_path'])) {
   $settings['file_public_path'] = 'files/' . $subsite_id;

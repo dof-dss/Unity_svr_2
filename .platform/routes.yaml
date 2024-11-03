@@ -7,7 +7,7 @@
 #############################################################################
 'https://www.mentalhealthchampion-ni.org.uk.{default}/':
     type: upstream
-    upstream: 'unity_svr_2:http'
+    upstream: 'unity.svr.2:http'
     cache:
         enabled: 'false'
 'https://mentalhealthchampion-ni.org.uk.{default}/':
@@ -15,7 +15,7 @@
     to: 'https://www.mentalhealthchampion-ni.org.uk.{default}/'
 'https://www.{all}/':
     type: upstream
-    upstream: 'unity_svr_2:http'
+    upstream: 'unity.svr.2:http'
     cache:
         enabled: 'false'
 'https://{all}/':
