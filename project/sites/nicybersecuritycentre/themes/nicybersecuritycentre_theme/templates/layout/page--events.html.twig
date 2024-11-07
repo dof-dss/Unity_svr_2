@@ -93,11 +93,12 @@
 {% if basic_page_structure is empty %}
 <main id="content">
   {% if drupal_config('system.site', 'frontpage_title') %}
-    <h1 class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
+    <h1
+      class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
       {{ drupal_config('system.site', 'frontpage_title') }}
     </h1>
   {% endif %}
-{% endif %}
+  {% endif %}
   {{ page.front_welcome }}
 
   {% if page.top_first or page.top_second or page.top_third %}
@@ -106,25 +107,25 @@
         <a href="/advice-and-guidance">Advice and Guidance</a>
       </h2>
       <div class="content">
-      {% if page.top_first %}
-        <div class="column">
-          {{ page.top_first }}
-        </div>
-      {% endif %}
-      {% if page.top_second %}
-        <div class="column">
-          {{ page.top_second }}
-        </div>
-      {% endif %}
-      {% if page.top_third %}
-        <div class="column">
-          {{ page.top_third }}
-        </div>
-      {% endif %}
+        {% if page.top_first %}
+          <div class="column">
+            {{ page.top_first }}
+          </div>
+        {% endif %}
+        {% if page.top_second %}
+          <div class="column">
+            {{ page.top_second }}
+          </div>
+        {% endif %}
+        {% if page.top_third %}
+          <div class="column">
+            {{ page.top_third }}
+          </div>
+        {% endif %}
       </div>
     </div>
   {% endif %}
-{% endif %}
+  {% endif %}
 
   {# If the homepage has a basic page or for every other page apart from the homepage show the basic page structure. #}
   {% if basic_page_structure is not empty or basic_page_structure is empty and not is_front %}
@@ -132,15 +133,16 @@
       {% if not is_front %}
         {{ page.breadcrumb }}
       {% endif %}
-        {% if node.field_banner is not empty %}
-      <div class="event-banner">
-      {{ node.field_banner|view }}
-        {% elseif page.is_child_event %}
+      {% if page.child_event_with_image %}
         <div class="event-banner">
-        {{ drupal_view('related_events', 'parent_banner_image') }}
+          {{ drupal_view('related_events', 'parent_banner_image') }}
         </div>
-          </div>
-        {% endif %}
+      {% endif %}
+      {% if page.child_event_with_image is empty and node.field_banner %}
+        <div class="event-banner">
+          {{ node.field_banner|view }}
+        </div>
+      {% endif %}
       <div class="container-wrap">
         {% if search_page %}
         <div class="content-sidebar-wrap search-page">
@@ -151,7 +153,8 @@
 
             {% if is_front %}
               {% if drupal_config('system.site', 'frontpage_title') %}
-                <h1 class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
+                <h1
+                  class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
                   {{ drupal_config('system.site', 'frontpage_title') }}
                 </h1>
               {% endif %}
@@ -161,11 +164,13 @@
               {{ drupal_block('page_title_block', wrapper=false) }}
             {% endif %}
 
-            <div id="content" {{ page.search_facets ? '' : 'class="main-content"' }}>
+            <div
+              id="content" {{ page.search_facets ? '' : 'class="main-content"' }}>
               {% if page.search_facets %}
                 <header id="search-facets" class="sidebar-first-layout">
                   <nav aria-label="Skip links">
-                    <a href="#post-content" class="skip-link visually-hidden focusable">
+                    <a href="#post-content"
+                       class="skip-link visually-hidden focusable">
                       {{- 'Skip to results'|t -}}
                     </a>
                   </nav>
@@ -173,7 +178,8 @@
                 </header>
               {% endif %}
               {% if page.content %}
-                <div id="post-content" {{ page.search_facets ? 'class="main-content" role="main"' : '' }}>
+                <div
+                  id="post-content" {{ page.search_facets ? 'class="main-content" role="main"' : '' }}>
                   {{ page.content }}
                 </div>
               {% endif %}

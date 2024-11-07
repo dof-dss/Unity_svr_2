@@ -5,6 +5,8 @@
  * Functions to support theming in the nicybersecuritycentre_theme.
  */
 
+use Drupal\node\Entity\Node;
+
 /**
  * Implements hook_theme_suggestions_page_alter().
  */
@@ -24,12 +26,17 @@ function nicybersecuritycentre_theme_preprocess_page(&$variables) {
   if ($node = \Drupal::routeMatch()->getParameter('node')) {
     $content_type = $node->bundle();
     if ($content_type === 'events') {
-      $variables['page']['is_child_event'] = FALSE;
+      $variables['page']['child_event_with_image'] = FALSE;
       // Determine if this is a child event.
-      $child_event = $node->field_related_events->entity;
-      // If it is a child event set the variable to true.
-      if (isset($variables['node']) && !empty($child_event)) {
-        $variables['page']['is_child_event'] = TRUE;
+      if (!empty($node->field_related_events->entity)) {
+        // Get the node ID for the child event and load it.
+        $child_event_id = $node->field_related_events->entity->id();
+        $child_event = node::load($child_event_id);
+        // Check if the child event has a banner image. Set variable to TRUE if it does.
+        if (!empty($child_event->get('field_banner')->target_id) && isset($variables['node'])) {
+          // If it is a child event set the variable to true.
+          $variables['page']['child_event_with_image'] = TRUE;
+        }
       }
     }
   }
