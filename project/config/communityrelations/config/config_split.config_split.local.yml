@@ -21,7 +21,8 @@ module:
   unity_file_migrations: 0
   views_ui: 0
 theme: {  }
-blacklist: {  }
+blacklist:
+  - search_api.server.solr_default
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
