@@ -53,7 +53,7 @@
  * - basic_page_structure: There is a checkbox in the theme settings UI
  *   to check if a basic page is used in the homepage structure. This template
  *   is set up for a homepage that doesn't use a basic page in it's structure.
- * - is_child_event: Comes from nicybersecuritycentre_theme.theme file and is used
+ * - child_event_with_image: Comes from nicybersecuritycentre_theme.theme file and is used
  *   to determine if the event has a parent or not.
  *
  * @see template_preprocess_page()
@@ -93,8 +93,7 @@
 {% if basic_page_structure is empty %}
 <main id="content">
   {% if drupal_config('system.site', 'frontpage_title') %}
-    <h1
-      class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
+    <h1 class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
       {{ drupal_config('system.site', 'frontpage_title') }}
     </h1>
   {% endif %}
@@ -153,8 +152,7 @@
 
             {% if is_front %}
               {% if drupal_config('system.site', 'frontpage_title') %}
-                <h1
-                  class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
+                <h1 class="{{ drupal_config('system.site', 'frontpage_show_title') ? '' : 'visually-hidden' }}">
                   {{ drupal_config('system.site', 'frontpage_title') }}
                 </h1>
               {% endif %}
@@ -164,13 +162,11 @@
               {{ drupal_block('page_title_block', wrapper=false) }}
             {% endif %}
 
-            <div
-              id="content" {{ page.search_facets ? '' : 'class="main-content"' }}>
+            <div id="content" {{ page.search_facets ? '' : 'class="main-content"' }}>
               {% if page.search_facets %}
                 <header id="search-facets" class="sidebar-first-layout">
                   <nav aria-label="Skip links">
-                    <a href="#post-content"
-                       class="skip-link visually-hidden focusable">
+                    <a href="#post-content" class="skip-link visually-hidden focusable">
                       {{- 'Skip to results'|t -}}
                     </a>
                   </nav>
@@ -178,8 +174,7 @@
                 </header>
               {% endif %}
               {% if page.content %}
-                <div
-                  id="post-content" {{ page.search_facets ? 'class="main-content" role="main"' : '' }}>
+                <div id="post-content" {{ page.search_facets ? 'class="main-content" role="main"' : '' }}>
                   {{ page.content }}
                 </div>
               {% endif %}
