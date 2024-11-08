@@ -5,7 +5,7 @@
 # original repository.Any changes here will be overwritten when the project #
 # is built.                                                                 #
 #############################################################################
-name: unity.svr.2
+name: unity_svr_2
 type: 'php:8.3'
 dependencies:
     php:
