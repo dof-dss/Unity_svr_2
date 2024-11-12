@@ -181,7 +181,8 @@
             "cweagans/composer-patches": true,
             "php-http/discovery": true,
             "oomphinc/composer-installers-extender": true,
-            "drupal/console-extend-plugin": true
+            "drupal/console-extend-plugin": true,
+            "tbachert/spi": true
         },
         "sort-packages": true
     },
