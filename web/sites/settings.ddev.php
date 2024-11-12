@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @file
+ * Default DDEV settings.
+ */
+
 $databases['default']['default'] = [
   'database' => $subsite_id,
   'username'  => getenv('DB_USER'),
@@ -9,7 +14,7 @@ $databases['default']['default'] = [
   'driver'    => getenv('DB_DRIVER'),
 ];
 
-// Recommended setting for Drupal 10 only
+// Recommended setting for Drupal 10 only.
 $settings['state_cache'] = TRUE;
 
 // This will prevent Drupal from setting read-only permissions on sites/default.
