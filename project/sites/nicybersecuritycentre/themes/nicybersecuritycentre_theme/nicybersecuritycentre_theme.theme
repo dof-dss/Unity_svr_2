@@ -11,11 +11,10 @@ use Drupal\node\Entity\Node;
  * Implements hook_theme_suggestions_page_alter().
  */
 function nicybersecuritycentre_theme_theme_suggestions_page_alter(array &$suggestions, array $variables) {
-  if (!($node = \Drupal::routeMatch()->getParameter('node'))) {
-    $node = \Drupal::routeMatch()->getParameter('node_preview');
+  if (($node = \Drupal::routeMatch()->getParameter('node')) || ($node = \Drupal::routeMatch()->getParameter('node_preview'))) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__' . $content_type;
   }
-  $content_type = $node->bundle();
-  $suggestions[] = 'page__' . $content_type;
 }
 
 /**
@@ -24,7 +23,7 @@ function nicybersecuritycentre_theme_theme_suggestions_page_alter(array &$sugges
  * This variable is used in page--events.html.twig.
  */
 function nicybersecuritycentre_theme_preprocess_page(&$variables) {
-  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+  if (($node = \Drupal::routeMatch()->getParameter('node')) || ($node = \Drupal::routeMatch()->getParameter('node_preview'))) {
     $content_type = $node->bundle();
     if ($content_type === 'events') {
       $variables['page']['child_event_with_image'] = FALSE;
