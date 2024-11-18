@@ -14,7 +14,6 @@ dependencies:
     - field.field.node.events.field_organisation_name
     - field.field.node.events.field_organisation_sector
     - field.field.node.events.field_related_events
-    - field.field.node.events.field_start_time
     - field.field.node.events.field_target_audience
     - node.type.events
   module:
@@ -24,7 +23,6 @@ dependencies:
     - options
     - smart_date
     - text
-    - timefield
     - user
 third_party_settings:
   layout_builder:
@@ -158,19 +156,6 @@ content:
       link: false
     third_party_settings: {  }
     weight: 12
-    region: content
-  field_start_time:
-    type: timefield_default_formatter
-    label: above
-    settings:
-      display_format:
-        hour: g
-        minute: i
-        separator: ':'
-        period: a
-        periodSeparator: ''
-    third_party_settings: {  }
-    weight: 3
     region: content
   field_target_audience:
     type: entity_reference_label

@@ -44,6 +44,7 @@
     ],
     "require": {
         "composer-runtime-api": "*",
+        "caxy/php-htmldiff": "^0.1.15",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
         "dof-dss/nicsdru_origins_modules": "^10.4",
@@ -61,7 +62,7 @@
         "drupal/block_list_override": "^1.0",
         "drupal/block_visibility_groups": "^2.0",
         "drupal/ckeditor": "^1.0",
-        "drupal/ckeditor5_allowed_html": "1.2.x-dev@dev",
+        "drupal/ckeditor5_allowed_html": "^1.5@dev",
         "drupal/ckeditor5_premium_features": "^1.2",
         "drupal/clientside_validation": "^4.0",
         "drupal/clone_nodes": "^1.2@dev",
@@ -145,7 +146,7 @@
         "drupal/taxonomy_access_fix": "^4.0",
         "drupal/taxonomy_manager": "^2.0",
         "drupal/telephone_plus": "^9.1",
-        "drupal/timefield_d10": "1.0.x-dev@dev",
+        "drupal/timefield_d10": "^1.0@dev",
         "drupal/token": "^1.12",
         "drupal/token_filter": "^2.2",
         "drupal/twig_field_value": "^2.0",
@@ -156,6 +157,7 @@
         "drupal/webform": "^6.2",
         "drupal/whatlinkshere": "^2.1",
         "drush/drush": "^12.5",
+        "ezyang/htmlpurifier": "^4.17",
         "geocoder-php/google-maps-provider": "^4.7",
         "harvesthq/chosen": "^1.8",
         "kenwheeler/slick": "^1.8",
@@ -180,7 +182,8 @@
             "cweagans/composer-patches": true,
             "php-http/discovery": true,
             "oomphinc/composer-installers-extender": true,
-            "drupal/console-extend-plugin": true
+            "drupal/console-extend-plugin": true,
+            "tbachert/spi": true
         },
         "sort-packages": true
     },

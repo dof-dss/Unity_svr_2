@@ -12,7 +12,7 @@ dependencies:
 id: views_block__latest_news_latest_news
 theme: nijac_theme
 region: sidebar_second
-weight: 0
+weight: -14
 provider: null
 plugin: 'views_block:latest_news-latest_news'
 settings:

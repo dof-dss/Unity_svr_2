@@ -10,8 +10,8 @@ dependencies:
     - nijac_theme
 id: currentvacancies
 theme: nijac_theme
-region: bottom_widget_1
-weight: -6
+region: top_first
+weight: -15
 provider: null
 plugin: 'block_content:3fd1a3af-91f5-4f7b-b61e-31fe7e3444da'
 settings:

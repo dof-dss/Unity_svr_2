@@ -12,7 +12,7 @@ dependencies:
 id: publicationtype
 theme: nijac_theme
 region: search_facets
-weight: -12
+weight: -13
 provider: null
 plugin: 'facet_block:publication_type'
 settings:

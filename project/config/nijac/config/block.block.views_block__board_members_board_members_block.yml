@@ -12,7 +12,7 @@ dependencies:
 id: views_block__board_members_board_members_block
 theme: nijac_theme
 region: content
-weight: -12
+weight: -13
 provider: null
 plugin: 'views_block:board_members-board_members_block'
 settings:
