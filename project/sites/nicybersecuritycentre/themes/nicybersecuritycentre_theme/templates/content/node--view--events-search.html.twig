@@ -74,7 +74,11 @@
   {{ content.field_event_teaser }}
   <p>
     {% apply spaceless %}
-      <span>{{ content.field_event_date.0.start.date.value }}{{ ' - '|t }}{{ content.field_event_date.0.end.date.value }}</span>
+      <span>{{ content.field_event_date.0.start.date.value }}
+        {% if content.field_event_date.0.start.date.value < content.field_event_date.0.end.date.value %}
+        {{ ' - '|t }}{{ content.field_event_date.0.end.date.value }}
+      {% endif %}
+      </span>
       {% if content.field_event_date.0.start.time.value %}
         <span>{{ ', '|t }}{{ content.field_event_date.0.start.time.value }}
           {% if content.field_event_date.0.end.time.value %}

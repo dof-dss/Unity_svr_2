@@ -18,29 +18,63 @@ a.btn {
   background-color: $brand-primary;
 }
 
-#top-area {
-  background-color: #edd5c4;
-  max-width: 100%;
-  text-align: left;
-  padding: 4.5rem 0 5.5rem;
-  margin-top: 2rem;
+.region-front-welcome {
+  background: resolve('front-banner.jpeg') no-repeat;
+  height: 18rem;
+  margin: auto;
+}
 
-  .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    @media screen and (max-width: $tab) {
-      flex-direction: column;
+#welcome-banner {
+  background: #b95813;
+}
+
+#top-area {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media screen and (max-width: $tab) {
+    justify-content: center;
+  }
+
+  .block {
+    background: $grey-light;
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    @include breakpoint($tab) {
+      margin-bottom: 5rem;
     }
   }
 
   .column {
-    background: $white;
-    padding: 2rem;
+    padding: 0;
+    flex-basis: 100%;
+    margin: 0.5rem;
 
-    @media screen and (max-width: $tab) {
-      margin: 1rem;
+    &:last-child {
+      float:left;
     }
+
+    @include breakpoint($tab) {
+      flex-basis: 32%;
+    }
+  }
+
+  h2 {
+    @include adjust-font-size-to(40px);
+    font-weight: 500;
+    line-height: 4rem;
+    padding: 2rem 6rem 2rem 1rem;
+    margin: 0;
+    @media screen and (max-width: $lap) {
+      @include adjust-font-size-to(30px);
+    }
+  }
+
+  a.btn {
+    min-width: 17rem;
+    text-align: center;
   }
 }
 
@@ -109,43 +143,40 @@ p.published-date {
   }
 }
 
+#bottom_wrapper {
+  background: #edd5c4;
+  padding: 3rem;
+}
+
 #bottom-area {
-  padding-top: 5rem;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  .block {
-    background: $grey-light;
-    padding: 1rem;
-    margin-bottom: 2rem;
-
-    @include breakpoint($tab) {
-      margin-bottom: 5rem;
-    }
+  @media screen and (max-width: $tab) {
+    align-items: center;
+    flex-direction: column;
   }
 
   .column {
-    margin: 0;
-    padding: 0;
-    flex-basis: 100%;
+    text-align: left;
+    padding: 1rem 2.5rem;
+    background: $grey-light;
+    margin: 1rem;
+    width: 48%;
+    @media screen and (max-width: $tab) {
+      width: 95%;
+    }
 
-    @include breakpoint($tab) {
-      flex-basis: 32%;
+    h2 {
+      @include adjust-font-size-to(24px);
+      margin: 0;
+      padding: 1rem 0 2rem;
+      line-height: 1.5;
+      color: $black;
     }
   }
 
-  h2 {
-    @include adjust-font-size-to(40px);
-    font-weight: 500;
-    line-height: 4rem;
-    padding: 2rem 6rem 2rem 1rem;
+  h3 {
+    @include adjust-font-size-to(18px);
     margin: 0;
-  }
-
-  a.btn {
-    min-width: 17rem;
-    text-align: center;
   }
 }
 
