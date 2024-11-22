@@ -17115,16 +17115,16 @@
         },
         {
             "name": "dof-dss/maestro-hosting",
-            "version": "1.0.34",
+            "version": "1.0.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/maestro-hosting.git",
-                "reference": "2f59278866b3bd74a566dc0a0dd429aabd05a08b"
+                "reference": "79c4128f206c946c2542ab9ab90a90bcd8cfe586"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/maestro-hosting/zipball/2f59278866b3bd74a566dc0a0dd429aabd05a08b",
-                "reference": "2f59278866b3bd74a566dc0a0dd429aabd05a08b",
+                "url": "https://api.github.com/repos/dof-dss/maestro-hosting/zipball/79c4128f206c946c2542ab9ab90a90bcd8cfe586",
+                "reference": "79c4128f206c946c2542ab9ab90a90bcd8cfe586",
                 "shasum": ""
             },
             "require": {
@@ -17149,9 +17149,9 @@
             "description": "Maestro hosting resources",
             "support": {
                 "issues": "https://github.com/dof-dss/maestro-hosting/issues",
-                "source": "https://github.com/dof-dss/maestro-hosting/tree/1.0.34"
+                "source": "https://github.com/dof-dss/maestro-hosting/tree/1.0.36"
             },
-            "time": "2024-11-12T14:29:48+00:00"
+            "time": "2024-11-21T10:13:05+00:00"
         },
         {
             "name": "dof-dss/maestro-shell",
@@ -22561,6 +22561,7 @@
         "drupal/config_readonly": 10,
         "drupal/config_update": 15,
         "drupal/date_facet_drilldown": 20,
+        "drupal/easy_install_d10": 20,
         "drupal/file_delete_ui": 10,
         "drupal/flag": 10,
         "drupal/inline_entity_form": 5,
@@ -22570,14 +22571,13 @@
         "drupal/scheduler_content_moderation_integration": 10,
         "drupal/search_api_location": 15,
         "drupal/shs": 5,
-        "drupal/ultimate_cron": 15,
-        "drupal/easy_install_d10": 20
+        "drupal/ultimate_cron": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "composer-runtime-api": "*"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
