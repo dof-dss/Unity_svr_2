@@ -11,6 +11,7 @@ module:
   fastly: 0
 theme: {  }
 blacklist:
+  - search_api.server.solr_default
   - fastly.settings
 graylist: {  }
 graylist_dependents: true
