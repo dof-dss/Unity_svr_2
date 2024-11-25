@@ -22561,6 +22561,7 @@
         "drupal/config_readonly": 10,
         "drupal/config_update": 15,
         "drupal/date_facet_drilldown": 20,
+        "drupal/easy_install_d10": 20,
         "drupal/file_delete_ui": 10,
         "drupal/flag": 10,
         "drupal/inline_entity_form": 5,
@@ -22570,14 +22571,13 @@
         "drupal/scheduler_content_moderation_integration": 10,
         "drupal/search_api_location": 15,
         "drupal/shs": 5,
-        "drupal/ultimate_cron": 15,
-        "drupal/easy_install_d10": 20
+        "drupal/ultimate_cron": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "composer-runtime-api": "*"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
