@@ -15,6 +15,10 @@ function nicybersecuritycentre_theme_theme_suggestions_page_alter(array &$sugges
     $content_type = $node->bundle();
     $suggestions[] = 'page__' . $content_type;
   }
+  if(!empty($node)) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__' . $content_type;
+  }
 }
 
 /**
