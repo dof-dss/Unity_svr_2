@@ -111,6 +111,7 @@ permissions:
   - 'revert page revisions'
   - 'revert publication_page revisions'
   - 'update featured_news_queue entityqueue'
+  - 'update featured_publications_queue entityqueue'
   - 'update slideshow entityqueue'
   - 'use moderation sidebar'
   - 'use nics_editorial_workflow transition archive'
