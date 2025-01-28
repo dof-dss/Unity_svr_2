@@ -1,0 +1,25 @@
+#############################################################################
+###                           --== IMPORTANT ==--                         ###
+#############################################################################
+# If you require changes to this file you must edit the file within the     #
+# original repository.Any changes here will be overwritten when the project #
+# is built.                                                                 #
+#############################################################################
+services:
+    solr:
+        volumes:
+            - './solr-cores/mentalhealthchampionni:/solr-mentalhealthchampionni-conf'
+            - './solr-cores/publicappointmentsni:/solr-publicappointmentsni-conf'
+            - './solr-cores/ircommission:/solr-ircommission-conf'
+            - './solr-cores/imtac:/solr-imtac-conf'
+            - './solr-cores/nicertoffice:/solr-nicertoffice-conf'
+            - './solr-cores/victimspaymentsboard:/solr-victimspaymentsboard-conf'
+            - './solr-cores/hiaredressni:/solr-hiaredressni-conf'
+            - './solr-cores/cvocni:/solr-cvocni-conf'
+            - './solr-cores/nijac:/solr-nijac-conf'
+            - './solr-cores/communityrelations:/solr-communityrelations-conf'
+            - './solr-cores/sentencereview:/solr-sentencereview-conf'
+            - './solr-cores/nicybersecuritycentre:/solr-nicybersecuritycentre-conf'
+            - './solr-cores/ppsni:/solr-ppsni-conf'
+            - './solr-cores/cosicani:/solr-cosicani-conf'
+        entrypoint: 'bash -c "VERBOSE=yes docker-entrypoint.sh precreate-core mentalhealthchampionni /solr-mentalhealthchampionni-conf; precreate-core publicappointmentsni /solr-publicappointmentsni-conf; precreate-core ircommission /solr-ircommission-conf; precreate-core imtac /solr-imtac-conf; precreate-core nicertoffice /solr-nicertoffice-conf; precreate-core victimspaymentsboard /solr-victimspaymentsboard-conf; precreate-core hiaredressni /solr-hiaredressni-conf; precreate-core cvocni /solr-cvocni-conf; precreate-core nijac /solr-nijac-conf; precreate-core communityrelations /solr-communityrelations-conf; precreate-core sentencereview /solr-sentencereview-conf; precreate-core nicybersecuritycentre /solr-nicybersecuritycentre-conf; precreate-core ppsni /solr-ppsni-conf; precreate-core cosicani /solr-cosicani-conf; exec solr -f"'
