@@ -16,6 +16,12 @@ filters:
     status: true
     weight: -49
     settings: {  }
+  filter_null:
+    id: filter_null
+    provider: filter
+    status: true
+    weight: -45
+    settings: {  }
   token_filter:
     id: token_filter
     provider: token_filter
@@ -23,9 +29,3 @@ filters:
     weight: -44
     settings:
       replace_empty: ''
-  filter_null:
-    id: filter_null
-    provider: filter
-    status: true
-    weight: -45
-    settings: {  }

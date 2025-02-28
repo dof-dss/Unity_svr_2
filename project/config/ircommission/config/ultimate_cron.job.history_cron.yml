@@ -6,7 +6,7 @@ dependencies:
     - history
 title: 'Deletes history'
 id: history_cron
-weight: 0
+weight: 1
 module: history
 callback: history_cron
 scheduler:

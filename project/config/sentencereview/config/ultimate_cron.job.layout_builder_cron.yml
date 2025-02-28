@@ -1,0 +1,30 @@
+uuid: 94999267-3119-48d4-b37b-8fbe169897ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_builder
+title: 'Default cron handler'
+id: layout_builder_cron
+weight: -8
+module: layout_builder
+callback: layout_builder_cron
+scheduler:
+  id: crontab
+  configuration:
+    rules:
+      - '5 3 * * *'
+    catch_up: 0
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

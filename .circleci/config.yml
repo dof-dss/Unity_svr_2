@@ -10,8 +10,8 @@ default_docker_image: &docker_image
         PHP_EXTENSION_GD: 1
         PHP_EXTENSIONS: "gd"
         PHP_INI_MEMORY_LIMIT: -1
-        PHP_INI_MAX_EXECUTION_TIME: 60
-        PHP_INI_MAX_INPUT_TIME: 60
+        PHP_INI_MAX_EXECUTION_TIME: 600
+        PHP_INI_MAX_INPUT_TIME: 600
         CPPFLAGS: "-DPNG_ARM_NEON_OPT=0"
 
 # Re-usable commands.
@@ -218,6 +218,7 @@ jobs:
           name: Trigger a data sync from master environment to nightly edge build.
           command: |
             platform sync data -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH -y
+          no_output_timeout: 20m
       - run:
           name: Backup data sync if the previous attempt failed.
           command: |
@@ -235,6 +236,7 @@ jobs:
                 result2=$(platform drush "updb -l ${site} -y" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Fastly (fastly)" || true) )
             fi
             done
+          no_output_timeout: 20m
       - run:
           name: Turn off fastly module to allow for cleaner config import
           command: |

@@ -6,5 +6,6 @@ dependencies:
     - file
 id: file.image_with_caption
 label: image_with_caption
+description: ''
 targetEntityType: file
 cache: true

@@ -8,5 +8,6 @@ _core:
   default_config_hash: 95EdkutKV-wywHMx7h_A8tIbRDCItQMvrwOijDMm4ps
 id: media.article_full
 label: 'Article full'
+description: ''
 targetEntityType: media
 cache: true

@@ -6,13 +6,14 @@ id: production
 label: production
 description: 'Used for production site.'
 weight: 0
+stackable: false
+no_patching: false
+storage: folder
 folder: ../project/config/ircommission/production
 module:
   fastly: 0
 theme: {  }
-blacklist:
+complete_list:
   - fastly.settings
-graylist:
+partial_list:
   - ircommission_theme.settings
-graylist_dependents: true
-graylist_skip_equal: true

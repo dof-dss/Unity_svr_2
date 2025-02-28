@@ -13,8 +13,8 @@ dependencies:
     - responsive_image
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 _core:
   default_config_hash: K3k7D7D_X7FaBE7eO43FG9ECqUBSprFLTsyjgk3ap0A
 id: media.image.portrait_full
@@ -23,6 +23,7 @@ bundle: image
 mode: portrait_full
 content:
   field_media_image:
+    type: responsive_image
     label: visually_hidden
     settings:
       responsive_image_style: portrait_full_width
@@ -30,7 +31,6 @@ content:
       image_loading:
         attribute: eager
     third_party_settings: {  }
-    type: responsive_image
     weight: 0
     region: content
 hidden:

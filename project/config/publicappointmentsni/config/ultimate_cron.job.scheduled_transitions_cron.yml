@@ -8,7 +8,7 @@ _core:
   default_config_hash: z3fm0cL_TxoeTbw7lKGaHQwzdWoZfsPz9oItnI8q0EI
 title: 'Default cron handler'
 id: scheduled_transitions_cron
-weight: 0
+weight: -6
 module: scheduled_transitions
 callback: scheduled_transitions_cron
 scheduler:

@@ -6,6 +6,7 @@ dependencies:
     - node.type.basic_page
     - node.type.events
     - node.type.featured_article
+    - node.type.landing_page
     - node.type.link
     - node.type.publication
     - node.type.webform
@@ -101,6 +102,7 @@ type_settings:
       - basic_page
       - events
       - featured_article
+      - landing_page
       - link
       - publication
       - webform

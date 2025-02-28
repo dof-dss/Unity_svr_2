@@ -8,5 +8,6 @@ _core:
   default_config_hash: TzN92qzn92mnZ7TRoXzOQ-ftgya-5X1W6nysET1jabw
 id: media.banner_deep
 label: 'Banner deep'
+description: ''
 targetEntityType: media
 cache: true

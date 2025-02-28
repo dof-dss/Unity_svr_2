@@ -1,0 +1,8 @@
+uuid: a72ccfc9-c674-4964-acf6-a1d89f036503
+langcode: en
+status: true
+dependencies: {  }
+name: 'Crime Types'
+vid: crime_types
+description: 'Crime Type terms used in webform'
+weight: 0

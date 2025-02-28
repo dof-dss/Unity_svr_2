@@ -1,0 +1,21 @@
+uuid: 2b16f00f-c7b0-432a-9d98-1c166d8dd067
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_deep
+    - field.storage.block_content.field_teaser
+_core:
+  default_config_hash: KZ2kgdVLnuK4N8dJ9xNm7II729WMO0IgSKk20jbokeI
+id: block_content.banner_deep.field_teaser
+field_name: field_teaser
+entity_type: block_content
+bundle: banner_deep
+label: 'Strap line'
+description: 'Optionally add a strap line to appear below the banner.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

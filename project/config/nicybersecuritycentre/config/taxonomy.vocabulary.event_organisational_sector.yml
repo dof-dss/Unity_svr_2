@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: 'Event organisational sector'
 vid: event_organisational_sector
-description: ''
+description: null
 weight: 0
+new_revision: false

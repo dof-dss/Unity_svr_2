@@ -8,5 +8,6 @@ _core:
   default_config_hash: XED0_QBcajoiwqjrbC9gpwP4BzffllaJ2Gg_u59Ewd4
 id: media.slide
 label: Slideshow
+description: ''
 targetEntityType: media
 cache: true

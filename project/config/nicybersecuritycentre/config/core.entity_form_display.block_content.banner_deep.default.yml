@@ -1,0 +1,48 @@
+uuid: 3a4d9d53-565c-4a3b-8bd9-797464e56ec0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_deep
+    - field.field.block_content.banner_deep.field_banner_image
+    - field.field.block_content.banner_deep.field_banner_image_overlay
+    - field.field.block_content.banner_deep.field_teaser
+  module:
+    - media_library
+    - media_library_edit
+_core:
+  default_config_hash: UdVjAPIx5HXF2klpMyMCiGfyiQo202j8l7IjUfK5RoM
+id: block_content.banner_deep.default
+targetEntityType: block_content
+bundle: banner_deep
+mode: default
+content:
+  field_banner_image:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
+  field_banner_image_overlay:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
+  field_teaser:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  info: true
+  langcode: true

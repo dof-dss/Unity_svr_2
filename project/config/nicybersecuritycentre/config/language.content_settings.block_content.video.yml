@@ -1,0 +1,13 @@
+uuid: 29ae6bb4-2042-4937-9642-830278d60877
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.video
+_core:
+  default_config_hash: shFJ6qJg7sYEg0mT7zedPIuz9ITMpUP5wC_NK8AmHvY
+id: block_content.video
+target_entity_type_id: block_content
+target_bundle: video
+default_langcode: site_default
+language_alterable: false

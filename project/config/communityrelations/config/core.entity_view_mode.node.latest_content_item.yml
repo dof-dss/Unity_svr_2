@@ -6,5 +6,6 @@ dependencies:
     - node
 id: node.latest_content_item
 label: 'Latest content item'
+description: ''
 targetEntityType: node
 cache: true

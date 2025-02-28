@@ -8,5 +8,6 @@ _core:
   default_config_hash: PmW5AU2JMjCg1OGrVFf8uob72UaRX9EIvpgot1VsVhE
 id: media.article_float_expandable
 label: 'Article float expandable'
+description: ''
 targetEntityType: media
 cache: true

@@ -13,8 +13,8 @@ dependencies:
     - responsive_image
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 _core:
   default_config_hash: BHHXqTGWRoOm9ejVm7lM8VT4iSke3Fo7GQtM2S1z2_Q
 id: media.image.article_full_expandable
@@ -23,6 +23,7 @@ bundle: image
 mode: article_full_expandable
 content:
   field_media_image:
+    type: responsive_image
     label: visually_hidden
     settings:
       responsive_image_style: inline_xl_expandable
@@ -30,7 +31,6 @@ content:
       image_loading:
         attribute: eager
     third_party_settings: {  }
-    type: responsive_image
     weight: 1
     region: content
 hidden:

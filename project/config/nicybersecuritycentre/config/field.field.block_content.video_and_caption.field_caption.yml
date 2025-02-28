@@ -1,0 +1,21 @@
+uuid: 9d6fd7ad-60ba-4673-a591-9d3ba800eb7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.video_and_caption
+    - field.storage.block_content.field_caption
+_core:
+  default_config_hash: R06RUQ6dgsuNg_lcWSlQ6x6MKZfi9k8GEglfADsrc-s
+id: block_content.video_and_caption.field_caption
+field_name: field_caption
+entity_type: block_content
+bundle: video_and_caption
+label: 'Video caption'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

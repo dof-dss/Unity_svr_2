@@ -1,5 +1,3 @@
-_core:
-  default_config_hash: g1xKHKD8msGv9RR5tnTxVhqTCkof96Cd4KF4mOLEntI
 report-only:
   enable: true
   directives:
@@ -8,7 +6,10 @@ report-only:
     connect-src:
       base: self
       sources:
-        - 'https://*.google-analytics.com'
+        - 'https://www.google-analytics.com'
+        - 'https://region1.google-analytics.com'
+        - 'https://*.newrelic.com'
+        - 'https://*.nr-data.net'
     font-src:
       base: self
       sources:
@@ -21,7 +22,7 @@ report-only:
       base: self
       sources:
         - 'https://www.youtube.com'
-        - 'https://*.twitter.com'
+        - 'https://www.vimeo.com'
     img-src:
       base: self
       sources:
@@ -34,7 +35,6 @@ report-only:
         - 'https://maps.gstatic.com'
         - 'https://maps.googleapis.com'
         - 'data:'
-        - 'https://*.twitter.com'
     manifest-src:
       base: self
     script-src:
@@ -42,23 +42,48 @@ report-only:
       sources:
         - 'https://www.googletagmanager.com'
         - 'https://www.google-analytics.com'
-        - 'http://*.twitter.com'
+        - cdn.jsdelivr.net
+        - cdnjs.cloudflare.com
+        - unpkg.com
+        - 'https://*.newrelic.com'
+        - 'https://*.nr-data.net'
+        - 'https://app.feedblitz.com'
     script-src-attr:
       base: self
+      flags:
+        - unsafe-hashes
+      sources:
+        - 'https://app.feedblitz.com'
     script-src-elem:
       base: self
       sources:
         - 'https://www.googletagmanager.com'
         - 'https://www.google-analytics.com'
-        - 'http://*.twitter.com'
+        - cdn.jsdelivr.net
+        - cdnjs.cloudflare.com
+        - unpkg.com
+        - 'https://*.newrelic.com'
+        - 'https://*.nr-data.net'
     style-src:
       base: self
+      sources:
+        - cdn.jsdelivr.net
+        - cdnjs.cloudflare.com
+        - fonts.googleapis.com
+        - unpkg.com
     style-src-attr:
       base: self
       flags:
         - unsafe-inline
     style-src-elem:
       base: self
+      flags:
+        - unsafe-inline
+      sources:
+        - cdn.jsdelivr.net
+        - cdnjs.cloudflare.com
+        - fonts.googleapis.com
+        - unpkg.com
     block-all-mixed-content: true
   reporting:
     plugin: none

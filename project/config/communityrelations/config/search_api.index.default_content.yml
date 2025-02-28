@@ -9,7 +9,6 @@ dependencies:
     - field.storage.node.field_funding_scheme_type
     - field.storage.node.field_publication_type
     - field.storage.node.field_published_date
-    - field.storage.node.field_teaser
     - search_api.server.solr_default
   module:
     - search_api_solr
@@ -121,14 +120,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_published_date
-  field_teaser:
-    label: Teaser
-    datasource_id: 'entity:node'
-    property_path: field_teaser
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.field_teaser
   language_with_fallback:
     label: 'Language (with fallback)'
     property_path: language_with_fallback
@@ -179,6 +170,8 @@ datasource_settings:
 processor_settings:
   add_url: {  }
   aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  custom_value: {  }
   entity_status: {  }
   entity_type: {  }
   highlight:
@@ -199,7 +192,6 @@ processor_settings:
     all_fields: false
     fields:
       - body
-      - field_teaser
       - language_with_fallback
       - name
       - title

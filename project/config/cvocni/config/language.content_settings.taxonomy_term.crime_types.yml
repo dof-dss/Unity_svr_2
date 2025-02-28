@@ -1,0 +1,11 @@
+uuid: 9eb06a60-a7e6-4548-a2fc-ff29e70cc985
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.crime_types
+id: taxonomy_term.crime_types
+target_entity_type_id: taxonomy_term
+target_bundle: crime_types
+default_langcode: site_default
+language_alterable: false

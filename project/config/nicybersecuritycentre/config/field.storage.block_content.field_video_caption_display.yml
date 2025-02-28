@@ -1,0 +1,38 @@
+uuid: 26fdebec-d45c-4840-af86-da7d2d494aa0
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+_core:
+  default_config_hash: qNWsXBWr8jjVdfCXVXY_NsSE59KCMijAWLlLQ6SzGj8
+id: block_content.field_video_caption_display
+field_name: field_video_caption_display
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: no-caption
+      label: 'no caption (video full width)'
+    -
+      value: above
+      label: 'caption above'
+    -
+      value: right
+      label: 'caption right'
+    -
+      value: below
+      label: 'caption below'
+    -
+      value: left
+      label: 'caption left'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

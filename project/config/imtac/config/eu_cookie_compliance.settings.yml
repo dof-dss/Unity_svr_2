@@ -10,7 +10,7 @@ eu_only_js: false
 popup_position: false
 fixed_top_position: false
 popup_info:
-  value: "<p>Cookies on the [site:name] website</p>\r\n\r\n<p>We use some essential cookies to make this service work. We'd like to set additional cookies so we can remember your settings, understand how people use the service and make improvements. Some of our pages allow selected third parties to set cookies - for example, pages that contain YouTube videos or Google Maps.</p>\r\n\r\n<p><a href=\"/cookies\">Find out more about how we use cookies</a></p>\r\n"
+  value: '<h2>Cookies on the [site:name] website</h2><p>We use some essential cookies to make this service work. We''d like to set additional cookies so we can remember your settings, understand how people use the service and make improvements. Some of our pages allow selected third parties to set cookies - for example, pages that contain YouTube videos or Google Maps.</p><p><a href="/cookies">Find out more about how we use cookies</a></p>'
   format: basic_html
 mobile_popup_info:
   value: ''
@@ -23,7 +23,7 @@ popup_agreed_enabled: false
 popup_hide_agreed: false
 disagree_button_label: 'Reject cookies'
 popup_agreed:
-  value: "<h2>Thank you for accepting cookies</h2>\r\n\r\n<p>You can now hide this message or find out more about cookies.</p>\r\n"
+  value: '<h2>Thank you for accepting cookies</h2><p>You can now hide this message or find out more about cookies.</p>'
   format: basic_html
 popup_find_more_button_message: 'More info'
 popup_hide_button_message: Hide
@@ -59,7 +59,7 @@ automatic_cookies_removal: true
 allowed_cookies: ''
 consent_storage_method: do_not_store
 withdraw_message:
-  value: "<p>Cookies on the [site:name] website</p>\r\n\r\n<p>You have given your consent for us to set additional cookies&nbsp;so we can remember your settings, understand how people use the service and make improvements.&nbsp; If you have changed your mind, you can withdraw consent.</p>\r\n\r\n<p><a href=\"/cookies\">Find out more about how we use cookies</a></p>\r\n"
+  value: '<h2>Cookies on the [site:name] website</h2><p>You have given your consent for us to set additional cookies&nbsp;so we can remember your settings, understand how people use the service and make improvements.&nbsp; If you have changed your mind, you can withdraw consent.</p><p><a href="/cookies">Find out more about how we use cookies</a></p>'
   format: basic_html
 withdraw_tab_button_label: 'Cookie settings'
 withdraw_action_button_label: 'Withdraw consent'

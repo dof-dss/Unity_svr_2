@@ -6,7 +6,7 @@ dependencies:
     - system
 title: 'Cleanup (caches, batch, flood, temp-files, etc.)'
 id: system_cron
-weight: 0
+weight: -10
 module: system
 callback: system_cron
 scheduler:

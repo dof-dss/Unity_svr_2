@@ -101,7 +101,7 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/sentencereview ; drush core-cron'
         database: sentencereview
-        status: development
+        status: production
         default: false
     nicybersecuritycentre:
         name: 'NI Cyber Security Centre'

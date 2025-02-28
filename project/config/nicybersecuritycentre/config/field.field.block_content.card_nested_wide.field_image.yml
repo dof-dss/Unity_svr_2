@@ -1,0 +1,31 @@
+uuid: f343957b-ba80-4442-ab64-8136b222776c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_nested_wide
+    - field.storage.block_content.field_image
+    - media.type.image
+_core:
+  default_config_hash: 2Kwt9twe5orpfs5FqI1hPATFrEcqaE_eyxYyJ1dieDw
+id: block_content.card_nested_wide.field_image
+field_name: field_image
+entity_type: block_content
+bundle: card_nested_wide
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

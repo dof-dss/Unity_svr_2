@@ -23,8 +23,8 @@ _core:
   default_config_hash: xRUwdXK1RLqM9v3JPVhZQYePTe7J5JUJtsl5MUcVJJs
 name: Link
 type: link
-description: ''
-help: ''
+description: null
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

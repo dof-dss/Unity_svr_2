@@ -1,0 +1,25 @@
+uuid: 0628ab72-eeef-4dbe-8164-149a3d63fb0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_wide
+    - field.storage.block_content.field_link
+  module:
+    - link
+_core:
+  default_config_hash: wfsRubJxT8Nf_3SDPhsVS2FM84sPwyoB6dQ4c0_mwD4
+id: block_content.card_wide.field_link
+field_name: field_link
+entity_type: block_content
+bundle: card_wide
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

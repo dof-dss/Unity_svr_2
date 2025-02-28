@@ -1,0 +1,38 @@
+uuid: 75e3daf6-601f-4808-9efe-de1d1877d6b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.plain_cards
+    - field.field.block_content.plain_cards.field_card_layout
+    - field.field.block_content.plain_cards.field_plain_cards
+  module:
+    - paragraphs
+_core:
+  default_config_hash: oBFUovssKKW-V-NECVcvif1VAU0gQ0yu9PZ_pZiPHNM
+id: block_content.plain_cards.default
+targetEntityType: block_content
+bundle: plain_cards
+mode: default
+content:
+  field_card_layout:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_plain_cards:
+    type: entity_reference_paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+hidden:
+  info: true
+  langcode: true

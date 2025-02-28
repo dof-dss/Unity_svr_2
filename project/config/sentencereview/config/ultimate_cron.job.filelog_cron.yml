@@ -1,0 +1,29 @@
+uuid: c3e11d53-4528-4f26-9013-ed825ab80913
+langcode: en
+status: true
+dependencies:
+  module:
+    - filelog
+title: 'Default cron handler'
+id: filelog_cron
+weight: -9
+module: filelog
+callback: filelog_cron
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '*/5+@ * * * *'
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

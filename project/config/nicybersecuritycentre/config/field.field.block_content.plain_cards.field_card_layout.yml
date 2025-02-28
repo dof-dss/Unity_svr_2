@@ -1,0 +1,23 @@
+uuid: 6cbd8cb9-b741-4ab4-b9e3-c093d2d51255
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.plain_cards
+    - field.storage.block_content.field_card_layout
+  module:
+    - options
+_core:
+  default_config_hash: SGaaoTISXVZiCJI0zMx0uN2V_ewirIl-u3RuVNmrcXE
+id: block_content.plain_cards.field_card_layout
+field_name: field_card_layout
+entity_type: block_content
+bundle: plain_cards
+label: 'Card layout'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
