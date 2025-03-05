@@ -6,6 +6,9 @@ id: local
 label: local
 description: ''
 weight: 0
+stackable: false
+no_patching: false
+storage: folder
 folder: ../project/config/victimspaymentsboard/local
 module:
   clone_nodes: 0
@@ -22,8 +25,6 @@ module:
   victimspaymentsboard_migrations: 0
   views_ui: 0
 theme: {  }
-blacklist:
+complete_list:
   - search_api.server.solr_default
-graylist: {  }
-graylist_dependents: true
-graylist_skip_equal: true
+partial_list: {  }
