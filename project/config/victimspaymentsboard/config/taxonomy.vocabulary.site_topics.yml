@@ -6,5 +6,6 @@ _core:
   default_config_hash: 2dPc8-O3DyTNkGZRxRmD-9U7PqZoS3Ki1C9xjLprzqw
 name: 'Site topics'
 vid: site_topics
-description: ''
+description: null
 weight: 0
+new_revision: false

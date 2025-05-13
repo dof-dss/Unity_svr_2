@@ -6,3 +6,4 @@ name: 'Crime Types'
 vid: crime_types
 description: 'Crime Type terms used in webform'
 weight: 0
+new_revision: false

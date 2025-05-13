@@ -6,3 +6,4 @@ name: 'council area'
 vid: council_area
 description: 'council area terms for project profile content type'
 weight: 0
+new_revision: false

@@ -8,3 +8,4 @@ name: 'Publication types'
 vid: publications_topics
 description: 'list of types for publication content types'
 weight: 0
+new_revision: false
