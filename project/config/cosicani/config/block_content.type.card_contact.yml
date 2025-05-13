@@ -6,5 +6,5 @@ _core:
   default_config_hash: 7_rtzb1BUL0AAVVu1fNUavcR7DaSkSKvAvfyap_f7RM
 id: card_contact
 label: 'Card - contact'
-revision: 1
+revision: true
 description: ''
