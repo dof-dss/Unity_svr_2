@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: plain_cards
 label: 'Plain cards'
-revision: 1
+revision: true
 description: ''
