@@ -6,3 +6,4 @@ name: 'Site structure'
 vid: site_structure
 description: 'Enables content to be structured into areas of work'
 weight: 0
+new_revision: false
