@@ -44,6 +44,7 @@
     ],
     "require": {
         "composer-runtime-api": "*",
+        "aws/aws-sdk-php": "^3.343",
         "caxy/php-htmldiff": "^0.1.15",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
@@ -52,7 +53,7 @@
         "dof-dss/nicsdru_unity_profile": "^10.1",
         "dof-dss/nicsdru_unity_theme": "^10.1",
         "drupal/address": "^1.12",
-        "drupal/admin_toolbar": "^3.4",
+        "drupal/admin_toolbar": "^3.5",
         "drupal/allowed_formats": "^3.0",
         "drupal/antibot": "^2.0",
         "drupal/auto_entityqueue": "^2.1",
@@ -73,9 +74,9 @@
         "drupal/config_update": "^2.0@alpha",
         "drupal/content_lock": "^2.3",
         "drupal/cookie_content_blocker": "^2.2",
-        "drupal/core-composer-scaffold": "^10.3",
-        "drupal/core-project-message": "^10.3",
-        "drupal/core-recommended": "^10.3",
+        "drupal/core-composer-scaffold": "^10.4",
+        "drupal/core-project-message": "^10.4",
+        "drupal/core-recommended": "^10.4",
         "drupal/csp": "^1.20",
         "drupal/ctools": "^4.1",
         "drupal/date_facet_drilldown": "11.x-dev@dev",
@@ -92,14 +93,14 @@
         "drupal/fastly": "^4.0",
         "drupal/field_group": "^3.4",
         "drupal/file_delete_ui": "^1.0@beta",
-        "drupal/filelog": "^2.1",
+        "drupal/filelog": "dev-3.0.x",
         "drupal/flag": "^4.0@beta",
         "drupal/flood_control": "^2.3",
         "drupal/geocoder": "^4.9",
         "drupal/geolocation": "^3.12",
         "drupal/google_tag": "^2.0",
         "drupal/handy_cache_tags": "^1.4",
-        "drupal/honeypot": "^2.1",
+        "drupal/honeypot": "2.1.2",
         "drupal/http_cache_control": "^2.1",
         "drupal/inline_entity_form": "^3.0@RC",
         "drupal/jquery_ui_accordion": "^2.0",
@@ -188,17 +189,11 @@
     },
     "extra": {
         "patches": {
-            "drupal/auto_entityqueue": {
-                "Entityquery - add access control check": "https://www.drupal.org/files/issues/2023-10-25/3366202-7-accessCheck-auto-entity-queue.patch"
-            },
-            "drupal/content_lock": {
-                "fix 10.2 $time deprecation message": "https://www.drupal.org/files/issues/2023-05-22/3343964-5.patch"
+            "drupal/block_visibility_groups": {
+                "Visibility incorrectly returns false on OR logic when context missing from a different condition #3503194": "https://www.drupal.org/files/issues/2025-02-07/or-logic-when-context-missing--3503194-5.patch"
             },
             "drupal/clientside_validation": {
                 "core/jquery.once is required": "https://www.drupal.org/files/issues/2021-02-23/3200022-01.patch"
-            },
-            "drupal/ckeditor5_premium_features": {
-                "fix console error plugin not loaded": "https://git.drupalcode.org/project/ckeditor5_premium_features/-/merge_requests/6.diff"
             },
             "drupal/core": {
                 "Render blocks in preview page": "https://www.drupal.org/files/issues/2019-10-03/3085364_2.patch",
@@ -209,8 +204,7 @@
                 "Fix getSetting() error on translated migrations": "https://www.drupal.org/files/issues/2018-07-08/2984460-3.patch",
                 "Fix for reference error on unpublished nodes on Entity Queue": "https://www.drupal.org/files/issues/2024-04-16/2845144-95.patch",
                 "Menu revision langcode bug fix": "https://www.drupal.org/files/issues/2024-05-13/menu_revision_langcode-3446877.patch",
-                "Fix to $form.ajaxSubmit is not a function": "https://git.drupalcode.org/project/drupal/-/merge_requests/6052.diff",
-                "Contextual links patch": "https://www.drupal.org/files/issues/2024-06-30/contextual_links_disappear_intermittently_leading_to_console_errors-3458067-8_0.patch"
+                "Fix to $form.ajaxSubmit is not a function": "https://git.drupalcode.org/project/drupal/-/merge_requests/6052.diff"
             },
             "drupal/easy_install": {
                 "Handle missing core version": "https://www.drupal.org/files/issues/2019-12-19/easy_install_core_version-3101883-0.patch",
@@ -225,14 +219,8 @@
             "drupal/facets": {
                 "Pass facet object onto child items": "https://www.drupal.org/files/issues/2019-11-13/child_item-3094143-2.patch"
             },
-            "drupal/facets_pretty_paths": {
-                "facet pretty paths doubling up": "https://www.drupal.org/files/issues/2023-01-12/url_duplication-3254600-45.patch"
-            },
             "drupal/fastly": {
                 "Allow disabling of logging": "https://git.drupalcode.org/project/fastly/-/merge_requests/6.patch"
-            },
-            "drupal/filelog": {
-                "Avoid circular reference": "https://www.drupal.org/files/issues/2024-01-25/filelog_with_tests.patch"
             },
             "drupal/hms_field": {
                 "Drupal 9 compatability": "https://www.drupal.org/files/issues/2020-06-06/hms_field.1.x-dev.rector.patch"
@@ -244,12 +232,13 @@
                 "Form alter applies for any media browser, not just image related ones": "https://www.drupal.org/files/issues/2019-12-17/media-browser-hook-checks-for-image-types.patch"
             },
             "drupal/redirect": {
-                "Add URL Redirects tab to taxonomy term edit form": "https://www.drupal.org/files/issues/2021-03-26/redirect_provide_redirect_tab_on_taxonomy_terms_3205896.patch",
-                "URL redirects listing only displays operations": "https://www.drupal.org/files/issues/2019-04-05/redirects_list_builder-3031125-9-d8.patch",
-                "Fix ajax error when creating redirects": "https://www.drupal.org/files/issues/2020-12-14/validation-issue-3057250-29.patch"
+                "Add URL Redirects tab to taxonomy term edit form": "https://www.drupal.org/files/issues/2021-03-26/redirect_provide_redirect_tab_on_taxonomy_terms_3205896.patch"
             },
             "drupal/slick": {
                 "PHP 8.2 compatibility": "https://git.drupalcode.org/issue/slick-3373261/-/commit/4035fef4eb48df2a2859d6c2785357d6071f9e72.patch"
+            },
+            "drupal/search_api": {
+                "Declaration of Drupal\\search_api_solr\\Plugin\\search_api\\backend\\SearchApiSolrBackend::__sleep() must be compatible": "https://www.drupal.org/files/issues/2024-06-18/type_declaration.patch"
             },
             "drupal/smart_date":{
                 "Hide duration field": "https://www.drupal.org/files/issues/2024-10-07/3379263-duration-fix.patch",
