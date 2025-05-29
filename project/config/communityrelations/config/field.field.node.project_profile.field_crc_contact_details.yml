@@ -9,10 +9,6 @@ dependencies:
   module:
     - allowed_formats
     - text
-third_party_settings:
-  allowed_formats:
-    allowed_formats:
-      - basic_html
 id: node.project_profile.field_crc_contact_details
 field_name: field_crc_contact_details
 entity_type: node
