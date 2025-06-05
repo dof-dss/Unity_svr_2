@@ -1088,7 +1088,7 @@ display:
             offset_label: Offset
           quantity: 9
       cache:
-        type: none
+        type: search_api_none
         options: {  }
       filters:
         name:

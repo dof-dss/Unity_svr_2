@@ -469,7 +469,7 @@ display:
         options:
           perm: 'access site reports'
       cache:
-        type: none
+        type: search_api_none
         options: {  }
       empty:
         area:
