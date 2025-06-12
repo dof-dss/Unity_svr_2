@@ -521,6 +521,7 @@ display:
         type: full
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 20
           total_pages: null
           id: 0
@@ -737,7 +738,7 @@ display:
           offset: 0
           items_per_page: 5
       cache:
-        type: none
+        type: search_api_none
         options: {  }
       empty: {  }
       defaults:

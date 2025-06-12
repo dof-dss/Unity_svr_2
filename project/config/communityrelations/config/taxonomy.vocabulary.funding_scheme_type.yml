@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: 'funding scheme type'
 vid: funding_scheme_type
-description: ''
+description: null
 weight: 0
+new_revision: false

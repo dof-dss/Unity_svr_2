@@ -6,3 +6,4 @@ name: 'areas of work'
 vid: areas_of_work
 description: 'areas of work dropdown for core funded groups content type'
 weight: 0
+new_revision: false

@@ -6,5 +6,5 @@ _core:
   default_config_hash: Gwz8hrs1QN0Okrhsi6BAtHsoP9abgs2XRHZJ5j-cvJA
 id: map
 label: Map
-revision: 0
+revision: false
 description: 'Custom block type designed to contain a map to be embedded anywhere on the site.'

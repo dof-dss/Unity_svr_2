@@ -3,7 +3,7 @@ version: 2.1
 # Default docker image.
 default_docker_image: &docker_image
   docker:
-    - image: thecodingmachine/php:8.1-v4-apache
+    - image: thecodingmachine/php:8.3-v4-apache
       environment:
         PLATFORM_REGION: "uk-1.platform.sh"
         PROJECT_ROOT: "/home/docker/project"

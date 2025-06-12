@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: link_block
 label: 'Link block'
-revision: 0
+revision: false
 description: 'Custom block type used for homepage divs'

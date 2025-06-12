@@ -6,5 +6,5 @@ _core:
   default_config_hash: v4IEZJ76rhwX9JAkZZ4I1yWX52520XGcXZ3hdT8ZnGk
 id: banner_deep
 label: 'Banner deep'
-revision: 1
+revision: true
 description: 'Block for displaying a deep banner image on landing page layouts.  Optionally add a strap line below the banner.'

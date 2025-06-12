@@ -9,10 +9,6 @@ dependencies:
   module:
     - allowed_formats
     - text
-third_party_settings:
-  allowed_formats:
-    allowed_formats:
-      - basic_html
 _core:
   default_config_hash: C-lA3ztVbA5TJnvirrD4aVYAmyWW9m9gxUarBR68jy8
 id: node.publication.body
