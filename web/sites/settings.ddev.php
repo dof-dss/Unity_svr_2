@@ -41,7 +41,7 @@ $settings['trusted_host_patterns'] = ['.*'];
 // better performance.
 $settings['class_loader_auto_detect'] = FALSE;
 
-// Assume all Lando sites should use 'local' config for devlopment.
+// Assume all DDEV sites should use 'local' config for development.
 $config['config_split.config_split.local']['status'] = TRUE;
 $config['config_split.config_split.hosted']['status'] = FALSE;
 
