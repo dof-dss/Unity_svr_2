@@ -41,6 +41,10 @@ $settings['trusted_host_patterns'] = ['.*'];
 // better performance.
 $settings['class_loader_auto_detect'] = FALSE;
 
+// Assume all DDEV sites should use 'local' config for development.
+$config['config_split.config_split.local']['status'] = TRUE;
+$config['config_split.config_split.hosted']['status'] = FALSE;
+
 // Set $settings['config_sync_directory'] if not set in settings.php.
 if (empty($settings['config_sync_directory'])) {
   $settings['config_sync_directory'] = 'sites/default/files/sync';
