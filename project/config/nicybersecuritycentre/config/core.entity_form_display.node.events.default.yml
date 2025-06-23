@@ -29,7 +29,6 @@ third_party_settings:
     group_event_date_s_and_time:
       children:
         - field_event_date
-        - field_start_time
       label: 'Event date(s) and time'
       region: content
       parent_name: ''
@@ -86,6 +85,7 @@ content:
       hide_date: false
       allday: true
       remove_seconds: false
+      duration_overlay: false
     third_party_settings: {  }
   field_event_location:
     type: options_select
