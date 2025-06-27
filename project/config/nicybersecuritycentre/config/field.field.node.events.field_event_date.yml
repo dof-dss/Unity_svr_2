@@ -18,7 +18,7 @@ translatable: false
 default_value:
   -
     default_duration: 0
-    default_duration_increments: custom
+    default_duration_increments: "custom\r\n30|30 minutes\r\n60|1 hour\r\n120|2 hours\r\n180|3 hours\r\n360|6 hours\r\n"
     default_date_type: now
     default_date: ''
     min: ''
