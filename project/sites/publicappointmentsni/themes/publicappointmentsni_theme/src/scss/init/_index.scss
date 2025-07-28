@@ -15,8 +15,8 @@
 // Style guide: init
 
 // The following Sass functions/mixins are required to generate some variables' values, so we load them first.
-@import '../../../node_modules/breakpoint-sass/stylesheets/breakpoint';
-@import '../../../node_modules/chroma-sass/sass/chroma/functions';
+@import '../../../../../../../../node_modules/breakpoint-sass/stylesheets/breakpoint';
+@import '../../../../../../../../node_modules/chroma-sass/sass/chroma/functions';
 
 @import 'colors';
 @import 'variables';
@@ -37,9 +37,9 @@
 // Style guide: init.libraries
 
 // Add Chroma to manage colors.
-@import '../../../node_modules/chroma-sass/sass/chroma';
-@import '../../../node_modules/chroma-sass/sass/chroma/kss';
-@import '../../../node_modules/nicsdru_origins_theme/src/scss/init/compass-vr/compass';
+@import '../../../../../../../../node_modules/chroma-sass/sass/chroma';
+@import '../../../../../../../../node_modules/chroma-sass/sass/chroma/kss';
+@import '../../../../../../../../node_modules/nicsdru_origins_theme/src/scss/init/compass-vr/compass';
 
 // Functions
 //
@@ -49,9 +49,9 @@
 // Weight: -5
 //
 // Style guide: init.functions
-@import '../../../node_modules/nicsdru_origins_theme/src/scss/init/helpers/headings';
-@import '../../../node_modules/nicsdru_origins_theme/src/scss/init/helpers/strip-unit';
-@import '../../../node_modules/nicsdru_origins_theme/src/scss/init/helpers/type-checking';
+@import '../../../../../../../../node_modules/nicsdru_origins_theme/src/scss/init/helpers/headings';
+@import '../../../../../../../../node_modules/nicsdru_origins_theme/src/scss/init/helpers/strip-unit';
+@import '../../../../../../../../node_modules/nicsdru_origins_theme/src/scss/init/helpers/type-checking';
 
 // Mixins
 //
@@ -60,6 +60,6 @@
 // Weight: -6
 //
 // Style guide: init.mixins
-@import '../../../node_modules/nicsdru_origins_theme/src/scss/init/visually-hidden/visually-hidden';
-@import '../../../node_modules/nicsdru_origins_theme/src/scss/init/responsive-typo/resp-typo';
-@import '../../../node_modules/nicsdru_unity_theme/src/scss/init/unity-layout/unity-layout';
+@import '../../../../../../../../node_modules/nicsdru_origins_theme/src/scss/init/visually-hidden/visually-hidden';
+@import '../../../../../../../../node_modules/nicsdru_origins_theme/src/scss/init/responsive-typo/resp-typo';
+@import '../../../../../../../../node_modules/nicsdru_unity_theme/src/scss/init/unity-layout/unity-layout';

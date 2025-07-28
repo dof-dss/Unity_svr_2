@@ -3,10 +3,10 @@
  * Defines the components for the theme.
  */
 @import 'init/index';
-@import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+@import '../../../../../../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
 .top_left {
-  margin: 1rem 0 1rem;
+  margin: 1rem 0 2rem;
 
   #logo {
     img {
