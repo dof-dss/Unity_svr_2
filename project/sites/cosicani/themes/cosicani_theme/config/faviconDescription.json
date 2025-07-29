@@ -1,6 +1,6 @@
 {
   "masterPicture": "images/favicon.svg",
-  "iconsPath": "/sites/hiaredressni/themes/hiaredressni/images/favicons/",
+  "iconsPath": "/sites/cosicani/themes/cosicani_theme/images/favicons/",
   "design": {
     "ios": {
       "pictureAspect": "backgroundAndMargin",
@@ -12,7 +12,7 @@
         "precomposedIcons": false,
         "declareOnlyDefaultIcon": true
       },
-      "appName": "hiaredressni"
+      "appName": "cosicani"
     },
     "desktopBrowser": {},
     "windows": {
@@ -28,13 +28,13 @@
           "rectangle": false
         }
       },
-      "appName": "hiaredressni"
+      "appName": "cosicani"
     },
     "androidChrome": {
       "pictureAspect": "noChange",
       "themeColor": "#ffffff",
       "manifest": {
-        "name": "hiaredressni",
+        "name": "cosicani",
         "display": "standalone",
         "orientation": "notSet",
         "onConflict": "override",

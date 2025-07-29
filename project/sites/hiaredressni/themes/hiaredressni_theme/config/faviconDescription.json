@@ -1,6 +1,6 @@
 {
   "masterPicture": "images/favicon.svg",
-  "iconsPath": "/sites/hiaredressni/themes/hiaredressni/images/favicons/",
+  "iconsPath": "/sites/hiaredressni/themes/hiaredressni_theme/images/favicons/",
   "design": {
     "ios": {
       "pictureAspect": "backgroundAndMargin",
