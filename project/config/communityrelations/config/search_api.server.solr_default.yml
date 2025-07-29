@@ -40,10 +40,10 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: communityrelations_solr
-    port: 8983
+    host: communityrelations_solr.internal
+    port: 8080
     path: /
-    core: default
+    core: communityrelations_index
     timeout: 5
     index_timeout: 5
     optimize_timeout: 10

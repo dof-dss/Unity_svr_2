@@ -92,7 +92,7 @@
       right: -.6rem;
       width: 3rem;
       height: 3rem;
-      background-image: resolve('arrow_forward_link_blue.svg');
+      background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_link_blue.svg");
       background-position: center center;
       background-size: 2.4rem auto;
       background-repeat: no-repeat;
@@ -103,7 +103,7 @@
     &:hover .board-title:after,
     &:focus .board-title:after {
       background-color: $charcoal;
-      background-image: resolve('arrow_forward_white.svg');
+      background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg");
     }
   }
 }

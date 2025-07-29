@@ -22,7 +22,7 @@
 }
 
 .region-front-welcome {
-  background: resolve('crc-banner-img.png') no-repeat 50%;
+  background: url("/sites/communityrelations/themes/communityrelations_theme/images/crc-banner-img.png") no-repeat 50%;
   padding: 5rem 5rem 5rem 5rem;
   margin: auto;
 }
@@ -157,7 +157,7 @@
       right: 0.4rem;
       width: 3rem;
       height: 3rem;
-      background-image: resolve('arrow_forward_white.svg');
+      background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg");
       background-position: center center;
       background-size: 2.4rem auto;
       background-repeat: no-repeat;
@@ -167,7 +167,7 @@
   &:hover .board__body:after,
   &:focus .board__body:after {
     background-color: $charcoal;
-    background-image: resolve('arrow_forward_white.svg');
+    background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg");
   }
 }
 
@@ -214,7 +214,7 @@
       right: 0.4rem;
       width: 3rem;
       height: 3rem;
-      background-image: resolve('arrow_forward_link_blue.svg');
+      background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_link_blue.svg");
       background-position: center center;
       background-size: 2.4rem auto;
       background-repeat: no-repeat;
@@ -223,7 +223,7 @@
   &:hover .board__body:after,
   &:focus .board__body:after {
     background-color: $charcoal;
-    background-image: resolve('arrow_forward_white.svg');
+    background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg");
   }
 }
 
@@ -271,7 +271,7 @@
       right: 0.4rem;
       width: 3rem;
       height: 3rem;
-      background-image: resolve('arrow_forward_white.svg');
+      background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg");
       background-position: center center;
       background-size: 2.4rem auto;
       background-repeat: no-repeat;
@@ -280,7 +280,7 @@
   &:hover .board__body:after,
   &:focus .board__body:after {
     background-color: $charcoal;
-    background-image: resolve('arrow_forward_white.svg');
+    background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg");
   }
 }
 
@@ -329,7 +329,7 @@
       right: 0.4rem;
       width: 3rem;
       height: 3rem;
-      background-image: resolve('arrow_forward_link_blue.svg');
+      background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_link_blue.svg");
       background-position: center center;
       background-size: 2.4rem auto;
       background-repeat: no-repeat;
@@ -338,7 +338,7 @@
     &:hover .board__body:after,
     &:focus .board__body:after {
       background-color: $charcoal;
-      background-image: resolve('arrow_forward_white.svg');
+      background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg");
     }
   }
 
@@ -389,7 +389,7 @@
       right: 0.4rem;
       width: 3rem;
       height: 3rem;
-      background-image: resolve('arrow_forward_white.svg');
+      background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg");
       background-position: center center;
       background-size: 2.4rem auto;
       background-repeat: no-repeat;
@@ -398,7 +398,7 @@
   &:hover .board__body:after,
   &:focus .board__body:after {
     background-color: $charcoal;
-    background-image: resolve('arrow_forward_white.svg');
+    background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg");
   }
 }
 
@@ -509,7 +509,7 @@
 }
 
 .region-top-fourth {
-  background: resolve('crc-subscribe-bg.png') repeat 50%;;
+  background: url("/sites/communityrelations/themes/communityrelations_theme/crc-subscribe-bg.png") repeat 50%;;
   padding: 2rem;
   height: 65rem;
 

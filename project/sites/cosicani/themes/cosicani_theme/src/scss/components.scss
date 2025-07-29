@@ -107,7 +107,7 @@
 
   .container-wrap {
     padding: 4.4rem 0;
-    background: resolve('homepage-pullquote-bkgrd.svg') no-repeat 60rem -120px / 500px;
+    background: url("/sites/cosicani/themes/cosicani_theme/images/homepage-pullquote-bkgrd.svg") no-repeat 60rem -120px / 500px;
   }
 
   blockquote {
@@ -151,7 +151,7 @@
       right: 0.5rem;
       width: 3rem;
       height: 3rem;
-      mask: no-repeat 100% 100% resolve('arrow_forward_white.svg');
+      mask: no-repeat 100% 100% url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg");
       mask-size: cover;
       background-color: #fff;
     }
@@ -268,7 +268,7 @@
         right: 0.4rem;
         width: 3rem;
         height: 3rem;
-        background-image: resolve('arrow_forward_white.svg');
+        background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg");
         background-position: center center;
         background-size: 2.4rem auto;
         background-repeat: no-repeat;
@@ -278,7 +278,7 @@
     &:hover .content:after,
     &:focus .content:after {
       background-color: $white;
-      background-image: resolve('arrow_forward_black.svg');
+      background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_black.svg");
     }
   }
 }
@@ -313,7 +313,7 @@
         right: 0.4rem;
         width: 3rem;
         height: 3rem;
-        background-image: resolve('arrow_forward_black.svg');
+        background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_black.svg");
         background-position: center center;
         background-size: 2.4rem auto;
         background-repeat: no-repeat;
@@ -326,7 +326,7 @@
     &:hover .content:after,
     &:focus .content:after {
       background-color: $black;
-      background-image: resolve('arrow_forward_white.svg');
+      background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg");
     }
   }
 }

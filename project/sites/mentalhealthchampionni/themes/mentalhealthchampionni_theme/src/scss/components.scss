@@ -212,7 +212,7 @@
 }
 
 .seeking-support {
-  background: $black resolve('mhc-border-top.png') no-repeat;
+  background: $black url("/sites/mentalhealthchampionni/themes/mentalhealthchampionni_theme/mhc-border-top.png") no-repeat;
   background-size: contain;
 
   @media screen and (max-width: 1036px){
@@ -246,19 +246,19 @@
         word-wrap: break-word;
 
         &:first-child {
-          background: $white resolve('mindingyourhead.png') no-repeat;
+          background: $white url("/sites/mentalhealthchampionni/themes/mentalhealthchampionni_theme/mindingyourhead.png") no-repeat;
         }
 
         &:nth-child(2) {
-          background: $white resolve('communitywellbeing.png') no-repeat;
+          background: $white url("/sites/mentalhealthchampionni/themes/mentalhealthchampionni_theme/communitywellbeing.png") no-repeat;
         }
 
         &:nth-child(3) {
-          background: $white resolve('samaritans.png') no-repeat;
+          background: $white url("/sites/mentalhealthchampionni/themes/mentalhealthchampionni_theme/samaritans.png") no-repeat;
         }
 
         &:last-child {
-          background: $white resolve('lifeline.png') no-repeat;
+          background: $white url("/sites/mentalhealthchampionni/themes/mentalhealthchampionni_theme/lifeline.png") no-repeat;
         }
       }
     }

@@ -516,7 +516,7 @@ aside #user-login-form .form-actions {
 
 #footer {
   padding: 2rem;
-  background: #e7e7e7 resolve("mhc-border-top.png") no-repeat;
+  background: #e7e7e7 url("/sites/mentalhealthchampionni/themes/mentalhealthchampionni_theme/mhc-border-top.png") no-repeat;
   border: none;
   background-size: contain; }
   #footer .container-wrap {

@@ -1318,7 +1318,7 @@ ul.info-notice {
       right: .1rem;
       width: 3rem;
       height: 3rem;
-      background-image: resolve("arrow_forward_link_blue.svg");
+      background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_link_blue.svg");
       background-position: center center;
       background-size: 2.4rem auto;
       background-repeat: no-repeat; }
@@ -1327,7 +1327,7 @@ ul.info-notice {
     .block-link a:hover .block-link--teaser:after,
     .block-link a:focus .block-link--teaser:after {
       background-color: #333;
-      background-image: resolve("arrow_forward_white.svg"); }
+      background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg"); }
   .block-link .media-image[data-picture-mapping="card_small"],
   .block-link .media-image[data-picture-mapping="inline_xl"] {
     margin: 0; }
@@ -1454,7 +1454,7 @@ body:not(.front) #header_wrapper {
   background-color: #066aa8; }
   @media screen and (min-width: 1300px) {
     #header_wrapper {
-      background-image: resolve("hex-pattern.svg"), resolve("hex-pattern-right.svg");
+      background-image: url("/sites/nicybersecuritycentre/themes/nicybersecuritycentre_theme/images/hex-pattern.svg"), url("/sites/nicybersecuritycentre/themes/nicybersecuritycentre_theme/images/hex-pattern-right.svg");
       background-position: -75px top, right 60px;
       background-repeat: no-repeat, no-repeat; } }
 

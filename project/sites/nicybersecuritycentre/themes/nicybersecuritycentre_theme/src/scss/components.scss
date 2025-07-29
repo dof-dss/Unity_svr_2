@@ -55,7 +55,7 @@
       right: .1rem;
       width: 3rem;
       height: 3rem;
-      background-image: resolve('arrow_forward_link_blue.svg');
+      background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_link_blue.svg");
       background-position: center center;
       background-size: 2.4rem auto;
       background-repeat: no-repeat;
@@ -68,7 +68,7 @@
     &:hover .block-link--teaser:after,
     &:focus .block-link--teaser:after {
       background-color: $charcoal;
-      background-image: resolve('arrow_forward_white.svg');
+      background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg");
     }
   }
 
@@ -251,7 +251,7 @@ body:not(.front) {
   background-color: $brand-secondary;
 
   @media screen and (min-width: 1300px) {
-    background-image: resolve('hex-pattern.svg'), resolve('hex-pattern-right.svg');
+    background-image: url("/sites/nicybersecuritycentre/themes/nicybersecuritycentre_theme/images/hex-pattern.svg"), url("/sites/nicybersecuritycentre/themes/nicybersecuritycentre_theme/images/hex-pattern-right.svg");
     background-position: -75px top, right 60px;
     background-repeat: no-repeat, no-repeat;
   }

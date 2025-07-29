@@ -1338,7 +1338,7 @@ ul.info-notice {
     right: -.6rem;
     width: 3rem;
     height: 3rem;
-    background-image: resolve("arrow_forward_link_blue.svg");
+    background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_link_blue.svg");
     background-position: center center;
     background-size: 2.4rem auto;
     background-repeat: no-repeat; }
@@ -1346,7 +1346,7 @@ ul.info-notice {
 .views-row.board-card a:hover .board-title:after,
 .views-row.board-card a:focus .board-title:after {
   background-color: #333;
-  background-image: resolve("arrow_forward_white.svg"); }
+  background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg"); }
 
 @media screen and (min-width: 440px) {
   #footer .footer-menu li {

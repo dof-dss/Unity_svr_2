@@ -1293,7 +1293,7 @@ ul.info-notice {
       height: 14rem; } }
 
 .region-front-welcome {
-  background: resolve("crc-banner-img.png") no-repeat 50%;
+  background: url("/sites/communityrelations/themes/communityrelations_theme/images/crc-banner-img.png") no-repeat 50%;
   padding: 5rem 5rem 5rem 5rem;
   margin: auto; }
 
@@ -1394,7 +1394,7 @@ ul.info-notice {
     right: 0.4rem;
     width: 3rem;
     height: 3rem;
-    background-image: resolve("arrow_forward_white.svg");
+    background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg");
     background-position: center center;
     background-size: 2.4rem auto;
     background-repeat: no-repeat; }
@@ -1402,7 +1402,7 @@ ul.info-notice {
 .latest-event-top:hover .board__body:after,
 .latest-event-top:focus .board__body:after {
   background-color: #333;
-  background-image: resolve("arrow_forward_white.svg"); }
+  background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg"); }
 
 .latest-news-top a {
   background: #f6f6f6;
@@ -1437,7 +1437,7 @@ ul.info-notice {
     right: 0.4rem;
     width: 3rem;
     height: 3rem;
-    background-image: resolve("arrow_forward_link_blue.svg");
+    background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_link_blue.svg");
     background-position: center center;
     background-size: 2.4rem auto;
     background-repeat: no-repeat; }
@@ -1445,7 +1445,7 @@ ul.info-notice {
 .latest-news-top:hover .board__body:after,
 .latest-news-top:focus .board__body:after {
   background-color: #333;
-  background-image: resolve("arrow_forward_white.svg"); }
+  background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg"); }
 
 .latest-funding a {
   display: flex;
@@ -1480,7 +1480,7 @@ ul.info-notice {
     right: 0.4rem;
     width: 3rem;
     height: 3rem;
-    background-image: resolve("arrow_forward_white.svg");
+    background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg");
     background-position: center center;
     background-size: 2.4rem auto;
     background-repeat: no-repeat; }
@@ -1488,7 +1488,7 @@ ul.info-notice {
 .latest-funding:hover .board__body:after,
 .latest-funding:focus .board__body:after {
   background-color: #333;
-  background-image: resolve("arrow_forward_white.svg"); }
+  background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg"); }
 
 .latest-news-bottom {
   padding-bottom: 2rem; }
@@ -1524,14 +1524,14 @@ ul.info-notice {
       right: 0.4rem;
       width: 3rem;
       height: 3rem;
-      background-image: resolve("arrow_forward_link_blue.svg");
+      background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_link_blue.svg");
       background-position: center center;
       background-size: 2.4rem auto;
       background-repeat: no-repeat; }
   .latest-news-bottom:hover .board__body:after,
   .latest-news-bottom:focus .board__body:after {
     background-color: #333;
-    background-image: resolve("arrow_forward_white.svg"); }
+    background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg"); }
 
 .latest-event-bottom {
   padding-bottom: 2rem; }
@@ -1568,14 +1568,14 @@ ul.info-notice {
       right: 0.4rem;
       width: 3rem;
       height: 3rem;
-      background-image: resolve("arrow_forward_white.svg");
+      background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg");
       background-position: center center;
       background-size: 2.4rem auto;
       background-repeat: no-repeat; }
   .latest-event-bottom:hover .board__body:after,
   .latest-event-bottom:focus .board__body:after {
     background-color: #333;
-    background-image: resolve("arrow_forward_white.svg"); }
+    background-image: url("/themes/custom/nicsdru_unity_theme/images/arrow_forward_white.svg"); }
 
 #content #block-views-block-latest-news-home-latest-news a,
 #content #block-views-block-funding-schemes-funding-schemes-homepage a {
@@ -1651,7 +1651,7 @@ ul.info-notice {
     text-align: left; }
 
 .region-top-fourth {
-  background: resolve("crc-subscribe-bg.png") repeat 50%;
+  background: url("/sites/communityrelations/themes/communityrelations_theme/crc-subscribe-bg.png") repeat 50%;
   padding: 2rem;
   height: 65rem; }
   .region-top-fourth h2 {

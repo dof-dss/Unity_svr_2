@@ -1420,7 +1420,7 @@ ul.info-notice {
           font-size: 1.6rem; }
 
 .seeking-support {
-  background: #000 resolve("mhc-border-top.png") no-repeat;
+  background: #000 url("/sites/mentalhealthchampionni/themes/mentalhealthchampionni_theme/mhc-border-top.png") no-repeat;
   background-size: contain; }
   @media screen and (max-width: 1036px) {
     .seeking-support {
@@ -1447,10 +1447,10 @@ ul.info-notice {
         margin-bottom: 2rem;
         word-wrap: break-word; }
         .seeking-support .row ul:not(.contextual-links) li:first-child {
-          background: #fff resolve("mindingyourhead.png") no-repeat; }
+          background: #fff url("/sites/mentalhealthchampionni/themes/mentalhealthchampionni_theme/mindingyourhead.png") no-repeat; }
         .seeking-support .row ul:not(.contextual-links) li:nth-child(2) {
-          background: #fff resolve("communitywellbeing.png") no-repeat; }
+          background: #fff url("/sites/mentalhealthchampionni/themes/mentalhealthchampionni_theme/communitywellbeing.png") no-repeat; }
         .seeking-support .row ul:not(.contextual-links) li:nth-child(3) {
-          background: #fff resolve("samaritans.png") no-repeat; }
+          background: #fff url("/sites/mentalhealthchampionni/themes/mentalhealthchampionni_theme/samaritans.png") no-repeat; }
         .seeking-support .row ul:not(.contextual-links) li:last-child {
-          background: #fff resolve("lifeline.png") no-repeat; }
+          background: #fff url("/sites/mentalhealthchampionni/themes/mentalhealthchampionni_theme/lifeline.png") no-repeat; }

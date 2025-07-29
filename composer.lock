@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f334938a7281cd6708647c12d25a6af2",
+    "content-hash": "d7c53ee97e68a018d92f847304e45062",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1767,16 +1767,16 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_theme",
-            "version": "v10.2.20",
+            "version": "dev-theme-restructure",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_theme.git",
-                "reference": "c74cb5f0fc38b049bf465e400dfdc14d51db4fdc"
+                "reference": "e1122e3de2cb5071c5037a55b1327648c672717e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/c74cb5f0fc38b049bf465e400dfdc14d51db4fdc",
-                "reference": "c74cb5f0fc38b049bf465e400dfdc14d51db4fdc",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/e1122e3de2cb5071c5037a55b1327648c672717e",
+                "reference": "e1122e3de2cb5071c5037a55b1327648c672717e",
                 "shasum": ""
             },
             "require": {
@@ -1800,9 +1800,9 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v10.2.20"
+                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/theme-restructure"
             },
-            "time": "2025-06-26T07:12:31+00:00"
+            "time": "2025-07-29T11:12:45+00:00"
         },
         {
             "name": "drupal/address",
@@ -22739,6 +22739,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "dof-dss/nicsdru_unity_theme": 20,
         "drupal/block_field": 5,
         "drupal/ckeditor5_allowed_html": 20,
         "drupal/clone_nodes": 20,
