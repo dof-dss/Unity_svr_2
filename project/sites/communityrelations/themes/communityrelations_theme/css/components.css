@@ -1285,7 +1285,7 @@ ul.info-notice {
     margin: 0; }
 
 .top_left {
-  margin: 1rem 0 2rem; }
+  margin: 1rem 0 1rem; }
   .top_left #logo img {
     height: 11rem; }
   @media screen and (min-width: 766px) {
