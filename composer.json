@@ -139,6 +139,7 @@
         "drupal/seven": "^1.0",
         "drupal/shs": "^2.0@RC",
         "drupal/simplei": "^2.1",
+        "drupal/sitemap": "^2.0",
         "drupal/slick": "2.9.0",
         "drupal/slick_views": "2.7.0",
         "drupal/smart_date": "^4.1",
