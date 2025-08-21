@@ -30,7 +30,6 @@
     "kss": "^3.0.1",
     "modernizr": "^3.11.2",
     "nicsdru_origins_theme": "^0.3.11",
-    "nicsdru_unity_theme": "^10.2.20",
     "nightwatch": "^1.3.5",
     "nightwatch-accessibility": "^1.8.0",
     "node-sass": "^9.0.0",
@@ -48,8 +47,6 @@
     "uglify-js": "^3.9.3"
   },
   "scripts": {
-    "––––––– POST INSTALL SCRIPTS": "–––––––––––––",
-    "install": "(cd node_modules/nicsdru_unity_theme && npm install)",
     "––––––– CSS SCRIPTS": "–––––––––––––",
     "css": "npm-run-all --sequential scss-dev-* css-post",
     "css-post": "postcss --config web/themes/custom/nicsdru_unity_theme/config/postcss.config.js --replace \"web/themes/custom/nicsdru_unity_theme/css/**/*.css\"",
@@ -82,7 +79,6 @@
     "scss-prod-publicappointmentsni": "mkdir -p $npm_package_config_publicappointmentsni_dir/css && node-sass --style=compressed --no-source-map --no-error-css $npm_package_config_publicappointmentsni_dir/src/scss/ -o $npm_package_config_publicappointmentsni_dir/css/",
     "scss-prod-sentencereview": "mkdir -p $npm_package_config_sentencereview_dir/css && node-sass --style=compressed --no-source-map --no-error-css $npm_package_config_sentencereview_dir/src/scss/ -o $npm_package_config_sentencereview_dir/css/",
     "scss-prod-victimspaymentsboard": "mkdir -p $npm_package_config_victimspaymentsboard_dir/css && node-sass --style=compressed --no-source-map --no-error-css $npm_package_config_victimspaymentsboard_dir/src/scss/ -o $npm_package_config_victimspaymentsboard_dir/css/",
-
     "––––––– WATCH SCRIPTS": "–––––––––––––",
     "watch": "npm-run-all --parallel watch-scss",
     "watch-scss": "onchange 'project/sites/*/themes/*_theme/src/scss/**/*.scss' -- npm run css",
