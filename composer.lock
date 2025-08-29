@@ -1767,16 +1767,16 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_theme",
-            "version": "v10.2.20",
+            "version": "v10.2.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_theme.git",
-                "reference": "c74cb5f0fc38b049bf465e400dfdc14d51db4fdc"
+                "reference": "e5786848574766fe657bfa6ec633c291fe6126c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/c74cb5f0fc38b049bf465e400dfdc14d51db4fdc",
-                "reference": "c74cb5f0fc38b049bf465e400dfdc14d51db4fdc",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/e5786848574766fe657bfa6ec633c291fe6126c8",
+                "reference": "e5786848574766fe657bfa6ec633c291fe6126c8",
                 "shasum": ""
             },
             "require": {
@@ -1800,9 +1800,9 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v10.2.20"
+                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/v10.2.21"
             },
-            "time": "2025-06-26T07:12:31+00:00"
+            "time": "2025-08-28T10:28:56+00:00"
         },
         {
             "name": "drupal/address",
@@ -4143,6 +4143,10 @@
             ],
             "authors": [
                 {
+                    "name": "anybody",
+                    "homepage": "https://www.drupal.org/user/291091"
+                },
+                {
                     "name": "berdir",
                     "homepage": "https://www.drupal.org/user/214652"
                 },
@@ -4157,6 +4161,10 @@
                 {
                     "name": "Drupal Media Team",
                     "homepage": "https://www.drupal.org/user/3260690"
+                },
+                {
+                    "name": "grevil",
+                    "homepage": "https://www.drupal.org/user/3668491"
                 },
                 {
                     "name": "marcingy",
