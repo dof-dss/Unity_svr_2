@@ -77,8 +77,8 @@ filters:
     weight: -47
     settings:
       allowed_html: '<a class href hreflang data-entity-type data-entity-uuid data-entity-substitution> <em> <strong> <cite> <blockquote cite> <code> <ul class type> <ol class start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <p class translate> <br> <span> <img src alt height width data-* typeof> <sup> <table class> <caption> <tbody> <thead> <tfoot> <th scope> <td> <tr> <drupal-entity data-entity-type data-entity-uuid data-entity-substitution data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button alt title class> <picture data-* alt title class> <source srcset media type> <address> <drupal-media data-entity-type data-entity-id data-entity-uuid data-entity-substitution data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button data-view-mode alt title class>'
-      filter_html_help: '0'
-      filter_html_nofollow: '0'
+      filter_html_help: false
+      filter_html_nofollow: false
   filter_autop:
     id: filter_autop
     provider: filter
@@ -134,10 +134,11 @@ filters:
   linkit:
     id: linkit
     provider: linkit
-    status: false
+    status: true
     weight: -35
     settings:
       title: true
+      media_substitution: metadata
   media_embed:
     id: media_embed
     provider: media
@@ -173,4 +174,4 @@ filters:
     status: false
     weight: -34
     settings:
-      replace_empty: '0'
+      replace_empty: false
