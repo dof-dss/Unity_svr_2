@@ -91,10 +91,12 @@ module:
   node_edit_protection: 0
   noreferrer: 0
   options: 0
+  origins_ckeditor_enhancements: 0
   origins_common: 0
   origins_media: 0
   origins_metatag: 0
   origins_qa: 0
+  origins_search_views_routing: 0
   origins_toc: 0
   origins_unique_title: 0
   page_cache: 0

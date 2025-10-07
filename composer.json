@@ -74,9 +74,9 @@
         "drupal/config_update": "^2.0@alpha",
         "drupal/content_lock": "^2.3",
         "drupal/cookie_content_blocker": "^2.2",
-        "drupal/core-composer-scaffold": "^10.4",
-        "drupal/core-project-message": "^10.4",
-        "drupal/core-recommended": "^10.4",
+        "drupal/core-composer-scaffold": "^10.5",
+        "drupal/core-project-message": "^10.5",
+        "drupal/core-recommended": "^10.5",
         "drupal/csp": "^1.20",
         "drupal/ctools": "^4.1",
         "drupal/date_facet_drilldown": "11.x-dev@dev",
@@ -107,7 +107,7 @@
         "drupal/layout_builder_modal": "^1.2",
         "drupal/layout_builder_restrictions": "^2.19",
         "drupal/link_fix_absolute_urls": "^1.0",
-        "drupal/linkit": "^6.1",
+        "drupal/linkit": "^7.0",
         "drupal/media_entity_browser": "^2.0@alpha",
         "drupal/media_file_delete": "^1.3",
         "drupal/media_library_edit": "^3.0",
@@ -139,6 +139,7 @@
         "drupal/seven": "^1.0",
         "drupal/shs": "^2.0@RC",
         "drupal/simplei": "^2.1",
+        "drupal/sitemap": "^2.0",
         "drupal/slick": "2.9.0",
         "drupal/slick_views": "2.7.0",
         "drupal/smart_date": "^4.1",
@@ -195,6 +196,9 @@
             "drupal/clientside_validation": {
                 "core/jquery.once is required": "https://www.drupal.org/files/issues/2021-02-23/3200022-01.patch"
             },
+            "drupal/config_split": {
+                "Config export fails": "https://www.drupal.org/files/issues/2025-09-01/config_split-3511132-3.patch"
+            },
             "drupal/core": {
                 "Render blocks in preview page": "https://www.drupal.org/files/issues/2019-10-03/3085364_2.patch",
                 "User enable email exception": "https://www.drupal.org/files/issues/2023-05-19/user_email_exception-3355151-3.patch",
@@ -204,7 +208,8 @@
                 "Fix getSetting() error on translated migrations": "https://www.drupal.org/files/issues/2018-07-08/2984460-3.patch",
                 "Fix for reference error on unpublished nodes on Entity Queue": "https://www.drupal.org/files/issues/2024-04-16/2845144-95.patch",
                 "Menu revision langcode bug fix": "https://www.drupal.org/files/issues/2024-05-13/menu_revision_langcode-3446877.patch",
-                "Fix to $form.ajaxSubmit is not a function": "https://git.drupalcode.org/project/drupal/-/merge_requests/6052.diff"
+                "Fix to $form.ajaxSubmit is not a function": "https://git.drupalcode.org/project/drupal/-/merge_requests/6052.diff",
+                "DateList and date range inline form errors are repeated": "https://www.drupal.org/files/issues/2020-01-30/2827034-35.patch"
             },
             "drupal/easy_install": {
                 "Handle missing core version": "https://www.drupal.org/files/issues/2019-12-19/easy_install_core_version-3101883-0.patch",
