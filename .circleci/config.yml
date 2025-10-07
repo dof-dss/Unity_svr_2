@@ -1,349 +1,50 @@
 version: 2.1
 
-# Default docker image.
-default_docker_image: &docker_image
-  docker:
-    - image: thecodingmachine/php:8.3-v4-apache
-      environment:
-        PLATFORM_REGION: "uk-1.platform.sh"
-        PROJECT_ROOT: "/home/docker/project"
-        PHP_EXTENSION_GD: 1
-        PHP_EXTENSIONS: "gd"
-        PHP_INI_MEMORY_LIMIT: -1
-        PHP_INI_MAX_EXECUTION_TIME: 600
-        PHP_INI_MAX_INPUT_TIME: 600
-        CPPFLAGS: "-DPNG_ARM_NEON_OPT=0"
+setup: true
 
-# Re-usable commands.
-commands:
-  checkout_code:
-    description: "Handle composer access tokens, SSH key fingerprints and code checkout"
-    steps:
-      # Add SSH user key so we can access related repositories as part of our initial clone + composer install command.
-      - add_ssh_keys:
-          fingerprints:
-            - "e8:86:75:e8:35:15:07:a6:2d:a0:00:17:69:a1:42:84"
-      - checkout
-  composer_tasks:
-    description: "Validate and install dependencies using composer"
-    steps:
-      - run:
-          name: Validate composer.json and composer.lock file for consistency
-          command: composer validate --no-check-all --strict
-      - restore_cache:
-          keys:
-            - composer-{{ checksum "composer.lock" }}
-      - run:
-          name: Fetch dependencies with composer
-          command: |
-            composer install --no-interaction --optimize-autoloader
-      - save_cache:
-          key: composer-{{ checksum "composer.lock" }}
-          paths:
-            - $HOME/.composer/cache
-  composer_tasks__no_cache:
-    description: "Validate and install dependencies using composer"
-    steps:
-      - run:
-          name: Validate composer.json and composer.lock file for consistency
-          command: composer validate --no-check-all --strict
-      - run:
-          name: Fetch dependencies with composer
-          command: |
-            composer install --no-interaction --optimize-autoloader
-  composer_tasks__edge_packages:
-    description: "Switch dof-dss packages to HEAD on development branch"
-    steps:
-      - run:
-          name: Switch dof-dss packages to HEAD on development branch
-          command: |
-            composer require dof-dss/nicsdru_unity_theme:dev-10.x-dev \
-              dof-dss/nicsdru_origins_modules:dev-10.x-dev \
-              dof-dss/nicsdru_unity_modules:dev-10.x-dev \
-              dof-dss/nicsdru_unity_profile:dev-10.x-dev
-  install_psh_cli:
-    description: "Install the Platform.sh CLI tool"
-    steps:
-      - run:
-          name: Install the Platform.sh CLI tool
-          command: curl -sS https://platform.sh/cli/installer | php
-      - run:
-          name: Add platform cli tool to $PATH
-          command: echo 'export PATH="$HOME/"'.platformsh/bin':"$PATH"' >> $BASH_ENV
-  hosts_keyscan:
-    description: "Adds github.com to known hosts in container; for working locally."
-    steps:
-      - run:
-          name: Keyscan for hosts that require SSH access
-          command: |
-            mkdir -p ~/.ssh
-            ssh-keyscan -H github.com >> ~/.ssh/known_hosts
-            ssh-keyscan -H ssh.$PLATFORM_REGION >> ~/.ssh/known_hosts
-jobs:
-  # Tests the integrity of the build, stores the results in a workspace for re-use in later jobs.
-  build:
-    <<: *docker_image
-    steps:
-      - checkout_code
-      - composer_tasks
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - ./
-
-  # Test for coding standards - will inherit the workspace/filesystem changes from build step, above.
-  coding_standards:
-    <<: *docker_image
-    steps:
-      - attach_workspace:
-          at: ./
-      - run:
-          name: PHPCS analysis
-          command: |
-            CHECK_DIRS="${PROJECT_ROOT}/web/sites"
-            CHECK_DIRS="${CHECK_DIRS} ${PROJECT_ROOT}/web/modules/custom"
-            CHECK_DIRS="${CHECK_DIRS} ${PROJECT_ROOT}/web/modules/origins"
-            CHECK_DIRS="${CHECK_DIRS} ${PROJECT_ROOT}/web/themes/custom"
-            CHECK_DIRS="${CHECK_DIRS} ${PROJECT_ROOT}/web/profiles/unity"
-            CHECK_DIRS="${CHECK_DIRS} ${PROJECT_ROOT}/web/profiles/origins"
-            ~/project/phpcs.sh ${PROJECT_ROOT} $CHECK_DIRS
-
-  # Test for deprecated code - will inherit the workspace/filesystem changes from build step, above.
-  deprecated_code:
-    <<: *docker_image
-    steps:
-      - attach_workspace:
-          at: ./
-      - run:
-          name: Deprecated code check
-          command: |
-            cd $PROJECT_ROOT
-            CHECK_DIRS="${PROJECT_ROOT}/web/modules/custom"
-            CHECK_DIRS="$CHECK_DIRS ${PROJECT_ROOT}/web/modules/origins"
-            vendor/bin/drupal-check $CHECK_DIRS
-
-  disallowed_functions:
-    <<: *docker_image
-    steps:
-      - attach_workspace:
-          at: ./
-      - run:
-          name: Check for disallowed function calls
-          command: |
-            CHECK_DIRS="${PROJECT_ROOT}/web/modules/custom"
-            CHECK_DIRS="$CHECK_DIRS ${PROJECT_ROOT}/web/modules/origins"
-            vendor/bin/phpstan analyse $CHECK_DIRS -c .circleci/phpstan.neon
-
-  check_illegal_updates:
-    <<: *docker_image
-    steps:
-      - attach_workspace:
-          at: ./
-      - hosts_keyscan
-      - run:
-          name: Check for updates made directly in this repo rather than in maestro-drupal-unity
-          command: |
-            git clone git@github.com:dof-dss/maestro-drupal-unity.git
-            echo "** Any failures in this section indicate that updates have been made directly in this repo "
-            echo "when they should have been made in https://github.com/dof-dss/maestro-drupal-unity and"
-            echo "pulled from the upstream repo using 'maestro pub' **"
-            echo "** checking composer.json  **"
-            diff maestro-drupal-unity/composer.json composer.json
-            echo "** checking composer.lock  **"
-            diff maestro-drupal-unity/composer.lock composer.lock
-            echo "** checking circleci/config.yml  **"
-            #diff maestro-drupal-unity/.circleci/config.yml .circleci/config.yml
-            echo "** checking platform.app.yaml **"
-            grep 'will be overwritten' .platform.app.yaml
-            echo "** checking site.settings.php  **"
-            diff maestro-drupal-unity/web/sites/site.settings.php web/sites/site.settings.php
-            echo "** checking sites.php  **"
-            diff maestro-drupal-unity/web/sites/sites.php web/sites/sites.php
-
-  # Nightly edge build
-  edge_build:
-    <<: *docker_image
-    environment:
-      # git variables to avoid empty committer identity errors
-      EMAIL: "circleci@localhost"
-      GIT_COMMITTER_NAME: "Circle CI"
-      GIT_AUTHOR_NAME: "Circle CI"
-      EDGE_BUILD_BRANCH: "edge"
-      PLATFORM_REGION: "uk-1.platform.sh"
-      CPPFLAGS: "-DPNG_ARM_NEON_OPT=0"
-      NODE_VERSION: 14.21.3
-    steps:
-      - hosts_keyscan
-      - checkout_code
-      - run:
-          name: Add OS and PHP extensions
-          command: |
-            touch ~/.bashrc
-            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
-            sudo apt update --allow-releaseinfo-change
-            sudo apt install libjpeg-dev make python3 g++ dh-autoreconf -y
-      - install_psh_cli
-      - run:
-          name: Switch to edge branch
-          command: git checkout -b $EDGE_BUILD_BRANCH
-      - composer_tasks__edge_packages
-      - run:
-          name: Push composer package updates back to GitHub
-          command: |
-            git add composer.*
-            git commit -m "Set dof-dss packages to HEAD development for build"
-      - run:
-          name: Rebuild site themes
-          command: |
-            export NVM_DIR="$HOME/.nvm"
-            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-            [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-            cd $PROJECT_ROOT
-            ./build-themes.sh --sites-dir $PROJECT_ROOT/project/sites
-            # Push to fixed, non-integrating build branch. GitHub webhook integration will propagate this
-            # to platform.sh for later steps to use.
-            cd $PROJECT_ROOT
-            git add *.css
-            git commit -m "Theme rebuild"
-            git push -f origin $EDGE_BUILD_BRANCH
-
-  # Separate task to allow us to sync data on PSH environments, without pauses in other jobs.
-  sync_data:
-    <<: *docker_image
-    steps:
-      - hosts_keyscan
-      - checkout_code
-      - install_psh_cli
-      - run:
-          name: Trigger a data sync from master environment to nightly edge build.
-          command: |
-            platform sync data -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH -y
-          no_output_timeout: 20m
-      - run:
-          name: Backup data sync if the previous attempt failed.
-          command: |
-            # Pause for the blocking activity to finish.
-            sleep 300s
-            platform sync data -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH -y
-          when: on_fail
-      - run:
-          name: Run any outstanding updates
-          command: |
-            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
-            do
-              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
-              if [[ -n $result ]]; then
-                result2=$(platform drush "updb -l ${site} -y" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Fastly (fastly)" || true) )
-            fi
-            done
-          no_output_timeout: 20m
-      - run:
-          name: Turn off fastly module to allow for cleaner config import
-          command: |
-            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
-            do
-              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
-              if [[ -n $result ]]; then
-                result2=$(platform drush "pml --status=enabled -l ${site}" -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Fastly (fastly)" || true) )
-                if [[ -n $result2 ]]; then
-                  echo "***** Uninstall Fastly - ${site} *****"
-                  platform drush "pmu fastly -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
-                fi
-            fi
-            done
-      - run:
-          name: Clear cache before config import
-          command: |
-            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
-            do
-              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
-              if [[ -n $result ]]; then
-                echo "***** Clear Cache - ${site} *****"
-                platform drush "cr -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
-              fi
-            done
-      - run:
-          name: Refresh configuration as our db will contain active prod config after sync operation
-          command: |
-            for site in `ls -l ~/project/project/sites | grep ^d | awk '!/default/{print $9}'`
-            do
-              result=$(platform drush "st -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH | (grep "Drupal bootstrap : Successful" || true) )
-              if [[ -n $result ]]; then
-                echo "***** Config Import - ${site} *****"
-                platform drush "cim -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
-                echo "***** Import blocks/taxonomies/menus - ${site} *****"
-                platform drush "import-all-if-installed safe -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
-                echo "***** Enable QA accounts - ${site} *****"
-                platform drush "bulk_update_qa_accounts enable -l ${site}" -y -p $PLATFORM_PROJECT -e $EDGE_BUILD_BRANCH
-              fi
-            done
-  # Checks to ensure that Unity Base has not been polluted with project files.
-  unity_base_checks:
-    <<: *docker_image
-    steps:
-      - attach_workspace:
-          at: ./
-      - when:
-          condition:
-            equal: [ "https://github.com/dof-dss/unity_base", << pipeline.project.git_url >> ]
-          steps:
-            - run:
-                name: Check Project directory and files do not exist
-                command: |
-                  cd $PROJECT_ROOT
-                  .circleci/unity_base_guardian.sh
+orbs:
+  continuation: circleci/continuation@0.4.0
 
 workflows:
-  version: 2
-  build-test-deploy:
+  setup:
     jobs:
-      - build
-      - unity_base_checks:
-          requires:
-            - build
-      - coding_standards:
-          requires:
-            - build
-      - deprecated_code:
-          requires:
-            - build
-      - disallowed_functions:
-          requires:
-            - build
-      #- check_illegal_updates:
-      #    requires:
-      #      - build
+      - fetch-and-continue
 
-  # A nightly build of the project, using all dof-dss packages at HEAD from development branch.
-  nightly-edge-build:
-    when:
-      and:
-        - not:
-          equal: [ "https://github.com/dof-dss/unity_base", << pipeline.project.git_url >> ]
-    triggers:
-      - schedule:
-          # At 00:30 Monday to Friday
-          cron: "30 0 * * 1-5"
-          filters:
-            branches:
-              only:
-                - development
-    jobs:
-      - edge_build
+jobs:
+  fetch-and-continue:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - run:
+          name: Download shared config
+          command: |
+            wget \
+              --header="Cache-Control: no-cache" \
+              --header="Pragma: no-cache" \
+              "https://raw.githubusercontent.com/dof-dss/webdev-ci/main/shared-config.yml?nocache=$(date +%s)" \
+              -O shared-config.yml
 
-  # A nightly deploy or re-deploy of the edge site after the git branch has been created in nightly-edge-build.
-  nightly-edge-build-post-build-tasks:
-    when:
-      and:
-        - not:
-          equal: [ "https://github.com/dof-dss/unity_base", << pipeline.project.git_url >> ]
-    triggers:
-      - schedule:
-          # At 01:23 Monday to Friday
-          cron: "55 1 * * 1-5"
-          filters:
-            branches:
-              only:
-                - edge
-    jobs:
-      - sync_data
+      - run:
+          name: Combine shared jobs and local workflows
+          command: |
+            # Remove the 'version: 2.1' from workflows config (since it's in shared config)
+            tail -n +2 .circleci/workflow-config.yml > workflows-only.yml
+            # Concatenate shared jobs+commands with repo workflows
+            cat shared-config.yml workflows-only.yml > full-config.yml
+
+      - continuation/continue:
+          configuration_path: full-config.yml
+          parameters: |
+            {
+              "php_version": "8.3",
+              "drupal_core_version": "10.5",
+              "node_version": "18",
+              "coding_standards_dirs": "${PROJECT_ROOT}/web/sites ${PROJECT_ROOT}/web/modules/custom ${PROJECT_ROOT}/web/modules/origins ${PROJECT_ROOT}/web/themes/custom ${PROJECT_ROOT}/web/profiles/unity ${PROJECT_ROOT}/web/profiles/origins",
+              "custom_code_dirs": "${PROJECT_ROOT}/web/modules/custom ${PROJECT_ROOT}/web/themes/custom",
+              "deprecated_code_dirs": "${PROJECT_ROOT}/web/modules/custom ${PROJECT_ROOT}/web/modules/origins ${PROJECT_ROOT}/web/themes/custom",
+              "edge_branch": "edge",
+              "edge_build_dofdss_packages": "dof-dss/nicsdru_unity_theme:dev-10.x-dev dof-dss/nicsdru_origins_modules:dev-10.x-dev dof-dss/nicsdru_unity_modules:dev-10.x-dev dof-dss/nicsdru_unity_profile:dev-10.x-dev",
+              "ignore_dirs": "/web/themes/origins/node_modules,/web/themes/custom/nicsdru_unity_theme/node_modules",
+              "ssh_fingerprint": "e8:86:75:e8:35:15:07:a6:2d:a0:00:17:69:a1:42:84"
+            }
