@@ -1,0 +1,42 @@
+uuid: 97b953e1-dc6b-4a60-a90c-835fc5c02eac
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: GTM-NQM3NNR.690218cf893f86.29540657
+label: GTM-NQM3NNR
+weight: 0
+tag_container_ids:
+  - GTM-NQM3NNR
+advanced_settings:
+  consent_mode: false
+  gtm:
+    GTM-NQM3NNR:
+      data_layer: dataLayer
+      include_classes: false
+      allowlist_classes: ''
+      blocklist_classes: ''
+      include_environment: false
+      environment_id: ''
+      environment_token: ''
+dimensions_metrics: {  }
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+events:
+  sign_up:
+    method: CMS
+  login:
+    method: CMS
+  generate_lead:
+    value: ''
+    currency: ''
+  search: {  }
+  webform_purchase: {  }
+  custom: {  }
