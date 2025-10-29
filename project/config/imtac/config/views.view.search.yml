@@ -133,7 +133,7 @@ display:
           plugin_id: search_api_spellcheck_did_you_mean
           empty: true
           search_api_spellcheck_count: 1
-          search_api_spellcheck_hide_on_result: 1
+          search_api_spellcheck_hide_on_result: true
           search_api_spellcheck_collate: true
         area:
           id: area
@@ -551,7 +551,7 @@ display:
           plugin_id: search_api_spellcheck_did_you_mean
           empty: true
           search_api_spellcheck_count: 1
-          search_api_spellcheck_hide_on_result: 1
+          search_api_spellcheck_hide_on_result: true
           search_api_spellcheck_collate: true
         area:
           id: area
