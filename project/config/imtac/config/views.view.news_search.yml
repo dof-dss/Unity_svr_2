@@ -212,6 +212,7 @@ display:
             expose_fields: false
             placeholder: Keywords
             searched_fields_id: search_api_fulltext_searched_fields
+            value_maxlength: 128
           is_grouped: false
           group_info:
             label: ''
@@ -224,7 +225,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          parse_mode: terms
+          parse_mode: fuzzy_terms
           min_length: null
           fields: {  }
       style:
