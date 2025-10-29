@@ -1,0 +1,42 @@
+uuid: 98337425-0890-4e0c-9817-af7507b2df7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: GTM-P2MJZQH.69021ada8fe0b6.26120639
+label: GTM-P2MJZQH
+weight: 0
+tag_container_ids:
+  - GTM-P2MJZQH
+advanced_settings:
+  consent_mode: false
+  gtm:
+    GTM-P2MJZQH:
+      data_layer: dataLayer
+      include_classes: false
+      allowlist_classes: ''
+      blocklist_classes: ''
+      include_environment: false
+      environment_id: ''
+      environment_token: ''
+dimensions_metrics: {  }
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+events:
+  sign_up:
+    method: CMS
+  login:
+    method: CMS
+  generate_lead:
+    value: ''
+    currency: ''
+  search: {  }
+  webform_purchase: {  }
+  custom: {  }
