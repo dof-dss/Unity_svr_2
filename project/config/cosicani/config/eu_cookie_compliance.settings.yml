@@ -1,6 +1,9 @@
 _core:
   default_config_hash: Wph0IY6FThC4QuHAGcSQDx6S8gysoclVsF2tkm4Lu8o
 langcode: en
+dependencies:
+  config:
+    - filter.format.basic_html
 uuid: 4eecaee7-56d3-45eb-b318-23522ae80177
 popup_enabled: true
 popup_clicking_confirmation: false
@@ -54,7 +57,7 @@ cookie_name: ''
 exclude_uid_1: true
 better_support_for_screen_readers: true
 method: opt_in
-disabled_javascripts: 'public://google_tag/cosica/google_tag.script.js'
+disabled_javascripts: ''
 automatic_cookies_removal: true
 allowed_cookies: ''
 consent_storage_method: do_not_store
@@ -80,6 +83,3 @@ close_button_action: close_banner
 reject_button_label: ''
 reject_button_enabled: false
 close_button_enabled: false
-dependencies:
-  config:
-    - filter.format.basic_html
