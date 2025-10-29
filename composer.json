@@ -209,7 +209,8 @@
                 "Fix for reference error on unpublished nodes on Entity Queue": "https://www.drupal.org/files/issues/2024-04-16/2845144-95.patch",
                 "Menu revision langcode bug fix": "https://www.drupal.org/files/issues/2024-05-13/menu_revision_langcode-3446877.patch",
                 "Fix to $form.ajaxSubmit is not a function": "https://git.drupalcode.org/project/drupal/-/merge_requests/6052.diff",
-                "DateList and date range inline form errors are repeated": "https://www.drupal.org/files/issues/2020-01-30/2827034-35.patch"
+                "DateList and date range inline form errors are repeated": "https://www.drupal.org/files/issues/2020-01-30/2827034-35.patch",
+                "The link on the Image tag is redirecting to an undefined page from the node preview screen #3308432": "https://www.drupal.org/files/issues/2025-06-09/3308432-42.patch"
             },
             "drupal/easy_install": {
                 "Handle missing core version": "https://www.drupal.org/files/issues/2019-12-19/easy_install_core_version-3101883-0.patch",
