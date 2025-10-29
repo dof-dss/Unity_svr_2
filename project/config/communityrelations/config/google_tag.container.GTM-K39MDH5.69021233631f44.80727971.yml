@@ -1,0 +1,42 @@
+uuid: cfde00d4-d689-4ba0-bc11-11c2be448e12
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: GTM-K39MDH5.69021233631f44.80727971
+label: GTM-K39MDH5
+weight: 0
+tag_container_ids:
+  - GTM-K39MDH5
+advanced_settings:
+  consent_mode: false
+  gtm:
+    GTM-K39MDH5:
+      data_layer: dataLayer
+      include_classes: false
+      allowlist_classes: ''
+      blocklist_classes: ''
+      include_environment: false
+      environment_id: ''
+      environment_token: ''
+dimensions_metrics: {  }
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+events:
+  sign_up:
+    method: CMS
+  login:
+    method: CMS
+  generate_lead:
+    value: ''
+    currency: ''
+  search: {  }
+  webform_purchase: {  }
+  custom: {  }
