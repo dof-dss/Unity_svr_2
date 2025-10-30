@@ -340,7 +340,7 @@ display:
           plugin_id: search_api_spellcheck_did_you_mean
           empty: true
           search_api_spellcheck_count: 1
-          search_api_spellcheck_hide_on_result: 1
+          search_api_spellcheck_hide_on_result: true
           search_api_spellcheck_collate: true
         area:
           id: area
@@ -407,6 +407,7 @@ display:
             expose_fields: false
             placeholder: 'Search site'
             searched_fields_id: search_api_fulltext_searched_fields
+            value_maxlength: 128
           is_grouped: false
           group_info:
             label: ''
@@ -419,7 +420,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          parse_mode: terms
+          parse_mode: fuzzy_terms
           min_length: null
           fields: {  }
       style:
