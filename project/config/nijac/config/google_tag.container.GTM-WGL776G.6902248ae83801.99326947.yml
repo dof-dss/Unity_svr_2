@@ -1,0 +1,42 @@
+uuid: c4d28408-ba9e-4ca6-ad4b-76c40adbdd08
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: GTM-WGL776G.6902248ae83801.99326947
+label: GTM-WGL776G
+weight: 0
+tag_container_ids:
+  - GTM-WGL776G
+advanced_settings:
+  consent_mode: false
+  gtm:
+    GTM-WGL776G:
+      data_layer: dataLayer
+      include_classes: false
+      allowlist_classes: ''
+      blocklist_classes: ''
+      include_environment: false
+      environment_id: ''
+      environment_token: ''
+dimensions_metrics: {  }
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+events:
+  sign_up:
+    method: CMS
+  login:
+    method: CMS
+  generate_lead:
+    value: ''
+    currency: ''
+  search: {  }
+  webform_purchase: {  }
+  custom: {  }

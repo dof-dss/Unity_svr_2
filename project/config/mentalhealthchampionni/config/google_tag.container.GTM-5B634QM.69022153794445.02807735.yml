@@ -1,0 +1,42 @@
+uuid: 7888e31a-1cdb-413a-af62-3067b17d327d
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: GTM-5B634QM.69022153794445.02807735
+label: GTM-5B634QM
+weight: 0
+tag_container_ids:
+  - GTM-5B634QM
+advanced_settings:
+  consent_mode: false
+  gtm:
+    GTM-5B634QM:
+      data_layer: dataLayer
+      include_classes: false
+      allowlist_classes: ''
+      blocklist_classes: ''
+      include_environment: false
+      environment_id: ''
+      environment_token: ''
+dimensions_metrics: {  }
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+events:
+  sign_up:
+    method: CMS
+  login:
+    method: CMS
+  generate_lead:
+    value: ''
+    currency: ''
+  search: {  }
+  webform_purchase: {  }
+  custom: {  }
