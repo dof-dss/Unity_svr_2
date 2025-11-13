@@ -283,7 +283,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          parse_mode: fuzzy_terms
+          parse_mode: terms
           min_length: 2
           fields: {  }
       style:
