@@ -4,8 +4,17 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a81f8e84774e922299773a0f87f3355",
+    "content-hash": "8e071fd374a45a09d41d8dfbf364b235",
     "packages": [
+        {
+            "name": "accessible360/accessible-slick",
+            "version": "1.0.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/Accessible360/accessible-slick/archive/refs/tags/v1.0.1.zip"
+            },
+            "type": "drupal-library"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.3.0",
@@ -2130,20 +2139,20 @@
         },
         {
             "name": "drupal/blazy",
-            "version": "2.16.0",
+            "version": "3.0.15",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/blazy.git",
-                "reference": "8.x-2.16"
+                "reference": "3.0.15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/blazy-8.x-2.16.zip",
-                "reference": "8.x-2.16",
-                "shasum": "ae84ac6083f734968eb9c7cc008b32aaa04c5b9c"
+                "url": "https://ftp.drupal.org/files/projects/blazy-3.0.15.zip",
+                "reference": "3.0.15",
+                "shasum": "9464e029679a3bf3ef811865eb859f6789294590"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9 || ^10"
+                "drupal/core": ">=9.4"
             },
             "conflict": {
                 "drupal/csp": "<1.12"
@@ -2151,8 +2160,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.16",
-                    "datestamp": "1685788557",
+                    "version": "3.0.15",
+                    "datestamp": "1760528174",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8181,27 +8190,27 @@
         },
         {
             "name": "drupal/slick",
-            "version": "2.9.0",
+            "version": "3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/slick.git",
-                "reference": "8.x-2.9"
+                "reference": "3.0.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/slick-8.x-2.9.zip",
-                "reference": "8.x-2.9",
-                "shasum": "1c2cec19148a096f875390e2fd6a9e56caf5bacd"
+                "url": "https://ftp.drupal.org/files/projects/slick-3.0.6.zip",
+                "reference": "3.0.6",
+                "shasum": "011d7d8b6166f37a4f9dfcac9cbe8ce2b41830fe"
             },
             "require": {
-                "drupal/blazy": ">=2.14",
-                "drupal/core": "^8.8 || ^9 || ^10"
+                "drupal/blazy": "^3.0",
+                "drupal/core": ">=9.4"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.9",
-                    "datestamp": "1685789618",
+                    "version": "3.0.6",
+                    "datestamp": "1760846719",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8241,27 +8250,27 @@
         },
         {
             "name": "drupal/slick_views",
-            "version": "2.7.0",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/slick_views.git",
-                "reference": "8.x-2.7"
+                "reference": "3.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/slick_views-8.x-2.7.zip",
-                "reference": "8.x-2.7",
-                "shasum": "ca1bf78e5883adbdb10247592644d4fce4d7012c"
+                "url": "https://ftp.drupal.org/files/projects/slick_views-3.0.3.zip",
+                "reference": "3.0.3",
+                "shasum": "d90e6a079261300b0e1bf249508632f0a85d3281"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10",
-                "drupal/slick": "~2.0"
+                "drupal/core": ">=9.4",
+                "drupal/slick": "^3.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.7",
-                    "datestamp": "1685800148",
+                    "version": "3.0.3",
+                    "datestamp": "1729253841",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8270,7 +8279,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -8287,7 +8296,7 @@
                 "views"
             ],
             "support": {
-                "source": "http://cgit.drupalcode.org/slick_views",
+                "source": "https://git.drupalcode.org/project/slick_views",
                 "issues": "https://drupal.org/project/issues/slick_views"
             }
         },
