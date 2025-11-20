@@ -15,16 +15,22 @@ options:
   settings:
     mobileFirst: false
     asNavFor: ''
-    accessibility: true
+    regionLabel: carousel
+    useGroupRole: true
+    instructionsText: ''
     adaptiveHeight: false
     autoplay: true
+    useAutoplayToggleButton: true
+    pauseIcon: slick-pause-icon
+    playIcon: slick-play-icon
     pauseOnHover: true
     pauseOnDotsHover: true
     pauseOnFocus: true
-    autoplaySpeed: 3000
+    autoplaySpeed: 2000
     arrows: true
     prevArrow: Previous
     nextArrow: Next
+    arrowsPlacement: ''
     downArrow: false
     downArrowTarget: ''
     downArrowOffset: 0
@@ -41,12 +47,12 @@ options:
     lazyLoad: ondemand
     mouseWheel: false
     randomize: false
-    respondTo: window
+    respondTo: slider
     rtl: false
-    rows: 1
+    rows: 0
     slidesPerRow: 1
     slide: ''
-    slidesToShow: 1
+    slidesToShow: 1.0
     slidesToScroll: 1
     speed: 500
     swipe: false
@@ -70,13 +76,20 @@ options:
         breakpoint: 767
         unslick: false
         settings:
+          regionLabel: carousel
+          useGroupRole: true
+          instructionsText: ''
           adaptiveHeight: false
           autoplay: true
+          useAutoplayToggleButton: true
+          pauseIcon: slick-pause-icon
+          playIcon: slick-play-icon
           pauseOnHover: true
           pauseOnDotsHover: true
           pauseOnFocus: true
-          autoplaySpeed: 3000
-          arrows: false
+          autoplaySpeed: 2000
+          arrows: true
+          arrowsPlacement: ''
           centerMode: false
           centerPadding: 50px
           dots: true
@@ -85,10 +98,10 @@ options:
           focusOnSelect: false
           infinite: true
           initialSlide: 0
-          respondTo: window
-          rows: 1
+          respondTo: slider
+          rows: 0
           slidesPerRow: 1
-          slidesToShow: 1
+          slidesToShow: 1.0
           slidesToScroll: 1
           speed: 500
           swipe: true
