@@ -253,9 +253,6 @@
             "drupal/redirect": {
                 "Add URL Redirects tab to taxonomy term edit form": "https://www.drupal.org/files/issues/2021-03-26/redirect_provide_redirect_tab_on_taxonomy_terms_3205896.patch"
             },
-            "drupal/slick": {
-                "Slick arrow visibility": "https://www.drupal.org/files/issues/2021-06-16/button-visibility.patch"
-            },
             "drupal/search_api": {
                 "Declaration of Drupal\\search_api_solr\\Plugin\\search_api\\backend\\SearchApiSolrBackend::__sleep() must be compatible": "https://www.drupal.org/files/issues/2024-06-18/type_declaration.patch"
             },
