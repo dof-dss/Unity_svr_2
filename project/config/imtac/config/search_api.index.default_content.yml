@@ -7,9 +7,11 @@ dependencies:
     - field.storage.node.field_published_date
     - field.storage.node.field_summary
     - field.storage.node.field_teaser
+    - search_api.server.solr_default
   module:
-    - node
     - search_api_solr
+    - node
+    - search_api
 third_party_settings:
   search_api_solr:
     finalize: false
@@ -217,4 +219,4 @@ options:
   cron_limit: 50
   index_directly: true
   track_changes_in_references: true
-server: null
+server: solr_default
