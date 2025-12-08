@@ -15,6 +15,5 @@ module:
 theme: {  }
 complete_list:
   - search_api.server.solr_default
-  - fastly.settings
 partial_list:
   - nicertoffice_theme.settings
