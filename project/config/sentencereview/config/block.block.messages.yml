@@ -1,0 +1,20 @@
+uuid: 91298ed0-f063-4ce2-bc98-1466d49831de
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sentencereview_theme
+id: messages
+theme: sentencereview_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

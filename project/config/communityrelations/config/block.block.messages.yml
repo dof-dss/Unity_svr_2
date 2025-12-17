@@ -1,0 +1,20 @@
+uuid: 77298ef0-d063-4ze2-bt98-1466d49831de
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - communityrelations_theme
+id: messages
+theme: communityrelations_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }
