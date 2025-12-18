@@ -1,0 +1,20 @@
+uuid: 77298ed1-f067-4ce2-bc91-1466d49831de
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cvocni_theme
+id: messages
+theme: cvocni_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

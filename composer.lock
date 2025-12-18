@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e071fd374a45a09d41d8dfbf364b235",
+    "content-hash": "92b5d055781b340344f00d813857f585",
     "packages": [
         {
             "name": "accessible360/accessible-slick",
@@ -1685,16 +1685,16 @@
         },
         {
             "name": "dof-dss/nicsdru_origins_modules",
-            "version": "10.5.3",
+            "version": "10.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_origins_modules.git",
-                "reference": "44a745044ea21ac3ba0cee16856cb32ccae5dce7"
+                "reference": "c23bc6b423fe9ad950aae61ec209d84bf0ee07f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/44a745044ea21ac3ba0cee16856cb32ccae5dce7",
-                "reference": "44a745044ea21ac3ba0cee16856cb32ccae5dce7",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/c23bc6b423fe9ad950aae61ec209d84bf0ee07f1",
+                "reference": "c23bc6b423fe9ad950aae61ec209d84bf0ee07f1",
                 "shasum": ""
             },
             "require": {
@@ -1709,9 +1709,9 @@
             "description": "Generic modules for DOF-DSS Drupal sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_origins_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/10.5.3"
+                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/10.6.2"
             },
-            "time": "2025-08-08T14:43:09+00:00"
+            "time": "2025-12-17T12:42:11+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
@@ -17687,17 +17687,17 @@
         },
         {
             "name": "drupal/stage_file_proxy",
-            "version": "3.1.5",
+            "version": "3.1.6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/stage_file_proxy.git",
-                "reference": "3.1.5"
+                "reference": "3.1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/stage_file_proxy-3.1.5.zip",
-                "reference": "3.1.5",
-                "shasum": "b4bf35dceea7cfd2fc6808d041d903d7cbde2ed2"
+                "url": "https://ftp.drupal.org/files/projects/stage_file_proxy-3.1.6.zip",
+                "reference": "3.1.6",
+                "shasum": "06b7196c0c367dc079ab937e1f6b85fc28c2bcc2"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11",
@@ -17713,8 +17713,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.1.5",
-                    "datestamp": "1744819754",
+                    "version": "3.1.6",
+                    "datestamp": "1757610587",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -22922,5 +22922,5 @@
         "composer-runtime-api": "*"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
