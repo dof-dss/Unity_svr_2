@@ -1,4 +1,4 @@
-uuid: ff4c2b9f-7085-455a-9679-ea429ae9428b
+uuid: 473d48b4-f672-4e03-918e-cc221a9efb4e
 langcode: en
 status: false
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - slick
 _core:
-  default_config_hash: R44sHtkxxZrBiHA2kQiOrgfOwXDce6s8fpQCTUoDhf0
+  default_config_hash: jHmfPBU2oNraKWjKwqYODaPOKQQM2sczj5TlDlN8Om8
 id: default
 name: default
 weight: -10
@@ -26,13 +26,13 @@ options:
     instructionsText: ''
     adaptiveHeight: false
     autoplay: false
+    autoplaySpeed: 3000
     useAutoplayToggleButton: true
     pauseIcon: slick-pause-icon
     playIcon: slick-play-icon
     pauseOnHover: true
     pauseOnDotsHover: false
     pauseOnFocus: true
-    autoplaySpeed: 3000
     arrows: true
     prevArrow: Previous
     nextArrow: Next

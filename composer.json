@@ -40,15 +40,28 @@
                     "composer/installers": "^1.2.0"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "accessible360/accessible-slick",
+                "version": "1.0.1",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/Accessible360/accessible-slick/archive/refs/tags/v1.0.1.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
         "composer-runtime-api": "*",
+        "accessible360/accessible-slick": "^1.0",
         "aws/aws-sdk-php": "^3.343",
         "caxy/php-htmldiff": "^0.1.15",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
-        "dof-dss/nicsdru_origins_modules": "^10.5",
+        "dof-dss/nicsdru_origins_modules": "^10.6",
         "dof-dss/nicsdru_unity_modules": "^10.1",
         "dof-dss/nicsdru_unity_profile": "^10.1",
         "dof-dss/nicsdru_unity_theme": "^10.2",
@@ -57,7 +70,7 @@
         "drupal/allowed_formats": "^3.0",
         "drupal/antibot": "^2.0",
         "drupal/auto_entityqueue": "^2.1",
-        "drupal/blazy": "2.16.0",
+        "drupal/blazy": "^3.0",
         "drupal/block_content_permissions": "^1.11",
         "drupal/block_field": "^1.0@RC",
         "drupal/block_list_override": "^1.0",
@@ -140,8 +153,8 @@
         "drupal/shs": "^2.0@RC",
         "drupal/simplei": "^2.1",
         "drupal/sitemap": "^2.0",
-        "drupal/slick": "2.9.0",
-        "drupal/slick_views": "2.7.0",
+        "drupal/slick": "^3.0",
+        "drupal/slick_views": "^3.0",
         "drupal/smart_date": "^4.1",
         "drupal/stable": "^2.0",
         "drupal/structure_sync": "^2.0",
@@ -239,9 +252,6 @@
             },
             "drupal/redirect": {
                 "Add URL Redirects tab to taxonomy term edit form": "https://www.drupal.org/files/issues/2021-03-26/redirect_provide_redirect_tab_on_taxonomy_terms_3205896.patch"
-            },
-            "drupal/slick": {
-                "PHP 8.2 compatibility": "https://git.drupalcode.org/issue/slick-3373261/-/commit/4035fef4eb48df2a2859d6c2785357d6071f9e72.patch"
             },
             "drupal/search_api": {
                 "Declaration of Drupal\\search_api_solr\\Plugin\\search_api\\backend\\SearchApiSolrBackend::__sleep() must be compatible": "https://www.drupal.org/files/issues/2024-06-18/type_declaration.patch"
