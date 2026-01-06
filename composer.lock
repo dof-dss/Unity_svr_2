@@ -1715,16 +1715,16 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
-            "version": "10.1.24",
+            "version": "10.1.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_modules.git",
-                "reference": "5d8b165bbd2e18f9535482ed6ed623178928e3e5"
+                "reference": "d240c313c87db9e798acfd2ca4e67b9f15c15797"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/5d8b165bbd2e18f9535482ed6ed623178928e3e5",
-                "reference": "5d8b165bbd2e18f9535482ed6ed623178928e3e5",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/d240c313c87db9e798acfd2ca4e67b9f15c15797",
+                "reference": "d240c313c87db9e798acfd2ca4e67b9f15c15797",
                 "shasum": ""
             },
             "require": {
@@ -1738,9 +1738,9 @@
             "description": "Custom modules available to all Unity sites.",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/10.1.24"
+                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/10.1.25"
             },
-            "time": "2025-11-25T15:59:49+00:00"
+            "time": "2026-01-06T14:02:53+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_profile",

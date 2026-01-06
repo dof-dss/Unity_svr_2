@@ -4,8 +4,7 @@ source ~/.bashrc
 echo "Starting unity theme update"
 
 # Defaults
-projectDir="/project/sites"
-sites_dir=$(pwd)$projectDir
+sites_dir="/app/project/sites"
 site_names=()
 
 # Parse named parameters
@@ -51,13 +50,12 @@ for site_name in "${site_names[@]}"; do
         echo "Running npm install in $themes_dir"
         cd "$themes_dir"
 
-        nvm use 14
-        npm install
+        npm install --silent --no-progress
         npm install -f node-sass
         npm install -f imagemin-jpegoptim
-        npm install nicsdru_unity_theme
+        npm install nicsdru_unity_theme --silent --no-progress
         npm run build
     else
-        echo "Themes directory not found $themes_dir"
+        echo "Themes directory not found for $site_name"
     fi
 done
