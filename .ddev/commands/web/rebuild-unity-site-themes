@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+## Description: Rebuilds the Unity themes for each site.
+## Usage: rebuild-unity-site-themes
+## Aliases: ddrbst
+## Example: "ddev rebuild-unity-site-themes"
+## HostWorkingDir: true
+
+/var/www/html/build-themes.sh
