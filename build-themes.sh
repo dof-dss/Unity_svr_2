@@ -56,6 +56,6 @@ for site_name in "${site_names[@]}"; do
         npm install nicsdru_unity_theme --silent --no-progress
         npm run build
     else
-        echo "Themes directory not found $themes_dir"
+        echo "Themes directory not found for $site_name"
     fi
 done
