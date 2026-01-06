@@ -51,6 +51,8 @@ for site_name in "${site_names[@]}"; do
         cd "$themes_dir"
 
         npm install --silent --no-progress
+        npm install -f node-sass
+        npm install -f imagemin-jpegoptim
         npm install nicsdru_unity_theme --silent --no-progress
         npm run build
     else

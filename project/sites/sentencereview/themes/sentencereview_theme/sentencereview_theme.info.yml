@@ -22,6 +22,7 @@ regions:
   primary_menu: 'Main menu'
   slideshow: 'Slideshow'
   front_welcome: 'Front welcome'
+  highlighted: 'Highlighted'
   top_first: 'First top'
   top_second: 'Second top'
   top_third: 'Third top'
