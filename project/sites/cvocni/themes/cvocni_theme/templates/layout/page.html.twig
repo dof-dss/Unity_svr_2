@@ -82,6 +82,7 @@
   {% endif %}
 </div>
 
+{{ page.highlighted }}
 {% if is_front %}
   {{ page.slideshow }}
 {# If the homepage has no basic page then make the content the Main section and add the h1. #}
@@ -98,7 +99,6 @@
       src="sites/cvocni/themes/cvocni_theme/images/victim-banner-2.jpg"
       alt="">
   </div>
-  {{ page.highlighted }}
   {{ page.front_welcome }}
 
   {% if page.top_first or page.top_second or page.top_third %}
