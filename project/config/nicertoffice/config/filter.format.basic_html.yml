@@ -11,7 +11,6 @@ dependencies:
     - blazy
     - ckeditor5_allowed_html
     - ckeditor5_premium_features
-    - cookie_content_blocker
     - editor
     - entity_embed
     - linkit
@@ -35,6 +34,7 @@ filters:
       media_switch: ''
       hybrid_style: ''
       box_style: ''
+      box_media_style: ''
       box_caption: ''
       filter_tags:
         img: img
@@ -46,13 +46,6 @@ filters:
     status: false
     weight: -42
     settings: {  }
-  cookie_content_blocker_filter:
-    id: cookie_content_blocker_filter
-    provider: cookie_content_blocker
-    status: false
-    weight: -44
-    settings:
-      disable_xss: '1'
   editor_file_reference:
     id: editor_file_reference
     provider: editor
@@ -177,7 +170,6 @@ filters:
     settings:
       optionset: default
       layout: ''
-      skin: ''
       background: false
       loading: ''
       preload: false
@@ -186,6 +178,7 @@ filters:
       media_switch: ''
       ratio: ''
       thumbnail_style: ''
+      skin: ''
       overridables:
         arrows: '0'
         autoplay: '0'

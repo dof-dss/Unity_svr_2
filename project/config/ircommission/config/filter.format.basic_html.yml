@@ -10,7 +10,6 @@ dependencies:
   module:
     - ckeditor5_allowed_html
     - ckeditor5_premium_features
-    - cookie_content_blocker
     - editor
     - entity_embed
     - linkit
@@ -30,13 +29,6 @@ filters:
     status: false
     weight: -42
     settings: {  }
-  cookie_content_blocker_filter:
-    id: cookie_content_blocker_filter
-    provider: cookie_content_blocker
-    status: false
-    weight: -44
-    settings:
-      disable_xss: '1'
   editor_file_reference:
     id: editor_file_reference
     provider: editor
