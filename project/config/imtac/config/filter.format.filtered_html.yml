@@ -3,7 +3,6 @@ langcode: en
 status: false
 dependencies:
   module:
-    - cookie_content_blocker
     - origins_common
     - slick
     - token_filter
@@ -13,13 +12,6 @@ name: 'Filtered HTML with images'
 format: filtered_html
 weight: 0
 filters:
-  cookie_content_blocker_filter:
-    id: cookie_content_blocker_filter
-    provider: cookie_content_blocker
-    status: false
-    weight: 0
-    settings:
-      disable_xss: '0'
   filter_autop:
     id: filter_autop
     provider: filter
@@ -47,4 +39,4 @@ filters:
     status: false
     weight: 0
     settings:
-      replace_empty: '0'
+      replace_empty: false

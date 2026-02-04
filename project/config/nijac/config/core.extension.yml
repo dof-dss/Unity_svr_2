@@ -25,7 +25,6 @@ module:
   content_lock_timeout: 0
   content_moderation: 0
   contextual: 0
-  cookie_content_blocker: 0
   csp: 0
   ctools: 0
   date_facet_drilldown: 0
@@ -64,7 +63,6 @@ module:
   handy_cache_tags: 0
   help: 0
   history: 0
-  honeypot: 0
   http_cache_control: 0
   image: 0
   inline_entity_form: 0
