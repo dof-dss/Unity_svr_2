@@ -1,0 +1,33 @@
+uuid: 83c8907d-013a-46df-83fd-1cebc52cd2b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.news
+    - taxonomy.vocabulary.news_types
+  content:
+    - 'taxonomy_term:news_types:3746ff9f-4bd4-4481-af50-5478bea66bfc'
+id: node.news.field_type
+field_name: field_type
+entity_type: node
+bundle: news
+label: Type
+description: "Leave this field at 'Normal' unless this is a Lay Magistrates news item."
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 3746ff9f-4bd4-4481-af50-5478bea66bfc
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      news_types: news_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

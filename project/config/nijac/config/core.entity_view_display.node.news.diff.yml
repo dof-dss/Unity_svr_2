@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.news.field_photo
     - field.field.node.news.field_publication_date
     - field.field.node.news.field_teaser
+    - field.field.node.news.field_type
     - node.type.news
   module:
     - field_group
@@ -25,10 +26,11 @@ third_party_settings:
       children:
         - field_teaser
         - field_meta_tags
+        - field_type
       label: 'Additional content details'
       parent_name: ''
       region: content
-      weight: 3
+      weight: 2
       format_type: html_element
       format_settings:
         classes: field-collection
@@ -52,7 +54,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_meta_tags:
     type: metatag_empty_formatter
@@ -68,7 +70,7 @@ content:
       view_mode: landscape_float
       link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_teaser:
     type: string
@@ -77,6 +79,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 7
+    region: content
+  field_type:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 9
     region: content
 hidden:
   content_moderation_control: true
