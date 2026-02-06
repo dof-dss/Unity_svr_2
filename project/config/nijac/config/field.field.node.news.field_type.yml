@@ -13,7 +13,7 @@ field_name: field_type
 entity_type: node
 bundle: news
 label: Type
-description: "Leave this field at 'Normal' nnless this is a Lay Magistrates news item."
+description: "Leave this field at 'Normal' unless this is a Lay Magistrates news item."
 required: true
 translatable: false
 default_value:
