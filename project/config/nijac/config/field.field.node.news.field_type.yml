@@ -7,7 +7,7 @@ dependencies:
     - node.type.news
     - taxonomy.vocabulary.news_types
   content:
-    - 'taxonomy_term:news_types:3746ff9f-4bd4-4481-af50-5478bea66bfc'
+    - 'taxonomy_term:news_types:1a83d115-3aba-45e4-9d3c-ce0890df9d1e'
 id: node.news.field_type
 field_name: field_type
 entity_type: node
@@ -18,7 +18,7 @@ required: true
 translatable: false
 default_value:
   -
-    target_uuid: 3746ff9f-4bd4-4481-af50-5478bea66bfc
+    target_uuid: 1a83d115-3aba-45e4-9d3c-ce0890df9d1e
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
