@@ -1,0 +1,21 @@
+uuid: 8d207ab0-cf07-4714-a8a4-fedf174ecad4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_nested_standard
+    - field.storage.block_content.field_teaser
+_core:
+  default_config_hash: '-sRiJJBBmfMsjKLO2v_jgPtozUTdfcu2aUc0Mr444Mg'
+id: block_content.card_nested_standard.field_teaser
+field_name: field_teaser
+entity_type: block_content
+bundle: card_nested_standard
+label: Teaser
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
