@@ -1,0 +1,14 @@
+uuid: 519c1b32-317b-43b6-8f83-e92094c65ee0
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.landing_supervisor
+  module:
+    - user
+id: user_add_role_action.landing_supervisor
+label: 'Add the Landing supervisor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: landing_supervisor
