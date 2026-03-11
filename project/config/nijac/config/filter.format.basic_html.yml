@@ -16,7 +16,6 @@ dependencies:
     - linkit
     - media
     - noreferrer
-    - origins_common
     - slick
     - token_filter
 _core:
