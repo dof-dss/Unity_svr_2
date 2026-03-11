@@ -3,7 +3,6 @@ langcode: en
 status: false
 dependencies:
   module:
-    - origins_common
     - slick
     - token_filter
 _core:
