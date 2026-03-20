@@ -8,7 +8,7 @@
     "chroma-sass": "^1.2.6",
     "cli-real-favicon": "^0.0.8",
     "cross-conf-env": "^1.1.2",
-    "eslint": "^6.8.0",
+    "eslint": "^10.0.3",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.20.2",
