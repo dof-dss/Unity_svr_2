@@ -1,0 +1,71 @@
+uuid: b58df806-1dde-4511-be92-792973213212
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.node.landing_page.default
+    - node.type.landing_page
+  module:
+    - block_content_permissions
+    - layout_builder
+    - node
+    - scheduled_transitions
+id: landing_supervisor
+label: 'Landing supervisor'
+weight: 7
+is_admin: null
+permissions:
+  - 'configure editable landing_page node layout overrides'
+  - 'create accordion_menu block content'
+  - 'create and edit custom blocks'
+  - 'create banner_deep block content'
+  - 'create basic_block block content'
+  - 'create card_contact block content'
+  - 'create card_nested_standard block content'
+  - 'create card_nested_wide block content'
+  - 'create card_standard block content'
+  - 'create card_wide block content'
+  - 'create information_notice block content'
+  - 'create landing_page content'
+  - 'create map block content'
+  - 'create plain_cards block content'
+  - 'create text block content'
+  - 'create video block content'
+  - 'create video_and_caption block content'
+  - 'delete any accordion_menu block content'
+  - 'delete any banner_deep block content'
+  - 'delete any basic_block block content'
+  - 'delete any card_contact block content'
+  - 'delete any card_nested_standard block content'
+  - 'delete any card_nested_wide block content'
+  - 'delete any card_standard block content'
+  - 'delete any card_wide block content'
+  - 'delete any information_notice block content'
+  - 'delete any landing_page content'
+  - 'delete any map block content'
+  - 'delete any plain_cards block content'
+  - 'delete any text block content'
+  - 'delete any video block content'
+  - 'delete any video_and_caption block content'
+  - 'delete landing_page revisions'
+  - 'delete own landing_page content'
+  - 'edit any landing_page content'
+  - 'edit own landing_page content'
+  - 'reschedule scheduled transitions node landing_page'
+  - 'revert landing_page revisions'
+  - 'update any accordion_menu block content'
+  - 'update any banner_deep block content'
+  - 'update any basic_block block content'
+  - 'update any card_contact block content'
+  - 'update any card_nested_standard block content'
+  - 'update any card_nested_wide block content'
+  - 'update any card_standard block content'
+  - 'update any card_wide block content'
+  - 'update any information_notice block content'
+  - 'update any map block content'
+  - 'update any plain_cards block content'
+  - 'update any text block content'
+  - 'update any video block content'
+  - 'update any video_and_caption block content'
+  - 'view landing_page revisions'
+  - 'view scheduled transitions node landing_page'

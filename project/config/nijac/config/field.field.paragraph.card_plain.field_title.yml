@@ -1,0 +1,21 @@
+uuid: 7e0bc27a-6d3b-4c17-8e40-1cc555b10864
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.card_plain
+_core:
+  default_config_hash: b3IDBA1m_TqMcmI5waBQ7DqmggAOyHDsV7jopPWvPEc
+id: paragraph.card_plain.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: card_plain
+label: Title
+description: 'Title should be descriptive and concise (60 characters or less). A good title is essential to helping users decide if the content will be relevant to them. '
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+uuid: f757d304-a1e9-424a-8f4d-352e92140fce
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.landing_supervisor
+  module:
+    - user
+id: user_remove_role_action.landing_supervisor
+label: 'Remove the Landing supervisor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: landing_supervisor

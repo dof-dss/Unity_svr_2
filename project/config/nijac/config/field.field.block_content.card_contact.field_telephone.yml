@@ -1,0 +1,25 @@
+uuid: 1b9cb5f6-ad12-46cc-b333-1717dbc696a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_contact
+    - field.storage.block_content.field_telephone
+  module:
+    - telephone_plus
+_core:
+  default_config_hash: Sa27Tmyk4fiJJ0UWL7tbmVYvGIUcNInXYafQw0Tofyg
+id: block_content.card_contact.field_telephone
+field_name: field_telephone
+entity_type: block_content
+bundle: card_contact
+label: Telephone
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  default_country_code: GB
+  country_code_enabled: 0
+field_type: telephone_plus_field
