@@ -95,7 +95,7 @@ display:
       cache:
         type: custom_tag
         options:
-          custom_tag: "handy_cache_tags:node:board_member\r\nentity_subqueue:board_members_queue"
+          custom_tag: "handy_cache_tags:node:staff_member\r\nentity_subqueue:board_members_queue"
       empty: {  }
       sorts:
         entityqueue_relationship:
@@ -207,8 +207,6 @@ display:
         - user.permissions
       tags:
         - 'config:entityqueue.entity_queue.board_members_queue'
-        - entity_field_info
-        - views_data
   board_members_block:
     id: board_members_block
     display_title: 'Board Members Block'
@@ -217,7 +215,9 @@ display:
     display_options:
       display_description: ''
       display_extenders:
-        metatag_display_extender: {  }
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -227,5 +227,3 @@ display:
         - user.permissions
       tags:
         - 'config:entityqueue.entity_queue.board_members_queue'
-        - entity_field_info
-        - views_data
