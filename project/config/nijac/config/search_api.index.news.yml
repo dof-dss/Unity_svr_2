@@ -6,11 +6,11 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_publication_date
     - field.storage.node.field_teaser
-    - search_api.server.solr_default
+    - field.storage.node.field_type
   module:
-    - search_api_solr
     - node
-    - search_api
+    - search_api_solr
+    - taxonomy
 third_party_settings:
   search_api_solr:
     finalize: false
@@ -49,8 +49,8 @@ third_party_settings:
     multilingual:
       limit_to_content_language: false
       include_language_independent: true
-      specific_languages: {  }
       use_language_undefined_as_fallback_language: false
+      specific_languages: {  }
       use_universal_collation: false
 id: news
 name: News
@@ -82,6 +82,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_teaser
+  field_type:
+    label: Type
+    datasource_id: 'entity:node'
+    property_path: field_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_type
   langcode:
     label: Language
     datasource_id: 'entity:node'
@@ -90,6 +98,16 @@ field_settings:
     dependencies:
       module:
         - node
+  name:
+    label: 'Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_type
+      module:
+        - taxonomy
   spelling:
     label: Spelling
     property_path: aggregated_field
@@ -129,13 +147,17 @@ datasource_settings:
 processor_settings:
   add_url: {  }
   aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  custom_value: {  }
   entity_status: {  }
+  entity_type: {  }
   highlight:
     weights:
       postprocess_query: 0
     prefix: '<strong>'
     suffix: '</strong>'
     excerpt: true
+    excerpt_always: false
     excerpt_length: 256
     exclude_fields: {  }
     highlight: always
@@ -152,13 +174,13 @@ processor_settings:
     title: false
     alt: true
     tags:
-      b: 2
-      em: 1
-      h1: 5
-      h2: 3
-      h3: 2
-      strong: 2
-      u: 1
+      b: 2.0
+      em: 1.0
+      h1: 5.0
+      h2: 3.0
+      h3: 2.0
+      strong: 2.0
+      u: 1.0
   language_with_fallback: {  }
   rendered_item: {  }
   solr_date_range:
@@ -169,6 +191,7 @@ tracker_settings:
     indexing_order: fifo
 options:
   cron_limit: 50
+  delete_on_fail: true
   index_directly: true
   track_changes_in_references: true
-server: solr_default
+server: null
