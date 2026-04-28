@@ -20,10 +20,11 @@ settings:
   label: Date
   label_display: visible
   provider: facets
+  context_mapping: {  }
   block_id: publicationdate
 visibility:
   request_path:
     id: request_path
     negate: false
     context_mapping: {  }
-    pages: "/news\r\n/news/date/*"
+    pages: "/news\r\n/news/type/*\r\n/news/date/*"
