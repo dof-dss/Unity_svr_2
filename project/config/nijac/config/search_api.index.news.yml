@@ -194,4 +194,4 @@ options:
   delete_on_fail: true
   index_directly: true
   track_changes_in_references: true
-server: null
+server: solr_default
