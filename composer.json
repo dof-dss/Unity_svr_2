@@ -258,6 +258,9 @@
             },
             "drupal/ultimate_cron": {
                 "Fix $last_ran deprecation error": "https://www.drupal.org/files/issues/2023-04-03/3351276-4.patch"
+            },
+            "drupal/readonlymode": {
+                "Fatal typerror fix": "https://www.drupal.org/files/issues/2020-12-23/readonlymode-string_not_array-3115119-9.patch"
             }
         },
         "drupal-scaffold": {
