@@ -12,6 +12,5 @@ storage: folder
 folder: ../project/config/imtac/hosted
 module: {  }
 theme: {  }
-complete_list:
-  - search_api.server.solr_default
+complete_list: {  }
 partial_list: {  }
