@@ -1,30 +1,29 @@
-uuid: 25454e1f-8b7d-48e9-a0c6-ad4f28eb7aed
+uuid: b24dfb9c-faf6-42ee-a255-850e144c45f1
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.publication_date
+    - facets.facet.type
   module:
     - facets
     - system
   theme:
     - nijac_theme
-id: publicationdate
+id: news_type
 theme: nijac_theme
 region: search_facets
-weight: -12
+weight: 0
 provider: null
-plugin: 'facet_block:publication_date'
+plugin: 'facet_block:type'
 settings:
-  id: 'facet_block:publication_date'
-  label: Date
+  id: 'facet_block:type'
+  label: Type
   label_display: visible
   provider: facets
   context_mapping: {  }
-  block_id: publicationdate
+  block_id: news_type
 visibility:
   request_path:
     id: request_path
     negate: false
-    context_mapping: {  }
-    pages: "/news\r\n/news/type/*\r\n/news/date/*"
+    pages: "/news\r\n/news/date/*\r\n/news/type/*"

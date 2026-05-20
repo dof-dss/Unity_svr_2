@@ -12,6 +12,7 @@ storage: folder
 folder: ../project/config/sentencereview/local
 module:
   dblog: 0
+  devel: 0
   easy_install: 0
   views_ui: 0
   migrate: 0
@@ -22,6 +23,6 @@ module:
   migrate_upgrade: 0
   unity_file_migrations: 0
 theme: {  }
-complete_list:
+complete_list: {  }
+partial_list:
   - search_api.server.solr_default
-partial_list: {  }
