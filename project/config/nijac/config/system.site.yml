@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: 91d62cb7-0c0c-4da6-b2e6-25ceda55c9f2
 name: 'Northern Ireland Judicial Appointments Commission'
-mail: eddwebdev@finance-ni.gov.uk
+mail: noreply@email.nijac.gov.uk
 slogan: ''
 page:
   403: ''
@@ -13,4 +13,4 @@ admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
 frontpage_title: 'Welcome to Northern Ireland Judicial Appointments Commission'
-frontpage_show_title: 0
+frontpage_show_title: false

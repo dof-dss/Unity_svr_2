@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: 428dfea3-8edd-4791-9e66-a4beb0efa0fc
 name: 'NI Cyber Security Centre'
-mail: info@nicybersecuritycentre.gov.uk
+mail: noreply@email.nicybersecuritycentre.gov.uk
 slogan: ''
 page:
   403: ''
@@ -13,4 +13,4 @@ admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
 frontpage_title: 'Welcome to NI Cyber Security Centre'
-frontpage_show_title: 0
+frontpage_show_title: false

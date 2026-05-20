@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: a9526ead-559e-4920-9f06-0ae86b26bd04
 name: "Victims' Payments Board"
-mail: vpb@justice-ni.gov.uk
+mail: noreply@email.victimspaymentsboard.org.uk
 slogan: ''
 page:
   403: ''
@@ -13,4 +13,4 @@ admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
 frontpage_title: 'Victims Payments Board'
-frontpage_show_title: 0
+frontpage_show_title: false

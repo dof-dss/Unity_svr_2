@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: 2561f1b4-e495-4bc8-b802-9f9f12cfa418
 name: 'Community Relations Council'
-mail: info@nicrc.org.uk
+mail: noreply@email.community-relations.org.uk
 slogan: ''
 page:
   403: ''
@@ -13,4 +13,4 @@ admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
 frontpage_title: 'Community Relations Council'
-frontpage_show_title: 0
+frontpage_show_title: false

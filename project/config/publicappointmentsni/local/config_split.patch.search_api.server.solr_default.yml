@@ -1,0 +1,22 @@
+adding:
+  backend_config:
+    connector_config:
+      host: solr
+      port: 8983
+      core: publicappointmentsni
+      skip_schema_check: true
+      solr_install_dir: /opt/solr
+      checkpoints_collection: ''
+      stats_cache: org.apache.solr.search.stats.LRUStatsCache
+      distrib: true
+      context: solr
+      username: solr
+      password: SolrRocks
+removing:
+  backend_config:
+    connector_config:
+      host: publicappointmentsni_solr.internal
+      port: 8080
+      core: publicappointmentsni_index
+      skip_schema_check: false
+      solr_install_dir: ''

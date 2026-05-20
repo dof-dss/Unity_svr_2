@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: 285e4ec3-0671-4e67-8816-312c3ed435e9
 name: 'Independent Reporting Commission'
-mail: admin@ircommission.com
+mail: noreply@email.ircommission.org
 slogan: ''
 page:
   403: ''
@@ -13,4 +13,4 @@ admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
 frontpage_title: 'Welcome to Independent Reporting Commission'
-frontpage_show_title: 0
+frontpage_show_title: false

@@ -1,4 +1,4 @@
-uuid: 5585a7f7-2ff7-47b3-b01c-6a71ce6c3109
+uuid: 1dccc3e1-e880-4de6-b348-cee4aae32c48
 langcode: en
 status: true
 dependencies:
@@ -40,10 +40,10 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: solr
-    port: 8983
+    host: imtac_solr.internal
+    port: 8080
     path: /
-    core: nijac
+    core: imtac_index
     timeout: 5
     index_timeout: 5
     optimize_timeout: 10
@@ -66,5 +66,3 @@ backend_config:
     - request_dispatcher_httpcaching_default_7_0_0
   rows: 10
   index_single_documents_fallback_count: 10
-  index_empty_text_fields: false
-  suppress_missing_languages: false

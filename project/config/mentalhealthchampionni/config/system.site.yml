@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: af095fd6-a277-4ad3-8c9d-3fee3143a071
 name: 'Mental Health Champion Northern Ireland'
-mail: mentalhealthchampion@nigov.net
+mail: noreply@email.mentalhealthchampion-ni.org.uk
 slogan: ''
 page:
   403: ''
@@ -13,4 +13,4 @@ admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
 frontpage_title: Welcome
-frontpage_show_title: 1
+frontpage_show_title: true

@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: e08c54eb-c1e1-4b34-a204-0eabd26df838
 name: 'The Commissioner for Survivors of Institutional Childhood Abuse'
-mail: info@cosica-ni.org
+mail: noreply@email.cosica-ni.org
 slogan: ''
 page:
   403: ''
@@ -13,4 +13,4 @@ admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
 frontpage_title: 'This is the website for the Commissioner for Survivors of Institutional Childhood Abuse'
-frontpage_show_title: 0
+frontpage_show_title: false

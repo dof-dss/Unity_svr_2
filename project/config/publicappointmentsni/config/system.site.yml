@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: 569c8fd6-907b-4b87-85a5-15f03e398b03
 name: 'The Commissioner for Public Appointments for Northern Ireland'
-mail: info@publicappointmentsni.org
+mail: noreply@email.publicappointmentsni.org
 slogan: ''
 page:
   403: ''
@@ -13,4 +13,4 @@ admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
 frontpage_title: 'Welcome to the website of the Commissioner for Public Appointments for Northern Ireland'
-frontpage_show_title: 1
+frontpage_show_title: true
