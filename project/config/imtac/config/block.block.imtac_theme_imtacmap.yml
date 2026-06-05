@@ -1,0 +1,30 @@
+uuid: 1c3805c7-5c51-43cf-b0d9-54374b437b71
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:map:e6fd4848-5294-4c68-91d9-41ac1688b6bf'
+  module:
+    - block_content
+    - system
+  theme:
+    - imtac_theme
+id: imtac_theme_imtacmap
+theme: imtac_theme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:e6fd4848-5294-4c68-91d9-41ac1688b6bf'
+settings:
+  id: 'block_content:e6fd4848-5294-4c68-91d9-41ac1688b6bf'
+  label: 'IMTAC Map'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /contact-us
