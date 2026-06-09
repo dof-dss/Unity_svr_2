@@ -1,0 +1,13 @@
+uuid: 4c51aa79-6011-490a-b27b-44e1d6500e38
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.map
+_core:
+  default_config_hash: QgCA2NDL1wr97uc-tfsdvPiM_26ItbuO7pxpTpB6svI
+id: block_content.map
+target_entity_type_id: block_content
+target_bundle: map
+default_langcode: site_default
+language_alterable: false
