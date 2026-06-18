@@ -1,0 +1,23 @@
+uuid: 04f2ddc8-a611-415f-a25a-bf1cc5abf1d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.map
+    - field.storage.block_content.field_map
+  module:
+    - geolocation
+_core:
+  default_config_hash: NH3M_zm2Z71KCIHP1eraIfAbtqJXe0yFyJPVNZveFdM
+id: block_content.map.field_map
+field_name: field_map
+entity_type: block_content
+bundle: map
+label: Map
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation
