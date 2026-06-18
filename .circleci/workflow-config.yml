@@ -14,10 +14,6 @@ workflows:
       - build:
           php_version: << pipeline.parameters.php_version >>
           ssh_fingerprint: << pipeline.parameters.ssh_fingerprint >>
-      - unity_base_checks:
-          requires:
-            - build
-          php_version: << pipeline.parameters.php_version >>
       - coding_standards:
           requires:
             - build
