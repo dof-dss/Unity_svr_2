@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "424ab046e97e2d77f39098cb3c0bfc77",
+    "content-hash": "8c44b83ab626a194d8b1580f870f6b75",
     "packages": [
         {
             "name": "accessible360/accessible-slick",
@@ -1608,22 +1608,26 @@
         },
         {
             "name": "dof-dss/nicsdru_origins_modules",
-            "version": "10.6.3",
+            "version": "10.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_origins_modules.git",
-                "reference": "9e6f7f600845faffed32bbed7410272de0b43fa5"
+                "reference": "59cb3d27cf3803dc5fd8507bdfcbe1491c90cf82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/9e6f7f600845faffed32bbed7410272de0b43fa5",
-                "reference": "9e6f7f600845faffed32bbed7410272de0b43fa5",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/59cb3d27cf3803dc5fd8507bdfcbe1491c90cf82",
+                "reference": "59cb3d27cf3803dc5fd8507bdfcbe1491c90cf82",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "^2.0",
                 "drupal/core": "^10"
             },
+            "bin": [
+                "bin/dof-dss-filehash",
+                "bin/dof-dss-mediahasher"
+            ],
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1632,9 +1636,9 @@
             "description": "Generic modules for DOF-DSS Drupal sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_origins_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/10.6.3"
+                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/10.7.2"
             },
-            "time": "2025-12-30T10:39:44+00:00"
+            "time": "2026-06-16T14:06:49+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
