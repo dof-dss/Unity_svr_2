@@ -40,7 +40,7 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: cosicani_solr.internal
+    host: cosicani_solr.intranet
     port: 8080
     path: /
     core: cosicani_index

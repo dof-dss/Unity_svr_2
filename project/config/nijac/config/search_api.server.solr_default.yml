@@ -40,7 +40,7 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: nijac_solr.internal
+    host: nijac_solr.intranet
     port: 8080
     path: /
     core: nijac_index
