@@ -40,7 +40,7 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: publicappointmentsni_solr.internal
+    host: publicappointmentsni_solr.intranet
     port: 8080
     path: /
     core: publicappointmentsni_index

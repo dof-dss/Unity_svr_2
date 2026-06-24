@@ -40,7 +40,7 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: communityrelations_solr.internal
+    host: communityrelations_solr.intranet
     port: 8080
     path: /
     core: communityrelations_index
