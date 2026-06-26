@@ -3,7 +3,7 @@
   "authentication":{
     "class":"solr.BasicAuthPlugin",
     "credentials":{
-      "solr":"IV0EHq1OnNrj6gvRCwvFwTrZ1+z1oBbnQdiVC3otuq0= Ndd7LKvVBAaZIF0QAVi1ekCfAJXr1GGfLtRUXhgrF8c="
+      "solr":"nPqo8hyYje/rKOa3SzBr7LvUdSWa71+VY9atfAub+rM= 5wrZGnN5SHzp1t+oIx1x5XYJYOZYUW8g65Mt17XlyqE="
     },
     "blockUnknown":false
   },
