@@ -40,7 +40,7 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: cvocni_solr.internal
+    host: cvocni_solr.intranet
     port: 8080
     path: /
     core: cvocni_index

@@ -6,16 +6,12 @@ adding:
       core: nicybersecuritycentre
       skip_schema_check: true
       solr_install_dir: /opt/solr
-      checkpoints_collection: ''
-      stats_cache: org.apache.solr.search.stats.LRUStatsCache
-      distrib: true
-      context: solr
-      username: solr
-      password: SolrRocks
+    index_empty_text_fields: false
+    suppress_missing_languages: false
 removing:
   backend_config:
     connector_config:
-      host: nicybersecuritycentre_solr.internal
+      host: nicybersecuritycentre_solr.intranet
       port: 8080
       core: nicybersecuritycentre_index
       skip_schema_check: false

@@ -81,10 +81,15 @@ db:
                 default_schema: cosicanidb
                 privileges:
                     cosicanidb: admin
-solr_8_11:
-    type: 'solr:8.11'
+solr_9_9:
+    type: 'solr:9.9'
     disk: 1024
     configuration:
+        modules:
+            - extraction
+            - analysis-extras
+            - langid
+            - ltr
         cores:
             mentalhealthchampionni_index:
                 conf_dir: !archive solr_config/

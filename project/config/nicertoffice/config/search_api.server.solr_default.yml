@@ -40,7 +40,7 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: nicertoffice_solr.internal
+    host: nicertoffice_solr.intranet
     port: 8080
     path: /
     core: nicertoffice_index
