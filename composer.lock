@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c44b83ab626a194d8b1580f870f6b75",
+    "content-hash": "9ea34148d8baecb63f07fe286d040b70",
     "packages": [
         {
             "name": "accessible360/accessible-slick",
@@ -1608,22 +1608,23 @@
         },
         {
             "name": "dof-dss/nicsdru_origins_modules",
-            "version": "10.7.2",
+            "version": "dev-10.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_origins_modules.git",
-                "reference": "59cb3d27cf3803dc5fd8507bdfcbe1491c90cf82"
+                "reference": "9f462fcdd4b52f9b67b08640143d17c60841077d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/59cb3d27cf3803dc5fd8507bdfcbe1491c90cf82",
-                "reference": "59cb3d27cf3803dc5fd8507bdfcbe1491c90cf82",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_origins_modules/zipball/9f462fcdd4b52f9b67b08640143d17c60841077d",
+                "reference": "9f462fcdd4b52f9b67b08640143d17c60841077d",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "^2.0",
                 "drupal/core": "^10"
             },
+            "default-branch": true,
             "bin": [
                 "bin/dof-dss-filehash",
                 "bin/dof-dss-mediahasher"
@@ -1636,27 +1637,28 @@
             "description": "Generic modules for DOF-DSS Drupal sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_origins_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/10.7.2"
+                "source": "https://github.com/dof-dss/nicsdru_origins_modules/tree/10.x-dev"
             },
-            "time": "2026-06-16T14:06:49+00:00"
+            "time": "2026-06-30T14:17:29+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
-            "version": "10.1.26",
+            "version": "dev-10.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_modules.git",
-                "reference": "4cf65cc17c04ecb2c1cf90ffbff12fc36109132a"
+                "reference": "aa51090ae1fd6913b607adc595078e184921e4f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/4cf65cc17c04ecb2c1cf90ffbff12fc36109132a",
-                "reference": "4cf65cc17c04ecb2c1cf90ffbff12fc36109132a",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/aa51090ae1fd6913b607adc595078e184921e4f3",
+                "reference": "aa51090ae1fd6913b607adc595078e184921e4f3",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "^2.0"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1665,27 +1667,28 @@
             "description": "Custom modules available to all Unity sites.",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/10.1.26"
+                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/10.x-dev"
             },
-            "time": "2026-02-02T11:27:02+00:00"
+            "time": "2026-06-26T13:03:17+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_profile",
-            "version": "10.1.9",
+            "version": "dev-10.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_profile.git",
-                "reference": "05aee26d6e123a3e23c6147a96b8347059002fb5"
+                "reference": "59ebf16239336357795e0e112d882491371e57ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/05aee26d6e123a3e23c6147a96b8347059002fb5",
-                "reference": "05aee26d6e123a3e23c6147a96b8347059002fb5",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/59ebf16239336357795e0e112d882491371e57ee",
+                "reference": "59ebf16239336357795e0e112d882491371e57ee",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "^2.0"
             },
+            "default-branch": true,
             "type": "drupal-profile",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1694,27 +1697,28 @@
             "description": "Custom install profile used by all Unity sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_profile/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/10.1.9"
+                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/10.x-dev"
             },
-            "time": "2026-02-02T10:56:03+00:00"
+            "time": "2026-03-11T13:09:37+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_theme",
-            "version": "10.2.26",
+            "version": "dev-10.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_theme.git",
-                "reference": "a5d5694c699309f4b31184696f9d91b38addd0ff"
+                "reference": "e787aaa720df8afdf97953520e0296d66c34e90f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/a5d5694c699309f4b31184696f9d91b38addd0ff",
-                "reference": "a5d5694c699309f4b31184696f9d91b38addd0ff",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/e787aaa720df8afdf97953520e0296d66c34e90f",
+                "reference": "e787aaa720df8afdf97953520e0296d66c34e90f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.0"
             },
+            "default-branch": true,
             "type": "drupal-custom-theme",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1733,9 +1737,9 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/10.2.26"
+                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/10.x-dev"
             },
-            "time": "2026-04-30T10:53:45+00:00"
+            "time": "2026-06-09T10:40:45+00:00"
         },
         {
             "name": "drupal/address",
@@ -22947,6 +22951,10 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "dof-dss/nicsdru_origins_modules": 20,
+        "dof-dss/nicsdru_unity_modules": 20,
+        "dof-dss/nicsdru_unity_profile": 20,
+        "dof-dss/nicsdru_unity_theme": 20,
         "drupal/block_field": 5,
         "drupal/ckeditor5_allowed_html": 20,
         "drupal/clone_nodes": 20,
@@ -22972,5 +22980,5 @@
         "composer-runtime-api": "*"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.6.0"
 }
