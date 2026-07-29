@@ -7,6 +7,16 @@ dependencies:
     - node.type.feature
   module:
     - link
+    - link_field_autocomplete_filter
+third_party_settings:
+  link_field_autocomplete_filter:
+    negate: true
+    allowed_content_types:
+      feature: feature
+      news: '0'
+      page: '0'
+      publication_page: '0'
+      webform: '0'
 _core:
   default_config_hash: ZM_q7jM_t9gUKkS99BB3Llyas8OkZiRC6U9cv_bGdlA
 id: node.feature.field_link_url
@@ -20,6 +30,6 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  link_type: 17
   title: 0
+  link_type: 17
 field_type: link

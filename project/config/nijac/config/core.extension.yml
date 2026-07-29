@@ -79,6 +79,7 @@ module:
   layout_builder_restrictions_by_region: 0
   layout_discovery: 0
   link: 0
+  link_field_autocomplete_filter: 0
   link_fix_absolute_urls: 0
   linkit: 0
   media: 0
@@ -101,12 +102,12 @@ module:
   options: 0
   origins_ckeditor_enhancements: 0
   origins_common: 0
+  origins_forms: 0
   origins_media: 0
   origins_metatag: 0
   origins_qa: 0
   origins_search_views_routing: 0
   origins_toc: 0
-  origins_forms: 0
   page_cache: 0
   path: 0
   path_alias: 0
