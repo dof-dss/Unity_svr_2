@@ -1700,16 +1700,16 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_theme",
-            "version": "10.2.26",
+            "version": "10.2.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_theme.git",
-                "reference": "a5d5694c699309f4b31184696f9d91b38addd0ff"
+                "reference": "d4708e298d35c521ed8fb21345fa385ed6736c0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/a5d5694c699309f4b31184696f9d91b38addd0ff",
-                "reference": "a5d5694c699309f4b31184696f9d91b38addd0ff",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/d4708e298d35c521ed8fb21345fa385ed6736c0b",
+                "reference": "d4708e298d35c521ed8fb21345fa385ed6736c0b",
                 "shasum": ""
             },
             "require": {
@@ -1733,9 +1733,9 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/10.2.26"
+                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/10.2.27"
             },
-            "time": "2026-04-30T10:53:45+00:00"
+            "time": "2026-07-29T12:57:17+00:00"
         },
         {
             "name": "drupal/address",
@@ -17043,16 +17043,16 @@
         },
         {
             "name": "dof-dss/maestro-hosting",
-            "version": "1.1",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/maestro-hosting.git",
-                "reference": "1a0df1bda9371376da8b904340831e12c22b8e97"
+                "reference": "66b53eb8ad90adf913bd5f99b17064a706d40f48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/maestro-hosting/zipball/1a0df1bda9371376da8b904340831e12c22b8e97",
-                "reference": "1a0df1bda9371376da8b904340831e12c22b8e97",
+                "url": "https://api.github.com/repos/dof-dss/maestro-hosting/zipball/66b53eb8ad90adf913bd5f99b17064a706d40f48",
+                "reference": "66b53eb8ad90adf913bd5f99b17064a706d40f48",
                 "shasum": ""
             },
             "require": {
@@ -17077,9 +17077,9 @@
             "description": "Maestro hosting resources",
             "support": {
                 "issues": "https://github.com/dof-dss/maestro-hosting/issues",
-                "source": "https://github.com/dof-dss/maestro-hosting/tree/10.1"
+                "source": "https://github.com/dof-dss/maestro-hosting/tree/1.2.3"
             },
-            "time": "2026-06-29T08:38:24+00:00"
+            "time": "2026-07-29T13:49:46+00:00"
         },
         {
             "name": "dof-dss/maestro-shell",
