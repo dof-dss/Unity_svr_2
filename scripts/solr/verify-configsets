@@ -1,12 +1,18 @@
 #!/usr/bin/env bash
+# Statically verify that generated Solr resources agree across the hosting,
+# DDEV, provider-hook and Drupal configuration layers. No running DDEV project
+# is required.
 set -euo pipefail
 
+# These scripts are published as scripts/solr/*, two levels below the generated
+# project root. Resolve all paths from that root, regardless of the caller's cwd.
 cd "$(dirname "$0")/../.."
 
 failures=0
 ddev_name="$(awk '$1 == "name:" {print $2; exit}' .ddev/config.maestro.yaml)"
 expected_local_host="ddev-${ddev_name}-solr"
 project_type="$(awk '$1 == "project_type:" {print $2; exit}' project/project.yml)"
+# Corp-lite's generated provider filename predates the hyphenated project type.
 if [[ "$project_type" == "corp-lite" ]]; then
   provider_file=".ddev/providers/corplite.yaml"
 else
@@ -14,19 +20,33 @@ else
 fi
 
 fail() {
+  # Accumulate errors to give maintainers one complete report per run.
   echo "ERROR: $*" >&2
   failures=$((failures + 1))
 }
 
+# Check the shared runtime before validating site-specific wiring.
 for required_file in \
   .ddev/docker-compose.solr.yaml \
   .ddev/docker-compose.solr_extra.yaml \
   .ddev/solr/Dockerfile \
-  .ddev/solr/security.json \
   .ddev/solr/create-or-refresh-cores.sh; do
   [[ -f "$required_file" ]] || fail "missing shared runtime file ${required_file}"
 done
 
+# Local Solr is intentionally unauthenticated, so no default HTTP credentials
+# or fixed security policy should be committed.
+[[ ! -e .ddev/solr/security.json ]] \
+  || fail ".ddev/solr/security.json should not exist for credential-free DDEV Solr"
+if grep -R -Eq 'SOLRUSER|SOLRPASS|SOLR_AUTH_TYPE|SOLR_AUTHENTICATION_OPTS' \
+  .ddev/.env.sample \
+  .ddev/docker-compose.solr.yaml \
+  .ddev/solr \
+  scripts/solr/configure-local-connectors; then
+  fail "DDEV Solr runtime contains a committed credential or credential variable"
+fi
+
+# Each configset has one canonical source. Legacy copies would drift silently.
 for obsolete_path in .platform/solr_config .ddev/solr-cores .ddev/solr/conf .ddev/solr/configsets; do
   [[ ! -e "$obsolete_path" ]] || fail "obsolete duplicate config source still exists at ${obsolete_path}"
 done
@@ -41,6 +61,7 @@ if [[ -f "$provider_file" ]]; then
     || fail "${provider_file} does not synchronise local Solr connectors after database import"
 fi
 
+# The project manifest is authoritative for sites which require Solr hosting.
 mapfile -t declared_sites < <(
   awk '$1 == "solr:" {gsub(/['"'"']/, "", $2); print $2}' project/project.yml
 )
@@ -50,6 +71,8 @@ if [[ ${#declared_sites[@]} -eq 0 ]]; then
 fi
 
 for site in "${declared_sites[@]}"; do
+  # Confirm that each declared site has a usable configset and that both hosted
+  # and DDEV service definitions reference it.
   conf=".platform/solr_configsets/${site}/conf"
   [[ -f "${conf}/schema.xml" ]] || fail "${site} is missing ${conf}/schema.xml"
   [[ -f "${conf}/solrconfig.xml" ]] || fail "${site} is missing ${conf}/solrconfig.xml"
@@ -62,6 +85,8 @@ for site in "${declared_sites[@]}"; do
   grep -Eq "(^|[[:space:]'])${site}([[:space:]']|$)" .ddev/docker-compose.solr_extra.yaml \
     || fail ".ddev/docker-compose.solr_extra.yaml does not declare ${site}"
 
+  # Sites with a committed server also need a local split patch matching the
+  # DDEV hostname/core convention used by configure-local-connectors.
   server="project/config/${site}/config/search_api.server.solr_default.yml"
   local_patch="project/config/${site}/local/config_split.patch.search_api.server.solr_default.yml"
   if [[ -f "$server" ]]; then
@@ -71,6 +96,9 @@ for site in "${declared_sites[@]}"; do
         || fail "${site} local connector does not use host ${expected_local_host}"
       grep -Eq "core: ${site}_index$" "$local_patch" \
         || fail "${site} local connector does not use core ${site}_index"
+      if grep -Eq '^[[:space:]]+(username|password):' "$local_patch"; then
+        fail "${site} local connector patch contains committed HTTP credentials"
+      fi
     fi
   else
     echo "NOTICE: ${site} declares Solr hosting but has no committed solr_default server config."

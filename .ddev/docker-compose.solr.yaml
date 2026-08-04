@@ -13,8 +13,6 @@ services:
       context: ./solr
       args:
         SOLR_BASE_IMAGE: solr:9.9
-        SOLRUSER: ${SOLRUSER:-solr}
-        SOLRPASS: ${SOLRPASS:-solr}
     restart: "no"
     # Solr is served from this port inside the container.
     expose:
@@ -32,8 +30,6 @@ services:
       - HTTP_EXPOSE=8983:8983
       # Search API Solr's configset uses these optional Solr modules.
       - SOLR_MODULES=extraction,langid,ltr,analysis-extras
-      - SOLR_AUTH_TYPE=basic
-      - SOLR_AUTHENTICATION_OPTS=-Dbasicauth=${SOLRUSER:-solr}:${SOLRPASS:-solr}
     volumes:
       # solr core *data* is stored on the 'solr' docker volume
       # This mount is optional; without it your search index disappears
@@ -45,7 +41,7 @@ services:
     external_links:
       - "ddev-router:${DDEV_SITENAME}.${DDEV_TLD}"
     healthcheck:
-      test: ["CMD-SHELL", "curl --fail -s -u ${SOLRUSER:-solr}:${SOLRPASS:-solr} localhost:8983/solr/"]
+      test: ["CMD-SHELL", "curl --fail -s localhost:8983/solr/"]
 
 volumes:
   # solr is a persistent Docker volume for solr data

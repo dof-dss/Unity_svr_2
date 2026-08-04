@@ -2,12 +2,9 @@
 #ddev-generated
 set -euo pipefail
 
-security_source="/mnt/ddev_config/solr/security.json"
-if [[ ! -f "$security_source" ]]; then
-  echo "Missing Solr security policy: ${security_source}" >&2
-  exit 1
-fi
-install -m 600 "$security_source" /var/solr/data/security.json
+# DDEV Solr is intentionally unauthenticated. Remove any security policy left
+# in the disposable local volume by an earlier authenticated configuration.
+rm -f /var/solr/data/security.json
 
 if [[ -z "${SOLR_SITES:-}" ]]; then
   echo "No Solr-enabled sites are configured."
