@@ -1,0 +1,85 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "$0")/../.."
+
+failures=0
+ddev_name="$(awk '$1 == "name:" {print $2; exit}' .ddev/config.maestro.yaml)"
+expected_local_host="ddev-${ddev_name}-solr"
+project_type="$(awk '$1 == "project_type:" {print $2; exit}' project/project.yml)"
+if [[ "$project_type" == "corp-lite" ]]; then
+  provider_file=".ddev/providers/corplite.yaml"
+else
+  provider_file=".ddev/providers/${project_type}.yaml"
+fi
+
+fail() {
+  echo "ERROR: $*" >&2
+  failures=$((failures + 1))
+}
+
+for required_file in \
+  .ddev/docker-compose.solr.yaml \
+  .ddev/docker-compose.solr_extra.yaml \
+  .ddev/solr/Dockerfile \
+  .ddev/solr/security.json \
+  .ddev/solr/create-or-refresh-cores.sh; do
+  [[ -f "$required_file" ]] || fail "missing shared runtime file ${required_file}"
+done
+
+for obsolete_path in .platform/solr_config .ddev/solr-cores .ddev/solr/conf .ddev/solr/configsets; do
+  [[ ! -e "$obsolete_path" ]] || fail "obsolete duplicate config source still exists at ${obsolete_path}"
+done
+
+[[ -x .ddev/solr/create-or-refresh-cores.sh ]] \
+  || fail ".ddev/solr/create-or-refresh-cores.sh is not executable"
+[[ -x scripts/solr/configure-local-connectors ]] \
+  || fail "scripts/solr/configure-local-connectors is not executable"
+[[ -f "$provider_file" ]] || fail "missing generated DDEV provider ${provider_file}"
+if [[ -f "$provider_file" ]]; then
+  grep -Eq 'scripts/solr/configure-local-connectors --all$' "$provider_file" \
+    || fail "${provider_file} does not synchronise local Solr connectors after database import"
+fi
+
+mapfile -t declared_sites < <(
+  awk '$1 == "solr:" {gsub(/['"'"']/, "", $2); print $2}' project/project.yml
+)
+
+if [[ ${#declared_sites[@]} -eq 0 ]]; then
+  fail "project/project.yml does not declare any Solr sites"
+fi
+
+for site in "${declared_sites[@]}"; do
+  conf=".platform/solr_configsets/${site}/conf"
+  [[ -f "${conf}/schema.xml" ]] || fail "${site} is missing ${conf}/schema.xml"
+  [[ -f "${conf}/solrconfig.xml" ]] || fail "${site} is missing ${conf}/solrconfig.xml"
+  [[ -r "${conf}/schema.xml" && -r "${conf}/solrconfig.xml" ]] \
+    || fail "${site} configset is not readable"
+
+  grep -Eq "conf_dir: (['\"])?!archive solr_configsets/${site}/conf/(['\"])?$" .platform/services.yaml \
+    || fail ".platform/services.yaml does not map ${site} to its configset"
+
+  grep -Eq "(^|[[:space:]'])${site}([[:space:]']|$)" .ddev/docker-compose.solr_extra.yaml \
+    || fail ".ddev/docker-compose.solr_extra.yaml does not declare ${site}"
+
+  server="project/config/${site}/config/search_api.server.solr_default.yml"
+  local_patch="project/config/${site}/local/config_split.patch.search_api.server.solr_default.yml"
+  if [[ -f "$server" ]]; then
+    [[ -f "$local_patch" ]] || fail "${site} has a Solr server but no local connector patch"
+    if [[ -f "$local_patch" ]]; then
+      grep -Eq "host: ${expected_local_host}$" "$local_patch" \
+        || fail "${site} local connector does not use host ${expected_local_host}"
+      grep -Eq "core: ${site}_index$" "$local_patch" \
+        || fail "${site} local connector does not use core ${site}_index"
+    fi
+  else
+    echo "NOTICE: ${site} declares Solr hosting but has no committed solr_default server config."
+  fi
+done
+
+if [[ $failures -ne 0 ]]; then
+  echo "Solr configset verification failed with ${failures} error(s)." >&2
+  exit 1
+fi
+
+echo "Solr configset verification passed for ${#declared_sites[@]} declared site(s)."

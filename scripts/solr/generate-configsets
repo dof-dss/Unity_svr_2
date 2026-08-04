@@ -1,0 +1,80 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+readonly SOLR_VERSION="9.9"
+readonly SERVER_ID="solr_default"
+
+cd "$(dirname "$0")/../.."
+
+usage() {
+  cat <<'EOF'
+Usage: scripts/solr/generate-configsets <site|--all>
+
+Generate repository-owned Solr 9.9 configsets from each site's active Drupal
+Search API configuration. DDEV must be running and the local databases must be
+up to date. Only sites with a committed solr_default server are eligible.
+EOF
+}
+
+configured_sites() {
+  for config in project/config/*/config/search_api.server.solr_default.yml; do
+    [[ -f "$config" ]] || continue
+    site="${config#project/config/}"
+    printf '%s\n' "${site%%/*}"
+  done
+}
+
+generate_site() (
+  local site="$1"
+  local config="project/config/${site}/config/search_api.server.${SERVER_ID}.yml"
+  local destination=".platform/solr_configsets/${site}/conf"
+  local archive=".solr-configset-${site}.zip"
+  local temporary
+
+  if [[ ! "$site" =~ ^[a-z0-9_]+$ ]]; then
+    echo "Invalid site identifier: $site" >&2
+    return 1
+  fi
+
+  if [[ ! -f "$config" ]]; then
+    echo "${site} does not have a committed ${SERVER_ID} Search API server." >&2
+    return 1
+  fi
+
+  temporary="$(mktemp -d)"
+  trap 'rm -rf -- "$temporary" "$archive"' EXIT
+
+  echo "Generating Solr ${SOLR_VERSION} configset for ${site}..."
+  ddev drush -l "$site" search-api-solr:get-server-config \
+    "$SERVER_ID" "/var/www/html/${archive}" "$SOLR_VERSION" -y < /dev/null
+  unzip -q "$archive" -d "$temporary"
+
+  if [[ ! -f "${temporary}/schema.xml" || ! -f "${temporary}/solrconfig.xml" ]]; then
+    echo "Generated archive for ${site} is missing schema.xml or solrconfig.xml." >&2
+    return 1
+  fi
+
+  mkdir -p "$destination"
+  find "$destination" -mindepth 1 -maxdepth 1 -exec rm -rf -- {} +
+  cp -a "${temporary}/." "$destination/"
+  chmod -R a+rX "$destination"
+)
+
+if [[ $# -ne 1 ]]; then
+  usage >&2
+  exit 2
+fi
+
+case "$1" in
+  --all)
+    while IFS= read -r site; do
+      generate_site "$site"
+    done < <(configured_sites)
+    ;;
+  -h|--help)
+    usage
+    ;;
+  *)
+    generate_site "$1"
+    ;;
+esac

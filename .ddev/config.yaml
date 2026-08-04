@@ -14,7 +14,7 @@ database:
 hooks:
   pre-start:
     # Ensure env var file is deployed; needs to be filled in manually for sensitive values.
-    - exec-host: "if [ ! -f .ddev/.env ]; then cp -v .env.sample .ddev/.env && echo PLEASE FILL IN SENSITIVE ENV VAR VALUES IN .ddev/.env THEN RUN ddev restart && exit 1; fi"
+    - exec-host: "if [ ! -f .ddev/.env ]; then cp -v .ddev/.env.sample .ddev/.env && echo PLEASE FILL IN SENSITIVE ENV VAR VALUES IN .ddev/.env THEN RUN ddev restart && exit 1; fi"
   post-start:
     - composer: install
     - exec: ".ddev/homeadditions/appserver_build.sh"

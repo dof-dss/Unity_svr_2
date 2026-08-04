@@ -28,8 +28,6 @@
   "imagemin-zopfli": "^6.0.0",
   "kss": "^3.1.0",
   "modernizr": "^3.11.4",
-  "nightwatch": "^1.7.8",
-  "nightwatch-accessibility": "^1.8.0",
   "node-sass": "^6.0.1",
   "normalize.css": "^8.0.1",
   "npm-run-all": "^4.1.5",
