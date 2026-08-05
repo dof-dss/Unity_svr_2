@@ -1,9 +1,9 @@
 adding:
   backend_config:
     connector_config:
-      host: solr
+      host: ddev-unity.svr.2-solr
       port: 8983
-      core: hiaredressni
+      core: hiaredressni_index
       skip_schema_check: true
       solr_install_dir: /opt/solr
     index_empty_text_fields: false
