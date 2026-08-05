@@ -58,7 +58,7 @@
  */
 
 // Different sites setup depending on whether we are running on
-// Platform.sh or local Lando
+// Platform.sh or local DDEV.
 use Symfony\Component\Yaml\Yaml;
 
 $sites = [];
@@ -108,31 +108,7 @@ if (!empty(getenv('PLATFORM_BRANCH'))) {
   }
 }
 
-// Running in Lando locally, include appropriate sites file.
-if (getenv('LANDO')) {
-  $project = Yaml::parseFile('/app/project/project.yml');
-
-  foreach ($project['sites'] as $site_id => $site) {
-    if ($site_id == 'mentalhealthchampionni') {
-      // Special case for URL that contains a '-'
-      $sites['mentalhealthchampion-ni.org.uk.lndo.site'] = $site_id;
-    }
-    elseif ($site_id == 'infolibrarynics') {
-      $sites['info.library.nics.gov.uk.lndo.site'] = $site_id;
-    }
-    elseif ($site_id == 'pressclippingsnics') {
-      $sites['pressclippings.nics.gov.uk.lndo.site'] = $site_id;
-    }
-    elseif ($site_id == 'independentpaneltruthrecoveryni') {
-      $sites['independentpanel.truthrecoveryni.co.uk.lndo.site'] = $site_id;
-    }
-    else {
-      $sites[$site['url'] . '.lndo.site'] = $site_id;
-    }
-  }
-}
-
-// Running in DDev locally, include appropriate sites file.
+// Running in DDEV locally, include the appropriate sites file.
 if (getenv('IS_DDEV_PROJECT')) {
   $project = Yaml::parseFile('/var/www/html/project/project.yml');
 

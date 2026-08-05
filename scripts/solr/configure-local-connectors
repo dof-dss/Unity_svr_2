@@ -1,0 +1,129 @@
+#!/usr/bin/env bash
+# Point each eligible Drupal site's active Search API server at its DDEV Solr
+# core. This changes active configuration only; committed configuration remains
+# the portable source of truth for hosted environments.
+set -euo pipefail
+
+# These scripts are published as scripts/solr/*, two levels below the generated
+# project root. Resolve all paths from that root, regardless of the caller's cwd.
+cd "$(dirname "$0")/../.."
+
+# DDEV derives the Solr container hostname from the generated project name.
+ddev_name="$(awk '$1 == "name:" {print $2; exit}' .ddev/config.maestro.yaml)"
+solr_host="ddev-${ddev_name}-solr"
+
+usage() {
+  cat <<'EOF'
+Usage: scripts/solr/configure-local-connectors <site|--all>
+
+Synchronise active Drupal Solr connectors with this project's DDEV service.
+Only sites with a committed solr_default server and at least one enabled index
+using that server are changed. The command also verifies server availability.
+EOF
+}
+
+configured_sites() {
+  # A committed server definition is the eligibility marker. The glob may be
+  # unmatched, hence the explicit file check.
+  for server_config in project/config/*/config/search_api.server.solr_default.yml; do
+    [[ -f "$server_config" ]] || continue
+    site_id="${server_config#project/config/}"
+    printf '%s\n' "${site_id%%/*}"
+  done
+}
+
+has_enabled_solr_index() {
+  local site_id="$1"
+  local index_config
+
+  # Avoid configuring sites which have a server definition but do not actively
+  # use it. This commonly occurs while Solr adoption is being phased in.
+  while IFS= read -r index_config; do
+    if grep -Eq '^status: true$' "$index_config" \
+      && grep -Eq '^server: solr_default$' "$index_config"; then
+      return 0
+    fi
+  done < <(find "project/config/${site_id}/config" -maxdepth 1 -type f -name 'search_api.index.*.yml' -print)
+
+  return 1
+}
+
+configure_site() {
+  local site_id="$1"
+  local solr_core="${site_id}_index"
+  local server_config="project/config/${site_id}/config/search_api.server.solr_default.yml"
+
+  if [[ ! "$site_id" =~ ^[a-z0-9_]+$ ]]; then
+    echo "Invalid site identifier: ${site_id}" >&2
+    return 1
+  fi
+
+  if [[ ! -f "$server_config" ]]; then
+    echo "${site_id} does not have a committed solr_default server." >&2
+    return 1
+  fi
+
+  if ! has_enabled_solr_index "$site_id"; then
+    echo "NOTICE: ${site_id} has no enabled index using solr_default; skipping."
+    return 0
+  fi
+
+  echo "Configuring ${site_id} to use ${solr_host}:8983/${solr_core}..."
+  # Database imports can leave Drupal's active connector pointing at a hosted
+  # service. Rebuild caches, update only its local connection details, then ask
+  # Search API to prove the resulting server is reachable.
+  ddev drush -l "$site_id" cache:rebuild < /dev/null
+  ddev drush -l "$site_id" php:eval "
+    \$config = \Drupal::service('config.factory')->getEditable('search_api.server.solr_default');
+    if (\$config->isNew()) {
+      throw new \RuntimeException('The active solr_default server does not exist.');
+    }
+    \$backend = \$config->get('backend_config');
+    \$original_backend = \$backend;
+    \$backend['connector'] = 'standard';
+    \$connector = \$backend['connector_config'] ?? [];
+    \$connector['scheme'] = 'http';
+    \$connector['host'] = '${solr_host}';
+    \$connector['port'] = 8983;
+    \$connector['path'] = '/';
+    \$connector['core'] = '${solr_core}';
+    unset(\$connector['username'], \$connector['password']);
+    \$connector['skip_schema_check'] = TRUE;
+    \$connector['solr_install_dir'] = '/opt/solr';
+    \$backend['connector_config'] = \$connector;
+    if (\$backend !== \$original_backend) {
+      \$config->set('backend_config', \$backend)->save();
+    }
+    \Drupal::entityTypeManager()->getStorage('search_api_server')->resetCache(['solr_default']);
+    \$server = \Drupal::entityTypeManager()->getStorage('search_api_server')->load('solr_default');
+    if (!\$server || !\$server->isAvailable()) {
+      throw new \RuntimeException('Drupal cannot reach ${solr_host}:8983/${solr_core}.');
+    }
+  " < /dev/null
+}
+
+if [[ $# -ne 1 ]]; then
+  usage >&2
+  exit 2
+fi
+
+case "$1" in
+  --all)
+    # Attempt every eligible site so one failure does not hide problems in the
+    # remaining sites, then return a single non-zero result for automation.
+    failures=0
+    while IFS= read -r site_id; do
+      configure_site "$site_id" || failures=$((failures + 1))
+    done < <(configured_sites)
+    if [[ $failures -ne 0 ]]; then
+      echo "Local Solr connector configuration failed for ${failures} site(s)." >&2
+      exit 1
+    fi
+    ;;
+  -h|--help)
+    usage
+    ;;
+  *)
+    configure_site "$1"
+    ;;
+esac

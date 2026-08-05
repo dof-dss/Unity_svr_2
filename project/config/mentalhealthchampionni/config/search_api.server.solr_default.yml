@@ -40,7 +40,7 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: mentalhealthchampionni_solr.internal
+    host: mentalhealthchampionni_solr.intranet
     port: 8080
     path: /
     core: mentalhealthchampionni_index

@@ -40,7 +40,7 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: hiaredressni_solr.internal
+    host: hiaredressni_solr.intranet
     port: 8080
     path: /
     core: hiaredressni_index

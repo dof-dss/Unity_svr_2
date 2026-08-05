@@ -40,7 +40,7 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: nicybersecuritycentre_solr.internal
+    host: nicybersecuritycentre_solr.intranet
     port: 8080
     path: /
     core: nicybersecuritycentre_index

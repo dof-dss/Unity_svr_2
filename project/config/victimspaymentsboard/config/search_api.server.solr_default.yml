@@ -40,7 +40,7 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: victimspaymentsboard_solr.internal
+    host: victimspaymentsboard_solr.intranet
     port: 8080
     path: /
     core: victimspaymentsboard_index

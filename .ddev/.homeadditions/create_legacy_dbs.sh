@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Iterate every symlink (which web create for each site) under web/sites and create a database with the default
-# Lando database credentials if it doesn't already exist.
+# DDEV database credentials if it doesn't already exist.
 echo "Creating legacy databases"
 for dir in $(find /var/www/html/web/sites/ -mindepth 1 -maxdepth 1 -type l) ; do
   database=${dir##*/} ;

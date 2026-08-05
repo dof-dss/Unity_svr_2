@@ -40,7 +40,7 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: imtac_solr.internal
+    host: imtac_solr.intranet
     port: 8080
     path: /
     core: imtac_index

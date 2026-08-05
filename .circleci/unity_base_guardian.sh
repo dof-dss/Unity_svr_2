@@ -7,9 +7,8 @@ then
     exit 1
 fi
 
-if [ -e ".lando.yml" ]
+if [ -e ".ddev/config.maestro.yaml" ]
 then
-    echo "Lando config file found."
+    echo "Generated DDEV project config file found."
     exit 1
 fi
-

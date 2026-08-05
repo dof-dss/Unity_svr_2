@@ -91,7 +91,9 @@
     "last 2 versions",
     "ie >= 10"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "jpegoptim-bin": "^7.1.0"
+  },
   "optionalDependencies": {
     "fsevents": "^2.3.2"
   }
