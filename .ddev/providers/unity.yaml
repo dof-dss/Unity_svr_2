@@ -49,6 +49,7 @@ db_import_command:
         gzip -dc .ddev/.downloads/db_nicybersecuritycentre.sql.gz | ddev import-db --database=nicybersecuritycentre --skip-hooks 
         gzip -dc .ddev/.downloads/db_ppsni.sql.gz | ddev import-db --database=ppsni --skip-hooks 
         gzip -dc .ddev/.downloads/db_cosicani.sql.gz | ddev import-db --database=cosicani --skip-hooks 
+        scripts/solr/configure-local-connectors --all
     service: host
 files_pull_command:
     command: |
