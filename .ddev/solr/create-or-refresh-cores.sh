@@ -2,6 +2,8 @@
 #ddev-generated
 set -euo pipefail
 
+mkdir -p /var/solr/data
+
 # DDEV Solr is intentionally unauthenticated. Remove any security policy left
 # in the disposable local volume by an earlier authenticated configuration.
 rm -f /var/solr/data/security.json

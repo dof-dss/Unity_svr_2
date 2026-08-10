@@ -98,7 +98,7 @@
 
   &:hover,
   &:focus {
-    border-bottom: 2px solid $link
+    border-bottom: none
   }
 }
 
@@ -295,31 +295,30 @@
 
       &:focus,
       &:hover {
-        border: solid #0e6bb3 2px;
+        border: none;
+        background: none;
+        text-decoration: underline;
+        text-decoration-color: #000;
       }
     }
 
     .content {
-      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
       padding-right: 2rem;
-      flex: auto;
-      margin-left: 1rem;
+      padding-bottom: 4rem;
 
       &:after {
         content: '';
-        display: inline-block;
-        position: absolute;
-        top: 27rem;
-        right: 0.4rem;
+        flex-shrink: 0;
         width: 3rem;
         height: 3rem;
         background-image: resolve('arrow_forward_black.svg');
-        background-position: center center;
+        background-position: center;
         background-size: 2.4rem auto;
         background-repeat: no-repeat;
-        @media screen and (max-width: 980px) {
-          position: static;
-        }
+        margin-bottom: 1.8rem;
       }
     }
 
