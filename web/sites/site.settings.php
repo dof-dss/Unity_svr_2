@@ -109,10 +109,6 @@ if (!empty(getenv('PLATFORM_BRANCH'))) {
   $settings['simple_environment_indicator'] = sprintf('%s %s', $env_colour, $env_name);
 }
 
-if (getenv('LANDO') && file_exists($app_root . '/sites/settings.lando.php')) {
-  include $app_root . '/sites/settings.lando.php';
-}
-
 if (getenv('IS_DDEV_PROJECT') && file_exists($app_root . '/sites/settings.ddev.php')) {
   include $app_root . '/sites/settings.ddev.php';
 }

@@ -13,7 +13,7 @@ fi
 
 # Detect whether we are running locally or on Platform.sh
 if [ -z "${PLATFORM_ENVIRONMENT}" ]; then
-  PREFIX="lando"
+  PREFIX="ddev"
 else
   PREFIX=""
 fi
@@ -24,5 +24,4 @@ do
   echo "** $site **"
   ${PREFIX} drush -l $site $1 $2 $3 $4 $5
 done
-
 

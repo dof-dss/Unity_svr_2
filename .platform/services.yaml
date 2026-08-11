@@ -81,39 +81,44 @@ db:
                 default_schema: cosicanidb
                 privileges:
                     cosicanidb: admin
-solr_8_11:
-    type: 'solr:8.11'
+solr_9_9:
+    type: 'solr:9.9'
     disk: 1024
     configuration:
+        modules:
+            - extraction
+            - analysis-extras
+            - langid
+            - ltr
         cores:
             mentalhealthchampionni_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/mentalhealthchampionni/conf/
             publicappointmentsni_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/publicappointmentsni/conf/
             ircommission_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/ircommission/conf/
             imtac_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/imtac/conf/
             nicertoffice_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/nicertoffice/conf/
             victimspaymentsboard_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/victimspaymentsboard/conf/
             hiaredressni_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/hiaredressni/conf/
             cvocni_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/cvocni/conf/
             nijac_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/nijac/conf/
             communityrelations_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/communityrelations/conf/
             sentencereview_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/sentencereview/conf/
             nicybersecuritycentre_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/nicybersecuritycentre/conf/
             ppsni_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/ppsni/conf/
             cosicani_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/cosicani/conf/
         endpoints:
             mentalhealthchampionni:
                 core: mentalhealthchampionni_index
