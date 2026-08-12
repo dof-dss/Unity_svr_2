@@ -172,6 +172,7 @@
         "drush/drush": "^12.5",
         "ezyang/htmlpurifier": "^4.17",
         "geocoder-php/google-maps-provider": "^4.7",
+        "google/cloud": "*",
         "harvesthq/chosen": "^1.8",
         "kenwheeler/slick": "^1.8",
         "oomphinc/composer-installers-extender": "^2.0",
