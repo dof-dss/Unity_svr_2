@@ -122,6 +122,11 @@ hooks:
             fi
           fi
         done
+
+      cd /app
+
+      bash scripts/status/collect-all-sites.sh || echo "Status report failed (non-fatal), continuing deploy."
+
 web:
     locations:
         /:
@@ -154,6 +159,10 @@ web:
             rules:
                 ^/sites/default/files/(css|js):
                     expires: 2w
+  variables:
+    env:
+      GCS_BUCKET: 'unity_svr_2'
+      GCS_PREFIX: 'drupal-status'
 relationships:
     redis: 'redis:redis'
     mentalhealthchampionni: 'db:mentalhealthchampionni'
