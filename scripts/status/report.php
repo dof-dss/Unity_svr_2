@@ -61,8 +61,51 @@ if (!defined('UPDATE_NOT_SECURE')) {
 
 $available = update_get_available($refresh);
 
+// update_get_available($refresh = TRUE) only ENQUEUES fetch tasks (via
+// _update_refresh()) -- it does not itself make the HTTP requests to
+// updates.drupal.org. Normally those drain slowly over several cron runs,
+// or all at once via the "Check manually" link on admin/reports/updates,
+// which processes the queue through Drupal's batch API. There's no public
+// CLI-friendly equivalent of that batch, so we drain the queue ourselves
+// the same way cron and that batch both do under the hood: by calling
+// _update_process_fetch_task() per item. Without this, $available stays
+// empty and every project reports as "unknown" even right after a forced
+// refresh.
+if ($refresh) {
+  $queue = \Drupal::queue('update_fetch_tasks');
+  $queue_size = $queue->numberOfItems();
+  if ($queue_size > 0) {
+    fwrite(STDERR, "Fetching update data for $queue_size project(s) from updates.drupal.org...\n");
+  }
+
+  $processed = 0;
+  while ($item = $queue->claimItem()) {
+    if (function_exists('_update_process_fetch_task')) {
+      try {
+        _update_process_fetch_task($item->data);
+      }
+      catch (\Throwable $e) {
+        $name = is_array($item->data) && isset($item->data['name']) ? $item->data['name'] : 'unknown project';
+        fwrite(STDERR, "WARNING: fetch failed for '$name': " . $e->getMessage() . "\n");
+      }
+    }
+    $queue->deleteItem($item);
+    $processed++;
+    // Match the ~1 request/second pace Drupal core imposes on itself
+    // during cron, so we don't hammer updates.drupal.org.
+    usleep(1000000);
+  }
+  if ($processed > 0) {
+    fwrite(STDERR, "Fetched $processed project(s).\n");
+  }
+
+  // Re-read now that the queue has actually been drained, instead of the
+  // stale/empty snapshot from before the fetch.
+  $available = update_get_available(FALSE);
+}
+
 if (empty($available)) {
-  fwrite(STDERR, "WARNING: no update data available for '$site_id'. If this is the first run, try REFRESH_UPDATE_DATA=1 so Drupal can fetch data from updates.drupal.org.\n");
+  fwrite(STDERR, "WARNING: no update data available for '$site_id' even after attempting a fetch. This usually means the environment can't reach updates.drupal.org over outbound HTTPS -- check Upsun's egress/firewall settings for this app.\n");
 }
 
 $project_data = update_calculate_project_data($available);
