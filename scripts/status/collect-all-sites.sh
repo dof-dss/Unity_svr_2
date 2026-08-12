@@ -1,15 +1,28 @@
 #!/usr/bin/env bash
 #
-# Discovers every Drupal multisite directory, runs report.php against each
-# one via Drush, combines the results into a single fleet report, and
-# uploads everything to Google Cloud Storage.
+# Runs the Drupal core + contrib update check ONCE, against a single
+# representative multisite instance, and uploads the result to Google
+# Cloud Storage.
+#
+# Why once and not per-site: Drupal multisite shares one codebase, so
+# every site has exactly the same installed core/contrib projects and
+# versions on disk. Update Manager reports on what's present in the
+# codebase, not on what's enabled per site, so checking every site
+# individually just repeats the same updates.drupal.org fetches N times
+# for identical data. This checks one site (enough to bootstrap Drupal)
+# and records every site the codebase actually serves alongside the
+# result, for context.
 #
 # Environment variables:
 #   WEBROOT               Path to the Drupal webroot (contains sites/).
 #                          Defaults to two levels up from this script + /web.
+#   PRIMARY_SITE           Which multisite directory to run the check
+#                          through. Defaults to the first one found,
+#                          alphabetically. Set this explicitly for a
+#                          stable, predictable choice (recommended).
 #   DRUSH_BIN              Path to the drush binary. Defaults to whatever is
 #                          on PATH, falling back to vendor/bin/drush.
-#   OUTPUT_DIR             Where per-site JSON is written before upload.
+#   OUTPUT_DIR             Where JSON is written before upload.
 #                          Defaults to /tmp/status-report.
 #   REFRESH_UPDATE_DATA    Set to "1" to force a live check against
 #                          updates.drupal.org (slower). Recommended only on
@@ -33,7 +46,7 @@ if [[ ! -d "$WEBROOT/sites" ]]; then
 fi
 
 mkdir -p "$OUTPUT_DIR"
-rm -f "$OUTPUT_DIR"/*.json "$OUTPUT_DIR"/*.err
+rm -f "$OUTPUT_DIR"/*.json "$OUTPUT_DIR"/*.err "$OUTPUT_DIR"/sites.txt
 
 cd "$WEBROOT"
 
@@ -52,31 +65,32 @@ if [[ ${#SITES[@]} -eq 0 ]]; then
   exit 1
 fi
 
+printf '%s\n' "${SITES[@]}" | sort > "$OUTPUT_DIR/sites.txt"
 echo "Found ${#SITES[@]} site(s): ${SITES[*]}"
 
-FAILED=0
-for site in "${SITES[@]}"; do
-  echo "Checking $site..."
-  if DASHBOARD_SITE_ID="$site" REFRESH_UPDATE_DATA="${REFRESH_UPDATE_DATA:-0}" \
-      "$DRUSH_BIN" --uri="$site" scr "$SCRIPT_DIR/report.php" \
-      > "$OUTPUT_DIR/${site}.json" 2> "$OUTPUT_DIR/${site}.err"; then
-    echo "  OK"
-  else
-    echo "  FAILED - see below"
-    cat "$OUTPUT_DIR/${site}.err" >&2
-    FAILED=1
-  fi
-done
+DEFAULT_SITE="$(sort "$OUTPUT_DIR/sites.txt" | head -n1)"
+TARGET_SITE="${PRIMARY_SITE:-$DEFAULT_SITE}"
 
-echo "Combining per-site reports..."
-php "$SCRIPT_DIR/combine-reports.php" "$OUTPUT_DIR" > "$OUTPUT_DIR/fleet-report.json"
-
-echo "Uploading to Google Cloud Storage..."
-php "$SCRIPT_DIR/upload-to-gcs.php" "$OUTPUT_DIR/fleet-report.json" "$OUTPUT_DIR"
-
-if [[ "$FAILED" -eq 1 ]]; then
-  echo "One or more sites failed to report status (see logs above)." >&2
+if ! printf '%s\n' "${SITES[@]}" | grep -qx "$TARGET_SITE"; then
+  echo "ERROR: PRIMARY_SITE='$TARGET_SITE' is not among the discovered sites: ${SITES[*]}" >&2
   exit 1
 fi
+
+echo "Checking update status via '$TARGET_SITE' (codebase is shared across all ${#SITES[@]} site(s))..."
+
+if ! DASHBOARD_SITE_ID="$TARGET_SITE" REFRESH_UPDATE_DATA="${REFRESH_UPDATE_DATA:-0}" \
+    "$DRUSH_BIN" --uri="$TARGET_SITE" scr "$SCRIPT_DIR/report.php" \
+    > "$OUTPUT_DIR/report.json" 2> "$OUTPUT_DIR/report.err"; then
+  echo "FAILED - see below" >&2
+  cat "$OUTPUT_DIR/report.err" >&2
+  exit 1
+fi
+cat "$OUTPUT_DIR/report.err" >&2 || true
+
+echo "Finalizing report..."
+php "$SCRIPT_DIR/combine-reports.php" "$OUTPUT_DIR/report.json" "$OUTPUT_DIR/sites.txt" > "$OUTPUT_DIR/final-report.json"
+
+echo "Uploading to Google Cloud Storage..."
+php "$SCRIPT_DIR/upload-to-gcs.php" "$OUTPUT_DIR/final-report.json"
 
 echo "Done."

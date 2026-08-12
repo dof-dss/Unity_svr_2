@@ -2,24 +2,33 @@
 
 /**
  * @file
- * Collects Drupal core + contrib module/theme update status for ONE site.
+ * Collects Drupal core + contrib module/theme update status for the
+ * codebase, bootstrapped through ONE multisite instance.
  *
- * Run via Drush against a specific multisite instance:
+ * Drupal multisite shares a single codebase, so core/contrib versions are
+ * identical no matter which site is used to check them -- this only needs
+ * to run once per codebase, not once per site. Whichever site is passed
+ * via --uri is just how Drupal gets bootstrapped; it's not "the site this
+ * report is about".
+ *
+ * Run via Drush against any one multisite instance:
  *
  *   drush --uri=<site-dir-or-uri> scr scripts/status/report.php
  *
  * Environment variables read:
- *   DASHBOARD_SITE_ID    Identifier to stamp on the report (usually the
- *                         multisite directory name). Defaults to "unknown".
+ *   DASHBOARD_SITE_ID    Which site was used to bootstrap this check
+ *                         (usually the multisite directory name). Stamped
+ *                         on the report as "checked_via_site" for
+ *                         traceability. Defaults to "unknown".
  *   REFRESH_UPDATE_DATA  Set to "1" to force a live fetch against
  *                         updates.drupal.org instead of using Drupal's
  *                         cached update data. Use sparingly (slow, and
  *                         updates.drupal.org rate-limits aggressive polling).
  *
- * Requires the core "update" module to be enabled on the site being
- * checked -- this is Drupal's standard Update Manager backend and is what
- * powers the "Available updates" report / email notifications. If it's
- * disabled, enable it with:
+ * Requires the core "update" module to be enabled on the site used to
+ * bootstrap -- this is Drupal's standard Update Manager backend and is
+ * what powers the "Available updates" report / email notifications. If
+ * it's disabled, enable it with:
  *
  *   drush --uri=<site> pm:enable update -y
  *
@@ -175,7 +184,7 @@ $security_count = count(array_filter($projects, fn(array $p): bool => $p['status
 $updates_count = count(array_filter($projects, fn(array $p): bool => in_array($p['status'], ['update-available', 'unsupported', 'revoked'], true)));
 
 $report = [
-  'site' => $site_id,
+  'checked_via_site' => $site_id,
   'timestamp' => date('c'),
   'drupal_core_version' => \Drupal::VERSION,
   'php_version' => PHP_VERSION,
