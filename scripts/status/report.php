@@ -35,8 +35,29 @@ if (!\Drupal::moduleHandler()->moduleExists('update')) {
   exit(1);
 }
 
+// update.module itself defines the UPDATE_* status constants used below
+// (as top-level define() calls, not inside a function) -- loadInclude()'s
+// $type/$name split lets us force-load that file explicitly rather than
+// assuming it was already pulled in by whatever bootstrapped this script.
+// require_once is a no-op if it was already loaded, so this is safe either
+// way.
+\Drupal::moduleHandler()->loadInclude('update', 'module');
 \Drupal::moduleHandler()->loadInclude('update', 'inc', 'update.compare');
 \Drupal::moduleHandler()->loadInclude('update', 'inc', 'update.fetch');
+
+// Defensive fallback: these values have been stable across Drupal 8-11.
+// If a future core refactor ever moves them somewhere loadInclude() above
+// can't reach, define them ourselves rather than fatal-erroring.
+if (!defined('UPDATE_NOT_SECURE')) {
+  define('UPDATE_NOT_SECURE', 12);
+  define('UPDATE_REVOKED', 13);
+  define('UPDATE_NOT_SUPPORTED', 14);
+  define('UPDATE_NOT_CURRENT', 7);
+  define('UPDATE_CURRENT', 5);
+  define('UPDATE_NOT_CHECKED', -1);
+  define('UPDATE_UNKNOWN', -2);
+  define('UPDATE_FETCH_PENDING', -3);
+}
 
 $available = update_get_available($refresh);
 
