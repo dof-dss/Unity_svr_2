@@ -1,18 +1,5 @@
 adding:
   backend_config:
-    connector_config:
-      host: ddev-unity.svr.2-solr
-      port: 8983
-      core: mentalhealthchampionni_index
-      skip_schema_check: true
-      solr_install_dir: /opt/solr
     index_empty_text_fields: false
     suppress_missing_languages: false
-removing:
-  backend_config:
-    connector_config:
-      host: mentalhealthchampionni_solr.intranet
-      port: 8080
-      core: mentalhealthchampionni_index
-      skip_schema_check: false
-      solr_install_dir: ''
+removing: {  }
