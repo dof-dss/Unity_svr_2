@@ -72,7 +72,14 @@ function dashboard_upload_file(Bucket $bucket, string $local_path, string $objec
     'name' => $object_name,
     'metadata' => ['contentType' => 'application/json'],
   ]);
-  fclose($handle);
+  // Bucket::upload() wraps $handle in a PSR-7 stream that it takes
+  // ownership of and closes itself once the upload completes (via the
+  // stream's destructor). Calling fclose() unconditionally afterward can
+  // hit an already-closed resource, which PHP 8 treats as a fatal
+  // TypeError rather than the old warning -- guard it instead.
+  if (is_resource($handle)) {
+    fclose($handle);
+  }
   echo "Uploaded: $object_name\n";
 }
 
