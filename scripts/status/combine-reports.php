@@ -2,46 +2,48 @@
 
 /**
  * @file
- * Finalizes the single-site status report produced by report.php: adds
- * which multisite directories this codebase actually serves, plus
- * environment context, since the check itself only ran once against one
- * representative site.
+ * Combines per-site status JSON files (see report.php) into one
+ * fleet-level report.
  *
- * (Filename is a holdover from an earlier per-site-then-merge design;
- * kept as-is to avoid churn. What it does now is finalize a single
- * report, not combine several.)
+ * Usage: php combine-reports.php <dir-containing-site-json-files>
  *
- * Usage: php combine-reports.php <report.json> <sites-list-file>
- *
- * <sites-list-file> is a plain text file, one multisite directory name
- * per line (collect-all-sites.sh writes this).
+ * Reads Upsun's built-in PLATFORM_* environment variables to stamp the
+ * report with which project/environment it came from.
  */
 
-if ($argc < 3) {
-  fwrite(STDERR, "Usage: php combine-reports.php <report.json> <sites-list-file>\n");
+if ($argc < 2) {
+  fwrite(STDERR, "Usage: php combine-reports.php <dir>\n");
   exit(1);
 }
 
-[, $report_path, $sites_list_path] = $argv;
+$dir = rtrim($argv[1], '/');
+$files = glob("$dir/*.json") ?: [];
 
-$contents = is_file($report_path) ? file_get_contents($report_path) : false;
-$report = $contents ? json_decode($contents, true) : null;
-
-if (!is_array($report)) {
-  fwrite(STDERR, "ERROR: could not read/parse $report_path\n");
-  exit(1);
+$sites = [];
+foreach ($files as $file) {
+  if (basename($file) === 'fleet-report.json') {
+    continue;
+  }
+  $contents = file_get_contents($file);
+  $data = $contents ? json_decode($contents, true) : null;
+  if (is_array($data) && isset($data['site'])) {
+    $sites[] = $data;
+  }
+  else {
+    fwrite(STDERR, "Skipping unreadable/invalid report: $file\n");
+  }
 }
 
-$sites_covered = [];
-if (is_file($sites_list_path)) {
-  $lines = file($sites_list_path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) ?: [];
-  $sites_covered = array_values(array_unique(array_map('trim', $lines)));
-  sort($sites_covered);
-}
+usort($sites, fn(array $a, array $b): int => strcmp($a['site'] ?? '', $b['site'] ?? ''));
 
-$report['sites_covered'] = $sites_covered;
-$report['project'] = getenv('PLATFORM_PROJECT') ?: null;
-$report['environment'] = getenv('PLATFORM_ENVIRONMENT') ?: null;
-$report['generated_at'] = date('c');
+$fleet = [
+  'generated_at' => date('c'),
+  'project' => getenv('PLATFORM_PROJECT') ?: null,
+  'environment' => getenv('PLATFORM_ENVIRONMENT') ?: null,
+  'site_count' => count($sites),
+  'errors_found_total' => array_sum(array_map(fn(array $s): int => $s['summary']['errors_found'] ?? 0, $sites)),
+  'warnings_found_total' => array_sum(array_map(fn(array $s): int => $s['summary']['warnings_found'] ?? 0, $sites)),
+  'sites' => $sites,
+];
 
-echo json_encode($report, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . "\n";
+echo json_encode($fleet, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . "\n";
