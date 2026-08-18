@@ -95,7 +95,7 @@
         "drupal/date_facet_drilldown": "^12.0@dev",
         "drupal/draggableviews": "^2.1",
         "drupal/dynamic_entity_reference": "^3.2",
-        "drupal/entity_browser": "^2.15",
+        "drupal/entity_browser": "^2.16",
         "drupal/entity_embed": "^1.4",
         "drupal/entity_reference_revisions": "^1.14",
         "drupal/entityqueue": "^1.6",
