@@ -92,33 +92,33 @@ solr_9_9:
             - ltr
         cores:
             mentalhealthchampionni_index:
-                conf_dir: !archive solr_configsets/mentalhealthchampionni/conf/
+                conf_dir: !archive solr_config/
             publicappointmentsni_index:
-                conf_dir: !archive solr_configsets/publicappointmentsni/conf/
+                conf_dir: !archive solr_config/
             ircommission_index:
-                conf_dir: !archive solr_configsets/ircommission/conf/
+                conf_dir: !archive solr_config/
             imtac_index:
-                conf_dir: !archive solr_configsets/imtac/conf/
+                conf_dir: !archive solr_config/
             nicertoffice_index:
-                conf_dir: !archive solr_configsets/nicertoffice/conf/
+                conf_dir: !archive solr_config/
             victimspaymentsboard_index:
-                conf_dir: !archive solr_configsets/victimspaymentsboard/conf/
+                conf_dir: !archive solr_config/
             hiaredressni_index:
-                conf_dir: !archive solr_configsets/hiaredressni/conf/
+                conf_dir: !archive solr_config/
             cvocni_index:
-                conf_dir: !archive solr_configsets/cvocni/conf/
+                conf_dir: !archive solr_config/
             nijac_index:
-                conf_dir: !archive solr_configsets/nijac/conf/
+                conf_dir: !archive solr_config/
             communityrelations_index:
-                conf_dir: !archive solr_configsets/communityrelations/conf/
+                conf_dir: !archive solr_config/
             sentencereview_index:
-                conf_dir: !archive solr_configsets/sentencereview/conf/
+                conf_dir: !archive solr_config/
             nicybersecuritycentre_index:
-                conf_dir: !archive solr_configsets/nicybersecuritycentre/conf/
+                conf_dir: !archive solr_config/
             ppsni_index:
-                conf_dir: !archive solr_configsets/ppsni/conf/
+                conf_dir: !archive solr_config/
             cosicani_index:
-                conf_dir: !archive solr_configsets/cosicani/conf/
+                conf_dir: !archive solr_config/
         endpoints:
             mentalhealthchampionni:
                 core: mentalhealthchampionni_index
