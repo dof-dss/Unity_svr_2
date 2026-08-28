@@ -54,6 +54,11 @@ scripts/solr/generate-configsets --all
 scripts/solr/verify-configsets
 ```
 
+The verifier checks provisioned infrastructure only: every declared Solr site
+must have a `<site>_index` core, a repository-owned configset, and matching
+Platform and DDEV declarations. It does not inspect the site's active Search
+API backend or local connector patch.
+
 The connector command clears stale Drupal plugin caches, updates only the
 active `solr_default` connector for sites with enabled Solr-backed indexes,
 and asks Drupal to verify that each core is available. Maestro-generated DDEV
