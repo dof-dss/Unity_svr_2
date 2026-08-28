@@ -201,6 +201,10 @@
         "sort-packages": true
     },
     "extra": {
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
         "patches": {
             "drupal/block_visibility_groups": {
                 "Visibility incorrectly returns false on OR logic when context missing from a different condition #3503194": "https://www.drupal.org/files/issues/2025-02-07/or-logic-when-context-missing--3503194-5.patch"
@@ -214,7 +218,7 @@
             "drupal/core": {
                 "Render blocks in preview page": "https://www.drupal.org/files/issues/2019-10-03/3085364_2.patch",
                 "User enable email exception": "https://www.drupal.org/files/issues/2023-05-19/user_email_exception-3355151-3.patch",
-                "Expand menu_tree field sizes": "https://www.drupal.org/files/issues/2022-10-11/3106205-36.patch",
+                "Expand menu_tree field sizes": "https://www.drupal.org/files/issues/2026-08-28/3106205-length-menu-tree-too-short-10.6.x.patch",
                 "Fix TypeError when adding book page": "https://www.drupal.org/files/issues/2023-10-02/book_typeerror-3391063-1.patch",
                 "Allow authors without manage book privleges permission to save unpublished versions of published nodes": "https://www.drupal.org/files/issues/2022-12-14/2918537-92.patch",
                 "Fix getSetting() error on translated migrations": "https://www.drupal.org/files/issues/2018-07-08/2984460-3.patch",
@@ -337,7 +341,7 @@
         "drupal/coder": "^8.3",
         "drupal/core-dev": "^10.3",
         "drupal/devel": "^5.4",
-        "drupal/diff": "^1.10",
+        "drupal/diff": "^2.1",
         "drupal/easy_install_d10": "^10.0@dev",
         "drupal/eu_cookie_compliance": "^1.29",
         "drupal/migrate_absolute_links": "^6.0@dev",
