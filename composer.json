@@ -337,7 +337,7 @@
         "drupal/coder": "^8.3",
         "drupal/core-dev": "^10.3",
         "drupal/devel": "^5.4",
-        "drupal/diff": "^1.10",
+        "drupal/diff": "^2.1",
         "drupal/easy_install_d10": "^10.0@dev",
         "drupal/eu_cookie_compliance": "^1.29",
         "drupal/migrate_absolute_links": "^6.0@dev",
