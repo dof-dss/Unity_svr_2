@@ -95,8 +95,6 @@ solr_9_9:
                 conf_dir: !archive solr_configsets/mentalhealthchampionni/conf/
             publicappointmentsni_index:
                 conf_dir: !archive solr_configsets/publicappointmentsni/conf/
-            ircommission_index:
-                conf_dir: !archive solr_configsets/ircommission/conf/
             imtac_index:
                 conf_dir: !archive solr_configsets/imtac/conf/
             nicertoffice_index:
@@ -124,8 +122,6 @@ solr_9_9:
                 core: mentalhealthchampionni_index
             publicappointmentsni:
                 core: publicappointmentsni_index
-            ircommission:
-                core: ircommission_index
             imtac:
                 core: imtac_index
             nicertoffice:
