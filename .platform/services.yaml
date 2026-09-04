@@ -145,4 +145,6 @@ solr_9_9:
             cosicani:
                 core: cosicani_index
 redis:
-    type: 'redis:6.0'
+  type: redis:8.0
+  configuration:
+    maxmemory_policy: allkeys-lfu
