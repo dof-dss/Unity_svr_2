@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4b9c2ae92e77ff5a982285dc7fe3e21",
+    "content-hash": "c34d8c40e5737b23c74e4d81410257ad",
     "packages": [
         {
             "name": "accessible360/accessible-slick",
@@ -17062,16 +17062,16 @@
         },
         {
             "name": "dof-dss/maestro-hosting",
-            "version": "1.2.7",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/maestro-hosting.git",
-                "reference": "c6181bb7abd74b0bbddf4c6b0ebce114ecc174c4"
+                "reference": "b6e90afe0f75895a085b74977c249c945307d18e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/maestro-hosting/zipball/c6181bb7abd74b0bbddf4c6b0ebce114ecc174c4",
-                "reference": "c6181bb7abd74b0bbddf4c6b0ebce114ecc174c4",
+                "url": "https://api.github.com/repos/dof-dss/maestro-hosting/zipball/b6e90afe0f75895a085b74977c249c945307d18e",
+                "reference": "b6e90afe0f75895a085b74977c249c945307d18e",
                 "shasum": ""
             },
             "require": {
@@ -17096,9 +17096,9 @@
             "description": "Maestro hosting resources",
             "support": {
                 "issues": "https://github.com/dof-dss/maestro-hosting/issues",
-                "source": "https://github.com/dof-dss/maestro-hosting/tree/1.2.7"
+                "source": "https://github.com/dof-dss/maestro-hosting/tree/1.2.4"
             },
-            "time": "2026-09-04T15:55:03+00:00"
+            "time": "2026-08-28T13:14:18+00:00"
         },
         {
             "name": "dof-dss/maestro-shell",
