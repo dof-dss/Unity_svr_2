@@ -43,7 +43,7 @@ function nicybersecuritycentre_common_copy_field_values(array &$sandbox, string 
     $query = $storage->getQuery()
       ->condition('type', $bundle)
       ->accessCheck(FALSE)
-      ->condition('field_map.lat', $source_field[0]['lat'])
+      ->exists($source_field)
       ->accessCheck(FALSE);
 
     $nids = $query->execute();
