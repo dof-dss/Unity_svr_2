@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4b9c2ae92e77ff5a982285dc7fe3e21",
+    "content-hash": "1132478f99cbafdad4af9e4161ab2baf",
     "packages": [
         {
             "name": "accessible360/accessible-slick",
@@ -1671,16 +1671,16 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_profile",
-            "version": "10.1.9",
+            "version": "10.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_profile.git",
-                "reference": "05aee26d6e123a3e23c6147a96b8347059002fb5"
+                "reference": "c896568ce58c92db5180e680826406525467bca3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/05aee26d6e123a3e23c6147a96b8347059002fb5",
-                "reference": "05aee26d6e123a3e23c6147a96b8347059002fb5",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/c896568ce58c92db5180e680826406525467bca3",
+                "reference": "c896568ce58c92db5180e680826406525467bca3",
                 "shasum": ""
             },
             "require": {
@@ -1694,22 +1694,22 @@
             "description": "Custom install profile used by all Unity sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_profile/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/10.1.9"
+                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/10.1.10"
             },
-            "time": "2026-02-02T10:56:03+00:00"
+            "time": "2026-09-17T09:01:00+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_theme",
-            "version": "10.2.27",
+            "version": "10.2.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_theme.git",
-                "reference": "d4708e298d35c521ed8fb21345fa385ed6736c0b"
+                "reference": "c93ef83f45daa14ab3e85538dd0e90da8ae0d662"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/d4708e298d35c521ed8fb21345fa385ed6736c0b",
-                "reference": "d4708e298d35c521ed8fb21345fa385ed6736c0b",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/c93ef83f45daa14ab3e85538dd0e90da8ae0d662",
+                "reference": "c93ef83f45daa14ab3e85538dd0e90da8ae0d662",
                 "shasum": ""
             },
             "require": {
@@ -1733,9 +1733,9 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/10.2.27"
+                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/10.2.28"
             },
-            "time": "2026-07-29T12:57:17+00:00"
+            "time": "2026-09-11T10:55:42+00:00"
         },
         {
             "name": "drupal/address",
