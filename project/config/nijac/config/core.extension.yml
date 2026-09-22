@@ -103,6 +103,7 @@ module:
   origins_ckeditor_enhancements: 0
   origins_common: 0
   origins_forms: 0
+  origins_internal_link_checker: 0
   origins_media: 0
   origins_metatag: 0
   origins_qa: 0
@@ -141,7 +142,6 @@ module:
   unity_common: 0
   unity_frontpage: 0
   unity_image_styles: 0
-  unity_internal_link_checker: 0
   unity_landing_pages: 0
   unity_map_block: 0
   unity_search_pages: 0

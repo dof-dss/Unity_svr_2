@@ -25,7 +25,7 @@ sites:
     ircommission:
         name: 'Independent Reporting Commission'
         url: ircommission.org
-        solr: ircommission
+        www: true
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/ircommission ; drush core-cron'
         database: ircommission
@@ -41,7 +41,7 @@ sites:
         status: production
         default: false
     nicertoffice:
-        name: 'Northern Ireland Certification Officer for Trade Unions and Employers'' Associations'
+        name: "Northern Ireland Certification Officer for Trade Unions and Employers' Associations"
         url: nicertoffice.org.uk
         solr: nicertoffice
         cron_spec: '10 * * * *'
