@@ -5,7 +5,6 @@ dependencies:
   config:
     - block_content.type.map
     - field.field.block_content.map.field_map
-    - filter.format.plain_text
   module:
     - geolocation
 _core:
@@ -16,35 +15,9 @@ bundle: map
 mode: default
 content:
   field_map:
-    type: geolocation_map
+    type: geolocation_latlng
     label: hidden
-    settings:
-      set_marker: true
-      show_label: false
-      common_map: true
-      show_delta_label: false
-      use_overridden_map_settings: false
-      title: ''
-      info_text:
-        value: ''
-        format: plain_text
-      centre:
-        fit_bounds:
-          enable: true
-          weight: -101
-          settings:
-            reset_zoom: true
-          map_center_id: fit_bounds
-      map_provider_id: google_maps
-      map_provider_settings:
-        type: ROADMAP
-        zoom: 15
-        minZoom: 0
-        maxZoom: 20
-        height: 400px
-        width: 100%
-        gestureHandling: auto
-      data_provider_settings: {  }
+    settings: {  }
     third_party_settings: {  }
     weight: 1
     region: content
