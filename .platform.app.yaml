@@ -161,7 +161,6 @@ relationships:
     publicappointmentsni: 'db:publicappointmentsni'
     publicappointmentsni_solr: 'solr_9_9:publicappointmentsni'
     ircommission: 'db:ircommission'
-    ircommission_solr: 'solr_9_9:ircommission'
     imtac: 'db:imtac'
     imtac_solr: 'solr_9_9:imtac'
     nicertoffice: 'db:nicertoffice'

@@ -7,6 +7,21 @@ dependencies:
     - node.type.featured_list
   module:
     - link
+    - link_field_autocomplete_filter
+third_party_settings:
+  link_field_autocomplete_filter:
+    negate: true
+    allowed_content_types:
+      featured_list: featured_list
+      basic_page: '0'
+      core_funded_groups: '0'
+      event: '0'
+      funding_schemes: '0'
+      news: '0'
+      project_profile: '0'
+      publication: '0'
+      staff_member: '0'
+      webform: '0'
 id: node.featured_list.field_link
 field_name: field_link
 entity_type: node
