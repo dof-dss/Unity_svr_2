@@ -9,16 +9,16 @@ _core:
 id: publication_pattern
 label: 'Publication pattern'
 type: 'canonical_entities:node'
-pattern: 'publications/[node:title]'
+pattern: '/publications/[node:title]'
 selection_criteria:
   4089f30f-b205-4427-af17-8c54005817f9:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 4089f30f-b205-4427-af17-8c54005817f9
     context_mapping:
       node: node
     bundles:
       publication_page: publication_page
+    uuid: 4089f30f-b205-4427-af17-8c54005817f9
 selection_logic: and
 weight: -5
 relationships: {  }

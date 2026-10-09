@@ -1,0 +1,7 @@
+hotlink: false
+origin: 'https://www.nijac.gov.uk'
+origin_dir: files/nijac
+proxy_headers: ''
+use_imagecache_root: true
+verify: true
+excluded_extensions: ''

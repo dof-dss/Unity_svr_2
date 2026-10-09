@@ -1,0 +1,7 @@
+hotlink: false
+origin: 'https://www.victimspaymentsboard.org.uk'
+origin_dir: files/victimspaymentsboard
+proxy_headers: ''
+use_imagecache_root: true
+verify: true
+excluded_extensions: ''

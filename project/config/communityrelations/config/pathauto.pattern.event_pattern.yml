@@ -7,16 +7,16 @@ dependencies:
 id: event_pattern
 label: 'event pattern'
 type: 'canonical_entities:node'
-pattern: 'events/[node:title]'
+pattern: '/events/[node:title]'
 selection_criteria:
   9b545919-8fbe-4788-af39-4d5a59c2c1e1:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 9b545919-8fbe-4788-af39-4d5a59c2c1e1
     context_mapping:
       node: node
     bundles:
       event: event
+    uuid: 9b545919-8fbe-4788-af39-4d5a59c2c1e1
 selection_logic: and
 weight: -5
 relationships: {  }

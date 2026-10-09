@@ -7,16 +7,16 @@ dependencies:
 id: core_funded_groups_pattern
 label: 'Core funded groups pattern'
 type: 'canonical_entities:node'
-pattern: 'core-funded-groups/[node:title]'
+pattern: '/core-funded-groups/[node:title]'
 selection_criteria:
   ed0a66fd-6320-441e-a13c-1dc3bc4c7cfc:
     id: 'entity_bundle:node'
     negate: false
-    uuid: ed0a66fd-6320-441e-a13c-1dc3bc4c7cfc
     context_mapping:
       node: node
     bundles:
       core_funded_groups: core_funded_groups
+    uuid: ed0a66fd-6320-441e-a13c-1dc3bc4c7cfc
 selection_logic: and
 weight: -5
 relationships: {  }
