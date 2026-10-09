@@ -1,0 +1,7 @@
+hotlink: false
+origin: 'https://www.mentalhealthchampion-ni.org.uk'
+origin_dir: files/mentalhealthchampionni
+proxy_headers: ''
+use_imagecache_root: true
+verify: true
+excluded_extensions: ''

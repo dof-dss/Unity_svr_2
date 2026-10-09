@@ -5,8 +5,10 @@
  * Functions to support theming in the IR Commission.
  */
 
-function ircommission_theme_theme_suggestions_container_alter(array &$suggestions, array $variables)
-{
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function ircommission_theme_theme_suggestions_container_alter(array &$suggestions, array $variables) {
   $name = '';
   $type = '';
   if (isset($variables['element']['#name'])) {
@@ -21,7 +23,10 @@ function ircommission_theme_theme_suggestions_container_alter(array &$suggestion
 }
 
 /**
- * @param $variables
+ * Implements hook_preprocess_HOOK().
+ *
+ * @param array $variables
+ *   Variables for the Views template.
  */
 function ircommission_theme_preprocess_views_view(&$variables) {
   $view = $variables['view'];

@@ -1,0 +1,7 @@
+hotlink: false
+origin: 'https://www.community-relations.org.uk'
+origin_dir: files/communityrelations
+proxy_headers: ''
+use_imagecache_root: true
+verify: true
+excluded_extensions: ''

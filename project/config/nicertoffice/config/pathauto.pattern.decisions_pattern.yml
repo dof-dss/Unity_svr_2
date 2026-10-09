@@ -7,16 +7,16 @@ dependencies:
 id: decisions_pattern
 label: 'Decisions pattern'
 type: 'canonical_entities:node'
-pattern: 'decisions/[node:title]'
+pattern: '/decisions/[node:title]'
 selection_criteria:
   429313c7-4e6a-4527-a2aa-adec1cc7c8a6:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 429313c7-4e6a-4527-a2aa-adec1cc7c8a6
     context_mapping:
       node: node
     bundles:
       decision: decision
+    uuid: 429313c7-4e6a-4527-a2aa-adec1cc7c8a6
 selection_logic: and
 weight: -5
 relationships: {  }

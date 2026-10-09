@@ -1,0 +1,7 @@
+hotlink: false
+origin: 'https://www.ppsni.gov.uk'
+origin_dir: files/ppsni
+proxy_headers: ''
+use_imagecache_root: true
+verify: true
+excluded_extensions: ''

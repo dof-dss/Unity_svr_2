@@ -6,5 +6,5 @@ _core:
   default_config_hash: paD8yTwVDdq5GdS-a-K29x6Gn2bmN-nAng9y0wuq_JU
 id: video
 label: Video
-revision: 1
+revision: true
 description: ''

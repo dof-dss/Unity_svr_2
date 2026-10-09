@@ -16,12 +16,12 @@ module:
   migrate_plus: 0
   migrate_tools: 0
   migrate_upgrade: 0
-  clone_nodes: 0
   devel: 0
   dblog: 0
-  easy_install: 0
+  stage_file_proxy: 0
   views_ui: 0
 theme: {  }
-complete_list: {  }
+complete_list:
+  - stage_file_proxy.settings
 partial_list:
   - search_api.server.solr_default
