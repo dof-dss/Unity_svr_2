@@ -1,11 +1,19 @@
 <?php
 
+/**
+ * @file
+ * Theme hooks for the Victims Payments Board.
+ */
+
 use Drupal\node\Entity\Node;
 
 /**
  * Implements hook_theme_suggestions_HOOK_alter() for form templates.
+ *
  * @param array $suggestions
+ *   Available theme suggestions.
  * @param array $variables
+ *   Variables for the block template.
  */
 function victimspaymentsboard_theme_theme_suggestions_block_alter(array &$suggestions, array $variables) {
   if (isset($variables['elements']['content']['#block_content'])) {
