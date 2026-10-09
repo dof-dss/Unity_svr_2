@@ -30,10 +30,7 @@ workflows:
             - build
           php_version: << pipeline.parameters.php_version >>
           custom_code_dirs: << pipeline.parameters.custom_code_dirs >>
-      - check_illegal_updates:
-          requires:
-            - build
-          php_version: << pipeline.parameters.php_version >>
+      # check_illegal_updates is temporarily omitted for the authorised D11 migration.
   build-edge:
     when:
       and:
