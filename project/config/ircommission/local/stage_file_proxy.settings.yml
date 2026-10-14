@@ -1,5 +1,5 @@
 hotlink: false
-origin: 'https://www.ircommission.org'
+origin: https://www.ircommission.org
 origin_dir: files/ircommission
 proxy_headers: ''
 use_imagecache_root: true

@@ -1,5 +1,5 @@
 hotlink: false
-origin: 'https://www.nicybersecuritycentre.gov.uk'
+origin: https://www.nicybersecuritycentre.gov.uk
 origin_dir: files/nicybersecuritycentre
 proxy_headers: ''
 use_imagecache_root: true

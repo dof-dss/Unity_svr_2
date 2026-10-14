@@ -1,5 +1,5 @@
 hotlink: false
-origin: 'https://www.sentencereview.org.uk'
+origin: https://www.sentencereview.org.uk
 origin_dir: files/sentencereview
 proxy_headers: ''
 use_imagecache_root: true

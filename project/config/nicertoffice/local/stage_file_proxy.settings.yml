@@ -1,5 +1,5 @@
 hotlink: false
-origin: 'https://www.nicertoffice.org.uk'
+origin: https://www.nicertoffice.org.uk
 origin_dir: files/nicertoffice
 proxy_headers: ''
 use_imagecache_root: true

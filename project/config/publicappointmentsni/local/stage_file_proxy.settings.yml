@@ -1,5 +1,5 @@
 hotlink: false
-origin: 'https://www.publicappointmentsni.org'
+origin: https://www.publicappointmentsni.org
 origin_dir: files/publicappointmentsni
 proxy_headers: ''
 use_imagecache_root: true

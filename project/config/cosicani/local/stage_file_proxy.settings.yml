@@ -1,5 +1,5 @@
 hotlink: false
-origin: 'https://www.cosica-ni.org'
+origin: https://www.cosica-ni.org
 origin_dir: files/cosicani
 proxy_headers: ''
 use_imagecache_root: true

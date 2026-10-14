@@ -1,5 +1,5 @@
 hotlink: false
-origin: 'https://www.imtac.org.uk'
+origin: https://www.imtac.org.uk
 origin_dir: files/imtac
 proxy_headers: ''
 use_imagecache_root: true

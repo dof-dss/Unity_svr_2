@@ -1,5 +1,5 @@
 hotlink: false
-origin: 'https://www.hiaredressni.uk'
+origin: https://www.hiaredressni.uk
 origin_dir: files/hiaredressni
 proxy_headers: ''
 use_imagecache_root: true
