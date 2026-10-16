@@ -1,6 +1,6 @@
 _core:
   default_config_hash: 5ZR2rETEQeI922jZ_ObHCnuueEJHgU7_vyBgdP0q7Ls
-verbose: 1
+verbose: true
 types:
   block_content: {  }
   contact_message: {  }
@@ -19,7 +19,6 @@ types:
   menu_link_content: {  }
   paragraph: {  }
 types_translation_lock: {  }
-types_js_lock: {  }
 form_op_lock:
   block_content:
     mode: 0
@@ -70,3 +69,4 @@ form_op_lock:
   paragraph:
     mode: 0
     values: {  }
+types_js_lock: {  }

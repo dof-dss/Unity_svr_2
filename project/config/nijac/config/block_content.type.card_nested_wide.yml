@@ -6,5 +6,5 @@ _core:
   default_config_hash: Mg53LmhIDN-gPLXpISno-14VSJPu86DDUPc-PZDs3z8
 id: card_nested_wide
 label: 'Card nested - wide'
-revision: 1
+revision: true
 description: 'Provides a block with nested block elements.'

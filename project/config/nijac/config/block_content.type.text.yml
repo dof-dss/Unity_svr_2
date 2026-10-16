@@ -6,5 +6,5 @@ _core:
   default_config_hash: Eh9aHqn3Vg37J2NBGWLkml89nMug48CM_ByYpd8fG8Y
 id: text
 label: Text
-revision: 1
+revision: true
 description: 'A block containing a restricted set of text formatting tools.'

@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @file
+ * Form validation and cache invalidation for NI Cyber Security Centre.
+ */
+
 use Drupal\Core\Cache\Cache;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
