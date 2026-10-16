@@ -64,8 +64,7 @@ hooks:
               # Disable Fastly purging while updating this site.
               drush -l "$site" state:set fastly.state.valid_purge_credentials false --input-format=json
               # Repair logging and Views prerequisites before any site updates.
-              drush -l $site unity-upgrade-preflight || exit 1
-              drush -l "$site" php:script /app/scripts/drupal11/preflight.php
+              drush -l "$site" upgrade-preflight || exit 1
               # Update the schema before commands can rebuild routes with new core code.
               drush -l $site -y updatedb
               # Disable Fastly logging
