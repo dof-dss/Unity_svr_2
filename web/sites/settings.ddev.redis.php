@@ -1,5 +1,12 @@
 <?php
-// #ddev-generated
+
+/**
+ * @file
+ * Configures Redis for local Drupal development.
+ *
+ * #ddev-generated
+ */
+
 use Drupal\Core\Installer\InstallerKernel;
 
 if (!InstallerKernel::installationAttempted() && extension_loaded('redis') && class_exists('Drupal\redis\ClientFactory')) {
