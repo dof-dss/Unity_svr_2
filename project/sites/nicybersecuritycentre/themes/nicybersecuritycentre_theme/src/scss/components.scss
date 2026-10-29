@@ -22,16 +22,6 @@
   }
 }
 
-.search-form input[type="submit"] {
-  background-color: $brand-primary;
-
-  &:hover,
-  &:focus {
-    opacity: 1;
-    background-color: $brand-tertiary;
-  }
-}
-
 #footer .column .social-icons li {
   border-color: $brand-primary;
 
@@ -248,7 +238,7 @@ body:not(.front) {
 
 #header_wrapper {
   padding: 1rem 0 1rem;
-  background-color: $brand-secondary;
+  background-color: #022B41;
 
   @media screen and (min-width: 1300px) {
     background-image: resolve('hex-pattern.svg'), resolve('hex-pattern-right.svg');
