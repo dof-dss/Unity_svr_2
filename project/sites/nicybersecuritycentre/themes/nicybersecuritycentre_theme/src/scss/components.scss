@@ -9,15 +9,15 @@
   .menu .menu-item .active,
   .menu .menu-item .active + .menu-main_sub .title a {
     background: $white;
-    border-bottom-color: $brand-tertiary;
+    border-bottom-color: #0e6bb3;
     color: $brand-primary;
   }
 
   .menu-link {
     &:hover,
     &:focus {
-      background: $brand-tertiary;
-      color: $brand-primary;
+      background: #0e6bb3;
+      color: $white;
     }
   }
 }
@@ -366,6 +366,10 @@ body:not(.front) {
   .media-image[data-picture-mapping="inline"] > img {
     max-width: 180px;
   }
+}
+
+.search-form input[type='text']:focus {
+  outline: 3px solid #ff3;
 }
 
 #footer {
