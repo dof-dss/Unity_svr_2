@@ -368,8 +368,17 @@ body:not(.front) {
   }
 }
 
-.search-form input[type='text']:focus {
-  outline: 3px solid #ff3;
+.search-form {
+  input[type='submit'],
+  input[type='text'] {
+    border: 1px solid $white;
+  }
+
+  input[type='text'] {
+    &:focus {
+      outline: 3px solid #ff3;
+    }
+  }
 }
 
 #footer {
