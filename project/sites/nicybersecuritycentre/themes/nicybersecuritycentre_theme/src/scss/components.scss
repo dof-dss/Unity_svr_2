@@ -372,11 +372,16 @@ body:not(.front) {
   input[type='submit'],
   input[type='text'] {
     border: 1px solid $white;
-  }
 
-  input[type='text'] {
     &:focus {
       outline: 3px solid #ff3;
+    }
+  }
+
+  input[type='submit'] {
+    &:hover {
+      background-color: #1285DE;
+      opacity: 1;
     }
   }
 }
