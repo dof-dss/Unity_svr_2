@@ -97,6 +97,7 @@ module:
   options: 0
   origins_ckeditor_enhancements: 0
   origins_common: 0
+  origins_entityqueue_unpublished: 0
   origins_forms: 0
   origins_internal_link_checker: 0
   origins_media: 0

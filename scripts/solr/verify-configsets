@@ -51,6 +51,13 @@ done
 
 [[ -x .ddev/solr/create-or-refresh-cores.sh ]] \
   || fail ".ddev/solr/create-or-refresh-cores.sh is not executable"
+if [[ -f .ddev/solr/create-or-refresh-cores.sh ]] && ! awk '
+  $0 == "mkdir -p /var/solr/data" { mkdir_line = NR }
+  $0 == "rm -f /var/solr/data/security.json" { security_cleanup_line = NR }
+  END { exit !(mkdir_line && security_cleanup_line && mkdir_line < security_cleanup_line) }
+' .ddev/solr/create-or-refresh-cores.sh; then
+  fail ".ddev/solr/create-or-refresh-cores.sh does not create /var/solr/data before using it"
+fi
 [[ -x scripts/solr/configure-local-connectors ]] \
   || fail "scripts/solr/configure-local-connectors is not executable"
 [[ -f "$provider_file" ]] || fail "missing generated DDEV provider ${provider_file}"
