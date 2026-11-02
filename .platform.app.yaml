@@ -139,7 +139,7 @@ web:
                 ^\/sites\/.+\/themes\/.+\/images\/favicons\/.+\.webmanifest$:
                     allow: true
                     expires: 2w
-                ^/\.well-known/security\.txt$:
+                ^/\.well-known/*?\.txt$:
                     allow: true
                 ^/sites/sites\.php$:
                     scripts: false
