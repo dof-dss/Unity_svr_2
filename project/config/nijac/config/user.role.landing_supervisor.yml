@@ -6,7 +6,7 @@ dependencies:
     - core.entity_view_display.node.landing_page.default
     - node.type.landing_page
   module:
-    - block_content_permissions
+    - block_content
     - layout_builder
     - node
     - scheduled_transitions

@@ -326,7 +326,6 @@ display:
             field_teaser: '0'
           optionset: imtac
           class: ''
-          id: ''
           image: ''
           link: ''
           overlay: ''
@@ -334,11 +333,12 @@ display:
           vanilla: true
           layout: ''
           cache: 0
-          current_view_mode: slideshow
-          skin: default
           grid: null
           grid_medium: null
           grid_small: null
+          current_view_mode: slideshow
+          id: ''
+          skin: default
           overridables:
             arrows: '0'
             autoplay: '0'

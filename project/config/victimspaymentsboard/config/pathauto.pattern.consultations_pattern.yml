@@ -9,16 +9,16 @@ _core:
 id: consultations_pattern
 label: 'Consultations pattern'
 type: 'canonical_entities:node'
-pattern: 'consultations/[node:title]'
+pattern: '/consultations/[node:title]'
 selection_criteria:
   3b57b096-f604-463f-bd3a-d13aa23f2905:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 3b57b096-f604-463f-bd3a-d13aa23f2905
     context_mapping:
       node: node
     bundles:
       consultation: consultation
+    uuid: 3b57b096-f604-463f-bd3a-d13aa23f2905
 selection_logic: and
 weight: -5
 relationships: {  }
