@@ -1,0 +1,51 @@
+<?php
+
+/**
+ * @file
+ * Contains file_delete_ui.module.
+ */
+
+use Drupal\Core\Entity\EntityListBuilder;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\file_delete_ui\FileAccessControlHandler;
+
+/**
+ * Implements hook_help().
+ */
+function file_delete_ui_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.file_delete_ui':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module adds the capability to delete files from the file admin view (UI).
+      It assumes that the admin knows what they are doing and trusts that when they want to delete a file
+      (even one with a non zero usage count) that they really want to remove the file. When removing files
+      that are referenced by other entities, core takes care of removing the reference.') . '</p>';
+      // Add a link to the Drupal.org project.
+      $output .= '<p>';
+      $output .= t('Visit the <a href=":project_link">File Delete UI project page</a> on Drupal.org for more information.',
+        [
+          ':project_link' => 'https://www.drupal.org/project/file_delete_ui',
+        ]
+      );
+      $output .= '</p>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_entity_type_alter().
+ */
+function file_delete_ui_entity_type_alter(array &$entity_types) {
+  /** @var \Drupal\Core\Entity\EntityTypeInterface[] $entity_types */
+  $entity_types['file']
+    // Add a list builder so entity_operations field will be added by
+    // EntityViewsData::getViewsData as an available views field.
+    ->setListBuilderClass(EntityListBuilder::class)
+    // Add a delete form link template and delete form class so
+    // entity_operations field will add and implement the delete operation.
+    ->setLinkTemplate('delete-form', '/file/{file}/delete')
+    ->setFormClass('delete', 'Drupal\file_delete_ui\Form\FileEntityDeleteForm')
+    // Override the access class.
+    ->setAccessClass(FileAccessControlHandler::class);
+}

@@ -1,0 +1,26 @@
+{
+  "name": "drupal/file_delete_ui",
+  "description": "This module adds the capability to delete files from the file admin view (UI).",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "keywords": ["Drupal"],
+  "homepage": "https://www.drupal.org/project/file_delete_ui",
+  "authors": [
+    {
+      "name": "Doug Green (douggreen)",
+      "homepage": "https://www.drupal.org/u/douggreen",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Viktor Holovachek (AstonVictor)",
+      "homepage": "https://www.drupal.org/u/astonvictor",
+      "role": "Maintainer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/file_delete_ui",
+    "source": "https://git.drupalcode.org/project/file_delete_ui"
+  },
+  "require": { }
+}

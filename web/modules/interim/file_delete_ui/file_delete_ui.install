@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Install/update/uninstall hooks for file_delete_ui module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function file_delete_ui_install() {
+  // Add the operations to the default core view.
+  $config = \Drupal::configFactory()->getEditable('views.view.files');
+  if ($config && !$config->isNew()) {
+    $data = $config->getRawData();
+    $data['display']['default']['display_options']['fields']['operations'] = [
+      'id' => 'operations',
+      'table' => 'file_managed',
+      'field' => 'operations',
+      'label' => 'Operations',
+    ];
+    $config->setData($data)->save();
+  }
+}

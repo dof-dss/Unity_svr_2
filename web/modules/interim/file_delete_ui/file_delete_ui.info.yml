@@ -1,0 +1,7 @@
+name: 'File delete'
+type: module
+description: 'Add capability for admins to delete files'
+core_version_requirement: ^8.8 || ^9 || ^10 || ^11
+package: File
+dependencies:
+  - drupal:file

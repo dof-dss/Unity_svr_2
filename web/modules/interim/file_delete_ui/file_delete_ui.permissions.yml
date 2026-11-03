@@ -1,0 +1,3 @@
+delete any file:
+  title: 'Delete any file'
+  restrict access: true
