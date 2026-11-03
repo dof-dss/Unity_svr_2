@@ -19,7 +19,5 @@ settings:
   label: 'Current vacancies'
   label_display: visible
   provider: block_content
-  status: true
-  info: ''
   view_mode: full
 visibility: {  }

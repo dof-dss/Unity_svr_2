@@ -6,5 +6,5 @@ _core:
   default_config_hash: 1w4AXdoSfMY8T7aSeD3dYz7zieA3Co5DVzZTwXmikuQ
 id: plain_cards
 label: 'Plain cards'
-revision: 1
+revision: true
 description: ''
