@@ -7,6 +7,6 @@ $databases['default']['default'] = [
   'prefix'    => getenv('DB_PREFIX'),
   'host'      => getenv('DB_HOST'),
   'port'      => getenv('DB_PORT'),
-  'namespace' => 'Drupal\Core\Database\Driver\mysql',
+  'namespace' => 'Drupal\mysql\Driver\Database\mysql',
   'driver'    => getenv('DB_DRIVER'),
 ];
