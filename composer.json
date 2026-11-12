@@ -214,6 +214,7 @@
                 "Config export fails": "https://www.drupal.org/files/issues/2025-09-01/config_split-3511132-3.patch"
             },
             "drupal/core": {
+                "Fix for reference error on unpublished nodes on Entity Queue": "https://www.drupal.org/files/issues/2026-10-11/2845144-116_0.patch",
                 "Render blocks in preview page": "https://www.drupal.org/files/issues/2019-10-03/3085364_2.patch",
                 "User enable email exception": "https://www.drupal.org/files/issues/2023-05-19/user_email_exception-3355151-3.patch",
                 "Fix getSetting() error on translated migrations": "https://www.drupal.org/files/issues/2018-07-08/2984460-3.patch",
