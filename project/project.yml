@@ -25,7 +25,6 @@ sites:
     ircommission:
         name: 'Independent Reporting Commission'
         url: ircommission.org
-        www: true
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/ircommission ; drush core-cron'
         database: ircommission

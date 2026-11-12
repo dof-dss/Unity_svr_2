@@ -113,7 +113,7 @@ if (getenv('IS_DDEV_PROJECT') && file_exists($app_root . '/sites/settings.ddev.p
   include $app_root . '/sites/settings.ddev.php';
 }
 
-// Include settings required for Redis cache, as in the DEPT application.
+// Include settings required for Redis cache.
 if (file_exists(__DIR__ . '/settings.ddev.redis.php') && getenv('IS_DDEV_PROJECT') == 'true') {
   // Separate each site's cache items, cache tags, locks and flood keys.
   // Redis is shared; separate Drupal databases do not isolate these keys.
