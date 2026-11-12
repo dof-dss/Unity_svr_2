@@ -7,7 +7,13 @@
 #############################################################################
 name: unity_svr_2
 type: 'php:8.3'
+
+variables:
+    env:
+        N_PREFIX: /app/.global
 dependencies:
+    nodejs:
+        n: '11.0.0'
     php:
         composer/composer: ^2
 runtime:
@@ -46,6 +52,12 @@ build:
 hooks:
     build: |
         set -e
+        echo ">>> Install the pinned, patched Node.js version"
+        # installs the pinned version from .nvmrc
+        n auto
+        export PATH="$N_PREFIX/bin:$PATH"
+        # clears cached command locations so the shell finds the new copy.
+        hash -r
         echo "Update robots.txt with Unity customisations"
         cp -f web/robots_unity.txt web/robots.txt
     post_deploy: |
