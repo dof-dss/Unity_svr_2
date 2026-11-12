@@ -55,11 +55,10 @@
         }
     ],
     "require": {
-        "php": "^8.3",
-        "composer-runtime-api": "*",
         "accessible360/accessible-slick": "^1.0",
         "aws/aws-sdk-php": "^3.369",
         "caxy/php-htmldiff": "^0.1.15",
+        "composer-runtime-api": "*",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
         "dof-dss/nicsdru_origins_modules": "^11.0",
@@ -75,6 +74,7 @@
         "drupal/block_field": "^1.0@RC",
         "drupal/block_list_override": "^1.0",
         "drupal/block_visibility_groups": "^2.0",
+        "drupal/book": "^3.0",
         "drupal/ckeditor5_allowed_html": "^1.5@dev",
         "drupal/ckeditor5_premium_features": "^1.6",
         "drupal/ckeditor_lts": "^1.0",
@@ -172,6 +172,7 @@
         "harvesthq/chosen": "^1.8",
         "kenwheeler/slick": "^1.8",
         "oomphinc/composer-installers-extender": "^2.0",
+        "php": "^8.3",
         "php-http/message-factory": "^1.1",
         "platformsh/config-reader": "^2.4",
         "symfony/http-client": "^7.4",
@@ -221,7 +222,10 @@
                 "Fix to $form.ajaxSubmit is not a function": "https://git.drupalcode.org/project/drupal/-/merge_requests/6052.diff",
                 "DateList and date range inline form errors are repeated": "https://www.drupal.org/files/issues/2020-01-30/2827034-35.patch",
                 "Undefined title": "https://www.drupal.org/files/issues/2026-01-08/undefined_title_3566415.patch",
-                "Handle configuration collections added during import #3532738": "https://www.drupal.org/files/issues/2025-06-27/configimporter-multisite-null-safety.patch"
+                "Handle configuration collections added during import #3532738": "https://www.drupal.org/files/issues/2025-06-27/configimporter-multisite-null-safety.patch",
+                "Fix TypeError when adding book page": "https://www.drupal.org/files/issues/2023-10-02/book_typeerror-3391063-1.patch",
+                "Menu revision langcode bug fix": "patches/drupal/core/menu-revision-langcode-3446877-drupal-11.4.patch",
+                "Fix Leave preview dialog redirect #3541343": "https://www.drupal.org/files/issues/2026-08-27/3541343-29.patch"
             },
             "drupal/entityqueue": {
                 "Allow unique records only": "https://www.drupal.org/files/issues/2026-09-10/entityqueue-disallow-duplicates-3197148-11.patch"
@@ -249,6 +253,9 @@
             },
             "drupal/readonlymode": {
                 "Fatal typerror fix": "https://www.drupal.org/files/issues/2020-12-23/readonlymode-string_not_array-3115119-9.patch"
+            },
+            "drupal/redirect": {
+                "URL Redirects on applicable content entity forms #3245137": "patches/drupal/redirect/url-redirects-content-entities-3245137-1.13.patch"
             }
         },
         "drupal-scaffold": {
