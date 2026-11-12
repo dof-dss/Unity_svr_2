@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9724135dbb0b302a7eaf3f588c583c94",
+    "content-hash": "ad8664d9ea92970449e791a4754b984b",
     "packages": [
         {
             "name": "accessible360/accessible-slick",
@@ -1643,16 +1643,16 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_theme",
-            "version": "11.0.0",
+            "version": "11.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_theme.git",
-                "reference": "3625cf2da07b4ea5d166d8e31266ac98ebea8b0e"
+                "reference": "fbff86f59c7bccf16b512e307de373e18213ec94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/3625cf2da07b4ea5d166d8e31266ac98ebea8b0e",
-                "reference": "3625cf2da07b4ea5d166d8e31266ac98ebea8b0e",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_theme/zipball/fbff86f59c7bccf16b512e307de373e18213ec94",
+                "reference": "fbff86f59c7bccf16b512e307de373e18213ec94",
                 "shasum": ""
             },
             "require": {
@@ -1677,9 +1677,9 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/11.0.0"
+                "source": "https://github.com/dof-dss/nicsdru_unity_theme/tree/11.1.0"
             },
-            "time": "2026-09-25T13:21:35+00:00"
+            "time": "2026-11-12T15:59:27+00:00"
         },
         {
             "name": "drupal/address",

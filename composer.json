@@ -64,7 +64,7 @@
         "dof-dss/nicsdru_origins_modules": "^11.0",
         "dof-dss/nicsdru_unity_modules": "^11.1",
         "dof-dss/nicsdru_unity_profile": "^11",
-        "dof-dss/nicsdru_unity_theme": "^11",
+        "dof-dss/nicsdru_unity_theme": "^11.1.0",
         "drupal/address": "^2.0",
         "drupal/admin_toolbar": "^3.6",
         "drupal/allowed_formats": "^3.0",
