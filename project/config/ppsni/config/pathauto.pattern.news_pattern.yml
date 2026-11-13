@@ -9,24 +9,24 @@ _core:
 id: news_pattern
 label: 'News pattern'
 type: 'canonical_entities:node'
-pattern: 'news/[node:title]'
+pattern: '/news/[node:title]'
 selection_criteria:
   730dc286-2381-4b1f-97a0-3b82415ed47e:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 730dc286-2381-4b1f-97a0-3b82415ed47e
     context_mapping:
       node: node
     bundles:
       news: news
+    uuid: 730dc286-2381-4b1f-97a0-3b82415ed47e
   b4f633d1-d13c-4f57-ab52-b95bfd1e2cc7:
     id: 'entity_bundle:node'
     negate: false
-    uuid: b4f633d1-d13c-4f57-ab52-b95bfd1e2cc7
     context_mapping:
       node: node
     bundles:
       news: news
+    uuid: b4f633d1-d13c-4f57-ab52-b95bfd1e2cc7
 selection_logic: and
 weight: -5
 relationships: {  }

@@ -7,16 +7,16 @@ dependencies:
 id: board_member_pattern
 label: 'Board member pattern'
 type: 'canonical_entities:node'
-pattern: 'about-us/board/[node:title]'
+pattern: '/about-us/board/[node:title]'
 selection_criteria:
   ce1749f3-1215-4fe6-bfe4-dd46f60bd18d:
     id: 'entity_bundle:node'
     negate: false
-    uuid: ce1749f3-1215-4fe6-bfe4-dd46f60bd18d
     context_mapping:
       node: node
     bundles:
       staff_member: staff_member
+    uuid: ce1749f3-1215-4fe6-bfe4-dd46f60bd18d
 selection_logic: and
 weight: -5
 relationships: {  }

@@ -46,13 +46,13 @@ jobs:
           parameters: |
             {
               "php_version": "8.3",
-              "drupal_core_version": "10.5",
+              "drupal_core_version": "11.4",
               "node_version": "18",
-              "coding_standards_dirs": "${PROJECT_ROOT}/web/sites ${PROJECT_ROOT}/web/modules/custom ${PROJECT_ROOT}/web/themes/custom ${PROJECT_ROOT}/web/profiles/unity ${PROJECT_ROOT}/web/profiles/origins",
-              "custom_code_dirs": "${PROJECT_ROOT}/web/modules/custom ${PROJECT_ROOT}/web/themes/custom",
-              "deprecated_code_dirs": "${PROJECT_ROOT}/web/modules/custom ${PROJECT_ROOT}/web/themes/custom",
+              "coding_standards_dirs": "${PROJECT_ROOT}/web/sites ${PROJECT_ROOT}/web/modules/custom ${PROJECT_ROOT}/web/modules/interim ${PROJECT_ROOT}/web/themes/custom ${PROJECT_ROOT}/web/profiles/unity ${PROJECT_ROOT}/web/profiles/origins",
+              "custom_code_dirs": "${PROJECT_ROOT}/web/modules/custom ${PROJECT_ROOT}/web/modules/interim ${PROJECT_ROOT}/web/themes/custom",
+              "deprecated_code_dirs": "${PROJECT_ROOT}/web/modules/custom ${PROJECT_ROOT}/web/modules/interim ${PROJECT_ROOT}/web/themes/custom",
               "edge_branch": "edge",
-              "edge_build_dofdss_packages": "dof-dss/nicsdru_unity_theme:dev-10.x-dev dof-dss/nicsdru_origins_modules:dev-10.x-dev dof-dss/nicsdru_unity_modules:dev-10.x-dev dof-dss/nicsdru_unity_profile:dev-10.x-dev",
-              "ignore_dirs": "/web/themes/origins/node_modules,/web/themes/custom/nicsdru_unity_theme/node_modules",
+              "edge_build_dofdss_packages": "dof-dss/nicsdru_unity_theme:dev-11.x-dev dof-dss/nicsdru_origins_modules:dev-11.x-dev dof-dss/nicsdru_unity_modules:dev-11.x-dev dof-dss/nicsdru_unity_profile:dev-11.x-dev",
+              "ignore_dirs": "${PROJECT_ROOT}/web/themes/origins/node_modules ${PROJECT_ROOT}/web/themes/custom/nicsdru_unity_theme/node_modules",
               "ssh_fingerprint": "e8:86:75:e8:35:15:07:a6:2d:a0:00:17:69:a1:42:84"
             }
