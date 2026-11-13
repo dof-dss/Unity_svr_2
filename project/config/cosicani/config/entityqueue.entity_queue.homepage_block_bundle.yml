@@ -19,6 +19,7 @@ entity_settings:
       direction: ASC
     auto_create: false
     auto_create_bundle: ''
+    include_unpublished_entities: true
 queue_settings:
   min_size: 0
   max_size: 6

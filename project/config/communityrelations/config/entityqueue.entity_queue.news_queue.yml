@@ -19,6 +19,7 @@ entity_settings:
       direction: ASC
     auto_create: false
     auto_create_bundle: ''
+    include_unpublished_entities: true
     auto_entityqueue:
       auto_add: 0
       insert_front: 0
