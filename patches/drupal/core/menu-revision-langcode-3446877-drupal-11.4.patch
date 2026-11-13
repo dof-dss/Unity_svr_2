@@ -1,0 +1,15 @@
+diff --git a/core/modules/menu_ui/src/MenuUiUtility.php b/core/modules/menu_ui/src/MenuUiUtility.php
+--- a/core/modules/menu_ui/src/MenuUiUtility.php
++++ b/core/modules/menu_ui/src/MenuUiUtility.php
+@@ -41,11 +41,6 @@
+         else {
+           $entity = $entity->getTranslation($node->language()->getId());
+         }
+-      }
+-      else {
+-        // Ensure the entity matches the node language.
+-        $entity = $entity->getUntranslated();
+-        $entity->set($entity->getEntityType()->getKey('langcode'), $node->language()->getId());
+       }
+     }
+     else {
