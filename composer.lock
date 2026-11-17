@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad8664d9ea92970449e791a4754b984b",
+    "content-hash": "3a7269467c7cf8f0430fcaff272d28bf",
     "packages": [
         {
             "name": "accessible360/accessible-slick",
@@ -17381,16 +17381,16 @@
         },
         {
             "name": "dof-dss/maestro-shell",
-            "version": "11.0.1",
+            "version": "11.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/maestro-shell.git",
-                "reference": "246bd3e44b2cf2db548920847f1ad305f6dd9876"
+                "reference": "882b78d2989f6df4c3b4b095d59a2ffd40c035da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/maestro-shell/zipball/246bd3e44b2cf2db548920847f1ad305f6dd9876",
-                "reference": "246bd3e44b2cf2db548920847f1ad305f6dd9876",
+                "url": "https://api.github.com/repos/dof-dss/maestro-shell/zipball/882b78d2989f6df4c3b4b095d59a2ffd40c035da",
+                "reference": "882b78d2989f6df4c3b4b095d59a2ffd40c035da",
                 "shasum": ""
             },
             "require": {
@@ -17434,9 +17434,10 @@
             "description": "Shell for working with Maestro projects.",
             "support": {
                 "issues": "https://github.com/dof-dss/maestro-shell/issues",
-                "source": "https://github.com/dof-dss/maestro-shell/tree/11.0.1"
+                "source": "https://github.com/dof-dss/maestro-shell/tree/11.0.2"
             },
-            "time": "2026-10-02T14:36:01+00:00"
+            "time": "2026-11-13T11:31:30+00:00",
+            "published-time": "2026-11-13T11:32:09+00:00"
         },
         {
             "name": "drupal/coder",
