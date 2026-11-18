@@ -2,6 +2,8 @@ uuid: 9b59e028-f78b-4a91-8f42-8c114ac6eeb8
 langcode: en
 status: true
 dependencies:
+  config:
+    - search_api_autocomplete.search.search
   module:
     - eu_cookie_compliance
     - media

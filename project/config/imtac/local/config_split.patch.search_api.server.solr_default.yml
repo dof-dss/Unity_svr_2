@@ -6,6 +6,7 @@ adding:
       skip_schema_check: true
       solr_install_dir: /opt/solr
     index_empty_text_fields: false
+    index_items_with_warnings: true
     suppress_missing_languages: false
 removing:
   backend_config:
