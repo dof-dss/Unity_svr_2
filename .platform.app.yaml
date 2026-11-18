@@ -144,12 +144,18 @@ web:
                 ^\/sites\/.+\/themes\/.+\/images\/favicons\/.+\.webmanifest$:
                     allow: true
                     expires: 2w
-                '^/\.well-known/*?\.txt$':
-                    allow: true
                 ^/sites/sites\.php$:
                     scripts: false
                 '^/sites/[^/]+/settings.*?\.php$':
                     scripts: false
+        /.well-known:
+            root: web/.well-known
+            expires: 1d
+            passthru: /index.php
+            allow: false
+            rules:
+                \.txt$:
+                    allow: true
         /files:
             allow: true
             expires: 1d
