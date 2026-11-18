@@ -1,4 +1,4 @@
-uuid: 34f9ca03-6485-426f-99f7-564a76c108a2
+uuid: b5078de7-d824-41f8-842d-657d3b2520bf
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ title: 'Remove expired log messages and flood control events'
 id: dblog_cron
 weight: 0
 module: dblog
-callback: dblog_cron
+callback: 'dblog#cron'
 scheduler:
   id: simple
 launcher:
