@@ -3,7 +3,6 @@ _core:
 verbose: true
 types:
   block_content: {  }
-  contact_message: {  }
   content_moderation_state: {  }
   entity_embed_fake_entity: {  }
   file: {  }
@@ -21,9 +20,6 @@ types:
 types_translation_lock: {  }
 form_op_lock:
   block_content:
-    mode: 0
-    values: {  }
-  contact_message:
     mode: 0
     values: {  }
   content_moderation_state:

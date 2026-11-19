@@ -3,6 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.location_browser
+    - entityqueue.entity_queue.board_members_queue
+    - entityqueue.entity_queue.slideshow
     - filter.format.basic_html
     - media.type.audio
     - media.type.document

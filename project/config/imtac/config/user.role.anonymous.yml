@@ -5,7 +5,6 @@ dependencies:
   config:
     - filter.format.restricted_html
   module:
-    - contact
     - eu_cookie_compliance
     - filter
     - media
@@ -18,7 +17,6 @@ weight: 0
 is_admin: false
 permissions:
   - 'access content'
-  - 'access site-wide contact form'
   - 'display eu cookie compliance popup'
   - 'use text format restricted_html'
   - 'view media'

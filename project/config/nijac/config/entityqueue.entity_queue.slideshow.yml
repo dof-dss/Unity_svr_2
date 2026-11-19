@@ -6,6 +6,7 @@ dependencies:
     - node
 id: slideshow
 label: Slideshow
+description: null
 handler: simple
 handler_configuration: {  }
 entity_settings:

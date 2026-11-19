@@ -6,6 +6,7 @@ dependencies:
     - node
 id: homepage_block_bundle
 label: 'Homepage block bundle'
+description: null
 handler: simple
 handler_configuration: {  }
 entity_settings:

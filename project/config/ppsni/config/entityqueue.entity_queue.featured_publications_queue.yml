@@ -6,6 +6,7 @@ dependencies:
     - node
 id: featured_publications_queue
 label: 'Featured Publications queue'
+description: null
 handler: simple
 handler_configuration: {  }
 entity_settings:

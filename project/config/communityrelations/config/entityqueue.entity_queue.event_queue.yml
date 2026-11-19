@@ -6,6 +6,7 @@ dependencies:
     - node
 id: event_queue
 label: 'Event queue'
+description: null
 handler: simple
 handler_configuration: {  }
 entity_settings:
