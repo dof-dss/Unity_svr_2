@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.location_browser
     - media.type.audio
     - media.type.document
     - media.type.file

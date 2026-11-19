@@ -13,12 +13,6 @@ folder: ../project/config/nijac/local
 module:
   dblog: 0
   devel: 0
-  migrate: 0
-  migrate_drupal: 0
-  migrate_plus: 0
-  migrate_tools: 0
-  migrate_upgrade: 0
-  unity_file_migrations: 0
   stage_file_proxy: 0
   views_ui: 0
 theme: {  }
