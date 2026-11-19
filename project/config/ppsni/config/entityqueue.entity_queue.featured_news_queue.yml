@@ -6,6 +6,7 @@ dependencies:
     - node
 id: featured_news_queue
 label: 'Featured News queue'
+description: null
 handler: simple
 handler_configuration: {  }
 entity_settings:
