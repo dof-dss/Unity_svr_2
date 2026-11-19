@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a7269467c7cf8f0430fcaff272d28bf",
+    "content-hash": "ea3acb35eb699812662c0ff9eff56887",
     "packages": [
         {
             "name": "accessible360/accessible-slick",
@@ -1589,16 +1589,16 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_modules",
-            "version": "11.1.1",
+            "version": "11.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_modules.git",
-                "reference": "d3f9b1582a99d49a9f93014e4129941d42c704a3"
+                "reference": "1fed7e26a3c645d3e16057146f94ce083787c967"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/d3f9b1582a99d49a9f93014e4129941d42c704a3",
-                "reference": "d3f9b1582a99d49a9f93014e4129941d42c704a3",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_modules/zipball/1fed7e26a3c645d3e16057146f94ce083787c967",
+                "reference": "1fed7e26a3c645d3e16057146f94ce083787c967",
                 "shasum": ""
             },
             "require": {
@@ -1612,9 +1612,10 @@
             "description": "Custom modules available to all Unity sites.",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_modules/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/11.1.1"
+                "source": "https://github.com/dof-dss/nicsdru_unity_modules/tree/11.1.2"
             },
-            "time": "2026-10-06T13:19:01+00:00"
+            "time": "2026-11-19T14:02:41+00:00",
+            "published-time": "2026-11-19T14:03:53+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_profile",
@@ -7068,147 +7069,6 @@
             "homepage": "https://www.drupal.org/project/scheduled_transitions",
             "support": {
                 "source": "https://git.drupalcode.org/project/scheduled_transitions"
-            }
-        },
-        {
-            "name": "drupal/scheduler",
-            "version": "2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/scheduler.git",
-                "reference": "2.3.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/scheduler-2.3.0.zip",
-                "reference": "2.3.0",
-                "shasum": "c79ff70ac5300d7e95f5da2e31d95eee52c152aa"
-            },
-            "require": {
-                "drupal/core": "^9 || ^10 || ^11"
-            },
-            "require-dev": {
-                "doctrine/annotations": "*",
-                "drupal/commerce": "^2 || ^3",
-                "drupal/devel": "*",
-                "drupal/devel_generate": "*",
-                "drupal/rules": "^3 || ^4",
-                "drupal/workbench_moderation": "*",
-                "drupal/workbench_moderation_actions": "*",
-                "drush/drush": ">=9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.3.0",
-                    "datestamp": "1780654272",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9 || ^10"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Eric Schaefer (Eric Schaefer)",
-                    "homepage": "https://www.drupal.org/u/eric-schaefer",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Jonathan Smith (jonathan1055)",
-                    "homepage": "https://www.drupal.org/u/jonathan1055",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Pieter Frenssen (pfrenssen)",
-                    "homepage": "https://www.drupal.org/u/pfrenssen",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Rick Manelius (rickmanelius)",
-                    "homepage": "https://www.drupal.org/u/rickmanelius",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Automatically publish and unpublish content at specified dates and times.",
-            "homepage": "https://drupal.org/project/scheduler",
-            "support": {
-                "source": "https://git.drupalcode.org/project/scheduler",
-                "issues": "https://www.drupal.org/project/issues/scheduler"
-            }
-        },
-        {
-            "name": "drupal/scheduler_content_moderation_integration",
-            "version": "3.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/scheduler_content_moderation_integration.git",
-                "reference": "3.0.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/scheduler_content_moderation_integration-3.0.5.zip",
-                "reference": "3.0.5",
-                "shasum": "acb65075207d51b4ef5fcf260aa8ef6b9395f8d8"
-            },
-            "require": {
-                "drupal/core": "^10.3 || ^11",
-                "drupal/scheduler": "^2.1"
-            },
-            "require-dev": {
-                "drupal/commerce": "^3.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "3.0.5",
-                    "datestamp": "1776807091",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "chr.fritsch",
-                    "homepage": "https://www.drupal.org/user/2103716"
-                },
-                {
-                    "name": "daniel.bosen",
-                    "homepage": "https://www.drupal.org/user/404865"
-                },
-                {
-                    "name": "jonathan1055",
-                    "homepage": "https://www.drupal.org/user/92645"
-                },
-                {
-                    "name": "smustgrave",
-                    "homepage": "https://www.drupal.org/user/3252890"
-                },
-                {
-                    "name": "volkerk",
-                    "homepage": "https://www.drupal.org/user/57527"
-                }
-            ],
-            "description": "Scheduler sub-module providing content moderation functionality for publishing/unpublishing",
-            "homepage": "https://www.drupal.org/project/scheduler_content_moderation_integration",
-            "support": {
-                "source": "https://git.drupalcode.org/project/scheduler_content_moderation_integration",
-                "error": "Invalid dependency: \"scheduler\", Could not parse version constraint ~: Invalid version string \"~\""
             }
         },
         {
@@ -23293,8 +23153,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "composer-runtime-api": "*",
-        "php": "^8.3"
+        "php": "^8.3",
+        "composer-runtime-api": "*"
     },
     "platform-dev": {},
     "platform-overrides": {
